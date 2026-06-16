@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>SOCOPE</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>SOCOPE</h1>
+<div class='meta'><b>Descripción:</b> SCPCOD<br><b>N.º de campos:</b> 50</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>SCPCOD</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>3</td><td class='mono'>3</td><td class='mono'></td><td>CODIGO SISTEMA</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>SCPACC</td><td>CHARACTER</td><td class='mono'>4</td><td class='mono'>20</td><td class='mono'>23</td><td class='mono'></td><td>NUMERO PRESTAMO</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>SCPPRD</td><td>CHARACTER</td><td class='mono'>24</td><td class='mono'>7</td><td class='mono'>30</td><td class='mono'></td><td>PRODUCTO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>SCPSUS</td><td>CHARACTER</td><td class='mono'>31</td><td class='mono'>1</td><td class='mono'>31</td><td class='mono'></td><td>SUSPENSION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>SCPFSU</td><td>CHARACTER</td><td class='mono'>32</td><td class='mono'>8</td><td class='mono'>39</td><td class='mono'></td><td>FECHA SUSPENSION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>SCPTIP</td><td>CHARACTER</td><td class='mono'>40</td><td class='mono'>3</td><td class='mono'>42</td><td class='mono'></td><td>TIPO SUSPENSION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>SCPCCL</td><td>CHARACTER</td><td class='mono'>43</td><td class='mono'>3</td><td class='mono'>45</td><td class='mono'></td><td>CLASIFICACION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>SCPFPR</td><td>CHARACTER</td><td class='mono'>46</td><td class='mono'>8</td><td class='mono'>53</td><td class='mono'></td><td>FECHA PROCESO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>SCPRUT</td><td>CHARACTER</td><td class='mono'>54</td><td class='mono'>12</td><td class='mono'>65</td><td class='mono'></td><td>RUT CLIENTE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>SCPDET</td><td>CHARACTER</td><td class='mono'>66</td><td class='mono'>3</td><td class='mono'>68</td><td class='mono'></td><td>DETERIORO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>SCPFDT</td><td>CHARACTER</td><td class='mono'>69</td><td class='mono'>8</td><td class='mono'>76</td><td class='mono'></td><td>FECHA DETERIORO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>SCPFIL</td><td>CHARACTER</td><td class='mono'>77</td><td class='mono'>5</td><td class='mono'>81</td><td class='mono'></td><td>FILLER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CODIGO SISTEMA</td><td>NUMERO PRESTAMO</td><td class='mono'>PRODUCTO</td><td class='mono'>SUSPENSION</td><td class='mono'>FECHA SUSPENSION</td><td class='mono'>TIPO SUSPENSION</td><td>CLASIFICACION</td><td>FECHA PROCESO</td></tr>
+<tr><td class='mono'></td><td class='mono'>SCPCOD</td><td>SCPACC</td><td class='mono'>SCPPRD</td><td class='mono'>SCPSUS</td><td class='mono'>SCPFSU</td><td class='mono'>SCPTIP</td><td>SCPCCL</td><td>SCPFPR</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>67042403477</td><td class='mono'>CTALAC</td><td class='mono'></td><td class='mono'>00000000</td><td class='mono'>IND</td><td>B4</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>67042404866</td><td class='mono'>LACBAN</td><td class='mono'></td><td class='mono'>00000000</td><td class='mono'>GRP</td><td>K1</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>67042404866</td><td class='mono'>LACBAN</td><td class='mono'></td><td class='mono'>00000000</td><td class='mono'>GRP</td><td>K1</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>67042415137</td><td class='mono'>CCMNAJ</td><td class='mono'></td><td class='mono'>00000000</td><td class='mono'>IND</td><td>B3</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>67042418601</td><td class='mono'>CTALAC</td><td class='mono'></td><td class='mono'>00000000</td><td class='mono'>IND</td><td>C1</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>67042418601</td><td class='mono'>CTALAC</td><td class='mono'></td><td class='mono'>00000000</td><td class='mono'>IND</td><td>C1</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>67042427624</td><td class='mono'>CTALAC</td><td class='mono'></td><td class='mono'>00000000</td><td class='mono'>IND</td><td>C1</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002178212</td><td class='mono'>CMCN</td><td class='mono'>S</td><td class='mono'>20161107</td><td class='mono'>IND</td><td>C5</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002185084</td><td class='mono'>MPN1</td><td class='mono'>S</td><td class='mono'>20160111</td><td class='mono'>IND</td><td>C6</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002189635</td><td class='mono'>MPN1</td><td class='mono'>S</td><td class='mono'>20151209</td><td class='mono'>IND</td><td>C4</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002196184</td><td class='mono'>CMCN</td><td class='mono'>S</td><td class='mono'>20160908</td><td class='mono'>IND</td><td>C6</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002200438</td><td class='mono'>CMCN</td><td class='mono'>S</td><td class='mono'>20130801</td><td class='mono'>IND</td><td>C3</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002208672</td><td class='mono'>BGPR</td><td class='mono'>S</td><td class='mono'>20170809</td><td class='mono'>IND</td><td>C5</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002251964</td><td class='mono'>CMCN</td><td class='mono'>S</td><td class='mono'>20170711</td><td class='mono'>IND</td><td>C6</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002252137</td><td class='mono'>MPR1</td><td class='mono'>S</td><td class='mono'>20140812</td><td class='mono'>IND</td><td>C6</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002252348</td><td class='mono'>CMCN</td><td class='mono'>S</td><td class='mono'>20160807</td><td class='mono'>IND</td><td>C6</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002252349</td><td class='mono'>CMCN</td><td class='mono'>S</td><td class='mono'>20150731</td><td class='mono'>IND</td><td>C6</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002258392</td><td class='mono'>CMCN</td><td class='mono'>S</td><td class='mono'>20161107</td><td class='mono'>IND</td><td>C6</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002258423</td><td class='mono'>CMCN</td><td class='mono'>S</td><td class='mono'>20170307</td><td class='mono'>IND</td><td>C5</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002258424</td><td class='mono'>CMCN</td><td class='mono'>S</td><td class='mono'>20170307</td><td class='mono'>IND</td><td>C5</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002258547</td><td class='mono'>CMCN</td><td class='mono'>S</td><td class='mono'>20160708</td><td class='mono'>IND</td><td>C5</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002258637</td><td class='mono'>CMCN</td><td class='mono'>S</td><td class='mono'>20161209</td><td class='mono'>IND</td><td>C6</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002258873</td><td class='mono'>VDTN</td><td class='mono'>S</td><td class='mono'>20160208</td><td class='mono'>IND</td><td>C6</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002258875</td><td class='mono'>VDTN</td><td class='mono'>S</td><td class='mono'>20151209</td><td class='mono'>IND</td><td>C6</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002258955</td><td class='mono'>CMCN</td><td class='mono'>S</td><td class='mono'>20161209</td><td class='mono'>IND</td><td>C6</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002258977</td><td class='mono'>CMCN</td><td class='mono'>S</td><td class='mono'>20170410</td><td class='mono'>IND</td><td>C5</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002258985</td><td class='mono'>CMCN</td><td class='mono'>S</td><td class='mono'>20161006</td><td class='mono'>IND</td><td>C4</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002178212</td><td class='mono'>CMCN</td><td class='mono'></td><td class='mono'>20161107</td><td class='mono'>IND</td><td>C5</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002185084</td><td class='mono'>MPN1</td><td class='mono'></td><td class='mono'>20160111</td><td class='mono'>IND</td><td>C6</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002189635</td><td class='mono'>MPN1</td><td class='mono'></td><td class='mono'>20151209</td><td class='mono'>IND</td><td>C4</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>67042403477</td><td class='mono'>CTALAC</td><td class='mono'></td><td class='mono'>00000000</td><td class='mono'>IND</td><td>B4</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002178212</td><td class='mono'>CMCN</td><td class='mono'></td><td class='mono'>20161107</td><td class='mono'>IND</td><td>C5</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>COR</td><td>0002185084</td><td class='mono'>MPN1</td><td class='mono'>S</td><td class='mono'>20160111</td><td class='mono'>IND</td><td>C6</td><td>20170908</td></tr>
+<tr><td class='mono'></td><td class='mono'>Manual</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>Manual</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>Manual</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>0002178212</td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>0002185084</td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>0002189635</td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>67042403477</td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>0002185084</td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[SCPCOD] 91        CHP
+[SCPACC] 1.439        COR
+[SCPPRD] 158        LEA
+[SCPSUS] 333        CCU
+[SCPFSU] 27        CMX
+[SCPTIP] 78        TCR
+[CODIGO SISTEMA] RUT CLIENTE | DETERIORO | FECHA DETERIORO | FILLER
+[SCPCOD] SCPRUT | SCPDET | SCPFDT | SCPFIL
+[COR] 000761569570 | CLA | 20170707
+[COR] 000058947814 | MOR | 20161230
+[COR] 000058947814 | MOR | 20161230
+[COR] 000761151320 | CLA | 20170531
+[COR] 000762258307 | CLA | 20170307
+[COR] 000762258307 | CLA | 20170307
+[COR] 00079749190K | CLA | 20161125
+[COR] 000762556200 | CLA | 20160930
+[COR] 000995418908 | CLA | 20151230
+[COR] 00076124437K | CLA | 20150827
+[COR] 00052004681K | CLA | 20151209
+[COR] 00007303681K | CLA | 20130801
+[COR] 000787332501 | CLA | 20170809
+[COR] 000775907800 | CLA | 20160803
+[COR] 000945650001 | CLA | 20140509
+[COR] 000762491729 | CLA | 20160509
+[COR] 000774318100 | CLA | 20140207
+[COR] 000926170007 | CLA | 20160610
+[COR] 000760708445 | CLA | 20170209
+[COR] 000761072870 | CLA | 20170307
+[COR] 000760103365 | CLA | 20160407
+[COR] 000761789317 | CLA | 20161209
+[COR] 00076236252K | CLA | 20151110
+[COR] 000760356646 | CLA | 20151209
+[COR] 000761819038 | CLA | 20161107
+[COR] 000761314173 | CLA | 20170410
+[COR] 00076157311K | CLA | 20161006
+Estado actual en DEALS en ambiente Desarrollo
+[COR] 000762556200 | CLA | 20160930 | Liberar operaciones suspendidas | 2.178.212           S
+[COR] 000995418908 | CLA | 20151230 | Liberar operaciones suspendidas | 2.185.084           S
+[COR] 00076124437K | CLA | 20150827 | Liberar operaciones suspendidas | 2.189.635           S
+[COR] 000761569570 | CLA | 20170707 | Operación no marcada en Deals y que se desea liberar | Liberación con cuenta que en maestro no esté marcada como suspendida | SUSPENDED INTEREST
+67042403477 | Blanco
+[COR] 000762556200 | CLA | 20160930 | Liberar operaciones suspendidas | Liberación repetida
+[COR] 000995418908 | CLA | 20151230 | Constitución repetida
+[Manual] Validar la existencia de las cuentas con las que se realiza el asiento contable en el maestro de cuentas contables.
+[Manual] Revisar cuentas en INPUT | Realizar asiento contable con los montos de Intereses y reajustes suspendidos, debitando la cuenta de Suspenso y Abonando la cuenta del producto
+[Manual] Revisar valores de la operación y sus estados</div></body></html>

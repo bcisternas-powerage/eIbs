@@ -1,0 +1,287 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>CUMST</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>CUMST</h1>
+<div class='meta'><b>Descripción:</b> Maestro de CLIENTES<br><b>N.º de campos:</b> 150</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>CUSCUN</td><td>DECIMAL</td><td class='mono'>1</td><td class='mono'>9</td><td class='mono'>9</td><td class='mono'></td><td>CUSTOMER NUMBER</td><td>Numero de cliente</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>CUSIDN</td><td>CHARACTER</td><td class='mono'>10</td><td class='mono'>25</td><td class='mono'>34</td><td class='mono'></td><td>IDENTIFICATION-1</td><td>Rut Cliente</td></tr>
+<tr><td class='mono'>3</td><td class='mono'>CUSTID</td><td>CHARACTER</td><td class='mono'>35</td><td class='mono'>4</td><td class='mono'>38</td><td class='mono'></td><td>IDENT TYPE-1</td><td>Tipo de Identificación</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSPID</td><td>CHARACTER</td><td class='mono'>39</td><td class='mono'>4</td><td class='mono'>42</td><td class='mono'></td><td>IDENT COUNTRY-1</td><td>Pais</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSIDF</td><td>CHARACTER</td><td class='mono'>43</td><td class='mono'>25</td><td class='mono'>67</td><td class='mono'></td><td>IDENTIFICACION-2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTIF</td><td>CHARACTER</td><td class='mono'>68</td><td class='mono'>4</td><td class='mono'>71</td><td class='mono'></td><td>IDENT TYPE-2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSPIF</td><td>CHARACTER</td><td class='mono'>72</td><td class='mono'>4</td><td class='mono'>75</td><td class='mono'></td><td>IDENT COUNTRY-2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSID3</td><td>CHARACTER</td><td class='mono'>76</td><td class='mono'>25</td><td class='mono'>100</td><td class='mono'></td><td>IDENTIFICATION-3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTI3</td><td>CHARACTER</td><td class='mono'>101</td><td class='mono'>4</td><td class='mono'>104</td><td class='mono'></td><td>IDENT TYPE-3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSPI3</td><td>CHARACTER</td><td class='mono'>105</td><td class='mono'>4</td><td class='mono'>108</td><td class='mono'></td><td>IDENT COUNTRY-3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSID4</td><td>CHARACTER</td><td class='mono'>109</td><td class='mono'>25</td><td class='mono'>133</td><td class='mono'></td><td>IDENTIFICATION-4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTI4</td><td>CHARACTER</td><td class='mono'>134</td><td class='mono'>4</td><td class='mono'>137</td><td class='mono'></td><td>IDENT TYPE-4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSPI4</td><td>CHARACTER</td><td class='mono'>138</td><td class='mono'>4</td><td class='mono'>141</td><td class='mono'></td><td>IDENT COUNTRY-4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSLGT</td><td>CHARACTER</td><td class='mono'>142</td><td class='mono'>1</td><td class='mono'>142</td><td class='mono'></td><td>LEGAL TYPE</td><td>Tipo de cliente
+(1=Empresa; 2= Persona; 3=Otro..?)</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSSTF</td><td>CHARACTER</td><td class='mono'>143</td><td class='mono'>1</td><td class='mono'>143</td><td class='mono'></td><td>STAFF MEMBER</td><td>Nombre Corto Cliente/Banco</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSSHN</td><td>CHARACTER</td><td class='mono'>144</td><td class='mono'>25</td><td class='mono'>168</td><td class='mono'></td><td>SHORT NAME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSSTS</td><td>CHARACTER</td><td class='mono'>169</td><td class='mono'>1</td><td class='mono'>169</td><td class='mono'></td><td>CUSTOMER STATUS</td><td>Explicacion =======&gt;</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSNA1</td><td>CHARACTER</td><td class='mono'>170</td><td class='mono'>60</td><td class='mono'>229</td><td class='mono'></td><td>LEGAL NAME LINE1</td><td>Nombre completo</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSNA2</td><td>CHARACTER</td><td class='mono'>230</td><td class='mono'>45</td><td class='mono'>274</td><td class='mono'></td><td>LEGAL NAME LINE2</td><td>Dirección</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSNA3</td><td>CHARACTER</td><td class='mono'>275</td><td class='mono'>45</td><td class='mono'>319</td><td class='mono'></td><td>LEGAL NAME LINE3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSNA4</td><td>CHARACTER</td><td class='mono'>320</td><td class='mono'>45</td><td class='mono'>364</td><td class='mono'></td><td>LEGAL NAME LINE4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSCTY</td><td>CHARACTER</td><td class='mono'>365</td><td class='mono'>35</td><td class='mono'>399</td><td class='mono'></td><td>CITY</td><td>Nombre Ciudad</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSSTE</td><td>CHARACTER</td><td class='mono'>400</td><td class='mono'>4</td><td class='mono'>403</td><td class='mono'></td><td>STATE</td><td>Código Estado</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSZPC</td><td>CHARACTER</td><td class='mono'>404</td><td class='mono'>15</td><td class='mono'>418</td><td class='mono'></td><td>ZIP CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSPOB</td><td>CHARACTER</td><td class='mono'>419</td><td class='mono'>10</td><td class='mono'>428</td><td class='mono'></td><td>P.O.BOX NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSCTR</td><td>CHARACTER</td><td class='mono'>429</td><td class='mono'>35</td><td class='mono'>463</td><td class='mono'></td><td>COUNTRY</td><td>Código País</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSCCS</td><td>CHARACTE</td><td class='mono'>464</td><td class='mono'>4</td><td class='mono'>467</td><td class='mono'></td><td>CITIZENSHIP</td><td>Nacionalidad</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSSEX</td><td>CHARACTE</td><td class='mono'>468</td><td class='mono'>1</td><td class='mono'>468</td><td class='mono'></td><td>SEX</td><td>Sexo</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSMST</td><td>CHARACTE</td><td class='mono'>469</td><td class='mono'>1</td><td class='mono'>469</td><td class='mono'></td><td>MARITAL STATUS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSNSO</td><td>NUMERIC</td><td class='mono'>470</td><td class='mono'>2</td><td class='mono'>471</td><td class='mono'></td><td>NUMBER OF DEPENDENTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSILV</td><td>NUMERIC</td><td class='mono'>472</td><td class='mono'>1</td><td class='mono'>472</td><td class='mono'></td><td>INQUIRY LEVEL</td><td>0: Cliente Normal
+3: Empleado</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSRLV</td><td>CHARACTE</td><td class='mono'>473</td><td class='mono'>1</td><td class='mono'>473</td><td class='mono'></td><td>ROLL OVER VOLUME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSLIF</td><td>CHARACTE</td><td class='mono'>474</td><td class='mono'>1</td><td class='mono'>474</td><td class='mono'></td><td>LANGUAGE FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSATM</td><td>CHARACTE</td><td class='mono'>475</td><td class='mono'>1</td><td class='mono'>475</td><td class='mono'></td><td>ATM ISSUED Y/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSCCL</td><td>CHARACTE</td><td class='mono'>476</td><td class='mono'>1</td><td class='mono'>476</td><td class='mono'></td><td>CUSTOMER CLASSF</td><td>Clase Cliente (HP)</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTAX</td><td>CHARACTE</td><td class='mono'>477</td><td class='mono'>1</td><td class='mono'>477</td><td class='mono'></td><td>CHARGE TAX 1/2/3/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTX1</td><td>CHARACTE</td><td class='mono'>478</td><td class='mono'>1</td><td class='mono'>478</td><td class='mono'></td><td>TAXES FLAG 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTX2</td><td>CHARACTE</td><td class='mono'>479</td><td class='mono'>1</td><td class='mono'>479</td><td class='mono'></td><td>TAXES FLAG 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTX3</td><td>CHARACTE</td><td class='mono'>480</td><td class='mono'>1</td><td class='mono'>480</td><td class='mono'></td><td>TAXES FLAG 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTX4</td><td>CHARACTER</td><td class='mono'>481</td><td class='mono'>1</td><td class='mono'>481</td><td class='mono'></td><td>TAXES FLAG 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTX5</td><td>CHARACTER</td><td class='mono'>482</td><td class='mono'>1</td><td class='mono'>482</td><td class='mono'></td><td>TAXES FLAG 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTX6</td><td>CHARACTER</td><td class='mono'>483</td><td class='mono'>1</td><td class='mono'>483</td><td class='mono'></td><td>TAXES FLAG 6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTX7</td><td>CHARACTER</td><td class='mono'>484</td><td class='mono'>1</td><td class='mono'>484</td><td class='mono'></td><td>TAXES FLAG 7</td><td>Iva Digital (HP) (SI-NO)</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTX8</td><td>CHARACTER</td><td class='mono'>485</td><td class='mono'>1</td><td class='mono'>485</td><td class='mono'></td><td>TAXES FLAG 8</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTX9</td><td>CHARACTER</td><td class='mono'>486</td><td class='mono'>1</td><td class='mono'>486</td><td class='mono'></td><td>TAXES FLAG 9</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSBDM</td><td>NUMERIC</td><td class='mono'>487</td><td class='mono'>2</td><td class='mono'>488</td><td class='mono'></td><td>BIRTH DATE MM</td><td>Fecha de Nacimiento Mes</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSBDD</td><td>NUMERIC</td><td class='mono'>489</td><td class='mono'>2</td><td class='mono'>490</td><td class='mono'></td><td>BIRTH DATE DD</td><td>Fecha de Nacimiento Día</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSBDY</td><td>NUMERIC</td><td class='mono'>491</td><td class='mono'>4</td><td class='mono'>494</td><td class='mono'></td><td>BIRTH DATE YY</td><td>Fecha de Nacimiento Año</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSIDM</td><td>NUMERIC</td><td class='mono'>495</td><td class='mono'>2</td><td class='mono'>496</td><td class='mono'></td><td>INIT DATE MM</td><td>Fecha de Ingreso Mes</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSIDD</td><td>NUMERIC</td><td class='mono'>497</td><td class='mono'>2</td><td class='mono'>498</td><td class='mono'></td><td>INIT DATE DD</td><td>Fecha de Ingreso Día</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSIDY</td><td>NUMERIC</td><td class='mono'>499</td><td class='mono'>4</td><td class='mono'>502</td><td class='mono'></td><td>INIT DATE YY</td><td>Fecha de Ingreso Año</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSLAM</td><td>NUMERIC</td><td class='mono'>503</td><td class='mono'>2</td><td class='mono'>504</td><td class='mono'></td><td>LAST ACTIVITY MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSLAD</td><td>NUMERIC</td><td class='mono'>505</td><td class='mono'>2</td><td class='mono'>506</td><td class='mono'></td><td>LAST ACTIVITY DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSLAY</td><td>NUMERIC</td><td class='mono'>507</td><td class='mono'>4</td><td class='mono'>510</td><td class='mono'></td><td>LAST ACTIVITY YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSMAM</td><td>NUMERIC</td><td class='mono'>511</td><td class='mono'>2</td><td class='mono'>512</td><td class='mono'></td><td>MATURITY  MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSMAD</td><td>NUMERIC</td><td class='mono'>513</td><td class='mono'>2</td><td class='mono'>514</td><td class='mono'></td><td>MATURITY  DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSMAY</td><td>NUMERIC</td><td class='mono'>515</td><td class='mono'>4</td><td class='mono'>518</td><td class='mono'></td><td>MATURITY  YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSRBY</td><td>CHARACTER</td><td class='mono'>519</td><td class='mono'>4</td><td class='mono'>522</td><td class='mono'></td><td>REFERRED-BY CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSRBN</td><td>CHARACTER</td><td class='mono'>523</td><td class='mono'>45</td><td class='mono'>567</td><td class='mono'></td><td>REFERRED-BY NAME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSEDL</td><td>CHARACTER</td><td class='mono'>568</td><td class='mono'>4</td><td class='mono'>571</td><td class='mono'></td><td>EDUCATION LEVEL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSINC</td><td>CHARACTER</td><td class='mono'>572</td><td class='mono'>4</td><td class='mono'>575</td><td class='mono'></td><td>INDUSTRY CODE</td><td>composición institucional</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSBUC</td><td>CHARACTER</td><td class='mono'>576</td><td class='mono'>4</td><td class='mono'>579</td><td class='mono'></td><td>BUSINESS CODE</td><td>Actividad Econimica</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSINL</td><td>CHARACTER</td><td class='mono'>580</td><td class='mono'>1</td><td class='mono'>580</td><td class='mono'></td><td>INCOME LEVEL</td><td>N = NO ACCOUNT ANALYSIS     
+   R = REGULAR ACCOUNT ANALYSIS
+   G = GROUP MEMBER            
+   M = MASTER</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSSOI</td><td>CHARACTER</td><td class='mono'>581</td><td class='mono'>4</td><td class='mono'>584</td><td class='mono'></td><td>SOURCE OF INCOME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSCOB</td><td>CHARACTER</td><td class='mono'>585</td><td class='mono'>4</td><td class='mono'>588</td><td class='mono'></td><td>COUNTRY OF BIRTH</td><td>(N)      MEANS RELATION &quot;AND&quot; FOR TITULARS                    
+ (BLANK)  MEANS THAT TITULARS MAY USE THIS ACCOUNT FOR INTERNET
+          TRANSACTIONS</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSRSL</td><td>CHARACTER</td><td class='mono'>589</td><td class='mono'>4</td><td class='mono'>592</td><td class='mono'></td><td>RISK LEVEL</td><td>Nivel de Riesgo</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSGEC</td><td>CHARACTER</td><td class='mono'>593</td><td class='mono'>4</td><td class='mono'>596</td><td class='mono'></td><td>GEOG CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSOFC</td><td>CHARACTER</td><td class='mono'>597</td><td class='mono'>4</td><td class='mono'>600</td><td class='mono'></td><td>OFFICER</td><td>Código del Ejecutivo Cuenta</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSOF2</td><td>CHARACTER</td><td class='mono'>601</td><td class='mono'>4</td><td class='mono'>604</td><td class='mono'></td><td>OFFICE RP</td><td>Sucursal</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSUC1</td><td>CHARACTER</td><td class='mono'>605</td><td class='mono'>4</td><td class='mono'>608</td><td class='mono'></td><td>USER CODE 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSUC2</td><td>CHARACTER</td><td class='mono'>609</td><td class='mono'>4</td><td class='mono'>612</td><td class='mono'></td><td>USER CODE 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSUC3</td><td>CHARACTER</td><td class='mono'>613</td><td class='mono'>4</td><td class='mono'>616</td><td class='mono'></td><td>USER CODE 3</td><td>Categoría del Deudor</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSUC4</td><td>CHARACTER</td><td class='mono'>617</td><td class='mono'>6</td><td class='mono'>622</td><td class='mono'></td><td>USER CODE 4  / Activ Econon¿mica Codigo CIIU</td><td>Código CIIU</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSUC5</td><td>CHARACTER</td><td class='mono'>623</td><td class='mono'>4</td><td class='mono'>626</td><td class='mono'></td><td>USER CODE 5</td><td>Segmento</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSUC6</td><td>CHARACTER</td><td class='mono'>627</td><td class='mono'>4</td><td class='mono'>630</td><td class='mono'></td><td>USER CODE 6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSUC7</td><td>CHARACTER</td><td class='mono'>631</td><td class='mono'>4</td><td class='mono'>634</td><td class='mono'></td><td>USER CODE 7</td><td>Familia del Producto</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSUC8</td><td>CHARACTER</td><td class='mono'>635</td><td class='mono'>4</td><td class='mono'>638</td><td class='mono'></td><td>USER CODE 8</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSUC9</td><td>CHARACTER</td><td class='mono'>639</td><td class='mono'>4</td><td class='mono'>642</td><td class='mono'></td><td>USER CODE 9</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTYP</td><td>CHARACTER</td><td class='mono'>643</td><td class='mono'>1</td><td class='mono'>643</td><td class='mono'></td><td>CUSTOMER TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSGRP</td><td>DECIMAL</td><td class='mono'>644</td><td class='mono'>9</td><td class='mono'>652</td><td class='mono'></td><td>GROUP CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSBRN</td><td>NUMERIC</td><td class='mono'>653</td><td class='mono'>4</td><td class='mono'>656</td><td class='mono'></td><td>B &amp; A/P REFÑ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSMLC</td><td>CHARACTER</td><td class='mono'>657</td><td class='mono'>4</td><td class='mono'>660</td><td class='mono'></td><td>MAILING CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSHPN</td><td>DECIMAL</td><td class='mono'>661</td><td class='mono'>15</td><td class='mono'>675</td><td class='mono'></td><td>HOME PHONE NUMBER</td><td>Telefono del Hogar</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSPHN</td><td>DECIMAL</td><td class='mono'>676</td><td class='mono'>15</td><td class='mono'>690</td><td class='mono'></td><td>BUSS PHONE NUMBER</td><td>Telefono de oficina</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSPH1</td><td>DECIMAL</td><td class='mono'>691</td><td class='mono'>15</td><td class='mono'>705</td><td class='mono'></td><td>PHONE NUMBER 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSFAX</td><td>DECIMAL</td><td class='mono'>706</td><td class='mono'>15</td><td class='mono'>720</td><td class='mono'></td><td>FAX  PHONE NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSFNA</td><td>CHARACTER</td><td class='mono'>721</td><td class='mono'>30</td><td class='mono'>750</td><td class='mono'></td><td>CUST FIRST NAME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSLN1</td><td>CHARACTER</td><td class='mono'>751</td><td class='mono'>30</td><td class='mono'>780</td><td class='mono'></td><td>CUST LAST NAME 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSLN2</td><td>CHARACTER</td><td class='mono'>781</td><td class='mono'>30</td><td class='mono'>810</td><td class='mono'></td><td>CUST LAST NAME 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSACA</td><td>CHARACTER</td><td class='mono'>811</td><td class='mono'>30</td><td class='mono'>840</td><td class='mono'></td><td>CUST MARRIED NAME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSFN2</td><td>CHARACTER</td><td class='mono'>841</td><td class='mono'>30</td><td class='mono'>870</td><td class='mono'></td><td>CUST SECOND NAME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSLN3</td><td>CHARACTER</td><td class='mono'>871</td><td class='mono'>30</td><td class='mono'>900</td><td class='mono'></td><td>KEY NAME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSFL1</td><td>CHARACTER</td><td class='mono'>901</td><td class='mono'>1</td><td class='mono'>901</td><td class='mono'></td><td>FLAG 1 MULT-USE</td><td>Indica si es residente(1=Residente/2=No Residente)</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSFL2</td><td>CHARACTER</td><td class='mono'>902</td><td class='mono'>1</td><td class='mono'>902</td><td class='mono'></td><td>FLAG 2 MULT-USE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSFL3</td><td>CHARACTER</td><td class='mono'>903</td><td class='mono'>1</td><td class='mono'>903</td><td class='mono'></td><td>FLAG 3 MULT-USE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSFL4</td><td>CHARACTER</td><td class='mono'>904</td><td class='mono'>1</td><td class='mono'>904</td><td class='mono'></td><td>FLAG 4 MULT-USE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSFL5</td><td>CHARACTER</td><td class='mono'>905</td><td class='mono'>1</td><td class='mono'>905</td><td class='mono'></td><td>FLAG 5 MULT-USE</td><td>HP: Cliente PEP.</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSFL6</td><td>CHARACTER</td><td class='mono'>906</td><td class='mono'>1</td><td class='mono'>906</td><td class='mono'></td><td>FLAG 6 MULT-USE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSFL7</td><td>CHARACTER</td><td class='mono'>907</td><td class='mono'>1</td><td class='mono'>907</td><td class='mono'></td><td>FLAG 7 MULT-USE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSFL8</td><td>CHARACTER</td><td class='mono'>908</td><td class='mono'>8</td><td class='mono'>915</td><td class='mono'></td><td>FLAG 8 MULT-USE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSIAD</td><td>CHARACTER</td><td class='mono'>916</td><td class='mono'>60</td><td class='mono'>975</td><td class='mono'></td><td>INTERNET E-MAIL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSIA2</td><td>CHARACTER</td><td class='mono'>976</td><td class='mono'>60</td><td class='mono'>1035</td><td class='mono'></td><td>INTERNET E-MAIL 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSWEB</td><td>CHARACTER</td><td class='mono'>1036</td><td class='mono'>60</td><td class='mono'>1095</td><td class='mono'></td><td>INTERNET WEB SITE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSSUC</td><td>CHARACTER</td><td class='mono'>1096</td><td class='mono'>2</td><td class='mono'>1097</td><td class='mono'></td><td>SUBJETIVE CALIF</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSOBC</td><td>CHARACTER</td><td class='mono'>1098</td><td class='mono'>2</td><td class='mono'>1099</td><td class='mono'></td><td>OBJETIVE CALIF</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSPRV</td><td>CHARACTER</td><td class='mono'>1100</td><td class='mono'>2</td><td class='mono'>1101</td><td class='mono'></td><td>TABLE&#x27;PREVISION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSDIB</td><td>DECIMAL</td><td class='mono'>1102</td><td class='mono'>5</td><td class='mono'>1106</td><td class='mono'></td><td>DAILY/INPUT BATHC Ñ</td><td>(HP: BATCH..?)</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSUSR</td><td>CHARACTER</td><td class='mono'>1107</td><td class='mono'>10</td><td class='mono'>1116</td><td class='mono'></td><td>LAST MAINT/USER</td><td>Usuario Mantención..?</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSRLE</td><td>CHARACTER</td><td class='mono'>1117</td><td class='mono'>2</td><td class='mono'>1118</td><td class='mono'></td><td>RELATION LEVEL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSACL</td><td>CHARACTER</td><td class='mono'>1119</td><td class='mono'>2</td><td class='mono'>1120</td><td class='mono'></td><td>ACTIVITY LEVEL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSSHV</td><td>CHARACTER</td><td class='mono'>1121</td><td class='mono'>2</td><td class='mono'>1122</td><td class='mono'></td><td>STOCK HOLDERS VALUE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSPNA</td><td>CHARACTER</td><td class='mono'>1123</td><td class='mono'>2</td><td class='mono'>1124</td><td class='mono'></td><td>PENALTY FOR&#x27;ALERTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSPPA</td><td>DECIMAL</td><td class='mono'>1125</td><td class='mono'>6</td><td class='mono'>1130</td><td class='mono'></td><td>PENALTY %</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSPAR</td><td>DECIMAL</td><td class='mono'>1131</td><td class='mono'>6</td><td class='mono'>1136</td><td class='mono'></td><td>GROUP PERCENTAGE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSCSL</td><td>DECIMAL</td><td class='mono'>1137</td><td class='mono'>13</td><td class='mono'>1149</td><td class='mono'></td><td>CASH CONTROL LIMIT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSCCC</td><td>CHARACTER</td><td class='mono'>1150</td><td class='mono'>3</td><td class='mono'>1152</td><td class='mono'></td><td>CASH CONTROL CCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSBRA</td><td>DECIMAL</td><td class='mono'>1153</td><td class='mono'>4</td><td class='mono'>1156</td><td class='mono'></td><td>BRANCH NUMBER</td><td>Número de Oficina asignada al cliente</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSMPF</td><td>CHARACTER</td><td class='mono'>1157</td><td class='mono'>1</td><td class='mono'>1157</td><td class='mono'></td><td>MESSAGES FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSCRF</td><td>CHARACTER</td><td class='mono'>1158</td><td class='mono'>1</td><td class='mono'>1158</td><td class='mono'></td><td>CORRESPONDENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSRAM</td><td>NUMERIC</td><td class='mono'>1159</td><td class='mono'>2</td><td class='mono'>1160</td><td class='mono'></td><td>RISK ANALYSIS MONTH</td><td>Fecha Clasificación de Riesgo</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSRAD</td><td>NUMERIC</td><td class='mono'>1161</td><td class='mono'>2</td><td class='mono'>1162</td><td class='mono'></td><td>RISK  ANALYSIS&#x27;DAY</td><td>Fecha Clasificación de Riesgo</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSRAY</td><td>NUMERIC</td><td class='mono'>1163</td><td class='mono'>4</td><td class='mono'>1166</td><td class='mono'></td><td>RISK ANALYSIS YEAR</td><td>Fecha Clasificación de Riesgo</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSSCH</td><td>CHARACTER</td><td class='mono'>1167</td><td class='mono'>4</td><td class='mono'>1170</td><td class='mono'></td><td>SALE CHANEL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSSST</td><td>CHARACTER</td><td class='mono'>1171</td><td class='mono'>4</td><td class='mono'>1174</td><td class='mono'></td><td>SALE SOURCE TYPE</td><td>Ejecutvo Inversión</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSIEM</td><td>NUMERIC</td><td class='mono'>1175</td><td class='mono'>2</td><td class='mono'>1176</td><td class='mono'></td><td>START ACT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSIED</td><td>NUMERIC</td><td class='mono'>1177</td><td class='mono'>2</td><td class='mono'>1178</td><td class='mono'></td><td>START ACT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSIEY</td><td>NUMERIC</td><td class='mono'>1179</td><td class='mono'>4</td><td class='mono'>1182</td><td class='mono'></td><td>START ACT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSREM</td><td>NUMERIC</td><td class='mono'>1183</td><td class='mono'>2</td><td class='mono'>1184</td><td class='mono'></td><td>REGIS EMP/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSRED</td><td>NUMERIC</td><td class='mono'>1185</td><td class='mono'>2</td><td class='mono'>1186</td><td class='mono'></td><td>REGIS EMP/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSREY</td><td>NUMERIC</td><td class='mono'>1187</td><td class='mono'>4</td><td class='mono'>1190</td><td class='mono'></td><td>REGIS EMP/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSREN</td><td>CHARACTER</td><td class='mono'>1191</td><td class='mono'>15</td><td class='mono'>1205</td><td class='mono'></td><td>REGISTER NUMBR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSTTX</td><td>CHARACTER</td><td class='mono'>1206</td><td class='mono'>1</td><td class='mono'>1206</td><td class='mono'></td><td>CUSTOMR FOR TAX</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSETX</td><td>DECIMAL</td><td class='mono'>1207</td><td class='mono'>6</td><td class='mono'>1212</td><td class='mono'></td><td>% EXCEPT TAX</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSETM</td><td>NUMERIC</td><td class='mono'>1213</td><td class='mono'>2</td><td class='mono'>1214</td><td class='mono'></td><td>VENCE/% TAX/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSETD</td><td>NUMERIC</td><td class='mono'>1215</td><td class='mono'>2</td><td class='mono'>1216</td><td class='mono'></td><td>VENCE/% TAX/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSETY</td><td>NUMERIC</td><td class='mono'>1217</td><td class='mono'>4</td><td class='mono'>1220</td><td class='mono'></td><td>VENCE/% TAX/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSD1M</td><td>NUMERIC</td><td class='mono'>1221</td><td class='mono'>2</td><td class='mono'>1222</td><td class='mono'></td><td>DATE 1 MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSD1D</td><td>NUMERIC</td><td class='mono'>1223</td><td class='mono'>2</td><td class='mono'>1224</td><td class='mono'></td><td>DATE 1 DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSD1Y</td><td>NUMERIC</td><td class='mono'>1225</td><td class='mono'>4</td><td class='mono'>1228</td><td class='mono'></td><td>DATE 1 YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSD2M</td><td>NUMERIC</td><td class='mono'>1229</td><td class='mono'>2</td><td class='mono'>1230</td><td class='mono'></td><td>DATE 2 MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSD2D</td><td>NUMERIC</td><td class='mono'>1231</td><td class='mono'>2</td><td class='mono'>1232</td><td class='mono'></td><td>DATE 2 DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSD2Y</td><td>NUMERIC</td><td class='mono'>1233</td><td class='mono'>4</td><td class='mono'>1236</td><td class='mono'></td><td>DATE 2 YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSMNF</td><td>CHARACTER</td><td class='mono'>1237</td><td class='mono'>1</td><td class='mono'>1237</td><td class='mono'></td><td>MONEY LAUNDERING</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSIMG</td><td>CHARACTE</td><td class='mono'>1238</td><td class='mono'>50</td><td class='mono'>1287</td><td class='mono'></td><td>IMAGEN KEY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSUNR</td><td>CHARACTE</td><td class='mono'>1288</td><td class='mono'>35</td><td class='mono'>1322</td><td class='mono'></td><td>UNIQUE REFERENCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSLMM</td><td>NUMERIC</td><td class='mono'>1323</td><td class='mono'>2</td><td class='mono'>1324</td><td class='mono'></td><td>LAST MAINT/MM</td><td>ultima mantención</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSLMD</td><td>NUMERIC</td><td class='mono'>1325</td><td class='mono'>2</td><td class='mono'>1326</td><td class='mono'></td><td>LAST MAINT/DD</td><td>ultima mantención</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSLMY</td><td>NUMERIC</td><td class='mono'>1327</td><td class='mono'>4</td><td class='mono'>1330</td><td class='mono'></td><td>LAST MAINT/YY</td><td>ultima mantención</td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSLMT</td><td>TIMESTAM</td><td class='mono'>1331</td><td class='mono'>26</td><td class='mono'>1356</td><td class='mono'></td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CUSLMU</td><td>CHARACTE</td><td class='mono'>1357</td><td class='mono'>10</td><td class='mono'>1366</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[CUSCUN] 176879 | 159172
+[CUSIDN] 45487482 | 763818446
+[CUSTID] RUT | RUT
+[CUSPID] CL | CL | select cusinc, cuscun, acmacc from intcyfiles/acmst,intcyfiles/cumst
+[CUSIDF] where acmsts &lt;&gt; &#x27;A&#x27; and
+[CUSPIF] acmcun in (select cuscun from intcyfiles/cumst where
+[CUSID3] cussts = &#x27;2&#x27;)
+[CUSPI4] CUSSTS: CUSTOMER STATUS
+[CUSLGT] 2 | 1 | 1 | INACTIVO
+[CUSSTF] 3: Empleado | (Ver Ayuda) | 2 | ACTIVO
+[CUSSHN] WHITE, CLAUDIO ALFREDO | INMOBILIARIA ARBOLEDA SPA | 3 | Lista Negra
+[CUSSTS] 2 | 2 | ..cion =======&gt; | 4 | Fallecido
+[CUSNA1] CLAUDIO ALFREDO WHITE GALLARDO | INMOBILIARIA ARBOLEDA SPA | 5 | Bloqueado (permite realizar pagos)
+[CUSNA2] POLONIA 260 DEPA 202 | CHRISTIENSEN 807 | 6 | BLOQUEO TOTAL
+[CUSNA4] Rel. con el banco (HP:15.07.2022)
+[CUSCTY] SANTIAGO | SANTIAGO
+[CUSCTR] CL | CL
+[CUSCCS] CL | CL
+[CUSSEX] M | S
+[CUSMST] 1
+[CUSNSO] 0 | 0
+[CUSILV] 0 | 0 | HP: 13/05/2019
+[CUSRLV] A | A
+[CUSLIF] S | S
+[CUSTAX] 1 | 1
+[CUSTX1] N | N
+[CUSTX3] R | R
+[CUSTX4] N | N
+[CUSTX5] N | N
+[CUSTX7] 2022-07-25 00:00:00
+[CUSBDM] 9 | 10
+[CUSBDD] 9 | 20
+[CUSBDY] 1956 | 2014
+[CUSIDM] 5 | 11
+[CUSIDD] 31 | 11
+[CUSIDY] 2017 | 2014
+[CUSLAM] 0 | 0
+[CUSLAD] 0 | 0
+[CUSLAY] 0 | 0
+[CUSMAM] 0 | 0
+[CUSMAD] 0 | 0
+[CUSMAY] 0 | 0
+[CUSEDL] 9999 | EPJ
+[CUSINC] 125 | 122 | (HP)
+[CUSBUC] N/D | 52 | (HP)
+[CUSSOI] 90 | 90
+[CUSCOB] CL | CL
+[CUSRSL] SC | A5 | HP
+[CUSGEC] CL | CL
+[CUSOFC] 6032 | 4676
+[CUSOF2] 0001 | 0001
+[CUSUC1] N/D | 01
+[CUSUC3] (HP)  (Personalidad Deudor)
+[CUSUC4] N/D | 1 | (HP) CUSUC4, vinculado con CUSBUC
+[CUSUC5] PPFD | EPJ
+[CUSUC8] 8217 | 8217
+[CUSUC9] N/D | N/D
+[CUSTYP] R | R
+[CUSGRP] 0 | 0
+[CUSBRN] 1 | 1
+[CUSHPN] 979574119 | 1
+[CUSPHN] 1 | 68441980
+[CUSPH1] 979574119 | 1
+[CUSFAX] 0 | 0
+[CUSFNA] CLAUDIO | INMOBILIARIA ARBOLEDA SPA
+[CUSLN1] WHITE
+[CUSLN2] GALLARDO
+[CUSFN2] ALFREDO
+[CUSFL2] 2 | 2
+[CUSFL6] N | N
+[CUSFL7] 6
+[CUSIAD] CAWHITECL@GMAIL.COM | Correo elec | CUMAD.CUMIAD (Vinculado)
+[CUSSUC] HP: DLB500 | (Clasificación Devengo)
+[CUSDIB] 0 | 0
+[CUSPPA] 0 | 0
+[CUSPAR] 0 | 0
+[CUSCSL] 0 | 0
+[CUSBRA] 1 | 1
+[CUSRAM] 0 | 11 | (HP)
+[CUSRAD] 0 | 6 | (HP)
+[CUSRAY] 0 | 2017 | (HP)
+[CUSSST] (HP: Oct 2022)
+[CUSIEM] 0 | 10
+[CUSIED] 0 | 20
+[CUSIEY] 0 | 2014
+[CUSREM] 0 | 0
+[CUSRED] 0 | 0
+[CUSREY] 0 | 0
+[CUSTTX] 5 | 5
+[CUSETX] 0 | 0
+[CUSETM] 0 | 0
+[CUSETD] 0 | 0
+[CUSETY] 0 | 0
+[CUSD1M] 5 | 11
+[CUSD1D] 31 | 11
+[CUSD1Y] 2017 | 2014
+[CUSD2M] 0 | 0
+[CUSD2D] 0 | 0
+[CUSD2Y] 0 | 0
+[CUSLMM] 5 | 9
+[CUSLMD] 31 | 22
+[CUSLMY] 2017 | 2015
+[CUSLMT] 2017-05-31-10.39.22.337000 | 2015-09-22-13.48.59.800000
+[CUSLMU] MIGRACION | MIGRACION</div></body></html>

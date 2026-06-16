@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>WRKDAP1</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>WRKDAP1</h1>
+<div class='meta'><b>Descripción:</b> Archivo Base para info de DJ 1890 DAP<br><b>N.º de campos:</b> 33</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>WRKANO</td><td>NUMERIC</td><td class='mono'>1</td><td class='mono'>4</td><td class='mono'>4</td><td class='mono'></td><td>Año Info</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>WRKBRN</td><td>NUMERIC</td><td class='mono'>5</td><td class='mono'>4</td><td class='mono'>8</td><td class='mono'></td><td>Sucursal</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>WRKCCY</td><td>CHARACTER</td><td class='mono'>9</td><td class='mono'>3</td><td class='mono'>11</td><td class='mono'></td><td>Moneda</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKCCYR</td><td>CHARACTER</td><td class='mono'>12</td><td class='mono'>1</td><td class='mono'>12</td><td class='mono'></td><td>Reajustable</td><td>R= Reajustable</td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKACC</td><td>NUMERIC</td><td class='mono'>13</td><td class='mono'>12</td><td class='mono'>24</td><td class='mono'></td><td>Operacion</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKFEI</td><td>NUMERIC</td><td class='mono'>25</td><td class='mono'>8</td><td class='mono'>32</td><td class='mono'></td><td>Fecha Inicio</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKFEV</td><td>NUMERIC</td><td class='mono'>33</td><td class='mono'>8</td><td class='mono'>40</td><td class='mono'></td><td>Fecha Vcto</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKPRI</td><td>NUMERIC</td><td class='mono'>41</td><td class='mono'>15</td><td class='mono'>55</td><td class='mono'>2</td><td>Capital</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKIAL</td><td>NUMERIC</td><td class='mono'>56</td><td class='mono'>15</td><td class='mono'>70</td><td class='mono'>2</td><td>Interes</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKRTE</td><td>NUMERIC</td><td class='mono'>71</td><td class='mono'>9</td><td class='mono'>79</td><td class='mono'>6</td><td>Tasa</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKCUN</td><td>NUMERIC</td><td class='mono'>80</td><td class='mono'>9</td><td class='mono'>88</td><td class='mono'></td><td>N.cliente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKIDN</td><td>CHARACTER</td><td class='mono'>89</td><td class='mono'>25</td><td class='mono'>113</td><td class='mono'></td><td>RUT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKNA1</td><td>CHARACTER</td><td class='mono'>114</td><td class='mono'>60</td><td class='mono'>173</td><td class='mono'></td><td>Nombre</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKMA1</td><td>CHARACTER</td><td class='mono'>174</td><td class='mono'>60</td><td class='mono'>233</td><td class='mono'></td><td>Direccion 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKMA2</td><td>CHARACTER</td><td class='mono'>234</td><td class='mono'>60</td><td class='mono'>293</td><td class='mono'></td><td>Direccion 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKMA3</td><td>CHARACTER</td><td class='mono'>294</td><td class='mono'>60</td><td class='mono'>353</td><td class='mono'></td><td>Direccion 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKMA4</td><td>CHARACTER</td><td class='mono'>354</td><td class='mono'>60</td><td class='mono'>413</td><td class='mono'></td><td>Direccion 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKCOM</td><td>CHARACTER</td><td class='mono'>414</td><td class='mono'>45</td><td class='mono'>458</td><td class='mono'></td><td>Comuna</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKCTY</td><td>CHARACTER</td><td class='mono'>459</td><td class='mono'>35</td><td class='mono'>493</td><td class='mono'></td><td>Ciudad</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKPRV</td><td>CHARACTER</td><td class='mono'>494</td><td class='mono'>45</td><td class='mono'>538</td><td class='mono'></td><td>Provincia</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKRGN</td><td>CHARACTER</td><td class='mono'>539</td><td class='mono'>45</td><td class='mono'>583</td><td class='mono'></td><td>Region</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKPRO</td><td>CHARACTER</td><td class='mono'>584</td><td class='mono'>4</td><td class='mono'>587</td><td class='mono'></td><td>Producto</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKCCS</td><td>CHARACTER</td><td class='mono'>588</td><td class='mono'>4</td><td class='mono'>591</td><td class='mono'></td><td>Nacionalidad</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKPID</td><td>CHARACTER</td><td class='mono'>592</td><td class='mono'>4</td><td class='mono'>595</td><td class='mono'></td><td>Pais residencia</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKLGT</td><td>CHARACTER</td><td class='mono'>596</td><td class='mono'>1</td><td class='mono'>596</td><td class='mono'></td><td>1-Empresa 2-Persona</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKTC1</td><td>NUMERIC</td><td class='mono'>597</td><td class='mono'>15</td><td class='mono'>611</td><td class='mono'>6</td><td>T/C Inicio</td><td>1= Pesos</td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKTC2</td><td>NUMERIC</td><td class='mono'>612</td><td class='mono'>15</td><td class='mono'>626</td><td class='mono'>6</td><td>T/C Fin</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKUF1</td><td>NUMERIC</td><td class='mono'>627</td><td class='mono'>15</td><td class='mono'>641</td><td class='mono'>6</td><td>UF Inicio</td><td>Es el valor de la UF de la fecha de inicio / fecha vencimiento del DAP</td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKUF2</td><td>NUMERIC</td><td class='mono'>642</td><td class='mono'>15</td><td class='mono'>656</td><td class='mono'>6</td><td>UF Fin</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKKPE</td><td>NUMERIC</td><td class='mono'>657</td><td class='mono'>15</td><td class='mono'>671</td><td class='mono'></td><td>Capital Pesos</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKPPE</td><td>NUMERIC</td><td class='mono'>672</td><td class='mono'>15</td><td class='mono'>686</td><td class='mono'></td><td>Percibido Pesos</td><td>¡= Capital + intereses</td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKFAC</td><td>NUMERIC</td><td class='mono'>687</td><td class='mono'>9</td><td class='mono'>695</td><td class='mono'>6</td><td>Factor</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>WRKINT</td><td>NUMERIC</td><td class='mono'>696</td><td class='mono'>15</td><td class='mono'>710</td><td class='mono'></td><td>Interes Real</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[WRKANO] 2018
+[WRKBRN] 1
+[WRKCCY] CLP
+[WRKACC] 110000101686
+[WRKFEI] 20180105
+[WRKFEV] 20180205
+[WRKPRI] 1382760
+[WRKIAL] 2143
+[WRKRTE] 0.15498
+[WRKCUN] 500152
+[WRKIDN] 690120
+[WRKNA1] MARIO SCHEINER EMILFORK
+[WRKMA1] PROVIDENCIA 1765 DEPARTAMENTO 1006
+[WRKMA2] PROVIDENCIA SANTIAGO
+[WRKMA3] SANTIAGO CHILE
+[WRKCOM] PROVIDENCIA
+[WRKCTY] SANTIAGO
+[WRKRGN] SANTIAGO
+[WRKPRO] DP02
+[WRKCCS] CL
+[WRKPID] CL
+[WRKLGT] 2
+[WRKTC1] 1
+[WRKTC2] 1
+[WRKUF1] 26802.46
+[WRKUF2] 26829.27
+[WRKKPE] 1382760
+[WRKPPE] 1384903
+[WRKFAC] 1.001
+[WRKINT] 760</div></body></html>

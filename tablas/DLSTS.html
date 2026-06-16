@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>DLSTS</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>DLSTS</h1>
+<div class='meta'><b>Descripción:</b> Tabla<br><b>N.º de campos:</b> 56</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>DLSACD</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>APLIC CODE</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>DLSACC</td><td>DECIMAL</td><td class='mono'>3</td><td class='mono'>12</td><td class='mono'>14</td><td class='mono'></td><td>ACCNT NUMBER</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>DLSNDR</td><td>DECIMAL</td><td class='mono'>15</td><td class='mono'>9</td><td class='mono'>23</td><td class='mono'></td><td>REFER NUMBER</td><td></td></tr>
+<tr><td class='mono'>4</td><td class='mono'>DLSOST</td><td>CHARACTER</td><td class='mono'>24</td><td class='mono'>1</td><td class='mono'>24</td><td class='mono'></td><td>OLD STATUS</td><td></td></tr>
+<tr><td class='mono'>5</td><td class='mono'>DLSOBK</td><td>CHARACTER</td><td class='mono'>25</td><td class='mono'>2</td><td class='mono'>26</td><td class='mono'></td><td>OLD BANK</td><td></td></tr>
+<tr><td class='mono'>6</td><td class='mono'>DLSOBR</td><td>DECIMAL</td><td class='mono'>27</td><td class='mono'>4</td><td class='mono'>30</td><td class='mono'></td><td>OLD BRANCH</td><td></td></tr>
+<tr><td class='mono'>7</td><td class='mono'>DLSOGL</td><td>DECIMAL</td><td class='mono'>31</td><td class='mono'>16</td><td class='mono'>46</td><td class='mono'></td><td>OLD G/L ACC</td><td></td></tr>
+<tr><td class='mono'>8</td><td class='mono'>DLSOTY</td><td>CHARACTER</td><td class='mono'>47</td><td class='mono'>4</td><td class='mono'>50</td><td class='mono'></td><td>OLD TYPE</td><td></td></tr>
+<tr><td class='mono'>9</td><td class='mono'>DLSOPR</td><td>CHARACTER</td><td class='mono'>51</td><td class='mono'>4</td><td class='mono'>54</td><td class='mono'></td><td>OLD PRODUCT</td><td></td></tr>
+<tr><td class='mono'>10</td><td class='mono'>DLSNST</td><td>CHARACTER</td><td class='mono'>55</td><td class='mono'>1</td><td class='mono'>55</td><td class='mono'></td><td>NEW STATUS</td><td></td></tr>
+<tr><td class='mono'>11</td><td class='mono'>DLSNBK</td><td>CHARACTER</td><td class='mono'>56</td><td class='mono'>2</td><td class='mono'>57</td><td class='mono'></td><td>NEW BANK</td><td></td></tr>
+<tr><td class='mono'>12</td><td class='mono'>DLSNBR</td><td>DECIMAL</td><td class='mono'>58</td><td class='mono'>4</td><td class='mono'>61</td><td class='mono'></td><td>NEW BRANCH</td><td></td></tr>
+<tr><td class='mono'>13</td><td class='mono'>DLSNGL</td><td>DECIMAL</td><td class='mono'>62</td><td class='mono'>16</td><td class='mono'>77</td><td class='mono'></td><td>NEW G/L ACC</td><td></td></tr>
+<tr><td class='mono'>14</td><td class='mono'>DLSNTY</td><td>CHARACTER</td><td class='mono'>78</td><td class='mono'>4</td><td class='mono'>81</td><td class='mono'></td><td>NEW TYPE</td><td></td></tr>
+<tr><td class='mono'>15</td><td class='mono'>DLSNPR</td><td>CHARACTER</td><td class='mono'>82</td><td class='mono'>4</td><td class='mono'>85</td><td class='mono'></td><td>NEW PRODUCT</td><td></td></tr>
+<tr><td class='mono'>16</td><td class='mono'>DLSBTH</td><td>DECIMAL</td><td class='mono'>86</td><td class='mono'>5</td><td class='mono'>90</td><td class='mono'></td><td>BATCH</td><td></td></tr>
+<tr><td class='mono'>17</td><td class='mono'>DLSEVN</td><td>CHARACTER</td><td class='mono'>91</td><td class='mono'>4</td><td class='mono'>94</td><td class='mono'></td><td>EVENTO/CAUSAL</td><td></td></tr>
+<tr><td class='mono'>18</td><td class='mono'>DLSDLC</td><td>CHARACTER</td><td class='mono'>95</td><td class='mono'>1</td><td class='mono'>95</td><td class='mono'></td><td>CONDITION LOANS</td><td></td></tr>
+<tr><td class='mono'>19</td><td class='mono'>DLSSUS</td><td>CHARACTER</td><td class='mono'>96</td><td class='mono'>1</td><td class='mono'>96</td><td class='mono'></td><td>SUSPENDED INTEREST</td><td></td></tr>
+<tr><td class='mono'>20</td><td class='mono'>DLSDTM</td><td>NUMERIC</td><td class='mono'>97</td><td class='mono'>2</td><td class='mono'>98</td><td class='mono'></td><td>DATE MM</td><td></td></tr>
+<tr><td class='mono'>21</td><td class='mono'>DLSDTD</td><td>NUMERIC</td><td class='mono'>99</td><td class='mono'>2</td><td class='mono'>100</td><td class='mono'></td><td>DATE DD</td><td></td></tr>
+<tr><td class='mono'>22</td><td class='mono'>DLSDTY</td><td>NUMERIC</td><td class='mono'>101</td><td class='mono'>4</td><td class='mono'>104</td><td class='mono'></td><td>DATE YY</td><td></td></tr>
+<tr><td class='mono'>23</td><td class='mono'>DLSUSR</td><td>CHARACTER</td><td class='mono'>105</td><td class='mono'>10</td><td class='mono'>114</td><td class='mono'></td><td>USER ID</td><td></td></tr>
+<tr><td class='mono'>24</td><td class='mono'>DLSTIM</td><td>TIMESTAMP</td><td class='mono'>115</td><td class='mono'>26</td><td class='mono'>140</td><td class='mono'>6</td><td>TIME STAMP</td><td></td></tr>
+<tr><td class='mono'>25</td><td class='mono'>DLSOFC</td><td>CHARACTER</td><td class='mono'>141</td><td class='mono'>4</td><td class='mono'>144</td><td class='mono'></td><td>OFFICER CODE</td><td></td></tr>
+<tr><td class='mono'>26</td><td class='mono'>DLSUS1</td><td>CHARACTER</td><td class='mono'>145</td><td class='mono'>4</td><td class='mono'>148</td><td class='mono'></td><td>USER CODE</td><td></td></tr>
+<tr><td class='mono'>27</td><td class='mono'>DLSUS2</td><td>CHARACTER</td><td class='mono'>149</td><td class='mono'>4</td><td class='mono'>152</td><td class='mono'></td><td>USER CODE</td><td>Valores posibles están definidos en tabla CNOFC / FM</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSDXM</td><td>NUMERIC</td><td class='mono'>153</td><td class='mono'>2</td><td class='mono'>154</td><td class='mono'></td><td>DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSDXD</td><td>NUMERIC</td><td class='mono'>155</td><td class='mono'>2</td><td class='mono'>156</td><td class='mono'></td><td>DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSDXY</td><td>NUMERIC</td><td class='mono'>157</td><td class='mono'>4</td><td class='mono'>160</td><td class='mono'></td><td>DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSFLG</td><td>CHARACTER</td><td class='mono'>161</td><td class='mono'>1</td><td class='mono'>161</td><td class='mono'></td><td>FLAG USER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSRPT</td><td>CHARACTER</td><td class='mono'>162</td><td class='mono'>1</td><td class='mono'>162</td><td class='mono'></td><td>REPORT FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSSUC</td><td>CHARACTER</td><td class='mono'>163</td><td class='mono'>2</td><td class='mono'>164</td><td class='mono'></td><td>SUBJETIVE CALIF</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSOBC</td><td>CHARACTER</td><td class='mono'>165</td><td class='mono'>2</td><td class='mono'>166</td><td class='mono'></td><td>OBJETIVE CALIF</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSCF1</td><td>CHARACTER</td><td class='mono'>167</td><td class='mono'>2</td><td class='mono'>168</td><td class='mono'></td><td>CALIF 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSCF2</td><td>CHARACTER</td><td class='mono'>169</td><td class='mono'>2</td><td class='mono'>170</td><td class='mono'></td><td>CALIF 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSCF3</td><td>CHARACTER</td><td class='mono'>171</td><td class='mono'>2</td><td class='mono'>172</td><td class='mono'></td><td>CALIF 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSCF4</td><td>CHARACTER</td><td class='mono'>173</td><td class='mono'>2</td><td class='mono'>174</td><td class='mono'></td><td>CALIF 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSRE1</td><td>CHARACTER</td><td class='mono'>175</td><td class='mono'>35</td><td class='mono'>209</td><td class='mono'></td><td>REF 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSRE2</td><td>CHARACTER</td><td class='mono'>210</td><td class='mono'>35</td><td class='mono'>244</td><td class='mono'></td><td>REF 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSRE3</td><td>CHARACTER</td><td class='mono'>245</td><td class='mono'>35</td><td class='mono'>279</td><td class='mono'></td><td>REF 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSRE4</td><td>CHARACTER</td><td class='mono'>280</td><td class='mono'>35</td><td class='mono'>314</td><td class='mono'></td><td>REF 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSRE5</td><td>CHARACTER</td><td class='mono'>315</td><td class='mono'>35</td><td class='mono'>349</td><td class='mono'></td><td>REF 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSRE6</td><td>CHARACTER</td><td class='mono'>350</td><td class='mono'>35</td><td class='mono'>384</td><td class='mono'></td><td>REF 6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSRE7</td><td>CHARACTER</td><td class='mono'>385</td><td class='mono'>35</td><td class='mono'>419</td><td class='mono'></td><td>REF 7</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSRE8</td><td>CHARACTER</td><td class='mono'>420</td><td class='mono'>35</td><td class='mono'>454</td><td class='mono'></td><td>REF 8</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSRE9</td><td>CHARACTER</td><td class='mono'>455</td><td class='mono'>35</td><td class='mono'>489</td><td class='mono'></td><td>REF 9</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSREA</td><td>CHARACTER</td><td class='mono'>490</td><td class='mono'>35</td><td class='mono'>524</td><td class='mono'></td><td>REF 10</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSREM</td><td>CHARACTER</td><td class='mono'>525</td><td class='mono'>256</td><td class='mono'>780</td><td class='mono'></td><td>REMARKS</td><td></td></tr>
+<tr><td class='mono'>RCTRNL1</td><td class='mono'>RCTBNK,RCTCCY,RCTGLN,RCTACC,RCTCKN</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td>L/View of RCTRN by BANK/CCY/GL/ACCOUNT/REFERENCE</td></tr>
+<tr><td class='mono'>RCTRNL2</td><td class='mono'>RCTBNK,RCTCCY,RCTGLN,RCTACC,RCTBDC,RCTBDY,RCTBDM,RCTBDD,RCTCKN</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td>L/View of RCTRN by BANK/CCY/GL/ACCOUNT/BTHDTE/REFE</td></tr>
+<tr><td class='mono'>RCTRNL3</td><td class='mono'>RCTACC</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td>Ordenado por Nº de referencia</td></tr>
+<tr><td class='mono'>RCTRNL4</td><td class='mono'>RCTAMT</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td>Ordenado por Monto</td></tr>
+<tr><td class='mono'>RCTRNL5</td><td class='mono'>RCTCKN</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td>Ordenado por Número de Cheque</td></tr>
+<tr><td class='mono'>RCTRNL6</td><td class='mono'>RCTBNK,RCTCCY,RCTGLN,RCTCKN,RCTACC</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td>L/View of RCTRN by BANK/CCY/GL/REFERENCE/ACCOUNT</td></tr>
+<tr><td class='mono'>Fec.UPD</td><td class='mono'>19.10.05</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+</tbody></table></body></html>

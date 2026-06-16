@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>UNCOL</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>UNCOL</h1>
+<div class='meta'><b>Descripción:</b> Archivo de retenciones<br><b>N.º de campos:</b> 40</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>UNCBNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK NUMBER</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>UNCBRN</td><td>DECIMAL</td><td class='mono'>3</td><td class='mono'>4</td><td class='mono'>6</td><td class='mono'></td><td>BRANCH NUMBER</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>UNCACC</td><td>DECIMAL</td><td class='mono'>7</td><td class='mono'>12</td><td class='mono'>18</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCFLG</td><td>CHARACTER</td><td class='mono'>19</td><td class='mono'>1</td><td class='mono'>19</td><td class='mono'></td><td>UNCOLL FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCAMN</td><td>DECIMAL</td><td class='mono'>20</td><td class='mono'>15</td><td class='mono'>34</td><td class='mono'>2</td><td>UNCOLL AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCCKN</td><td>DECIMAL</td><td class='mono'>35</td><td class='mono'>11</td><td class='mono'>45</td><td class='mono'></td><td>UNCOLL CHECK NO.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCF02</td><td>CHARACTER</td><td class='mono'>46</td><td class='mono'>1</td><td class='mono'>46</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCDYS</td><td>NUMERIC</td><td class='mono'>47</td><td class='mono'>5</td><td class='mono'>51</td><td class='mono'></td><td>UNCOLL DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCRDM</td><td>NUMERIC</td><td class='mono'>52</td><td class='mono'>2</td><td class='mono'>53</td><td class='mono'></td><td>UNCOLL RUN/DTE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCRDD</td><td>NUMERIC</td><td class='mono'>54</td><td class='mono'>2</td><td class='mono'>55</td><td class='mono'></td><td>UNCOLL RUN/DTE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCRDY</td><td>NUMERIC</td><td class='mono'>56</td><td class='mono'>4</td><td class='mono'>59</td><td class='mono'></td><td>UNCOLL RUN/DTE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCMDM</td><td>NUMERIC</td><td class='mono'>60</td><td class='mono'>2</td><td class='mono'>61</td><td class='mono'></td><td>UNCOLL MAT/DTE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCMDD</td><td>NUMERIC</td><td class='mono'>62</td><td class='mono'>2</td><td class='mono'>63</td><td class='mono'></td><td>UNCOLL MAT/DTE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCMDY</td><td>NUMERIC</td><td class='mono'>64</td><td class='mono'>4</td><td class='mono'>67</td><td class='mono'></td><td>UNCOLL MAT/DTE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCCUN</td><td>DECIMAL</td><td class='mono'>68</td><td class='mono'>9</td><td class='mono'>76</td><td class='mono'></td><td>CUSTOMER NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCRSN</td><td>CHARACTER</td><td class='mono'>77</td><td class='mono'>60</td><td class='mono'>136</td><td class='mono'></td><td>UNCOLL REASON</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCSTA</td><td>CHARACTER</td><td class='mono'>137</td><td class='mono'>1</td><td class='mono'>137</td><td class='mono'></td><td>RECORD STATUS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCCON</td><td>CHARACTER</td><td class='mono'>138</td><td class='mono'>4</td><td class='mono'>141</td><td class='mono'></td><td>CONFIRMATION NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCTEL</td><td>CHARACTER</td><td class='mono'>142</td><td class='mono'>10</td><td class='mono'>151</td><td class='mono'></td><td>TELLER CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCTSQ</td><td>DECIMAL</td><td class='mono'>152</td><td class='mono'>7</td><td class='mono'>158</td><td class='mono'></td><td>SECUENCIA DEPOSITO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCKBK</td><td>CHARACTER</td><td class='mono'>159</td><td class='mono'>4</td><td class='mono'>162</td><td class='mono'></td><td>BANK CHECK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCKBR</td><td>CHARACTER</td><td class='mono'>163</td><td class='mono'>4</td><td class='mono'>166</td><td class='mono'></td><td>BRANCH/LOC CHECK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCKAC</td><td>CHARACTER</td><td class='mono'>167</td><td class='mono'>25</td><td class='mono'>191</td><td class='mono'></td><td>ACCOUNT CHECK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCDES</td><td>CHARACTER</td><td class='mono'>192</td><td class='mono'>4</td><td class='mono'>195</td><td class='mono'></td><td>DESTINATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCCRM</td><td>CHARACTER</td><td class='mono'>196</td><td class='mono'>4</td><td class='mono'>199</td><td class='mono'></td><td>CENTER PROCESS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCOBK</td><td>CHARACTER</td><td class='mono'>200</td><td class='mono'>2</td><td class='mono'>201</td><td class='mono'></td><td>BANK ORIGEN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCOBR</td><td>DECIMAL</td><td class='mono'>202</td><td class='mono'>4</td><td class='mono'>205</td><td class='mono'></td><td>BRANCH ORIGEN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCHTY</td><td>CHARACTER</td><td class='mono'>206</td><td class='mono'>4</td><td class='mono'>209</td><td class='mono'></td><td>HOLD TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCNRM</td><td>DECIMAL</td><td class='mono'>210</td><td class='mono'>12</td><td class='mono'>221</td><td class='mono'></td><td>REFERENCE NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCUSR</td><td>CHARACTER</td><td class='mono'>222</td><td class='mono'>4</td><td class='mono'>225</td><td class='mono'></td><td>USER CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCFUS</td><td>CHARACTER</td><td class='mono'>226</td><td class='mono'>1</td><td class='mono'>226</td><td class='mono'></td><td>USER FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCCKM</td><td>CHARACTER</td><td class='mono'>227</td><td class='mono'>1</td><td class='mono'>227</td><td class='mono'></td><td>CHECK MARK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCCNL</td><td>CHARACTER</td><td class='mono'>228</td><td class='mono'>2</td><td class='mono'>229</td><td class='mono'></td><td>CANAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCUNR</td><td>CHARACTER</td><td class='mono'>230</td><td class='mono'>35</td><td class='mono'>264</td><td class='mono'></td><td>UNIQUE REFERENCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCIMG</td><td>CHARACTER</td><td class='mono'>265</td><td class='mono'>50</td><td class='mono'>314</td><td class='mono'></td><td>UNIQUE REFERENCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCLMM</td><td>NUMERIC</td><td class='mono'>315</td><td class='mono'>2</td><td class='mono'>316</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCLMD</td><td>NUMERIC</td><td class='mono'>317</td><td class='mono'>2</td><td class='mono'>318</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCLMY</td><td>NUMERIC</td><td class='mono'>319</td><td class='mono'>4</td><td class='mono'>322</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCLMT</td><td>TIMESTAMP</td><td class='mono'>323</td><td class='mono'>26</td><td class='mono'>348</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>UNCLMU</td><td>CHARACTER</td><td class='mono'>349</td><td class='mono'>10</td><td class='mono'>358</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[UNCLMY] Y | 5 | 2 | 2017 | 0 | 5 | 3 | 2017 | 0 | 0 | 0 | 0 | 0 | G | 0 | 0 | 10 | 26 | 2017 | 0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | 0 | 267656 | 0 | CCTE | 10 | 26 | 2016 | 0 | -992381 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 992381 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 1 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 267656 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0</div></body></html>

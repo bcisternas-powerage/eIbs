@@ -1,0 +1,429 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>DEALS</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>DEALS</h1>
+<div class='meta'><b>Descripción:</b> Préstamos (Efectivamente Adeudado)<br><b>N.º de campos:</b> 342</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'></td><td class='mono'>DEABNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK NUMBER</td><td>Número del Banco</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEABRN</td><td>DECIMAL</td><td class='mono'>3</td><td class='mono'>4</td><td class='mono'>6</td><td class='mono'></td><td>BRANCH NUMBER</td><td>Número Sucursal</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACCY</td><td>CHARACTER</td><td class='mono'>7</td><td class='mono'>3</td><td class='mono'>9</td><td class='mono'></td><td>CURRENCY</td><td>Moneda Contable</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAGLN</td><td>DECIMAL</td><td class='mono'>10</td><td class='mono'>16</td><td class='mono'>25</td><td class='mono'></td><td>G/L NUMBER</td><td>Cuenta Contable Principal IBS</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAACC</td><td>DECIMAL</td><td class='mono'>26</td><td class='mono'>12</td><td class='mono'>37</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td>Número Operación/Cuenta</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATRF</td><td>CHARACTER</td><td class='mono'>38</td><td class='mono'>1</td><td class='mono'>38</td><td class='mono'></td><td>TODAYS ROLL/FLG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPBR</td><td>DECIMAL</td><td class='mono'>39</td><td class='mono'>9</td><td class='mono'>47</td><td class='mono'>6</td><td>PREV/BASE RATE</td><td>tasa base/Spread Anterior</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASDM</td><td>NUMERIC</td><td class='mono'>48</td><td class='mono'>2</td><td class='mono'>49</td><td class='mono'></td><td>STARTING DATE MM</td><td>Fecha partida</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASDD</td><td>NUMERIC</td><td class='mono'>50</td><td class='mono'>2</td><td class='mono'>51</td><td class='mono'></td><td>STARTING DATE DD</td><td>Fecha partida</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASDY</td><td>NUMERIC</td><td class='mono'>52</td><td class='mono'>4</td><td class='mono'>55</td><td class='mono'></td><td>STARTING DATE YY</td><td>Fecha partida</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAMAM</td><td>NUMERIC</td><td class='mono'>56</td><td class='mono'>2</td><td class='mono'>57</td><td class='mono'></td><td>MATURITY DATE MM</td><td>Vencimiento (Original ó de Prórroga)</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAMAD</td><td>NUMERIC</td><td class='mono'>58</td><td class='mono'>2</td><td class='mono'>59</td><td class='mono'></td><td>MATURITY DATE DD</td><td>Vencimiento (Original ó de Prórroga)</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAMAY</td><td>NUMERIC</td><td class='mono'>60</td><td class='mono'>4</td><td class='mono'>63</td><td class='mono'></td><td>MATURITY DATE YY</td><td>Vencimiento (Original ó de Prórroga)</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARTE</td><td>DECIMAL</td><td class='mono'>64</td><td class='mono'>9</td><td class='mono'>72</td><td class='mono'>6</td><td>RATE</td><td>tasa  interés
+Spread cuando la op.tiene tasa variable.</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATRM</td><td>DECIMAL</td><td class='mono'>73</td><td class='mono'>5</td><td class='mono'>77</td><td class='mono'></td><td>TERM NUMBER</td><td>numero de termino (Cantidad de días del crédito. (Plazo. Fec.Vcto. - Fec.Otorg.))</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATRC</td><td>CHARACTER</td><td class='mono'>78</td><td class='mono'>1</td><td class='mono'>78</td><td class='mono'></td><td>TERM CODE</td><td>codigo de termino
+D=Días
+M=Meses 
+Y=Años 
+(Si campo anterior es Días, aquí = D, ...)</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPRI</td><td>DECIMAL</td><td class='mono'>79</td><td class='mono'>15</td><td class='mono'>93</td><td class='mono'>2</td><td>PRINCIPAL BAL</td><td>monto balance principal, saldo en la moneda de la operación</td></tr>
+<tr><td class='mono'></td><td class='mono'>st</td><td>DECIMAL</td><td class='mono'>94</td><td class='mono'>15</td><td class='mono'>108</td><td class='mono'>2</td><td>ORIGINAL AMNT</td><td>cantidad original, monto original del préstamo</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALCM</td><td>NUMERIC</td><td class='mono'>109</td><td class='mono'>2</td><td class='mono'>110</td><td class='mono'></td><td>LST/CALC DATE MM</td><td>ultima fecha de calculo</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALCD</td><td>NUMERIC</td><td class='mono'>111</td><td class='mono'>2</td><td class='mono'>112</td><td class='mono'></td><td>LST/CALC DATE DD</td><td>ultima fecha de calculo</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALCY</td><td>NUMERIC</td><td class='mono'>113</td><td class='mono'>4</td><td class='mono'>116</td><td class='mono'></td><td>LST/CALC DATE YY</td><td>ultima fecha de calculo</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARRC</td><td>CHARACTER</td><td class='mono'>117</td><td class='mono'>2</td><td class='mono'>118</td><td class='mono'></td><td>RISK/RAT CODE</td><td>Código Tasa Riesgo</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAODM</td><td>NUMERIC</td><td class='mono'>119</td><td class='mono'>2</td><td class='mono'>120</td><td class='mono'></td><td>OPENING DATE MM</td><td>fecha de apertura</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAODD</td><td>NUMERIC</td><td class='mono'>121</td><td class='mono'>2</td><td class='mono'>122</td><td class='mono'></td><td>OPENING DATE DD</td><td>fecha de apertura</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAODY</td><td>NUMERIC</td><td class='mono'>123</td><td class='mono'>4</td><td class='mono'>126</td><td class='mono'></td><td>OPENING DATE YY</td><td>fecha de apertura</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIAL</td><td>DECIMAL</td><td class='mono'>127</td><td class='mono'>15</td><td class='mono'>141</td><td class='mono'>2</td><td>INT/ACC LTD</td><td>Intereses acumulados(intereses diarios)
+Saldo de Interés = DEAIAL - DEAIPL</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIAY</td><td>DECIMAL</td><td class='mono'>142</td><td class='mono'>15</td><td class='mono'>156</td><td class='mono'>2</td><td>INT/ACC YTD</td><td>Intereses acumulados del año</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAHAM</td><td>DECIMAL</td><td class='mono'>157</td><td class='mono'>15</td><td class='mono'>171</td><td class='mono'>2</td><td>HOLD AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARDM</td><td>NUMERIC</td><td class='mono'>172</td><td class='mono'>2</td><td class='mono'>173</td><td class='mono'></td><td>ROLLOVER DATE MM</td><td>PROX.PAG Mes</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARDD</td><td>NUMERIC</td><td class='mono'>174</td><td class='mono'>2</td><td class='mono'>175</td><td class='mono'></td><td>ROLLOVER DATE DD</td><td>PROX.PAG Día</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARDY</td><td>NUMERIC</td><td class='mono'>176</td><td class='mono'>4</td><td class='mono'>179</td><td class='mono'></td><td>ROLLOVER DATE YY</td><td>PROX.PAG Año</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAROR</td><td>DECIMAL</td><td class='mono'>180</td><td class='mono'>9</td><td class='mono'>188</td><td class='mono'>6</td><td>ROLLOVER RATE</td><td>Tasa Renovación</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAROC</td><td>CHARACTER</td><td class='mono'>189</td><td class='mono'>1</td><td class='mono'>189</td><td class='mono'></td><td>ROLLOVER CODE</td><td>CODIGO DE RENOVACION</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAROY</td><td>DECIMAL</td><td class='mono'>190</td><td class='mono'>3</td><td class='mono'>192</td><td class='mono'></td><td>ROLLOVER DAYS</td><td>DIAS PARA PAGO INT</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIPD</td><td>CHARACTER</td><td class='mono'>193</td><td class='mono'>3</td><td class='mono'>195</td><td class='mono'></td><td>INT/PMT CYCLE</td><td>Ciclos para Pagos intereses
+*         MAT = Pago al Vencimiento
+*         SCH = Catalogo de Pagos
+*          SC1 = Cuotas Regulares
+*         nnn = Pagos Cada nnn Días</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPPD</td><td>CHARACTER</td><td class='mono'>196</td><td class='mono'>3</td><td class='mono'>198</td><td class='mono'></td><td>PRI/PMT CYCLE</td><td>Ciclos para Pagos capital
+*         MAT = Pago al Vencimiento
+*         SCH = Catalogo de Pagos
+*         nnn = Pagos Cada nnn Días</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOFI</td><td>CHARACTER</td><td class='mono'>199</td><td class='mono'>4</td><td class='mono'>202</td><td class='mono'></td><td>OFFICER</td><td>oficial, Ejecutivo responsable otorgamiento Crédito</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATYP</td><td>CHARACTER</td><td class='mono'>203</td><td class='mono'>4</td><td class='mono'>206</td><td class='mono'></td><td>DEAL TYP</td><td>Familia Producto</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAROA</td><td>DECIMAL</td><td class='mono'>207</td><td class='mono'>15</td><td class='mono'>221</td><td class='mono'>2</td><td>ROLLOVER AMNT</td><td>Monto Renovación</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAGRC</td><td>CHARACTER</td><td class='mono'>222</td><td class='mono'>4</td><td class='mono'>225</td><td class='mono'></td><td>GEO/RISK CODE</td><td>codigo riesgo</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALPR</td><td>DECIMAL</td><td class='mono'>226</td><td class='mono'>15</td><td class='mono'>240</td><td class='mono'>2</td><td>LAST PRINCIPAL</td><td>ultimo monto principal</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALRT</td><td>DECIMAL</td><td class='mono'>241</td><td class='mono'>9</td><td class='mono'>249</td><td class='mono'>6</td><td>LAST RATE</td><td>ultima tasa</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASTS</td><td>CHARACTER</td><td class='mono'>250</td><td class='mono'>1</td><td class='mono'>250</td><td class='mono'></td><td>ACCOUNT STATUS</td><td>Estados
+*             = Activo
+*         C  = Cerrado</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAGCD</td><td>CHARACTER</td><td class='mono'>251</td><td class='mono'>4</td><td class='mono'>254</td><td class='mono'></td><td>GEO/RES CODE</td><td>codigo residencia, tabla de países</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACUN</td><td>DECIMAL</td><td class='mono'>255</td><td class='mono'>9</td><td class='mono'>263</td><td class='mono'></td><td>CUSTOMER NUMBER</td><td>numero cliente</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEADLI</td><td>CHARACTER</td><td class='mono'>264</td><td class='mono'>1</td><td class='mono'>264</td><td class='mono'></td><td>*=INT ADDED TO DLPMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARTB</td><td>CHARACTER</td><td class='mono'>265</td><td class='mono'>2</td><td class='mono'>266</td><td class='mono'></td><td>RATE TABLE</td><td>tabla de tasas</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIDY</td><td>NUMERIC</td><td class='mono'>267</td><td class='mono'>2</td><td class='mono'>268</td><td class='mono'></td><td>INT/PMNT DAY</td><td>pago intereses diario
+Fecha de Pago</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPDY</td><td>NUMERIC</td><td class='mono'>269</td><td class='mono'>2</td><td class='mono'>270</td><td class='mono'></td><td>PRI/PMNT DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACDY</td><td>NUMERIC</td><td class='mono'>271</td><td class='mono'>2</td><td class='mono'>272</td><td class='mono'></td><td>RTE/CHGE DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARPT</td><td>CHARACTER</td><td class='mono'>273</td><td class='mono'>2</td><td class='mono'>274</td><td class='mono'></td><td>REPAYMNT TYP DR/CR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAREB</td><td>CHARACTER</td><td class='mono'>275</td><td class='mono'>2</td><td class='mono'>276</td><td class='mono'></td><td>REAYPMNT BANK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARPR</td><td>DECIMAL</td><td class='mono'>277</td><td class='mono'>4</td><td class='mono'>280</td><td class='mono'></td><td>REPAYMNT BRANCH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARPC</td><td>CHARACTER</td><td class='mono'>281</td><td class='mono'>3</td><td class='mono'>283</td><td class='mono'></td><td>REPAYMNT CCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARGL</td><td>DECIMAL</td><td class='mono'>284</td><td class='mono'>16</td><td class='mono'>299</td><td class='mono'></td><td>REPAYMNT G/L</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARAC</td><td>DECIMAL</td><td class='mono'>300</td><td class='mono'>12</td><td class='mono'>311</td><td class='mono'></td><td>REPAYMNT ACCNT</td><td>Cuenta Corriente Relacionada</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIFL</td><td>CHARACTER</td><td class='mono'>312</td><td class='mono'>1</td><td class='mono'>312</td><td class='mono'></td><td>INTEREST FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIDU</td><td>DECIMAL</td><td class='mono'>313</td><td class='mono'>15</td><td class='mono'>327</td><td class='mono'>2</td><td>INTEREST DUE</td><td>monto interes pendiente</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALDY</td><td>DECIMAL</td><td class='mono'>328</td><td class='mono'>5</td><td class='mono'>332</td><td class='mono'></td><td>LAST DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALBS</td><td>DECIMAL</td><td class='mono'>333</td><td class='mono'>3</td><td class='mono'>335</td><td class='mono'></td><td>LAST BASE</td><td>intereses pagados hasta ayer</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIPY</td><td>DECIMAL</td><td class='mono'>336</td><td class='mono'>15</td><td class='mono'>350</td><td class='mono'>2</td><td>pardatapr</td><td>intereses pagados hasta ayer</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIPL</td><td>DECIMAL</td><td class='mono'>351</td><td class='mono'>15</td><td class='mono'>365</td><td class='mono'>2</td><td>INT/PAID LTD</td><td>intereses pagado pendiente</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPDU</td><td>DECIMAL</td><td class='mono'>366</td><td class='mono'>15</td><td class='mono'>380</td><td class='mono'>2</td><td>PRINCIPAL DUE</td><td>monto principal pendiente / Todo el Capital que no devenga</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALIM</td><td>NUMERIC</td><td class='mono'>381</td><td class='mono'>2</td><td class='mono'>382</td><td class='mono'></td><td>LST/INT PAID/DT MM</td><td>Fecha ultimo pago intereses</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALID</td><td>NUMERIC</td><td class='mono'>383</td><td class='mono'>2</td><td class='mono'>384</td><td class='mono'></td><td>LST/INT PAID/DT DD</td><td>Fecha ultimo pago intereses</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALIY</td><td>NUMERIC</td><td class='mono'>385</td><td class='mono'>4</td><td class='mono'>388</td><td class='mono'></td><td>LST/INT PAID/DT YY</td><td>Fecha ultimo pago intereses</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALPM</td><td>NUMERIC</td><td class='mono'>389</td><td class='mono'>2</td><td class='mono'>390</td><td class='mono'></td><td>LST/PRI PAID/DT MM</td><td>Fecha ultimo pago capital</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALPD</td><td>NUMERIC</td><td class='mono'>391</td><td class='mono'>2</td><td class='mono'>392</td><td class='mono'></td><td>LST/PRI PAID/DT DD</td><td>Fecha ultimo pago capital</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALPY</td><td>NUMERIC</td><td class='mono'>393</td><td class='mono'>4</td><td class='mono'>396</td><td class='mono'></td><td>LST/PRI PAID/DT YY</td><td>Fecha ultimo pago capital</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACOT</td><td>CHARACTER</td><td class='mono'>397</td><td class='mono'>4</td><td class='mono'>400</td><td class='mono'></td><td>COLLATERAL TYP</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPEI</td><td>DECIMAL</td><td class='mono'>401</td><td class='mono'>9</td><td class='mono'>409</td><td class='mono'>2</td><td>PENLTY INTEREST</td><td>intereses castigados</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAFTB</td><td>CHARACTER</td><td class='mono'>410</td><td class='mono'>2</td><td class='mono'>411</td><td class='mono'></td><td>FLOATING TABLE</td><td>tabla  TASA flotante</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAFTY</td><td>CHARACTER</td><td class='mono'>412</td><td class='mono'>2</td><td class='mono'>413</td><td class='mono'></td><td>FLOATING TYPE</td><td>Tipo Tasa Flotante</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEABAS</td><td>NUMERIC</td><td class='mono'>414</td><td class='mono'>3</td><td class='mono'>416</td><td class='mono'></td><td>CALC BASE</td><td>base de calculo / Cantidad de días calculo intereses (Tasa Base)
+30, 60 DÍAS</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAODA</td><td>CHARACTER</td><td class='mono'>417</td><td class='mono'>1</td><td class='mono'>417</td><td class='mono'></td><td>O/D AUTH Y/N</td><td>autoriza sobregiro
+OVERDRAFT AUTHORIZATION FOR LOANS (Y/N)                            
+(1) Sobregiro solo por Principal                                   
+(2) Sobregiro solo por Intereses                                   
+(3) Sobregiro por los Dos                                          
+(N) No permite Sobregiro                                           
+TERMS CODE FOR ROLLOVER &#x27;H&#x27; WILL BE: 
+(D) FOR DAYS (31 END OF MONTH)
+(M) DAY OF THE MONTH          
+ (P) MONTHLY PERIODS           
+    -NOT INCLUDE LAST DAY-    
+     (I) MONTHLY PERIODS           
+    -INCLUDE LAST DAY-</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARON</td><td>NUMERIC</td><td class='mono'>418</td><td class='mono'>3</td><td class='mono'>420</td><td class='mono'></td><td>ROLLOVER NUMBER</td><td>N° de renovaciones efectuadas</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAROP</td><td>CHARACTER</td><td class='mono'>421</td><td class='mono'>1</td><td class='mono'>421</td><td class='mono'></td><td>ROLLOVER PERIOD</td><td>Periodo Renovación</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARCR</td><td>CHARACTER</td><td class='mono'>422</td><td class='mono'>1</td><td class='mono'>422</td><td class='mono'></td><td>ROLLOVER CHG RATE</td><td>Tasa de Cargo por Renovación</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAREC</td><td>CHARACTER</td><td class='mono'>423</td><td class='mono'>1</td><td class='mono'>423</td><td class='mono'></td><td>RELEASE COLLATERAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACCN</td><td>DECIMAL</td><td class='mono'>424</td><td class='mono'>8</td><td class='mono'>431</td><td class='mono'></td><td>COST CENTER</td><td>Centro de Costo</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAEXR</td><td>DECIMAL</td><td class='mono'>432</td><td class='mono'>11</td><td class='mono'>442</td><td class='mono'>6</td><td>EXCHG RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAUC3</td><td>CHARACTER</td><td class='mono'>443</td><td class='mono'>4</td><td class='mono'>446</td><td class='mono'></td><td>USER CODE 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPAC</td><td>DECIMAL</td><td class='mono'>447</td><td class='mono'>12</td><td class='mono'>458</td><td class='mono'></td><td>PARTICIP ACCTÑ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARCM</td><td>NUMERIC</td><td class='mono'>459</td><td class='mono'>2</td><td class='mono'>460</td><td class='mono'></td><td>LST BSE RTE CHG DTE MM</td><td>Fecha último cambio la tasa</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARCO</td><td>NUMERIC</td><td class='mono'>461</td><td class='mono'>2</td><td class='mono'>462</td><td class='mono'></td><td>LST BSE RTE CHG DTE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAREY</td><td>NUMERIC</td><td class='mono'>463</td><td class='mono'>4</td><td class='mono'>466</td><td class='mono'></td><td>LST BSE RTE CHG DTE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACMC</td><td>DECIMAL</td><td class='mono'>467</td><td class='mono'>9</td><td class='mono'>475</td><td class='mono'></td><td>COMMITMENT CUSTOMER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACMN</td><td>NUMERIC</td><td class='mono'>476</td><td class='mono'>4</td><td class='mono'>479</td><td class='mono'></td><td>COMMITMENT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAICT</td><td>CHARACTER</td><td class='mono'>480</td><td class='mono'>1</td><td class='mono'>480</td><td class='mono'></td><td>INT CALC TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEADLP</td><td>CHARACTER</td><td class='mono'>481</td><td class='mono'>1</td><td class='mono'>481</td><td class='mono'></td><td>*=PRI ADDED TO DLPMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARRP</td><td>CHARACTER</td><td class='mono'>482</td><td class='mono'>3</td><td class='mono'>484</td><td class='mono'></td><td>RATE REVISION PRD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARRM</td><td>NUMERIC</td><td class='mono'>485</td><td class='mono'>2</td><td class='mono'>486</td><td class='mono'></td><td>RATE PERIOD REVISION MNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARRD</td><td>NUMERIC</td><td class='mono'>487</td><td class='mono'>2</td><td class='mono'>488</td><td class='mono'></td><td>RATE PERIOD REVISION DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARRY</td><td>NUMERIC</td><td class='mono'>489</td><td class='mono'>4</td><td class='mono'>492</td><td class='mono'></td><td>RATE PERIOD REVISION YR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAHFQ</td><td>NUMERIC</td><td class='mono'>493</td><td class='mono'>1</td><td class='mono'>493</td><td class='mono'></td><td>ROL H RTE CHG FRQ</td><td>HP:Frecuencia de Pagos (1-2-3)</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAHTM</td><td>NUMERIC</td><td class='mono'>494</td><td class='mono'>1</td><td class='mono'>494</td><td class='mono'></td><td>ROL H RTE CHG TMS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIRT</td><td>DECIMAL</td><td class='mono'>495</td><td class='mono'>9</td><td class='mono'>503</td><td class='mono'>6</td><td>INVESTMENT RATE</td><td>Costo Fondo</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOF2</td><td>CHARACTER</td><td class='mono'>504</td><td class='mono'>4</td><td class='mono'>507</td><td class='mono'></td><td>OFFICE RP</td><td>oficina representacion</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAMLA</td><td>NUMERIC</td><td class='mono'>508</td><td class='mono'>2</td><td class='mono'>509</td><td class='mono'></td><td>MAILING ADDRESS</td><td>direccion de correo</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALOB</td><td>CHARACTER</td><td class='mono'>510</td><td class='mono'>4</td><td class='mono'>513</td><td class='mono'></td><td>LINE OF BUSS</td><td>linea de negocio</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAICD</td><td>CHARACTER</td><td class='mono'>514</td><td class='mono'>4</td><td class='mono'>517</td><td class='mono'></td><td>INDUSTRY CODE</td><td>codigo industria</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIJY</td><td>DECIMAL</td><td class='mono'>518</td><td class='mono'>15</td><td class='mono'>532</td><td class='mono'>2</td><td>INT/ADJ YTD</td><td>Intereses Ajustados del Año</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIJL</td><td>DECIMAL</td><td class='mono'>533</td><td class='mono'>15</td><td class='mono'>547</td><td class='mono'>2</td><td>INT/ADJ LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAINM</td><td>DECIMAL</td><td class='mono'>548</td><td class='mono'>15</td><td class='mono'>562</td><td class='mono'>2</td><td>INTEREST MTH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAHEM</td><td>NUMERIC</td><td class='mono'>563</td><td class='mono'>2</td><td class='mono'>564</td><td class='mono'></td><td>HOLD EXP DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAHED</td><td>NUMERIC</td><td class='mono'>565</td><td class='mono'>2</td><td class='mono'>566</td><td class='mono'></td><td>HOLD EXP DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAHEY</td><td>NUMERIC</td><td class='mono'>567</td><td class='mono'>4</td><td class='mono'>570</td><td class='mono'></td><td>HOLD EXP DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOFB</td><td>CHARACTER</td><td class='mono'>571</td><td class='mono'>2</td><td class='mono'>572</td><td class='mono'></td><td>OFFSET BANK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOCR</td><td>DECIMAL</td><td class='mono'>573</td><td class='mono'>4</td><td class='mono'>576</td><td class='mono'></td><td>OFFSET BRANCH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOCY</td><td>CHARACTER</td><td class='mono'>577</td><td class='mono'>3</td><td class='mono'>579</td><td class='mono'></td><td>OFFSET CCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOGL</td><td>DECIMAL</td><td class='mono'>580</td><td class='mono'>16</td><td class='mono'>595</td><td class='mono'></td><td>OFFSET G/L</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOAC</td><td>DECIMAL</td><td class='mono'>596</td><td class='mono'>12</td><td class='mono'>607</td><td class='mono'></td><td>OFFSET ACC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPRF</td><td>CHARACTER</td><td class='mono'>608</td><td class='mono'>1</td><td class='mono'>608</td><td class='mono'></td><td>PROCESS FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOBL</td><td>CHARACTER</td><td class='mono'>609</td><td class='mono'>2</td><td class='mono'>610</td><td class='mono'></td><td>OBLIGOR CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPAR</td><td>CHARACTER</td><td class='mono'>611</td><td class='mono'>1</td><td class='mono'>611</td><td class='mono'></td><td>PARTICIPATION P/S/N/T/F</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAFRT</td><td>DECIMAL</td><td class='mono'>612</td><td class='mono'>9</td><td class='mono'>620</td><td class='mono'>6</td><td>FLOATING RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEANER</td><td>DECIMAL</td><td class='mono'>621</td><td class='mono'>9</td><td class='mono'>629</td><td class='mono'>6</td><td>NEXT/EFF RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEANRM</td><td>NUMERIC</td><td class='mono'>630</td><td class='mono'>2</td><td class='mono'>631</td><td class='mono'></td><td>NEXT/RTE DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEANRD</td><td>NUMERIC</td><td class='mono'>632</td><td class='mono'>2</td><td class='mono'>633</td><td class='mono'></td><td>NEXT/RTE DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEANRY</td><td>NUMERIC</td><td class='mono'>634</td><td class='mono'>4</td><td class='mono'>637</td><td class='mono'></td><td>NEXT/RTE DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALRM</td><td>NUMERIC</td><td class='mono'>638</td><td class='mono'>2</td><td class='mono'>639</td><td class='mono'></td><td>LST/FLT/RTE CH/DTE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALRD</td><td>NUMERIC</td><td class='mono'>640</td><td class='mono'>2</td><td class='mono'>641</td><td class='mono'></td><td>LST/FLT/RTE CH/DTE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALRY</td><td>NUMERIC</td><td class='mono'>642</td><td class='mono'>4</td><td class='mono'>645</td><td class='mono'></td><td>LST/FLT/RTE CH/DTE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPFR</td><td>DECIMAL</td><td class='mono'>646</td><td class='mono'>9</td><td class='mono'>654</td><td class='mono'>6</td><td>PREV/FLT RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAWHF</td><td>CHARACTER</td><td class='mono'>655</td><td class='mono'>1</td><td class='mono'>655</td><td class='mono'></td><td>MAIL ADDRESS TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATX1</td><td>CHARACTER</td><td class='mono'>656</td><td class='mono'>1</td><td class='mono'>656</td><td class='mono'></td><td>TAXES FLAG 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATX2</td><td>CHARACTER</td><td class='mono'>657</td><td class='mono'>1</td><td class='mono'>657</td><td class='mono'></td><td>TAXES FLAG 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATX3</td><td>CHARACTER</td><td class='mono'>658</td><td class='mono'>1</td><td class='mono'>658</td><td class='mono'></td><td>TAXES FLAG 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATX4</td><td>CHARACTER</td><td class='mono'>659</td><td class='mono'>1</td><td class='mono'>659</td><td class='mono'></td><td>TAXES FLAG 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATX5</td><td>CHARACTER</td><td class='mono'>660</td><td class='mono'>1</td><td class='mono'>660</td><td class='mono'></td><td>TAXES FLAG 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATX6</td><td>CHARACTER</td><td class='mono'>661</td><td class='mono'>1</td><td class='mono'>661</td><td class='mono'></td><td>TAXES FLAG 6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATX7</td><td>CHARACTER</td><td class='mono'>662</td><td class='mono'>1</td><td class='mono'>662</td><td class='mono'></td><td>TAXES FLAG 7</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATX8</td><td>CHARACTER</td><td class='mono'>663</td><td class='mono'>1</td><td class='mono'>663</td><td class='mono'></td><td>TAXES FLAG 8</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATX9</td><td>CHARACTER</td><td class='mono'>664</td><td class='mono'>1</td><td class='mono'>664</td><td class='mono'></td><td>TAXES FLAG 9</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAWQT</td><td>DECIMAL</td><td class='mono'>665</td><td class='mono'>15</td><td class='mono'>679</td><td class='mono'>2</td><td>WITHELD QTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAWYT</td><td>DECIMAL</td><td class='mono'>680</td><td class='mono'>15</td><td class='mono'>694</td><td class='mono'>2</td><td>WITHELD YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAFEE</td><td>DECIMAL</td><td class='mono'>695</td><td class='mono'>15</td><td class='mono'>709</td><td class='mono'>2</td><td>FEES AMORT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASPR</td><td>DECIMAL</td><td class='mono'>710</td><td class='mono'>9</td><td class='mono'>718</td><td class='mono'>6</td><td>EFECTIVE RATE</td><td>Tasa Efectiva (Cobro a cliente)</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACFF</td><td>CHARACTER</td><td class='mono'>719</td><td class='mono'>1</td><td class='mono'>719</td><td class='mono'></td><td>CONF FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAMXR</td><td>DECIMAL</td><td class='mono'>720</td><td class='mono'>9</td><td class='mono'>728</td><td class='mono'>6</td><td>MAXIMUM RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAMIR</td><td>DECIMAL</td><td class='mono'>729</td><td class='mono'>9</td><td class='mono'>737</td><td class='mono'>6</td><td>MINIMUM RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIIP</td><td>CHARACTER</td><td class='mono'>738</td><td class='mono'>1</td><td class='mono'>738</td><td class='mono'></td><td>INT/INC IN/PMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEABAP</td><td>DECIMAL</td><td class='mono'>739</td><td class='mono'>15</td><td class='mono'>753</td><td class='mono'>2</td><td>BALLOON PMT/AMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEABAM</td><td>NUMERIC</td><td class='mono'>754</td><td class='mono'>2</td><td class='mono'>755</td><td class='mono'></td><td>BALLOON PMT/DTE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEABAD</td><td>NUMERIC</td><td class='mono'>756</td><td class='mono'>2</td><td class='mono'>757</td><td class='mono'></td><td>BALLOON PMT/DTE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEABAY</td><td>NUMERIC</td><td class='mono'>758</td><td class='mono'>4</td><td class='mono'>761</td><td class='mono'></td><td>BALLOON PMT/DTE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPTM</td><td>NUMERIC</td><td class='mono'>762</td><td class='mono'>2</td><td class='mono'>763</td><td class='mono'></td><td>PRINC/PD THRU MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPTD</td><td>NUMERIC</td><td class='mono'>764</td><td class='mono'>2</td><td class='mono'>765</td><td class='mono'></td><td>PRINC/PD THRU DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPTY</td><td>NUMERIC</td><td class='mono'>766</td><td class='mono'>4</td><td class='mono'>769</td><td class='mono'></td><td>PRINC/PD THRU YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAITM</td><td>NUMERIC</td><td class='mono'>770</td><td class='mono'>2</td><td class='mono'>771</td><td class='mono'></td><td>INTER/PD THRU MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAITD</td><td>NUMERIC</td><td class='mono'>772</td><td class='mono'>2</td><td class='mono'>773</td><td class='mono'></td><td>INTER/PD THRU DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAITY</td><td>NUMERIC</td><td class='mono'>774</td><td class='mono'>4</td><td class='mono'>777</td><td class='mono'></td><td>INTER/PD THRU YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASTM</td><td>NUMERIC</td><td class='mono'>778</td><td class='mono'>2</td><td class='mono'>779</td><td class='mono'></td><td>LAST/DT STAT/CH MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASTD</td><td>NUMERIC</td><td class='mono'>780</td><td class='mono'>2</td><td class='mono'>781</td><td class='mono'></td><td>LAST/DT STAT/CH DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASTY</td><td>NUMERIC</td><td class='mono'>782</td><td class='mono'>4</td><td class='mono'>785</td><td class='mono'></td><td>LAST/DT STAT/CH YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAAVP</td><td>DECIMAL</td><td class='mono'>786</td><td class='mono'>17</td><td class='mono'>802</td><td class='mono'>2</td><td>AVERAGE PRINC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAMEP</td><td>DECIMAL</td><td class='mono'>803</td><td class='mono'>15</td><td class='mono'>817</td><td class='mono'>2</td><td>MEMO PRINCIPAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAMEI</td><td>DECIMAL</td><td class='mono'>818</td><td class='mono'>15</td><td class='mono'>832</td><td class='mono'>2</td><td>MEMO INTEREST</td><td>Monto Interés a la Fecha</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPVI</td><td>CHARACTER</td><td class='mono'>833</td><td class='mono'>1</td><td class='mono'>833</td><td class='mono'></td><td>PAYMENT VIA</td><td>Modelo de pago 
+1: PAC
+4: Otros Bancos</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPV2</td><td>CHARACTER</td><td class='mono'>834</td><td class='mono'>1</td><td class='mono'>834</td><td class='mono'></td><td>PAYMENT VIA 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALNC</td><td>CHARACTER</td><td class='mono'>835</td><td class='mono'>1</td><td class='mono'>835</td><td class='mono'></td><td>DEMAND LOAN Y/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAUBT</td><td>DECIMAL</td><td class='mono'>836</td><td class='mono'>5</td><td class='mono'>840</td><td class='mono'></td><td>USER BTH NO.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAASD</td><td>DECIMAL</td><td class='mono'>841</td><td class='mono'>15</td><td class='mono'>855</td><td class='mono'>2</td><td>AMOUNT SOLD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAREF</td><td>CHARACTER</td><td class='mono'>856</td><td class='mono'>20</td><td class='mono'>875</td><td class='mono'></td><td>REFERENCE NUMB</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATPL</td><td>DECIMAL</td><td class='mono'>876</td><td class='mono'>15</td><td class='mono'>890</td><td class='mono'>2</td><td>TAXES PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATPY</td><td>DECIMAL</td><td class='mono'>891</td><td class='mono'>15</td><td class='mono'>905</td><td class='mono'>2</td><td>TAXES PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACPL</td><td>DECIMAL</td><td class='mono'>906</td><td class='mono'>15</td><td class='mono'>920</td><td class='mono'>2</td><td>COMMISSIONS PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACPY</td><td>DECIMAL</td><td class='mono'>921</td><td class='mono'>15</td><td class='mono'>935</td><td class='mono'>2</td><td>COMMISSIONS PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEADEL</td><td>DECIMAL</td><td class='mono'>936</td><td class='mono'>15</td><td class='mono'>950</td><td class='mono'>2</td><td>DEDUCTION PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEADEY</td><td>DECIMAL</td><td class='mono'>951</td><td class='mono'>15</td><td class='mono'>965</td><td class='mono'>2</td><td>DEDUCTION PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIVL</td><td>DECIMAL</td><td class='mono'>966</td><td class='mono'>15</td><td class='mono'>980</td><td class='mono'>2</td><td>IVA PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIVY</td><td>DECIMAL</td><td class='mono'>981</td><td class='mono'>15</td><td class='mono'>995</td><td class='mono'>2</td><td>IVA PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAI2L</td><td>DECIMAL</td><td class='mono'>996</td><td class='mono'>15</td><td class='mono'>1010</td><td class='mono'>2</td><td>IVA 2 PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAI2Y</td><td>DECIMAL</td><td class='mono'>1011</td><td class='mono'>15</td><td class='mono'>1025</td><td class='mono'>2</td><td>IVA 2 PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPIF</td><td>CHARACTER</td><td class='mono'>1026</td><td class='mono'>1</td><td class='mono'>1026</td><td class='mono'></td><td>PENLTY INT FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEABRK</td><td>CHARACTER</td><td class='mono'>1027</td><td class='mono'>4</td><td class='mono'>1030</td><td class='mono'></td><td>BROKER CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEABCP</td><td>DECIMAL</td><td class='mono'>1031</td><td class='mono'>6</td><td class='mono'>1036</td><td class='mono'>3</td><td>BROKER COMM PERCENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEABCL</td><td>DECIMAL</td><td class='mono'>1037</td><td class='mono'>15</td><td class='mono'>1051</td><td class='mono'>2</td><td>BROKER COMM PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEABCY</td><td>DECIMAL</td><td class='mono'>1052</td><td class='mono'>15</td><td class='mono'>1066</td><td class='mono'>2</td><td>BROKER COMM PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACCF</td><td>DECIMAL</td><td class='mono'>1067</td><td class='mono'>6</td><td class='mono'>1072</td><td class='mono'></td><td>PERCENT PARTICIPATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPRO</td><td>CHARACTER</td><td class='mono'>1073</td><td class='mono'>4</td><td class='mono'>1076</td><td class='mono'></td><td>PRODUCT CODE</td><td>Codigo del Producto</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPIA</td><td>DECIMAL</td><td class='mono'>1077</td><td class='mono'>15</td><td class='mono'>1091</td><td class='mono'>2</td><td>PENALTY INT ACCRUAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPIP</td><td>DECIMAL</td><td class='mono'>1092</td><td class='mono'>15</td><td class='mono'>1106</td><td class='mono'>2</td><td>PENALTY INT PAID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAUC4</td><td>CHARACTER</td><td class='mono'>1107</td><td class='mono'>6</td><td class='mono'>1112</td><td class='mono'></td><td>USER CODE 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAUC5</td><td>CHARACTER</td><td class='mono'>1113</td><td class='mono'>4</td><td class='mono'>1116</td><td class='mono'></td><td>USER CODE 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASOF</td><td>CHARACTER</td><td class='mono'>1117</td><td class='mono'>4</td><td class='mono'>1120</td><td class='mono'></td><td>SOURCE OF FUNDS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACLF</td><td>CHARACTER</td><td class='mono'>1121</td><td class='mono'>1</td><td class='mono'>1121</td><td class='mono'></td><td>DLS CLASSIFICATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAGLC</td><td>NUMERIC</td><td class='mono'>1122</td><td class='mono'>2</td><td class='mono'>1123</td><td class='mono'></td><td>CHANGES G/L COUNTER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALGM</td><td>NUMERIC</td><td class='mono'>1124</td><td class='mono'>2</td><td class='mono'>1125</td><td class='mono'></td><td>LAST G/L CHG DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALGD</td><td>NUMERIC</td><td class='mono'>1126</td><td class='mono'>2</td><td class='mono'>1127</td><td class='mono'></td><td>LAST G/L CHG DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALGY</td><td>NUMERIC</td><td class='mono'>1128</td><td class='mono'>4</td><td class='mono'>1131</td><td class='mono'></td><td>LAST G/L CHG DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALNR</td><td>DECIMAL</td><td class='mono'>1132</td><td class='mono'>9</td><td class='mono'>1140</td><td class='mono'></td><td>LINE CREDIT GIVEN BY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAGPD</td><td>NUMERIC</td><td class='mono'>1141</td><td class='mono'>2</td><td class='mono'>1142</td><td class='mono'></td><td>GRACE PERIOD/PENALTY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAEXM</td><td>NUMERIC</td><td class='mono'>1143</td><td class='mono'>2</td><td class='mono'>1144</td><td class='mono'></td><td>LOAN EXTENTION DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAEXD</td><td>NUMERIC</td><td class='mono'>1145</td><td class='mono'>2</td><td class='mono'>1146</td><td class='mono'></td><td>LOAN EXTENTION DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAEXY</td><td>NUMERIC</td><td class='mono'>1147</td><td class='mono'>4</td><td class='mono'>1150</td><td class='mono'></td><td>LOAN EXTENTION DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEADED</td><td>DECIMAL</td><td class='mono'>1151</td><td class='mono'>15</td><td class='mono'>1165</td><td class='mono'>2</td><td>TOTAL DEDUCTIONS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPCO</td><td>DECIMAL</td><td class='mono'>1166</td><td class='mono'>5</td><td class='mono'>1170</td><td class='mono'>3</td><td>PENALTY COUNTER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAXRC</td><td>DECIMAL</td><td class='mono'>1171</td><td class='mono'>3</td><td class='mono'>1173</td><td class='mono'></td><td>REFINANCE CYCLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAXRM</td><td>NUMERIC</td><td class='mono'>1174</td><td class='mono'>2</td><td class='mono'>1175</td><td class='mono'></td><td>REFI/INT NEXT DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAXRD</td><td>NUMERIC</td><td class='mono'>1176</td><td class='mono'>2</td><td class='mono'>1177</td><td class='mono'></td><td>REFI/INT NEXT DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAXRY</td><td>NUMERIC</td><td class='mono'>1178</td><td class='mono'>4</td><td class='mono'>1181</td><td class='mono'></td><td>REFI/INT NEXT DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPCM</td><td>NUMERIC</td><td class='mono'>1182</td><td class='mono'>2</td><td class='mono'>1183</td><td class='mono'></td><td>REFI/INT THRU DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPCD</td><td>NUMERIC</td><td class='mono'>1184</td><td class='mono'>2</td><td class='mono'>1185</td><td class='mono'></td><td>REFI/INT THRU DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPCY</td><td>NUMERIC</td><td class='mono'>1186</td><td class='mono'>4</td><td class='mono'>1189</td><td class='mono'></td><td>REFI/INT THRU DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAXRA</td><td>DECIMAL</td><td class='mono'>1190</td><td class='mono'>15</td><td class='mono'>1204</td><td class='mono'></td><td>REFINANCIAL AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAXRL</td><td>DECIMAL</td><td class='mono'>1205</td><td class='mono'>15</td><td class='mono'>1219</td><td class='mono'>2</td><td>REFINANCIAL AMNT LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAXRP</td><td>DECIMAL</td><td class='mono'>1220</td><td class='mono'>15</td><td class='mono'>1234</td><td class='mono'>2</td><td>REFINANCIAL AMNT YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARET</td><td>CHARACTER</td><td class='mono'>1235</td><td class='mono'>1</td><td class='mono'>1235</td><td class='mono'></td><td>FLAG PYM/ROLL/REES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAREA</td><td>DECIMAL</td><td class='mono'>1236</td><td class='mono'>12</td><td class='mono'>1247</td><td class='mono'></td><td>RELATION ACCOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARCL</td><td>CHARACTER</td><td class='mono'>1248</td><td class='mono'>1</td><td class='mono'>1248</td><td class='mono'></td><td>FLAG ROLLOVER CLASS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPCL</td><td>CHARACTER</td><td class='mono'>1249</td><td class='mono'>1</td><td class='mono'>1249</td><td class='mono'></td><td>FLAG PENALTY CLASS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATLN</td><td>CHARACTER</td><td class='mono'>1250</td><td class='mono'>2</td><td class='mono'>1251</td><td class='mono'></td><td>TARIFF CODE LOANS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAUC6</td><td>CHARACTER</td><td class='mono'>1252</td><td class='mono'>4</td><td class='mono'>1255</td><td class='mono'></td><td>USER CODE 6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAUC7</td><td>CHARACTER</td><td class='mono'>1256</td><td class='mono'>4</td><td class='mono'>1259</td><td class='mono'></td><td>USER CODE 7</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOMM</td><td>NUMERIC</td><td class='mono'>1260</td><td class='mono'>2</td><td class='mono'>1261</td><td class='mono'></td><td>ORIGINAL MATURITY MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOMD</td><td>NUMERIC</td><td class='mono'>1262</td><td class='mono'>2</td><td class='mono'>1263</td><td class='mono'></td><td>ORIGINAL MATURITY DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOMY</td><td>NUMERIC</td><td class='mono'>1264</td><td class='mono'>4</td><td class='mono'>1267</td><td class='mono'></td><td>ORIGINAL MATURITY YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPSN</td><td>DECIMAL</td><td class='mono'>1268</td><td class='mono'>12</td><td class='mono'>1279</td><td class='mono'></td><td>PASS BOOK NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPSB</td><td>DECIMAL</td><td class='mono'>1280</td><td class='mono'>15</td><td class='mono'>1294</td><td class='mono'>2</td><td>PASS BOOK BALANCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPSM</td><td>NUMERIC</td><td class='mono'>1295</td><td class='mono'>2</td><td class='mono'>1296</td><td class='mono'></td><td>PASS BOOK UPD/DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPSD</td><td>NUMERIC</td><td class='mono'>1297</td><td class='mono'>2</td><td class='mono'>1298</td><td class='mono'></td><td>PASS BOOK UPD/DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPSY</td><td>NUMERIC</td><td class='mono'>1299</td><td class='mono'>4</td><td class='mono'>1302</td><td class='mono'></td><td>PASS BOOK UPD/DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALSM</td><td>NUMERIC</td><td class='mono'>1303</td><td class='mono'>2</td><td class='mono'>1304</td><td class='mono'></td><td>NEXT INC/PER/DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALSD</td><td>NUMERIC</td><td class='mono'>1305</td><td class='mono'>2</td><td class='mono'>1306</td><td class='mono'></td><td>NEXT STATMNT/DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALSY</td><td>NUMERIC</td><td class='mono'>1307</td><td class='mono'>4</td><td class='mono'>1310</td><td class='mono'></td><td>NEXT INC/PER/DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALSP</td><td>DECIMAL</td><td class='mono'>1311</td><td class='mono'>15</td><td class='mono'>1325</td><td class='mono'></td><td>LAST PRINC/STATEMENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALSI</td><td>DECIMAL</td><td class='mono'>1326</td><td class='mono'>15</td><td class='mono'>1340</td><td class='mono'>2</td><td>LAST INT/STATEMENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALSR</td><td>DECIMAL</td><td class='mono'>1341</td><td class='mono'>9</td><td class='mono'>1349</td><td class='mono'>6</td><td>LAST RATE/STATEMENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALSX</td><td>DECIMAL</td><td class='mono'>1350</td><td class='mono'>15</td><td class='mono'>1364</td><td class='mono'>2</td><td>LAST PAS DUE/STMNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALSO</td><td>DECIMAL</td><td class='mono'>1365</td><td class='mono'>15</td><td class='mono'>1379</td><td class='mono'>2</td><td>LAST OTHER/STATEMNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAMEM</td><td>DECIMAL</td><td class='mono'>1380</td><td class='mono'>15</td><td class='mono'>1394</td><td class='mono'>2</td><td>MEMO PAST DUE</td><td>Monto Interés Mora</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARRT</td><td>CHARACTER</td><td class='mono'>1395</td><td class='mono'>1</td><td class='mono'>1395</td><td class='mono'></td><td>ROLL OVER RATE TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAMVL</td><td>DECIMAL</td><td class='mono'>1396</td><td class='mono'>21</td><td class='mono'>1416</td><td class='mono'>8</td><td>MARKET VALUE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEA2SP</td><td>NUMERIC</td><td class='mono'>1417</td><td class='mono'>2</td><td class='mono'>1418</td><td class='mono'></td><td>REGLA 78 CICLO1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEA2TR</td><td>DECIMAL</td><td class='mono'>1419</td><td class='mono'>3</td><td class='mono'>1421</td><td class='mono'></td><td>REGLA 78 CICLO2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEA2TC</td><td>CHARACTER</td><td class='mono'>1422</td><td class='mono'>1</td><td class='mono'>1422</td><td class='mono'></td><td>AVAILABLE</td><td>Valores (Y=    y N=  )</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAREV</td><td>CHARACTER</td><td class='mono'>1423</td><td class='mono'>1</td><td class='mono'>1423</td><td class='mono'></td><td>REEVALUATION TYPE</td><td>Codigo de Moneda</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPSA</td><td>CHARACTER</td><td class='mono'>1424</td><td class='mono'>1</td><td class='mono'>1424</td><td class='mono'></td><td>PRIMARY/SECUNDARY ACCT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALSN</td><td>DECIMAL</td><td class='mono'>1425</td><td class='mono'>5</td><td class='mono'>1429</td><td class='mono'></td><td>LAST SUBACCT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEANCU</td><td>DECIMAL</td><td class='mono'>1430</td><td class='mono'>5</td><td class='mono'>1434</td><td class='mono'></td><td>TOTAL PAYMENT</td><td>HP: Cuota en DLPMT (LSOB)</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPCU</td><td>DECIMAL</td><td class='mono'>1435</td><td class='mono'>3</td><td class='mono'>1437</td><td class='mono'></td><td>INC/PER CYCLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACLS</td><td>NUMERIC</td><td class='mono'>1438</td><td class='mono'>2</td><td class='mono'>1439</td><td class='mono'></td><td>ACCT CLASS G/L</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAACD</td><td>CHARACTER</td><td class='mono'>1440</td><td class='mono'>2</td><td class='mono'>1441</td><td class='mono'>2</td><td>APPLICATION CODE</td><td>11 : Dap
+10 : Prestamos</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAACS</td><td>DECIMAL</td><td class='mono'>1442</td><td class='mono'>15</td><td class='mono'>1456</td><td class='mono'>2</td><td>OPERATION COST</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAORG</td><td>CHARACTER</td><td class='mono'>1457</td><td class='mono'>4</td><td class='mono'>1460</td><td class='mono'></td><td>ORIGEN CODE</td><td>01: Aplazamiento
+02: Credito COVID</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEADST</td><td>CHARACTER</td><td class='mono'>1461</td><td class='mono'>4</td><td class='mono'>1464</td><td class='mono'></td><td>DESTIN CODE</td><td>9:créditos tipo salud</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACPE</td><td>DECIMAL</td><td class='mono'>1465</td><td class='mono'>6</td><td class='mono'>1470</td><td class='mono'>3</td><td>COLLATERAL PERCENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPAP</td><td>DECIMAL</td><td class='mono'>1471</td><td class='mono'>6</td><td class='mono'>1476</td><td class='mono'>3</td><td>PROG/INCREASE %</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAMCY</td><td>NUMERIC</td><td class='mono'>1477</td><td class='mono'>2</td><td class='mono'>1478</td><td class='mono'></td><td>MONTH COMM/YEAR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASUS</td><td>CHARACTER</td><td class='mono'>1479</td><td class='mono'>1</td><td class='mono'>1479</td><td class='mono'></td><td>SUSPENDED INTEREST</td><td>Marca suspención devengo  (HP)</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEADLC</td><td>CHARACTER</td><td class='mono'>1480</td><td class='mono'>1</td><td class='mono'>1480</td><td class='mono'></td><td>CONDITION LOANS</td><td>condicion prestamo/ Estado Contable (*1)
+1 = Vigente             
+2 = Vencido             
+3 = Abogados/Notaria    
+4 = Cobro Judicial      
+5 = Proceso Recuperación
+6 = Protestado</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAFRA</td><td>CHARACTER</td><td class='mono'>1481</td><td class='mono'>1</td><td class='mono'>1481</td><td class='mono'></td><td>FLOATING RTE/APPLI</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPP1</td><td>CHARACTER</td><td class='mono'>1482</td><td class='mono'>1</td><td class='mono'>1482</td><td class='mono'></td><td>PRIORITY PMNT PRIN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPP2</td><td>CHARACTER</td><td class='mono'>1483</td><td class='mono'>1</td><td class='mono'>1483</td><td class='mono'></td><td>PRIORITY PMNT INTE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPP3</td><td>CHARACTER</td><td class='mono'>1484</td><td class='mono'>1</td><td class='mono'>1484</td><td class='mono'></td><td>PRIORITY PMNT PAST</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPP4</td><td>CHARACTER</td><td class='mono'>1485</td><td class='mono'>1</td><td class='mono'>1485</td><td class='mono'></td><td>PRIORITY PMNT COMM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPP5</td><td>CHARACTER</td><td class='mono'>1486</td><td class='mono'>1</td><td class='mono'>1486</td><td class='mono'></td><td>PRIORITY PMNT TAXE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPP6</td><td>CHARACTER</td><td class='mono'>1487</td><td class='mono'>1</td><td class='mono'>1487</td><td class='mono'></td><td>PRIORITY PMNT DEDU</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPP7</td><td>CHARACTER</td><td class='mono'>1488</td><td class='mono'>1</td><td class='mono'>1488</td><td class='mono'></td><td>PRIORITY PMNT REVA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPP8</td><td>CHARACTER</td><td class='mono'>1489</td><td class='mono'>1</td><td class='mono'>1489</td><td class='mono'></td><td>PRIORITY PMNT CBZA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPP9</td><td>CHARACTER</td><td class='mono'>1490</td><td class='mono'>1</td><td class='mono'>1490</td><td class='mono'></td><td>PRIORITY PMNT OTHR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACRR</td><td>NUMERIC</td><td class='mono'>1491</td><td class='mono'>3</td><td class='mono'>1493</td><td class='mono'></td><td>CHG/RATE TIMES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPRR</td><td>NUMERIC</td><td class='mono'>1494</td><td class='mono'>3</td><td class='mono'>1496</td><td class='mono'></td><td>PERIOD REVISION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPYI</td><td>DECIMAL</td><td class='mono'>1497</td><td class='mono'>15</td><td class='mono'>1511</td><td class='mono'>2</td><td>INTEREST PROYECT</td><td>Se utilizará para grabar el monto a liquidar y será usado para normalizar el monto en todas las etapas del proceso
+El objetivo es evitar las diferencias entre lo informado al cliente versus lo que rescata en caja para cancelar el DAP</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEADCI</td><td>DECIMAL</td><td class='mono'>1512</td><td class='mono'>15</td><td class='mono'>1526</td><td class='mono'>2</td><td>INTEREST DISCOUNT</td><td>HP: Interes Remanente (DL0900), UPDPYMNT</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAFLC</td><td>CHARACTER</td><td class='mono'>1527</td><td class='mono'>1</td><td class='mono'>1527</td><td class='mono'></td><td>BROKER COMM FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPRT</td><td>CHARACTER</td><td class='mono'>1528</td><td class='mono'>2</td><td class='mono'>1529</td><td class='mono'></td><td>RESERVE FOR LOSSES TBL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPRP</td><td>DECIMAL</td><td class='mono'>1530</td><td class='mono'>6</td><td class='mono'>1535</td><td class='mono'>3</td><td>RESERVE LOSSES PERCENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPIY</td><td>DECIMAL</td><td class='mono'>1536</td><td class='mono'>15</td><td class='mono'>1550</td><td class='mono'>2</td><td>PENALTY YTD ACCRUAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPPY</td><td>DECIMAL</td><td class='mono'>1551</td><td class='mono'>15</td><td class='mono'>1565</td><td class='mono'>2</td><td>PENALTY YTD PAID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAINV</td><td>DECIMAL</td><td class='mono'>1566</td><td class='mono'>15</td><td class='mono'>1580</td><td class='mono'>2</td><td>INCIAL INSTALLMNT VALUE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAF01</td><td>CHARACTER</td><td class='mono'>1581</td><td class='mono'>1</td><td class='mono'>1581</td><td class='mono'></td><td>AVAILABLE</td><td>DEAF01 (CORPBANCA) PARA CD&#x27;S 0 = NO SE HA IMPRESO      
+                             1 = PRIMERA IMPRESION     
+                             2 = SEGUNDA IMPRESION ETC.</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAF02</td><td>CHARACTER</td><td class='mono'>1582</td><td class='mono'>1</td><td class='mono'>1582</td><td class='mono'></td><td>AVAILABLE</td><td>HP: Flag &quot;N&quot; genera FTDLPMT</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAF03</td><td>CHARACTER</td><td class='mono'>1583</td><td class='mono'>1</td><td class='mono'>1583</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASCH</td><td>CHARACTER</td><td class='mono'>1584</td><td class='mono'>4</td><td class='mono'>1587</td><td class='mono'></td><td>SALE CHANEL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASST</td><td>CHARACTER</td><td class='mono'>1588</td><td class='mono'>4</td><td class='mono'>1591</td><td class='mono'></td><td>SALE SOURCE TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOFN</td><td>DECIMAL</td><td class='mono'>1592</td><td class='mono'>12</td><td class='mono'>1603</td><td class='mono'>2</td><td>OFFER NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOPI</td><td>DECIMAL</td><td class='mono'>1604</td><td class='mono'>13</td><td class='mono'>1616</td><td class='mono'>2</td><td>INDEX AT OPENING</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAAVI</td><td>DECIMAL</td><td class='mono'>1617</td><td class='mono'>13</td><td class='mono'>1629</td><td class='mono'></td><td>AVERAGE INDEX</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIDT</td><td>CHARACTER</td><td class='mono'>1630</td><td class='mono'>1</td><td class='mono'>1630</td><td class='mono'></td><td>INDEX TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAANT</td><td>NUMERIC</td><td class='mono'>1631</td><td class='mono'>3</td><td class='mono'>1633</td><td class='mono'></td><td>AVERAGE NUM TIMES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOPT</td><td>CHARACTER</td><td class='mono'>1634</td><td class='mono'>1</td><td class='mono'>1634</td><td class='mono'></td><td>FLAG ACTIVITY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATDA</td><td>DECIMAL</td><td class='mono'>1635</td><td class='mono'>15</td><td class='mono'>1649</td><td class='mono'>2</td><td>TOTAL DEBIT AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATDM</td><td>DECIMAL</td><td class='mono'>1650</td><td class='mono'>15</td><td class='mono'>1664</td><td class='mono'>2</td><td>TOTAL DEBIT MONTH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEANDB</td><td>DECIMAL</td><td class='mono'>1665</td><td class='mono'>5</td><td class='mono'>1669</td><td class='mono'></td><td>NUMBER OF DEBITS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEANDM</td><td>DECIMAL</td><td class='mono'>1670</td><td class='mono'>5</td><td class='mono'>1674</td><td class='mono'></td><td>DEBITS THIS MONTH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAMPA</td><td>DECIMAL</td><td class='mono'>1675</td><td class='mono'>15</td><td class='mono'>1689</td><td class='mono'>2</td><td>MINIMUM PAYMENT AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAA01</td><td>DECIMAL</td><td class='mono'>1690</td><td class='mono'>15</td><td class='mono'>1704</td><td class='mono'>2</td><td>AMOUNT AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPCT</td><td>DECIMAL</td><td class='mono'>1705</td><td class='mono'>6</td><td class='mono'>1710</td><td class='mono'>3</td><td>PERCENTAGE OF PAYMENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASOU</td><td>CHARACTER</td><td class='mono'>1711</td><td class='mono'>4</td><td class='mono'>1714</td><td class='mono'></td><td>SOURCE OF FUNDS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEADIB</td><td>CHARACTER</td><td class='mono'>1715</td><td class='mono'>4</td><td class='mono'>1718</td><td class='mono'></td><td>DISBURSEMENT OF FUNDS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACRP</td><td>DECIMAL</td><td class='mono'>1719</td><td class='mono'>6</td><td class='mono'>1724</td><td class='mono'></td><td>COUNTRY RISK PERCENTAGE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIDG</td><td>DECIMAL</td><td class='mono'>1725</td><td class='mono'>15</td><td class='mono'>1739</td><td class='mono'>2</td><td>INDEX PROFIT &amp; LOSS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAF04</td><td>CHARACTER</td><td class='mono'>1740</td><td class='mono'>1</td><td class='mono'>1740</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAF05</td><td>CHARACTER</td><td class='mono'>1741</td><td class='mono'>1</td><td class='mono'>1741</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAF06</td><td>CHARACTER</td><td class='mono'>1742</td><td class='mono'>1</td><td class='mono'>1742</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAF07</td><td>CHARACTER</td><td class='mono'>1743</td><td class='mono'>1</td><td class='mono'>1743</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACVI</td><td>CHARACTER</td><td class='mono'>1744</td><td class='mono'>1</td><td class='mono'>1744</td><td class='mono'></td><td>CONFIRMATION VIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACUI</td><td>CHARACTER</td><td class='mono'>1745</td><td class='mono'>20</td><td class='mono'>1764</td><td class='mono'></td><td>CUSIP/ISIN CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASCA</td><td>DECIMAL</td><td class='mono'>1765</td><td class='mono'>15</td><td class='mono'>1779</td><td class='mono'>2</td><td>START SCH AMOUT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACFA</td><td>DECIMAL</td><td class='mono'>1780</td><td class='mono'>15</td><td class='mono'>1794</td><td class='mono'>2</td><td>COST OF FOUND</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPRM</td><td>CHARACTER</td><td class='mono'>1795</td><td class='mono'>1</td><td class='mono'>1795</td><td class='mono'></td><td>PRINT MARK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAECU</td><td>CHARACTER</td><td class='mono'>1796</td><td class='mono'>1</td><td class='mono'>1796</td><td class='mono'></td><td>ELECTRONIC CUSTODY</td><td>Tipo de custodia</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPSU</td><td>CHARACTER</td><td class='mono'>1797</td><td class='mono'>1</td><td class='mono'>1797</td><td class='mono'></td><td>PRODUCT SUPER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEATSF</td><td>CHARACTER</td><td class='mono'>1798</td><td class='mono'>1</td><td class='mono'>1798</td><td class='mono'></td><td>TODAY STM FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACFL</td><td>CHARACTER</td><td class='mono'>1799</td><td class='mono'>1</td><td class='mono'>1799</td><td class='mono'></td><td>CANCELATION FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEADTY</td><td>CHARACTER</td><td class='mono'>1800</td><td class='mono'>1</td><td class='mono'>1800</td><td class='mono'></td><td>DOCUMENT TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAPAF</td><td>CHARACTER</td><td class='mono'>1801</td><td class='mono'>1</td><td class='mono'>1801</td><td class='mono'></td><td>PARTICIPATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAADT</td><td>CHARACTER</td><td class='mono'>1802</td><td class='mono'>1</td><td class='mono'>1802</td><td class='mono'></td><td>AUT/DEBIT TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAIVC</td><td>CHARACTER</td><td class='mono'>1803</td><td class='mono'>20</td><td class='mono'>1822</td><td class='mono'></td><td>INVESTMNT CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASUT</td><td>CHARACTER</td><td class='mono'>1823</td><td class='mono'>1</td><td class='mono'>1823</td><td class='mono'></td><td>SUSPENTION TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASUC</td><td>CHARACTER</td><td class='mono'>1824</td><td class='mono'>4</td><td class='mono'>1827</td><td class='mono'></td><td>SUSPENTION CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAOFT</td><td>CHARACTER</td><td class='mono'>1828</td><td class='mono'>2</td><td class='mono'>1829</td><td class='mono'></td><td>OFFICIAL CHK TYPE</td><td>LSOB: Marca para cobro por renovación</td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARTO</td><td>CHARACTER</td><td class='mono'>1830</td><td class='mono'>2</td><td class='mono'>1831</td><td class='mono'></td><td>RATE TABLE OPN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACDT</td><td>CHARACTER</td><td class='mono'>1832</td><td class='mono'>1</td><td class='mono'>1832</td><td class='mono'></td><td>RATE TYPE OPN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEANPR</td><td>DECIMAL</td><td class='mono'>1833</td><td class='mono'>12</td><td class='mono'>1844</td><td class='mono'></td><td>CREDIT PROPOSAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACRC</td><td>CHARACTER</td><td class='mono'>1845</td><td class='mono'>20</td><td class='mono'>1864</td><td class='mono'></td><td>CREDIT CARD NRO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACNL</td><td>CHARACTER</td><td class='mono'>1865</td><td class='mono'>2</td><td class='mono'>1866</td><td class='mono'></td><td>CANAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACNV</td><td>CHARACTER</td><td class='mono'>1867</td><td class='mono'>4</td><td class='mono'>1870</td><td class='mono'></td><td>CONVENIO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAUNR</td><td>CHARACTER</td><td class='mono'>1871</td><td class='mono'>35</td><td class='mono'>1905</td><td class='mono'></td><td>UNIQUE REFERENCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEASTC</td><td>NUMERIC</td><td class='mono'>1906</td><td class='mono'>3</td><td class='mono'>1908</td><td class='mono'></td><td>STATEMNT CICLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAEDM</td><td>NUMERIC</td><td class='mono'>1909</td><td class='mono'>2</td><td class='mono'>1910</td><td class='mono'></td><td>NEXT STMN MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAEDD</td><td>NUMERIC</td><td class='mono'>1911</td><td class='mono'>2</td><td class='mono'>1912</td><td class='mono'></td><td>NEXT STMN DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAEDY</td><td>NUMERIC</td><td class='mono'>1913</td><td class='mono'>4</td><td class='mono'>1916</td><td class='mono'></td><td>NEXT STMN YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAEDA</td><td>NUMERIC</td><td class='mono'>1917</td><td class='mono'>2</td><td class='mono'>1918</td><td class='mono'></td><td>NEXT STMN DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAXRF</td><td>CHARACTER</td><td class='mono'>1919</td><td class='mono'>1</td><td class='mono'>1919</td><td class='mono'></td><td>C/CUOTA X C/TASA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEACRT</td><td>DECIMAL</td><td class='mono'>1920</td><td class='mono'>9</td><td class='mono'>1928</td><td class='mono'>6</td><td>FLT/RATE CONTROL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEADXM</td><td>NUMERIC</td><td class='mono'>1929</td><td class='mono'>2</td><td class='mono'>1930</td><td class='mono'></td><td>MOD CONV MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEADXD</td><td>NUMERIC</td><td class='mono'>1931</td><td class='mono'>2</td><td class='mono'>1932</td><td class='mono'></td><td>MOD CONV DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEADXY</td><td>NUMERIC</td><td class='mono'>1933</td><td class='mono'>4</td><td class='mono'>1936</td><td class='mono'></td><td>MOD CONV YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAFLX</td><td>CHARACTER</td><td class='mono'>1937</td><td class='mono'>1</td><td class='mono'>1937</td><td class='mono'></td><td>USO SPREAD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAFLY</td><td>CHARACTER</td><td class='mono'>1938</td><td class='mono'>1</td><td class='mono'>1938</td><td class='mono'></td><td>FLAG Y</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARTX</td><td>DECIMAL</td><td class='mono'>1939</td><td class='mono'>9</td><td class='mono'>1947</td><td class='mono'>6</td><td>SPREAD CONTROL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEARTZ</td><td>DECIMAL</td><td class='mono'>1948</td><td class='mono'>9</td><td class='mono'>1956</td><td class='mono'>6</td><td>RATE Z</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAMTZ</td><td>DECIMAL</td><td class='mono'>1957</td><td class='mono'>15</td><td class='mono'>1971</td><td class='mono'>2</td><td>AMOUNT Z</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEAMTY</td><td>DECIMAL</td><td class='mono'>1972</td><td class='mono'>15</td><td class='mono'>1986</td><td class='mono'>2</td><td>AMOUNT Y</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALMM</td><td>NUMERIC</td><td class='mono'>1987</td><td class='mono'>2</td><td class='mono'>1988</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALMD</td><td>NUMERIC</td><td class='mono'>1989</td><td class='mono'>2</td><td class='mono'>1990</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALMY</td><td>NUMERIC</td><td class='mono'>1991</td><td class='mono'>4</td><td class='mono'>1994</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALMT</td><td>TIMESTAMP</td><td class='mono'>1995</td><td class='mono'>26</td><td class='mono'>2020</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DEALMU</td><td>CHARACTER</td><td class='mono'>2021</td><td class='mono'>10</td><td class='mono'>2030</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[DEARDM] (HP) | Tambien se utiliza para el proximo pago de intereses en las LAC
+[DEAROC] HP | DAP
+Blanco: Plazo Fijo
+P: Renovable
+[DEATYP] LSOB | 726810 | 290724
+[DEABAS] Reajustables : 360
+Pesos           : 030
+[DEAHFQ] Sep 2022
+[DEAOF2] Ejecutivo Inversión
+[DEAPRO] LS0b
+[DEAORG] HPereira
+[DEADST] HPereira | 2023-05-01 00:00:00
+[DEASUS] PGM ( DLB500)--&gt; | Desde Socope
+[DEADLC] 1 = VIGENTE
+2 = VENCIDO
+3 = CASTIGADO
+4 = CASTIGADO NO INFORMADO
+[DEADCI] Sep 2022
+[DEAF02] Sep 2022</div></body></html>

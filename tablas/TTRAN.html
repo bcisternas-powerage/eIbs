@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>TTRAN</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>TTRAN</h1>
+<div class='meta'><b>Descripción:</b> Maestro de Cuentas de Detalle(Cta.Cte, etc.)<br><b>N.º de campos:</b> 57</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>TTRBTH</td><td>DECIMAL</td><td class='mono'>1</td><td class='mono'>5</td><td class='mono'>5</td><td class='mono'></td><td>BATCH NO.</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>TTRVDM</td><td>NUMERIC</td><td class='mono'>6</td><td class='mono'>2</td><td class='mono'>7</td><td class='mono'></td><td>VALUE DATE MM</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>TTRVDD</td><td>NUMERIC</td><td class='mono'>8</td><td class='mono'>2</td><td class='mono'>9</td><td class='mono'></td><td>VALUE DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRVDY</td><td>NUMERIC</td><td class='mono'>10</td><td class='mono'>4</td><td class='mono'>13</td><td class='mono'></td><td>VALUE DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRBNK</td><td>CHARACTER</td><td class='mono'>14</td><td class='mono'>2</td><td class='mono'>15</td><td class='mono'></td><td>BANK NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRBRN</td><td>DECIMAL</td><td class='mono'>16</td><td class='mono'>4</td><td class='mono'>19</td><td class='mono'></td><td>BRANCH NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRCCY</td><td>CHARACTER</td><td class='mono'>20</td><td class='mono'>3</td><td class='mono'>22</td><td class='mono'></td><td>CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRGLN</td><td>DECIMAL</td><td class='mono'>23</td><td class='mono'>16</td><td class='mono'>38</td><td class='mono'></td><td>G/L NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRACC</td><td>DECIMAL</td><td class='mono'>39</td><td class='mono'>12</td><td class='mono'>50</td><td class='mono'></td><td>ACCOUNT NO.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRBDM</td><td>NUMERIC</td><td class='mono'>51</td><td class='mono'>2</td><td class='mono'>52</td><td class='mono'></td><td>BATCH DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRBDD</td><td>NUMERIC</td><td class='mono'>53</td><td class='mono'>2</td><td class='mono'>54</td><td class='mono'></td><td>BATCH DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRBDY</td><td>NUMERIC</td><td class='mono'>55</td><td class='mono'>4</td><td class='mono'>58</td><td class='mono'></td><td>BATCH DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRCDE</td><td>CHARACTER</td><td class='mono'>59</td><td class='mono'>4</td><td class='mono'>62</td><td class='mono'></td><td>TRANS CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRNAR</td><td>CHARACTER</td><td class='mono'>63</td><td class='mono'>60</td><td class='mono'>122</td><td class='mono'></td><td>NARRATIVE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRAMT</td><td>DECIMAL</td><td class='mono'>123</td><td class='mono'>15</td><td class='mono'>137</td><td class='mono'>2</td><td>TRANS AMNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRDCC</td><td>CHARACTER</td><td class='mono'>138</td><td class='mono'>1</td><td class='mono'>138</td><td class='mono'></td><td>DR/CR CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRUSA</td><td>CHARACTER</td><td class='mono'>139</td><td class='mono'>10</td><td class='mono'>148</td><td class='mono'></td><td>USER APPRV</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRUSO</td><td>CHARACTER</td><td class='mono'>149</td><td class='mono'>10</td><td class='mono'>158</td><td class='mono'></td><td>USER OPER.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTREXR</td><td>DECIMAL</td><td class='mono'>159</td><td class='mono'>11</td><td class='mono'>169</td><td class='mono'>6</td><td>EXCHNGE RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRDRR</td><td>DECIMAL</td><td class='mono'>170</td><td class='mono'>12</td><td class='mono'>181</td><td class='mono'></td><td>TRNS.DESC.RELAT.RECÑ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRPTS</td><td>DECIMAL</td><td class='mono'>182</td><td class='mono'>5</td><td class='mono'>186</td><td class='mono'></td><td>P/T SUB/ACCT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRAPC</td><td>CHARACTER</td><td class='mono'>187</td><td class='mono'>2</td><td class='mono'>188</td><td class='mono'></td><td>APPLICATION CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRREF</td><td>CHARACTER</td><td class='mono'>189</td><td class='mono'>25</td><td class='mono'>213</td><td class='mono'></td><td>REFERENCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRNID</td><td>DECIMAL</td><td class='mono'>214</td><td class='mono'>5</td><td class='mono'>218</td><td class='mono'></td><td>NO. ITEMS IN DEPOSIT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRTRN</td><td>DECIMAL</td><td class='mono'>219</td><td class='mono'>5</td><td class='mono'>223</td><td class='mono'></td><td>TRANSACTION NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRPMN</td><td>DECIMAL</td><td class='mono'>224</td><td class='mono'>5</td><td class='mono'>228</td><td class='mono'></td><td>PAYMENT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRSEQ</td><td>DECIMAL</td><td class='mono'>229</td><td class='mono'>7</td><td class='mono'>235</td><td class='mono'></td><td>SEQÑ/NO BATCH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRCKN</td><td>DECIMAL</td><td class='mono'>236</td><td class='mono'>11</td><td class='mono'>246</td><td class='mono'></td><td>CHECK NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRCCN</td><td>DECIMAL</td><td class='mono'>247</td><td class='mono'>8</td><td class='mono'>254</td><td class='mono'></td><td>COST CENTER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRCUN</td><td>DECIMAL</td><td class='mono'>255</td><td class='mono'>9</td><td class='mono'>263</td><td class='mono'></td><td>CUSTOMER NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRMOD</td><td>CHARACTER</td><td class='mono'>264</td><td class='mono'>1</td><td class='mono'>264</td><td class='mono'></td><td>MODULE TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTROBK</td><td>CHARACTER</td><td class='mono'>265</td><td class='mono'>2</td><td class='mono'>266</td><td class='mono'></td><td>ORIG.BANK NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTROBR</td><td>DECIMAL</td><td class='mono'>267</td><td class='mono'>4</td><td class='mono'>270</td><td class='mono'></td><td>ORIG.BRANCH NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRAAF</td><td>CHARACTER</td><td class='mono'>271</td><td class='mono'>1</td><td class='mono'>271</td><td class='mono'></td><td>ACC.ANALYSIS FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTREQV</td><td>DECIMAL</td><td class='mono'>272</td><td class='mono'>15</td><td class='mono'>286</td><td class='mono'>2</td><td>EQUIVAL AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRACR</td><td>DECIMAL</td><td class='mono'>287</td><td class='mono'>12</td><td class='mono'>298</td><td class='mono'></td><td>ACCOUNT REFERE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRCNU</td><td>DECIMAL</td><td class='mono'>299</td><td class='mono'>7</td><td class='mono'>305</td><td class='mono'></td><td>CONTROL NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRRCL</td><td>CHARACTER</td><td class='mono'>306</td><td class='mono'>20</td><td class='mono'>325</td><td class='mono'></td><td>RECONCLBL REFERE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRCNL</td><td>CHARACTER</td><td class='mono'>326</td><td class='mono'>2</td><td class='mono'>327</td><td class='mono'></td><td>CANAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRDED</td><td>CHARACTER</td><td class='mono'>328</td><td class='mono'>4</td><td class='mono'>331</td><td class='mono'></td><td>DEDUCTION CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRDSQ</td><td>NUMERIC</td><td class='mono'>332</td><td class='mono'>2</td><td class='mono'>333</td><td class='mono'></td><td>DEDUCTION SEQU</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRIVP</td><td>DECIMAL</td><td class='mono'>334</td><td class='mono'>6</td><td class='mono'>339</td><td class='mono'>3</td><td>IVA %</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRIVB</td><td>DECIMAL</td><td class='mono'>340</td><td class='mono'>15</td><td class='mono'>354</td><td class='mono'>2</td><td>IVA BASE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRREV</td><td>CHARACTER</td><td class='mono'>355</td><td class='mono'>1</td><td class='mono'>355</td><td class='mono'></td><td>REVERSE FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTROLF</td><td>CHARACTER</td><td class='mono'>356</td><td class='mono'>1</td><td class='mono'>356</td><td class='mono'></td><td>ON LINE FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRCOD</td><td>CHARACTER</td><td class='mono'>357</td><td class='mono'>4</td><td class='mono'>360</td><td class='mono'></td><td>SPECIAL CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRTMS</td><td>TIMESTAMP</td><td class='mono'>361</td><td class='mono'>26</td><td class='mono'>386</td><td class='mono'>6</td><td>TIME STAMP</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRFG1</td><td>CHARACTER</td><td class='mono'>387</td><td class='mono'>1</td><td class='mono'>387</td><td class='mono'></td><td>ALARM 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRFG2</td><td>CHARACTER</td><td class='mono'>388</td><td class='mono'>1</td><td class='mono'>388</td><td class='mono'></td><td>ALARM 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRFG3</td><td>CHARACTER</td><td class='mono'>389</td><td class='mono'>1</td><td class='mono'>389</td><td class='mono'></td><td>ALARM 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRFG4</td><td>CHARACTER</td><td class='mono'>390</td><td class='mono'>1</td><td class='mono'>390</td><td class='mono'></td><td>ALARM 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRFG5</td><td>CHARACTER</td><td class='mono'>391</td><td class='mono'>1</td><td class='mono'>391</td><td class='mono'></td><td>ALARM 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRFG6</td><td>CHARACTER</td><td class='mono'>392</td><td class='mono'>1</td><td class='mono'>392</td><td class='mono'></td><td>ALARM 6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRFG7</td><td>CHARACTER</td><td class='mono'>393</td><td class='mono'>1</td><td class='mono'>393</td><td class='mono'></td><td>ALARM 7</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRFG8</td><td>CHARACTER</td><td class='mono'>394</td><td class='mono'>1</td><td class='mono'>394</td><td class='mono'></td><td>ALARM 8</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRFG9</td><td>CHARACTER</td><td class='mono'>395</td><td class='mono'>1</td><td class='mono'>395</td><td class='mono'></td><td>ALARM 9</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TTRFG0</td><td>CHARACTER</td><td class='mono'>396</td><td class='mono'>1</td><td class='mono'>396</td><td class='mono'></td><td>ALARM 10</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[TTRRCL] Y | 5 | 2 | 2017 | 0 | 5 | 3 | 2017 | 0 | 0 | 0 | 0 | 0 | G | 0 | 0 | 10 | 26 | 2017 | 0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | 0 | 267656 | 0 | CCTE | 10 | 26 | 2016 | 0 | -992381 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 992381 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 1 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 267656 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0</div></body></html>

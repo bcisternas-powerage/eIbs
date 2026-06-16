@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>RMMST</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>RMMST</h1>
+<div class='meta'><b>N.º de campos:</b> 78</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>OFMBNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK CODE</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>OFMBRN</td><td>DECIMAL</td><td class='mono'>3</td><td class='mono'>4</td><td class='mono'>6</td><td class='mono'></td><td>BRANCH</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>OFMCCY</td><td>CHARACTER</td><td class='mono'>7</td><td class='mono'>3</td><td class='mono'>9</td><td class='mono'></td><td>CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMGLN</td><td>DECIMAL</td><td class='mono'>10</td><td class='mono'>16</td><td class='mono'>25</td><td class='mono'></td><td>G/L ACCOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMACC</td><td>DECIMAL</td><td class='mono'>26</td><td class='mono'>12</td><td class='mono'>37</td><td class='mono'></td><td>ACCOUNT NMBR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMCCN</td><td>DECIMAL</td><td class='mono'>38</td><td class='mono'>8</td><td class='mono'>45</td><td class='mono'></td><td>COST CENTER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMNCH</td><td>DECIMAL</td><td class='mono'>46</td><td class='mono'>11</td><td class='mono'>56</td><td class='mono'></td><td>CHECK OR DOCUMENT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMMCH</td><td>DECIMAL</td><td class='mono'>57</td><td class='mono'>15</td><td class='mono'>71</td><td class='mono'>2</td><td>CHECK AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMUSR</td><td>CHARACTER</td><td class='mono'>72</td><td class='mono'>10</td><td class='mono'>81</td><td class='mono'></td><td>USER EMISION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMDEM</td><td>NUMERIC</td><td class='mono'>82</td><td class='mono'>2</td><td class='mono'>83</td><td class='mono'></td><td>STARTING DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMMEM</td><td>NUMERIC</td><td class='mono'>84</td><td class='mono'>2</td><td class='mono'>85</td><td class='mono'></td><td>STARTING MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMAEM</td><td>NUMERIC</td><td class='mono'>86</td><td class='mono'>4</td><td class='mono'>89</td><td class='mono'></td><td>STARTING YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMUCN</td><td>CHARACTER</td><td class='mono'>90</td><td class='mono'>10</td><td class='mono'>99</td><td class='mono'></td><td>PAID BY USER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMPDB</td><td>DECIMAL</td><td class='mono'>100</td><td class='mono'>4</td><td class='mono'>103</td><td class='mono'></td><td>PAID BY BRANCH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMDVE</td><td>NUMERIC</td><td class='mono'>104</td><td class='mono'>2</td><td class='mono'>105</td><td class='mono'></td><td>MATURITY DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMMVE</td><td>NUMERIC</td><td class='mono'>106</td><td class='mono'>2</td><td class='mono'>107</td><td class='mono'></td><td>MATURITY MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMAVE</td><td>NUMERIC</td><td class='mono'>108</td><td class='mono'>4</td><td class='mono'>111</td><td class='mono'></td><td>MATURITY YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMSCH</td><td>CHARACTER</td><td class='mono'>112</td><td class='mono'>1</td><td class='mono'>112</td><td class='mono'></td><td>STATUS CHECK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMBNF</td><td>CHARACTER</td><td class='mono'>113</td><td class='mono'>60</td><td class='mono'>172</td><td class='mono'></td><td>BENEFICIARY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMBN1</td><td>CHARACTER</td><td class='mono'>173</td><td class='mono'>60</td><td class='mono'>232</td><td class='mono'></td><td>BENEFICIARY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMBN2</td><td>CHARACTER</td><td class='mono'>233</td><td class='mono'>60</td><td class='mono'>292</td><td class='mono'></td><td>BENEFICIARY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMAPL</td><td>CHARACTER</td><td class='mono'>293</td><td class='mono'>60</td><td class='mono'>352</td><td class='mono'></td><td>APPLICANT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMAP1</td><td>CHARACTER</td><td class='mono'>353</td><td class='mono'>60</td><td class='mono'>412</td><td class='mono'></td><td>APPLICANT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMAP2</td><td>CHARACTER</td><td class='mono'>413</td><td class='mono'>60</td><td class='mono'>472</td><td class='mono'></td><td>APPLICANT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMCOR</td><td>DECIMAL</td><td class='mono'>473</td><td class='mono'>9</td><td class='mono'>481</td><td class='mono'></td><td>CORRESPODANT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMCTY</td><td>CHARACTER</td><td class='mono'>482</td><td class='mono'>4</td><td class='mono'>485</td><td class='mono'></td><td>INDUSTRY CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMDTY</td><td>CHARACTER</td><td class='mono'>486</td><td class='mono'>1</td><td class='mono'>486</td><td class='mono'></td><td>DOCUMENT TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMCON</td><td>CHARACTER</td><td class='mono'>487</td><td class='mono'>1</td><td class='mono'>487</td><td class='mono'></td><td>CONDITION FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMIDD</td><td>NUMERIC</td><td class='mono'>488</td><td class='mono'>2</td><td class='mono'>489</td><td class='mono'></td><td>ISSUED   DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMIDM</td><td>NUMERIC</td><td class='mono'>490</td><td class='mono'>2</td><td class='mono'>491</td><td class='mono'></td><td>ISSUED   MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMIDY</td><td>NUMERIC</td><td class='mono'>492</td><td class='mono'>4</td><td class='mono'>495</td><td class='mono'></td><td>ISSUED   YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMTIM</td><td>TIMESTAMP</td><td class='mono'>496</td><td class='mono'>26</td><td class='mono'>521</td><td class='mono'>6</td><td>TIME ISSUED</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMPRF</td><td>CHARACTER</td><td class='mono'>522</td><td class='mono'>1</td><td class='mono'>522</td><td class='mono'></td><td>PRINT FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMPBY</td><td>CHARACTER</td><td class='mono'>523</td><td class='mono'>10</td><td class='mono'>532</td><td class='mono'></td><td>PRINTED BY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMPBR</td><td>DECIMAL</td><td class='mono'>533</td><td class='mono'>4</td><td class='mono'>536</td><td class='mono'></td><td>PRINTED BY BRANCH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMPDD</td><td>NUMERIC</td><td class='mono'>537</td><td class='mono'>2</td><td class='mono'>538</td><td class='mono'></td><td>PRINTED  DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMPDM</td><td>NUMERIC</td><td class='mono'>539</td><td class='mono'>2</td><td class='mono'>540</td><td class='mono'></td><td>PRINTED  MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMPDY</td><td>NUMERIC</td><td class='mono'>541</td><td class='mono'>4</td><td class='mono'>544</td><td class='mono'></td><td>PRINTED YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMPTM</td><td>TIMESTAMP</td><td class='mono'>545</td><td class='mono'>26</td><td class='mono'>570</td><td class='mono'>6</td><td>PRINTED TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMLSD</td><td>NUMERIC</td><td class='mono'>571</td><td class='mono'>2</td><td class='mono'>572</td><td class='mono'></td><td>LAST STATUS DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMLSM</td><td>NUMERIC</td><td class='mono'>573</td><td class='mono'>2</td><td class='mono'>574</td><td class='mono'></td><td>LAST STATUS MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMLSY</td><td>NUMERIC</td><td class='mono'>575</td><td class='mono'>4</td><td class='mono'>578</td><td class='mono'></td><td>LAST STATUS YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMFTY</td><td>CHARACTER</td><td class='mono'>579</td><td class='mono'>2</td><td class='mono'>580</td><td class='mono'></td><td>FORM TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMCUN</td><td>DECIMAL</td><td class='mono'>581</td><td class='mono'>9</td><td class='mono'>589</td><td class='mono'></td><td>CLIENTE/PROVEEDOR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMREM</td><td>CHARACTER</td><td class='mono'>590</td><td class='mono'>25</td><td class='mono'>614</td><td class='mono'></td><td>REMARKS/ID.GIROS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMRE1</td><td>CHARACTER</td><td class='mono'>615</td><td class='mono'>16</td><td class='mono'>630</td><td class='mono'></td><td>REFERENCIA-1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMRE2</td><td>CHARACTER</td><td class='mono'>631</td><td class='mono'>16</td><td class='mono'>646</td><td class='mono'></td><td>NUMERO RELATIVO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMFL1</td><td>CHARACTER</td><td class='mono'>647</td><td class='mono'>1</td><td class='mono'>647</td><td class='mono'></td><td>FILLER 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMFL2</td><td>CHARACTER</td><td class='mono'>648</td><td class='mono'>1</td><td class='mono'>648</td><td class='mono'></td><td>FILLER 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMORI</td><td>CHARACTER</td><td class='mono'>649</td><td class='mono'>1</td><td class='mono'>649</td><td class='mono'></td><td>ORIGEN DE REGISTRO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMBID</td><td>CHARACTER</td><td class='mono'>650</td><td class='mono'>25</td><td class='mono'>674</td><td class='mono'></td><td>BENEFICIARY ID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMAID</td><td>CHARACTER</td><td class='mono'>675</td><td class='mono'>25</td><td class='mono'>699</td><td class='mono'></td><td>APPLICANT ID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMKBT</td><td>DECIMAL</td><td class='mono'>700</td><td class='mono'>5</td><td class='mono'>704</td><td class='mono'></td><td>BATCH/NO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMDTP</td><td>CHARACTER</td><td class='mono'>705</td><td class='mono'>60</td><td class='mono'>764</td><td class='mono'></td><td>PMT DETAILS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMDP1</td><td>CHARACTER</td><td class='mono'>765</td><td class='mono'>60</td><td class='mono'>824</td><td class='mono'></td><td>PMT DETAILS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMDP2</td><td>CHARACTER</td><td class='mono'>825</td><td class='mono'>60</td><td class='mono'>884</td><td class='mono'></td><td>PMT DETAILS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMCCL</td><td>CHARACTER</td><td class='mono'>885</td><td class='mono'>1</td><td class='mono'>885</td><td class='mono'></td><td>CLASS CHEK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMNPR</td><td>DECIMAL</td><td class='mono'>886</td><td class='mono'>12</td><td class='mono'>897</td><td class='mono'></td><td>CREDIT PROPOSAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMCRC</td><td>CHARACTER</td><td class='mono'>898</td><td class='mono'>20</td><td class='mono'>917</td><td class='mono'></td><td>CREDIT CARD NRO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMCNL</td><td>CHARACTER</td><td class='mono'>918</td><td class='mono'>2</td><td class='mono'>919</td><td class='mono'></td><td>CANAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMUNR</td><td>CHARACTER</td><td class='mono'>920</td><td class='mono'>35</td><td class='mono'>954</td><td class='mono'></td><td>UNIQUE REFERENCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMADR</td><td>CHARACTER</td><td class='mono'>955</td><td class='mono'>256</td><td class='mono'>1210</td><td class='mono'></td><td>REMARKS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMDBK</td><td>CHARACTER</td><td class='mono'>1211</td><td class='mono'>2</td><td class='mono'>1212</td><td class='mono'></td><td>BANK CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMDBR</td><td>DECIMAL</td><td class='mono'>1213</td><td class='mono'>4</td><td class='mono'>1216</td><td class='mono'></td><td>BRANCH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMDCY</td><td>CHARACTER</td><td class='mono'>1217</td><td class='mono'>3</td><td class='mono'>1219</td><td class='mono'></td><td>CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMDGL</td><td>DECIMAL</td><td class='mono'>1220</td><td class='mono'>16</td><td class='mono'>1235</td><td class='mono'></td><td>G/L ACCOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMDAC</td><td>DECIMAL</td><td class='mono'>1236</td><td class='mono'>12</td><td class='mono'>1247</td><td class='mono'></td><td>ACCOUNT NMBR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMDCN</td><td>DECIMAL</td><td class='mono'>1248</td><td class='mono'>8</td><td class='mono'>1255</td><td class='mono'></td><td>COST CENTER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMCOA</td><td>DECIMAL</td><td class='mono'>1256</td><td class='mono'>15</td><td class='mono'>1270</td><td class='mono'>2</td><td>COMMISS AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMEXR</td><td>DECIMAL</td><td class='mono'>1271</td><td class='mono'>11</td><td class='mono'>1281</td><td class='mono'>6</td><td>F/E RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMCOF</td><td>CHARACTER</td><td class='mono'>1282</td><td class='mono'>1</td><td class='mono'>1282</td><td class='mono'></td><td>SERVICE CHARGE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMIVF</td><td>CHARACTER</td><td class='mono'>1283</td><td class='mono'>1</td><td class='mono'>1283</td><td class='mono'></td><td>IVA (Y/N)</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMIVA</td><td>DECIMAL</td><td class='mono'>1284</td><td class='mono'>15</td><td class='mono'>1298</td><td class='mono'>2</td><td>IVA AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMLMM</td><td>NUMERIC</td><td class='mono'>1299</td><td class='mono'>2</td><td class='mono'>1300</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMLMD</td><td>NUMERIC</td><td class='mono'>1301</td><td class='mono'>2</td><td class='mono'>1302</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMLMY</td><td>NUMERIC</td><td class='mono'>1303</td><td class='mono'>4</td><td class='mono'>1306</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMLMT</td><td>TIMESTAMP</td><td class='mono'>1307</td><td class='mono'>26</td><td class='mono'>1332</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>OFMLMU</td><td>CHARACTER</td><td class='mono'>1333</td><td class='mono'>10</td><td class='mono'>1342</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[OFMPDY] Y | 5 | 2 | 2017 | 0 | 5 | 3 | 2017 | 0 | 0 | 0 | 0 | 0 | G | 0 | 0 | 10 | 26 | 2017 | 0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | 0 | 267656 | 0 | CCTE | 10 | 26 | 2016 | 0 | -992381 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 992381 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 1 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 267656 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0</div></body></html>

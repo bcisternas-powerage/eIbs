@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>GLMST</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>GLMST</h1>
+<div class='meta'><b>N.º de campos:</b> 67</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>GLMBNK</td><td>CHARACTER</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'>3</td><td class='mono'></td><td>BANK NUMBER</td><td>01</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>GLMCCY</td><td>CHARACTER</td><td class='mono'>3</td><td class='mono'>4</td><td class='mono'>6</td><td class='mono'></td><td>CURRENCY</td><td>PC01</td></tr>
+<tr><td class='mono'>3</td><td class='mono'>GLMGLN</td><td>DECIMAL</td><td class='mono'>16</td><td class='mono'>3</td><td class='mono'>18</td><td class='mono'></td><td>G/L ACCOUNT</td><td>CLP</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMDSC</td><td>CHARACTER</td><td class='mono'>60</td><td class='mono'>16</td><td class='mono'>75</td><td class='mono'></td><td>ACCNT DESCRIPTION</td><td>1305981100100000</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMIBF</td><td>CHARACTER</td><td class='mono'>2</td><td class='mono'>4</td><td class='mono'>5</td><td class='mono'></td><td>I B F Y/N</td><td>CCON</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMATY</td><td>CHARACTER</td><td class='mono'>4</td><td class='mono'>2</td><td class='mono'>5</td><td class='mono'></td><td>ACCOUNT TYPE</td><td>00</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMHOA</td><td>CHARACTER</td><td class='mono'>20</td><td class='mono'>2</td><td class='mono'>21</td><td class='mono'></td><td>HOME/OFF ACCT</td><td>T0</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMHDS</td><td>CHARACTER</td><td class='mono'>60</td><td class='mono'>60</td><td class='mono'>119</td><td class='mono'></td><td>HOME/OFF DESCRIPTION</td><td>CREDITO CONSUMO CUOTAS IGUALES PESOS</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMDST</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>25</td><td class='mono'>25</td><td class='mono'></td><td>DAILY STMT IVA</td><td>CRED CONS CUOTAS IGUALES</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMRCL</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>RECONCILABLE Y/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMCLS</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'>3</td><td class='mono'></td><td>ACCT CLASS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMCCN</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>COST CENTER</td><td>00</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMCIC</td><td>CHARACTER</td><td class='mono'>4</td><td class='mono'>2</td><td class='mono'>5</td><td class='mono'></td><td>CIF CLASSIF</td><td>5</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMMEF</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'></td><td>INCLUDE IN BANK POSITION</td><td>C</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMCPF</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>3</td><td class='mono'>3</td><td class='mono'></td><td>CUST PROFIT</td><td>SC1</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMACL</td><td>NUMERIC</td><td class='mono'>1</td><td class='mono'>3</td><td class='mono'>3</td><td class='mono'></td><td>ACCOUNTING LEVEL</td><td>SC1</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMREV</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>3</td><td class='mono'>3</td><td class='mono'></td><td>REVALUATION FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMBSE</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'></td><td>CONV/BASE CCY</td><td>3</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMPRV</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'></td><td>PREVISION FLAG</td><td>4</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMRMA</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>MANUAL RECON/TION</td><td>PA</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFL1</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'></td><td>USER FLAG-1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFL2</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'></td><td>USER FLAG-2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFL3</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>4</td><td class='mono'>4</td><td class='mono'></td><td>USER FLAG-3</td><td>YNNN</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFL4</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'></td><td>USER FLAG-4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFL5</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>3</td><td class='mono'>3</td><td class='mono'></td><td>USER FLAG-5</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFL6</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'></td><td>USER FLAG-6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFL7</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'></td><td>USER FLAG-7</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFL8</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>USER FLAG-8</td><td>10</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFL9</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'></td><td>USER FLAG-9</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFR1</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>1</td><td class='mono'>6</td><td class='mono'></td><td>ESTADO CUENTA</td><td>Y</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFR2</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>2</td><td class='mono'>7</td><td class='mono'></td><td>CUENTA CANJE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFR3</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>1</td><td class='mono'>6</td><td class='mono'></td><td>DIAS TRANSLADO</td><td>N</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFR4</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>1</td><td class='mono'>6</td><td class='mono'></td><td>MIS P&amp;G</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFR5</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>1</td><td class='mono'>6</td><td class='mono'></td><td>CUENTA IMPUESTO</td><td>C</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFR6</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>1</td><td class='mono'>6</td><td class='mono'></td><td>FED/REP CDE 6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFR7</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>1</td><td class='mono'>6</td><td class='mono'></td><td>TEMPORALIDAD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFR8</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>4</td><td class='mono'>9</td><td class='mono'></td><td>CLASIFI PROV</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMFR9</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>4</td><td class='mono'>9</td><td class='mono'></td><td>ENTIDAD TITULAR</td><td>6</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMOPM</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'>4</td><td class='mono'>5</td><td class='mono'></td><td>OPENING DATE MM</td><td>72</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMOPD</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'></td><td>OPENING DATE DD</td><td>Y</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMOPY</td><td>NUMERIC</td><td class='mono'>4</td><td class='mono'>1</td><td class='mono'>4</td><td class='mono'></td><td>OPENING DATE YY</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMRIN</td><td>DECIMAL</td><td class='mono'>16</td><td class='mono'>1</td><td class='mono'>16</td><td class='mono'></td><td>INCOME REVALUA G/L</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMREX</td><td>DECIMAL</td><td class='mono'>16</td><td class='mono'>2</td><td class='mono'>17</td><td class='mono'></td><td>EXPENSE REVALUA G/L</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXOF</td><td>DECIMAL</td><td class='mono'>16</td><td class='mono'>2</td><td class='mono'>17</td><td class='mono'></td><td>OFFSET G/L</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMBUN</td><td>NUMERIC</td><td class='mono'>16</td><td class='mono'>2</td><td class='mono'>17</td><td class='mono'></td><td>BUDGET NRO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMACD</td><td>CHARACTER</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'>3</td><td class='mono'></td><td>PROCESS TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMRCT</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'></td><td>RECONCIL TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMSUM</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'></td><td>SUMMARIZE ENTRY</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMOVF</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'></td><td>OVERDRAFT FLAG</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMCBR</td><td>DECIMAL</td><td class='mono'>4</td><td class='mono'>1</td><td class='mono'>4</td><td class='mono'></td><td>BRANCH CENTRALIZED</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMUNR</td><td>CHARACTER</td><td class='mono'>35</td><td class='mono'>1</td><td class='mono'>35</td><td class='mono'></td><td>UNIQUE REFERENCE</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMUC1</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>1</td><td class='mono'>6</td><td class='mono'></td><td>USER CODE 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMUC2</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>1</td><td class='mono'>6</td><td class='mono'></td><td>USER CODE 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMUC3</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>1</td><td class='mono'>6</td><td class='mono'></td><td>USER CODE 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMUC4</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>1</td><td class='mono'>6</td><td class='mono'></td><td>USER CODE 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMUC5</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>1</td><td class='mono'>6</td><td class='mono'></td><td>USER CODE 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMUC6</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>1</td><td class='mono'>6</td><td class='mono'></td><td>USER CODE 6</td><td>N</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMUC7</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>9</td><td class='mono'>14</td><td class='mono'></td><td>USER CODE 7</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMUC8</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>15</td><td class='mono'>20</td><td class='mono'></td><td>USER CODE 8</td><td>500000</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMUC9</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>15</td><td class='mono'>20</td><td class='mono'></td><td>USER CODE 9</td><td>100000000</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMTIA</td><td>CHARACTER</td><td class='mono'>20</td><td class='mono'>1</td><td class='mono'>20</td><td class='mono'></td><td>TITUARIZA ACCT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMTIS</td><td>CHARACTER</td><td class='mono'>60</td><td class='mono'>2</td><td class='mono'>61</td><td class='mono'></td><td>TITUARIZA DESC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMLMM</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'>3</td><td class='mono'></td><td>LAST MAINT/MM</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMLMD</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'>3</td><td class='mono'></td><td>LAST MAINT/DD</td><td>5</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMLMY</td><td>NUMERIC</td><td class='mono'>4</td><td class='mono'>4</td><td class='mono'>7</td><td class='mono'></td><td>LAST MAINT/YY</td><td>2016</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMLMT</td><td>TIMESTAMP</td><td class='mono'>26</td><td class='mono'>26</td><td class='mono'>51</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td>2017-05-17-11.08.55.797000</td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMLMU</td><td>CHARACTER</td><td class='mono'>10</td><td class='mono'>10</td><td class='mono'>19</td><td class='mono'></td><td>LAST MAINT/USER</td><td>PARIFRV</td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[GLMBNK] 01 | 01
+[GLMCCY] PC02 | PC03
+[GLMGLN] CLP | CLP
+[GLMDSC] 1305100100400000 | 1305100100600000
+[GLMIBF] CCON | CCON
+[GLMATY] C1 | C1
+[GLMHOA] T0
+[GLMHDS] CREDITO CONSUMO UF CUOTAS IGUALES | CREDITO FUNCIONARIO BANCA PROPIA $
+[GLMDST] CRED CONS UF CUOTAS IGUAL | CONS BCA PROPIA $
+[GLMCCN] 00 | 00
+[GLMCIC] 1 | 5
+[GLMMEF] C | C
+[GLMCPF] SC1 | SC1
+[GLMACL] SC1 | SC1
+[GLMBSE] 1 | 1
+[GLMPRV] 4 | 4
+[GLMRMA] 01 | PA
+[GLMFL3] NNNN | NNNN
+[GLMFL5] 45 | 30
+[GLMFL8] 10 | 10
+[GLMFR1] N | N
+[GLMFR3] N | N
+[GLMFR5] C | C
+[GLMFR7] 1
+[GLMOPD] Y | Y
+[GLMOPY] 1 | 1
+[GLMSUM] 0 | 0
+[GLMOVF] 1 | 1
+[GLMCBR] 0 | 0
+[GLMUNR] 1 | 1
+[GLMUC6] Y | Y
+[GLMUC7] 0 | 0
+[GLMUC8] 0 | 0
+[GLMUC9] 0 | 0
+[GLMLMM] 1 | 1
+[GLMLMD] 5 | 5
+[GLMLMY] 2016 | 2016
+[GLMLMT] 2017-05-05-19.52.04.105000 | 2017-05-05-19.16.08.427000
+[GLMLMU] PARIFRV | PARIFRV</div></body></html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>RATES</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>RATES</h1>
+<div class='meta'><b>Descripción:</b> TABLA DE TASAS<br><b>N.º de campos:</b> 72</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>RATBNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK NUMBER</td><td>Numero Banco</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>RATCCY</td><td>CHARACTER</td><td class='mono'>3</td><td class='mono'>3</td><td class='mono'>5</td><td class='mono'></td><td>CURRENCY</td><td>Codigo Moneda</td></tr>
+<tr><td class='mono'>3</td><td class='mono'>RATEXR</td><td>DECIMAL</td><td class='mono'>6</td><td class='mono'>11</td><td class='mono'>16</td><td class='mono'>6</td><td>EXCHANGE RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATPUM</td><td>NUMERIC</td><td class='mono'>17</td><td class='mono'>2</td><td class='mono'>18</td><td class='mono'></td><td>PREV/UPD DATE MM</td><td>Fecha última Modificación Mes</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATPUD</td><td>NUMERIC</td><td class='mono'>19</td><td class='mono'>2</td><td class='mono'>20</td><td class='mono'></td><td>PREV/UPD DATE DD</td><td>Fecha última Modificación Día</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATPUY</td><td>NUMERIC</td><td class='mono'>21</td><td class='mono'>4</td><td class='mono'>24</td><td class='mono'></td><td>PREV/UPD DATE YY</td><td>Fecha última Modificación Año</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATPER</td><td>DECIMAL</td><td class='mono'>25</td><td class='mono'>11</td><td class='mono'>35</td><td class='mono'>6</td><td>PREV/EXC RATE</td><td>Monto Previo Tipo de Cambio SPOT (SBIF)</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATPBK</td><td>CHARACTER</td><td class='mono'>36</td><td class='mono'>2</td><td class='mono'>37</td><td class='mono'></td><td>POSITION ACCNT BANK</td><td>Codigo Banco Posicion</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATPCY</td><td>CHARACTER</td><td class='mono'>38</td><td class='mono'>3</td><td class='mono'>40</td><td class='mono'></td><td>POSITION ACCNT CCY</td><td>Codigo Moneda Posicion</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATPGL</td><td>DECIMAL</td><td class='mono'>41</td><td class='mono'>16</td><td class='mono'>56</td><td class='mono'></td><td>POSITION ACCNT G/L</td><td>Codigo Cuenta Contable Posicion</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATFR1</td><td>DECIMAL</td><td class='mono'>57</td><td class='mono'>11</td><td class='mono'>67</td><td class='mono'>6</td><td>FUTURE FX RTE 7 DAYS</td><td>Monto Tipo de Cambio a Futuro</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATFR2</td><td>DECIMAL</td><td class='mono'>68</td><td class='mono'>11</td><td class='mono'>78</td><td class='mono'>6</td><td>FUTURE FX RTE 15 DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATFR3</td><td>DECIMAL</td><td class='mono'>79</td><td class='mono'>11</td><td class='mono'>89</td><td class='mono'>6</td><td>FUTURE FX RTE 30 DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATFR4</td><td>DECIMAL</td><td class='mono'>90</td><td class='mono'>11</td><td class='mono'>100</td><td class='mono'>6</td><td>FUTURE FX RTE 60 DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATFR5</td><td>DECIMAL</td><td class='mono'>101</td><td class='mono'>11</td><td class='mono'>111</td><td class='mono'>6</td><td>FUTURE FX RTE 90 DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATFR6</td><td>DECIMAL</td><td class='mono'>112</td><td class='mono'>11</td><td class='mono'>122</td><td class='mono'>6</td><td>FUTURE FX RTE 120 DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATFR7</td><td>DECIMAL</td><td class='mono'>123</td><td class='mono'>11</td><td class='mono'>133</td><td class='mono'>6</td><td>FUTURE FX RTE 150 DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATFR8</td><td>DECIMAL</td><td class='mono'>134</td><td class='mono'>11</td><td class='mono'>144</td><td class='mono'>6</td><td>FUTURE FX RTE 180 DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATFR9</td><td>DECIMAL</td><td class='mono'>145</td><td class='mono'>11</td><td class='mono'>155</td><td class='mono'>6</td><td>FUTURE FX RTE 360 DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATF10</td><td>DECIMAL</td><td class='mono'>156</td><td class='mono'>11</td><td class='mono'>166</td><td class='mono'>6</td><td>FUTURE FX RTE 720 DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATMUD</td><td>CHARACTER</td><td class='mono'>167</td><td class='mono'>1</td><td class='mono'>167</td><td class='mono'></td><td>MULT DIV</td><td>Flag Multiplica/Divide</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATCPR</td><td>DECIMAL</td><td class='mono'>168</td><td class='mono'>11</td><td class='mono'>178</td><td class='mono'>6</td><td>COUNTER VALUE PURCH RATE</td><td>Monto de Compra Tipo de Cambio</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATCSR</td><td>DECIMAL</td><td class='mono'>179</td><td class='mono'>11</td><td class='mono'>189</td><td class='mono'>6</td><td>COUNTER VALUE SALES RATE</td><td>Monto de Venta Tipo de Cambio</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATFPR</td><td>DECIMAL</td><td class='mono'>190</td><td class='mono'>11</td><td class='mono'>200</td><td class='mono'>6</td><td>FOREIGN EXCHG PURCH RATE</td><td>Tipo de Cambio para Compra</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATFSR</td><td>DECIMAL</td><td class='mono'>201</td><td class='mono'>11</td><td class='mono'>211</td><td class='mono'>6</td><td>FOREIGN EXCHG SALES RATE</td><td>Tipo de Cambio para Venta</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATPAB</td><td>DECIMAL</td><td class='mono'>212</td><td class='mono'>15</td><td class='mono'>226</td><td class='mono'>2</td><td>POS ACT BALANCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATCVB</td><td>DECIMAL</td><td class='mono'>227</td><td class='mono'>15</td><td class='mono'>241</td><td class='mono'>2</td><td>C/VALUE POS ACT BALANCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATCYA</td><td>CHARACTER</td><td class='mono'>242</td><td class='mono'>25</td><td class='mono'>266</td><td class='mono'></td><td>CURRENCY ABREVIATION</td><td>Nombre Corto Moneda</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATRNM</td><td>CHARACTER</td><td class='mono'>267</td><td class='mono'>4</td><td class='mono'>270</td><td class='mono'></td><td>CURRENCY REFERENCE</td><td>Código Moneda SBIF</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATVBK</td><td>CHARACTER</td><td class='mono'>271</td><td class='mono'>2</td><td class='mono'>272</td><td class='mono'></td><td>C/VALUE POS ACT BANK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATVCY</td><td>CHARACTER</td><td class='mono'>273</td><td class='mono'>3</td><td class='mono'>275</td><td class='mono'></td><td>C/VALUE POS ACT CCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATVGL</td><td>DECIMAL</td><td class='mono'>276</td><td class='mono'>16</td><td class='mono'>291</td><td class='mono'></td><td>C/VALUE POS ACT G/L</td><td>Cuenta Contable</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATBK1</td><td>CHARACTER</td><td class='mono'>292</td><td class='mono'>2</td><td class='mono'>293</td><td class='mono'></td><td>P/L ACT AGENCY BANK</td><td>Codigo Oficina Banco</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATCY1</td><td>CHARACTER</td><td class='mono'>294</td><td class='mono'>3</td><td class='mono'>296</td><td class='mono'></td><td>P/L ACT AGENCY CCY</td><td>Codigo Oficina Moneda</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATGL1</td><td>DECIMAL</td><td class='mono'>297</td><td class='mono'>16</td><td class='mono'>312</td><td class='mono'></td><td>P/L ACT AGENCY G/L</td><td>Codigo Oficina Cuenta Contable</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATBK2</td><td>CHARACTER</td><td class='mono'>313</td><td class='mono'>2</td><td class='mono'>314</td><td class='mono'></td><td>P/L ACT IBF BANK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATCY2</td><td>CHARACTER</td><td class='mono'>315</td><td class='mono'>3</td><td class='mono'>317</td><td class='mono'></td><td>P/L ACT IBF CCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATGL2</td><td>DECIMAL</td><td class='mono'>318</td><td class='mono'>16</td><td class='mono'>333</td><td class='mono'></td><td>P/L ACT IBF G/L</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATBK3</td><td>CHARACTER</td><td class='mono'>334</td><td class='mono'>2</td><td class='mono'>335</td><td class='mono'></td><td>RET/EARN AGENCY BANK</td><td>Retencion/Ganancia Oficina Banco</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATCY3</td><td>CHARACTER</td><td class='mono'>336</td><td class='mono'>3</td><td class='mono'>338</td><td class='mono'></td><td>RET/EARN AGENCY CCY</td><td>Retencion/Ganancia Oficina Moneda</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATGL3</td><td>DECIMAL</td><td class='mono'>339</td><td class='mono'>16</td><td class='mono'>354</td><td class='mono'></td><td>RET/EARN AGENCY G/L</td><td>Retencion/Ganancia Oficina Cuenta Contable</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATBK4</td><td>CHARACTER</td><td class='mono'>355</td><td class='mono'>2</td><td class='mono'>356</td><td class='mono'></td><td>RET/EARN IBF BANK</td><td>Retencion/Ganancia Banco</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATCY4</td><td>CHARACTER</td><td class='mono'>357</td><td class='mono'>3</td><td class='mono'>359</td><td class='mono'></td><td>RET/EARN IBF CCY</td><td>Retencion/Ganancia Moneda</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATGL4</td><td>DECIMAL</td><td class='mono'>360</td><td class='mono'>16</td><td class='mono'>375</td><td class='mono'></td><td>RET/EARN IBF G/L</td><td>Retencion/Ganancia Cuenta Contable</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATKPR</td><td>DECIMAL</td><td class='mono'>376</td><td class='mono'>11</td><td class='mono'>386</td><td class='mono'>6</td><td>FOREIGN CHECK PURCH RATE</td><td>Monto de Compra Tipo de Cambio Chequeo</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATKSR</td><td>DECIMAL</td><td class='mono'>387</td><td class='mono'>11</td><td class='mono'>397</td><td class='mono'>6</td><td>FOREIGN CHECK SALES RATE</td><td>Monto de Venta Tipo de Cambio Chequeo</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATDCP</td><td>NUMERIC</td><td class='mono'>398</td><td class='mono'>1</td><td class='mono'>398</td><td class='mono'></td><td>DECIMAL POSITIONS</td><td>Cantidad de Decimales</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATTLR</td><td>DECIMAL</td><td class='mono'>399</td><td class='mono'>6</td><td class='mono'>404</td><td class='mono'>3</td><td>TOLERANCE TREASURY</td><td>Margen de Tolerancia Tesorería</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATTLO</td><td>DECIMAL</td><td class='mono'>405</td><td class='mono'>6</td><td class='mono'>410</td><td class='mono'>3</td><td>TOLERANCE OPERTIVE</td><td>Margen de Tolerancia Operativos</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATBSE</td><td>NUMERIC</td><td class='mono'>411</td><td class='mono'>3</td><td class='mono'>413</td><td class='mono'></td><td>DAYS BASE</td><td>Días Período</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATNAC</td><td>DECIMAL</td><td class='mono'>414</td><td class='mono'>16</td><td class='mono'>429</td><td class='mono'></td><td>NOSTRO ACCOUNT</td><td>Nuestra Cuenta Contable</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATNAT</td><td>CHARACTER</td><td class='mono'>430</td><td class='mono'>1</td><td class='mono'>430</td><td class='mono'></td><td>NOSTRO ACCOUNT TYPE</td><td>Nuestro Tipo de Cuenta Contable</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATCLM</td><td>DECIMAL</td><td class='mono'>431</td><td class='mono'>15</td><td class='mono'>445</td><td class='mono'>2</td><td>CCY AMOUNT LIMIT</td><td>Monto Límite por Moneda</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATAMU</td><td>DECIMAL</td><td class='mono'>446</td><td class='mono'>15</td><td class='mono'>460</td><td class='mono'>2</td><td>CCY AMOUNT U S E D</td><td>Monto Límite por Moneda Usada</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATREF</td><td>DECIMAL</td><td class='mono'>461</td><td class='mono'>11</td><td class='mono'>471</td><td class='mono'>6</td><td>REFERENCE RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATUSD</td><td>DECIMAL</td><td class='mono'>472</td><td class='mono'>11</td><td class='mono'>482</td><td class='mono'>6</td><td>EQUIVALENCE DOLLAR</td><td>Monto Equivalencia Dólar(Paridad)</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATSCY</td><td>CHARACTER</td><td class='mono'>483</td><td class='mono'>3</td><td class='mono'>485</td><td class='mono'></td><td>SWIFT CURRENCY CODE</td><td>Código Moneda SWIFT</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATDSC</td><td>CHARACTER</td><td class='mono'>486</td><td class='mono'>60</td><td class='mono'>545</td><td class='mono'></td><td>DESCRIPTION</td><td>Nombre Moneda</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATRF2</td><td>DECIMAL</td><td class='mono'>546</td><td class='mono'>11</td><td class='mono'>556</td><td class='mono'>6</td><td>RATE REF-2 IVA</td><td>Tipo Cambio USD Observado Diario</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATRF3</td><td>DECIMAL</td><td class='mono'>557</td><td class='mono'>11</td><td class='mono'>567</td><td class='mono'>6</td><td>RATE REF-3 OBS</td><td>Tipo Cambio USD Venta</td></tr>
+<tr><td class='mono'></td><td class='mono'>RATACF</td><td>CHARACTER</td><td class='mono'>568</td><td class='mono'>1</td><td class='mono'>568</td><td class='mono'></td><td>ACCOUNTING Y/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATRT1</td><td>DECIMAL</td><td class='mono'>569</td><td class='mono'>11</td><td class='mono'>579</td><td class='mono'>6</td><td>RATE USER 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATRT2</td><td>DECIMAL</td><td class='mono'>580</td><td class='mono'>11</td><td class='mono'>590</td><td class='mono'>6</td><td>RATE USER 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATUS1</td><td>CHARACTER</td><td class='mono'>591</td><td class='mono'>4</td><td class='mono'>594</td><td class='mono'></td><td>USER CODE 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATUS2</td><td>CHARACTER</td><td class='mono'>595</td><td class='mono'>4</td><td class='mono'>598</td><td class='mono'></td><td>USER CODE 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATMIN</td><td>DECIMAL</td><td class='mono'>599</td><td class='mono'>15</td><td class='mono'>613</td><td class='mono'>2</td><td>MONTO MINIMO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATMAX</td><td>DECIMAL</td><td class='mono'>614</td><td class='mono'>15</td><td class='mono'>628</td><td class='mono'>2</td><td>MONTO MAXIMO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATLMM</td><td>NUMERIC</td><td class='mono'>629</td><td class='mono'>2</td><td class='mono'>630</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATLMD</td><td>NUMERIC</td><td class='mono'>631</td><td class='mono'>2</td><td class='mono'>632</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATLMY</td><td>NUMERIC</td><td class='mono'>633</td><td class='mono'>4</td><td class='mono'>636</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATLMT</td><td>TIMESTAMP</td><td class='mono'>637</td><td class='mono'>26</td><td class='mono'>662</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>RATLMU</td><td>CHARACTER</td><td class='mono'>663</td><td class='mono'>10</td><td class='mono'>672</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[RATBNK] 01 | 01 | 01 | 01 | 01 | 01 | 01 | 01 | 01 | 01 | 01 | 01 | 01
+[RATCCY] AUD | CAD | CHF | CLP | DKK | EUR | GBP | JPY | NOK | SEK | USD | 2 | 7
+[RATEXR] 485.29 | 500.65 | 661.59 | 1 | 103.09 | 768.22 | 868.72 | 5.94 | 81.55 | 74.97 | 657.08 | 27175.04 | 18128.16
+[RATPUM] 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7
+[RATPUD] 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5
+[RATPUY] 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018
+[RATPER] 485.29 | 500.65 | 661.59 | 1 | 103.09 | 768.22 | 868.72 | 5.94 | 81.55 | 74.97 | 657.08 | 27172.33 | 18126.9
+[RATPBK] 01 | 01 | 01 | 01 | 01 | 01 | 01 | 01 | 01 | 01
+[RATPCY] AUD | CAD | CHF | DKK | EUR | GBP | JPY | NOK | SEK | USD
+[RATPGL] 5450500000100000 | 5450500000100000 | 5450500000100000 | 0 | 5450500000100000 | 5450500000100000 | 5450500000100000 | 5450500000100000 | 5450500000100000 | 5450500000100000 | 5450500000100000 | 0 | 0
+[RATFR1] 472 | 482.81 | 640.68 | 0 | 297.22 | 745.69 | 842.03 | 5.9 | 80.35 | 73.85 | 616.63 | 0 | 0
+[RATFR2] 472 | 482.81 | 640.68 | 0 | 297.22 | 745.69 | 842.03 | 5.9 | 80.35 | 73.85 | 616.63 | 0 | 0
+[RATFR3] 472 | 482.81 | 640.68 | 0 | 297.22 | 745.69 | 842.03 | 5.9 | 80.35 | 73.85 | 616.63 | 0 | 0
+[RATFR4] 472 | 482.81 | 640.68 | 0 | 297.22 | 745.69 | 842.03 | 5.9 | 80.35 | 73.85 | 616.63 | 0 | 0
+[RATFR5] 472 | 482.81 | 640.68 | 0 | 297.22 | 745.69 | 842.03 | 5.9 | 80.35 | 73.85 | 616.63 | 0 | 0
+[RATFR6] 472 | 482.81 | 640.68 | 0 | 297.22 | 745.69 | 842.03 | 5.9 | 80.35 | 73.85 | 616.63 | 0 | 0
+[RATFR7] 472 | 482.81 | 640.68 | 0 | 297.22 | 745.69 | 842.03 | 5.9 | 80.35 | 73.85 | 616.63 | 0 | 0
+[RATFR8] 472 | 482.81 | 640.68 | 0 | 297.22 | 745.69 | 842.03 | 5.9 | 80.35 | 73.85 | 616.63 | 0 | 0
+[RATFR9] 472 | 482.81 | 640.68 | 0 | 297.22 | 745.69 | 842.03 | 5.9 | 80.35 | 73.85 | 616.63 | 0 | 0
+[RATF10] 472 | 482.81 | 640.68 | 0 | 297.22 | 745.69 | 842.03 | 5.9 | 80.35 | 73.85 | 616.63 | 0 | 0
+[RATMUD] M | M | M | M | M | M | M | M | M | M | M | M | M
+[RATCPR] 487.8 | 495.37 | 638.51 | 1 | 99.34 | 739.14 | 839.18 | 5.61 | 77.92 | 75.97 | 652 | 27175.04 | 18128.16
+[RATCSR] 487.8 | 495.37 | 638.51 | 1 | 99.34 | 739.14 | 839.18 | 5.61 | 77.92 | 75.97 | 662 | 27175.04 | 18128.16
+[RATFPR] 487.8 | 495.37 | 638.51 | 1 | 99.34 | 739.14 | 839.18 | 5.61 | 77.92 | 75.97 | 652 | 27175.04 | 18128.16
+[RATFSR] 487.8 | 495.37 | 638.51 | 1 | 99.34 | 739.14 | 839.18 | 5.61 | 77.92 | 75.97 | 662 | 27175.04 | 18128.16
+[RATPAB] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATCVB] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATCYA] DOLAR AUD | DOLAR CAD | FRANCO SUIZO | PESOS | CORONA DANESA | EURO | LIBRA ESTERLINA | YEN | CORONA NORUEGA | CORONA SUECA | DOLAR USD | UFS | ICP
+[RATRNM] 999 | 013 | 998
+[RATVBK] 01 | 01 | 01 | 01 | 01 | 01 | 01 | 01 | 01 | 01
+[RATVCY] CLP | CLP | CLP | CLP | CLP | CLP | CLP | CLP | CLP | CLP
+[RATVGL] 5250500000100000 | 5250500000200000 | 5250500000300000 | 0 | 5250500000400000 | 5250500000500000 | 5250500000600000 | 5250500000700000 | 5250500000800000 | 5250500000900000 | 5250500001000000 | 0 | 0
+[RATBK1] 01
+[RATCY1] CLP
+[RATGL1] 0 | 0 | 0 | 3104200000100000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATGL2] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 1 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 267656 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0
+[RATBK3] 01
+[RATCY3] CLP
+[RATGL3] 0 | 0 | 0 | 3104200000200000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATGL4] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATKPR] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATKSR] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATDCP] 2 | 2 | 2 | 0 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2
+[RATTLR] 10 | 10 | 10 | 0 | 0 | 10 | 10 | 10 | 10 | 10 | 10 | 0 | 0
+[RATTLO] 10 | 10 | 10 | 0 | 0 | 10 | 10 | 10 | 10 | 10 | 10 | 0 | 0
+[RATBSE] 365 | 365 | 365 | 365 | 365 | 365 | 365 | 365 | 365 | 365 | 360 | 365 | 365
+[RATNAC] 0 | 0 | 2130019000200000 | 0 | 0 | 2130019000200000 | 2130019000200000 | 0 | 0 | 0 | 2130019000200000 | 0 | 0
+[RATNAT] G | G | G | G | G | G | G | G | G | G
+[RATCLM] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATAMU] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATREF] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATUSD] 1.35 | 1.31 | 0.99 | 600 | 6.37 | 0.86 | 0.76 | 110.66 | 8.06 | 8.76 | 1 | 0 | 0
+[RATSCY] AUD | CAD | CHF | DKK | EUR | GBP | JPY | NOK | SEK
+[RATDSC] DOLAR AUSTRALIANO | DOLAR CANADIENSE | FRANCO SUIZO | PESO CHILENO | CORONA DANESA | EURO | LIBRA ESTERLINA | YEN | CORONA NORUEGA | CORONA SUECA | DOLAR ESTADOUNIDENSE | VALOR REAJUSTABLE UFS | INDICE CAMARA PROMEDIO (ICP)
+[RATRF2] 58 | 89 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATRF3] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATACF] N | N
+[RATRT1] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATRT2] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATMIN] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATMAX] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[RATLMM] 7 | 7 | 7 | 1 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7
+[RATLMD] 5 | 5 | 5 | 31 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 6 | 6
+[RATLMY] 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018
+[RATLMT] 2018-07-05-15.36.29.587000 | 2018-07-05-15.37.17.596000 | 2018-07-05-15.31.51.351000 | 2018-01-31-15.16.42.409000 | 2018-07-05-15.34.53.750000 | 2018-07-05-15.37.44.586000 | 2018-07-05-15.31.21.093000 | 2018-07-05-15.32.28.155000 | 2018-07-05-15.35.26.919000 | 2018-07-05-15.35.57.892000 | 2018-07-05-15.30.54.134000 | 0001-01-01-00.00.00.000000 | 0001-01-01-00.00.00.000000
+[RATLMU] BICMMAULME | BICMMAULME | BICMMAULME | BICDATAPRO | BICMMAULME | BICMMAULME | BICMMAULME | BICMMAULME | BICMMAULME | BICMMAULME | BICMMAULME</div></body></html>

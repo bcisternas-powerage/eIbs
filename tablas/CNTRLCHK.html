@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>CNTRLCHK</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>CNTRLCHK</h1>
+<div class='meta'><b>Archivo / Código:</b> cntrlchk<br><b>N.º de campos:</b> 49</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>CHKBNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK NUMBER</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>CHKCCY</td><td>CHARACTER</td><td class='mono'>3</td><td class='mono'>3</td><td class='mono'>5</td><td class='mono'></td><td>CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKATY</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>4</td><td class='mono'>9</td><td class='mono'></td><td>ACC TYP</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKTCB</td><td>CHARACTER</td><td class='mono'>10</td><td class='mono'>2</td><td class='mono'>11</td><td class='mono'></td><td>CHECK BOOK TABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKDES</td><td>CHARACTER</td><td class='mono'>12</td><td class='mono'>45</td><td class='mono'>56</td><td class='mono'></td><td>DESCRIPCION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKNCK</td><td>DECIMAL</td><td class='mono'>57</td><td class='mono'>5</td><td class='mono'>61</td><td class='mono'></td><td>NUMBER OF CHECKS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKCOC</td><td>CHARACTER</td><td class='mono'>62</td><td class='mono'>3</td><td class='mono'>64</td><td class='mono'></td><td>COST G/L CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKCOG</td><td>DECIMAL</td><td class='mono'>65</td><td class='mono'>16</td><td class='mono'>80</td><td class='mono'></td><td>COST G/L</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKCOR</td><td>DECIMAL</td><td class='mono'>81</td><td class='mono'>17</td><td class='mono'>97</td><td class='mono'>4</td><td>CHECK BOOK COST</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKIVA</td><td>CHARACTER</td><td class='mono'>98</td><td class='mono'>1</td><td class='mono'>98</td><td class='mono'></td><td>IVA BY COST</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKTXC</td><td>CHARACTER</td><td class='mono'>99</td><td class='mono'>3</td><td class='mono'>101</td><td class='mono'></td><td>TAX G/L CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKTXG</td><td>DECIMAL</td><td class='mono'>102</td><td class='mono'>16</td><td class='mono'>117</td><td class='mono'></td><td>TAX G/L</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKTXR</td><td>DECIMAL</td><td class='mono'>118</td><td class='mono'>6</td><td class='mono'>123</td><td class='mono'>3</td><td>TAX PERCENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKPRO</td><td>DECIMAL</td><td class='mono'>124</td><td class='mono'>9</td><td class='mono'>132</td><td class='mono'></td><td>VENDORS NMBR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKACD</td><td>CHARACTER</td><td class='mono'>133</td><td class='mono'>2</td><td class='mono'>134</td><td class='mono'></td><td>PROCESS TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKMIN</td><td>DECIMAL</td><td class='mono'>135</td><td class='mono'>15</td><td class='mono'>149</td><td class='mono'>2</td><td>BAL/MIN USED</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKRCO</td><td>DECIMAL</td><td class='mono'>150</td><td class='mono'>5</td><td class='mono'>154</td><td class='mono'></td><td>COUNTER DEVOL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKRQD</td><td>CHARACTER</td><td class='mono'>155</td><td class='mono'>1</td><td class='mono'>155</td><td class='mono'></td><td>REQUEST DOCUMENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKUS1</td><td>CHARACTER</td><td class='mono'>156</td><td class='mono'>4</td><td class='mono'>159</td><td class='mono'></td><td>USER CODE 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKUS2</td><td>CHARACTER</td><td class='mono'>160</td><td class='mono'>4</td><td class='mono'>163</td><td class='mono'></td><td>USER CODE 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKUS3</td><td>CHARACTER</td><td class='mono'>164</td><td class='mono'>4</td><td class='mono'>167</td><td class='mono'></td><td>USER CODE 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKFL1</td><td>CHARACTER</td><td class='mono'>168</td><td class='mono'>1</td><td class='mono'>168</td><td class='mono'></td><td>FLAG # 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKFL2</td><td>CHARACTER</td><td class='mono'>169</td><td class='mono'>1</td><td class='mono'>169</td><td class='mono'></td><td>FLAG # 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKFL3</td><td>CHARACTER</td><td class='mono'>170</td><td class='mono'>1</td><td class='mono'>170</td><td class='mono'></td><td>FLAG # 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKDIG</td><td>CHARACTER</td><td class='mono'>171</td><td class='mono'>1</td><td class='mono'>171</td><td class='mono'></td><td>CALCULO DIG.VERIF</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKUC1</td><td>CHARACTER</td><td class='mono'>172</td><td class='mono'>4</td><td class='mono'>175</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKUC2</td><td>CHARACTER</td><td class='mono'>176</td><td class='mono'>4</td><td class='mono'>179</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKFG1</td><td>CHARACTER</td><td class='mono'>180</td><td class='mono'>1</td><td class='mono'>180</td><td class='mono'></td><td>AVALILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKFG2</td><td>CHARACTER</td><td class='mono'>181</td><td class='mono'>1</td><td class='mono'>181</td><td class='mono'></td><td>AVALILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKCAY</td><td>CHARACTER</td><td class='mono'>182</td><td class='mono'>3</td><td class='mono'>184</td><td class='mono'></td><td>MDA COM POR ANALACION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKCAG</td><td>DECIMAL</td><td class='mono'>185</td><td class='mono'>16</td><td class='mono'>200</td><td class='mono'></td><td>G/L COM POR ANULACION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKCAA</td><td>DECIMAL</td><td class='mono'>201</td><td class='mono'>15</td><td class='mono'>215</td><td class='mono'>2</td><td>MONTO COM ANULACION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKAIV</td><td>CHARACTER</td><td class='mono'>216</td><td class='mono'>1</td><td class='mono'>216</td><td class='mono'></td><td>IVA POR ANULACION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKANM</td><td>NUMERIC</td><td class='mono'>217</td><td class='mono'>2</td><td class='mono'>218</td><td class='mono'></td><td>MESES ANULAN AUTOMATICA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKFEE</td><td>CHARACTER</td><td class='mono'>219</td><td class='mono'>1</td><td class='mono'>219</td><td class='mono'></td><td>CICLO CARGO CHEQUERA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKOVF</td><td>CHARACTER</td><td class='mono'>220</td><td class='mono'>1</td><td class='mono'>220</td><td class='mono'></td><td>SOBREGIRA Y/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKIV1</td><td>CHARACTER</td><td class='mono'>221</td><td class='mono'>1</td><td class='mono'>221</td><td class='mono'></td><td>COMMISSION FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKIV2</td><td>CHARACTER</td><td class='mono'>222</td><td class='mono'>1</td><td class='mono'>222</td><td class='mono'></td><td>TAXES FLAG 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKIV3</td><td>CHARACTER</td><td class='mono'>223</td><td class='mono'>1</td><td class='mono'>223</td><td class='mono'></td><td>TAXES FLAG 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKIV4</td><td>CHARACTER</td><td class='mono'>224</td><td class='mono'>1</td><td class='mono'>224</td><td class='mono'></td><td>TAXES FLAG 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKNRT</td><td>CHARACTER</td><td class='mono'>225</td><td class='mono'>1</td><td class='mono'>225</td><td class='mono'></td><td>NUMERATION TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKINF</td><td>CHARACTER</td><td class='mono'>226</td><td class='mono'>1</td><td class='mono'>226</td><td class='mono'></td><td>INTERFACE FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKPCT</td><td>CHARACTER</td><td class='mono'>227</td><td class='mono'>1</td><td class='mono'>227</td><td class='mono'></td><td>PAPER CONTROL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKCKE</td><td>NUMERIC</td><td class='mono'>228</td><td class='mono'>5</td><td class='mono'>232</td><td class='mono'></td><td>CHEQUERAS EXENTAS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKLMM</td><td>NUMERIC</td><td class='mono'>233</td><td class='mono'>2</td><td class='mono'>234</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKLMD</td><td>NUMERIC</td><td class='mono'>235</td><td class='mono'>2</td><td class='mono'>236</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKLMY</td><td>NUMERIC</td><td class='mono'>237</td><td class='mono'>4</td><td class='mono'>240</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKLMT</td><td>TIMESTAMP</td><td class='mono'>241</td><td class='mono'>26</td><td class='mono'>266</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CHKLMU</td><td>CHARACTER</td><td class='mono'>267</td><td class='mono'>10</td><td class='mono'>276</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table></body></html>

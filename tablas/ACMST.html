@@ -1,0 +1,586 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>ACMST</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>ACMST</h1>
+<div class='meta'><b>Descripción:</b> Maestro de Cuentas de Detalle(Cta.Cte, etc.)<br><b>N.º de campos:</b> 290</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>ACMBNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK NUMBER</td><td>Código de Banco</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>ACMBRN</td><td>DECIMAL</td><td class='mono'>3</td><td class='mono'>4</td><td class='mono'>6</td><td class='mono'></td><td>BRANCH NUMBER</td><td>Código de Sucursal</td></tr>
+<tr><td class='mono'>ACMMSK</td><td class='mono'>ACMCCY</td><td>CHARACTER</td><td class='mono'>7</td><td class='mono'>3</td><td class='mono'>9</td><td class='mono'></td><td>CURRENCY</td><td>Código de Moneda</td></tr>
+<tr><td class='mono'>ACMASK</td><td class='mono'>ACMGLN</td><td>DECIMAL</td><td class='mono'>10</td><td class='mono'>16</td><td class='mono'>25</td><td class='mono'></td><td>G/L NUMBER</td><td>Cuenta CONTABLE</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMACC</td><td>DECIMAL</td><td class='mono'>26</td><td class='mono'>12</td><td class='mono'>37</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td>NRO DE CUENTA</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMMSK</td><td>NUMERIC</td><td class='mono'>38</td><td class='mono'>2</td><td class='mono'>39</td><td class='mono'></td><td>MINIMUM STOCK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMASK</td><td>NUMERIC</td><td class='mono'>40</td><td class='mono'>2</td><td class='mono'>41</td><td class='mono'></td><td>ACTUAL STOCK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTBK</td><td>CHARACTER</td><td class='mono'>42</td><td class='mono'>2</td><td class='mono'>43</td><td class='mono'></td><td>CHECK BOOK TABLE</td><td>Número de Cuenta / Operación (Tipo de Chequera)
+select *from biccyfiles.cntrlchk
+C0	CHEQUERA DE EMERGENCIA                       
+C1	CHEQUERA NORMAL 35 CHEQUES                   
+C2	CHEQUERA NORMAL 50                           
+C3	CHEQUERA NORMAL DE 100                       
+C9	FORMULARIO CONTINUO                          
+U0	CHEQUERA DE EMERGENCIA                       
+U1	CHEQUERA NORMAL USD 35                       
+U2	CHEQUERA NORMAL USD 50                       
+U3	CHEQUERA NORMAL USD DE 100                   
+U9	FORMULARIO CONTINUO</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTCR</td><td>NUMERIC</td><td class='mono'>44</td><td class='mono'>2</td><td class='mono'>45</td><td class='mono'></td><td>CHECK BOOK TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMGBL</td><td>DECIMAL</td><td class='mono'>46</td><td class='mono'>15</td><td class='mono'>60</td><td class='mono'>2</td><td>GROSS BALANCE</td><td>Saldos en Libro</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNBL</td><td>DECIMAL</td><td class='mono'>61</td><td class='mono'>15</td><td class='mono'>75</td><td class='mono'>2</td><td>NET BALANCE</td><td>Saldo Neto</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMPTF</td><td>CHARACTER</td><td class='mono'>76</td><td class='mono'>1</td><td class='mono'>76</td><td class='mono'></td><td>P/TROUGH FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMRTB</td><td>CHARACTER</td><td class='mono'>77</td><td class='mono'>2</td><td class='mono'>78</td><td class='mono'></td><td>INVESTMENT TABLE</td><td>Tabla de Inversión</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOFC</td><td>CHARACTER</td><td class='mono'>79</td><td class='mono'>4</td><td class='mono'>82</td><td class='mono'></td><td>OFFICER</td><td>Código Ejecutivo Cuenta</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMGEC</td><td>CHARACTER</td><td class='mono'>83</td><td class='mono'>4</td><td class='mono'>86</td><td class='mono'></td><td>GEO CODE</td><td>Codigo Pais</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLSM</td><td>NUMERIC</td><td class='mono'>87</td><td class='mono'>2</td><td class='mono'>88</td><td class='mono'></td><td>LAST/STMT DATE MM</td><td>25.04.2024 (EAV): Fecha Ultima Cartola. Se usa para el control de inicio de movimientos a considerar en una nueva emision de cartolas. Esto se relaciona con la lectura y selección de información mediante el TRANS (L7)</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLSD</td><td>NUMERIC</td><td class='mono'>89</td><td class='mono'>2</td><td class='mono'>90</td><td class='mono'></td><td>LAST/STMT DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLSY</td><td>NUMERIC</td><td class='mono'>91</td><td class='mono'>4</td><td class='mono'>94</td><td class='mono'></td><td>LAST/STMT DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSTF</td><td>CHARACTER</td><td class='mono'>95</td><td class='mono'>1</td><td class='mono'>95</td><td class='mono'></td><td>STMNT FREQ</td><td>Frecuencia cartola (Frecuencia de Estado de Cuenta)
+D= Diario; W=Semanal; B=Quincenal; M=Mensual; Q=Trimestral</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOPM</td><td>NUMERIC</td><td class='mono'>96</td><td class='mono'>2</td><td class='mono'>97</td><td class='mono'></td><td>OPENING DATE MM</td><td>Fecha de Apertura Mes</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOPD</td><td>NUMERIC</td><td class='mono'>98</td><td class='mono'>2</td><td class='mono'>99</td><td class='mono'></td><td>OPENING DATE DD</td><td>Fecha de Apertura Día</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOPY</td><td>NUMERIC</td><td class='mono'>100</td><td class='mono'>4</td><td class='mono'>103</td><td class='mono'></td><td>OPENING DATE YY</td><td>Fecha de Apertura Año</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLYM</td><td>NUMERIC</td><td class='mono'>104</td><td class='mono'>2</td><td class='mono'>105</td><td class='mono'></td><td>LST/YR STM DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLYD</td><td>NUMERIC</td><td class='mono'>106</td><td class='mono'>2</td><td class='mono'>107</td><td class='mono'></td><td>LST/YR STM DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLYY</td><td>NUMERIC</td><td class='mono'>108</td><td class='mono'>4</td><td class='mono'>111</td><td class='mono'></td><td>LST/YR STM DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMAST</td><td>CHARACTER</td><td class='mono'>112</td><td class='mono'>1</td><td class='mono'>112</td><td class='mono'></td><td>ACCOUNT STATUS</td><td>A = Cuenta Activa.
+C = Cuenta Cancelada
+D = Cuenta Inactiva- 2
+I = Cuenta Inactiva- 1 (DURMIENDO)
+O = Cuenta Controlada
+E = Embargada
+T = Acepta Solo Depósitos (Bloqueda)</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMHSF</td><td>CHARACTER</td><td class='mono'>113</td><td class='mono'>1</td><td class='mono'>113</td><td class='mono'></td><td>HLD/STMNT FLAG</td><td>Retener Estado de Cuenta:
+H = Retener
+Blanco = NO</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMMGR</td><td>DECIMAL</td><td class='mono'>114</td><td class='mono'>15</td><td class='mono'>128</td><td class='mono'>2</td><td>MIN/GRS BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSCF</td><td>CHARACTER</td><td class='mono'>129</td><td class='mono'>1</td><td class='mono'>129</td><td class='mono'></td><td>SERV/CHG FLAG</td><td>Marca S/N (Comisiones)</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLOM</td><td>NUMERIC</td><td class='mono'>130</td><td class='mono'>2</td><td class='mono'>131</td><td class='mono'></td><td>LST/O D DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLOD</td><td>NUMERIC</td><td class='mono'>132</td><td class='mono'>2</td><td class='mono'>133</td><td class='mono'></td><td>LST/O D DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLOY</td><td>NUMERIC</td><td class='mono'>134</td><td class='mono'>4</td><td class='mono'>137</td><td class='mono'></td><td>LST/O D DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTOD</td><td>DECIMAL</td><td class='mono'>138</td><td class='mono'>5</td><td class='mono'>142</td><td class='mono'></td><td>TIMES O/D GRS LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLTM</td><td>NUMERIC</td><td class='mono'>143</td><td class='mono'>2</td><td class='mono'>144</td><td class='mono'></td><td>LST/TRN DATE MM</td><td>Ultima transaccion Mes</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLTD</td><td>NUMERIC</td><td class='mono'>145</td><td class='mono'>2</td><td class='mono'>146</td><td class='mono'></td><td>LST/TRN DATE DD</td><td>Ultima transaccion Dia</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLTY</td><td>NUMERIC</td><td class='mono'>147</td><td class='mono'>4</td><td class='mono'>150</td><td class='mono'></td><td>LST/TRN DATE YY</td><td>Ultima transaccion Año</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLSB</td><td>DECIMAL</td><td class='mono'>151</td><td class='mono'>15</td><td class='mono'>165</td><td class='mono'>2</td><td>LST/STM BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMGAV</td><td>DECIMAL</td><td class='mono'>166</td><td class='mono'>17</td><td class='mono'>182</td><td class='mono'>2</td><td>GRS/CYC AVG/BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNAV</td><td>DECIMAL</td><td class='mono'>183</td><td class='mono'>17</td><td class='mono'>199</td><td class='mono'>2</td><td>NET/CYC AVG/BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLYB</td><td>DECIMAL</td><td class='mono'>200</td><td class='mono'>15</td><td class='mono'>214</td><td class='mono'>2</td><td>LAST/YR BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCCN</td><td>DECIMAL</td><td class='mono'>215</td><td class='mono'>8</td><td class='mono'>222</td><td class='mono'></td><td>COST CENTER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMONG</td><td>CHARACTER</td><td class='mono'>223</td><td class='mono'>1</td><td class='mono'>223</td><td class='mono'></td><td>O/D BASED ON NET/GRS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLSO</td><td>DECIMAL</td><td class='mono'>224</td><td class='mono'>5</td><td class='mono'>228</td><td class='mono'></td><td>LST STMT O/D DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTSF</td><td>CHARACTER</td><td class='mono'>229</td><td class='mono'>1</td><td class='mono'>229</td><td class='mono'></td><td>TODAY/STMNT FLAG</td><td>DD0266 para DD0485,  &#x27;2&#x27;&gt;= Activa Flujo Sobregiro NO Pactado</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOLM</td><td>NUMERIC</td><td class='mono'>230</td><td class='mono'>2</td><td class='mono'>231</td><td class='mono'></td><td>C/LIM O/D REV DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOLD</td><td>NUMERIC</td><td class='mono'>232</td><td class='mono'>2</td><td class='mono'>233</td><td class='mono'></td><td>C/LIM O/D REV DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOLY</td><td>NUMERIC</td><td class='mono'>234</td><td class='mono'>4</td><td class='mono'>237</td><td class='mono'></td><td>C/LIM O/D REV DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNRY</td><td>DECIMAL</td><td class='mono'>238</td><td class='mono'>5</td><td class='mono'>242</td><td class='mono'></td><td>NO.RETURNS FORM C/S</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNRL</td><td>DECIMAL</td><td class='mono'>243</td><td class='mono'>5</td><td class='mono'>247</td><td class='mono'></td><td>NO.RETURNS NSF  C/S</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTOY</td><td>DECIMAL</td><td class='mono'>248</td><td class='mono'>5</td><td class='mono'>252</td><td class='mono'></td><td>TIMES O/D GRS YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCDO</td><td>DECIMAL</td><td class='mono'>253</td><td class='mono'>5</td><td class='mono'>257</td><td class='mono'></td><td>CONSECUTIVE DAYS O/D</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTNS</td><td>DECIMAL</td><td class='mono'>258</td><td class='mono'>5</td><td class='mono'>262</td><td class='mono'></td><td>TIMES NSF</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLHM</td><td>NUMERIC</td><td class='mono'>263</td><td class='mono'>2</td><td class='mono'>264</td><td class='mono'></td><td>LAST O/D S/C CHG DTE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLHD</td><td>NUMERIC</td><td class='mono'>265</td><td class='mono'>2</td><td class='mono'>266</td><td class='mono'></td><td>LAST O/D S/C CHG DTE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLHY</td><td>NUMERIC</td><td class='mono'>267</td><td class='mono'>4</td><td class='mono'>270</td><td class='mono'></td><td>LAST O/D S/C CHG DTE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSHF</td><td>CHARACTER</td><td class='mono'>271</td><td class='mono'>1</td><td class='mono'>271</td><td class='mono'></td><td>O/D S/C CHG FREQ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSHY</td><td>CHARACTER</td><td class='mono'>272</td><td class='mono'>2</td><td class='mono'>273</td><td class='mono'></td><td>O/D S/C CHG DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOIA</td><td>DECIMAL</td><td class='mono'>274</td><td class='mono'>15</td><td class='mono'>288</td><td class='mono'>2</td><td>O/D INTEREST ACCRUED</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOIY</td><td>DECIMAL</td><td class='mono'>289</td><td class='mono'>15</td><td class='mono'>303</td><td class='mono'>2</td><td>O/D INTEREST ACCRUED YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMIDC</td><td>DECIMAL</td><td class='mono'>304</td><td class='mono'>5</td><td class='mono'>308</td><td class='mono'></td><td>ITEMS DEP IN S/C CYCLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSTY</td><td>CHARACTER</td><td class='mono'>309</td><td class='mono'>1</td><td class='mono'>309</td><td class='mono'>2</td><td>STM TYP (P/C/M)</td><td>STATEMENT TYPES (P)PERSONAL (C)ORPORATION (N)OTHING</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCBC</td><td>CHARACTER</td><td class='mono'>310</td><td class='mono'>1</td><td class='mono'>310</td><td class='mono'>2</td><td>CHARGE CHECK BOOK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMAAN</td><td>CHARACTER</td><td class='mono'>311</td><td class='mono'>1</td><td class='mono'>311</td><td class='mono'>2</td><td>ACCOUNT ANALYSIS</td><td>N = NO ACCOUNT ANALYSIS     
+   R = REGULAR ACCOUNT ANALYSIS
+   G = GROUP MEMBER            
+   M = MASTER</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMMOD</td><td>NUMERIC</td><td class='mono'>312</td><td class='mono'>2</td><td class='mono'>313</td><td class='mono'></td><td>MONTH O/D DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMF02</td><td>CHARACTER</td><td class='mono'>314</td><td class='mono'>1</td><td class='mono'>314</td><td class='mono'></td><td>CONVENIO PAGO REMUN.</td><td>(N)      MEANS RELATION &quot;AND&quot; FOR TITULARS                    
+ (BLANK)  MEANS THAT TITULARS MAY USE THIS ACCOUNT FOR INTERNET
+          TRANSACTIONS</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTCV</td><td>NUMERIC</td><td class='mono'>315</td><td class='mono'>2</td><td class='mono'>316</td><td class='mono'></td><td>3 CONSEC MTHS VIOLAT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTVS</td><td>NUMERIC</td><td class='mono'>317</td><td class='mono'>2</td><td class='mono'>318</td><td class='mono'></td><td>3 VIOLAT IN 6 MONTHS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACM6MO</td><td>NUMERIC</td><td class='mono'>319</td><td class='mono'>2</td><td class='mono'>320</td><td class='mono'></td><td>6 MONTHS PERIOD CTR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSDY</td><td>CHARACTER</td><td class='mono'>321</td><td class='mono'>2</td><td class='mono'>322</td><td class='mono'></td><td>STMNT DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMODF</td><td>CHARACTER</td><td class='mono'>323</td><td class='mono'>1</td><td class='mono'>323</td><td class='mono'></td><td>O/D FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLOB</td><td>CHARACTER</td><td class='mono'>324</td><td class='mono'>4</td><td class='mono'>327</td><td class='mono'></td><td>LNE/OF BUSS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMMGB</td><td>DECIMAL</td><td class='mono'>328</td><td class='mono'>15</td><td class='mono'>342</td><td class='mono'>2</td><td>MEM/GRS BAL</td><td>Saldo de Inicio de día</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCUN</td><td>DECIMAL</td><td class='mono'>343</td><td class='mono'>9</td><td class='mono'>351</td><td class='mono'></td><td>CUST NUMBER</td><td>Número de Cliente</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMRCD</td><td>CHARACTER</td><td class='mono'>352</td><td class='mono'>1</td><td class='mono'>352</td><td class='mono'></td><td>REF CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMMNE</td><td>DECIMAL</td><td class='mono'>353</td><td class='mono'>15</td><td class='mono'>367</td><td class='mono'>2</td><td>MIN/NET BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMATY</td><td>CHARACTER</td><td class='mono'>368</td><td class='mono'>4</td><td class='mono'>371</td><td class='mono'></td><td>ACC TYP</td><td>Familia del Producto</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSCM</td><td>NUMERIC</td><td class='mono'>372</td><td class='mono'>2</td><td class='mono'>373</td><td class='mono'></td><td>STATUS/CHG MM</td><td>Cambio de estado MM</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSCD</td><td>NUMERIC</td><td class='mono'>374</td><td class='mono'>2</td><td class='mono'>375</td><td class='mono'></td><td>STATUS/CHG DD</td><td>Cambio de estado DD</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSCY</td><td>NUMERIC</td><td class='mono'>376</td><td class='mono'>4</td><td class='mono'>379</td><td class='mono'></td><td>STATUS/CHG YY</td><td>Cambio de estado YY</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMUIN</td><td>CHARACTER</td><td class='mono'>380</td><td class='mono'>10</td><td class='mono'>389</td><td class='mono'></td><td>STATUS/CHG USER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMIFM</td><td>DECIMAL</td><td class='mono'>390</td><td class='mono'>7</td><td class='mono'>396</td><td class='mono'>6</td><td>INV/FACT MULT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMIND</td><td>CHARACTER</td><td class='mono'>397</td><td class='mono'>4</td><td class='mono'>400</td><td class='mono'></td><td>INDUSTRY CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMMNB</td><td>DECIMAL</td><td class='mono'>401</td><td class='mono'>15</td><td class='mono'>415</td><td class='mono'>2</td><td>MEM/NET BAL</td><td>Saldo Memo Balance (Saldo en Linea)</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOL1</td><td>DECIMAL</td><td class='mono'>416</td><td class='mono'>13</td><td class='mono'>428</td><td class='mono'>2</td><td>O/D LEVEL ONE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOI1</td><td>DECIMAL</td><td class='mono'>429</td><td class='mono'>9</td><td class='mono'>437</td><td class='mono'>6</td><td>O/D INT% ONE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOL2</td><td>DECIMAL</td><td class='mono'>438</td><td class='mono'>13</td><td class='mono'>450</td><td class='mono'>2</td><td>O/D LEVEL TWO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOI2</td><td>DECIMAL</td><td class='mono'>451</td><td class='mono'>9</td><td class='mono'>459</td><td class='mono'>6</td><td>O/D INT% TWO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOF2</td><td>CHARACTER</td><td class='mono'>460</td><td class='mono'>4</td><td class='mono'>463</td><td class='mono'></td><td>OFFICE REPREST</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMHAM</td><td>DECIMAL</td><td class='mono'>464</td><td class='mono'>15</td><td class='mono'>478</td><td class='mono'>2</td><td>HOLD AMNT</td><td>Saldo Retenido Cheques</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMGMA</td><td>DECIMAL</td><td class='mono'>479</td><td class='mono'>17</td><td class='mono'>495</td><td class='mono'>2</td><td>GRS/MTH AVG/BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCLI</td><td>DECIMAL</td><td class='mono'>496</td><td class='mono'>15</td><td class='mono'>510</td><td class='mono'>2</td><td>CREDIT O/D LIMIT</td><td>Disponible de la Línea</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNMA</td><td>DECIMAL</td><td class='mono'>511</td><td class='mono'>17</td><td class='mono'>527</td><td class='mono'>2</td><td>NET/MTH AVG/BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMUL1</td><td>DECIMAL</td><td class='mono'>528</td><td class='mono'>15</td><td class='mono'>542</td><td class='mono'>2</td><td>UNCOLL ONE</td><td>Diferido 1 Día</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMUL2</td><td>DECIMAL</td><td class='mono'>543</td><td class='mono'>15</td><td class='mono'>557</td><td class='mono'>2</td><td>UNCOLL TWO</td><td>Diferido 2 Día</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMUL3</td><td>DECIMAL</td><td class='mono'>558</td><td class='mono'>15</td><td class='mono'>572</td><td class='mono'>2</td><td>UNCOLL THREE</td><td>Diferido 3 Día</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMFL1</td><td>DECIMAL</td><td class='mono'>573</td><td class='mono'>15</td><td class='mono'>587</td><td class='mono'>2</td><td>FED FLOAT 1 DAY</td><td>Diferido + 3 Días</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMFL2</td><td>DECIMAL</td><td class='mono'>588</td><td class='mono'>15</td><td class='mono'>602</td><td class='mono'>2</td><td>FED FLOAT 2 DAYS</td><td>Diferido Indefinido</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMIAC</td><td>DECIMAL</td><td class='mono'>603</td><td class='mono'>15</td><td class='mono'>617</td><td class='mono'>2</td><td>INT ACCRUED</td><td>Intereses por Cobrar (CTIN)</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSTE</td><td>CHARACTER</td><td class='mono'>618</td><td class='mono'>1</td><td class='mono'>618</td><td class='mono'></td><td>DAILY STATEMENT Y/N</td><td>Forma de Envio Cartolas--&gt; Ver Imagen</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNDR</td><td>DECIMAL</td><td class='mono'>619</td><td class='mono'>5</td><td class='mono'>623</td><td class='mono'></td><td>NO. OF DR/S</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNCR</td><td>DECIMAL</td><td class='mono'>624</td><td class='mono'>5</td><td class='mono'>628</td><td class='mono'></td><td>NO. OF CR/S</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNCK</td><td>DECIMAL</td><td class='mono'>629</td><td class='mono'>5</td><td class='mono'>633</td><td class='mono'></td><td>NO. OF CHKS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNDP</td><td>DECIMAL</td><td class='mono'>634</td><td class='mono'>5</td><td class='mono'>638</td><td class='mono'></td><td>NO. OF DEPS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCOT</td><td>CHARACTER</td><td class='mono'>639</td><td class='mono'>4</td><td class='mono'>642</td><td class='mono'></td><td>COLLAT TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMRBR</td><td>DECIMAL</td><td class='mono'>643</td><td class='mono'>4</td><td class='mono'>646</td><td class='mono'></td><td>RELATED BRANCH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMRGL</td><td>DECIMAL</td><td class='mono'>647</td><td class='mono'>16</td><td class='mono'>662</td><td class='mono'></td><td>RELATED G/L NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMRAC</td><td>DECIMAL</td><td class='mono'>663</td><td class='mono'>12</td><td class='mono'>674</td><td class='mono'></td><td>RELATED ACCOUNT NUMBER</td><td>Número de la Línea de sobregiro</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMPRO</td><td>CHARACTER</td><td class='mono'>675</td><td class='mono'>4</td><td class='mono'>678</td><td class='mono'></td><td>PRODUCT CODE</td><td>Código de Producto</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMF03</td><td>CHARACTER</td><td class='mono'>679</td><td class='mono'>1</td><td class='mono'>679</td><td class='mono'></td><td>AVAILABLE</td><td>Acepta Sobregiro a nivel de operación(N=No acepta)
+  THIS FIELD IS USED AS OVERDRAFT PERMITTED FLAG BY BANCO FINANCIERO
+  BLANK = MEANS OVERDRAFT IS NOT PERMITED                           
+    1   = ALLOW OVERDRAFT</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMIVL</td><td>DECIMAL</td><td class='mono'>680</td><td class='mono'>13</td><td class='mono'>692</td><td class='mono'>2</td><td>INVMNT LIMIT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMGER</td><td>CHARACTER</td><td class='mono'>693</td><td class='mono'>4</td><td class='mono'>696</td><td class='mono'></td><td>GEO/RSK CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMYDI</td><td>DECIMAL</td><td class='mono'>697</td><td class='mono'>15</td><td class='mono'>711</td><td class='mono'>2</td><td>YESTERDAY INVMNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCSF</td><td>CHARACTER</td><td class='mono'>712</td><td class='mono'>1</td><td class='mono'>712</td><td class='mono'></td><td>CONS STMT FLAG Y/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCMC</td><td>DECIMAL</td><td class='mono'>713</td><td class='mono'>9</td><td class='mono'>721</td><td class='mono'></td><td>COMMITMENT CUSTOMER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCMN</td><td>NUMERIC</td><td class='mono'>722</td><td class='mono'>4</td><td class='mono'>725</td><td class='mono'></td><td>COMMITMENT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMWHF</td><td>CHARACTER</td><td class='mono'>726</td><td class='mono'>1</td><td class='mono'>726</td><td class='mono'></td><td>WITHOLDING FLAG</td><td>ACMWLF y ACMWNF: N   = Toma los valores del Maestro de Remesas      
+                  0..9= Numero de dias a retenerse a Nivel de Cuenta</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTX1</td><td>CHARACTER</td><td class='mono'>727</td><td class='mono'>1</td><td class='mono'>727</td><td class='mono'></td><td>TAXES FLAG 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTX2</td><td>CHARACTER</td><td class='mono'>728</td><td class='mono'>1</td><td class='mono'>728</td><td class='mono'></td><td>TAXES FLAG 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTX3</td><td>CHARACTER</td><td class='mono'>729</td><td class='mono'>1</td><td class='mono'>729</td><td class='mono'></td><td>TAXES FLAG 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTX4</td><td>CHARACTER</td><td class='mono'>730</td><td class='mono'>1</td><td class='mono'>730</td><td class='mono'></td><td>TAXES FLAG 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTX5</td><td>CHARACTER</td><td class='mono'>731</td><td class='mono'>1</td><td class='mono'>731</td><td class='mono'></td><td>TAXES FLAG 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTX6</td><td>CHARACTER</td><td class='mono'>732</td><td class='mono'>1</td><td class='mono'>732</td><td class='mono'></td><td>TAXES FLAG 6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTX7</td><td>CHARACTER</td><td class='mono'>733</td><td class='mono'>1</td><td class='mono'>733</td><td class='mono'></td><td>TAXES FLAG 7</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTX8</td><td>CHARACTER</td><td class='mono'>734</td><td class='mono'>1</td><td class='mono'>734</td><td class='mono'></td><td>TAXES FLAG 8</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTX9</td><td>CHARACTER</td><td class='mono'>735</td><td class='mono'>1</td><td class='mono'>735</td><td class='mono'></td><td>TAXES FLAG 9</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMWTY</td><td>DECIMAL</td><td class='mono'>736</td><td class='mono'>15</td><td class='mono'>750</td><td class='mono'>2</td><td>WITHOLDING YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMWTQ</td><td>DECIMAL</td><td class='mono'>751</td><td class='mono'>15</td><td class='mono'>765</td><td class='mono'>2</td><td>WITHOLDING QTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMWLF</td><td>CHARACTER</td><td class='mono'>766</td><td class='mono'>1</td><td class='mono'>766</td><td class='mono'></td><td>WAIVE LOCAL UNC FLAG Y/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMWNF</td><td>CHARACTER</td><td class='mono'>767</td><td class='mono'>1</td><td class='mono'>767</td><td class='mono'></td><td>WAIVE N-LOC UNC FLAG Y/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMASC</td><td>CHARACTER</td><td class='mono'>768</td><td class='mono'>1</td><td class='mono'>768</td><td class='mono'></td><td>ACC.ANAL SERV.CHARGE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMF04</td><td>CHARACTER</td><td class='mono'>769</td><td class='mono'>4</td><td class='mono'>772</td><td class='mono'></td><td>CREDILINEA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMPEC</td><td>CHARACTER</td><td class='mono'>773</td><td class='mono'>1</td><td class='mono'>773</td><td class='mono'></td><td>PERFORMANCE CODE</td><td>Tipo de Cuenta:  
+&#x27;1&#x27;=Individual; 
+&#x27;2&#x27;=Mancomunada;
+&#x27;3&#x27;=Solidaria;  
+&#x27;4&#x27;=Menor;
+&#x27;5&#x27;=Juridica;
+ &#x27;  &#x27; - sin clasificacion pero deberia considerarse como &#x27;1&#x27;</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMACL</td><td>CHARACTER</td><td class='mono'>774</td><td class='mono'>2</td><td class='mono'>775</td><td class='mono'></td><td>TABLE CHARGES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLSH</td><td>DECIMAL</td><td class='mono'>776</td><td class='mono'>15</td><td class='mono'>790</td><td class='mono'>2</td><td>LST OD SC CHG GR/BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSPF</td><td>CHARACTER</td><td class='mono'>791</td><td class='mono'>1</td><td class='mono'>791</td><td class='mono'></td><td>STOP/PMT FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLDM</td><td>NUMERIC</td><td class='mono'>792</td><td class='mono'>2</td><td class='mono'>793</td><td class='mono'></td><td>LST/DEP DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLDD</td><td>NUMERIC</td><td class='mono'>794</td><td class='mono'>2</td><td class='mono'>795</td><td class='mono'></td><td>LST/DEP DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLDY</td><td>NUMERIC</td><td class='mono'>796</td><td class='mono'>4</td><td class='mono'>799</td><td class='mono'></td><td>LST/DEP DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLDA</td><td>DECIMAL</td><td class='mono'>800</td><td class='mono'>15</td><td class='mono'>814</td><td class='mono'>2</td><td>LST/DEP AMNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMIPL</td><td>DECIMAL</td><td class='mono'>815</td><td class='mono'>13</td><td class='mono'>827</td><td class='mono'>2</td><td>INT/PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMIPY</td><td>DECIMAL</td><td class='mono'>828</td><td class='mono'>13</td><td class='mono'>840</td><td class='mono'>2</td><td>INT/PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLCM</td><td>NUMERIC</td><td class='mono'>841</td><td class='mono'>2</td><td class='mono'>842</td><td class='mono'></td><td>LST/CALC DTE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLCD</td><td>NUMERIC</td><td class='mono'>843</td><td class='mono'>2</td><td class='mono'>844</td><td class='mono'></td><td>LST/CALC DTE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLCY</td><td>NUMERIC</td><td class='mono'>845</td><td class='mono'>4</td><td class='mono'>848</td><td class='mono'></td><td>LST/CALC DTE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMDOL</td><td>DECIMAL</td><td class='mono'>849</td><td class='mono'>5</td><td class='mono'>853</td><td class='mono'></td><td>DYS O/D LTD GRS BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSL1</td><td>CHARACTER</td><td class='mono'>854</td><td class='mono'>3</td><td class='mono'>856</td><td class='mono'></td><td>SIGN/LOC ONE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSL2</td><td>CHARACTER</td><td class='mono'>857</td><td class='mono'>2</td><td class='mono'>858</td><td class='mono'></td><td>SIGN/LOC TWO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSL3</td><td>CHARACTER</td><td class='mono'>859</td><td class='mono'>2</td><td class='mono'>860</td><td class='mono'></td><td>SIGN/LOC THREE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMATM</td><td>CHARACTER</td><td class='mono'>861</td><td class='mono'>1</td><td class='mono'>861</td><td class='mono'></td><td>ATM CARDS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOIS</td><td>DECIMAL</td><td class='mono'>862</td><td class='mono'>9</td><td class='mono'>870</td><td class='mono'>6</td><td>OVER INVST SPREAD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMDOA</td><td>DECIMAL</td><td class='mono'>871</td><td class='mono'>5</td><td class='mono'>875</td><td class='mono'></td><td>DYS O/D YTD GRS BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMMIA</td><td>DECIMAL</td><td class='mono'>876</td><td class='mono'>15</td><td class='mono'>890</td><td class='mono'>2</td><td>MTH INTEREST ACCRUAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMMLA</td><td>NUMERIC</td><td class='mono'>891</td><td class='mono'>2</td><td class='mono'>892</td><td class='mono'></td><td>MAILING ADDRESS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMKTM</td><td>DECIMAL</td><td class='mono'>893</td><td class='mono'>5</td><td class='mono'>897</td><td class='mono'></td><td>KITING TIMES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMGYA</td><td>DECIMAL</td><td class='mono'>898</td><td class='mono'>15</td><td class='mono'>912</td><td class='mono'>2</td><td>GRS/YRLY AGGRGTE/BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNYA</td><td>DECIMAL</td><td class='mono'>913</td><td class='mono'>15</td><td class='mono'>927</td><td class='mono'>2</td><td>NET/YRLY AGGRGTE/BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMPBN</td><td>NUMERIC</td><td class='mono'>928</td><td class='mono'>8</td><td class='mono'>935</td><td class='mono'></td><td>PASSBOOK NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMPBL</td><td>NUMERIC</td><td class='mono'>936</td><td class='mono'>2</td><td class='mono'>937</td><td class='mono'></td><td>PASSBOOK LINE NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMPBB</td><td>DECIMAL</td><td class='mono'>938</td><td class='mono'>15</td><td class='mono'>952</td><td class='mono'>2</td><td>PASSBOOK BALANCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMPMF</td><td>CHARACTER</td><td class='mono'>953</td><td class='mono'>1</td><td class='mono'>953</td><td class='mono'></td><td>PENDING MESSAGES FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMANR</td><td>DECIMAL</td><td class='mono'>954</td><td class='mono'>12</td><td class='mono'>965</td><td class='mono'></td><td>ACC ANALYSIS REL ACC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMMOA</td><td>DECIMAL</td><td class='mono'>966</td><td class='mono'>17</td><td class='mono'>982</td><td class='mono'>2</td><td>MONTHLY O/D AVG BALN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMAAF</td><td>CHARACTER</td><td class='mono'>983</td><td class='mono'>1</td><td class='mono'>983</td><td class='mono'></td><td>ACT.ANAL. S/CHARGE FREQ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMALM</td><td>NUMERIC</td><td class='mono'>984</td><td class='mono'>2</td><td class='mono'>985</td><td class='mono'></td><td>ACT.ANAL. LST.CHARGE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMALD</td><td>NUMERIC</td><td class='mono'>986</td><td class='mono'>2</td><td class='mono'>987</td><td class='mono'></td><td>ACT.ANAL. LST.CHARGE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMALY</td><td>NUMERIC</td><td class='mono'>988</td><td class='mono'>4</td><td class='mono'>991</td><td class='mono'></td><td>ACT.ANAL. LST.CHARGE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMACO</td><td>DECIMAL</td><td class='mono'>992</td><td class='mono'>15</td><td class='mono'>1006</td><td class='mono'>2</td><td>ACC.ANAL. CARRY OVER BL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMP01</td><td>CHARACTER</td><td class='mono'>1007</td><td class='mono'>1</td><td class='mono'>1007</td><td class='mono'></td><td>CUS/PROF T/C CHARGE</td><td>TRANSACTION CHARGUES (RETURN ITEMS, ETC) Y/N</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMP02</td><td>CHARACTER</td><td class='mono'>1008</td><td class='mono'>1</td><td class='mono'>1008</td><td class='mono'></td><td>CUS/PROF P/T CHARGE</td><td>PAYABLE THROUGH CHARGES (Y/N)</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMP03</td><td>CHARACTER</td><td class='mono'>1009</td><td class='mono'>1</td><td class='mono'>1009</td><td class='mono'></td><td>CUS/PROF W/T CHARGE</td><td>WIRE TRANSFER (Y/N)</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMP04</td><td>CHARACTER</td><td class='mono'>1010</td><td class='mono'>1</td><td class='mono'>1010</td><td class='mono'></td><td>CUS/PROF O/D INT/CHARGE</td><td>OVERDRAFT INTEREST (Y/N)</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMP05</td><td>CHARACTER</td><td class='mono'>1011</td><td class='mono'>1</td><td class='mono'>1011</td><td class='mono'></td><td>CUS/PROF B/P CHARGE</td><td>BILL PAYERS (Y/N)</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMP06</td><td>CHARACTER</td><td class='mono'>1012</td><td class='mono'>1</td><td class='mono'>1012</td><td class='mono'></td><td>CUS/PROF S/P CHARGE</td><td>STOP PAYMENTS CHARGES (Y/N)</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMP07</td><td>CHARACTER</td><td class='mono'>1013</td><td class='mono'>1</td><td class='mono'>1013</td><td class='mono'></td><td>CUS/PROF A/M CHARGE</td><td>ACCOUNT MANAGEMENT CHARGES (Y/N)</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMP08</td><td>CHARACTER</td><td class='mono'>1014</td><td class='mono'>1</td><td class='mono'>1014</td><td class='mono'></td><td>CUS/PROF S/C CHARGE</td><td>RETAIL SERVICES CHARGES (MIN/BAL, HOLD MAIL, ETC.) Y/N</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMP09</td><td>CHARACTER</td><td class='mono'>1015</td><td class='mono'>1</td><td class='mono'>1015</td><td class='mono'></td><td>CUS/PROF O/D CHARGE</td><td>OVERDRAFT INTEREST CHARGES (Y/N)</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMP10</td><td>CHARACTER</td><td class='mono'>1016</td><td class='mono'>1</td><td class='mono'>1016</td><td class='mono'></td><td>CUS/PROF AVL CHARGE</td><td>CUSTOMER PROFITABILITY AVAILABLE FIELD</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMP11</td><td>CHARACTER</td><td class='mono'>1017</td><td class='mono'>1</td><td class='mono'>1017</td><td class='mono'></td><td>CUS/PROF AVL CHARGE</td><td>CUSTOMER PROFITABILITY AVAILABLE FIELD</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMP12</td><td>CHARACTER</td><td class='mono'>1018</td><td class='mono'>1</td><td class='mono'>1018</td><td class='mono'></td><td>CUS/PROF AVL CHARGE</td><td>ACMP12 CORPBANCA PAGO DE INTERESES Y/O REAJUSTE
+                  1 = PAGO DE INTERESES        
+                  2 = PAGO DE REAJUSTE         
+                  3 = AMBOS                    
+Campo se activa en DD0266</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMADS</td><td>DECIMAL</td><td class='mono'>1019</td><td class='mono'>6</td><td class='mono'>1024</td><td class='mono'>3</td><td>ACC.ANAL DISCOUNT %</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMITY</td><td>CHARACTER</td><td class='mono'>1025</td><td class='mono'>1</td><td class='mono'>1025</td><td class='mono'></td><td>INVESTMENT TYPE</td><td>Producto</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMUC1</td><td>CHARACTER</td><td class='mono'>1026</td><td class='mono'>4</td><td class='mono'>1029</td><td class='mono'>2</td><td>USER CODE 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMUC2</td><td>CHARACTER</td><td class='mono'>1030</td><td class='mono'>4</td><td class='mono'>1033</td><td class='mono'>2</td><td>USER CODE 2</td><td>Campo Usado para Guardar la causa de cancelacion de cuentas:</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMUC3</td><td>CHARACTER</td><td class='mono'>1034</td><td class='mono'>4</td><td class='mono'>1037</td><td class='mono'></td><td>USER CODE 3</td><td>Campo Usado por CORPBANCA PARA  GUARDAR CODIGO DE CONVENIO</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMUC4</td><td>CHARACTER</td><td class='mono'>1038</td><td class='mono'>6</td><td class='mono'>1043</td><td class='mono'></td><td>USER CODE 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLMM</td><td>NUMERIC</td><td class='mono'>1044</td><td class='mono'>2</td><td class='mono'>1045</td><td class='mono'></td><td>LAST MAINT/DATE MM</td><td>AGREGATED BALANCE</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLMD</td><td>NUMERIC</td><td class='mono'>1046</td><td class='mono'>2</td><td class='mono'>1047</td><td class='mono'></td><td>LAST MAINT/DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLMY</td><td>NUMERIC</td><td class='mono'>1048</td><td class='mono'>4</td><td class='mono'>1051</td><td class='mono'></td><td>LAST MAINT/DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLMT</td><td>TIMESTAMP</td><td class='mono'>1052</td><td class='mono'>26</td><td class='mono'>1077</td><td class='mono'>6</td><td>LAST MAINT/USER</td><td>LAST MAINT/TIME</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMUSR</td><td>CHARACTER</td><td class='mono'>1078</td><td class='mono'>10</td><td class='mono'>1087</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMRPT</td><td>CHARACTER</td><td class='mono'>1088</td><td class='mono'>1</td><td class='mono'>1088</td><td class='mono'></td><td>REVISION PERIOD TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMRPN</td><td>DECIMAL</td><td class='mono'>1089</td><td class='mono'>3</td><td class='mono'>1091</td><td class='mono'></td><td>REVISION PERIOD NMBR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCUT</td><td>CHARACTER</td><td class='mono'>1092</td><td class='mono'>1</td><td class='mono'>1092</td><td class='mono'></td><td>TIPO CREDILINEA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCLS</td><td>NUMERIC</td><td class='mono'>1093</td><td class='mono'>2</td><td class='mono'>1094</td><td class='mono'></td><td>ACCT CLASS G/L</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMACD</td><td>CHARACTER</td><td class='mono'>1095</td><td class='mono'>2</td><td class='mono'>1096</td><td class='mono'></td><td>APPLICATION CODE</td><td>Código de Aplicación</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSCK</td><td>CHARACTER</td><td class='mono'>1097</td><td class='mono'>1</td><td class='mono'>1097</td><td class='mono'></td><td>SUSP FROM CHECK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCSM</td><td>NUMERIC</td><td class='mono'>1098</td><td class='mono'>2</td><td class='mono'>1099</td><td class='mono'></td><td>CHECK SUSP DTE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCSD</td><td>NUMERIC</td><td class='mono'>1100</td><td class='mono'>2</td><td class='mono'>1101</td><td class='mono'></td><td>CHECK SUSP DTE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCSY</td><td>NUMERIC</td><td class='mono'>1102</td><td class='mono'>4</td><td class='mono'>1105</td><td class='mono'></td><td>CHECK SUSP DTE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSUM</td><td>NUMERIC</td><td class='mono'>1106</td><td class='mono'>2</td><td class='mono'>1107</td><td class='mono'></td><td>FECHA GEN DTE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSUD</td><td>NUMERIC</td><td class='mono'>1108</td><td class='mono'>2</td><td class='mono'>1109</td><td class='mono'></td><td>FECHA GEN DTE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSUY</td><td>NUMERIC</td><td class='mono'>1110</td><td class='mono'>4</td><td class='mono'>1113</td><td class='mono'></td><td>FECHA GEN DTE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCLY</td><td>DECIMAL</td><td class='mono'>1114</td><td class='mono'>5</td><td class='mono'>1118</td><td class='mono'></td><td>C/LINE USED YR TO DATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCLM</td><td>DECIMAL</td><td class='mono'>1119</td><td class='mono'>5</td><td class='mono'>1123</td><td class='mono'></td><td>C/LINE USED MTH TO DATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMICA</td><td>DECIMAL</td><td class='mono'>1124</td><td class='mono'>15</td><td class='mono'>1138</td><td class='mono'>2</td><td>INCLEARING RECEIVED</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMGBY</td><td>DECIMAL</td><td class='mono'>1139</td><td class='mono'>15</td><td class='mono'>1153</td><td class='mono'>2</td><td>GROSS YESTERDAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNBY</td><td>DECIMAL</td><td class='mono'>1154</td><td class='mono'>15</td><td class='mono'>1168</td><td class='mono'>2</td><td>NET YESTERDAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMACS</td><td>DECIMAL</td><td class='mono'>1169</td><td class='mono'>15</td><td class='mono'>1183</td><td class='mono'>2</td><td>OPERATION COST</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCPE</td><td>DECIMAL</td><td class='mono'>1184</td><td class='mono'>6</td><td class='mono'>1189</td><td class='mono'>3</td><td>COLLATERAL PERCENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMDV1</td><td>DECIMAL</td><td class='mono'>1190</td><td class='mono'>5</td><td class='mono'>1194</td><td class='mono'></td><td>DEVOL/NSF YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMDV2</td><td>DECIMAL</td><td class='mono'>1195</td><td class='mono'>5</td><td class='mono'>1199</td><td class='mono'></td><td>DEVOL/NSF LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMDV3</td><td>DECIMAL</td><td class='mono'>1200</td><td class='mono'>5</td><td class='mono'>1204</td><td class='mono'></td><td>DEVOL/OTH YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMDV4</td><td>DECIMAL</td><td class='mono'>1205</td><td class='mono'>5</td><td class='mono'>1209</td><td class='mono'></td><td>DEVOL/OTH LTD</td><td>COMMUNICATION STATEMENT PARAMETERS</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCSB</td><td>DECIMAL</td><td class='mono'>1210</td><td class='mono'>15</td><td class='mono'>1224</td><td class='mono'>2</td><td>COMM LAST STM BALANCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNRS</td><td>DECIMAL</td><td class='mono'>1225</td><td class='mono'>5</td><td class='mono'>1229</td><td class='mono'></td><td>NUMBER OF STM SENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNSW</td><td>DECIMAL</td><td class='mono'>1230</td><td class='mono'>5</td><td class='mono'>1234</td><td class='mono'></td><td>NUMBER OF STM WAIVE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNPW</td><td>DECIMAL</td><td class='mono'>1235</td><td class='mono'>5</td><td class='mono'>1239</td><td class='mono'></td><td>NUMBER OF PAG WAIVE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNRP</td><td>DECIMAL</td><td class='mono'>1240</td><td class='mono'>5</td><td class='mono'>1244</td><td class='mono'></td><td>NUMBER OF PAGES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSLM</td><td>NUMERIC</td><td class='mono'>1245</td><td class='mono'>2</td><td class='mono'>1246</td><td class='mono'></td><td>COMM LST STM MONTH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSLD</td><td>NUMERIC</td><td class='mono'>1247</td><td class='mono'>2</td><td class='mono'>1248</td><td class='mono'></td><td>COMM LST STM DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSLY</td><td>NUMERIC</td><td class='mono'>1249</td><td class='mono'>4</td><td class='mono'>1252</td><td class='mono'></td><td>COMM LST STM YEAR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSSR</td><td>CHARACTER</td><td class='mono'>1253</td><td class='mono'>1</td><td class='mono'>1253</td><td class='mono'></td><td>COMM STM FREQUENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSSD</td><td>CHARACTER</td><td class='mono'>1254</td><td class='mono'>2</td><td class='mono'>1255</td><td class='mono'></td><td>COMM STM DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSSV</td><td>CHARACTER</td><td class='mono'>1256</td><td class='mono'>1</td><td class='mono'>1256</td><td class='mono'></td><td>COMM SERVICE CHARGES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMBRK</td><td>CHARACTER</td><td class='mono'>1257</td><td class='mono'>4</td><td class='mono'>1260</td><td class='mono'></td><td>BROKER CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMBCP</td><td>DECIMAL</td><td class='mono'>1261</td><td class='mono'>6</td><td class='mono'>1266</td><td class='mono'>3</td><td>BROKER COMM PERCENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMFLC</td><td>CHARACTER</td><td class='mono'>1267</td><td class='mono'>1</td><td class='mono'>1267</td><td class='mono'></td><td>COMM FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMPRT</td><td>CHARACTER</td><td class='mono'>1268</td><td class='mono'>2</td><td class='mono'>1269</td><td class='mono'></td><td>RESERV LOANS LOSES TABLE</td><td>F=FLAT, %=PERCENT</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMPRP</td><td>DECIMAL</td><td class='mono'>1270</td><td class='mono'>6</td><td class='mono'>1275</td><td class='mono'>3</td><td>PERCENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMML2</td><td>NUMERIC</td><td class='mono'>1276</td><td class='mono'>2</td><td class='mono'>1277</td><td class='mono'></td><td>MAIL ADDRESS NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMAVN</td><td>DECIMAL</td><td class='mono'>1278</td><td class='mono'>17</td><td class='mono'>1294</td><td class='mono'>2</td><td>O/D AVG NET BALANCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMWAT</td><td>DECIMAL</td><td class='mono'>1295</td><td class='mono'>5</td><td class='mono'>1299</td><td class='mono'></td><td>TIMES ATM/WITHD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMNST</td><td>DECIMAL</td><td class='mono'>1300</td><td class='mono'>5</td><td class='mono'>1304</td><td class='mono'></td><td>STATEMENT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMFOL</td><td>DECIMAL</td><td class='mono'>1305</td><td class='mono'>5</td><td class='mono'>1309</td><td class='mono'></td><td>FOLDER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCN1</td><td>DECIMAL</td><td class='mono'>1310</td><td class='mono'>5</td><td class='mono'>1314</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCN2</td><td>DECIMAL</td><td class='mono'>1315</td><td class='mono'>5</td><td class='mono'>1319</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCN3</td><td>DECIMAL</td><td class='mono'>1320</td><td class='mono'>5</td><td class='mono'>1324</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMF05</td><td>CHARACTER</td><td class='mono'>1325</td><td class='mono'>1</td><td class='mono'>1325</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMF06</td><td>CHARACTER</td><td class='mono'>1326</td><td class='mono'>1</td><td class='mono'>1326</td><td class='mono'></td><td>FRQ PAY REVALUATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMF07</td><td>CHARACTER</td><td class='mono'>1327</td><td class='mono'>1</td><td class='mono'>1327</td><td class='mono'></td><td>FRQ PAY INTEREST</td><td>DD0266, utiliza para activar el abono de interes  (ACMP12)</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSCH</td><td>CHARACTER</td><td class='mono'>1328</td><td class='mono'>4</td><td class='mono'>1331</td><td class='mono'></td><td>SALE CHANEL</td><td>Canal de Venta</td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSST</td><td>CHARACTER</td><td class='mono'>1332</td><td class='mono'>4</td><td class='mono'>1335</td><td class='mono'></td><td>SALE SOURCE TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOFN</td><td>DECIMAL</td><td class='mono'>1336</td><td class='mono'>12</td><td class='mono'>1347</td><td class='mono'></td><td>OFFER NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMODA</td><td>CHARACTER</td><td class='mono'>1348</td><td class='mono'>1</td><td class='mono'>1348</td><td class='mono'></td><td>OVERDRAFT FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMBLC</td><td>CHARACTER</td><td class='mono'>1349</td><td class='mono'>1</td><td class='mono'>1349</td><td class='mono'></td><td>BLACK LIST FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMIQC</td><td>NUMERIC</td><td class='mono'>1350</td><td class='mono'>1</td><td class='mono'>1350</td><td class='mono'></td><td>INQUIRY CNTRL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMFRJ</td><td>CHARACTER</td><td class='mono'>1351</td><td class='mono'>1</td><td class='mono'>1351</td><td class='mono'></td><td>REVA/PAYMNT FREQ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMFRD</td><td>CHARACTER</td><td class='mono'>1352</td><td class='mono'>2</td><td class='mono'>1353</td><td class='mono'></td><td>REVA/PAYMNT DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMFIN</td><td>CHARACTER</td><td class='mono'>1354</td><td class='mono'>1</td><td class='mono'>1354</td><td class='mono'></td><td>INTE/PAYMNT FREQ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMFID</td><td>CHARACTER</td><td class='mono'>1355</td><td class='mono'>2</td><td class='mono'>1356</td><td class='mono'></td><td>INTE/PAYMNT DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOVF</td><td>CHARACTER</td><td class='mono'>1357</td><td class='mono'>1</td><td class='mono'>1357</td><td class='mono'></td><td>OVD PAYMNET FREQ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMOVD</td><td>CHARACTER</td><td class='mono'>1358</td><td class='mono'>2</td><td class='mono'>1359</td><td class='mono'></td><td>OVD PAYMENT DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTDP</td><td>CHARACTER</td><td class='mono'>1360</td><td class='mono'>1</td><td class='mono'>1360</td><td class='mono'></td><td>TODAY PYMNT FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMDCY</td><td>NUMERIC</td><td class='mono'>1361</td><td class='mono'>3</td><td class='mono'>1363</td><td class='mono'></td><td>DAYS CYCLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMDMH</td><td>NUMERIC</td><td class='mono'>1364</td><td class='mono'>3</td><td class='mono'>1366</td><td class='mono'></td><td>DAYS MONTH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSGN</td><td>NUMERIC</td><td class='mono'>1367</td><td class='mono'>2</td><td class='mono'>1368</td><td class='mono'></td><td>SIGNER NRO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCCB</td><td>CHARACTER</td><td class='mono'>1369</td><td class='mono'>1</td><td class='mono'>1369</td><td class='mono'></td><td>CTMR CK BOOK FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCCC</td><td>CHARACTER</td><td class='mono'>1370</td><td class='mono'>1</td><td class='mono'>1370</td><td class='mono'></td><td>CTMR CK CNTR FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLIM</td><td>NUMERIC</td><td class='mono'>1371</td><td class='mono'>2</td><td class='mono'>1372</td><td class='mono'></td><td>LAST/INT PAY MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLID</td><td>NUMERIC</td><td class='mono'>1373</td><td class='mono'>2</td><td class='mono'>1374</td><td class='mono'></td><td>LAST/INT PAY DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLIY</td><td>NUMERIC</td><td class='mono'>1375</td><td class='mono'>4</td><td class='mono'>1378</td><td class='mono'></td><td>LAST/INT PAY YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLRM</td><td>NUMERIC</td><td class='mono'>1379</td><td class='mono'>2</td><td class='mono'>1380</td><td class='mono'></td><td>LAST/REV PAY MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLRD</td><td>NUMERIC</td><td class='mono'>1381</td><td class='mono'>2</td><td class='mono'>1382</td><td class='mono'></td><td>LAST/REV PAY DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLRY</td><td>NUMERIC</td><td class='mono'>1383</td><td class='mono'>4</td><td class='mono'>1386</td><td class='mono'></td><td>LAST/REV PAY YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTPL</td><td>DECIMAL</td><td class='mono'>1387</td><td class='mono'>15</td><td class='mono'>1401</td><td class='mono'>2</td><td>TAXES PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMTPY</td><td>DECIMAL</td><td class='mono'>1402</td><td class='mono'>15</td><td class='mono'>1416</td><td class='mono'>2</td><td>TAXES PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMI1L</td><td>DECIMAL</td><td class='mono'>1417</td><td class='mono'>15</td><td class='mono'>1431</td><td class='mono'>2</td><td>IVA 1 PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMI1Y</td><td>DECIMAL</td><td class='mono'>1432</td><td class='mono'>15</td><td class='mono'>1446</td><td class='mono'>2</td><td>IVA 1 PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMI2L</td><td>DECIMAL</td><td class='mono'>1447</td><td class='mono'>15</td><td class='mono'>1461</td><td class='mono'>2</td><td>IVA 2 PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMI2Y</td><td>DECIMAL</td><td class='mono'>1462</td><td class='mono'>15</td><td class='mono'>1476</td><td class='mono'>2</td><td>IVA 2 PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLIA</td><td>DECIMAL</td><td class='mono'>1477</td><td class='mono'>17</td><td class='mono'>1493</td><td class='mono'>2</td><td>LST INT PAY AVERG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLIP</td><td>DECIMAL</td><td class='mono'>1494</td><td class='mono'>15</td><td class='mono'>1508</td><td class='mono'>2</td><td>LST INT PAY BALNC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLRP</td><td>DECIMAL</td><td class='mono'>1509</td><td class='mono'>15</td><td class='mono'>1523</td><td class='mono'>2</td><td>LST REV PAY BALNC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMLSP</td><td>DECIMAL</td><td class='mono'>1524</td><td class='mono'>15</td><td class='mono'>1538</td><td class='mono'>2</td><td>LST S/C PAY BALNC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMADT</td><td>CHARACTER</td><td class='mono'>1539</td><td class='mono'>1</td><td class='mono'>1539</td><td class='mono'></td><td>AUTOM DEBIT TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMEMA</td><td>CHARACTER</td><td class='mono'>1540</td><td class='mono'>1</td><td class='mono'>1540</td><td class='mono'></td><td>EMLPOYEE ACC FLG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMSVI</td><td>CHARACTER</td><td class='mono'>1541</td><td class='mono'>1</td><td class='mono'>1541</td><td class='mono'></td><td>SEND STM VIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMDBR</td><td>DECIMAL</td><td class='mono'>1542</td><td class='mono'>4</td><td class='mono'>1545</td><td class='mono'></td><td>DELIVERY BRN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMANP</td><td>DECIMAL</td><td class='mono'>1546</td><td class='mono'>17</td><td class='mono'>1562</td><td class='mono'>2</td><td>AVG NET/BAL +</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMAGP</td><td>DECIMAL</td><td class='mono'>1563</td><td class='mono'>17</td><td class='mono'>1579</td><td class='mono'>2</td><td>AVG GRS/BAL +</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCNA</td><td>DECIMAL</td><td class='mono'>1580</td><td class='mono'>17</td><td class='mono'>1596</td><td class='mono'>2</td><td>AGGREGATE NET/CYC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCGA</td><td>DECIMAL</td><td class='mono'>1597</td><td class='mono'>17</td><td class='mono'>1613</td><td class='mono'>2</td><td>AGGREGATE GRS/CYC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMMNA</td><td>DECIMAL</td><td class='mono'>1614</td><td class='mono'>17</td><td class='mono'>1630</td><td class='mono'>2</td><td>AGGREGATE NET/MTH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMMGA</td><td>DECIMAL</td><td class='mono'>1631</td><td class='mono'>17</td><td class='mono'>1647</td><td class='mono'>2</td><td>AGGREGATE GRS/MTH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMPNA</td><td>DECIMAL</td><td class='mono'>1648</td><td class='mono'>17</td><td class='mono'>1664</td><td class='mono'>2</td><td>AGGREGATE NET/POS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMPGA</td><td>DECIMAL</td><td class='mono'>1665</td><td class='mono'>17</td><td class='mono'>1681</td><td class='mono'>2</td><td>AGGREGATE GRS/POS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCRC</td><td>CHARACTER</td><td class='mono'>1682</td><td class='mono'>20</td><td class='mono'>1701</td><td class='mono'></td><td>DEB/CRE CARD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCNL</td><td>CHARACTER</td><td class='mono'>1702</td><td class='mono'>2</td><td class='mono'>1703</td><td class='mono'></td><td>CANAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMCNV</td><td>CHARACTER</td><td class='mono'>1704</td><td class='mono'>4</td><td class='mono'>1707</td><td class='mono'>2</td><td>CONVENIO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ACMUNR</td><td>CHARACTER</td><td class='mono'>1708</td><td class='mono'>35</td><td class='mono'>1742</td><td class='mono'>2</td><td>UNIQUE REFERENCE</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[ACMBNK] 1
+[ACMBRN] 1
+[ACMCCY] CLP
+[ACMGLN] 2100109100100000
+[ACMACC] 67042167148
+[ACMMSK] 0
+[ACMASK] 1
+[ACMTBK] C1 | HP 30.01.2020
+[ACMTCR] 0
+[ACMGBL] -3256111
+[ACMNBL] -3256111
+[ACMPTF] N
+[ACMGEC] CL
+[ACMLSM] 5
+[ACMLSD] 31
+[ACMLSY] 2017
+[ACMSTF] M
+[ACMOPM] 8
+[ACMOPD] 20
+[ACMOPY] 2009
+[ACMLYM] 0
+[ACMLYD] 0
+[ACMLYY] 0
+[ACMAST] A
+[ACMMGR] 0
+[ACMSCF] Y | (HP)
+[ACMLOM] 3
+[ACMLOD] 21
+[ACMLOY] 2014
+[ACMTOD] 0
+[ACMLTM] 5
+[ACMLTD] 26
+[ACMLTY] 2017
+[ACMLSB] -8020191
+[ACMGAV] -7661.44
+[ACMNAV] -7661.44
+[ACMLYB] -18607819
+[ACMCCN] 0
+[ACMONG] G
+[ACMLSO] 0
+[ACMTSF] 0
+[ACMOLM] 0
+[ACMOLD] 0
+[ACMOLY] 0
+[ACMNRY] 0
+[ACMNRL] 17
+[ACMTOY] 23
+[ACMCDO] 0
+[ACMTNS] 0
+[ACMLHM] 0
+[ACMLHD] 0
+[ACMLHY] 0
+[ACMSHF] M
+[ACMSHY] 31
+[ACMOIA] 0
+[ACMOIY] 0
+[ACMIDC] 0
+[ACMSTY] C
+[ACMCBC] N
+[ACMAAN] N
+[ACMMOD] 0
+[ACMTCV] 0
+[ACMTVS] 0
+[ACM6MO] 0
+[ACMSDY] 31
+[ACMODF] N
+[ACMMGB] -3256111
+[ACMCUN] 278089
+[ACMMNE] 3256111
+[ACMATY] CCTE
+[ACMSCM] 5
+[ACMSCD] 10
+[ACMSCY] 2011
+[ACMIFM] 0
+[ACMMNB] -3256111
+[ACMOL1] 0
+[ACMOI1] 0
+[ACMOL2] 0
+[ACMOI2] 0
+[ACMOF2] 1
+[ACMHAM] 0
+[ACMGMA] -814027.75
+[ACMCLI] 0
+[ACMNMA] -814027.75
+[ACMUL1] 0
+[ACMUL2] 0
+[ACMUL3] 0
+[ACMFL1] 0
+[ACMFL2] 0
+[ACMIAC] 0
+[ACMSTE] N
+[ACMNDR] 0
+[ACMNCR] 1
+[ACMNCK] 0
+[ACMNDP] 0
+[ACMRBR] 1
+[ACMRGL] 0
+[ACMRAC] 0
+[ACMPRO] CC01
+[ACMF03] 1
+[ACMIVL] 0
+[ACMYDI] 0
+[ACMCSF] N
+[ACMCMC] 278089
+[ACMCMN] 9999
+[ACMTX1] 0
+[ACMTX2] 1
+[ACMTX3] 0
+[ACMTX4] 1
+[ACMWTY] 0
+[ACMWTQ] 0
+[ACMPEC] 5
+[ACMACL] C0
+[ACMLSH] DD0030, sobregiro no pactado
+[ACMLDM] 5
+[ACMLDD] 17
+[ACMLDY] 2017
+[ACMLDA] 0
+[ACMIPL] 0
+[ACMIPY] 0
+[ACMLCM] 5
+[ACMLCD] 31
+[ACMLCY] 2017
+[ACMDOL] 0
+[ACMATM] Y
+[ACMOIS] 0
+[ACMDOA] 0
+[ACMMIA] 0
+[ACMMLA] 0
+[ACMKTM] 0
+[ACMGYA] 0
+[ACMNYA] 0
+[ACMPBN] 0
+[ACMPBL] 0
+[ACMPBB] 3256111
+[ACMPMF] N
+[ACMANR] 0
+[ACMMOA] 0
+[ACMALM] 0
+[ACMALD] 0
+[ACMALY] 0
+[ACMACO] 0
+[ACMP12] 0
+[ACMADS] 0
+[ACMUC2] (HP)ACMUC2
+[ACMLMM] 0
+[ACMLMD] 0
+[ACMLMY] 0
+[ACMLMT] 2017-06-07-10.31.25.069000
+[ACMRPN] 0
+[ACMCLS] 0
+[ACMACD] 1
+[ACMCSM] 0
+[ACMCSD] 0
+[ACMCSY] 0
+[ACMSUM] 5
+[ACMSUD] 27
+[ACMSUY] 2019
+[ACMCLY] 0
+[ACMCLM] 0
+[ACMICA] 0
+[ACMGBY] -3256111
+[ACMNBY] -3256111
+[ACMACS] 0
+[ACMCPE] 0
+[ACMDV1] 0
+[ACMDV2] 0
+[ACMDV3] 0
+[ACMDV4] 0
+[ACMCSB] 0
+[ACMNRS] 0
+[ACMNSW] 0
+[ACMNPW] 0
+[ACMNRP] 0
+[ACMSLM] 0
+[ACMSLD] 0
+[ACMSLY] 0
+[ACMBCP] 0
+[ACMPRP] 0
+[ACMML2] 0
+[ACMAVN] 0
+[ACMWAT] 0
+[ACMNST] 0
+[ACMFOL] 0
+[ACMCN1] 0
+[ACMCN2] 2
+[ACMCN3] 0
+[ACMOFN] 0
+[ACMIQC] 0
+[ACMDCY] 0
+[ACMDMH] 0
+[ACMSGN] 0
+[ACMLIM] 0
+[ACMLID] 0
+[ACMLIY] 0
+[ACMLRM] 0
+[ACMLRD] 0
+[ACMLRY] 0
+[ACMTPL] 0
+[ACMTPY] 0
+[ACMI1L] 0
+[ACMI1Y] 0
+[ACMI2L] 0
+[ACMI2Y] 0
+[ACMLIA] 0
+[ACMLIP] 0
+[ACMLRP] 0
+[ACMLSP] 0
+[ACMDBR] 0
+[ACMANP] 0
+[ACMAGP] 0
+[ACMCNA] 0
+[ACMCGA] 0
+[ACMMNA] -6512222
+[ACMMGA] 0
+[ACMPNA] 0
+[ACMPGA] 0
+Y | 3 | 21 | 2014 | 0 | 5 | 26 | 2017 | -8020191 | -7661.44 | -7661.44 | -18607819 | 0 | G | 0 | 0 | 0 | 0 | 0 | 0 | 17 | 23 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | C | N | N | 0 | 0 | 0 | 0 | 31 | N | -3256111 | 278089 | 3256111 | CCTE | 5 | 10 | 2011 | 0 | -3256111 | 0 | 0 | 0 | 0 | 1 | 0 | -814027.75 | 0 | -814027.75 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 1 | 0 | 0 | 1 | 0 | 0 | CC01 | 1 | 0 | 0 | N | 278089 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 5 | C0 | 0 | 5 | 17 | 2017 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3256111 | N | 0 | 0 | 0 | 0 | 0 | 0
+Y | 5 | 2 | 2017 | 0 | 5 | 31 | 2017 | -79579 | -259.56 | -259.56 | -23132793 | 0 | G | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 39 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | C | N | N | 0 | 0 | 0 | 0 | 31 | N | -88640 | 278431 | 88640 | CCTE | 5 | 31 | 2017 | 0 | 0 | 0 | 0 | 0 | 0 | 12 | 88640 | -22160 | 0 | -22160 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 1 | 0 | 0 | 12 | 0 | 0 | CC01 | 1 | 0 | 0 | N | 278431 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 5 | C0 | 0 | 7 | 6 | 2016 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 88640 | N | 0 | 0 | 0 | 0 | 0 | 0
+Y | 5 | 2 | 2017 | 0 | 5 | 9 | 2017 | -239530 | -567.18 | -567.18 | -281835 | 0 | G | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 31 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | -229138 | 261620 | 229138 | CCTE | 5 | 26 | 2015 | 0 | 0 | 0 | 0 | 0 | 0 | 26 | 229138 | -57284.5 | 0 | -57284.5 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 1 | 0 | 0 | 1 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 261620 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 12 | 30 | 2015 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 229138 | N | 0 | 0 | 0 | 0 | 0 | 0
+Y | 11 | 5 | 2012 | 0 | 5 | 11 | 2017 | -719376 | -1759.66 | -1759.66 | -748521 | 0 | G | 0 | 0 | 5 | 24 | 2018 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | -710904 | 265056 | 710904 | CCTE | 6 | 28 | 2012 | 0 | -1410904 | 0 | 0 | 0 | 0 | 12 | 0 | -177726 | 700000 | -177726 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 1 | 0 | 0 | 12 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 265056 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 4 | 29 | 2015 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 710904 | N | 0 | 0 | 0 | 0 | 0 | 0
+Y | 5 | 9 | 2017 | 0 | 5 | 10 | 2017 | 92252 | -3.17 | -3.17 | -10816 | 0 | G | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 37 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | C | N | N | 0 | 0 | 0 | 0 | 31 | N | -383 | 282413 | 383 | CCTE | 1 | 29 | 2014 | 0 | -383 | 0 | 0 | 0 | 0 | 26 | 0 | -95.75 | 0 | -95.75 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 1 | 0 | 0 | 26 | 0 | 0 | CC01 | 1 | 0 | 0 | N | 282413 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 5 | C0 | 0 | 8 | 29 | 2016 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 383 | N | 0 | 0 | 0 | 0 | 0 | 0
+Y | 5 | 24 | 2017 | 0 | 5 | 24 | 2017 | -18513 | -4634.17 | -4634.17 | -216319 | 0 | G | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 26 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | C | N | N | 0 | 0 | 0 | 0 | 31 | N | -319758 | 225360 | 319758 | CCTE | 7 | 17 | 2015 | 0 | -319758 | 0 | 0 | 0 | 0 | 1 | 0 | -79939.5 | 0 | -79939.5 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 1 | 0 | 0 | 1 | 0 | 0 | CC01 | 1 | 0 | 0 | N | 225360 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 5 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 319758 | N | 0 | 0 | 0 | 0 | 0 | 0
+Y | 5 | 10 | 2017 | 0 | 5 | 31 | 2017 | 0 | 0 | 0 | 0 | 0 | G | 0 | 0 | 9 | 30 | 2019 | 0 | 0 | 70 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | 0 | 210242 | 0 | CCTE | 4 | 6 | 2017 | 0 | -317801 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 317801 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 61 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 210242 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 12 | 20 | 2016 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0
+Y | 5 | 2 | 2017 | 0 | 5 | 25 | 2017 | 0 | -878375 | -878375 | -195510 | 0 | G | 0 | 0 | 8 | 30 | 2017 | 0 | 0 | 6 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | C | N | N | 0 | 0 | 0 | 0 | 31 | N | -878375 | 288890 | 878375 | CCTE | 9 | 15 | 2014 | 0 | -20878375 | 0 | 0 | 0 | 0 | 7 | 0 | -219593.75 | 20000000 | -219593.75 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 1 | 0 | 0 | 7 | 0 | 0 | CC01 | 1 | 0 | 0 | N | 288890 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 5 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 878375 | N | 0 | 0 | 0 | 0 | 0 | 0
+Y | 5 | 2 | 2017 | 0 | 5 | 19 | 2017 | 0 | 0 | 0 | 0 | 0 | G | 0 | 0 | 2 | 27 | 2018 | 0 | 0 | 9 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | C | N | N | 0 | 0 | 0 | 0 | 31 | N | 0 | 280735 | 0 | CCTE | 11 | 13 | 2014 | 0 | -1083070 | 0 | 0 | 0 | 0 | 17 | 0 | 0 | 1083070 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 17 | 0 | 0 | CC01 | 1 | 0 | 0 | N | 280735 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 5 | C0 | 0 | 1 | 28 | 2016 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0
+Y | 1 | 4 | 2016 | 0 | 5 | 9 | 2017 | -506173 | -1537.76 | -1537.76 | -21822165 | 0 | G | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | C | N | N | 0 | 0 | 0 | 0 | 31 | N | -411349 | 284518 | 411349 | CCTE | 12 | 22 | 2015 | 0 | -411349 | 0 | 0 | 0 | 0 | 1 | 0 | -102837.25 | 0 | -102837.25 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 1 | 0 | 0 | 1 | 0 | 0 | CC01 | 1 | 0 | 0 | N | 284518 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 5 | C0 | 0 | 12 | 16 | 2016 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 411349 | N | 0 | 0 | 0 | 0 | 0 | 0
+Y | 1 | 12 | 2017 | 0 | 6 | 1 | 2017 | -15801102 | -64539.12 | -64539.12 | -776625 | 0 | G | 0 | 0 | 11 | 25 | 2017 | 0 | 1 | 10 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | -17070597 | 225583 | 17070597 | CCTE | 12 | 28 | 2015 | 0 | -18070597 | 0 | 0 | 0 | 0 | 17 | 0 | -4267649.25 | 1000000 | -4267649.25 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 1 | 0 | 0 | 17 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 225583 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 3 | 9 | 2017 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 17070597 | N | 0 | 0 | 0 | 0 | 0 | 0
+Y | 5 | 2 | 2017 | 0 | 5 | 24 | 2017 | 0 | 0 | 0 | -2127624 | 0 | G | 0 | 0 | 12 | 30 | 2017 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | 0 | 221934 | 0 | CCTE | 12 | 29 | 2015 | 0 | -1810873 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 1810873 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 1 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 221934 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0
+Y | 3 | 1 | 2017 | 0 | 5 | 17 | 2017 | -89111743 | -9376.23 | -9376.23 | -41418888 | 0 | G | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | C | N | N | 0 | 0 | 0 | 0 | 31 | N | -2208102 | 282988 | 2208102 | CCTE | 6 | 3 | 2016 | 0 | -2208102 | 0 | 0 | 0 | 0 | 1 | 0 | -552025.5 | 0 | -552025.5 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 1 | 0 | 0 | 1 | 0 | 0 | CC01 | 1 | 0 | 0 | N | 282988 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 5 | C0 | 0 | 1 | 23 | 2017 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2208102 | N | 0 | 0 | 0 | 0 | 0 | 0
+Y | 5 | 2 | 2017 | 0 | 5 | 3 | 2017 | 0 | 0 | 0 | 0 | 0 | G | 0 | 0 | 10 | 26 | 2017 | 0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | 0 | 267656 | 0 | CCTE | 10 | 26 | 2016 | 0 | -992381 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 992381 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 1 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 267656 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0</div></body></html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>HSDLRLOV</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>HSDLRLOV</h1>
+<div class='meta'><b>Archivo / Código:</b> HDSLRLOV<br><b>Descripción:</b> Maestro de Cartolas(DAP)<br><b>N.º de campos:</b> 37</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>DLRBNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK NUMBER</td><td>01</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>DLRBRN</td><td>DECIMAL</td><td class='mono'>3</td><td class='mono'>4</td><td class='mono'>6</td><td class='mono'></td><td>BRANCH NUMBER</td><td>1</td></tr>
+<tr><td class='mono'>3</td><td class='mono'>DLRCCY</td><td>CHARACTER</td><td class='mono'>7</td><td class='mono'>3</td><td class='mono'>9</td><td class='mono'></td><td>CURRENCY</td><td>CLP</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRACC</td><td>DECIMAL</td><td class='mono'>10</td><td class='mono'>12</td><td class='mono'>21</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td>9003106</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSDM</td><td>NUMERIC</td><td class='mono'>22</td><td class='mono'>2</td><td class='mono'>23</td><td class='mono'></td><td>STARTING DATE MM</td><td>2</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSDD</td><td>NUMERIC</td><td class='mono'>24</td><td class='mono'>2</td><td class='mono'>25</td><td class='mono'></td><td>STARTING DATE DD</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSDY</td><td>NUMERIC</td><td class='mono'>26</td><td class='mono'>4</td><td class='mono'>29</td><td class='mono'></td><td>STARTING DATE YY</td><td>2018</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRMAM</td><td>NUMERIC</td><td class='mono'>30</td><td class='mono'>2</td><td class='mono'>31</td><td class='mono'></td><td>MATURITY DATE MM</td><td>3</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRMAD</td><td>NUMERIC</td><td class='mono'>32</td><td class='mono'>2</td><td class='mono'>33</td><td class='mono'></td><td>MATURITY DATE DD</td><td>5</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRMAY</td><td>NUMERIC</td><td class='mono'>34</td><td class='mono'>4</td><td class='mono'>37</td><td class='mono'></td><td>MATURITY DATE YY</td><td>2018</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRPRI</td><td>DECIMAL</td><td class='mono'>38</td><td class='mono'>15</td><td class='mono'>52</td><td class='mono'>2</td><td>PRINCIPAL BAL</td><td>14480078</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRIAL</td><td>DECIMAL</td><td class='mono'>53</td><td class='mono'>15</td><td class='mono'>67</td><td class='mono'>2</td><td>INT/ACC LTD</td><td>20079</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRRTE</td><td>DECIMAL</td><td class='mono'>68</td><td class='mono'>9</td><td class='mono'>76</td><td class='mono'>6</td><td>RATE</td><td>0.13</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSPR</td><td>DECIMAL</td><td class='mono'>77</td><td class='mono'>9</td><td class='mono'>85</td><td class='mono'>6</td><td>EFECTIVE RATE</td><td>0.138666</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRTRM</td><td>DECIMAL</td><td class='mono'>86</td><td class='mono'>5</td><td class='mono'>90</td><td class='mono'></td><td>TERM NUMBER</td><td>32</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSTS</td><td>CHARACTER</td><td class='mono'>91</td><td class='mono'>1</td><td class='mono'>91</td><td class='mono'></td><td>ACCOUNT STATUS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLROFI</td><td>CHARACTER</td><td class='mono'>92</td><td class='mono'>4</td><td class='mono'>95</td><td class='mono'></td><td>OFFICER</td><td>6032</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRNME</td><td>CHARACTER</td><td class='mono'>96</td><td class='mono'>45</td><td class='mono'>140</td><td class='mono'></td><td>OFFICER NAME</td><td>BORIS PINOCHET FERNANDEZ</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRPHN</td><td>DECIMAL</td><td class='mono'>141</td><td class='mono'>15</td><td class='mono'>155</td><td class='mono'></td><td>PHONE NUMBER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRPXT</td><td>DECIMAL</td><td class='mono'>156</td><td class='mono'>4</td><td class='mono'>159</td><td class='mono'></td><td>PHONE EXTENSION</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLROML</td><td>CHARACTER</td><td class='mono'>160</td><td class='mono'>60</td><td class='mono'>219</td><td class='mono'></td><td>OFFIC E-MAIL ADDRESS</td><td>BPINOCHET@BANCOINTERNACIONAL.CL</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRCUN</td><td>DECIMAL</td><td class='mono'>220</td><td class='mono'>9</td><td class='mono'>228</td><td class='mono'></td><td>CUSTOMER NUMBER</td><td>543412</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRIDN</td><td>CHARACTER</td><td class='mono'>229</td><td class='mono'>25</td><td class='mono'>253</td><td class='mono'></td><td>IDENTIFICATION</td><td>62225432</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRNA1</td><td>CHARACTER</td><td class='mono'>254</td><td class='mono'>60</td><td class='mono'>313</td><td class='mono'></td><td>NOMBRE  1</td><td>ANA MARIA GUERRERO GONZALEZ</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSTV</td><td>CHARACTER</td><td class='mono'>314</td><td class='mono'>1</td><td class='mono'>314</td><td class='mono'></td><td>STATEMENT VIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRMA1</td><td>CHARACTER</td><td class='mono'>315</td><td class='mono'>60</td><td class='mono'>374</td><td class='mono'></td><td>DIRECCION 1</td><td>AVDA EINSTEIN , 1131</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRMA2</td><td>CHARACTER</td><td class='mono'>375</td><td class='mono'>60</td><td class='mono'>434</td><td class='mono'></td><td>DIRECCION 2</td><td>SANTIAGO, SANTIAGO</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRMA3</td><td>CHARACTER</td><td class='mono'>435</td><td class='mono'>60</td><td class='mono'>494</td><td class='mono'></td><td>DIRECCION 3</td><td>SANTIAGO CHILE</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRMA4</td><td>CHARACTER</td><td class='mono'>495</td><td class='mono'>60</td><td class='mono'>554</td><td class='mono'></td><td>DIRECCION 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRCOM</td><td>CHARACTER</td><td class='mono'>555</td><td class='mono'>45</td><td class='mono'>599</td><td class='mono'></td><td>COMUNA</td><td>SANTIAGO</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRCTY</td><td>CHARACTER</td><td class='mono'>600</td><td class='mono'>35</td><td class='mono'>634</td><td class='mono'></td><td>CITY</td><td>SANTIAGO</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRPRV</td><td>CHARACTER</td><td class='mono'>635</td><td class='mono'>45</td><td class='mono'>679</td><td class='mono'></td><td>PROVINCIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRRGN</td><td>CHARACTER</td><td class='mono'>680</td><td class='mono'>45</td><td class='mono'>724</td><td class='mono'></td><td>REGION</td><td>SANTIAGO</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRCTR</td><td>CHARACTER</td><td class='mono'>725</td><td class='mono'>35</td><td class='mono'>759</td><td class='mono'></td><td>COUNTRY</td><td>CHILE</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRMLA</td><td>NUMERIC</td><td class='mono'>760</td><td class='mono'>2</td><td class='mono'>761</td><td class='mono'></td><td>MAILING ADDRESS</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRREV</td><td>CHARACTER</td><td class='mono'>762</td><td class='mono'>1</td><td class='mono'>762</td><td class='mono'></td><td>IND. REVALORIZA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRIEI</td><td>CHARACTER</td><td class='mono'>763</td><td class='mono'>1</td><td class='mono'>763</td><td class='mono'></td><td>IND. ENV. IMPRENTA</td><td>E</td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[DLRBNK] 01
+[DLRBRN] 28
+[DLRCCY] USD
+[DLRACC] 9034400
+[DLRSDM] 9
+[DLRSDD] 20
+[DLRSDY] 2018
+[DLRMAM] 11
+[DLRMAD] 20
+[DLRMAY] 2018
+[DLRPRI] 6561.37
+[DLRIAL] 0.45 | 0.1386663801
+[DLRRTE] 2.45
+[DLRSPR] 2.475062
+[DLRTRM] 61
+[DLROFI] 6047
+[DLRNME] ARTURO PALMA FERNANDEZ
+[DLRPHN] 0
+[DLRPXT] 0
+[DLROML] APALMAF@BANCOINTErNACIONAL.CL
+[DLRCUN] 543412
+[DLRIDN] 62225432
+[DLRNA1] ANA MARIA GUERRERO GONZALEZ
+[DLRSTV] A
+[DLRMA1] AVDA EINSTEIN , 1131
+[DLRMA2] SANTIAGO, SANTIAGO
+[DLRMA3] SANTIAGO CHILE
+[DLRCOM] SANTIAGO
+[DLRCTY] SANTIAGO
+[DLRRGN] SANTIAGO
+[DLRCTR] CHILE
+[DLRMLA] 1</div></body></html>

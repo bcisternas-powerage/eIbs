@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>FCAMST</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>FCAMST</h1>
+<div class='meta'><b>Descripción:</b> Maestro de Cuentas de Detalle(Cta.Cte, etc.)<br><b>N.º de campos:</b> 37</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>FCASIS</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>4</td><td class='mono'>4</td><td class='mono'></td><td>Sist Orig</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>FCAPGM</td><td>CHARACTER</td><td class='mono'>5</td><td class='mono'>10</td><td class='mono'>14</td><td class='mono'></td><td>PGM procesa</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>FCAFIN</td><td>NUMERIC</td><td class='mono'>15</td><td class='mono'>8</td><td class='mono'>22</td><td class='mono'></td><td>Fecha Inscripcion</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAHIN</td><td>NUMERIC</td><td class='mono'>23</td><td class='mono'>6</td><td class='mono'>28</td><td class='mono'></td><td>Hora Inscripcion</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAFLI</td><td>NUMERIC</td><td class='mono'>29</td><td class='mono'>8</td><td class='mono'>36</td><td class='mono'></td><td>Fecha Liberacion</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAHLI</td><td>NUMERIC</td><td class='mono'>37</td><td class='mono'>6</td><td class='mono'>42</td><td class='mono'></td><td>Hora Liberacion</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCABRN</td><td>NUMERIC</td><td class='mono'>43</td><td class='mono'>3</td><td class='mono'>45</td><td class='mono'></td><td>Sucursal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCATMO</td><td>CHARACTER</td><td class='mono'>46</td><td class='mono'>1</td><td class='mono'>46</td><td class='mono'></td><td>Tipo Movimiento</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAOPO</td><td>CHARACTER</td><td class='mono'>47</td><td class='mono'>19</td><td class='mono'>65</td><td class='mono'></td><td>N.OPER.SIST.ORIGEN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCATRO</td><td>CHARACTER</td><td class='mono'>66</td><td class='mono'>15</td><td class='mono'>80</td><td class='mono'></td><td>TRX.SIST.ORIGEN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCABCO</td><td>NUMERIC</td><td class='mono'>81</td><td class='mono'>3</td><td class='mono'>83</td><td class='mono'></td><td>BANCO GENERADOR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCATCO</td><td>CHARACTER</td><td class='mono'>84</td><td class='mono'>1</td><td class='mono'>84</td><td class='mono'></td><td>Tipo Cta.Origen</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCACCO</td><td>DECIMAL</td><td class='mono'>85</td><td class='mono'>12</td><td class='mono'>96</td><td class='mono'></td><td>Cta.Cte.Origen</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCACBO</td><td>DECIMAL</td><td class='mono'>97</td><td class='mono'>16</td><td class='mono'>112</td><td class='mono'></td><td>Cta.Ctb.Origen</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCATCI</td><td>CHARACTER</td><td class='mono'>113</td><td class='mono'>1</td><td class='mono'>113</td><td class='mono'></td><td>Tipo Cta. IBS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCACTE</td><td>DECIMAL</td><td class='mono'>114</td><td class='mono'>12</td><td class='mono'>125</td><td class='mono'></td><td>Cuenta CTE IBS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCACTB</td><td>DECIMAL</td><td class='mono'>126</td><td class='mono'>16</td><td class='mono'>141</td><td class='mono'></td><td>Cuenta CTB IBS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAMON</td><td>NUMERIC</td><td class='mono'>142</td><td class='mono'>13</td><td class='mono'>154</td><td class='mono'>2</td><td>Monto</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCACCY</td><td>CHARACTER</td><td class='mono'>155</td><td class='mono'>3</td><td class='mono'>157</td><td class='mono'></td><td>Moneda</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAGLO</td><td>CHARACTER</td><td class='mono'>158</td><td class='mono'>30</td><td class='mono'>187</td><td class='mono'></td><td>Glosa Del Movimiento</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCASOB</td><td>CHARACTER</td><td class='mono'>188</td><td class='mono'>1</td><td class='mono'>188</td><td class='mono'></td><td>Sobregiro</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCARUT</td><td>CHARACTER</td><td class='mono'>189</td><td class='mono'>13</td><td class='mono'>201</td><td class='mono'></td><td>Rut Cliente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAESO</td><td>CHARACTER</td><td class='mono'>202</td><td class='mono'>1</td><td class='mono'>202</td><td class='mono'></td><td>Estado Solicitud</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAEOP</td><td>CHARACTER</td><td class='mono'>203</td><td class='mono'>1</td><td class='mono'>203</td><td class='mono'></td><td>Estado Operación IBS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAFPR</td><td>NUMERIC</td><td class='mono'>204</td><td class='mono'>8</td><td class='mono'>211</td><td class='mono'></td><td>Fecha Proceso</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAHPR</td><td>NUMERIC</td><td class='mono'>212</td><td class='mono'>6</td><td class='mono'>217</td><td class='mono'></td><td>Hora Proceso</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCARES</td><td>CHARACTER</td><td class='mono'>218</td><td class='mono'>1</td><td class='mono'>218</td><td class='mono'></td><td>Cod. Respuesta</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCACRE</td><td>CHARACTER</td><td class='mono'>219</td><td class='mono'>1</td><td class='mono'>219</td><td class='mono'>2</td><td>Causal Rechazo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAERR</td><td>CHARACTER</td><td class='mono'>220</td><td class='mono'>60</td><td class='mono'>279</td><td class='mono'></td><td>Descricpion Error/Rechazo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAEMA</td><td>CHARACTER</td><td class='mono'>280</td><td class='mono'>1</td><td class='mono'>280</td><td class='mono'></td><td>Flag Envío Email</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAIDU</td><td>CHARACTER</td><td class='mono'>281</td><td class='mono'>25</td><td class='mono'>305</td><td class='mono'></td><td>ID Unico de movimiento</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAFL1</td><td>CHARACTER</td><td class='mono'>306</td><td class='mono'>1</td><td class='mono'>306</td><td class='mono'></td><td>Flag 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAFL2</td><td>CHARACTER</td><td class='mono'>307</td><td class='mono'>1</td><td class='mono'>307</td><td class='mono'></td><td>Flag 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAFL3</td><td>CHARACTER</td><td class='mono'>308</td><td class='mono'>1</td><td class='mono'>308</td><td class='mono'></td><td>Flag 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAUC1</td><td>CHARACTER</td><td class='mono'>309</td><td class='mono'>10</td><td class='mono'>318</td><td class='mono'></td><td>User Code 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAUC2</td><td>CHARACTER</td><td class='mono'>319</td><td class='mono'>10</td><td class='mono'>328</td><td class='mono'></td><td>User Code 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>FCAUC3</td><td>CHARACTER</td><td class='mono'>329</td><td class='mono'>10</td><td class='mono'>338</td><td class='mono'>2</td><td>User Code 3</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>Y | 5 | 2 | 2017 | 0 | 5 | 3 | 2017 | 0 | 0 | 0 | 0 | 0 | G | 0 | 0 | 10 | 26 | 2017 | 0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | 0 | 267656 | 0 | CCTE | 10 | 26 | 2016 | 0 | -992381 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 992381 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 1 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 267656 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0</div></body></html>

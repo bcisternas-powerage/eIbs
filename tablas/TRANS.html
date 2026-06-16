@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>TRANS</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>TRANS</h1>
+<div class='meta'><b>Descripción:</b> Maestro de Cuentas de Detalle(Cta.Cte, etc.)<br><b>N.º de campos:</b> 47</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>TRABTH</td><td>DECIMAL</td><td class='mono'>1</td><td class='mono'>5</td><td class='mono'>5</td><td class='mono'></td><td>Numero de Lote</td><td>99480</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>TRAVDM</td><td>NUMERIC</td><td class='mono'>6</td><td class='mono'>2</td><td class='mono'>7</td><td class='mono'></td><td>Fecha Valor MES</td><td>12</td></tr>
+<tr><td class='mono'>3</td><td class='mono'>TRAVDD</td><td>NUMERIC</td><td class='mono'>8</td><td class='mono'>2</td><td class='mono'>9</td><td class='mono'></td><td>Fecha Valor DIA</td><td>15</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAVDY</td><td>NUMERIC</td><td class='mono'>10</td><td class='mono'>4</td><td class='mono'>13</td><td class='mono'></td><td>Fecha Valor AÑO</td><td>2017</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRABNK</td><td>CHARACTER</td><td class='mono'>14</td><td class='mono'>2</td><td class='mono'>15</td><td class='mono'></td><td>BANK NUMBER</td><td>01</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRABRN</td><td>DECIMAL</td><td class='mono'>16</td><td class='mono'>4</td><td class='mono'>19</td><td class='mono'></td><td>Numero de Sucursal</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACCY</td><td>CHARACTER</td><td class='mono'>20</td><td class='mono'>3</td><td class='mono'>22</td><td class='mono'></td><td>Codigo de Moneda</td><td>CLP</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAGLN</td><td>DECIMAL</td><td class='mono'>23</td><td class='mono'>16</td><td class='mono'>38</td><td class='mono'></td><td>Numero de Cuenta Contable</td><td>2100109100100000</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAACC</td><td>DECIMAL</td><td class='mono'>39</td><td class='mono'>12</td><td class='mono'>50</td><td class='mono'></td><td>Numero de Cta. Cliente</td><td>67042367715</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRABDM</td><td>NUMERIC</td><td class='mono'>51</td><td class='mono'>2</td><td class='mono'>52</td><td class='mono'></td><td>Fecha proceso MES</td><td>12</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRABDD</td><td>NUMERIC</td><td class='mono'>53</td><td class='mono'>2</td><td class='mono'>54</td><td class='mono'></td><td>Fecha proceso DIA</td><td>15</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRABDY</td><td>NUMERIC</td><td class='mono'>55</td><td class='mono'>4</td><td class='mono'>58</td><td class='mono'></td><td>Fecha proceso AÑO</td><td>2017</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACDE</td><td>CHARACTER</td><td class='mono'>59</td><td class='mono'>4</td><td class='mono'>62</td><td class='mono'></td><td>Codigo de Transacción:
+MD = ‘DEBE’.
+MC = &#x27;HABER&#x27;</td><td>3Y</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRANAR</td><td>CHARACTER</td><td class='mono'>63</td><td class='mono'>60</td><td class='mono'>122</td><td class='mono'></td><td>NARRATIVE</td><td>PAGO INTERESES CREDITO 2280219</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAAMT</td><td>DECIMAL</td><td class='mono'>123</td><td class='mono'>15</td><td class='mono'>137</td><td class='mono'>2</td><td>Monto Transacción</td><td>34125</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRADCC</td><td>CHARACTER</td><td class='mono'>138</td><td class='mono'>1</td><td class='mono'>138</td><td class='mono'></td><td>DR/CR CODE
+0 = &#x27;DEBE&#x27;   5 = &#x27;HABER&#x27;</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAUSA</td><td>CHARACTER</td><td class='mono'>139</td><td class='mono'>10</td><td class='mono'>148</td><td class='mono'></td><td>USER APROBADOR</td><td>ENDOFDAY</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAUSO</td><td>CHARACTER</td><td class='mono'>149</td><td class='mono'>10</td><td class='mono'>158</td><td class='mono'></td><td>USER OPERERATIVO</td><td>ENDOFDAY</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAEXR</td><td>DECIMAL</td><td class='mono'>159</td><td class='mono'>11</td><td class='mono'>169</td><td class='mono'>6</td><td>CAMBIO DE TASA</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRADRR</td><td>DECIMAL</td><td class='mono'>170</td><td class='mono'>12</td><td class='mono'>181</td><td class='mono'></td><td>TRNS.DESC.RELAT.RECÑ</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAPTS</td><td>DECIMAL</td><td class='mono'>182</td><td class='mono'>5</td><td class='mono'>186</td><td class='mono'></td><td>P/T SUB/ACCT</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAAPC</td><td>CHARACTER</td><td class='mono'>187</td><td class='mono'>2</td><td class='mono'>188</td><td class='mono'></td><td>CODIGO DE APLICACIÓN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAREF</td><td>CHARACTER</td><td class='mono'>189</td><td class='mono'>25</td><td class='mono'>213</td><td class='mono'></td><td>TRANSACCION NUMERO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRANID</td><td>DECIMAL</td><td class='mono'>214</td><td class='mono'>5</td><td class='mono'>218</td><td class='mono'></td><td>NO. ITEMS IN DEPOSIT</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRATRN</td><td>DECIMAL</td><td class='mono'>219</td><td class='mono'>5</td><td class='mono'>223</td><td class='mono'></td><td>TRANSACTION NUMBER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAPMN</td><td>DECIMAL</td><td class='mono'>224</td><td class='mono'>5</td><td class='mono'>228</td><td class='mono'></td><td>PAYMENT NUMBER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRASEQ</td><td>DECIMAL</td><td class='mono'>229</td><td class='mono'>7</td><td class='mono'>235</td><td class='mono'></td><td>SEQÑ/NO BATCH</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACKN</td><td>DECIMAL</td><td class='mono'>236</td><td class='mono'>11</td><td class='mono'>246</td><td class='mono'></td><td>CHECK NUMBER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACCN</td><td>DECIMAL</td><td class='mono'>247</td><td class='mono'>8</td><td class='mono'>254</td><td class='mono'></td><td>CENTRO DE COSTO</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACUN</td><td>DECIMAL</td><td class='mono'>255</td><td class='mono'>9</td><td class='mono'>263</td><td class='mono'></td><td>NUMERO DE CLIENTE</td><td>160460</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAMOD</td><td>CHARACTER</td><td class='mono'>264</td><td class='mono'>1</td><td class='mono'>264</td><td class='mono'></td><td>MODULE TYPE 
+1=Ctas.Ctes/Ahorros 2=Depósitos/Préstamos,
+3= Cartas de Crédito, Boletas Garantia</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAOBK</td><td>CHARACTER</td><td class='mono'>265</td><td class='mono'>2</td><td class='mono'>266</td><td class='mono'></td><td>ORIG.BANK NUMBER</td><td>01</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAOBR</td><td>DECIMAL</td><td class='mono'>267</td><td class='mono'>4</td><td class='mono'>270</td><td class='mono'></td><td>ORIG.BRANCH NUMBER</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAAAF</td><td>CHARACTER</td><td class='mono'>271</td><td class='mono'>1</td><td class='mono'>271</td><td class='mono'></td><td>ACC.ANALYSIS FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAEQV</td><td>DECIMAL</td><td class='mono'>272</td><td class='mono'>15</td><td class='mono'>286</td><td class='mono'>2</td><td>Monto Equivalente</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAACR</td><td>DECIMAL</td><td class='mono'>287</td><td class='mono'>12</td><td class='mono'>298</td><td class='mono'></td><td>ACCOUNT REFERE</td><td>1005761</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACNU</td><td>DECIMAL</td><td class='mono'>299</td><td class='mono'>7</td><td class='mono'>305</td><td class='mono'></td><td>CONTROL NUMBER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRARCL</td><td>CHARACTER</td><td class='mono'>306</td><td class='mono'>20</td><td class='mono'>325</td><td class='mono'></td><td>RECONCLBL REFERE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACNL</td><td>CHARACTER</td><td class='mono'>326</td><td class='mono'>2</td><td class='mono'>327</td><td class='mono'></td><td>CANAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRADED</td><td>CHARACTER</td><td class='mono'>328</td><td class='mono'>4</td><td class='mono'>331</td><td class='mono'></td><td>DEDUCTION CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRADSQ</td><td>NUMERIC</td><td class='mono'>332</td><td class='mono'>2</td><td class='mono'>333</td><td class='mono'></td><td>DEDUCTION SEQU</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAIVP</td><td>DECIMAL</td><td class='mono'>334</td><td class='mono'>6</td><td class='mono'>339</td><td class='mono'>3</td><td>IVA %</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAIVB</td><td>DECIMAL</td><td class='mono'>340</td><td class='mono'>15</td><td class='mono'>354</td><td class='mono'>2</td><td>IVA BASE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAREV</td><td>CHARACTER</td><td class='mono'>355</td><td class='mono'>1</td><td class='mono'>355</td><td class='mono'></td><td>REVERSE FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAOLF</td><td>CHARACTER</td><td class='mono'>356</td><td class='mono'>1</td><td class='mono'>356</td><td class='mono'></td><td>ON LINE FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACOD</td><td>CHARACTER</td><td class='mono'>357</td><td class='mono'>4</td><td class='mono'>360</td><td class='mono'></td><td>SPECIAL CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRATMS</td><td>TIMESTAMP</td><td class='mono'>361</td><td class='mono'>26</td><td class='mono'>386</td><td class='mono'>6</td><td>TIME STAMP</td><td>2017-12-19-15.40.06.690000</td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[TRABTH] 99480
+[TRAVDM] 12 | 1
+[TRAVDD] 15 | 1
+[TRAVDY] 2017 | 2018
+[TRABNK] 01
+[TRABRN] 1
+[TRACCY] CLP
+[TRAGLN] 1302101100100000
+[TRAACC] 2280219
+[TRABDM] 12
+[TRABDD] 15
+[TRABDY] 2017
+[TRACDE] DD
+[TRANAR] PAGO PRINCIPAL CREDITO 2280219
+[TRAAMT] 1055158
+[TRADCC] 5
+[TRAUSA] ENDOFDAY
+[TRAUSO] ENDOFDAY
+[TRAEXR] 1
+[TRADRR] 0
+[TRAPTS] 0
+[TRAAPC] P
+[TRANID] 0
+[TRATRN] 0
+[TRAPMN] 100
+[TRASEQ] 0
+[TRACKN] 0
+[TRACCN] 0
+[TRACUN] 160460
+[TRAMOD] 2
+[TRAOBK] 01
+[TRAOBR] 1
+[TRAEQV] 0
+[TRAACR] 1005761
+[TRACNU] 0
+[TRARCL] Y | 5 | 2 | 2017 | 0 | 5 | 3 | 2017 | 0 | 0 | 0 | 0 | 0 | G | 0 | 0 | 10 | 26 | 2017 | 0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | 0 | 267656 | 0 | CCTE | 10 | 26 | 2016 | 0 | -992381 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 992381 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 1 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 267656 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0
+[TRADSQ] 0
+[TRAIVP] 0
+[TRAIVB] 0
+[TRATMS] 2017-12-19-15.40.06.691000</div></body></html>

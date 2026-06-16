@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>GEMST</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>GEMST</h1>
+<div class='meta'><b>N.º de campos:</b> 25</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>GEMGRP</td><td>DECIMAL</td><td class='mono'>1</td><td class='mono'>9</td><td class='mono'>9</td><td class='mono'></td><td>GROUP CODE</td><td>5070</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>GEMLVL</td><td>NUMERIC</td><td class='mono'>10</td><td class='mono'>1</td><td class='mono'>10</td><td class='mono'></td><td>GROUP LEVEL     donde
+0 = Cabeza de grupo
+1 = Dependientes 1er nivel
+2 = Dependientes de 2° Nivel</td><td>0</td></tr>
+<tr><td class='mono'>3</td><td class='mono'>GEMCUN</td><td>DECIMAL</td><td class='mono'>11</td><td class='mono'>9</td><td class='mono'>19</td><td class='mono'></td><td>CUSTOMER NUMBER (Cliente Relacionado)</td><td>528961</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMRCU</td><td>DECIMAL</td><td class='mono'>20</td><td class='mono'>9</td><td class='mono'>28</td><td class='mono'></td><td>RELATED CUSTOMER (Rut principal)</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMTID</td><td>CHARACTER</td><td class='mono'>29</td><td class='mono'>4</td><td class='mono'>32</td><td class='mono'></td><td>IDEN TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMPID</td><td>CHARACTER</td><td class='mono'>33</td><td class='mono'>4</td><td class='mono'>36</td><td class='mono'></td><td>IDEN COUNTRY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMIDN</td><td>CHARACTER</td><td class='mono'>37</td><td class='mono'>25</td><td class='mono'>61</td><td class='mono'></td><td>IDENTIFICATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMRLP</td><td>CHARACTER</td><td class='mono'>62</td><td class='mono'>4</td><td class='mono'>65</td><td class='mono'></td><td>RELATION TYPE</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMPRC</td><td>DECIMAL</td><td class='mono'>66</td><td class='mono'>6</td><td class='mono'>71</td><td class='mono'>3</td><td>% PARTICIPACION</td><td>100</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMPR1</td><td>DECIMAL</td><td class='mono'>72</td><td class='mono'>6</td><td class='mono'>77</td><td class='mono'>3</td><td>PORCENTAJE 2</td><td>100</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMUS1</td><td>CHARACTER</td><td class='mono'>78</td><td class='mono'>4</td><td class='mono'>81</td><td class='mono'></td><td>USER CODE 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMUS2</td><td>CHARACTER</td><td class='mono'>82</td><td class='mono'>4</td><td class='mono'>85</td><td class='mono'></td><td>USER CODE 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMUS3</td><td>CHARACTER</td><td class='mono'>86</td><td class='mono'>4</td><td class='mono'>89</td><td class='mono'></td><td>USER CODE 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMNA1</td><td>CHARACTER</td><td class='mono'>90</td><td class='mono'>60</td><td class='mono'>149</td><td class='mono'></td><td>NAME</td><td>ANDRES NAVARRO HAEUSSLER</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMAM1</td><td>DECIMAL</td><td class='mono'>150</td><td class='mono'>15</td><td class='mono'>164</td><td class='mono'>2</td><td>AMOUNT 1</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMAM2</td><td>DECIMAL</td><td class='mono'>165</td><td class='mono'>15</td><td class='mono'>179</td><td class='mono'>2</td><td>AMOUNT 2</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMNME</td><td>CHARACTER</td><td class='mono'>180</td><td class='mono'>45</td><td class='mono'>224</td><td class='mono'></td><td>DESCRIPTIONS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMRLM</td><td>NUMERIC</td><td class='mono'>225</td><td class='mono'>2</td><td class='mono'>226</td><td class='mono'></td><td>RELATION DATE MM</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMRLD</td><td>NUMERIC</td><td class='mono'>227</td><td class='mono'>2</td><td class='mono'>228</td><td class='mono'></td><td>RELATION DATE DD</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMRLY</td><td>NUMERIC</td><td class='mono'>229</td><td class='mono'>4</td><td class='mono'>232</td><td class='mono'></td><td>RELATION DATE YY</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMLMM</td><td>NUMERIC</td><td class='mono'>233</td><td class='mono'>2</td><td class='mono'>234</td><td class='mono'></td><td>LAST MAINT/MM</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMLMD</td><td>NUMERIC</td><td class='mono'>235</td><td class='mono'>2</td><td class='mono'>236</td><td class='mono'></td><td>LAST MAINT/DD</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMLMY</td><td>NUMERIC</td><td class='mono'>237</td><td class='mono'>4</td><td class='mono'>240</td><td class='mono'></td><td>LAST MAINT/YY</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMLMT</td><td>TIMESTAMP</td><td class='mono'>241</td><td class='mono'>26</td><td class='mono'>266</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td>2017-12-31-00.47.57.614000</td></tr>
+<tr><td class='mono'></td><td class='mono'>GEMLMU</td><td>CHARACTER</td><td class='mono'>267</td><td class='mono'>10</td><td class='mono'>276</td><td class='mono'></td><td>LAST MAINT/USER</td><td>MIGRACION</td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[GEMGRP] 5070 | 5070 | 5070 | 5070
+[GEMLVL] 1 | 1 | 1 | 1
+[GEMCUN] 547107 | 556853 | 610724 | 617600
+[GEMRCU] 5078702 | 5078702 | 5078702 | 5078702
+[GEMRLP] 1 | 1 | 1 | 1
+[GEMPRC] 100 | 100 | 100 | 100
+[GEMPR1] 100 | 100 | 100 | 100
+[GEMNA1] PABLO NAVARRO HAEUSSLER | PAULA CALDERON CRISTI | ANDRES NAVARRO BETTELEY | SOFIA SALINAS ERRAZURIZ
+[GEMAM1] 0 | 0 | 0 | 0
+[GEMAM2] 0 | 0 | 0 | 0
+[GEMRLM] 0 | 0 | 0 | 0
+[GEMRLD] 0 | 0 | 0 | 0
+[GEMRLY] 0 | 0 | 0 | 0
+[GEMLMM] 0 | 0 | 0 | 0
+[GEMLMD] 0 | 0 | 0 | 0
+[GEMLMY] 0 | 0 | 0 | 0
+[GEMLMT] 2017-12-31-00.47.57.614000 | 2017-12-31-00.47.57.615000 | 2017-12-31-00.47.57.615000 | 2017-12-31-00.47.57.615000
+[GEMLMU] MIGRACION | MIGRACION | MIGRACION | MIGRACION</div></body></html>

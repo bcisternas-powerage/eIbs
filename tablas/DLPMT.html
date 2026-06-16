@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>DLPMT</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>DLPMT</h1>
+<div class='meta'><b>Descripción:</b> Préstamos (Plan de Pago/Cuotas del Crédito)<br><b>N.º de campos:</b> 95</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>DLPBNK</td><td>CHARACTER</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>BANK NUMBER</td><td class='mono'>N° de Banco</td><td></td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>DLPBRN</td><td>PACKED</td><td class='mono'>4</td><td class='mono'></td><td class='mono'>BRANCH NUMBER</td><td class='mono'>N° de Sucursal</td><td></td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>DLPCCY</td><td>CHARACTER</td><td class='mono'>3</td><td class='mono'></td><td class='mono'>CURRENCY</td><td class='mono'>Moneda Contable del Crédito</td><td></td><td></td></tr>
+<tr><td class='mono'>4</td><td class='mono'>DLPACC</td><td>PACKED</td><td class='mono'>12</td><td class='mono'></td><td class='mono'>ACCOUNT NUMBER</td><td class='mono'>N° Operación IBS</td><td></td><td></td></tr>
+<tr><td class='mono'>5</td><td class='mono'>DLPPDY</td><td>NUMERIC</td><td class='mono'>4</td><td class='mono'></td><td class='mono'>PMT DTE YY</td><td class='mono'>Fecha de Vencimiento de la Cuota</td><td></td><td></td></tr>
+<tr><td class='mono'>6</td><td class='mono'>DLPPDM</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>PMT DTE MM</td><td class='mono'>Fecha de Vencimiento de la Cuota</td><td></td><td></td></tr>
+<tr><td class='mono'>7</td><td class='mono'>DLPPDD</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>PMT DTE DD</td><td class='mono'>Fecha de Vencimiento de la Cuota</td><td></td><td></td></tr>
+<tr><td class='mono'>8</td><td class='mono'>DLPPNU</td><td>PACKED</td><td class='mono'>5</td><td class='mono'></td><td class='mono'>PAYMENT NUMBER</td><td class='mono'>NUMERO DE LA CUOTA
+Si Cuota = 777 --&gt; Cuoton Acelerado
+Si Cuota = 888 --&gt; Abono a cuotas que no existen.
+                            Pagos adicionales al plan de pago.
+                            Normalmente utilizado en LCTE
+Si cuota = 999 --&gt; Prepago Parcial.
+                            Abono a Capital con adelgazamiento o
+                            con disminución de las cuotas</td><td></td><td></td></tr>
+<tr><td class='mono'>9</td><td class='mono'>DLPTYP</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'></td><td class='mono'>REC/TYP S/D</td><td class='mono'>REG/TIPO S/D
+Blanco
+S 
+D</td><td></td><td></td></tr>
+<tr><td class='mono'>10</td><td class='mono'>DLPGPD</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>GRACE PERIOD/PENALTY</td><td class='mono'>Período de Gracia</td><td></td><td></td></tr>
+<tr><td class='mono'>11</td><td class='mono'>DLPPPM</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>PRINCIPAL PYMNT</td><td class='mono'>Capital a Pagar</td><td></td><td></td></tr>
+<tr><td class='mono'>12</td><td class='mono'>DLPPPD</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>PRINCIPAL PAID</td><td class='mono'>Capital Pagado</td><td></td><td></td></tr>
+<tr><td class='mono'>13</td><td class='mono'>DLPPPC</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>PRINCIPAL COND</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>14</td><td class='mono'>DLPAEX</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>AMOUNT EXTR PYMN</td><td class='mono'>Abono Extraordinario</td><td></td><td></td></tr>
+<tr><td class='mono'>15</td><td class='mono'>DLPIPM</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>INTEREST PYMNT</td><td class='mono'>Intereses a Pagar
+Incluye la revalorización para operaciones reajustables</td><td></td><td></td></tr>
+<tr><td class='mono'>16</td><td class='mono'>DLPIPD</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>INTEREST PAID</td><td class='mono'>Intereses Pagados
+Incluye la revalorización para operaciones reajustables</td><td></td><td></td></tr>
+<tr><td class='mono'>17</td><td class='mono'>DLPIPC</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>INTEREST COND</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>18</td><td class='mono'>DLPRPM</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>REVALUAT PYMNT</td><td class='mono'>Reajuste de Capital en Pesos a Pagar
+Solo para operaciones Reajustables</td><td></td><td></td></tr>
+<tr><td class='mono'>19</td><td class='mono'>DLPRPD</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>REVALUAT PAID</td><td class='mono'>Reajuste de Capital en Pesos a Pagado
+Solo para operaciones Reajustables</td><td></td><td></td></tr>
+<tr><td class='mono'>20</td><td class='mono'>DLPRPC</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>REVALUAT COND</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>21</td><td class='mono'>DLPPIA</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>PENALTY ACCRUAL</td><td class='mono'>Mora Acumulada
+Migrado en ceros / Se calculan desde la fecha de vencimiento de la Cuota hasta el día de la consulta</td><td></td><td></td></tr>
+<tr><td class='mono'>22</td><td class='mono'>DLPPIP</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>PENALTY PAID</td><td class='mono'>Mora Pagada
+Migrado en ceros / Se calculan desde la fecha de vencimiento de la Cuota hasta el día de la consulta</td><td></td><td></td></tr>
+<tr><td class='mono'>23</td><td class='mono'>DLPPIC</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>PENALTY COND</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>24</td><td class='mono'>DLPIMP</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>TAXES PYMNT</td><td class='mono'>Impuestos a Pagar</td><td></td><td></td></tr>
+<tr><td class='mono'>25</td><td class='mono'>DLPIMX</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>TAXES PAID</td><td class='mono'>Impuestos Pagados</td><td></td><td></td></tr>
+<tr><td class='mono'>26</td><td class='mono'>DLPIMC</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>TAXES COND</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>27</td><td class='mono'>DLPCOM</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>COMMISSON PYMNT</td><td class='mono'>Total de Comisiones a Pagar</td><td></td><td></td></tr>
+<tr><td class='mono'>28</td><td class='mono'>DLPCOX</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>COMMISSON PAID</td><td class='mono'>Total de Comisiones a Pagadas</td><td></td><td></td></tr>
+<tr><td class='mono'>29</td><td class='mono'>DLPCOC</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>COMMISSON COND</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>30</td><td class='mono'>DLPDED</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>DEDUCTION PYMNT</td><td class='mono'>Total de Gastos extras a Pagar</td><td></td><td></td></tr>
+<tr><td class='mono'>31</td><td class='mono'>DLPDEX</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>DEDUCTION PAID</td><td class='mono'>Total de Gastos extras a Pagados</td><td></td><td></td></tr>
+<tr><td class='mono'>32</td><td class='mono'>DLPDEC</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>DEDUCTION COND</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>33</td><td class='mono'>DLPIVA</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>IVA PYMNT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>34</td><td class='mono'>DLPIVX</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>IVA PAID</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>35</td><td class='mono'>DLPIVC</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>IVA COND</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>36</td><td class='mono'>DLPCBZ</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>COBRAZA PYMNT</td><td class='mono'>Gastos de Cobranza</td><td></td><td></td></tr>
+<tr><td class='mono'>37</td><td class='mono'>DLPCBX</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>COBRAZA PAID</td><td class='mono'>Gastos de Cobranza</td><td></td><td></td></tr>
+<tr><td class='mono'>38</td><td class='mono'>DLPCBC</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>COBRAZA COND</td><td class='mono'>Gastos de Cobranza</td><td></td><td></td></tr>
+<tr><td class='mono'>39</td><td class='mono'>DLPOTH</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>OTHER PYMNT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>40</td><td class='mono'>DLPOTX</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>OTHER PAID</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>41</td><td class='mono'>DLPOTC</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>OTHER COND</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>42</td><td class='mono'>DLPTXA</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>REAJ AMT/EXTRA</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>43</td><td class='mono'>DLPTXX</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>INT SUBSIDIO</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>44</td><td class='mono'>DLPTXC</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>SAL INT/GRACIA</td><td class='mono'>UPDPYMNT, Interés a rebajar de Interés gracia (DEADCI)</td><td></td><td></td></tr>
+<tr><td class='mono'>45</td><td class='mono'>DLPDTM</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>DATE PAID MM</td><td class='mono'>Fecha Pagado (cuando se pago total/parcial la couta)</td><td></td><td></td></tr>
+<tr><td class='mono'>46</td><td class='mono'>DLPDTD</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>DATE PAID DD</td><td class='mono'>Fecha Pagado (cuando se pago total/parcial la couta)</td><td></td><td></td></tr>
+<tr><td class='mono'>47</td><td class='mono'>DLPDTY</td><td>NUMERIC</td><td class='mono'>4</td><td class='mono'></td><td class='mono'>DATE PAID YY</td><td class='mono'>Fecha Pagado (cuando se pago total/parcial la couta)</td><td></td><td></td></tr>
+<tr><td class='mono'>48</td><td class='mono'>DLPPFL</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'></td><td class='mono'>STATUS RECORD</td><td class='mono'>Estado de la Cuota
+&quot;P&quot; = Pagada
+&quot; &quot; = No pagado/Activa</td><td></td><td></td></tr>
+<tr><td class='mono'>49</td><td class='mono'>DLPIIP</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'></td><td class='mono'>RECORD TYPE</td><td class='mono'>Tipo Registro
+Si en cabecera de crédito, se define que pago incluirá 
+los intereses, debe ser &quot;Y&quot;. SINO BLANCO
+Migrado en Blanco
+&#x27;F&#x27; = CUOTA FIJA          
+&#x27;Y&#x27; = INCLUYE INT EN PAGO 
+&#x27;N&#x27; = NO INCLUYE INTERESES</td><td></td><td></td></tr>
+<tr><td class='mono'>50</td><td class='mono'>DLPNOF</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'></td><td class='mono'>NOTIFICATION FLAG</td><td class='mono'>Migrados todos con 9
+Notificaciones de Vencimiento</td><td></td><td></td></tr>
+<tr><td class='mono'>51</td><td class='mono'>DLPCLS</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>ACCOUNT CLASS</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>52</td><td class='mono'>DLPPRO</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'></td><td class='mono'>PROCESS FLAG</td><td class='mono'>P Indica que la cuota fue procesada y en el cierre será actualizada.</td><td></td><td></td></tr>
+<tr><td class='mono'>53</td><td class='mono'>DLPFLG</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'></td><td class='mono'>FLAG USER</td><td class='mono'>Indica si la cuota se pagó en forma Anticipada (A)</td><td></td><td></td></tr>
+<tr><td class='mono'>54</td><td class='mono'>DLPDLC</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'></td><td class='mono'>CONDITION PYMN</td><td class='mono'>Estado de la cuota:
+        1 = Vigente
+        2 = Moroso
+        3 = Vencido
+        4 = Castigado</td><td></td><td></td></tr>
+<tr><td class='mono'>55</td><td class='mono'>DLPMRM</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>MOROSO MM</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>56</td><td class='mono'>DLPMRD</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>MOROSO DD</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>57</td><td class='mono'>DLPMRY</td><td>NUMERIC</td><td class='mono'>4</td><td class='mono'></td><td class='mono'>MOROSO YY</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>58</td><td class='mono'>DLPVEM</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>VENCIDO MM</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>59</td><td class='mono'>DLPVED</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>VENCIDO DD</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>60</td><td class='mono'>DLPVEY</td><td>NUMERIC</td><td class='mono'>4</td><td class='mono'></td><td class='mono'>VENCIDO YY</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>61</td><td class='mono'>DLPCAM</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>CASTIGO MM</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>62</td><td class='mono'>DLPCAD</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>CASTIGO DD</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>63</td><td class='mono'>DLPCAY</td><td>NUMERIC</td><td class='mono'>4</td><td class='mono'></td><td class='mono'>CASTIGO YY</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>64</td><td class='mono'>DLPFL1</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'></td><td class='mono'>FLAG 1</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>65</td><td class='mono'>DLPFL2</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'></td><td class='mono'>FLAG 2</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>66</td><td class='mono'>DLPFL3</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'></td><td class='mono'>FLAG 3</td><td class='mono'>UPDPYMNT , &#x27;N&#x27;=Cuota pago Futuro o Pago Parcial, &#x27; &#x27;= Cuota ya Generada</td><td></td><td></td></tr>
+<tr><td class='mono'>67</td><td class='mono'>DLPFL4</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'></td><td class='mono'>FLAG 4</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>68</td><td class='mono'>DLPFL5</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'></td><td class='mono'>FLAG 5</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>69</td><td class='mono'>DLPSDM</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>STATEMEN MM</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>70</td><td class='mono'>DLPSDD</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>STATEMEN DD</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>71</td><td class='mono'>DLPSDY</td><td>NUMERIC</td><td class='mono'>4</td><td class='mono'></td><td class='mono'>STATEMEN YY</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>72</td><td class='mono'>DLPNPL</td><td>PACKED</td><td class='mono'>12</td><td class='mono'></td><td class='mono'>NUM PLANILLA</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>73</td><td class='mono'>DLPRTE</td><td>PACKED</td><td class='mono'>9</td><td class='mono'>6</td><td class='mono'>INTEREST RATE</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>74</td><td class='mono'>DLPPEI</td><td>PACKED</td><td class='mono'>9</td><td class='mono'>6</td><td class='mono'>MORA RATE</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>75</td><td class='mono'>DLPGLN</td><td>PACKED</td><td class='mono'>16</td><td class='mono'></td><td class='mono'>G/L ACC</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>76</td><td class='mono'>DLPLRM</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>CAM TASA/MOR MM</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>77</td><td class='mono'>DLPLRD</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>CAM TASA/MOR DD</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>78</td><td class='mono'>DLPLRY</td><td>NUMERIC</td><td class='mono'>4</td><td class='mono'></td><td class='mono'>CAM TASA/MOR YY</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>79</td><td class='mono'>DLPPPR</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>BSE PRI CNT/MORA</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>80</td><td class='mono'>DLPPMA</td><td>PACKED</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>CNT MORA ACUMUL</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>81</td><td class='mono'>DLPLMM</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>LAST MAINT/MM</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>82</td><td class='mono'>DLPLMD</td><td>NUMERIC</td><td class='mono'>2</td><td class='mono'></td><td class='mono'>LAST MAINT/DD</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>83</td><td class='mono'>DLPLMY</td><td>NUMERIC</td><td class='mono'>4</td><td class='mono'></td><td class='mono'>LAST MAINT/YY</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>84</td><td class='mono'>DLPLMT</td><td>LAST MOUNT/TIME</td><td class='mono'>26</td><td class='mono'></td><td class='mono'>LAST MAINT/TIME</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>85</td><td class='mono'>DLPLMU</td><td>CHARACTER</td><td class='mono'>10</td><td class='mono'></td><td class='mono'>LAST MAINT/USER</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>1</td><td class='mono'>DLPBNK</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>DLPBRN</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>DLPCCY</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>4</td><td class='mono'>DLPACC</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>5</td><td class='mono'>DLPPDY</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>6</td><td class='mono'>DLPPDM</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>7</td><td class='mono'>DLPPDD</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>8</td><td class='mono'>DLPPNU</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>DLPMTL1</td><td class='mono'></td><td>Campo</td><td class='mono'>Sec</td><td class='mono'>Orden</td><td class='mono'>Arc. origen</td><td class='mono'>Campo      Filtro            Fmto reg.</td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPACC</td><td class='mono'>1</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'>DLPPFL     O EQ &#x27;P&#x27;           RDLPMT</td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPPDY</td><td class='mono'>2</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPPDM</td><td class='mono'>3</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPPDD</td><td class='mono'>4</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPPNU</td><td class='mono'>5</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>DLPMTL2</td><td class='mono'></td><td>Campo</td><td class='mono'>Sec</td><td class='mono'>Orden</td><td class='mono'>Arc. origen</td><td class='mono'>Campo      Filtro            Fmto reg.</td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPACC</td><td class='mono'>1</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPPDY</td><td class='mono'>2</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPPDM</td><td class='mono'>3</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPPDD</td><td class='mono'>4</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPPNU</td><td class='mono'>5</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>DLPMTL3</td><td class='mono'></td><td>Campo</td><td class='mono'>Sec</td><td class='mono'>Orden</td><td class='mono'>Arc. origen</td><td class='mono'>Campo      Filtro            Fmto reg.</td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPACC</td><td class='mono'>1</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPPNU</td><td class='mono'>2</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>DLPMTL4</td><td class='mono'></td><td>Campo</td><td class='mono'>Sec</td><td class='mono'>Orden</td><td class='mono'>Arc. origen</td><td class='mono'>Campo      Filtro            Fmto reg.</td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPBNK</td><td class='mono'>1</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPBRN</td><td class='mono'>2</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPCCY</td><td class='mono'>3</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>DLPACC</td><td class='mono'>4</td><td class='mono'>Ascendente</td><td class='mono'>DLPMT</td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>Fec.UPD</td><td class='mono'>30.08.05</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+<tr><td class='mono'>Fec.UPD</td><td class='mono'>2017-06-19 00:00:00</td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[DLPPPD] Cuenta | N° Cuotas vencidas | Estado
+[DLPPPC] 2.064.365               3 | 2141891 | 6 | VENCIDO- SUSPENSION - BLOQUEADO
+[DLPAEX] 2.090.170               2 | 2209799 | 19 | VENCIDO- SUSPENSION - BLOQUEADO
+[DLPIPM] 2.103.220               2 | 2090170 | 5 | VENCIDO- SUSPENSION
+[DLPIPD] 2.105.352              11 | 2219093 | 7 | VENCIDO- SUSPENSION
+[DLPIPC] 2.133.926               6 | 2144766 | 10 | VENCIDO- SUSPENSION
+[DLPRPM] 2.141.891               3 | 2227232 | 4 | VENCIDO
+[DLPRPD] 2.143.932               2 | 2145209 | 5 | VENCIDO
+[DLPRPC] 2.144.766               8 | 2147023 | 5 | VENCIDO
+[DLPPIA] 2.145.209               2 | 2103220 | 2
+[DLPPIP] 2.147.023               2 | 2143932 | 2
+[DLPPIC] 2.147.946               8 | 2187720 | 2
+[DLPIMP] 2.154.272               3 | 2188332 | 2
+[DLPIMX] 2.164.523               7 | 2189369 | 2
+[DLPIMC] 2.165.517               3 | 2192310 | 2
+[DLPCOM] 2.183.377               3 | 2216180 | 2
+[DLPCOX] 2.187.720               2 | 2064365 | 3
+[DLPCOC] 2.188.332               2 | 2154272 | 3
+[DLPDED] 2.188.920               3 | 2165517 | 3
+[DLPDEX] 2.189.369               2 | 2183377 | 3
+[DLPDEC] 2.192.310               2 | 2188920 | 3
+[DLPIVA] 2.209.489              11 | 2222621 | 3
+[DLPIVX] 2.209.799              15 | 2224698 | 3
+[DLPIVC] 2.216.180               2 | 2133926 | 6
+[DLPCBZ] 2.219.093               4 | 2219980 | 6
+[DLPCBX] 2.219.980               6 | 2225097 | 6
+[DLPCBC] 2.222.621               3 | 2164523 | 7
+[DLPOTH] 2.223.231              13 | 2147946 | 8
+[DLPOTX] 2.224.698               3 | 2105352 | 11
+[DLPOTC] 2.225.097               6 | 2209489 | 11
+[DLPTXA] 2.227.232               1 | 2223231 | 13</div></body></html>

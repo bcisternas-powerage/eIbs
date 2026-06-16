@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>INPUT</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>INPUT</h1>
+<div class='meta'><b>Descripción:</b> Maestro de Cuentas de Detalle(Cta.Cte, etc.)<br><b>N.º de campos:</b> 73</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>INPSTA</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'></td><td>RECORD TYPE=B/T</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>INPRTE</td><td>DECIMAL</td><td class='mono'>2</td><td class='mono'>9</td><td class='mono'>10</td><td class='mono'>6</td><td>TRANS RATE</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>INPOBK</td><td>CHARACTER</td><td class='mono'>11</td><td class='mono'>2</td><td class='mono'>12</td><td class='mono'></td><td>ORIG/BANK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPOBR</td><td>DECIMAL</td><td class='mono'>13</td><td class='mono'>4</td><td class='mono'>16</td><td class='mono'></td><td>ORIG/BRANCH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPBNK</td><td>CHARACTER</td><td class='mono'>17</td><td class='mono'>2</td><td class='mono'>18</td><td class='mono'></td><td>BANK NO.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPBRN</td><td>DECIMAL</td><td class='mono'>19</td><td class='mono'>4</td><td class='mono'>22</td><td class='mono'></td><td>BRANCH NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPCCY</td><td>CHARACTER</td><td class='mono'>23</td><td class='mono'>3</td><td class='mono'>25</td><td class='mono'></td><td>CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPGLN</td><td>DECIMAL</td><td class='mono'>26</td><td class='mono'>16</td><td class='mono'>41</td><td class='mono'></td><td>G/L NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPACC</td><td>DECIMAL</td><td class='mono'>42</td><td class='mono'>12</td><td class='mono'>53</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPTCD</td><td>CHARACTER</td><td class='mono'>54</td><td class='mono'>4</td><td class='mono'>57</td><td class='mono'></td><td>TRANS CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPVDM</td><td>NUMERIC</td><td class='mono'>58</td><td class='mono'>2</td><td class='mono'>59</td><td class='mono'></td><td>VALUE DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPVDD</td><td>NUMERIC</td><td class='mono'>60</td><td class='mono'>2</td><td class='mono'>61</td><td class='mono'></td><td>VALUE DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPVDY</td><td>NUMERIC</td><td class='mono'>62</td><td class='mono'>4</td><td class='mono'>65</td><td class='mono'></td><td>VALUE DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPTDS</td><td>CHARACTER</td><td class='mono'>66</td><td class='mono'>60</td><td class='mono'>125</td><td class='mono'></td><td>TRANS DESC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPDRA</td><td>DECIMAL</td><td class='mono'>126</td><td class='mono'>15</td><td class='mono'>140</td><td class='mono'>2</td><td>DEBIT AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPCR1</td><td>DECIMAL</td><td class='mono'>141</td><td class='mono'>15</td><td class='mono'>155</td><td class='mono'>2</td><td>CREDIT AMOUNT 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPUN1</td><td>NUMERIC</td><td class='mono'>156</td><td class='mono'>2</td><td class='mono'>157</td><td class='mono'></td><td>DAYS/UNCOL CR/AMT 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPCR2</td><td>DECIMAL</td><td class='mono'>158</td><td class='mono'>15</td><td class='mono'>172</td><td class='mono'>2</td><td>CREDIT AMOUNT 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPUN2</td><td>NUMERIC</td><td class='mono'>173</td><td class='mono'>2</td><td class='mono'>174</td><td class='mono'></td><td>DAYS/UNCOL CR/AMT 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPCR3</td><td>DECIMAL</td><td class='mono'>175</td><td class='mono'>15</td><td class='mono'>189</td><td class='mono'>2</td><td>CREDIT AMOUNT 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPUN3</td><td>NUMERIC</td><td class='mono'>190</td><td class='mono'>2</td><td class='mono'>191</td><td class='mono'></td><td>DAYS/UNCOL CR/AMT 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPCR4</td><td>DECIMAL</td><td class='mono'>192</td><td class='mono'>15</td><td class='mono'>206</td><td class='mono'>2</td><td>CREDIT AMOUNT 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPUN4</td><td>NUMERIC</td><td class='mono'>207</td><td class='mono'>2</td><td class='mono'>208</td><td class='mono'></td><td>DAYS/UNCOL CR/AMT 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPMDM</td><td>NUMERIC</td><td class='mono'>209</td><td class='mono'>2</td><td class='mono'>210</td><td class='mono'></td><td>MATURITY DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPMDD</td><td>NUMERIC</td><td class='mono'>211</td><td class='mono'>2</td><td class='mono'>212</td><td class='mono'></td><td>MATURITY DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPMDY</td><td>NUMERIC</td><td class='mono'>213</td><td class='mono'>4</td><td class='mono'>216</td><td class='mono'></td><td>MATURITY DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPKBT</td><td>DECIMAL</td><td class='mono'>217</td><td class='mono'>5</td><td class='mono'>221</td><td class='mono'></td><td>BATCH/NO IN KEY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPKSQ</td><td>DECIMAL</td><td class='mono'>222</td><td class='mono'>7</td><td class='mono'>228</td><td class='mono'></td><td>SEQÑ/NO IN KEY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPDLF</td><td>CHARACTER</td><td class='mono'>229</td><td class='mono'>1</td><td class='mono'>229</td><td class='mono'></td><td>DELETE FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPREM</td><td>CHARACTER</td><td class='mono'>230</td><td class='mono'>25</td><td class='mono'>254</td><td class='mono'></td><td>REMARKS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPPYT</td><td>DECIMAL</td><td class='mono'>255</td><td class='mono'>5</td><td class='mono'>259</td><td class='mono'></td><td>PAY/THRU S/ACCT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPCCN</td><td>DECIMAL</td><td class='mono'>260</td><td class='mono'>8</td><td class='mono'>267</td><td class='mono'></td><td>COST CENTER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPFER</td><td>DECIMAL</td><td class='mono'>268</td><td class='mono'>11</td><td class='mono'>278</td><td class='mono'>6</td><td>FOREIGN EXCH/RTE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPMEF</td><td>CHARACTER</td><td class='mono'>279</td><td class='mono'>1</td><td class='mono'>279</td><td class='mono'></td><td>SERVICE FEE FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPNID</td><td>DECIMAL</td><td class='mono'>280</td><td class='mono'>5</td><td class='mono'>284</td><td class='mono'></td><td>NO. ITEMS IN DEPOSIT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPTRN</td><td>DECIMAL</td><td class='mono'>285</td><td class='mono'>5</td><td class='mono'>289</td><td class='mono'></td><td>TRANSACTION NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPRTN</td><td>DECIMAL</td><td class='mono'>290</td><td class='mono'>5</td><td class='mono'>294</td><td class='mono'></td><td>PMT/REVERSE NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPATY</td><td>CHARACTER</td><td class='mono'>295</td><td class='mono'>4</td><td class='mono'>298</td><td class='mono'></td><td>ACCOUNT TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPAPC</td><td>CHARACTER</td><td class='mono'>299</td><td class='mono'>2</td><td class='mono'>300</td><td class='mono'></td><td>TRANSACTION TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPODF</td><td>CHARACTER</td><td class='mono'>301</td><td class='mono'>1</td><td class='mono'>301</td><td class='mono'></td><td>O/D FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPREF</td><td>CHARACTER</td><td class='mono'>302</td><td class='mono'>25</td><td class='mono'>326</td><td class='mono'></td><td>REFERENCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPBDM</td><td>NUMERIC</td><td class='mono'>327</td><td class='mono'>2</td><td class='mono'>328</td><td class='mono'></td><td>BATCH DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPBDD</td><td>NUMERIC</td><td class='mono'>329</td><td class='mono'>2</td><td class='mono'>330</td><td class='mono'></td><td>BATCH DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPBDY</td><td>NUMERIC</td><td class='mono'>331</td><td class='mono'>4</td><td class='mono'>334</td><td class='mono'></td><td>BATCH DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPTTR</td><td>DECIMAL</td><td class='mono'>335</td><td class='mono'>7</td><td class='mono'>341</td><td class='mono'></td><td>TOTAL BATCH TRS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPUSA</td><td>CHARACTER</td><td class='mono'>342</td><td class='mono'>10</td><td class='mono'>351</td><td class='mono'></td><td>USER APPRV</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPUSO</td><td>CHARACTER</td><td class='mono'>352</td><td class='mono'>10</td><td class='mono'>361</td><td class='mono'></td><td>USER OPER.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPARF</td><td>CHARACTER</td><td class='mono'>362</td><td class='mono'>1</td><td class='mono'>362</td><td class='mono'></td><td>ACCEPT/REJECT FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPBPR</td><td>CHARACTER</td><td class='mono'>363</td><td class='mono'>1</td><td class='mono'>363</td><td class='mono'></td><td>BATCH IN PROC YES/NO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPMBT</td><td>CHARACTER</td><td class='mono'>364</td><td class='mono'>1</td><td class='mono'>364</td><td class='mono'></td><td>MULTI-BATCH YES/NO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPFDF</td><td>CHARACTER</td><td class='mono'>365</td><td class='mono'>1</td><td class='mono'>365</td><td class='mono'></td><td>FED FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPCUN</td><td>DECIMAL</td><td class='mono'>366</td><td class='mono'>9</td><td class='mono'>374</td><td class='mono'></td><td>CUSTOMER NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPCKN</td><td>DECIMAL</td><td class='mono'>375</td><td class='mono'>11</td><td class='mono'>385</td><td class='mono'></td><td>CHECK NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPSVF</td><td>CHARACTER</td><td class='mono'>386</td><td class='mono'>1</td><td class='mono'>386</td><td class='mono'></td><td>SAV PASSBOOK FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPDRR</td><td>DECIMAL</td><td class='mono'>387</td><td class='mono'>12</td><td class='mono'>398</td><td class='mono'></td><td>RELAT TRAN NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPFL1</td><td>CHARACTER</td><td class='mono'>399</td><td class='mono'>1</td><td class='mono'>399</td><td class='mono'></td><td>FLAG Ñ 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPFL2</td><td>CHARACTER</td><td class='mono'>400</td><td class='mono'>1</td><td class='mono'>400</td><td class='mono'></td><td>FLAG Ñ 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPFL3</td><td>CHARACTER</td><td class='mono'>401</td><td class='mono'>1</td><td class='mono'>401</td><td class='mono'></td><td>FLAG Ñ 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPFL4</td><td>CHARACTER</td><td class='mono'>402</td><td class='mono'>1</td><td class='mono'>402</td><td class='mono'></td><td>FLAG Ñ 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPEQV</td><td>DECIMAL</td><td class='mono'>403</td><td class='mono'>15</td><td class='mono'>417</td><td class='mono'>2</td><td>EQUIVAL AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPACR</td><td>DECIMAL</td><td class='mono'>418</td><td class='mono'>12</td><td class='mono'>429</td><td class='mono'></td><td>ACCOUNT REFERE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPCNU</td><td>DECIMAL</td><td class='mono'>430</td><td class='mono'>7</td><td class='mono'>436</td><td class='mono'></td><td>CONTROL NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPCST</td><td>DECIMAL</td><td class='mono'>437</td><td class='mono'>13</td><td class='mono'>449</td><td class='mono'>2</td><td>TRANSACC COST</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPRCL</td><td>CHARACTER</td><td class='mono'>450</td><td class='mono'>20</td><td class='mono'>469</td><td class='mono'></td><td>RECONCLBL REFERE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPCNL</td><td>CHARACTER</td><td class='mono'>470</td><td class='mono'>2</td><td class='mono'>471</td><td class='mono'></td><td>CANAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPDED</td><td>CHARACTER</td><td class='mono'>472</td><td class='mono'>4</td><td class='mono'>475</td><td class='mono'></td><td>DEDUCTION CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPDSQ</td><td>NUMERIC</td><td class='mono'>476</td><td class='mono'>2</td><td class='mono'>477</td><td class='mono'></td><td>DEDUCTION SEQU</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPIVP</td><td>DECIMAL</td><td class='mono'>478</td><td class='mono'>6</td><td class='mono'>483</td><td class='mono'>3</td><td>IVA %</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPIVB</td><td>DECIMAL</td><td class='mono'>484</td><td class='mono'>15</td><td class='mono'>498</td><td class='mono'>2</td><td>IVA BASE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPREV</td><td>CHARACTER</td><td class='mono'>499</td><td class='mono'>1</td><td class='mono'>499</td><td class='mono'></td><td>REVERSE FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPOLF</td><td>CHARACTER</td><td class='mono'>500</td><td class='mono'>1</td><td class='mono'>500</td><td class='mono'></td><td>ON LINE FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPCOD</td><td>CHARACTER</td><td class='mono'>501</td><td class='mono'>4</td><td class='mono'>504</td><td class='mono'></td><td>SPECIAL CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>INPTMS</td><td>TIMESTAMP</td><td class='mono'>505</td><td class='mono'>26</td><td class='mono'>530</td><td class='mono'>6</td><td>TIME STAMP</td><td></td></tr>
+</tbody></table></body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>DJ 1890 Reg tipo 3</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>DJ 1890 Reg tipo 3</h1>
+<div class='meta'><b>Archivo / Código:</b> Datos DJ 1890<br><b>Descripción:</b> REGISTRO TIPO 3: CUADRO RESUMEN DE LA DECLARACIÓN<br><b>N.º de campos:</b> 23</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'></td><td class='mono'>Explicación del Campo</td><td>Nombre Campo</td><td class='mono'>Tipo</td><td class='mono'>Inicio Campo</td><td class='mono'>Longitud Campo</td><td class='mono'>Fin del campo</td><td>Escal</td><td>Texto</td></tr>
+<tr><td class='mono'>Tipo de registro</td><td class='mono'>Determina Tipo</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td></td><td>Valor = 3</td></tr>
+<tr><td class='mono'></td><td class='mono'>Orden Precedencia</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>2</td><td class='mono'>1</td><td class='mono'>2</td><td></td><td>Valor = 1</td></tr>
+<tr><td class='mono'></td><td class='mono'>Número Formulario</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>3</td><td class='mono'>4</td><td class='mono'>6</td><td></td><td>Valor = 1890</td></tr>
+<tr><td class='mono'></td><td class='mono'>Código de presentación</td><td></td><td class='mono'>CHARACTER</td><td class='mono'>7</td><td class='mono'>1</td><td class='mono'>7</td><td></td><td>M</td></tr>
+<tr><td class='mono'></td><td class='mono'>Nº de folio</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>8</td><td class='mono'>7</td><td class='mono'>14</td><td></td><td>Mayor que cero</td></tr>
+<tr><td class='mono'>Rut Declarante</td><td class='mono'>Nº de RUT Declarante</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>15</td><td class='mono'>8</td><td class='mono'>22</td><td></td><td>&gt; 50.000.000 : Obligatorio</td></tr>
+<tr><td class='mono'></td><td class='mono'>Díg.verificador Declarante</td><td></td><td class='mono'>CHARACTER</td><td class='mono'>23</td><td class='mono'>1</td><td class='mono'>23</td><td></td><td>modulo 11</td></tr>
+<tr><td class='mono'>Inversión Nacional</td><td class='mono'>Positivo</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>24</td><td class='mono'>18</td><td class='mono'>41</td><td></td><td>Intereses Reales por depósitos de cualquier naturaleza Actualiz.</td></tr>
+<tr><td class='mono'></td><td class='mono'>Negativo</td><td></td><td class='mono'>CHARACTER</td><td class='mono'>42</td><td class='mono'>18</td><td class='mono'>59</td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>Positivo</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>60</td><td class='mono'>18</td><td class='mono'>77</td><td></td><td>Intereses Reales por Mantención Saldos en Cta.Ctes Actualiz.</td></tr>
+<tr><td class='mono'></td><td class='mono'>Negativo</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>78</td><td class='mono'>18</td><td class='mono'>95</td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>Positivo</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>96</td><td class='mono'>18</td><td class='mono'>113</td><td></td><td>Otras rentas por Operac. De Capac de cualquier naturaleza Actualiz.</td></tr>
+<tr><td class='mono'></td><td class='mono'>Negativo</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>114</td><td class='mono'>18</td><td class='mono'>131</td><td></td><td></td></tr>
+<tr><td class='mono'>Inversionistas Extranjeras</td><td class='mono'></td><td></td><td class='mono'>NUMERIC</td><td class='mono'>132</td><td class='mono'>18</td><td class='mono'>149</td><td></td><td>Intereses u Otras Rentas Moneda nacional o extranjera, valor nominal</td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td></td><td class='mono'>NUMERIC</td><td class='mono'>150</td><td class='mono'>18</td><td class='mono'>167</td><td></td><td>Impuesto adicional Moneda nacional o extranjera, valor nominal</td></tr>
+<tr><td class='mono'>Blancos</td><td class='mono'></td><td></td><td class='mono'>CHARACTER</td><td class='mono'>168</td><td class='mono'>5</td><td class='mono'>172</td><td></td><td>Espacios de relleno</td></tr>
+<tr><td class='mono'></td><td class='mono'></td><td>Campo</td><td class='mono'>Tipo</td><td class='mono'>Inicio Campo</td><td class='mono'>Longitud Campo</td><td class='mono'>Fin del campo</td><td>Escal</td><td>Texto</td></tr>
+<tr><td class='mono'>Tipo de registro</td><td class='mono'>Determina Tipo</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td></td><td>Valor = 3</td></tr>
+<tr><td class='mono'></td><td class='mono'>Orden Precedencia</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>2</td><td class='mono'>1</td><td class='mono'>2</td><td></td><td>Valor = 2</td></tr>
+<tr><td class='mono'></td><td class='mono'>Total casos informados</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>3</td><td class='mono'>7</td><td class='mono'>9</td><td></td><td>Si Declaración Jurada es Original=&gt; {Total de Casos Informados} &gt; 0
+Si Declaración Jurada es Rectificatoria=&gt; {Total de Casos Informados} &gt;= 0</td></tr>
+<tr><td class='mono'>Fecha Presentación</td><td class='mono'></td><td></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td class='mono'></td><td></td><td>Si Cod. De Presentación=I  =&gt; (Fecha) Registro Tipo 3 = DDMMMAAAA
+{dia= 00, mes=&#x27;   &#x27;, año= 0000}      V
+Si Cod. De Presentación=M =&gt; (Fecha) Registro Tipo 3 = DDMMMAAAA
+{dia= XX, mes=MMM, año= YYYY}</td></tr>
+<tr><td class='mono'></td><td class='mono'>Dia</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>10</td><td class='mono'>2</td><td class='mono'>11</td><td></td><td>=0 ; si Cod. Pres. = I sino 0&lt; dd &lt;= 31</td></tr>
+<tr><td class='mono'></td><td class='mono'>Mes</td><td></td><td class='mono'>CHARACTER</td><td class='mono'>12</td><td class='mono'>3</td><td class='mono'>14</td><td></td><td>=0 ; si Cod. Pres. = I sino mmm  = mes, (ENE,FEB,MAR,ABR,MAY,JUN,JUL,AGO,SEP,OCT,NOV,DIC)</td></tr>
+<tr><td class='mono'></td><td class='mono'>Año</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>15</td><td class='mono'>4</td><td class='mono'>18</td><td></td><td>=0 ; si Cod. Pres. = I sino  yyyy = Año Actual</td></tr>
+<tr><td class='mono'>Rut representante Legal</td><td class='mono'>N° del Rut</td><td></td><td class='mono'>NUMERIC</td><td class='mono'>19</td><td class='mono'>8</td><td class='mono'>26</td><td></td><td>&gt;0</td></tr>
+<tr><td class='mono'></td><td class='mono'>Dígito verific.</td><td></td><td class='mono'>CHARACTER</td><td class='mono'>27</td><td class='mono'>1</td><td class='mono'>27</td><td></td><td>Módulo 11</td></tr>
+<tr><td class='mono'></td><td class='mono'>Blancos</td><td></td><td class='mono'>CHARACTER</td><td class='mono'>28</td><td class='mono'>145</td><td class='mono'>172</td><td></td><td>Espacios de relleno</td></tr>
+</tbody></table></body></html>

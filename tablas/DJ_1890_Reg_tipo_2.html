@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>DJ 1890 Reg tipo 2</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>DJ 1890 Reg tipo 2</h1>
+<div class='meta'><b>Archivo / Código:</b> Datos DJ 1890<br><b>Descripción:</b> Registro tipo 2<br><b>N.º de campos:</b> 21</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'></td><td class='mono'>Tipo de registro</td><td>DJUTRE</td><td class='mono'>NUMERIC</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td></td><td>Valor = 2</td></tr>
+<tr><td class='mono'></td><td class='mono'>Número Formulario</td><td>DJUFOL</td><td class='mono'>NUMERIC</td><td class='mono'>2</td><td class='mono'>4</td><td class='mono'>5</td><td></td><td>1890</td></tr>
+<tr><td class='mono'></td><td class='mono'>Código de presentación</td><td>DJUCPR</td><td class='mono'>CHARACTER</td><td class='mono'>6</td><td class='mono'>1</td><td class='mono'>6</td><td></td><td>M</td></tr>
+<tr><td class='mono'></td><td class='mono'>Nº de folio</td><td>DJUNFO</td><td class='mono'>NUMERIC</td><td class='mono'>7</td><td class='mono'>7</td><td class='mono'>13</td><td></td><td>Mayor que cero</td></tr>
+<tr><td class='mono'></td><td class='mono'>Tipo de Declaración</td><td>DJUTDE</td><td class='mono'>CHARACTER</td><td class='mono'>14</td><td class='mono'>1</td><td class='mono'>14</td><td></td><td>O:original R: rectificatoria</td></tr>
+<tr><td class='mono'>Rut Declarante</td><td class='mono'>Nº de RUT Declarante</td><td>DJURUTD</td><td class='mono'>NUMERIC</td><td class='mono'>15</td><td class='mono'>8</td><td class='mono'>22</td><td></td><td>&gt; 50.000.000 : Obligatorio</td></tr>
+<tr><td class='mono'></td><td class='mono'>Díg.verificador Declarante</td><td>DJUDGVD</td><td class='mono'>CHARACTER</td><td class='mono'>23</td><td class='mono'>1</td><td class='mono'>23</td><td></td><td>modulo 11</td></tr>
+<tr><td class='mono'>Rut Inversionista</td><td class='mono'>Nº de RUT Inversionista</td><td>DJURUTI</td><td class='mono'>NUMERIC</td><td class='mono'>24</td><td class='mono'>8</td><td class='mono'>31</td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>Díg.verificador Inversionista</td><td>DJUDGVI</td><td class='mono'>CHARACTER</td><td class='mono'>32</td><td class='mono'>1</td><td class='mono'>32</td><td></td><td></td></tr>
+<tr><td class='mono'>Inversión Nacional</td><td class='mono'>Positivo</td><td>DJUPO1</td><td class='mono'>NUMERIC</td><td class='mono'>33</td><td class='mono'>15</td><td class='mono'>47</td><td></td><td>Intereses Reales por depósitos de cualquier naturaleza Actualiz.</td></tr>
+<tr><td class='mono'></td><td class='mono'>Negativo</td><td>DJUNG1</td><td class='mono'>NUMERIC</td><td class='mono'>48</td><td class='mono'>15</td><td class='mono'>62</td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>Positivo</td><td>DJUPO2</td><td class='mono'>NUMERIC</td><td class='mono'>63</td><td class='mono'>15</td><td class='mono'>77</td><td></td><td>Intereses Reales por mantención  de saldos en Ctas. Ctes Actualiz.</td></tr>
+<tr><td class='mono'></td><td class='mono'>Negativo</td><td>DJUNG2</td><td class='mono'>NUMERIC</td><td class='mono'>78</td><td class='mono'>15</td><td class='mono'>92</td><td></td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>Positivo</td><td>DJUPO3</td><td class='mono'>NUMERIC</td><td class='mono'>93</td><td class='mono'>15</td><td class='mono'>107</td><td></td><td>Otras rentas por Operac. De Capac de cualquier naturaleza Actualiz.</td></tr>
+<tr><td class='mono'></td><td class='mono'>Negativo</td><td>DJUNG3</td><td class='mono'>NUMERIC</td><td class='mono'>108</td><td class='mono'>15</td><td class='mono'>122</td><td></td><td></td></tr>
+<tr><td class='mono'>Inversionistas sin Domicilio ni Residencia en Chile</td><td class='mono'>&gt;=0</td><td>DJUVALN</td><td class='mono'>NUMERIC</td><td class='mono'>123</td><td class='mono'>15</td><td class='mono'>137</td><td></td><td>Intereses u Otras Rentas Moneda nacional o extranjera, valor nominal</td></tr>
+<tr><td class='mono'></td><td class='mono'>&gt;=0</td><td>DJUIADN</td><td class='mono'>NUMERIC</td><td class='mono'>138</td><td class='mono'>15</td><td class='mono'>152</td><td></td><td>Impuesto adicional Moneda nacional o extranjera, valor nominal</td></tr>
+<tr><td class='mono'></td><td class='mono'>&gt;=0</td><td>DJUNCER</td><td class='mono'>NUMERIC</td><td class='mono'>153</td><td class='mono'>7</td><td class='mono'>159</td><td></td><td>Número de certificado</td></tr>
+<tr><td class='mono'>Localización del docto (Caja)</td><td class='mono'>=0</td><td>DJUUNID</td><td class='mono'>NUMERIC</td><td class='mono'>160</td><td class='mono'>5</td><td class='mono'>164</td><td></td><td>Unidad (Valor cero)</td></tr>
+<tr><td class='mono'></td><td class='mono'>=0</td><td>DJUNCAJA</td><td class='mono'>NUMERIC</td><td class='mono'>165</td><td class='mono'>3</td><td class='mono'>167</td><td></td><td>N° de Caja (Valor cero)</td></tr>
+<tr><td class='mono'></td><td class='mono'>=0</td><td>DJUNPAQ</td><td class='mono'>NUMERIC</td><td class='mono'>168</td><td class='mono'>5</td><td class='mono'>172</td><td></td><td>N° de Paquete (valor cero)</td></tr>
+</tbody></table></body></html>

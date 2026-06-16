@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>PVSGR</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>PVSGR</h1>
+<div class='meta'><b>N.º de campos:</b> 109</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>PSGCUN</td><td>DECIMAL</td><td class='mono'>1</td><td class='mono'>9</td><td class='mono'>9</td><td class='mono'></td><td>OFFER CUSTOMER</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>PSGNUM</td><td>DECIMAL</td><td class='mono'>10</td><td class='mono'>12</td><td class='mono'>21</td><td class='mono'></td><td>OFFER NUMBER</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>PSGSEQ</td><td>NUMERIC</td><td class='mono'>22</td><td class='mono'>2</td><td class='mono'>23</td><td class='mono'></td><td>SECUENCIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGACC</td><td>DECIMAL</td><td class='mono'>24</td><td class='mono'>12</td><td class='mono'>35</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPLZ</td><td>CHARACTE</td><td class='mono'>36</td><td class='mono'>20</td><td class='mono'>55</td><td class='mono'></td><td>PPD POLIZA NUM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGCCD</td><td>CHARACTE</td><td class='mono'>56</td><td class='mono'>4</td><td class='mono'>59</td><td class='mono'></td><td>PPD CODIGO CIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGCNM</td><td>CHARACTE</td><td class='mono'>60</td><td class='mono'>45</td><td class='mono'>104</td><td class='mono'></td><td>PPD NOMBRE CIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGSCD</td><td>CHARACTE</td><td class='mono'>105</td><td class='mono'>4</td><td class='mono'>108</td><td class='mono'></td><td>PPD CODIGO SEG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGSNM</td><td>CHARACTE</td><td class='mono'>109</td><td class='mono'>45</td><td class='mono'>153</td><td class='mono'></td><td>PPD NOMBRE SEG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPLN</td><td>NUMERIC</td><td class='mono'>154</td><td class='mono'>2</td><td class='mono'>155</td><td class='mono'></td><td>PPD NUMERO PLAN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGSTS</td><td>CHARACTE</td><td class='mono'>156</td><td class='mono'>1</td><td class='mono'>156</td><td class='mono'></td><td>ESTADO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGSTY</td><td>CHARACTE</td><td class='mono'>157</td><td class='mono'>1</td><td class='mono'>157</td><td class='mono'></td><td>TIPO SEGURO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGCYS</td><td>CHARACTE</td><td class='mono'>158</td><td class='mono'>3</td><td class='mono'>160</td><td class='mono'></td><td>MONEDA SEGURO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGMTS</td><td>DECIMAL</td><td class='mono'>161</td><td class='mono'>15</td><td class='mono'>175</td><td class='mono'>2</td><td>MONTO SEGURO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGCYP</td><td>CHARACTER</td><td class='mono'>176</td><td class='mono'>3</td><td class='mono'>178</td><td class='mono'></td><td>MONEDA PRIMA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGMTP</td><td>DECIMAL</td><td class='mono'>179</td><td class='mono'>17</td><td class='mono'>195</td><td class='mono'>4</td><td>MONTO PRIMA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGTBL</td><td>CHARACTER</td><td class='mono'>196</td><td class='mono'>2</td><td class='mono'>197</td><td class='mono'></td><td>TABLA FACTOR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFAC</td><td>CHARACTER</td><td class='mono'>198</td><td class='mono'>1</td><td class='mono'>198</td><td class='mono'></td><td>FACTOR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGBSE</td><td>CHARACTER</td><td class='mono'>199</td><td class='mono'>1</td><td class='mono'>199</td><td class='mono'></td><td>BASE CALCULO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFT1</td><td>DECIMAL</td><td class='mono'>200</td><td class='mono'>9</td><td class='mono'>208</td><td class='mono'>6</td><td>VLR FACTOR TIT 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFT2</td><td>DECIMAL</td><td class='mono'>209</td><td class='mono'>9</td><td class='mono'>217</td><td class='mono'>6</td><td>VLR FACTOR TIT 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFT3</td><td>DECIMAL</td><td class='mono'>218</td><td class='mono'>9</td><td class='mono'>226</td><td class='mono'>6</td><td>VLR FACTOR TIT 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFT4</td><td>DECIMAL</td><td class='mono'>227</td><td class='mono'>9</td><td class='mono'>235</td><td class='mono'>6</td><td>VLR FACTOR TIT 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFT5</td><td>DECIMAL</td><td class='mono'>236</td><td class='mono'>9</td><td class='mono'>244</td><td class='mono'>6</td><td>VLR FACTOR TIT 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGDYS</td><td>NUMERIC</td><td class='mono'>245</td><td class='mono'>2</td><td class='mono'>246</td><td class='mono'></td><td>DIA CARGO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGNPM</td><td>NUMERIC</td><td class='mono'>247</td><td class='mono'>6</td><td class='mono'>252</td><td class='mono'></td><td>NUMERO PAGOS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFIM</td><td>NUMERIC</td><td class='mono'>253</td><td class='mono'>2</td><td class='mono'>254</td><td class='mono'></td><td>FEC/INICIO MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFID</td><td>NUMERIC</td><td class='mono'>255</td><td class='mono'>2</td><td class='mono'>256</td><td class='mono'></td><td>FEC/INICIO DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFIY</td><td>NUMERIC</td><td class='mono'>257</td><td class='mono'>4</td><td class='mono'>260</td><td class='mono'></td><td>FEC/INICIO YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFVM</td><td>NUMERIC</td><td class='mono'>261</td><td class='mono'>2</td><td class='mono'>262</td><td class='mono'></td><td>FEC/VENCIM MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFVD</td><td>NUMERIC</td><td class='mono'>263</td><td class='mono'>2</td><td class='mono'>264</td><td class='mono'></td><td>FEC/VENCIM DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFVY</td><td>NUMERIC</td><td class='mono'>265</td><td class='mono'>4</td><td class='mono'>268</td><td class='mono'></td><td>FEC/VENCIM YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFCM</td><td>NUMERIC</td><td class='mono'>269</td><td class='mono'>2</td><td class='mono'>270</td><td class='mono'></td><td>FEC/CONTRATO MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFCD</td><td>NUMERIC</td><td class='mono'>271</td><td class='mono'>2</td><td class='mono'>272</td><td class='mono'></td><td>FEC/CONTRATO DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGFCY</td><td>NUMERIC</td><td class='mono'>273</td><td class='mono'>4</td><td class='mono'>276</td><td class='mono'></td><td>FEC/CONTRATO YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGTRM</td><td>DECIMAL</td><td class='mono'>277</td><td class='mono'>5</td><td class='mono'>281</td><td class='mono'></td><td>PLAZO NUMERO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGTRC</td><td>CHARACTE</td><td class='mono'>282</td><td class='mono'>1</td><td class='mono'>282</td><td class='mono'></td><td>PLAZO CODIGO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPRT</td><td>DECIMAL</td><td class='mono'>283</td><td class='mono'>15</td><td class='mono'>297</td><td class='mono'>2</td><td>MONTO PRIMA TOTAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPMI</td><td>NUMERIC</td><td class='mono'>298</td><td class='mono'>5</td><td class='mono'>302</td><td class='mono'></td><td>PLAZO MINIMO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPMX</td><td>NUMERIC</td><td class='mono'>303</td><td class='mono'>5</td><td class='mono'>307</td><td class='mono'></td><td>PLAZO MAXIMO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGIMX</td><td>NUMERIC</td><td class='mono'>308</td><td class='mono'>5</td><td class='mono'>312</td><td class='mono'></td><td>PLAZO MAX/IMP</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGAMX</td><td>NUMERIC</td><td class='mono'>313</td><td class='mono'>5</td><td class='mono'>317</td><td class='mono'></td><td>PLAZO MAX/INS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGDMO</td><td>NUMERIC</td><td class='mono'>318</td><td class='mono'>5</td><td class='mono'>322</td><td class='mono'></td><td>DIAS MAX/MORA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPGA</td><td>DECIMAL</td><td class='mono'>323</td><td class='mono'>15</td><td class='mono'>337</td><td class='mono'>2</td><td>MONTO PAGADO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGORG</td><td>CHARACTER</td><td class='mono'>338</td><td class='mono'>1</td><td class='mono'>338</td><td class='mono'></td><td>ORIGEN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGREQ</td><td>CHARACTER</td><td class='mono'>339</td><td class='mono'>1</td><td class='mono'>339</td><td class='mono'></td><td>REQUERIDO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGCOP</td><td>CHARACTER</td><td class='mono'>340</td><td class='mono'>1</td><td class='mono'>340</td><td class='mono'></td><td>FORMA PAGO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGMPG</td><td>CHARACTER</td><td class='mono'>341</td><td class='mono'>1</td><td class='mono'>341</td><td class='mono'></td><td>MEDIO PAGO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGMAC</td><td>DECIMAL</td><td class='mono'>342</td><td class='mono'>12</td><td class='mono'>353</td><td class='mono'></td><td>APE/CTA PAGO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPRA</td><td>CHARACTER</td><td class='mono'>354</td><td class='mono'>1</td><td class='mono'>354</td><td class='mono'></td><td>RENOVA AUTOMA Y/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGSEL</td><td>CHARACTER</td><td class='mono'>355</td><td class='mono'>1</td><td class='mono'>355</td><td class='mono'></td><td>SELECTION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGBNF</td><td>CHARACTER</td><td class='mono'>356</td><td class='mono'>1</td><td class='mono'>356</td><td class='mono'></td><td>BENEFICIARIO Y/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGRT1</td><td>CHARACTER</td><td class='mono'>357</td><td class='mono'>25</td><td class='mono'>381</td><td class='mono'></td><td>RUT BENEF 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGNM1</td><td>CHARACTER</td><td class='mono'>382</td><td class='mono'>60</td><td class='mono'>441</td><td class='mono'></td><td>NOM BENEF 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGRL1</td><td>CHARACTER</td><td class='mono'>442</td><td class='mono'>1</td><td class='mono'>442</td><td class='mono'></td><td>REL BENEF 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPR1</td><td>DECIMAL</td><td class='mono'>443</td><td class='mono'>6</td><td class='mono'>448</td><td class='mono'>3</td><td>%   BENEF 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPH1</td><td>DECIMAL</td><td class='mono'>449</td><td class='mono'>15</td><td class='mono'>463</td><td class='mono'></td><td>TEL BENEF 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGRT2</td><td>CHARACTER</td><td class='mono'>464</td><td class='mono'>25</td><td class='mono'>488</td><td class='mono'></td><td>RUT BENEF 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGNM2</td><td>CHARACTER</td><td class='mono'>489</td><td class='mono'>60</td><td class='mono'>548</td><td class='mono'></td><td>NOM BENEF 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGRL2</td><td>CHARACTER</td><td class='mono'>549</td><td class='mono'>1</td><td class='mono'>549</td><td class='mono'></td><td>REL BENEF 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPR2</td><td>DECIMAL</td><td class='mono'>550</td><td class='mono'>6</td><td class='mono'>555</td><td class='mono'>3</td><td>%   BENEF 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPH2</td><td>DECIMAL</td><td class='mono'>556</td><td class='mono'>15</td><td class='mono'>570</td><td class='mono'></td><td>TEL BENEF 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGRT3</td><td>CHARACTER</td><td class='mono'>571</td><td class='mono'>25</td><td class='mono'>595</td><td class='mono'></td><td>RUT BENEF 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGNM3</td><td>CHARACTER</td><td class='mono'>596</td><td class='mono'>60</td><td class='mono'>655</td><td class='mono'></td><td>NOM BENEF 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGRL3</td><td>CHARACTER</td><td class='mono'>656</td><td class='mono'>1</td><td class='mono'>656</td><td class='mono'></td><td>REL BENEF 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPR3</td><td>DECIMAL</td><td class='mono'>657</td><td class='mono'>6</td><td class='mono'>662</td><td class='mono'>3</td><td>%   BENEF 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPH3</td><td>DECIMAL</td><td class='mono'>663</td><td class='mono'>15</td><td class='mono'>677</td><td class='mono'></td><td>TEL BENEF 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGRT4</td><td>CHARACTER</td><td class='mono'>678</td><td class='mono'>25</td><td class='mono'>702</td><td class='mono'></td><td>RUT BENEF 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGNM4</td><td>CHARACTER</td><td class='mono'>703</td><td class='mono'>60</td><td class='mono'>762</td><td class='mono'></td><td>NOM BENEF 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGRL4</td><td>CHARACTER</td><td class='mono'>763</td><td class='mono'>1</td><td class='mono'>763</td><td class='mono'></td><td>REL BENEF 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPR4</td><td>DECIMAL</td><td class='mono'>764</td><td class='mono'>6</td><td class='mono'>769</td><td class='mono'>3</td><td>%   BENEF 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPH4</td><td>DECIMAL</td><td class='mono'>770</td><td class='mono'>15</td><td class='mono'>784</td><td class='mono'></td><td>TEL BENEF 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGRT5</td><td>CHARACTER</td><td class='mono'>785</td><td class='mono'>25</td><td class='mono'>809</td><td class='mono'></td><td>RUT BENEF 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGNM5</td><td>CHARACTER</td><td class='mono'>810</td><td class='mono'>60</td><td class='mono'>869</td><td class='mono'></td><td>NOM BENEF 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGRL5</td><td>CHARACTER</td><td class='mono'>870</td><td class='mono'>1</td><td class='mono'>870</td><td class='mono'></td><td>REL BENEF 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPR5</td><td>DECIMAL</td><td class='mono'>871</td><td class='mono'>6</td><td class='mono'>876</td><td class='mono'>3</td><td>%   BENEF 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPH5</td><td>DECIMAL</td><td class='mono'>877</td><td class='mono'>15</td><td class='mono'>891</td><td class='mono'></td><td>TEL BENEF 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGRMK</td><td>CHARACTER</td><td class='mono'>892</td><td class='mono'>256</td><td class='mono'>1147</td><td class='mono'></td><td>COMENTARIOS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGMA1</td><td>CHARACTER</td><td class='mono'>1148</td><td class='mono'>60</td><td class='mono'>1207</td><td class='mono'></td><td>LEGAL NAME LINE1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGMA2</td><td>CHARACTER</td><td class='mono'>1208</td><td class='mono'>45</td><td class='mono'>1252</td><td class='mono'></td><td>LEGAL NAME LINE2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGMA3</td><td>CHARACTER</td><td class='mono'>1253</td><td class='mono'>45</td><td class='mono'>1297</td><td class='mono'></td><td>LEGAL NAME LINE3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGMA4</td><td>CHARACTER</td><td class='mono'>1298</td><td class='mono'>45</td><td class='mono'>1342</td><td class='mono'></td><td>LEGAL NAME LINE4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGCTY</td><td>CHARACTER</td><td class='mono'>1343</td><td class='mono'>35</td><td class='mono'>1377</td><td class='mono'></td><td>CITY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGCTR</td><td>CHARACTER</td><td class='mono'>1378</td><td class='mono'>35</td><td class='mono'>1412</td><td class='mono'></td><td>COUNTRY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGSTE</td><td>CHARACTER</td><td class='mono'>1413</td><td class='mono'>4</td><td class='mono'>1416</td><td class='mono'></td><td>STATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGZPC</td><td>CHARACTER</td><td class='mono'>1417</td><td class='mono'>15</td><td class='mono'>1431</td><td class='mono'></td><td>ZIP CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPOB</td><td>CHARACTER</td><td class='mono'>1432</td><td class='mono'>10</td><td class='mono'>1441</td><td class='mono'></td><td>P.O.BOX NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGRAC</td><td>DECIMAL</td><td class='mono'>1442</td><td class='mono'>12</td><td class='mono'>1453</td><td class='mono'></td><td>CUENTA PRESTAMO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGGAC</td><td>DECIMAL</td><td class='mono'>1454</td><td class='mono'>12</td><td class='mono'>1465</td><td class='mono'></td><td>CUENTA GARANTIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGPRD</td><td>CHARACTER</td><td class='mono'>1466</td><td class='mono'>4</td><td class='mono'>1469</td><td class='mono'></td><td>PRODUCTO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGVCU</td><td>DECIMAL</td><td class='mono'>1470</td><td class='mono'>15</td><td class='mono'>1484</td><td class='mono'>2</td><td>VALOR CUOTA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGOPC</td><td>CHARACTER</td><td class='mono'>1485</td><td class='mono'>2</td><td class='mono'>1486</td><td class='mono'></td><td>CODIGO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGDSC</td><td>CHARACTER</td><td class='mono'>1487</td><td class='mono'>45</td><td class='mono'>1531</td><td class='mono'></td><td>DESCRIPCION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGOBK</td><td>CHARACTER</td><td class='mono'>1532</td><td class='mono'>2</td><td class='mono'>1533</td><td class='mono'></td><td>BANK NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGOBR</td><td>DECIMAL</td><td class='mono'>1534</td><td class='mono'>4</td><td class='mono'>1537</td><td class='mono'></td><td>BRANCH NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGOCY</td><td>CHARACTER</td><td class='mono'>1538</td><td class='mono'>3</td><td class='mono'>1540</td><td class='mono'></td><td>CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGOGL</td><td>DECIMAL</td><td class='mono'>1541</td><td class='mono'>16</td><td class='mono'>1556</td><td class='mono'></td><td>G/L ACCOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGOAC</td><td>DECIMAL</td><td class='mono'>1557</td><td class='mono'>12</td><td class='mono'>1568</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGTXA</td><td>DECIMAL</td><td class='mono'>1569</td><td class='mono'>15</td><td class='mono'>1583</td><td class='mono'>2</td><td>GMF AMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGTXP</td><td>DECIMAL</td><td class='mono'>1584</td><td class='mono'>6</td><td class='mono'>1589</td><td class='mono'>3</td><td>GMF %</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGTXB</td><td>DECIMAL</td><td class='mono'>1590</td><td class='mono'>15</td><td class='mono'>1604</td><td class='mono'>2</td><td>GMF BSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGTSQ</td><td>NUMERIC</td><td class='mono'>1605</td><td class='mono'>2</td><td class='mono'>1606</td><td class='mono'></td><td>GMF SECUENCIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGEXR</td><td>DECIMAL</td><td class='mono'>1607</td><td class='mono'>11</td><td class='mono'>1617</td><td class='mono'>6</td><td>EXCHG RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGEQV</td><td>DECIMAL</td><td class='mono'>1618</td><td class='mono'>15</td><td class='mono'>1632</td><td class='mono'>2</td><td>EQUIVA AMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGLMM</td><td>NUMERIC</td><td class='mono'>1633</td><td class='mono'>2</td><td class='mono'>1634</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGLMD</td><td>NUMERIC</td><td class='mono'>1635</td><td class='mono'>2</td><td class='mono'>1636</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGLMY</td><td>NUMERIC</td><td class='mono'>1637</td><td class='mono'>4</td><td class='mono'>1640</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGLMT</td><td>TIMESTAMP</td><td class='mono'>1641</td><td class='mono'>26</td><td class='mono'>1666</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PSGLMU</td><td>CHARACTER</td><td class='mono'>1667</td><td class='mono'>10</td><td class='mono'>1676</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[PSGPRT] Y | 5 | 2 | 2017 | 0 | 5 | 3 | 2017 | 0 | 0 | 0 | 0 | 0 | G | 0 | 0 | 10 | 26 | 2017 | 0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | 0 | 267656 | 0 | CCTE | 10 | 26 | 2016 | 0 | -992381 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 992381 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 1 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 267656 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0</div></body></html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>DLITE</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>DLITE</h1>
+<div class='meta'><b>Descripción:</b> Volver<br><b>N.º de campos:</b> 71</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'></td><td class='mono'>ITEACC</td><td>DECIMAL</td><td class='mono'>1</td><td class='mono'>12</td><td class='mono'>12</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITEODM</td><td>NUMERIC</td><td class='mono'>13</td><td class='mono'>2</td><td class='mono'>14</td><td class='mono'></td><td>OPENING MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITEODD</td><td>NUMERIC</td><td class='mono'>15</td><td class='mono'>2</td><td class='mono'>16</td><td class='mono'></td><td>OPENING DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITEODY</td><td>NUMERIC</td><td class='mono'>17</td><td class='mono'>4</td><td class='mono'>20</td><td class='mono'></td><td>OPENING YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITEOAM</td><td>DECIMAL</td><td class='mono'>21</td><td class='mono'>15</td><td class='mono'>35</td><td class='mono'>2</td><td>ORIGINAL AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITEPRI</td><td>DECIMAL</td><td class='mono'>36</td><td class='mono'>15</td><td class='mono'>50</td><td class='mono'>2</td><td>SALDO PRINCIPAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITEMAF</td><td>DECIMAL</td><td class='mono'>51</td><td class='mono'>15</td><td class='mono'>65</td><td class='mono'>2</td><td>MONTO  AFECTO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITERTE</td><td>DECIMAL</td><td class='mono'>66</td><td class='mono'>9</td><td class='mono'>74</td><td class='mono'>6</td><td>TASA ITE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITENMH</td><td>DECIMAL</td><td class='mono'>75</td><td class='mono'>3</td><td class='mono'>77</td><td class='mono'></td><td>MESES CALCULO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITETMH</td><td>DECIMAL</td><td class='mono'>78</td><td class='mono'>3</td><td class='mono'>80</td><td class='mono'></td><td>LIMITE MESES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITETAM</td><td>DECIMAL</td><td class='mono'>81</td><td class='mono'>15</td><td class='mono'>95</td><td class='mono'>2</td><td>TAXES AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITEOFN</td><td>DECIMAL</td><td class='mono'>96</td><td class='mono'>12</td><td class='mono'>107</td><td class='mono'></td><td>OFFER NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITELCM</td><td>NUMERIC</td><td class='mono'>108</td><td class='mono'>2</td><td class='mono'>109</td><td class='mono'></td><td>LAST CAL TAX</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITELCD</td><td>NUMERIC</td><td class='mono'>110</td><td class='mono'>2</td><td class='mono'>111</td><td class='mono'></td><td>LAST CAL TAX</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITELCY</td><td>NUMERIC</td><td class='mono'>112</td><td class='mono'>4</td><td class='mono'>115</td><td class='mono'></td><td>LAST CAL TAX</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ITESTS</td><td>CHARACTER</td><td class='mono'>116</td><td class='mono'>1</td><td class='mono'>116</td><td class='mono'></td><td>STATUS</td><td></td></tr>
+<tr><td class='mono'>ACCOUNT NUMBER</td><td class='mono'>OPENING MM</td><td>OPENING DD</td><td class='mono'>OPENING YY</td><td class='mono'>ORIGINAL AMOUNT</td><td class='mono'>SALDO PRINCIPAL</td><td class='mono'>MONTO  AFECTO</td><td>TASA ITE</td><td>MESES CALCULO</td></tr>
+<tr><td class='mono'>ITEACC</td><td class='mono'>ITEODM</td><td>ITEODD</td><td class='mono'>ITEODY</td><td class='mono'>ITEOAM</td><td class='mono'>ITEPRI</td><td class='mono'>ITEMAF</td><td>ITERTE</td><td>ITENMH</td></tr>
+<tr><td class='mono'>0</td><td class='mono'>5</td><td>11</td><td class='mono'>2018</td><td class='mono'>275000</td><td class='mono'>275000</td><td class='mono'>275000</td><td>0.132</td><td>2</td></tr>
+<tr><td class='mono'>2274053</td><td class='mono'>5</td><td>18</td><td class='mono'>2018</td><td class='mono'>330000000</td><td class='mono'>330000000</td><td class='mono'>330000000</td><td>0.396</td><td>6</td></tr>
+<tr><td class='mono'>9017751</td><td class='mono'>5</td><td>2</td><td class='mono'>2018</td><td class='mono'>2113369321</td><td class='mono'>2113369321</td><td class='mono'>2113369321</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9017753</td><td class='mono'>5</td><td>2</td><td class='mono'>2018</td><td class='mono'>905729709</td><td class='mono'>905729709</td><td class='mono'>905729709</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9017854</td><td class='mono'>5</td><td>2</td><td class='mono'>2018</td><td class='mono'>5128080</td><td class='mono'>5128080</td><td class='mono'>5128080</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9017983</td><td class='mono'>5</td><td>3</td><td class='mono'>2018</td><td class='mono'>5162194</td><td class='mono'>5162194</td><td class='mono'>5162194</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9018129</td><td class='mono'>5</td><td>4</td><td class='mono'>2018</td><td class='mono'>25000000</td><td class='mono'>25000000</td><td class='mono'>25000000</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9018132</td><td class='mono'>5</td><td>4</td><td class='mono'>2018</td><td class='mono'>356610180</td><td class='mono'>356610180</td><td class='mono'>356610180</td><td>0.792</td><td>12</td></tr>
+<tr><td class='mono'>9018174</td><td class='mono'>5</td><td>7</td><td class='mono'>2018</td><td class='mono'>5022267</td><td class='mono'>5022267</td><td class='mono'>5022267</td><td>0.066</td><td>1</td></tr>
+<tr><td class='mono'>9018287</td><td class='mono'>5</td><td>7</td><td class='mono'>2018</td><td class='mono'>3410506</td><td class='mono'>3410506</td><td class='mono'>3410506</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9018465</td><td class='mono'>5</td><td>8</td><td class='mono'>2018</td><td class='mono'>16103336</td><td class='mono'>16103336</td><td class='mono'>16103336</td><td>0.792</td><td>12</td></tr>
+<tr><td class='mono'>9018498</td><td class='mono'>5</td><td>9</td><td class='mono'>2018</td><td class='mono'>8259015</td><td class='mono'>8259015</td><td class='mono'>8259015</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9018787</td><td class='mono'>5</td><td>10</td><td class='mono'>2018</td><td class='mono'>5000000</td><td class='mono'>5000000</td><td class='mono'>5000000</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9018791</td><td class='mono'>5</td><td>10</td><td class='mono'>2018</td><td class='mono'>65856100</td><td class='mono'>65856100</td><td class='mono'>65856100</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9018875</td><td class='mono'>5</td><td>11</td><td class='mono'>2018</td><td class='mono'>3074186</td><td class='mono'>3074186</td><td class='mono'>3074186</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9018955</td><td class='mono'>5</td><td>11</td><td class='mono'>2018</td><td class='mono'>2000000</td><td class='mono'>2000000</td><td class='mono'>2000000</td><td>0.462</td><td>7</td></tr>
+<tr><td class='mono'>9019164</td><td class='mono'>5</td><td>14</td><td class='mono'>2018</td><td class='mono'>30470000</td><td class='mono'>30470000</td><td class='mono'>30470000</td><td>0.792</td><td>12</td></tr>
+<tr><td class='mono'>9019166</td><td class='mono'>5</td><td>14</td><td class='mono'>2018</td><td class='mono'>15000000</td><td class='mono'>15000000</td><td class='mono'>15000000</td><td>0.264</td><td>4</td></tr>
+<tr><td class='mono'>9019170</td><td class='mono'>5</td><td>11</td><td class='mono'>2018</td><td class='mono'>8325084</td><td class='mono'>8325084</td><td class='mono'>8325084</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9019240</td><td class='mono'>5</td><td>15</td><td class='mono'>2018</td><td class='mono'>15000000</td><td class='mono'>15000000</td><td class='mono'>15000000</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9019364</td><td class='mono'>5</td><td>22</td><td class='mono'>2018</td><td class='mono'>27000000</td><td class='mono'>27000000</td><td class='mono'>27000000</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>2188786</td><td class='mono'>5</td><td>24</td><td class='mono'>2018</td><td class='mono'>213207078</td><td class='mono'>213207078</td><td class='mono'>213207078</td><td>0.008</td><td>1</td></tr>
+<tr><td class='mono'>2290348</td><td class='mono'>5</td><td>25</td><td class='mono'>2018</td><td class='mono'>1787366368</td><td class='mono'>1787366368</td><td class='mono'>1787366368</td><td>0.008</td><td>2</td></tr>
+<tr><td class='mono'>ACCOUNT NUMBER</td><td class='mono'>OPENING MM</td><td>OPENING DD</td><td class='mono'>OPENING YY</td><td class='mono'>ORIGINAL AMOUNT</td><td class='mono'>SALDO PRINCIPAL</td><td class='mono'>MONTO  AFECTO</td><td>TASA ITE</td><td>MESES CALCULO</td></tr>
+<tr><td class='mono'>ITEACC</td><td class='mono'>ITEODM</td><td>ITEODD</td><td class='mono'>ITEODY</td><td class='mono'>ITEOAM</td><td class='mono'>ITEPRI</td><td class='mono'>ITEMAF</td><td>ITERTE</td><td>ITENMH</td></tr>
+<tr><td class='mono'>0</td><td class='mono'>5</td><td>25</td><td class='mono'>2018</td><td class='mono'>330000000</td><td class='mono'>330000000</td><td class='mono'>330000000</td><td>0.396</td><td>6</td></tr>
+<tr><td class='mono'>9017751</td><td class='mono'>5</td><td>2</td><td class='mono'>2018</td><td class='mono'>2113369321</td><td class='mono'>2113369321</td><td class='mono'>2113369321</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9017753</td><td class='mono'>5</td><td>2</td><td class='mono'>2018</td><td class='mono'>905729709</td><td class='mono'>905729709</td><td class='mono'>905729709</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9017854</td><td class='mono'>5</td><td>2</td><td class='mono'>2018</td><td class='mono'>5128080</td><td class='mono'>5128080</td><td class='mono'>5128080</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9017983</td><td class='mono'>5</td><td>3</td><td class='mono'>2018</td><td class='mono'>5162194</td><td class='mono'>5162194</td><td class='mono'>5162194</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9018129</td><td class='mono'>5</td><td>4</td><td class='mono'>2018</td><td class='mono'>25000000</td><td class='mono'>25000000</td><td class='mono'>25000000</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9018132</td><td class='mono'>5</td><td>4</td><td class='mono'>2018</td><td class='mono'>356610180</td><td class='mono'>356610180</td><td class='mono'>356610180</td><td>0.792</td><td>12</td></tr>
+<tr><td class='mono'>9018174</td><td class='mono'>5</td><td>7</td><td class='mono'>2018</td><td class='mono'>5022267</td><td class='mono'>5022267</td><td class='mono'>5022267</td><td>0.066</td><td>1</td></tr>
+<tr><td class='mono'>9018287</td><td class='mono'>5</td><td>7</td><td class='mono'>2018</td><td class='mono'>3410506</td><td class='mono'>3410506</td><td class='mono'>3410506</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9018465</td><td class='mono'>5</td><td>8</td><td class='mono'>2018</td><td class='mono'>16103336</td><td class='mono'>16103336</td><td class='mono'>16103336</td><td>0.792</td><td>12</td></tr>
+<tr><td class='mono'>9018498</td><td class='mono'>5</td><td>9</td><td class='mono'>2018</td><td class='mono'>8259015</td><td class='mono'>8259015</td><td class='mono'>8259015</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9018787</td><td class='mono'>5</td><td>10</td><td class='mono'>2018</td><td class='mono'>5000000</td><td class='mono'>5000000</td><td class='mono'>5000000</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9018791</td><td class='mono'>5</td><td>10</td><td class='mono'>2018</td><td class='mono'>65856100</td><td class='mono'>65856100</td><td class='mono'>65856100</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9018875</td><td class='mono'>5</td><td>11</td><td class='mono'>2018</td><td class='mono'>3074186</td><td class='mono'>3074186</td><td class='mono'>3074186</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9018955</td><td class='mono'>5</td><td>11</td><td class='mono'>2018</td><td class='mono'>2000000</td><td class='mono'>2000000</td><td class='mono'>2000000</td><td>0.462</td><td>7</td></tr>
+<tr><td class='mono'>9019164</td><td class='mono'>5</td><td>14</td><td class='mono'>2018</td><td class='mono'>30470000</td><td class='mono'>30470000</td><td class='mono'>30470000</td><td>0.792</td><td>12</td></tr>
+<tr><td class='mono'>9019166</td><td class='mono'>5</td><td>14</td><td class='mono'>2018</td><td class='mono'>15000000</td><td class='mono'>15000000</td><td class='mono'>15000000</td><td>0.264</td><td>4</td></tr>
+<tr><td class='mono'>9019170</td><td class='mono'>5</td><td>11</td><td class='mono'>2018</td><td class='mono'>8325084</td><td class='mono'>8325084</td><td class='mono'>8325084</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9019240</td><td class='mono'>5</td><td>15</td><td class='mono'>2018</td><td class='mono'>15000000</td><td class='mono'>15000000</td><td class='mono'>15000000</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9019486</td><td class='mono'>5</td><td>16</td><td class='mono'>2018</td><td class='mono'>671570127</td><td class='mono'>671570127</td><td class='mono'>671570127</td><td>0.132</td><td>2</td></tr>
+<tr><td class='mono'>9019492</td><td class='mono'>5</td><td>14</td><td class='mono'>2018</td><td class='mono'>15244966</td><td class='mono'>15244966</td><td class='mono'>15244966</td><td>0.792</td><td>12</td></tr>
+<tr><td class='mono'>9019497</td><td class='mono'>5</td><td>16</td><td class='mono'>2018</td><td class='mono'>39000000</td><td class='mono'>39000000</td><td class='mono'>39000000</td><td>0.792</td><td>12</td></tr>
+<tr><td class='mono'>9019596</td><td class='mono'>5</td><td>17</td><td class='mono'>2018</td><td class='mono'>50000000</td><td class='mono'>50000000</td><td class='mono'>50000000</td><td>0.792</td><td>12</td></tr>
+<tr><td class='mono'>9019737</td><td class='mono'>5</td><td>18</td><td class='mono'>2018</td><td class='mono'>100000000</td><td class='mono'>100000000</td><td class='mono'>100000000</td><td>0.396</td><td>6</td></tr>
+<tr><td class='mono'>9019957</td><td class='mono'>5</td><td>18</td><td class='mono'>2018</td><td class='mono'>5408866000</td><td class='mono'>5408866000</td><td class='mono'>5408866000</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9020216</td><td class='mono'>5</td><td>24</td><td class='mono'>2018</td><td class='mono'>5204053</td><td class='mono'>5204053</td><td class='mono'>5204053</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9020280</td><td class='mono'>5</td><td>25</td><td class='mono'>2018</td><td class='mono'>62926048</td><td class='mono'>62926048</td><td class='mono'>62926048</td><td>0.8</td><td>13</td></tr>
+<tr><td class='mono'>9020383</td><td class='mono'>5</td><td>25</td><td class='mono'>2018</td><td class='mono'>200019898</td><td class='mono'>200019898</td><td class='mono'>200019898</td><td>0.8</td><td>13</td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[OPENING MM] LIMITE MESES | TAXES AMOUNT | OFFER NUMBER | LAST CAL TAX | LAST CAL TAX | LAST CAL TAX | STATUS
+[ITEODM] ITETMH | ITETAM | ITEOFN | ITELCM | ITELCD | ITELCY | ITESTS
+[5] 13 | 363 | 0 | 5 | 15 | 2018
+[5] 13 | 1306800 | 0 | 5 | 18 | 2018
+[5] 13 | 16906955 | 785237 | 5 | 2 | 2018
+[5] 13 | 7245838 | 785255 | 5 | 2 | 2018
+[5] 13 | 41025 | 785691 | 5 | 3 | 2018
+[5] 13 | 41298 | 785802 | 5 | 3 | 2018
+[5] 13 | 200000 | 786371 | 5 | 4 | 2018
+[5] 13 | 2824353 | 786376 | 5 | 4 | 2018
+[5] 13 | 3315 | 786769 | 5 | 7 | 2018
+[5] 13 | 27284 | 786882 | 5 | 7 | 2018
+[5] 13 | 127538 | 787491 | 5 | 8 | 2018
+[5] 13 | 66072 | 787812 | 5 | 9 | 2018
+[5] 13 | 40000 | 789347 | 5 | 10 | 2018
+[5] 13 | 526849 | 789375 | 5 | 10 | 2018
+[5] 13 | 24593 | 790024 | 5 | 11 | 2018
+[5] 13 | 9240 | 790133 | 5 | 11 | 2018
+[5] 13 | 241322 | 790590 | 5 | 14 | 2018
+[5] 13 | 39600 | 790601 | 5 | 14 | 2018
+[5] 13 | 66601 | 790616 | 5 | 14 | 2018
+[5] 13 | 120000 | 791340 | 5 | 15 | 2018
+[5] 13 | 216000 | 792935 | 5 | 22 | 2018
+[5] 13 | 17057 | 0 | 5 | 24 | 2018
+[5] 13 | 142989 | 0 | 5 | 25 | 2018
+[OPENING MM] LIMITE MESES | TAXES AMOUNT | OFFER NUMBER | LAST CAL TAX | LAST CAL TAX | LAST CAL TAX | STATUS
+[ITEODM] ITETMH | ITETAM | ITEOFN | ITELCM | ITELCD | ITELCY | ITESTS
+[5] 13 | 1306800 | 0 | 5 | 25 | 2018
+[5] 13 | 16906955 | 785237 | 5 | 2 | 2018
+[5] 13 | 7245838 | 785255 | 5 | 2 | 2018
+[5] 13 | 41025 | 785691 | 5 | 3 | 2018
+[5] 13 | 41298 | 785802 | 5 | 3 | 2018
+[5] 13 | 200000 | 786371 | 5 | 4 | 2018
+[5] 13 | 2824353 | 786376 | 5 | 4 | 2018
+[5] 13 | 3315 | 786769 | 5 | 7 | 2018
+[5] 13 | 27284 | 786882 | 5 | 7 | 2018
+[5] 13 | 127538 | 787491 | 5 | 8 | 2018
+[5] 13 | 66072 | 787812 | 5 | 9 | 2018
+[5] 13 | 40000 | 789347 | 5 | 10 | 2018
+[5] 13 | 526849 | 789375 | 5 | 10 | 2018
+[5] 13 | 24593 | 790024 | 5 | 11 | 2018
+[5] 13 | 9240 | 790133 | 5 | 11 | 2018
+[5] 13 | 241322 | 790590 | 5 | 14 | 2018
+[5] 13 | 39600 | 790601 | 5 | 14 | 2018
+[5] 13 | 66601 | 790616 | 5 | 14 | 2018
+[5] 13 | 120000 | 791340 | 5 | 15 | 2018
+[5] 13 | 886473 | 793207 | 5 | 16 | 2018
+[5] 13 | 120740 | 793219 | 5 | 16 | 2018
+[5] 13 | 308880 | 793229 | 5 | 16 | 2018
+[5] 13 | 396000 | 793848 | 5 | 17 | 2018
+[5] 13 | 396000 | 794510 | 5 | 18 | 2018
+[5] 13 | 43270928 | 795495 | 5 | 22 | 2018
+[5] 13 | 41632 | 796636 | 5 | 24 | 2018
+[5] 13 | 503408 | 797246 | 5 | 25 | 2018
+[5] 13 | 1600159 | 797493 | 5 | 25 | 2018</div></body></html>

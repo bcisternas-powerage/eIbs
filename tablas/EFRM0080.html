@@ -1,0 +1,731 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>EFRM0080</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>EFRM0080</h1>
+<div class='meta'><b>Archivo / Código:</b> EXPXRF<br><b>N.º de campos:</b> 425</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>H80USERID</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>10</td><td class='mono'>10</td><td class='mono'></td><td>*user</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>H80PROGRM</td><td>CHARACTER</td><td class='mono'>11</td><td class='mono'>10</td><td class='mono'>20</td><td class='mono'></td><td>*progrma</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>H80TIMSYS</td><td>CHARACTER</td><td class='mono'>21</td><td class='mono'>12</td><td class='mono'>32</td><td class='mono'></td><td>*time</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>H80SCRCOD</td><td>CHARACTER</td><td class='mono'>33</td><td class='mono'>2</td><td class='mono'>34</td><td class='mono'></td><td>*sourceCode</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>H80OPECOD</td><td>CHARACTER</td><td class='mono'>35</td><td class='mono'>4</td><td class='mono'>38</td><td class='mono'></td><td>*opeCode</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>H80FLGMAS</td><td>CHARACTER</td><td class='mono'>39</td><td class='mono'>1</td><td class='mono'>39</td><td class='mono'></td><td>*flagMas</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>H80FLGWK1</td><td>CHARACTER</td><td class='mono'>40</td><td class='mono'>1</td><td class='mono'>40</td><td class='mono'></td><td>*flagWk1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>H80FLGWK2</td><td>CHARACTER</td><td class='mono'>41</td><td class='mono'>1</td><td class='mono'>41</td><td class='mono'></td><td>*flagWk2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>H80FLGWK3</td><td>CHARACTER</td><td class='mono'>42</td><td class='mono'>1</td><td class='mono'>42</td><td class='mono'></td><td>*flagWk3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAACC</td><td>DECIMAL</td><td class='mono'>43</td><td class='mono'>12</td><td class='mono'>54</td><td class='mono'></td><td>numero de prestamo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEACUN</td><td>DECIMAL</td><td class='mono'>55</td><td class='mono'>9</td><td class='mono'>63</td><td class='mono'></td><td>numero de cliente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAPRO</td><td>CHARACTER</td><td class='mono'>64</td><td class='mono'>4</td><td class='mono'>67</td><td class='mono'></td><td>codigo de producto</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEATYP</td><td>CHARACTER</td><td class='mono'>68</td><td class='mono'>4</td><td class='mono'>71</td><td class='mono'></td><td>tipo de cuenta</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAACD</td><td>CHARACTER</td><td class='mono'>72</td><td class='mono'>2</td><td class='mono'>73</td><td class='mono'></td><td>codigo de aplicacion</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEABNK</td><td>CHARACTER</td><td class='mono'>74</td><td class='mono'>2</td><td class='mono'>75</td><td class='mono'></td><td>numero de banco</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEABRN</td><td>DECIMAL</td><td class='mono'>76</td><td class='mono'>4</td><td class='mono'>79</td><td class='mono'></td><td>numero de sucursal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEACCY</td><td>CHARACTER</td><td class='mono'>80</td><td class='mono'>3</td><td class='mono'>82</td><td class='mono'></td><td>moneda del prestamo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAGLN</td><td>DECIMAL</td><td class='mono'>83</td><td class='mono'>16</td><td class='mono'>98</td><td class='mono'></td><td>cuenta contable</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DSCPRO</td><td>CHARACTER</td><td class='mono'>99</td><td class='mono'>35</td><td class='mono'>133</td><td class='mono'></td><td>descripcion del producto</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAODM</td><td>NUMERIC</td><td class='mono'>134</td><td class='mono'>2</td><td class='mono'>135</td><td class='mono'></td><td>mes de apertura</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAODD</td><td>NUMERIC</td><td class='mono'>136</td><td class='mono'>2</td><td class='mono'>137</td><td class='mono'></td><td>dia de apertura</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAODY</td><td>NUMERIC</td><td class='mono'>138</td><td class='mono'>4</td><td class='mono'>141</td><td class='mono'></td><td>anio de apertura</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80OPNDTE</td><td>CHARACTER</td><td class='mono'>142</td><td class='mono'>25</td><td class='mono'>166</td><td class='mono'></td><td>FechaApertura</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEATRM</td><td>NUMERIC</td><td class='mono'>167</td><td class='mono'>5</td><td class='mono'>171</td><td class='mono'></td><td>porcion numerica termino</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEATRC</td><td>CHARACTER</td><td class='mono'>172</td><td class='mono'>10</td><td class='mono'>181</td><td class='mono'></td><td>codigo del termino</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAMDM</td><td>NUMERIC</td><td class='mono'>182</td><td class='mono'>2</td><td class='mono'>183</td><td class='mono'></td><td>mes de vencimiento</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAMDD</td><td>NUMERIC</td><td class='mono'>184</td><td class='mono'>2</td><td class='mono'>185</td><td class='mono'></td><td>dia de vencimiento</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAMDY</td><td>NUMERIC</td><td class='mono'>186</td><td class='mono'>4</td><td class='mono'>189</td><td class='mono'></td><td>anio de vencimiento</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MATDTE</td><td>CHARACTER</td><td class='mono'>190</td><td class='mono'>25</td><td class='mono'>214</td><td class='mono'></td><td>FechaVencimiento</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEARTE</td><td>DECIMAL</td><td class='mono'>215</td><td class='mono'>9</td><td class='mono'>223</td><td class='mono'>6</td><td>tasa de interes</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAFTB</td><td>CHARACTER</td><td class='mono'>224</td><td class='mono'>2</td><td class='mono'>225</td><td class='mono'></td><td>tabla de interes flotante</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAFTY</td><td>CHARACTER</td><td class='mono'>226</td><td class='mono'>2</td><td class='mono'>227</td><td class='mono'></td><td>tipo de interes flotante</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80RATE</td><td>DECIMAL</td><td class='mono'>228</td><td class='mono'>9</td><td class='mono'>236</td><td class='mono'>6</td><td>interes moneda extrajera</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEASPR</td><td>DECIMAL</td><td class='mono'>237</td><td class='mono'>9</td><td class='mono'>245</td><td class='mono'>6</td><td>tasa efectiva</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80FLTRTE</td><td>DECIMAL</td><td class='mono'>246</td><td class='mono'>9</td><td class='mono'>254</td><td class='mono'>6</td><td>tasa flotante</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAOAM</td><td>DECIMAL</td><td class='mono'>255</td><td class='mono'>15</td><td class='mono'>269</td><td class='mono'>2</td><td>monto original</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LETOAM</td><td>CHARACTER</td><td class='mono'>270</td><td class='mono'>160</td><td class='mono'>429</td><td class='mono'></td><td>monto en letras</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEABAS</td><td>NUMERIC</td><td class='mono'>430</td><td class='mono'>3</td><td class='mono'>432</td><td class='mono'></td><td>base de calculo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAICT</td><td>CHARACTER</td><td class='mono'>433</td><td class='mono'>1</td><td class='mono'>433</td><td class='mono'></td><td>tipo de calculo de interes</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80STATUS</td><td>CHARACTER</td><td class='mono'>434</td><td class='mono'>80</td><td class='mono'>513</td><td class='mono'></td><td>estado del prestamo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAIPD</td><td>CHARACTER</td><td class='mono'>514</td><td class='mono'>3</td><td class='mono'>516</td><td class='mono'></td><td>ciclo de pago de interes</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEARDM</td><td>NUMERIC</td><td class='mono'>517</td><td class='mono'>2</td><td class='mono'>518</td><td class='mono'></td><td>mes de rollover</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEARDD</td><td>NUMERIC</td><td class='mono'>519</td><td class='mono'>2</td><td class='mono'>520</td><td class='mono'></td><td>dia de rollover</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEARDY</td><td>NUMERIC</td><td class='mono'>521</td><td class='mono'>4</td><td class='mono'>524</td><td class='mono'></td><td>anio de rollover</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PPIDTE</td><td>CHARACTER</td><td class='mono'>525</td><td class='mono'>25</td><td class='mono'>549</td><td class='mono'></td><td>FechaProxPagoInt</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAPPD</td><td>CHARACTER</td><td class='mono'>550</td><td class='mono'>3</td><td class='mono'>552</td><td class='mono'></td><td>ciclo de pago de principal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAHEM</td><td>NUMERIC</td><td class='mono'>553</td><td class='mono'>2</td><td class='mono'>554</td><td class='mono'></td><td>mes de vencimiento retencio</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAHED</td><td>NUMERIC</td><td class='mono'>555</td><td class='mono'>2</td><td class='mono'>556</td><td class='mono'></td><td>dia de vencimiento retencio</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAHEY</td><td>NUMERIC</td><td class='mono'>557</td><td class='mono'>4</td><td class='mono'>560</td><td class='mono'></td><td>anio de vencimientoRetencio</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PPPDTE</td><td>CHARACTER</td><td class='mono'>561</td><td class='mono'>25</td><td class='mono'>585</td><td class='mono'></td><td>FechaProxPagoPri</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAROA</td><td>DECIMAL</td><td class='mono'>586</td><td class='mono'>15</td><td class='mono'>600</td><td class='mono'>2</td><td>monto rollover</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAIIP</td><td>CHARACTER</td><td class='mono'>601</td><td class='mono'>1</td><td class='mono'>601</td><td class='mono'></td><td>interes incremento de pago</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAPEI</td><td>DECIMAL</td><td class='mono'>602</td><td class='mono'>9</td><td class='mono'>610</td><td class='mono'>2</td><td>penalidad sobre el interes</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80IBFFLG</td><td>CHARACTER</td><td class='mono'>611</td><td class='mono'>1</td><td class='mono'>611</td><td class='mono'></td><td>flag de IBF</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAOFB</td><td>CHARACTER</td><td class='mono'>612</td><td class='mono'>2</td><td class='mono'>613</td><td class='mono'></td><td>banco cuenta offset</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAOCR</td><td>DECIMAL</td><td class='mono'>614</td><td class='mono'>4</td><td class='mono'>617</td><td class='mono'></td><td>sucursal cuenta offset</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAOCY</td><td>CHARACTER</td><td class='mono'>618</td><td class='mono'>3</td><td class='mono'>620</td><td class='mono'></td><td>moneda cuenta offset</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAOFA</td><td>DECIMAL</td><td class='mono'>621</td><td class='mono'>16</td><td class='mono'>636</td><td class='mono'></td><td>cuenta contable offset</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAREB</td><td>CHARACTER</td><td class='mono'>637</td><td class='mono'>2</td><td class='mono'>638</td><td class='mono'></td><td>banco cuenta repago</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEARPR</td><td>DECIMAL</td><td class='mono'>639</td><td class='mono'>4</td><td class='mono'>642</td><td class='mono'></td><td>sucursal cuenta repago</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEARPC</td><td>CHARACTER</td><td class='mono'>643</td><td class='mono'>3</td><td class='mono'>645</td><td class='mono'></td><td>moneda cuenta repago</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEARAC</td><td>DECIMAL</td><td class='mono'>646</td><td class='mono'>16</td><td class='mono'>661</td><td class='mono'></td><td>cuenta contable repago</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAREA</td><td>DECIMAL</td><td class='mono'>662</td><td class='mono'>12</td><td class='mono'>673</td><td class='mono'></td><td>reajuste</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAXRL</td><td>NUMERIC</td><td class='mono'>674</td><td class='mono'>15</td><td class='mono'>688</td><td class='mono'>2</td><td>mora de reajuste</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAMEP</td><td>DECIMAL</td><td class='mono'>689</td><td class='mono'>15</td><td class='mono'>703</td><td class='mono'>2</td><td>balance memo principal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAMEI</td><td>DECIMAL</td><td class='mono'>704</td><td class='mono'>15</td><td class='mono'>718</td><td class='mono'>2</td><td>balance memo interes</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAMEM</td><td>DECIMAL</td><td class='mono'>719</td><td class='mono'>15</td><td class='mono'>733</td><td class='mono'>2</td><td>balance memo Mora</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80TOTCRN</td><td>NUMERIC</td><td class='mono'>734</td><td class='mono'>15</td><td class='mono'>748</td><td class='mono'>2</td><td>totalCredReliqui</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80TOTORN</td><td>NUMERIC</td><td class='mono'>749</td><td class='mono'>15</td><td class='mono'>763</td><td class='mono'>2</td><td>totalOtrsReliqui</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80TOTDED</td><td>NUMERIC</td><td class='mono'>764</td><td class='mono'>15</td><td class='mono'>778</td><td class='mono'>2</td><td>totalidad de deducciones</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80TOTCOM</td><td>NUMERIC</td><td class='mono'>779</td><td class='mono'>15</td><td class='mono'>793</td><td class='mono'>2</td><td>totalidad de comisiones</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80TOTIMP</td><td>NUMERIC</td><td class='mono'>794</td><td class='mono'>15</td><td class='mono'>808</td><td class='mono'>2</td><td>totalidad de impuestos</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80TOTIVA</td><td>NUMERIC</td><td class='mono'>809</td><td class='mono'>15</td><td class='mono'>823</td><td class='mono'>2</td><td>totalidad de iva</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80TOTSGR</td><td>NUMERIC</td><td class='mono'>824</td><td class='mono'>15</td><td class='mono'>838</td><td class='mono'>2</td><td>totalidad Seguro</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80TOTOTH</td><td>NUMERIC</td><td class='mono'>839</td><td class='mono'>15</td><td class='mono'>853</td><td class='mono'>2</td><td>totalidad Otros</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MONNET</td><td>NUMERIC</td><td class='mono'>854</td><td class='mono'>15</td><td class='mono'>868</td><td class='mono'>2</td><td>Monto Neto</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MONNEX</td><td>CHARACTER</td><td class='mono'>869</td><td class='mono'>100</td><td class='mono'>968</td><td class='mono'></td><td>Monto Neto</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MEMBAL</td><td>NUMERIC</td><td class='mono'>969</td><td class='mono'>17</td><td class='mono'>985</td><td class='mono'>2</td><td>balance total</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SALLET</td><td>CHARACTER</td><td class='mono'>986</td><td class='mono'>160</td><td class='mono'>1145</td><td class='mono'></td><td>balance total de letra</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAPDU</td><td>DECIMAL</td><td class='mono'>1146</td><td class='mono'>15</td><td class='mono'>1160</td><td class='mono'>2</td><td>monto debido a principal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAIDU</td><td>DECIMAL</td><td class='mono'>1161</td><td class='mono'>15</td><td class='mono'>1175</td><td class='mono'>2</td><td>monto debido a intereses</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEALCM</td><td>NUMERIC</td><td class='mono'>1176</td><td class='mono'>2</td><td class='mono'>1177</td><td class='mono'></td><td>mes de ultimo calculo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEALCD</td><td>NUMERIC</td><td class='mono'>1178</td><td class='mono'>2</td><td class='mono'>1179</td><td class='mono'></td><td>dia de ultimo calculo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEALCY</td><td>NUMERIC</td><td class='mono'>1180</td><td class='mono'>4</td><td class='mono'>1183</td><td class='mono'></td><td>anio de ultimo calculo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LSTCLC</td><td>CHARACTER</td><td class='mono'>1184</td><td class='mono'>25</td><td class='mono'>1208</td><td class='mono'></td><td>FechaUltiCalcInt</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MATINT</td><td>DECIMAL</td><td class='mono'>1209</td><td class='mono'>15</td><td class='mono'>1223</td><td class='mono'>2</td><td>vencimient intereses</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DLYINT</td><td>DECIMAL</td><td class='mono'>1224</td><td class='mono'>15</td><td class='mono'>1238</td><td class='mono'>2</td><td>intereses diarios</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80YESINT</td><td>DECIMAL</td><td class='mono'>1239</td><td class='mono'>15</td><td class='mono'>1253</td><td class='mono'>2</td><td>interes de ayer</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAPRI</td><td>DECIMAL</td><td class='mono'>1254</td><td class='mono'>15</td><td class='mono'>1268</td><td class='mono'>2</td><td>balance del principal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAOFI</td><td>CHARACTER</td><td class='mono'>1269</td><td class='mono'>4</td><td class='mono'>1272</td><td class='mono'></td><td>COD.OFICINA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80OFINME</td><td>CHARACTER</td><td class='mono'>1273</td><td class='mono'>45</td><td class='mono'>1317</td><td class='mono'></td><td>DESCRIP OF.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSLGT</td><td>CHARACTER</td><td class='mono'>1318</td><td class='mono'>1</td><td class='mono'>1318</td><td class='mono'></td><td>tipo legal de cliente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSNA1</td><td>CHARACTER</td><td class='mono'>1319</td><td class='mono'>60</td><td class='mono'>1378</td><td class='mono'></td><td>nombre del cliente1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSNA2</td><td>CHARACTER</td><td class='mono'>1379</td><td class='mono'>45</td><td class='mono'>1423</td><td class='mono'></td><td>nombre del cliente2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSNA3</td><td>CHARACTER</td><td class='mono'>1424</td><td class='mono'>45</td><td class='mono'>1468</td><td class='mono'></td><td>nombre del cliente3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSNA4</td><td>CHARACTER</td><td class='mono'>1469</td><td class='mono'>45</td><td class='mono'>1513</td><td class='mono'></td><td>nombre del cliente4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSNA5</td><td>CHARACTER</td><td class='mono'>1514</td><td class='mono'>45</td><td class='mono'>1558</td><td class='mono'></td><td>nombre del cliente5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NMECOM</td><td>CHARACTER</td><td class='mono'>1559</td><td class='mono'>45</td><td class='mono'>1603</td><td class='mono'></td><td>nombreComuna</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NMEPRV</td><td>CHARACTER</td><td class='mono'>1604</td><td class='mono'>45</td><td class='mono'>1648</td><td class='mono'></td><td>nombreProvin</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NMERGN</td><td>CHARACTER</td><td class='mono'>1649</td><td class='mono'>45</td><td class='mono'>1693</td><td class='mono'></td><td>nombreRegion</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DSCMST</td><td>CHARACTER</td><td class='mono'>1694</td><td class='mono'>25</td><td class='mono'>1718</td><td class='mono'></td><td>ESTADOCIVIL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSCTR</td><td>CHARACTER</td><td class='mono'>1719</td><td class='mono'>35</td><td class='mono'>1753</td><td class='mono'></td><td>pais del cliente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSCTY</td><td>CHARACTER</td><td class='mono'>1754</td><td class='mono'>35</td><td class='mono'>1788</td><td class='mono'></td><td>ciudad del cliente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSSTE</td><td>CHARACTER</td><td class='mono'>1789</td><td class='mono'>4</td><td class='mono'>1792</td><td class='mono'></td><td>estado del cliente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSZPC</td><td>CHARACTER</td><td class='mono'>1793</td><td class='mono'>15</td><td class='mono'>1807</td><td class='mono'></td><td>zip code del cliente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSPOB</td><td>CHARACTER</td><td class='mono'>1808</td><td class='mono'>10</td><td class='mono'>1817</td><td class='mono'></td><td>POBox del cliente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSIDN</td><td>CHARACTER</td><td class='mono'>1818</td><td class='mono'>25</td><td class='mono'>1842</td><td class='mono'></td><td>identificacion del cliente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSIDF</td><td>CHARACTER</td><td class='mono'>1843</td><td class='mono'>25</td><td class='mono'>1867</td><td class='mono'></td><td>identificacion del cliente2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80TAXIDE</td><td>CHARACTER</td><td class='mono'>1868</td><td class='mono'>15</td><td class='mono'>1882</td><td class='mono'></td><td>identificacion impuestos</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSHPN</td><td>NUMERIC</td><td class='mono'>1883</td><td class='mono'>15</td><td class='mono'>1897</td><td class='mono'></td><td>numero de telefono casa</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSPHN</td><td>NUMERIC</td><td class='mono'>1898</td><td class='mono'>15</td><td class='mono'>1912</td><td class='mono'></td><td>numero de telefono trabajo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSPH1</td><td>NUMERIC</td><td class='mono'>1913</td><td class='mono'>15</td><td class='mono'>1927</td><td class='mono'></td><td>numero de telefono Celular</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSIAD</td><td>CHARACTER</td><td class='mono'>1928</td><td class='mono'>40</td><td class='mono'>1967</td><td class='mono'></td><td>direccion de email</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSCCO</td><td>CHARACTER</td><td class='mono'>1968</td><td class='mono'>4</td><td class='mono'>1971</td><td class='mono'></td><td>COD_CONVENIO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CARGO</td><td>CHARACTER</td><td class='mono'>1972</td><td class='mono'>45</td><td class='mono'>2016</td><td class='mono'></td><td>CARGO_ACTIV</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80EMPFIM</td><td>NUMERIC</td><td class='mono'>2017</td><td class='mono'>2</td><td class='mono'>2018</td><td class='mono'></td><td>Mes.FechaIngreso</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80EMPFID</td><td>NUMERIC</td><td class='mono'>2019</td><td class='mono'>2</td><td class='mono'>2020</td><td class='mono'></td><td>Dia.FechaIngreso</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80EMPFIY</td><td>NUMERIC</td><td class='mono'>2021</td><td class='mono'>4</td><td class='mono'>2024</td><td class='mono'></td><td>Ano.FechaIngreso</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80INGDTE</td><td>CHARACTER</td><td class='mono'>2025</td><td class='mono'>25</td><td class='mono'>2049</td><td class='mono'></td><td>FechaIngreso</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80EMPCTR</td><td>CHARACTER</td><td class='mono'>2050</td><td class='mono'>25</td><td class='mono'>2074</td><td class='mono'></td><td>Contrato.Empresa</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PROFES</td><td>CHARACTER</td><td class='mono'>2075</td><td class='mono'>45</td><td class='mono'>2119</td><td class='mono'></td><td>PROFESION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSEMP</td><td>CHARACTER</td><td class='mono'>2120</td><td class='mono'>60</td><td class='mono'>2179</td><td class='mono'></td><td>EMPLEADOR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80ROLPAG</td><td>CHARACTER</td><td class='mono'>2180</td><td class='mono'>25</td><td class='mono'>2204</td><td class='mono'></td><td>Rol.Pago</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSAMT</td><td>NUMERIC</td><td class='mono'>2205</td><td class='mono'>15</td><td class='mono'>2219</td><td class='mono'>2</td><td>RENTA_BRUTA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSCAI</td><td>NUMERIC</td><td class='mono'>2220</td><td class='mono'>15</td><td class='mono'>2234</td><td class='mono'>2</td><td>RENTA_LIQUIDA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSAM4</td><td>NUMERIC</td><td class='mono'>2235</td><td class='mono'>15</td><td class='mono'>2249</td><td class='mono'>2</td><td>RENTA_OTROS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CONYUG</td><td>CHARACTER</td><td class='mono'>2250</td><td class='mono'>60</td><td class='mono'>2309</td><td class='mono'></td><td>conyuge</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80RUTCY1</td><td>CHARACTER</td><td class='mono'>2310</td><td class='mono'>25</td><td class='mono'>2334</td><td class='mono'></td><td>rutConyuge</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSCP1</td><td>CHARACTER</td><td class='mono'>2335</td><td class='mono'>30</td><td class='mono'>2364</td><td class='mono'></td><td>nombre de empleador</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSCP2</td><td>CHARACTER</td><td class='mono'>2365</td><td class='mono'>30</td><td class='mono'>2394</td><td class='mono'></td><td>direccion del empleador</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSCP3</td><td>CHARACTER</td><td class='mono'>2395</td><td class='mono'>15</td><td class='mono'>2409</td><td class='mono'></td><td>cargo en empleo actual</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSTIM</td><td>NUMERIC</td><td class='mono'>2410</td><td class='mono'>3</td><td class='mono'>2412</td><td class='mono'></td><td>tiempo de empleo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSFNA</td><td>CHARACTER</td><td class='mono'>2413</td><td class='mono'>30</td><td class='mono'>2442</td><td class='mono'></td><td>primer nombre de cliente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSACA</td><td>CHARACTER</td><td class='mono'>2443</td><td class='mono'>30</td><td class='mono'>2472</td><td class='mono'></td><td>nombre de casada</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSFN2</td><td>CHARACTER</td><td class='mono'>2473</td><td class='mono'>30</td><td class='mono'>2502</td><td class='mono'></td><td>segundo nombre de cliente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSLN1</td><td>CHARACTER</td><td class='mono'>2503</td><td class='mono'>30</td><td class='mono'>2532</td><td class='mono'></td><td>primer apellido de cliente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSLN2</td><td>CHARACTER</td><td class='mono'>2533</td><td class='mono'>30</td><td class='mono'>2562</td><td class='mono'></td><td>segund apellido de cliente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSBDM</td><td>NUMERIC</td><td class='mono'>2563</td><td class='mono'>2</td><td class='mono'>2564</td><td class='mono'></td><td>mes de nacimiento</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSBDD</td><td>NUMERIC</td><td class='mono'>2565</td><td class='mono'>2</td><td class='mono'>2566</td><td class='mono'></td><td>dia de nacimiento</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSBDY</td><td>NUMERIC</td><td class='mono'>2567</td><td class='mono'>4</td><td class='mono'>2570</td><td class='mono'></td><td>anio de nacimiento</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80BIRDTE</td><td>CHARACTER</td><td class='mono'>2571</td><td class='mono'>25</td><td class='mono'>2595</td><td class='mono'></td><td>FechaNacimiento</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSSEX</td><td>CHARACTER</td><td class='mono'>2596</td><td class='mono'>1</td><td class='mono'>2596</td><td class='mono'></td><td>sexo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUSMST</td><td>CHARACTER</td><td class='mono'>2597</td><td class='mono'>1</td><td class='mono'>2597</td><td class='mono'></td><td>estado civil</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80FECCOT</td><td>CHARACTER</td><td class='mono'>2598</td><td class='mono'>25</td><td class='mono'>2622</td><td class='mono'></td><td>FECHA COTIZ.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1NME</td><td>CHARACTER</td><td class='mono'>2623</td><td class='mono'>60</td><td class='mono'>2682</td><td class='mono'></td><td>aval1_Nombre_Aval</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1RUT</td><td>CHARACTER</td><td class='mono'>2683</td><td class='mono'>25</td><td class='mono'>2707</td><td class='mono'></td><td>aval1_Rut_Aval</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1RTB</td><td>DECIMAL</td><td class='mono'>2708</td><td class='mono'>15</td><td class='mono'>2722</td><td class='mono'>2</td><td>aval1_Renta.Bruta</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1RTL</td><td>DECIMAL</td><td class='mono'>2723</td><td class='mono'>15</td><td class='mono'>2737</td><td class='mono'>2</td><td>aval1_renta_Liquida</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1BDM</td><td>NUMERIC</td><td class='mono'>2738</td><td class='mono'>2</td><td class='mono'>2739</td><td class='mono'></td><td>aval1_Mes_Nacimie</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1BDD</td><td>NUMERIC</td><td class='mono'>2740</td><td class='mono'>2</td><td class='mono'>2741</td><td class='mono'></td><td>aval1_Dia_Nacimie</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1BDY</td><td>NUMERIC</td><td class='mono'>2742</td><td class='mono'>4</td><td class='mono'>2745</td><td class='mono'></td><td>aval1_Ano_Nacimie</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1BDS</td><td>CHARACTER</td><td class='mono'>2746</td><td class='mono'>25</td><td class='mono'>2770</td><td class='mono'></td><td>aval1_FechaNacimie</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1BDL</td><td>CHARACTER</td><td class='mono'>2771</td><td class='mono'>10</td><td class='mono'>2780</td><td class='mono'></td><td>aval1_Mes_desNacimie</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1SEX</td><td>CHARACTER</td><td class='mono'>2781</td><td class='mono'>25</td><td class='mono'>2805</td><td class='mono'></td><td>aval1_Sexo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1HPN</td><td>NUMERIC</td><td class='mono'>2806</td><td class='mono'>15</td><td class='mono'>2820</td><td class='mono'></td><td>aval1_Tel_Particular</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1PHN</td><td>NUMERIC</td><td class='mono'>2821</td><td class='mono'>15</td><td class='mono'>2835</td><td class='mono'></td><td>aval1_Tel_Laboral</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1MST</td><td>CHARACTER</td><td class='mono'>2836</td><td class='mono'>25</td><td class='mono'>2860</td><td class='mono'></td><td>aval1_EstadoCivil1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1CYG</td><td>CHARACTER</td><td class='mono'>2861</td><td class='mono'>60</td><td class='mono'>2920</td><td class='mono'></td><td>aval1_Nombre_Conyuge</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1CYR</td><td>CHARACTER</td><td class='mono'>2921</td><td class='mono'>25</td><td class='mono'>2945</td><td class='mono'></td><td>aval1_Rut_Conyuge</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1DIR</td><td>CHARACTER</td><td class='mono'>2946</td><td class='mono'>60</td><td class='mono'>3005</td><td class='mono'></td><td>aval1_DIRECC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1COM</td><td>CHARACTER</td><td class='mono'>3006</td><td class='mono'>45</td><td class='mono'>3050</td><td class='mono'></td><td>aval1_COMUNA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV1PRF</td><td>CHARACTER</td><td class='mono'>3051</td><td class='mono'>45</td><td class='mono'>3095</td><td class='mono'></td><td>avla1_Profesion</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2NME</td><td>CHARACTER</td><td class='mono'>3096</td><td class='mono'>60</td><td class='mono'>3155</td><td class='mono'></td><td>aval2_Nombre_Aval</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2RUT</td><td>CHARACTER</td><td class='mono'>3156</td><td class='mono'>25</td><td class='mono'>3180</td><td class='mono'></td><td>aval2_Rut_Aval</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2RTB</td><td>DECIMAL</td><td class='mono'>3181</td><td class='mono'>15</td><td class='mono'>3195</td><td class='mono'>2</td><td>aval2_Renta.Bruta</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2RTL</td><td>DECIMAL</td><td class='mono'>3196</td><td class='mono'>15</td><td class='mono'>3210</td><td class='mono'>2</td><td>aval2_renta_Liquida</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2BDM</td><td>NUMERIC</td><td class='mono'>3211</td><td class='mono'>2</td><td class='mono'>3212</td><td class='mono'></td><td>aval2_Mes_Nacimie</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2BDD</td><td>NUMERIC</td><td class='mono'>3213</td><td class='mono'>2</td><td class='mono'>3214</td><td class='mono'></td><td>aval2_Dia_Nacimie</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2BDY</td><td>NUMERIC</td><td class='mono'>3215</td><td class='mono'>4</td><td class='mono'>3218</td><td class='mono'></td><td>aval2_Ano_Nacimie</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2BDS</td><td>CHARACTER</td><td class='mono'>3219</td><td class='mono'>25</td><td class='mono'>3243</td><td class='mono'></td><td>aval2_FechaNacimie</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2BDL</td><td>CHARACTER</td><td class='mono'>3244</td><td class='mono'>10</td><td class='mono'>3253</td><td class='mono'></td><td>aval2_Mes_desNacimie</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2SEX</td><td>CHARACTER</td><td class='mono'>3254</td><td class='mono'>25</td><td class='mono'>3278</td><td class='mono'></td><td>aval2_Sexo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2HPN</td><td>NUMERIC</td><td class='mono'>3279</td><td class='mono'>15</td><td class='mono'>3293</td><td class='mono'></td><td>aval2_Tel_Particular</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2PHN</td><td>NUMERIC</td><td class='mono'>3294</td><td class='mono'>15</td><td class='mono'>3308</td><td class='mono'></td><td>aval2_Tel_Laboral</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2MST</td><td>CHARACTER</td><td class='mono'>3309</td><td class='mono'>25</td><td class='mono'>3333</td><td class='mono'></td><td>aval2_EstadoCivil1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2CYG</td><td>CHARACTER</td><td class='mono'>3334</td><td class='mono'>60</td><td class='mono'>3393</td><td class='mono'></td><td>aval2_Nombre_Conyuge</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2CYR</td><td>CHARACTER</td><td class='mono'>3394</td><td class='mono'>25</td><td class='mono'>3418</td><td class='mono'></td><td>aval2_Rut_Conyuge</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2DIR</td><td>CHARACTER</td><td class='mono'>3419</td><td class='mono'>60</td><td class='mono'>3478</td><td class='mono'></td><td>aval2_DIRECC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2COM</td><td>CHARACTER</td><td class='mono'>3479</td><td class='mono'>45</td><td class='mono'>3523</td><td class='mono'></td><td>aval2_COMUNA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80AV2PRF</td><td>CHARACTER</td><td class='mono'>3524</td><td class='mono'>45</td><td class='mono'>3568</td><td class='mono'></td><td>avla2_Profesion</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NMEPRD</td><td>CHARACTER</td><td class='mono'>3569</td><td class='mono'>45</td><td class='mono'>3613</td><td class='mono'></td><td>Nombre_Producto</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LNTYPR</td><td>CHARACTER</td><td class='mono'>3614</td><td class='mono'>35</td><td class='mono'>3648</td><td class='mono'></td><td>Nombre_Corto</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LNSNCU</td><td>DECIMAL</td><td class='mono'>3649</td><td class='mono'>5</td><td class='mono'>3653</td><td class='mono'></td><td>Plazo_Cuotas</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LNSPPM</td><td>NUMERIC</td><td class='mono'>3654</td><td class='mono'>2</td><td class='mono'>3655</td><td class='mono'></td><td>Mes_FechA1erPago</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LNSPPD</td><td>NUMERIC</td><td class='mono'>3656</td><td class='mono'>2</td><td class='mono'>3657</td><td class='mono'></td><td>Dia_Fecha1erPago</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LNSPPY</td><td>NUMERIC</td><td class='mono'>3658</td><td class='mono'>4</td><td class='mono'>3661</td><td class='mono'></td><td>Ano_Fecha1erPago</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LNSPPS</td><td>CHARACTE</td><td class='mono'>3662</td><td class='mono'>25</td><td class='mono'>3686</td><td class='mono'></td><td>Fecha1erPago</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LNSDIA</td><td>NUMERIC</td><td class='mono'>3687</td><td class='mono'>2</td><td class='mono'>3688</td><td class='mono'></td><td>Dia_Fecha1erPago</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80INSNA1</td><td>CHARACTE</td><td class='mono'>3689</td><td class='mono'>60</td><td class='mono'>3748</td><td class='mono'></td><td>nombre de institucion1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80INSNA2</td><td>CHARACTE</td><td class='mono'>3749</td><td class='mono'>45</td><td class='mono'>3793</td><td class='mono'></td><td>nombre de institucion2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80INSNA3</td><td>CHARACTE</td><td class='mono'>3794</td><td class='mono'>45</td><td class='mono'>3838</td><td class='mono'></td><td>nombre de institucion3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80INSNA4</td><td>CHARACTE</td><td class='mono'>3839</td><td class='mono'>45</td><td class='mono'>3883</td><td class='mono'></td><td>nombre de institucion4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80INSIDE</td><td>CHARACTE</td><td class='mono'>3884</td><td class='mono'>25</td><td class='mono'>3908</td><td class='mono'></td><td>identificacion institucion</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80INSPHN</td><td>DECIMAL</td><td class='mono'>3909</td><td class='mono'>11</td><td class='mono'>3919</td><td class='mono'></td><td>numero de telefono de banco</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80BRNNA1</td><td>CHARACTE</td><td class='mono'>3920</td><td class='mono'>60</td><td class='mono'>3979</td><td class='mono'></td><td>nombre de sucursal1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80BRNNA2</td><td>CHARACTER</td><td class='mono'>3980</td><td class='mono'>45</td><td class='mono'>4024</td><td class='mono'></td><td>nombre de sucursal2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80BRNNA3</td><td>CHARACTER</td><td class='mono'>4025</td><td class='mono'>45</td><td class='mono'>4069</td><td class='mono'></td><td>nombre de sucursal3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80BRNNA4</td><td>CHARACTER</td><td class='mono'>4070</td><td class='mono'>45</td><td class='mono'>4114</td><td class='mono'></td><td>nombre de sucursal4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80BRNPHN</td><td>DECIMAL</td><td class='mono'>4115</td><td class='mono'>11</td><td class='mono'>4125</td><td class='mono'></td><td>numero de telefono sucursal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80BRNIDE</td><td>CHARACTER</td><td class='mono'>4126</td><td class='mono'>25</td><td class='mono'>4150</td><td class='mono'></td><td>identificacion sucursal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80RUNDTE</td><td>CHARACTER</td><td class='mono'>4151</td><td class='mono'>25</td><td class='mono'>4175</td><td class='mono'></td><td>Run Date</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LGNA01</td><td>CHARACTER</td><td class='mono'>4176</td><td class='mono'>50</td><td class='mono'>4225</td><td class='mono'></td><td>nombre legal 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LGNA02</td><td>CHARACTER</td><td class='mono'>4226</td><td class='mono'>50</td><td class='mono'>4275</td><td class='mono'></td><td>nombre legal 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LGNA03</td><td>CHARACTER</td><td class='mono'>4276</td><td class='mono'>50</td><td class='mono'>4325</td><td class='mono'></td><td>nombre legal 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LGNA04</td><td>CHARACTER</td><td class='mono'>4326</td><td class='mono'>50</td><td class='mono'>4375</td><td class='mono'></td><td>nombre legal 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LGNA05</td><td>CHARACTER</td><td class='mono'>4376</td><td class='mono'>50</td><td class='mono'>4425</td><td class='mono'></td><td>nombre legal 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LGNA06</td><td>CHARACTER</td><td class='mono'>4426</td><td class='mono'>50</td><td class='mono'>4475</td><td class='mono'></td><td>nombre legal 6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LGNA07</td><td>CHARACTER</td><td class='mono'>4476</td><td class='mono'>50</td><td class='mono'>4525</td><td class='mono'></td><td>nombre legal 7</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LGNA08</td><td>CHARACTER</td><td class='mono'>4526</td><td class='mono'>50</td><td class='mono'>4575</td><td class='mono'></td><td>nombre legal 8</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LGNA09</td><td>CHARACTER</td><td class='mono'>4576</td><td class='mono'>50</td><td class='mono'>4625</td><td class='mono'></td><td>nombre legal 9</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LGNA10</td><td>CHARACTER</td><td class='mono'>4626</td><td class='mono'>50</td><td class='mono'>4675</td><td class='mono'></td><td>nombre legal 10</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MLANA1</td><td>CHARACTER</td><td class='mono'>4676</td><td class='mono'>60</td><td class='mono'>4735</td><td class='mono'></td><td>direccion legal 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MLANA2</td><td>CHARACTER</td><td class='mono'>4736</td><td class='mono'>45</td><td class='mono'>4780</td><td class='mono'></td><td>direccion legal 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MLANA3</td><td>CHARACTER</td><td class='mono'>4781</td><td class='mono'>45</td><td class='mono'>4825</td><td class='mono'></td><td>direccion legal 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MLANA4</td><td>CHARACTER</td><td class='mono'>4826</td><td class='mono'>45</td><td class='mono'>4870</td><td class='mono'></td><td>direccion legal 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CODREG</td><td>CHARACTER</td><td class='mono'>4871</td><td class='mono'>4</td><td class='mono'>4874</td><td class='mono'></td><td>CODIGO REGION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MLANA5</td><td>CHARACTER</td><td class='mono'>4875</td><td class='mono'>45</td><td class='mono'>4919</td><td class='mono'></td><td>direccion legal 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MLACTR</td><td>CHARACTER</td><td class='mono'>4920</td><td class='mono'>35</td><td class='mono'>4954</td><td class='mono'></td><td>pais legal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MLACTY</td><td>CHARACTER</td><td class='mono'>4955</td><td class='mono'>35</td><td class='mono'>4989</td><td class='mono'></td><td>pais legal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MLASTE</td><td>CHARACTER</td><td class='mono'>4990</td><td class='mono'>4</td><td class='mono'>4993</td><td class='mono'></td><td>estado/departamento legal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MLAZPC</td><td>CHARACTER</td><td class='mono'>4994</td><td class='mono'>15</td><td class='mono'>5008</td><td class='mono'></td><td>zip code legal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MLAPOB</td><td>CHARACTER</td><td class='mono'>5009</td><td class='mono'>10</td><td class='mono'>5018</td><td class='mono'></td><td>POBOX Legal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80FECNAC</td><td>CHARACTER</td><td class='mono'>5019</td><td class='mono'>25</td><td class='mono'>5043</td><td class='mono'></td><td>FECHA_NACIMIENTO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80FECOTO</td><td>CHARACTER</td><td class='mono'>5044</td><td class='mono'>25</td><td class='mono'>5068</td><td class='mono'></td><td>FECHA_OTORGAMIENTO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NOMEJE</td><td>CHARACTER</td><td class='mono'>5069</td><td class='mono'>50</td><td class='mono'>5118</td><td class='mono'></td><td>NOMBRE_EJECUTIVO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80RUTEJE</td><td>CHARACTER</td><td class='mono'>5119</td><td class='mono'>25</td><td class='mono'>5143</td><td class='mono'></td><td>RUT_EJECUTIVO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80TELEJE</td><td>NUMERIC</td><td class='mono'>5144</td><td class='mono'>15</td><td class='mono'>5158</td><td class='mono'></td><td>TELF_EJECUTIVO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80COMOFI</td><td>CHARACTER</td><td class='mono'>5159</td><td class='mono'>30</td><td class='mono'>5188</td><td class='mono'></td><td>COMUNA_OFICINA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CIUOFI</td><td>CHARACTER</td><td class='mono'>5189</td><td class='mono'>30</td><td class='mono'>5218</td><td class='mono'></td><td>CIUDAD_OFICINA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MESAPT</td><td>CHARACTER</td><td class='mono'>5219</td><td class='mono'>10</td><td class='mono'>5228</td><td class='mono'></td><td>MES_APERT_TXT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CODEJE</td><td>CHARACTER</td><td class='mono'>5229</td><td class='mono'>10</td><td class='mono'>5238</td><td class='mono'></td><td>COD_EJEC_USER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MONNPA</td><td>NUMERIC</td><td class='mono'>5239</td><td class='mono'>15</td><td class='mono'>5253</td><td class='mono'>2</td><td>MONTO_NUEVO_PAGARE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MONNPX</td><td>CHARACTER</td><td class='mono'>5254</td><td class='mono'>100</td><td class='mono'>5353</td><td class='mono'></td><td>MONTO_NUEVO_PA_TXT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NUCUOT</td><td>NUMERIC</td><td class='mono'>5354</td><td class='mono'>5</td><td class='mono'>5358</td><td class='mono'></td><td>NUEVAS_CUOTAS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NUMONT</td><td>NUMERIC</td><td class='mono'>5359</td><td class='mono'>15</td><td class='mono'>5373</td><td class='mono'>2</td><td>NUEVO_MONTO_CUOTA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NUMOTX</td><td>CHARACTER</td><td class='mono'>5374</td><td class='mono'>100</td><td class='mono'>5473</td><td class='mono'></td><td>NUEVO_MONTO_CUO_TXT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NUVENC</td><td>NUMERIC</td><td class='mono'>5474</td><td class='mono'>2</td><td class='mono'>5475</td><td class='mono'></td><td>NUEVO_DIA_VENC.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NUPVND</td><td>NUMERIC</td><td class='mono'>5476</td><td class='mono'>2</td><td class='mono'>5477</td><td class='mono'></td><td>FEC_1ER_VEN_DIA.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NUPVNM</td><td>NUMERIC</td><td class='mono'>5478</td><td class='mono'>2</td><td class='mono'>5479</td><td class='mono'></td><td>FEC_1ER_VEN_MES.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NUPVNA</td><td>NUMERIC</td><td class='mono'>5480</td><td class='mono'>4</td><td class='mono'>5483</td><td class='mono'></td><td>FEC_1ER_VEN_ANO.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NUFPVE</td><td>CHARACTER</td><td class='mono'>5484</td><td class='mono'>25</td><td class='mono'>5508</td><td class='mono'></td><td>FECHA_1ER_VENCIMI</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NUPVMX</td><td>CHARACTER</td><td class='mono'>5509</td><td class='mono'>10</td><td class='mono'>5518</td><td class='mono'></td><td>MES_TXT_1ER_VEN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80RESFED</td><td>NUMERIC</td><td class='mono'>5519</td><td class='mono'>2</td><td class='mono'>5520</td><td class='mono'></td><td>FEC_RESUSCR_DIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80RESFEM</td><td>NUMERIC</td><td class='mono'>5521</td><td class='mono'>2</td><td class='mono'>5522</td><td class='mono'></td><td>FEC_RESUSCR_MES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80RESFEA</td><td>NUMERIC</td><td class='mono'>5523</td><td class='mono'>4</td><td class='mono'>5526</td><td class='mono'></td><td>FEC_RESUSCR_ANO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80RESFEC</td><td>CHARACTER</td><td class='mono'>5527</td><td class='mono'>25</td><td class='mono'>5551</td><td class='mono'></td><td>FEC_RESUSCR_TXT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80RESMEX</td><td>CHARACTER</td><td class='mono'>5552</td><td class='mono'>10</td><td class='mono'>5561</td><td class='mono'></td><td>MES_TXT_RESUSCR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SEGDES</td><td>NUMERIC</td><td class='mono'>5562</td><td class='mono'>15</td><td class='mono'>5576</td><td class='mono'>2</td><td>montoSegDesgrabamen</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DESDES</td><td>CHARACTER</td><td class='mono'>5577</td><td class='mono'>60</td><td class='mono'>5636</td><td class='mono'></td><td>descrSegDesgrabamen</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SEGINV</td><td>NUMERIC</td><td class='mono'>5637</td><td class='mono'>15</td><td class='mono'>5651</td><td class='mono'>2</td><td>montoSegValidez</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DESINV</td><td>CHARACTER</td><td class='mono'>5652</td><td class='mono'>60</td><td class='mono'>5711</td><td class='mono'></td><td>descrSegValidez</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SEGEGR</td><td>NUMERIC</td><td class='mono'>5712</td><td class='mono'>15</td><td class='mono'>5726</td><td class='mono'>2</td><td>montoSegEnfgraves</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DESEGR</td><td>CHARACTER</td><td class='mono'>5727</td><td class='mono'>60</td><td class='mono'>5786</td><td class='mono'></td><td>descrSegEnfgraves</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SEGHOP</td><td>NUMERIC</td><td class='mono'>5787</td><td class='mono'>15</td><td class='mono'>5801</td><td class='mono'>2</td><td>montoSegHospital</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DESHOP</td><td>CHARACTER</td><td class='mono'>5802</td><td class='mono'>60</td><td class='mono'>5861</td><td class='mono'></td><td>descrSegHospital</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SEGCES</td><td>NUMERIC</td><td class='mono'>5862</td><td class='mono'>15</td><td class='mono'>5876</td><td class='mono'>2</td><td>montoSegCesantia</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DESCES</td><td>CHARACTER</td><td class='mono'>5877</td><td class='mono'>60</td><td class='mono'>5936</td><td class='mono'></td><td>descrSegCesantia</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SEGASL</td><td>NUMERIC</td><td class='mono'>5937</td><td class='mono'>15</td><td class='mono'>5951</td><td class='mono'>2</td><td>montoSegSisLegal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DESASL</td><td>CHARACTER</td><td class='mono'>5952</td><td class='mono'>60</td><td class='mono'>6011</td><td class='mono'></td><td>descrSegSisLegal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DESCOB</td><td>CHARACTER</td><td class='mono'>6012</td><td class='mono'>100</td><td class='mono'>6111</td><td class='mono'></td><td>descriCobertura</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SEMDES</td><td>NUMERIC</td><td class='mono'>6112</td><td class='mono'>15</td><td class='mono'>6126</td><td class='mono'>2</td><td>CoberturaDesgrabam</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SEMINV</td><td>NUMERIC</td><td class='mono'>6127</td><td class='mono'>15</td><td class='mono'>6141</td><td class='mono'>2</td><td>CoberturaValidez</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SEMEGR</td><td>NUMERIC</td><td class='mono'>6142</td><td class='mono'>15</td><td class='mono'>6156</td><td class='mono'>2</td><td>CoberturaEnfgraves</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SEMHOP</td><td>NUMERIC</td><td class='mono'>6157</td><td class='mono'>15</td><td class='mono'>6171</td><td class='mono'>2</td><td>CoberturaHospital</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SEMCES</td><td>NUMERIC</td><td class='mono'>6172</td><td class='mono'>15</td><td class='mono'>6186</td><td class='mono'>2</td><td>CoberturaCesantia</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SEMASL</td><td>NUMERIC</td><td class='mono'>6187</td><td class='mono'>15</td><td class='mono'>6201</td><td class='mono'>2</td><td>CoberturaSistLegal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SEMTOT</td><td>NUMERIC</td><td class='mono'>6202</td><td class='mono'>15</td><td class='mono'>6216</td><td class='mono'>2</td><td>montoTotalSeguros</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SGDESG</td><td>NUMERIC</td><td class='mono'>6217</td><td class='mono'>15</td><td class='mono'>6231</td><td class='mono'></td><td>DEVOL_PRIMA_DESG.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SGIN23</td><td>NUMERIC</td><td class='mono'>6232</td><td class='mono'>15</td><td class='mono'>6246</td><td class='mono'></td><td>DEVOL_PRIMA_INV23</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SGENGR</td><td>NUMERIC</td><td class='mono'>6247</td><td class='mono'>15</td><td class='mono'>6261</td><td class='mono'></td><td>DEVOL_PRIMA_ENFG.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SGHOSP</td><td>NUMERIC</td><td class='mono'>6262</td><td class='mono'>15</td><td class='mono'>6276</td><td class='mono'></td><td>DEVOL_PRIMA_HOSP.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SGCESA</td><td>NUMERIC</td><td class='mono'>6277</td><td class='mono'>15</td><td class='mono'>6291</td><td class='mono'></td><td>DEVOL_PRIMA_CESAN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SGTOTS</td><td>NUMERIC</td><td class='mono'>6292</td><td class='mono'>15</td><td class='mono'>6306</td><td class='mono'></td><td>DEVOL_PRIMA_TOTAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E60PADESG</td><td>NUMERIC</td><td class='mono'>6307</td><td class='mono'>15</td><td class='mono'>6321</td><td class='mono'></td><td>PAGADO_PRIMA_DESG.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80VALCUO</td><td>NUMERIC</td><td class='mono'>6322</td><td class='mono'>15</td><td class='mono'>6336</td><td class='mono'>2</td><td>valorCuota</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80VALCUOX</td><td>CHARACTER</td><td class='mono'>6337</td><td class='mono'>100</td><td class='mono'>6436</td><td class='mono'></td><td>ValorCuotaTesto</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80COSCRE</td><td>NUMERIC</td><td class='mono'>6437</td><td class='mono'>15</td><td class='mono'>6451</td><td class='mono'>2</td><td>COSTO_TOTAL_CRED</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80FINPRO</td><td>NUMERIC</td><td class='mono'>6452</td><td class='mono'>15</td><td class='mono'>6466</td><td class='mono'>2</td><td>FINANCIAM_PROD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MONOTO</td><td>NUMERIC</td><td class='mono'>6467</td><td class='mono'>15</td><td class='mono'>6481</td><td class='mono'>2</td><td>MONTO_OTORGADO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MONOTX</td><td>CHARACTER</td><td class='mono'>6482</td><td class='mono'>100</td><td class='mono'>6581</td><td class='mono'></td><td>MONTO_OTORGADO_TXT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SEGTOT</td><td>NUMERIC</td><td class='mono'>6582</td><td class='mono'>15</td><td class='mono'>6596</td><td class='mono'>2</td><td>TOTAL_SEGURO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LIQPAG</td><td>NUMERIC</td><td class='mono'>6597</td><td class='mono'>15</td><td class='mono'>6611</td><td class='mono'>2</td><td>MONTO_LIQUIDO PAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80LIQPAX</td><td>CHARACTER</td><td class='mono'>6612</td><td class='mono'>100</td><td class='mono'>6711</td><td class='mono'></td><td>MONTO_TXT_PAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MONEFE</td><td>NUMERIC</td><td class='mono'>6712</td><td class='mono'>15</td><td class='mono'>6726</td><td class='mono'>2</td><td>MONTO_EFECTIVO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MONDOC</td><td>NUMERIC</td><td class='mono'>6727</td><td class='mono'>15</td><td class='mono'>6741</td><td class='mono'>2</td><td>MONTO_DOCTO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80GASNOT</td><td>NUMERIC</td><td class='mono'>6742</td><td class='mono'>15</td><td class='mono'>6756</td><td class='mono'>2</td><td>GASTO_NOTARIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NOTARI</td><td>CHARACTER</td><td class='mono'>6757</td><td class='mono'>80</td><td class='mono'>6836</td><td class='mono'></td><td>NOMBRE_NOTARIO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CREMOD</td><td>CHARACTER</td><td class='mono'>6837</td><td class='mono'>20</td><td class='mono'>6856</td><td class='mono'></td><td>MODALIDAD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CRETMO</td><td>CHARACTER</td><td class='mono'>6857</td><td class='mono'>100</td><td class='mono'>6956</td><td class='mono'></td><td>DESC_MODALIDAD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CODUSR</td><td>CHARACTER</td><td class='mono'>6957</td><td class='mono'>10</td><td class='mono'>6966</td><td class='mono'></td><td>COD_USUARIO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NOMUSR</td><td>CHARACTER</td><td class='mono'>6967</td><td class='mono'>45</td><td class='mono'>7011</td><td class='mono'></td><td>NOMB_USUARIO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SALORE</td><td>NUMERIC</td><td class='mono'>7012</td><td class='mono'>15</td><td class='mono'>7026</td><td class='mono'>2</td><td>SALDO_PREPAGO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80COMPRE</td><td>NUMERIC</td><td class='mono'>7027</td><td class='mono'>15</td><td class='mono'>7041</td><td class='mono'>2</td><td>COMISION_PREPAGO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SUBPRE</td><td>NUMERIC</td><td class='mono'>7042</td><td class='mono'>15</td><td class='mono'>7056</td><td class='mono'>2</td><td>SUBTOTAL_PREPAGO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80TOTPRE</td><td>NUMERIC</td><td class='mono'>7057</td><td class='mono'>15</td><td class='mono'>7071</td><td class='mono'>2</td><td>TOTAL_PREPAGO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80ULTCUO</td><td>NUMERIC</td><td class='mono'>7072</td><td class='mono'>15</td><td class='mono'>7086</td><td class='mono'>2</td><td>MONTO_ULTIMA_CUOTA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80ULTCUX</td><td>CHARACTER</td><td class='mono'>7087</td><td class='mono'>100</td><td class='mono'>7186</td><td class='mono'></td><td>MONTO_ULT_CUOTA_TXT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80APAD01</td><td>CHARACTER</td><td class='mono'>7187</td><td class='mono'>35</td><td class='mono'>7221</td><td class='mono'></td><td>MEXICO_NRO_RECA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80TASCAE</td><td>NUMERIC</td><td class='mono'>7222</td><td class='mono'>9</td><td class='mono'>7230</td><td class='mono'>6</td><td>tasaCAE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80COMUNA</td><td>CHARACTER</td><td class='mono'>7231</td><td class='mono'>80</td><td class='mono'>7310</td><td class='mono'></td><td>comuna</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80BRANCH</td><td>CHARACTER</td><td class='mono'>7311</td><td class='mono'>80</td><td class='mono'>7390</td><td class='mono'></td><td>Sucursal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80GARAYN</td><td>CHARACTER</td><td class='mono'>7391</td><td class='mono'>2</td><td class='mono'>7392</td><td class='mono'></td><td>GarantiaSiNo</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUOFRN</td><td>NUMERIC</td><td class='mono'>7393</td><td class='mono'>3</td><td class='mono'>7395</td><td class='mono'></td><td>FreqPago_num</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUOFRT</td><td>CHARACTER</td><td class='mono'>7396</td><td class='mono'>10</td><td class='mono'>7405</td><td class='mono'></td><td>FreqPago_ter</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80VENCOT</td><td>CHARACTER</td><td class='mono'>7406</td><td class='mono'>25</td><td class='mono'>7430</td><td class='mono'></td><td>VenceCotizacion</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG1COD</td><td>CHARACTER</td><td class='mono'>7431</td><td class='mono'>4</td><td class='mono'>7434</td><td class='mono'></td><td>codigoSeguro1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG1PLN</td><td>NUMERIC</td><td class='mono'>7435</td><td class='mono'>2</td><td class='mono'>7436</td><td class='mono'></td><td>planSeguro1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG1DSC</td><td>CHARACTER</td><td class='mono'>7437</td><td class='mono'>80</td><td class='mono'>7516</td><td class='mono'></td><td>descrSeguro1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG1CIA</td><td>CHARACTER</td><td class='mono'>7517</td><td class='mono'>80</td><td class='mono'>7596</td><td class='mono'></td><td>descrCompania1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG1PLZ</td><td>CHARACTER</td><td class='mono'>7597</td><td class='mono'>20</td><td class='mono'>7616</td><td class='mono'></td><td>numeroPoliza1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG1FVE</td><td>CHARACTER</td><td class='mono'>7617</td><td class='mono'>25</td><td class='mono'>7641</td><td class='mono'></td><td>FechaVencimie1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG1VAL</td><td>NUMERIC</td><td class='mono'>7642</td><td class='mono'>15</td><td class='mono'>7656</td><td class='mono'>2</td><td>ValorPoliza1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG1VPE</td><td>NUMERIC</td><td class='mono'>7657</td><td class='mono'>15</td><td class='mono'>7671</td><td class='mono'>2</td><td>ValorPeriodo1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG2COD</td><td>CHARACTER</td><td class='mono'>7672</td><td class='mono'>4</td><td class='mono'>7675</td><td class='mono'></td><td>codigoSeguro2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG2PLN</td><td>NUMERIC</td><td class='mono'>7676</td><td class='mono'>2</td><td class='mono'>7677</td><td class='mono'></td><td>planSeguro2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG2DSC</td><td>CHARACTER</td><td class='mono'>7678</td><td class='mono'>80</td><td class='mono'>7757</td><td class='mono'></td><td>descrSeguro2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG2CIA</td><td>CHARACTER</td><td class='mono'>7758</td><td class='mono'>80</td><td class='mono'>7837</td><td class='mono'></td><td>descrCompania2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG2PLZ</td><td>CHARACTER</td><td class='mono'>7838</td><td class='mono'>20</td><td class='mono'>7857</td><td class='mono'></td><td>numeroPoliza2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG2FVE</td><td>CHARACTER</td><td class='mono'>7858</td><td class='mono'>25</td><td class='mono'>7882</td><td class='mono'></td><td>FechaVencimie2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG2VAL</td><td>NUMERIC</td><td class='mono'>7883</td><td class='mono'>15</td><td class='mono'>7897</td><td class='mono'>2</td><td>ValorPoliza2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG2VPE</td><td>NUMERIC</td><td class='mono'>7898</td><td class='mono'>15</td><td class='mono'>7912</td><td class='mono'>2</td><td>ValorPeriodo2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG3COD</td><td>CHARACTER</td><td class='mono'>7913</td><td class='mono'>4</td><td class='mono'>7916</td><td class='mono'></td><td>codigoSeguro3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG3PLN</td><td>NUMERIC</td><td class='mono'>7917</td><td class='mono'>2</td><td class='mono'>7918</td><td class='mono'></td><td>planSeguro3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG3DSC</td><td>CHARACTER</td><td class='mono'>7919</td><td class='mono'>80</td><td class='mono'>7998</td><td class='mono'></td><td>descrSeguro3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG3CIA</td><td>CHARACTER</td><td class='mono'>7999</td><td class='mono'>80</td><td class='mono'>8078</td><td class='mono'></td><td>descrCompania3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG3PLZ</td><td>CHARACTER</td><td class='mono'>8079</td><td class='mono'>20</td><td class='mono'>8098</td><td class='mono'></td><td>numeroPoliza3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG3FVE</td><td>CHARACTER</td><td class='mono'>8099</td><td class='mono'>25</td><td class='mono'>8123</td><td class='mono'></td><td>FechaVencimie3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG3VAL</td><td>NUMERIC</td><td class='mono'>8124</td><td class='mono'>15</td><td class='mono'>8138</td><td class='mono'>2</td><td>ValorPoliza3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG3VPE</td><td>NUMERIC</td><td class='mono'>8139</td><td class='mono'>15</td><td class='mono'>8153</td><td class='mono'>2</td><td>ValorPeriodo3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG4COD</td><td>CHARACTER</td><td class='mono'>8154</td><td class='mono'>4</td><td class='mono'>8157</td><td class='mono'></td><td>codigoSeguro4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG4PLN</td><td>NUMERIC</td><td class='mono'>8158</td><td class='mono'>2</td><td class='mono'>8159</td><td class='mono'></td><td>planSeguro4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG4DSC</td><td>CHARACTER</td><td class='mono'>8160</td><td class='mono'>80</td><td class='mono'>8239</td><td class='mono'></td><td>descrSeguro4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG4CIA</td><td>CHARACTER</td><td class='mono'>8240</td><td class='mono'>80</td><td class='mono'>8319</td><td class='mono'></td><td>descrCompania4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG4PLZ</td><td>CHARACTER</td><td class='mono'>8320</td><td class='mono'>20</td><td class='mono'>8339</td><td class='mono'></td><td>numeroPoliza4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG4FVE</td><td>CHARACTER</td><td class='mono'>8340</td><td class='mono'>25</td><td class='mono'>8364</td><td class='mono'></td><td>FechaVencimie4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG4VAL</td><td>NUMERIC</td><td class='mono'>8365</td><td class='mono'>15</td><td class='mono'>8379</td><td class='mono'>2</td><td>ValorPoliza4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG4VPE</td><td>NUMERIC</td><td class='mono'>8380</td><td class='mono'>15</td><td class='mono'>8394</td><td class='mono'>2</td><td>ValorPeriodo4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG5COD</td><td>CHARACTER</td><td class='mono'>8395</td><td class='mono'>4</td><td class='mono'>8398</td><td class='mono'></td><td>codigoSeguro5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG5PLN</td><td>NUMERIC</td><td class='mono'>8399</td><td class='mono'>2</td><td class='mono'>8400</td><td class='mono'></td><td>planSeguro5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG5DSC</td><td>CHARACTER</td><td class='mono'>8401</td><td class='mono'>80</td><td class='mono'>8480</td><td class='mono'></td><td>descrSeguro5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG5CIA</td><td>CHARACTER</td><td class='mono'>8481</td><td class='mono'>80</td><td class='mono'>8560</td><td class='mono'></td><td>descrCompania5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG5PLZ</td><td>CHARACTER</td><td class='mono'>8561</td><td class='mono'>20</td><td class='mono'>8580</td><td class='mono'></td><td>numeroPoliza5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG5FVE</td><td>CHARACTER</td><td class='mono'>8581</td><td class='mono'>25</td><td class='mono'>8605</td><td class='mono'></td><td>FechaVencimie5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG5VAL</td><td>NUMERIC</td><td class='mono'>8606</td><td class='mono'>15</td><td class='mono'>8620</td><td class='mono'>2</td><td>ValorPoliza5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SG5VPE</td><td>NUMERIC</td><td class='mono'>8621</td><td class='mono'>15</td><td class='mono'>8635</td><td class='mono'>2</td><td>ValorPeriodo5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEAEXR</td><td>NUMERIC</td><td class='mono'>8636</td><td class='mono'>11</td><td class='mono'>8646</td><td class='mono'>6</td><td>tasadeCambio</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MONEQU</td><td>NUMERIC</td><td class='mono'>8647</td><td class='mono'>15</td><td class='mono'>8661</td><td class='mono'>2</td><td>montoEquivalente</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DSCCCY</td><td>CHARACTER</td><td class='mono'>8662</td><td class='mono'>45</td><td class='mono'>8706</td><td class='mono'></td><td>descrMoneda</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SYSTIM</td><td>NUMERIC</td><td class='mono'>8707</td><td class='mono'>6</td><td class='mono'>8712</td><td class='mono'></td><td>horaSistema</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUOPRN</td><td>NUMERIC</td><td class='mono'>8713</td><td class='mono'>15</td><td class='mono'>8727</td><td class='mono'>2</td><td>cuotaprincipal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUOINT</td><td>NUMERIC</td><td class='mono'>8728</td><td class='mono'>15</td><td class='mono'>8742</td><td class='mono'>2</td><td>cuotaInteres</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUOOTH</td><td>NUMERIC</td><td class='mono'>8743</td><td class='mono'>15</td><td class='mono'>8757</td><td class='mono'>2</td><td>cuotaOtros</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUOTOT</td><td>NUMERIC</td><td class='mono'>8758</td><td class='mono'>15</td><td class='mono'>8772</td><td class='mono'>2</td><td>cuotaTotal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80CUODYS</td><td>NUMERIC</td><td class='mono'>8773</td><td class='mono'>5</td><td class='mono'>8777</td><td class='mono'></td><td>cuotaDias</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBDSC1</td><td>CHARACTER</td><td class='mono'>8778</td><td class='mono'>60</td><td class='mono'>8837</td><td class='mono'></td><td>desembDescri1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBACC1</td><td>NUMERIC</td><td class='mono'>8838</td><td class='mono'>12</td><td class='mono'>8849</td><td class='mono'></td><td>desembCuenta1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBAMT1</td><td>NUMERIC</td><td class='mono'>8850</td><td class='mono'>15</td><td class='mono'>8864</td><td class='mono'>2</td><td>desembvalor1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBEQV1</td><td>NUMERIC</td><td class='mono'>8865</td><td class='mono'>15</td><td class='mono'>8879</td><td class='mono'>2</td><td>desembEquiva1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBDSC2</td><td>CHARACTER</td><td class='mono'>8880</td><td class='mono'>60</td><td class='mono'>8939</td><td class='mono'></td><td>desembDescri2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBACC2</td><td>NUMERIC</td><td class='mono'>8940</td><td class='mono'>12</td><td class='mono'>8951</td><td class='mono'></td><td>desembCuenta2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBAMT2</td><td>NUMERIC</td><td class='mono'>8952</td><td class='mono'>15</td><td class='mono'>8966</td><td class='mono'>2</td><td>desembvalor2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBEQV2</td><td>NUMERIC</td><td class='mono'>8967</td><td class='mono'>15</td><td class='mono'>8981</td><td class='mono'>2</td><td>desembEquiva2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBDSC3</td><td>CHARACTER</td><td class='mono'>8982</td><td class='mono'>60</td><td class='mono'>9041</td><td class='mono'></td><td>desembDescri3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBACC3</td><td>NUMERIC</td><td class='mono'>9042</td><td class='mono'>12</td><td class='mono'>9053</td><td class='mono'></td><td>desembCuenta3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBAMT3</td><td>NUMERIC</td><td class='mono'>9054</td><td class='mono'>15</td><td class='mono'>9068</td><td class='mono'>2</td><td>desembvalor3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBEQV3</td><td>NUMERIC</td><td class='mono'>9069</td><td class='mono'>15</td><td class='mono'>9083</td><td class='mono'>2</td><td>desembEquiva3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBDSC4</td><td>CHARACTER</td><td class='mono'>9084</td><td class='mono'>60</td><td class='mono'>9143</td><td class='mono'></td><td>desembDescri4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBACC4</td><td>NUMERIC</td><td class='mono'>9144</td><td class='mono'>12</td><td class='mono'>9155</td><td class='mono'></td><td>desembCuenta4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBAMT4</td><td>NUMERIC</td><td class='mono'>9156</td><td class='mono'>15</td><td class='mono'>9170</td><td class='mono'>2</td><td>desembvalor4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBEQV4</td><td>NUMERIC</td><td class='mono'>9171</td><td class='mono'>15</td><td class='mono'>9185</td><td class='mono'>2</td><td>desembEquiva4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBDSC5</td><td>CHARACTER</td><td class='mono'>9186</td><td class='mono'>60</td><td class='mono'>9245</td><td class='mono'></td><td>desembDescri5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBACC5</td><td>NUMERIC</td><td class='mono'>9246</td><td class='mono'>12</td><td class='mono'>9257</td><td class='mono'></td><td>desembCuenta5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBAMT5</td><td>NUMERIC</td><td class='mono'>9258</td><td class='mono'>15</td><td class='mono'>9272</td><td class='mono'>2</td><td>desembvalor5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DBEQV5</td><td>NUMERIC</td><td class='mono'>9273</td><td class='mono'>15</td><td class='mono'>9287</td><td class='mono'>2</td><td>desembEquiva5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80FECPRO</td><td>CHARACTER</td><td class='mono'>9288</td><td class='mono'>25</td><td class='mono'>9312</td><td class='mono'></td><td>fechaProceso</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEARRP</td><td>CHARACTER</td><td class='mono'>9313</td><td class='mono'>3</td><td class='mono'>9315</td><td class='mono'></td><td>cicloRevTasa</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEARRM</td><td>NUMERIC</td><td class='mono'>9316</td><td class='mono'>2</td><td class='mono'>9317</td><td class='mono'></td><td>fechaRevTasaMM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEARRD</td><td>NUMERIC</td><td class='mono'>9318</td><td class='mono'>2</td><td class='mono'>9319</td><td class='mono'></td><td>fechaRevTasaDD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DEARRY</td><td>NUMERIC</td><td class='mono'>9320</td><td class='mono'>4</td><td class='mono'>9323</td><td class='mono'></td><td>fechaRevTasaYY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80NEXRRP</td><td>CHARACTER</td><td class='mono'>9324</td><td class='mono'>25</td><td class='mono'>9348</td><td class='mono'></td><td>fechaRevTsaaSTR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80FECUPI</td><td>CHARACTER</td><td class='mono'>9349</td><td class='mono'>25</td><td class='mono'>9373</td><td class='mono'></td><td>FechaUPagoInteres</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80INTMOR</td><td>NUMERIC</td><td class='mono'>9374</td><td class='mono'>15</td><td class='mono'>9388</td><td class='mono'>2</td><td>InteresMoroso</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80INTMORE</td><td>NUMERIC</td><td class='mono'>9389</td><td class='mono'>15</td><td class='mono'>9403</td><td class='mono'>2</td><td>InteresMorosoE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80INTGAN</td><td>NUMERIC</td><td class='mono'>9404</td><td class='mono'>15</td><td class='mono'>9418</td><td class='mono'>2</td><td>InteresGanado</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80INTGANE</td><td>NUMERIC</td><td class='mono'>9419</td><td class='mono'>15</td><td class='mono'>9433</td><td class='mono'>2</td><td>InteresGanadoE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80COMIPR</td><td>NUMERIC</td><td class='mono'>9434</td><td class='mono'>15</td><td class='mono'>9448</td><td class='mono'>2</td><td>ComisionPrepago</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80COMIPRE</td><td>NUMERIC</td><td class='mono'>9449</td><td class='mono'>15</td><td class='mono'>9463</td><td class='mono'>2</td><td>ComisionPrepagoE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80GASCOB</td><td>NUMERIC</td><td class='mono'>9464</td><td class='mono'>15</td><td class='mono'>9478</td><td class='mono'>2</td><td>GastosDeCobranza</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80GASCOBE</td><td>NUMERIC</td><td class='mono'>9479</td><td class='mono'>15</td><td class='mono'>9493</td><td class='mono'>2</td><td>GastosDeCobranzaE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGCAP</td><td>NUMERIC</td><td class='mono'>9494</td><td class='mono'>15</td><td class='mono'>9508</td><td class='mono'>2</td><td>PagoCapital</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGCAPE</td><td>NUMERIC</td><td class='mono'>9509</td><td class='mono'>15</td><td class='mono'>9523</td><td class='mono'>2</td><td>PagoCapitalE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PREPRI</td><td>NUMERIC</td><td class='mono'>9524</td><td class='mono'>15</td><td class='mono'>9538</td><td class='mono'>2</td><td>PrepagoPrincipal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PREPRIE</td><td>NUMERIC</td><td class='mono'>9539</td><td class='mono'>15</td><td class='mono'>9553</td><td class='mono'>2</td><td>PrepagoPrincipalE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MTOCAN</td><td>NUMERIC</td><td class='mono'>9554</td><td class='mono'>15</td><td class='mono'>9568</td><td class='mono'>2</td><td>MontoCancelado</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80MTOCANE</td><td>NUMERIC</td><td class='mono'>9569</td><td class='mono'>15</td><td class='mono'>9583</td><td class='mono'>2</td><td>MontoCanceladoE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80SDONUEE</td><td>NUMERIC</td><td class='mono'>9584</td><td class='mono'>15</td><td class='mono'>9598</td><td class='mono'>2</td><td>SaldoNuevoE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DLPPNU</td><td>NUMERIC</td><td class='mono'>9599</td><td class='mono'>5</td><td class='mono'>9603</td><td class='mono'></td><td>NumeroProxCuota</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGPRI</td><td>NUMERIC</td><td class='mono'>9604</td><td class='mono'>15</td><td class='mono'>9618</td><td class='mono'>2</td><td>Principal</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGPRIE</td><td>NUMERIC</td><td class='mono'>9619</td><td class='mono'>15</td><td class='mono'>9633</td><td class='mono'>2</td><td>PrincipalE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGINT</td><td>NUMERIC</td><td class='mono'>9634</td><td class='mono'>15</td><td class='mono'>9648</td><td class='mono'>2</td><td>Interes</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGINTE</td><td>NUMERIC</td><td class='mono'>9649</td><td class='mono'>15</td><td class='mono'>9663</td><td class='mono'>2</td><td>InteresE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGMOR</td><td>NUMERIC</td><td class='mono'>9664</td><td class='mono'>15</td><td class='mono'>9678</td><td class='mono'>2</td><td>Mora</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGMORE</td><td>NUMERIC</td><td class='mono'>9679</td><td class='mono'>15</td><td class='mono'>9693</td><td class='mono'>2</td><td>MoraE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGOTH</td><td>NUMERIC</td><td class='mono'>9694</td><td class='mono'>15</td><td class='mono'>9708</td><td class='mono'>2</td><td>Feci</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGOTHE</td><td>NUMERIC</td><td class='mono'>9709</td><td class='mono'>15</td><td class='mono'>9723</td><td class='mono'>2</td><td>FeciE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGIMP</td><td>NUMERIC</td><td class='mono'>9724</td><td class='mono'>15</td><td class='mono'>9738</td><td class='mono'>2</td><td>Impuesto</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGIMPE</td><td>NUMERIC</td><td class='mono'>9739</td><td class='mono'>15</td><td class='mono'>9753</td><td class='mono'>2</td><td>ImpuestoE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGCOM</td><td>NUMERIC</td><td class='mono'>9754</td><td class='mono'>15</td><td class='mono'>9768</td><td class='mono'>2</td><td>Comisiones</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGCOME</td><td>NUMERIC</td><td class='mono'>9769</td><td class='mono'>15</td><td class='mono'>9783</td><td class='mono'>2</td><td>ComisionesE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGDED</td><td>NUMERIC</td><td class='mono'>9784</td><td class='mono'>15</td><td class='mono'>9798</td><td class='mono'>2</td><td>Deducciones</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGDEDE</td><td>NUMERIC</td><td class='mono'>9799</td><td class='mono'>15</td><td class='mono'>9813</td><td class='mono'>2</td><td>DeduccionesE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGIVA</td><td>NUMERIC</td><td class='mono'>9814</td><td class='mono'>15</td><td class='mono'>9828</td><td class='mono'>2</td><td>Iva</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGIVAE</td><td>NUMERIC</td><td class='mono'>9829</td><td class='mono'>15</td><td class='mono'>9843</td><td class='mono'>2</td><td>IvaE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGCTA</td><td>NUMERIC</td><td class='mono'>9844</td><td class='mono'>15</td><td class='mono'>9858</td><td class='mono'>2</td><td>CtaCte</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PAGCTAE</td><td>NUMERIC</td><td class='mono'>9859</td><td class='mono'>15</td><td class='mono'>9873</td><td class='mono'>2</td><td>CtaCteE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80FECECAP</td><td>CHARACTER</td><td class='mono'>9874</td><td class='mono'>25</td><td class='mono'>9898</td><td class='mono'></td><td>FechaExpCapital</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DIASIPA</td><td>NUMERIC</td><td class='mono'>9899</td><td class='mono'>5</td><td class='mono'>9903</td><td class='mono'></td><td>DiasIntPactado</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80DIASIMO</td><td>NUMERIC</td><td class='mono'>9904</td><td class='mono'>5</td><td class='mono'>9908</td><td class='mono'></td><td>DiasIntMora</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80TASAMOR</td><td>NUMERIC</td><td class='mono'>9909</td><td class='mono'>9</td><td class='mono'>9917</td><td class='mono'>2</td><td>TasaMora</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PACAMO</td><td>NUMERIC</td><td class='mono'>9918</td><td class='mono'>15</td><td class='mono'>9932</td><td class='mono'>2</td><td>PagoCargoMora</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PACAMOE</td><td>NUMERIC</td><td class='mono'>9933</td><td class='mono'>15</td><td class='mono'>9947</td><td class='mono'>2</td><td>PagoCargoMoraE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PADERE</td><td>NUMERIC</td><td class='mono'>9948</td><td class='mono'>15</td><td class='mono'>9962</td><td class='mono'>2</td><td>PagoDeReajuste</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PADEREE</td><td>NUMERIC</td><td class='mono'>9963</td><td class='mono'>15</td><td class='mono'>9977</td><td class='mono'>2</td><td>PagoDeReajusteE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PREREA</td><td>NUMERIC</td><td class='mono'>9978</td><td class='mono'>15</td><td class='mono'>9992</td><td class='mono'>2</td><td>PrepagoReajuste</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>E80PREREAE</td><td>NUMERIC</td><td class='mono'>9993</td><td class='mono'>15</td><td class='mono'>10007</td><td class='mono'>2</td><td>PrepagoReajusteE</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[H80USERID] PARDATAPRO
+[H80PROGRM] EFRM000
+[H80TIMSYS] 181121160949
+[H80FLGWK1] P
+[E80DEAACC] 2305291
+[E80DEACUN] 683349
+[E80DEAPRO] CE05
+[E80DEATYP] CCOM
+[E80DEAACD] 10
+[E80DEABNK] 01
+[E80DEABRN] 1
+[E80DEACCY] CLP
+[E80DEAGLN] 1302101100100000
+[E80DSCPRO] CREDITO COMERCIAL CUOTAS IRREGULARE
+[E80DEAODM] 11
+[E80DEAODD] 29
+[E80DEAODY] 2017
+[E80OPNDTE] 29/11/2017
+[E80DEATRM] 123
+[E80DEATRC] DIAS
+[E80DEAMDM] 2
+[E80DEAMDD] 25
+[E80DEAMDY] 2019
+[E80MATDTE] 25/2/2019
+[E80DEARTE] 0.5
+[E80RATE] 0.5
+[E80DEASPR] 0.50121
+[E80FLTRTE] 0
+[E80DEAOAM] 80177370
+[E80LETOAM] OCHENTA  MILLONES CIENTO SETENTA Y SIETE MIL TRESCIENTOS SETENTA PESOS CON 00/100
+[E80DEABAS] 30
+[E80DEAICT] S
+[E80STATUS] Activo
+[E80DEAIPD] MAT
+[E80DEARDM] 0
+[E80DEARDD] 0
+[E80DEARDY] 0
+[E80PPIDTE] 25/2/2019
+[E80DEAPPD] MAT
+[E80DEAHEM] 0
+[E80DEAHED] 0
+[E80DEAHEY] 0
+[E80PPPDTE] 25/2/2019
+[E80DEAROA] 0
+[E80DEAIIP] N
+[E80DEAPEI] 1.62
+[E80DEAOCR] 0
+[E80DEAOFA] 0
+[E80DEARPR] 0
+[E80DEARAC] 0
+[E80DEAREA] 0
+[E80DEAXRL] 0
+[E80DEAMEP] 80177370
+[E80DEAMEI] 0
+[E80DEAMEM] 0
+[E80TOTCRN] 0
+[E80TOTORN] 0
+[E80TOTDED] 0
+[E80TOTCOM] 27427
+[E80TOTIMP] 59331
+[E80TOTIVA] 5211
+[E80TOTSGR] 0
+[E80TOTOTH] 0
+[E80MONNET] 0
+[E80MEMBAL] 80177370
+[E80SALLET] OCHENTA  MILLONES CIENTO SETENTA Y SIETE MIL TRESCIENTOS SETENTA PESOS CON 00/100
+[E80DEAPDU] 0
+[E80DEAIDU] -173000
+[E80DEALCM] 10
+[E80DEALCD] 24
+[E80DEALCY] 2018
+[E80LSTCLC] 24/10/2018
+[E80MATINT] 1817354
+[E80DLYINT] 13363
+[E80YESINT] 173718
+[E80DEAPRI] 80177370
+[E80CUSLGT] 1
+[E80CUSNA1] AYMARA SA
+[E80CUSNA2] AVENIDA LAS CONDES 9792
+[E80NMECOM] LAS CONDES
+[E80CUSCTY] SANTIAGO
+[E80CUSIDN] 995319705
+[E80CUSHPN] 1
+[E80CUSPHN] 2431044
+[E80CUSPH1] 0
+[E80CUSIAD] CONTACTO@BANCOINTERNACIONAL.CL
+[E80EMPFIM] 0
+[E80EMPFID] 0
+[E80EMPFIY] 0
+[E80INGDTE] 0/0/0
+[E80CUSAMT] 0
+[E80CUSCAI] 0
+[E80CUSAM4] 0
+[E80CUSTIM] 0
+[E80CUSFNA] AYMARA SA
+[E80CUSBDM] 8
+[E80CUSBDD] 19
+[E80CUSBDY] 2003
+[E80BIRDTE] 19/8/2003
+[E80AV1NME] HERNAN LEOPOLDO LAZCANO HURTADO
+[E80AV1RUT] 69727700
+[E80AV1RTB] 0
+[E80AV1RTL] 0
+[E80AV1BDM] 5
+[E80AV1BDD] 19
+[E80AV1BDY] 1961
+[E80AV1BDS] 19/5/1961
+[E80AV1HPN] 223564143
+[E80AV1PHN] 0
+[E80AV1CYG] MARIA PAZ MATURANA CAMPOS
+[E80AV1CYR] 72057791
+[E80AV1DIR] CAMINO LAS NIEVES , 1531
+[E80AV1COM] LAS CONDES
+[E80AV2RTB] 0
+[E80AV2RTL] 0
+[E80AV2BDM] 0
+[E80AV2BDD] 0
+[E80AV2BDY] 0
+[E80AV2HPN] 0
+[E80AV2PHN] 0
+[E80LNSNCU] 0
+[E80LNSPPM] 0
+[E80LNSPPD] 0
+[E80LNSPPY] 0
+[E80LNSDIA] 0
+[E80INSNA1] BANCO INTERNACIONAL
+[E80INSNA2] MONEDA 818
+[E80INSIDE] 12345678
+[E80INSPHN] 29897000
+[E80BRNNA1] CASA MATRIZ
+[E80BRNNA2] MONEDA 818
+[E80BRNNA3] SANTIAGO
+[E80BRNPHN] 0
+[E80RUNDTE] 29/10/2018
+[E80LGNA01] AYMARA SA
+[E80MLANA1] AVENIDA LAS CONDES OFICINA 901, 9792
+[E80MLANA2] LAS CONDES,
+[E80MLANA3] CHILE
+[E80MLACTR] CHILE
+[E80NOMEJE] NATALIA VIAL DIAZ
+[E80RUTEJE] 0166068800
+[E80TELEJE] 229897023
+[E80MONNPA] 0
+[E80NUCUOT] 0
+[E80NUMONT] 0
+[E80NUVENC] 0
+[E80NUPVND] 0
+[E80NUPVNM] 0
+[E80NUPVNA] 0
+[E80NUFPVE] 0/0/0
+[E80RESFED] 0
+[E80RESFEM] 0
+[E80RESFEA] 0
+[E80SEGDES] 0
+[E80SEGINV] 0
+[E80SEGEGR] 0
+[E80SEGHOP] 0
+[E80SEGCES] 0
+[E80SEGASL] 0
+[E80SEMDES] 0
+[E80SEMINV] 0
+[E80SEMEGR] 0
+[E80SEMHOP] 0
+[E80SEMCES] 0
+[E80SEMASL] 0
+[E80SEMTOT] 0
+[E80SGDESG] 0
+[E80SGIN23] 0
+[E80SGENGR] 0
+[E80SGHOSP] 0
+[E80SGCESA] 0
+[E80SGTOTS] 0
+[E60PADESG] 0
+[E80VALCUO] 81821006
+[E80COSCRE] 0
+[E80FINPRO] 0
+[E80MONOTO] 0
+[E80SEGTOT] 0
+[E80LIQPAG] 0
+[E80MONEFE] 0
+[E80MONDOC] 0
+[E80GASNOT] 2250
+[E80SALORE] 0
+[E80COMPRE] 0
+[E80SUBPRE] 0
+[E80TOTPRE] 0
+[E80ULTCUO] 0
+[E80TASCAE] 0
+[E80GARAYN] NO
+[E80CUOFRN] 0
+[E80VENCOT] 5/11/2018
+[E80SG1PLN] 0
+[E80SG1VAL] 0
+[E80SG1VPE] 0
+[E80SG2PLN] 0
+[E80SG2VAL] 0
+[E80SG2VPE] 0
+[E80SG3PLN] 0
+[E80SG3VAL] 0
+[E80SG3VPE] 0
+[E80SG4PLN] 0
+[E80SG4VAL] 0
+[E80SG4VPE] 0
+[E80SG5PLN] 0
+[E80SG5VAL] 0
+[E80SG5VPE] 0
+[E80DEAEXR] 1
+[E80MONEQU] 80177370
+[E80DSCCCY] PESO CHILENO
+[E80SYSTIM] 160312
+[E80CUOPRN] 80177370
+[E80CUOINT] 1643636
+[E80CUOOTH] 0
+[E80CUOTOT] 81821006
+[E80CUODYS] 446
+[E80DBACC1] 67042323913
+[E80DBAMT1] 173000
+[E80DBEQV1] 0
+[E80DBACC2] 0
+[E80DBAMT2] 0
+[E80DBEQV2] 0
+[E80DBACC3] 0
+[E80DBAMT3] 0
+[E80DBEQV3] 0
+[E80DBACC4] 0
+[E80DBAMT4] 0
+[E80DBEQV4] 0
+[E80DBACC5] 0
+[E80DBAMT5] 0
+[E80DBEQV5] 0
+[E80FECPRO] 29/10/2018
+[E80DEARRM] 0
+[E80DEARRD] 0
+[E80DEARRY] 0
+[E80NEXRRP] 0/0/0
+[E80FECUPI] 29/10/2018
+[E80INTMOR] 0
+[E80INTMORE] 0
+[E80INTGAN] 173000
+[E80INTGANE] 173000
+[E80COMIPR] 0
+[E80COMIPRE] 0
+[E80GASCOB] 0
+[E80GASCOBE] 0
+[E80PAGCAP] 0
+[E80PAGCAPE] 0
+[E80PREPRI] 0
+[E80PREPRIE] 0
+[E80MTOCAN] 267219
+[E80MTOCANE] 267219
+[E80SDONUEE] 80177370
+[E80DLPPNU] 2
+[E80PAGPRI] 0
+[E80PAGPRIE] 0
+[E80PAGINT] 173000
+[E80PAGINTE] 173000
+[E80PAGMOR] 0
+[E80PAGMORE] 0
+[E80PAGOTH] 0
+[E80PAGOTHE] 0
+[E80PAGIMP] 59331
+[E80PAGIMPE] 59331
+[E80PAGCOM] 27427
+[E80PAGCOME] 27427
+[E80PAGDED] 2250
+[E80PAGDEDE] 2250
+[E80PAGIVA] 5211
+[E80PAGIVAE] 5211
+[E80PAGCTA] 0
+[E80PAGCTAE] 0
+[E80FECECAP] 25/2/2019
+[E80DIASIPA] 123
+[E80DIASIMO] 0
+[E80TASAMOR] 1.62
+[E80PACAMO] 0
+[E80PACAMOE] 0
+[E80PADERE] 0
+[E80PADEREE] 0
+[E80PREREA] 0
+[E80PREREAE] 0</div></body></html>

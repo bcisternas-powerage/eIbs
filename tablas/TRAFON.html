@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>TRAFON</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>TRAFON</h1>
+<div class='meta'><b>Descripción:</b> Maestro de Cuentas de Detalle(Cta.Cte, etc.)<br><b>N.º de campos:</b> 52</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>TRABNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>TRAUSR</td><td>CHARACTER</td><td class='mono'>3</td><td class='mono'>10</td><td class='mono'>12</td><td class='mono'></td><td>USER I D</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>TRARFN</td><td>NUMERIC</td><td class='mono'>13</td><td class='mono'>12</td><td class='mono'>24</td><td class='mono'></td><td>OPER. NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACCY</td><td>CHARACTER</td><td class='mono'>25</td><td class='mono'>3</td><td class='mono'>27</td><td class='mono'></td><td>CCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFPD</td><td>NUMERIC</td><td class='mono'>28</td><td class='mono'>2</td><td class='mono'>29</td><td class='mono'></td><td>FECHCONT DIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFPM</td><td>NUMERIC</td><td class='mono'>30</td><td class='mono'>2</td><td class='mono'>31</td><td class='mono'></td><td>FECHCONT MES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFPY</td><td>NUMERIC</td><td class='mono'>32</td><td class='mono'>4</td><td class='mono'>35</td><td class='mono'></td><td>FECHCONT A¥O</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFPH</td><td>NUMERIC</td><td class='mono'>36</td><td class='mono'>6</td><td class='mono'>41</td><td class='mono'></td><td>FECHCONT HORA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACAN</td><td>CHARACTER</td><td class='mono'>42</td><td class='mono'>4</td><td class='mono'>45</td><td class='mono'></td><td>CANAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAREF</td><td>NUMERIC</td><td class='mono'>46</td><td class='mono'>12</td><td class='mono'>57</td><td class='mono'></td><td>REFERENCIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRATYP</td><td>CHARACTER</td><td class='mono'>58</td><td class='mono'>3</td><td class='mono'>60</td><td class='mono'></td><td>TIPO TRANSF</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAMOD</td><td>CHARACTER</td><td class='mono'>61</td><td class='mono'>1</td><td class='mono'>61</td><td class='mono'></td><td>MODO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACOP</td><td>CHARACTER</td><td class='mono'>62</td><td class='mono'>8</td><td class='mono'>69</td><td class='mono'></td><td>CODIGO PAGO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRASTS</td><td>CHARACTER</td><td class='mono'>70</td><td class='mono'>1</td><td class='mono'>70</td><td class='mono'></td><td>STATUS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAST2</td><td>CHARACTER</td><td class='mono'>71</td><td class='mono'>1</td><td class='mono'>71</td><td class='mono'></td><td>STATUS2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRADBC</td><td>CHARACTER</td><td class='mono'>72</td><td class='mono'>3</td><td class='mono'>74</td><td class='mono'></td><td>DEBIT BANCO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRADID</td><td>CHARACTER</td><td class='mono'>75</td><td class='mono'>15</td><td class='mono'>89</td><td class='mono'></td><td>DEBIT RUT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAAID</td><td>CHARACTER</td><td class='mono'>90</td><td class='mono'>15</td><td class='mono'>104</td><td class='mono'></td><td>RUT APODERADO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRADNA</td><td>CHARACTER</td><td class='mono'>105</td><td class='mono'>30</td><td class='mono'>134</td><td class='mono'></td><td>DEBIT NAME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRADAC</td><td>NUMERIC</td><td class='mono'>135</td><td class='mono'>19</td><td class='mono'>153</td><td class='mono'></td><td>DEBIT CTA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRADAY</td><td>CHARACTER</td><td class='mono'>154</td><td class='mono'>4</td><td class='mono'>157</td><td class='mono'></td><td>DEBIT TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACBC</td><td>CHARACTER</td><td class='mono'>158</td><td class='mono'>3</td><td class='mono'>160</td><td class='mono'></td><td>CREDIT BANCO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACID</td><td>CHARACTER</td><td class='mono'>161</td><td class='mono'>15</td><td class='mono'>175</td><td class='mono'></td><td>CREDIT RUT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACNA</td><td>CHARACTER</td><td class='mono'>176</td><td class='mono'>30</td><td class='mono'>205</td><td class='mono'></td><td>CREDIT NAME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACAC</td><td>NUMERIC</td><td class='mono'>206</td><td class='mono'>19</td><td class='mono'>224</td><td class='mono'></td><td>CREDIT CTA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACAY</td><td>CHARACTER</td><td class='mono'>225</td><td class='mono'>4</td><td class='mono'>228</td><td class='mono'></td><td>CREDIT TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACCA</td><td>CHARACTER</td><td class='mono'>229</td><td class='mono'>10</td><td class='mono'>238</td><td class='mono'></td><td>CODIGO CCA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACEN</td><td>CHARACTER</td><td class='mono'>239</td><td class='mono'>1</td><td class='mono'>239</td><td class='mono'></td><td>CODIGO ENVIO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAMTO</td><td>NUMERIC</td><td class='mono'>240</td><td class='mono'>15</td><td class='mono'>254</td><td class='mono'>2</td><td>MONTO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRANCI</td><td>NUMERIC</td><td class='mono'>255</td><td class='mono'>12</td><td class='mono'>266</td><td class='mono'></td><td>NROCTA INTERNO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRATCO</td><td>CHARACTER</td><td class='mono'>267</td><td class='mono'>4</td><td class='mono'>270</td><td class='mono'></td><td>TYPCTA INTERNO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFCD</td><td>NUMERIC</td><td class='mono'>271</td><td class='mono'>2</td><td class='mono'>272</td><td class='mono'></td><td>FECHPROC DIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFCM</td><td>NUMERIC</td><td class='mono'>273</td><td class='mono'>2</td><td class='mono'>274</td><td class='mono'></td><td>FECHPROC MES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFCY</td><td>NUMERIC</td><td class='mono'>275</td><td class='mono'>4</td><td class='mono'>278</td><td class='mono'></td><td>FECHPROC A¥O</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFED</td><td>NUMERIC</td><td class='mono'>279</td><td class='mono'>2</td><td class='mono'>280</td><td class='mono'></td><td>FECHENVIO DIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFEM</td><td>NUMERIC</td><td class='mono'>281</td><td class='mono'>2</td><td class='mono'>282</td><td class='mono'></td><td>FECHENVIO MES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFEY</td><td>NUMERIC</td><td class='mono'>283</td><td class='mono'>4</td><td class='mono'>286</td><td class='mono'></td><td>FECHENVIO A¥O</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFEH</td><td>NUMERIC</td><td class='mono'>287</td><td class='mono'>6</td><td class='mono'>292</td><td class='mono'></td><td>FECHENVIO HORA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFRD</td><td>NUMERIC</td><td class='mono'>293</td><td class='mono'>2</td><td class='mono'>294</td><td class='mono'></td><td>FECHRECEP DIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFRM</td><td>NUMERIC</td><td class='mono'>295</td><td class='mono'>2</td><td class='mono'>296</td><td class='mono'></td><td>FECHRECEP MES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFRY</td><td>NUMERIC</td><td class='mono'>297</td><td class='mono'>4</td><td class='mono'>300</td><td class='mono'></td><td>FECHRECEP A¥O</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAFRH</td><td>NUMERIC</td><td class='mono'>301</td><td class='mono'>6</td><td class='mono'>306</td><td class='mono'></td><td>FECHRECEP HORA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACOR</td><td>CHARACTER</td><td class='mono'>307</td><td class='mono'>3</td><td class='mono'>309</td><td class='mono'></td><td>CODIGO RECHAZO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRAPFL</td><td>CHARACTER</td><td class='mono'>310</td><td class='mono'>1</td><td class='mono'>310</td><td class='mono'></td><td>PROCESS FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRARE2</td><td>NUMERIC</td><td class='mono'>311</td><td class='mono'>8</td><td class='mono'>318</td><td class='mono'></td><td>REFERENCIA 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRARET</td><td>CHARACTER</td><td class='mono'>319</td><td class='mono'>2</td><td class='mono'>320</td><td class='mono'></td><td>USO RETENCION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRADNR</td><td>CHARACTER</td><td class='mono'>321</td><td class='mono'>30</td><td class='mono'>350</td><td class='mono'></td><td>DEB NARRATIVE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACNR</td><td>CHARACTER</td><td class='mono'>351</td><td class='mono'>30</td><td class='mono'>380</td><td class='mono'></td><td>CRE NARRATIVE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRADIP</td><td>NUMERIC</td><td class='mono'>381</td><td class='mono'>12</td><td class='mono'>392</td><td class='mono'></td><td>DEB IP</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRACUO</td><td>NUMERIC</td><td class='mono'>393</td><td class='mono'>4</td><td class='mono'>396</td><td class='mono'></td><td>N° CUOTAS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRARTE</td><td>NUMERIC</td><td class='mono'>397</td><td class='mono'>9</td><td class='mono'>405</td><td class='mono'>6</td><td>TASA INFORMADA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRADIF</td><td>NUMERIC</td><td class='mono'>406</td><td class='mono'>4</td><td class='mono'>409</td><td class='mono'></td><td>MESES GRACIA</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[TRATYP] TRATYP = &#x27;006&#x27; THEN &#x27;RECIBIDAS&#x27;
+TRATYP = &#x27;004&#x27; THEN &#x27;PAGO ELECTRONICO&#x27; 
+TRATYP = &#x27;003&#x27; THEN &#x27;ENVIADAS&#x27; 
+TRATYP = &#x27;002&#x27; THEN &#x27;A TERCEROS DEL BANCO&#x27; 
+TRATYP = &#x27;001&#x27; THEN &#x27;ENTRE SUS PRODUCTOS&#x27;
+[TRASTS] T=Directa E=Reversa
+[TRAFEH] Y | 5 | 2 | 2017 | 0 | 5 | 3 | 2017 | 0 | 0 | 0 | 0 | 0 | G | 0 | 0 | 10 | 26 | 2017 | 0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | 0 | 267656 | 0 | CCTE | 10 | 26 | 2016 | 0 | -992381 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 992381 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 1 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 267656 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0</div></body></html>

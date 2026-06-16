@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>CIFXF</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>CIFXF</h1>
+<div class='meta'><b>Descripción:</b> Consolidado de operaciones x cliente<br><b>N.º de campos:</b> 23</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>CIFSHN</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>25</td><td class='mono'>25</td><td class='mono'></td><td>SHORT NAME</td><td>AGENCIA DEL PACIFICO SOC</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>CIFCUN</td><td>DECIMAL</td><td class='mono'>26</td><td class='mono'>9</td><td class='mono'>34</td><td class='mono'></td><td>CUST NUMBER</td><td>297184</td></tr>
+<tr><td class='mono'>3</td><td class='mono'>CIFATY</td><td>CHARACTER</td><td class='mono'>35</td><td class='mono'>4</td><td class='mono'>38</td><td class='mono'></td><td>ACCOUNT TYPE</td><td>CCTE</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFPRD</td><td>CHARACTER</td><td class='mono'>39</td><td class='mono'>4</td><td class='mono'>42</td><td class='mono'></td><td>PRODUCT CODE</td><td>CC01</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFCCY</td><td>CHARACTER</td><td class='mono'>43</td><td class='mono'>3</td><td class='mono'>45</td><td class='mono'></td><td>CURRENCY</td><td>CLP</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFBNK</td><td>CHARACTER</td><td class='mono'>46</td><td class='mono'>2</td><td class='mono'>47</td><td class='mono'></td><td>BANK NUMBER</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFBRN</td><td>DECIMAL</td><td class='mono'>48</td><td class='mono'>4</td><td class='mono'>51</td><td class='mono'></td><td>BRANCH NUMBER</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFGLN</td><td>DECIMAL</td><td class='mono'>52</td><td class='mono'>16</td><td class='mono'>67</td><td class='mono'></td><td>G/L NUMBER</td><td>2100109100100000</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFACC</td><td>DECIMAL</td><td class='mono'>68</td><td class='mono'>12</td><td class='mono'>79</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td>1000148100</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFACS</td><td>CHARACTER</td><td class='mono'>80</td><td class='mono'>1</td><td class='mono'>80</td><td class='mono'></td><td>ACT STAT</td><td>C</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFOCU</td><td>DECIMAL</td><td class='mono'>81</td><td class='mono'>9</td><td class='mono'>89</td><td class='mono'></td><td>ORIG CUSTÑ</td><td>297184</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFONM</td><td>CHARACTER</td><td class='mono'>90</td><td class='mono'>45</td><td class='mono'>134</td><td class='mono'></td><td>ORIG/CUST NAME</td><td>AGENCIA DEL PACIFICO SOC COML LTDA</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFCAT</td><td>CHARACTER</td><td class='mono'>135</td><td class='mono'>1</td><td class='mono'>135</td><td class='mono'></td><td>TYPE G/R</td><td>R</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFTYP</td><td>CHARACTER</td><td class='mono'>136</td><td class='mono'>1</td><td class='mono'>136</td><td class='mono'></td><td>TYPE</td><td>2</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFCLS</td><td>NUMERIC</td><td class='mono'>137</td><td class='mono'>2</td><td class='mono'>138</td><td class='mono'></td><td>CLASS</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFILV</td><td>NUMERIC</td><td class='mono'>139</td><td class='mono'>1</td><td class='mono'>139</td><td class='mono'></td><td>INQUIRY LEVEL</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFACD</td><td>CHARACTER</td><td class='mono'>140</td><td class='mono'>2</td><td class='mono'>141</td><td class='mono'></td><td>APPLICATION CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFNPR</td><td>DECIMAL</td><td class='mono'>142</td><td class='mono'>12</td><td class='mono'>153</td><td class='mono'></td><td>CREDIT REQUEST NUMBER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFOFC</td><td>CHARACTER</td><td class='mono'>154</td><td class='mono'>4</td><td class='mono'>157</td><td class='mono'></td><td>OFFICER</td><td>285</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFCCN</td><td>DECIMAL</td><td class='mono'>158</td><td class='mono'>8</td><td class='mono'>165</td><td class='mono'></td><td>COST CENTER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFCNV</td><td>CHARACTER</td><td class='mono'>166</td><td class='mono'>4</td><td class='mono'>169</td><td class='mono'></td><td>AGREEMENT CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFCTR</td><td>CHARACTER</td><td class='mono'>170</td><td class='mono'>4</td><td class='mono'>173</td><td class='mono'></td><td>COUNTRY CODE</td><td>CL</td></tr>
+<tr><td class='mono'></td><td class='mono'>CIFFLG</td><td>CHARACTER</td><td class='mono'>174</td><td class='mono'>1</td><td class='mono'>174</td><td class='mono'></td><td>FLAG</td><td></td></tr>
+</tbody></table></body></html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>LNECR</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>LNECR</h1>
+<div class='meta'><b>Archivo / Código:</b> LCECR<br><b>Descripción:</b> Maestro de Cuentas de Detalle(Cta.Cte, etc.)<br><b>N.º de campos:</b> 116</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>LNEBNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK NUMBER</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>LNEBRN</td><td>DECIMAL</td><td class='mono'>3</td><td class='mono'>4</td><td class='mono'>6</td><td class='mono'></td><td>BRANCH NUMBER</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>LNECCY</td><td>CHARACTER</td><td class='mono'>7</td><td class='mono'>3</td><td class='mono'>9</td><td class='mono'></td><td>CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEGLN</td><td>DECIMAL</td><td class='mono'>10</td><td class='mono'>16</td><td class='mono'>25</td><td class='mono'></td><td>G/L NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECUN</td><td>DECIMAL</td><td class='mono'>26</td><td class='mono'>9</td><td class='mono'>34</td><td class='mono'></td><td>CUSTOMER NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNENUM</td><td>NUMERIC</td><td class='mono'>35</td><td class='mono'>4</td><td class='mono'>38</td><td class='mono'></td><td>LINE/COM NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEOPM</td><td>NUMERIC</td><td class='mono'>39</td><td class='mono'>2</td><td class='mono'>40</td><td class='mono'></td><td>OPENING DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEOPD</td><td>NUMERIC</td><td class='mono'>41</td><td class='mono'>2</td><td class='mono'>42</td><td class='mono'></td><td>OPENING DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEOPY</td><td>NUMERIC</td><td class='mono'>43</td><td class='mono'>4</td><td class='mono'>46</td><td class='mono'></td><td>OPENING DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEMTM</td><td>NUMERIC</td><td class='mono'>47</td><td class='mono'>2</td><td class='mono'>48</td><td class='mono'></td><td>MATURITY DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEMTD</td><td>NUMERIC</td><td class='mono'>49</td><td class='mono'>2</td><td class='mono'>50</td><td class='mono'></td><td>MATURITY DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEMTY</td><td>NUMERIC</td><td class='mono'>51</td><td class='mono'>4</td><td class='mono'>54</td><td class='mono'></td><td>MATURITY DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEBCD</td><td>CHARACTER</td><td class='mono'>55</td><td class='mono'>4</td><td class='mono'>58</td><td class='mono'></td><td>BUSINESS CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEICD</td><td>CHARACTER</td><td class='mono'>59</td><td class='mono'>4</td><td class='mono'>62</td><td class='mono'></td><td>INDUSTRY CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEOFI</td><td>CHARACTER</td><td class='mono'>63</td><td class='mono'>4</td><td class='mono'>66</td><td class='mono'></td><td>OFFICER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNESOF</td><td>CHARACTER</td><td class='mono'>67</td><td class='mono'>4</td><td class='mono'>70</td><td class='mono'></td><td>OFFICE REPREST</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEATY</td><td>CHARACTER</td><td class='mono'>71</td><td class='mono'>4</td><td class='mono'>74</td><td class='mono'></td><td>AUTHORIZATN TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEABY</td><td>CHARACTER</td><td class='mono'>75</td><td class='mono'>45</td><td class='mono'>119</td><td class='mono'></td><td>AUTHORIZED BY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEAUM</td><td>NUMERIC</td><td class='mono'>120</td><td class='mono'>2</td><td class='mono'>121</td><td class='mono'></td><td>AUTHORIZATN DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEAUD</td><td>NUMERIC</td><td class='mono'>122</td><td class='mono'>2</td><td class='mono'>123</td><td class='mono'></td><td>AUTHORIZATN DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEAUY</td><td>NUMERIC</td><td class='mono'>124</td><td class='mono'>4</td><td class='mono'>127</td><td class='mono'></td><td>AUTHORIZATN DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEFET</td><td>CHARACTER</td><td class='mono'>128</td><td class='mono'>2</td><td class='mono'>129</td><td class='mono'></td><td>FEE/TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEYBS</td><td>NUMERIC</td><td class='mono'>130</td><td class='mono'>3</td><td class='mono'>132</td><td class='mono'></td><td>YEARLY BASE (Ñ DAYS)</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEBSR</td><td>DECIMAL</td><td class='mono'>133</td><td class='mono'>9</td><td class='mono'>141</td><td class='mono'>6</td><td>BASE RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEPRD</td><td>CHARACTER</td><td class='mono'>142</td><td class='mono'>1</td><td class='mono'>142</td><td class='mono'></td><td>BASE PERIOD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECHM</td><td>NUMERIC</td><td class='mono'>143</td><td class='mono'>2</td><td class='mono'>144</td><td class='mono'></td><td>NEXT/CHARGE DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECHD</td><td>NUMERIC</td><td class='mono'>145</td><td class='mono'>2</td><td class='mono'>146</td><td class='mono'></td><td>NEXT/CHARGE DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECHY</td><td>NUMERIC</td><td class='mono'>147</td><td class='mono'>4</td><td class='mono'>150</td><td class='mono'></td><td>NEXT/CHARGE DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEDYS</td><td>DECIMAL</td><td class='mono'>151</td><td class='mono'>5</td><td class='mono'>155</td><td class='mono'></td><td>DAYS FOR AVEG CALCUL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECAT</td><td>CHARACTER</td><td class='mono'>156</td><td class='mono'>1</td><td class='mono'>156</td><td class='mono'></td><td>CATEGORY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECOU</td><td>CHARACTER</td><td class='mono'>157</td><td class='mono'>1</td><td class='mono'>157</td><td class='mono'></td><td>COMMITED UNCOMMITED</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECOL</td><td>CHARACTER</td><td class='mono'>158</td><td class='mono'>1</td><td class='mono'>158</td><td class='mono'></td><td>COLLATERAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECRR</td><td>CHARACTER</td><td class='mono'>159</td><td class='mono'>1</td><td class='mono'>159</td><td class='mono'></td><td>CREDIT RATING</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNETRM</td><td>CHARACTER</td><td class='mono'>160</td><td class='mono'>1</td><td class='mono'>160</td><td class='mono'></td><td>TERM INDICATOR L/S</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEGEO</td><td>CHARACTER</td><td class='mono'>161</td><td class='mono'>4</td><td class='mono'>164</td><td class='mono'></td><td>GEO RESIDENSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNERSK</td><td>CHARACTER</td><td class='mono'>165</td><td class='mono'>4</td><td class='mono'>168</td><td class='mono'></td><td>GEO RISK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNETYL</td><td>CHARACTER</td><td class='mono'>169</td><td class='mono'>4</td><td class='mono'>172</td><td class='mono'></td><td>TYPE OF LINE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECD1</td><td>CHARACTER</td><td class='mono'>173</td><td class='mono'>4</td><td class='mono'>176</td><td class='mono'></td><td>USER/CODE ONE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECD2</td><td>CHARACTER</td><td class='mono'>177</td><td class='mono'>4</td><td class='mono'>180</td><td class='mono'></td><td>USER/CODE TWO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECD3</td><td>CHARACTER</td><td class='mono'>181</td><td class='mono'>4</td><td class='mono'>184</td><td class='mono'></td><td>USER/CODE THREE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNERVM</td><td>NUMERIC</td><td class='mono'>185</td><td class='mono'>2</td><td class='mono'>186</td><td class='mono'></td><td>LAST REVSN DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNERVD</td><td>NUMERIC</td><td class='mono'>187</td><td class='mono'>2</td><td class='mono'>188</td><td class='mono'></td><td>LAST REVSN DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNERVY</td><td>NUMERIC</td><td class='mono'>189</td><td class='mono'>4</td><td class='mono'>192</td><td class='mono'></td><td>LAST REVSN DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEAMN</td><td>DECIMAL</td><td class='mono'>193</td><td class='mono'>15</td><td class='mono'>207</td><td class='mono'>2</td><td>APPROVED AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEREA</td><td>DECIMAL</td><td class='mono'>208</td><td class='mono'>15</td><td class='mono'>222</td><td class='mono'>2</td><td>REALLOCATION AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEREM</td><td>NUMERIC</td><td class='mono'>223</td><td class='mono'>2</td><td class='mono'>224</td><td class='mono'></td><td>REALLOCATION DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNERED</td><td>NUMERIC</td><td class='mono'>225</td><td class='mono'>2</td><td class='mono'>226</td><td class='mono'></td><td>REALLOCATION DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEREY</td><td>NUMERIC</td><td class='mono'>227</td><td class='mono'>4</td><td class='mono'>230</td><td class='mono'></td><td>REALLOCATION DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEAMU</td><td>DECIMAL</td><td class='mono'>231</td><td class='mono'>15</td><td class='mono'>245</td><td class='mono'>2</td><td>USED AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNENOF</td><td>NUMERIC</td><td class='mono'>246</td><td class='mono'>2</td><td class='mono'>247</td><td class='mono'></td><td>NO/OF OFFERING</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEOFA</td><td>DECIMAL</td><td class='mono'>248</td><td class='mono'>15</td><td class='mono'>262</td><td class='mono'>2</td><td>TODAYS/OFFRNG AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEAPF</td><td>CHARACTER</td><td class='mono'>263</td><td class='mono'>1</td><td class='mono'>263</td><td class='mono'></td><td>APPROVED FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECYT</td><td>DECIMAL</td><td class='mono'>264</td><td class='mono'>15</td><td class='mono'>278</td><td class='mono'>2</td><td>COMMISSION YEAR TO DATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECLT</td><td>DECIMAL</td><td class='mono'>279</td><td class='mono'>15</td><td class='mono'>293</td><td class='mono'>2</td><td>COMMISSION LIFE TO DATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECCS</td><td>DECIMAL</td><td class='mono'>294</td><td class='mono'>8</td><td class='mono'>301</td><td class='mono'></td><td>C/COST NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEOCM</td><td>DECIMAL</td><td class='mono'>302</td><td class='mono'>15</td><td class='mono'>316</td><td class='mono'>2</td><td>OUTSTANDING COLLATERAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEUNA</td><td>DECIMAL</td><td class='mono'>317</td><td class='mono'>15</td><td class='mono'>331</td><td class='mono'>2</td><td>UNUSED AGGREGATE BALNC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEPUR</td><td>CHARACTER</td><td class='mono'>332</td><td class='mono'>60</td><td class='mono'>391</td><td class='mono'></td><td>LINE PURPOSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEBDA</td><td>CHARACTER</td><td class='mono'>392</td><td class='mono'>2</td><td class='mono'>393</td><td class='mono'></td><td>DB ACCOUNT BANK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEDAB</td><td>DECIMAL</td><td class='mono'>394</td><td class='mono'>4</td><td class='mono'>397</td><td class='mono'></td><td>DB ACCOUNT BRANCH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECDA</td><td>CHARACTER</td><td class='mono'>398</td><td class='mono'>3</td><td class='mono'>400</td><td class='mono'></td><td>DB ACCOUNT CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEADN</td><td>DECIMAL</td><td class='mono'>401</td><td class='mono'>16</td><td class='mono'>416</td><td class='mono'></td><td>DB G/L NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEDAC</td><td>DECIMAL</td><td class='mono'>417</td><td class='mono'>12</td><td class='mono'>428</td><td class='mono'></td><td>DB ACCOUNT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECMM</td><td>CHARACTER</td><td class='mono'>429</td><td class='mono'>60</td><td class='mono'>488</td><td class='mono'></td><td>COMMENTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEUSA</td><td>DECIMAL</td><td class='mono'>489</td><td class='mono'>15</td><td class='mono'>503</td><td class='mono'>2</td><td>USED AGGREGATE BALANCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNETMA</td><td>DECIMAL</td><td class='mono'>504</td><td class='mono'>15</td><td class='mono'>518</td><td class='mono'>2</td><td>TODAY MATURITY AMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEAPD</td><td>DECIMAL</td><td class='mono'>519</td><td class='mono'>15</td><td class='mono'>533</td><td class='mono'>2</td><td>COLLATERAL USED</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEDPD</td><td>NUMERIC</td><td class='mono'>534</td><td class='mono'>4</td><td class='mono'>537</td><td class='mono'></td><td>MAX DAYS  PAST DUE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECPD</td><td>NUMERIC</td><td class='mono'>538</td><td class='mono'>4</td><td class='mono'>541</td><td class='mono'></td><td>NMBR ACCT PAST DUE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECGM</td><td>DECIMAL</td><td class='mono'>542</td><td class='mono'>9</td><td class='mono'>550</td><td class='mono'></td><td>CUST NUMBER MST/GLB</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNELGM</td><td>NUMERIC</td><td class='mono'>551</td><td class='mono'>4</td><td class='mono'>554</td><td class='mono'></td><td>LINE NUMBER MST/GBL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEMXT</td><td>NUMERIC</td><td class='mono'>555</td><td class='mono'>3</td><td class='mono'>557</td><td class='mono'></td><td>MAXIMUM DAYS GRACE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEMRT</td><td>DECIMAL</td><td class='mono'>558</td><td class='mono'>9</td><td class='mono'>566</td><td class='mono'>6</td><td>INTEREST RATE GRACE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNETLC</td><td>CHARACTER</td><td class='mono'>567</td><td class='mono'>2</td><td class='mono'>568</td><td class='mono'></td><td>L/C TARIFF CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNETLN</td><td>CHARACTER</td><td class='mono'>569</td><td class='mono'>2</td><td class='mono'>570</td><td class='mono'></td><td>LOAN TARIFF CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNETRT</td><td>CHARACTER</td><td class='mono'>571</td><td class='mono'>2</td><td class='mono'>572</td><td class='mono'></td><td>RETAIL TARIFF CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNETER</td><td>DECIMAL</td><td class='mono'>573</td><td class='mono'>5</td><td class='mono'>577</td><td class='mono'></td><td>TERM NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNETRC</td><td>CHARACTER</td><td class='mono'>578</td><td class='mono'>1</td><td class='mono'>578</td><td class='mono'></td><td>TERM CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEROY</td><td>NUMERIC</td><td class='mono'>579</td><td class='mono'>3</td><td class='mono'>581</td><td class='mono'></td><td>ROLLOVER DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNERDM</td><td>NUMERIC</td><td class='mono'>582</td><td class='mono'>2</td><td class='mono'>583</td><td class='mono'></td><td>ROLLOVER DATE-MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNERDD</td><td>NUMERIC</td><td class='mono'>584</td><td class='mono'>2</td><td class='mono'>585</td><td class='mono'></td><td>ROLLOVER DATE-DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNERDY</td><td>NUMERIC</td><td class='mono'>586</td><td class='mono'>4</td><td class='mono'>589</td><td class='mono'></td><td>ROLLOVER DATE-YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEFTY</td><td>CHARACTER</td><td class='mono'>590</td><td class='mono'>2</td><td class='mono'>591</td><td class='mono'></td><td>FLOATING TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEFTB</td><td>CHARACTER</td><td class='mono'>592</td><td class='mono'>2</td><td class='mono'>593</td><td class='mono'></td><td>FLOATING TABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECCU</td><td>DECIMAL</td><td class='mono'>594</td><td class='mono'>9</td><td class='mono'>602</td><td class='mono'></td><td>CREDIT LIMIT CUSTMR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECLN</td><td>NUMERIC</td><td class='mono'>603</td><td class='mono'>4</td><td class='mono'>606</td><td class='mono'></td><td>CREDIT LIMIT LINE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEREF</td><td>DECIMAL</td><td class='mono'>607</td><td class='mono'>12</td><td class='mono'>618</td><td class='mono'></td><td>REFERENCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEORT</td><td>DECIMAL</td><td class='mono'>619</td><td class='mono'>9</td><td class='mono'>627</td><td class='mono'>6</td><td>OVERDRAFT RATES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEMUB</td><td>CHARACTER</td><td class='mono'>628</td><td class='mono'>1</td><td class='mono'>628</td><td class='mono'></td><td>MULT-CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEIVA</td><td>CHARACTER</td><td class='mono'>629</td><td class='mono'>1</td><td class='mono'>629</td><td class='mono'></td><td>FLAG IVA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNETLM</td><td>DECIMAL</td><td class='mono'>630</td><td class='mono'>5</td><td class='mono'>634</td><td class='mono'></td><td>TERM LIMIT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNETYR</td><td>CHARACTER</td><td class='mono'>635</td><td class='mono'>1</td><td class='mono'>635</td><td class='mono'></td><td>TYPE&#x27;RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNERRP</td><td>CHARACTER</td><td class='mono'>636</td><td class='mono'>3</td><td class='mono'>638</td><td class='mono'></td><td>RATE REVISION PRD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNERLT</td><td>CHARACTER</td><td class='mono'>639</td><td class='mono'>1</td><td class='mono'>639</td><td class='mono'></td><td>RELATION TYPE P/S/N/T/F</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNERAC</td><td>DECIMAL</td><td class='mono'>640</td><td class='mono'>12</td><td class='mono'>651</td><td class='mono'></td><td>RELATION ACCTÑ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNETLP</td><td>DECIMAL</td><td class='mono'>652</td><td class='mono'>5</td><td class='mono'>656</td><td class='mono'></td><td>TERM LIMIT CRRDIT REQ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEHTM</td><td>NUMERIC</td><td class='mono'>657</td><td class='mono'>1</td><td class='mono'>657</td><td class='mono'></td><td>COLL FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEOVD</td><td>CHARACTER</td><td class='mono'>658</td><td class='mono'>1</td><td class='mono'>658</td><td class='mono'></td><td>OVERDRAFT FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEOFN</td><td>DECIMAL</td><td class='mono'>659</td><td class='mono'>12</td><td class='mono'>670</td><td class='mono'></td><td>OFFER NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNERTM</td><td>DECIMAL</td><td class='mono'>671</td><td class='mono'>9</td><td class='mono'>679</td><td class='mono'>6</td><td>MIN RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNETCM</td><td>DECIMAL</td><td class='mono'>680</td><td class='mono'>5</td><td class='mono'>684</td><td class='mono'></td><td>TERM LIMIT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNETCP</td><td>DECIMAL</td><td class='mono'>685</td><td class='mono'>5</td><td class='mono'>689</td><td class='mono'></td><td>TERM LIMIT CRRDIT REQ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEFL1</td><td>CHARACTER</td><td class='mono'>690</td><td class='mono'>1</td><td class='mono'>690</td><td class='mono'></td><td>AVAILABLE 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEFL2</td><td>CHARACTER</td><td class='mono'>691</td><td class='mono'>2</td><td class='mono'>692</td><td class='mono'></td><td>AVAILABLE 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEFL3</td><td>DECIMAL</td><td class='mono'>693</td><td class='mono'>15</td><td class='mono'>707</td><td class='mono'>2</td><td>AVAILABLE 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEFL4</td><td>DECIMAL</td><td class='mono'>708</td><td class='mono'>9</td><td class='mono'>716</td><td class='mono'>6</td><td>AVAILABLE 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNESIC</td><td>CHARACTER</td><td class='mono'>717</td><td class='mono'>4</td><td class='mono'>720</td><td class='mono'></td><td>SIC CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNENPR</td><td>DECIMAL</td><td class='mono'>721</td><td class='mono'>12</td><td class='mono'>732</td><td class='mono'></td><td>CREDIT PROPOSAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECRC</td><td>CHARACTER</td><td class='mono'>733</td><td class='mono'>20</td><td class='mono'>752</td><td class='mono'></td><td>CREDIT CARD NRO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNECNL</td><td>CHARACTER</td><td class='mono'>753</td><td class='mono'>2</td><td class='mono'>754</td><td class='mono'></td><td>CANAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNEUNR</td><td>CHARACTER</td><td class='mono'>755</td><td class='mono'>35</td><td class='mono'>789</td><td class='mono'></td><td>UNIQUE REFERENCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNELMM</td><td>NUMERIC</td><td class='mono'>790</td><td class='mono'>2</td><td class='mono'>791</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNELMD</td><td>NUMERIC</td><td class='mono'>792</td><td class='mono'>2</td><td class='mono'>793</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNELMY</td><td>NUMERIC</td><td class='mono'>794</td><td class='mono'>4</td><td class='mono'>797</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNELMT</td><td>TIMESTAMP</td><td class='mono'>798</td><td class='mono'>26</td><td class='mono'>823</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>LNELMU</td><td>CHARACTER</td><td class='mono'>824</td><td class='mono'>10</td><td class='mono'>833</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table></body></html>

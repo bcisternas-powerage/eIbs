@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>DLSDE</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>DLSDE</h1>
+<div class='meta'><b>N.º de campos:</b> 32</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>DLSACC</td><td>DECIMAL</td><td class='mono'>1</td><td class='mono'>12</td><td class='mono'>12</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>DLSPDY</td><td>NUMERIC</td><td class='mono'>13</td><td class='mono'>4</td><td class='mono'>16</td><td class='mono'></td><td>PMT DTE YY</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>DLSPDM</td><td>NUMERIC</td><td class='mono'>17</td><td class='mono'>2</td><td class='mono'>18</td><td class='mono'></td><td>PMT DTE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSPDD</td><td>NUMERIC</td><td class='mono'>19</td><td class='mono'>2</td><td class='mono'>20</td><td class='mono'></td><td>PMT DTE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSTYP</td><td>CHARACTER</td><td class='mono'>21</td><td class='mono'>1</td><td class='mono'>21</td><td class='mono'></td><td>PAYMENT TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSCDE</td><td>CHARACTER</td><td class='mono'>22</td><td class='mono'>4</td><td class='mono'>25</td><td class='mono'></td><td>DEDUCTION CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSSEQ</td><td>NUMERIC</td><td class='mono'>26</td><td class='mono'>2</td><td class='mono'>27</td><td class='mono'></td><td>PAYMENT SEQUENCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSPFL</td><td>CHARACTER</td><td class='mono'>28</td><td class='mono'>1</td><td class='mono'>28</td><td class='mono'></td><td>PAID/FLAG &quot; &quot;/&quot;P&quot;</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSAMT</td><td>DECIMAL</td><td class='mono'>29</td><td class='mono'>15</td><td class='mono'>43</td><td class='mono'>2</td><td>PAYMENT AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSPAD</td><td>DECIMAL</td><td class='mono'>44</td><td class='mono'>15</td><td class='mono'>58</td><td class='mono'>2</td><td>AMOUNT PAID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSACO</td><td>DECIMAL</td><td class='mono'>59</td><td class='mono'>15</td><td class='mono'>73</td><td class='mono'>2</td><td>AMOUNT COND</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSDTM</td><td>NUMERIC</td><td class='mono'>74</td><td class='mono'>2</td><td class='mono'>75</td><td class='mono'></td><td>DATE PAID MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSDTD</td><td>NUMERIC</td><td class='mono'>76</td><td class='mono'>2</td><td class='mono'>77</td><td class='mono'></td><td>DATE PAID DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSDTY</td><td>NUMERIC</td><td class='mono'>78</td><td class='mono'>4</td><td class='mono'>81</td><td class='mono'></td><td>DATE PAID YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSOBK</td><td>CHARACTER</td><td class='mono'>82</td><td class='mono'>2</td><td class='mono'>83</td><td class='mono'></td><td>RELAT BNK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSOBR</td><td>DECIMAL</td><td class='mono'>84</td><td class='mono'>4</td><td class='mono'>87</td><td class='mono'></td><td>REALT BRN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSOCY</td><td>CHARACTER</td><td class='mono'>88</td><td class='mono'>3</td><td class='mono'>90</td><td class='mono'></td><td>RELAT CCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSOGL</td><td>DECIMAL</td><td class='mono'>91</td><td class='mono'>16</td><td class='mono'>106</td><td class='mono'></td><td>RELAT G/L</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSOAC</td><td>DECIMAL</td><td class='mono'>107</td><td class='mono'>12</td><td class='mono'>118</td><td class='mono'></td><td>RELAT ACC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSSTS</td><td>CHARACTER</td><td class='mono'>119</td><td class='mono'>1</td><td class='mono'>119</td><td class='mono'></td><td>STATUS TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSNAR</td><td>CHARACTER</td><td class='mono'>120</td><td class='mono'>60</td><td class='mono'>179</td><td class='mono'></td><td>DESCRIPTION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSIVA</td><td>CHARACTER</td><td class='mono'>180</td><td class='mono'>1</td><td class='mono'>180</td><td class='mono'></td><td>CAL IVA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSIVP</td><td>DECIMAL</td><td class='mono'>181</td><td class='mono'>6</td><td class='mono'>186</td><td class='mono'>3</td><td>IVA %</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSIVB</td><td>DECIMAL</td><td class='mono'>187</td><td class='mono'>15</td><td class='mono'>201</td><td class='mono'>2</td><td>IVA BASE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSEQV</td><td>DECIMAL</td><td class='mono'>202</td><td class='mono'>15</td><td class='mono'>216</td><td class='mono'>2</td><td>EQUIV AMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSEXR</td><td>DECIMAL</td><td class='mono'>217</td><td class='mono'>11</td><td class='mono'>227</td><td class='mono'>6</td><td>EXCHG RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSFTX</td><td>CHARACTER</td><td class='mono'>228</td><td class='mono'>1</td><td class='mono'>228</td><td class='mono'></td><td>TIPO CAMBIO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSLMM</td><td>NUMERIC</td><td class='mono'>229</td><td class='mono'>2</td><td class='mono'>230</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSLMD</td><td>NUMERIC</td><td class='mono'>231</td><td class='mono'>2</td><td class='mono'>232</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSLMY</td><td>NUMERIC</td><td class='mono'>233</td><td class='mono'>4</td><td class='mono'>236</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSLMT</td><td>TIMESTAMP</td><td class='mono'>237</td><td class='mono'>26</td><td class='mono'>262</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSLMU</td><td>CHARACTER</td><td class='mono'>263</td><td class='mono'>10</td><td class='mono'>272</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table></body></html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>EXPMST</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>EXPMST</h1>
+<div class='meta'><b>N.º de campos:</b> 326</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>EXPBNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK NUMBER</td><td>BANCO</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>EXPBRN</td><td>DECIMAL</td><td class='mono'>3</td><td class='mono'>4</td><td class='mono'>6</td><td class='mono'></td><td>BRANCH NUMBER</td><td>SUCURSAL</td></tr>
+<tr><td class='mono'>3</td><td class='mono'>EXPCCY</td><td>CHARACTER</td><td class='mono'>7</td><td class='mono'>3</td><td class='mono'>9</td><td class='mono'></td><td>CURRENCY</td><td>MONEDA</td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPGLN</td><td>DECIMAL</td><td class='mono'>10</td><td class='mono'>16</td><td class='mono'>25</td><td class='mono'></td><td>G/L NUMBER</td><td>CTA CONTABLE</td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPACC</td><td>DECIMAL</td><td class='mono'>26</td><td class='mono'>12</td><td class='mono'>37</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td>NRO DE CUENTA</td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTRF</td><td>CHARACTER</td><td class='mono'>38</td><td class='mono'>1</td><td class='mono'>38</td><td class='mono'></td><td>TODAYS ROLL/FLG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPBR</td><td>DECIMAL</td><td class='mono'>39</td><td class='mono'>9</td><td class='mono'>47</td><td class='mono'>6</td><td>PREV/BASE RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSDM</td><td>NUMERIC</td><td class='mono'>48</td><td class='mono'>2</td><td class='mono'>49</td><td class='mono'></td><td>STARTING DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSDD</td><td>NUMERIC</td><td class='mono'>50</td><td class='mono'>2</td><td class='mono'>51</td><td class='mono'></td><td>STARTING DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSDY</td><td>NUMERIC</td><td class='mono'>52</td><td class='mono'>4</td><td class='mono'>55</td><td class='mono'></td><td>STARTING DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPMAM</td><td>NUMERIC</td><td class='mono'>56</td><td class='mono'>2</td><td class='mono'>57</td><td class='mono'></td><td>MATURITY DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPMAD</td><td>NUMERIC</td><td class='mono'>58</td><td class='mono'>2</td><td class='mono'>59</td><td class='mono'></td><td>MATURITY DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPMAY</td><td>NUMERIC</td><td class='mono'>60</td><td class='mono'>4</td><td class='mono'>63</td><td class='mono'></td><td>MATURITY DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRTE</td><td>DECIMAL</td><td class='mono'>64</td><td class='mono'>9</td><td class='mono'>72</td><td class='mono'></td><td>RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTRM</td><td>DECIMAL</td><td class='mono'>73</td><td class='mono'>5</td><td class='mono'>77</td><td class='mono'></td><td>TERM NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTRC</td><td>CHARACTER</td><td class='mono'>78</td><td class='mono'>1</td><td class='mono'>78</td><td class='mono'></td><td>TERM CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPRI</td><td>DECIMAL</td><td class='mono'>79</td><td class='mono'>15</td><td class='mono'>93</td><td class='mono'>2</td><td>PRINCIPAL BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOAM</td><td>DECIMAL</td><td class='mono'>94</td><td class='mono'>15</td><td class='mono'>108</td><td class='mono'>2</td><td>ORIGINAL AMNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLCM</td><td>NUMERIC</td><td class='mono'>109</td><td class='mono'>2</td><td class='mono'>110</td><td class='mono'></td><td>LST/CALC DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLCD</td><td>NUMERIC</td><td class='mono'>111</td><td class='mono'>2</td><td class='mono'>112</td><td class='mono'></td><td>LST/CALC DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLCY</td><td>NUMERIC</td><td class='mono'>113</td><td class='mono'>4</td><td class='mono'>116</td><td class='mono'></td><td>LST/CALC DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRRC</td><td>CHARACTER</td><td class='mono'>117</td><td class='mono'>2</td><td class='mono'>118</td><td class='mono'></td><td>RISK/RAT CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPODM</td><td>NUMERIC</td><td class='mono'>119</td><td class='mono'>2</td><td class='mono'>120</td><td class='mono'></td><td>OPENING DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPODD</td><td>NUMERIC</td><td class='mono'>121</td><td class='mono'>2</td><td class='mono'>122</td><td class='mono'></td><td>OPENING DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPODY</td><td>NUMERIC</td><td class='mono'>123</td><td class='mono'>4</td><td class='mono'>126</td><td class='mono'></td><td>OPENING DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIAL</td><td>DECIMAL</td><td class='mono'>127</td><td class='mono'>15</td><td class='mono'>141</td><td class='mono'>2</td><td>INT/ACC LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIAY</td><td>DECIMAL</td><td class='mono'>142</td><td class='mono'>15</td><td class='mono'>156</td><td class='mono'>2</td><td>INT/ACC YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPHAM</td><td>DECIMAL</td><td class='mono'>157</td><td class='mono'>15</td><td class='mono'>171</td><td class='mono'>2</td><td>HOLD AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRDM</td><td>NUMERIC</td><td class='mono'>172</td><td class='mono'>2</td><td class='mono'>173</td><td class='mono'></td><td>ROLLOVER DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRDD</td><td>NUMERIC</td><td class='mono'>174</td><td class='mono'>2</td><td class='mono'>175</td><td class='mono'></td><td>ROLLOVER DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRDY</td><td>NUMERIC</td><td class='mono'>176</td><td class='mono'>4</td><td class='mono'>179</td><td class='mono'></td><td>ROLLOVER DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPROR</td><td>DECIMAL</td><td class='mono'>180</td><td class='mono'>9</td><td class='mono'>188</td><td class='mono'>6</td><td>ROLLOVER RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPROC</td><td>CHARACTER</td><td class='mono'>189</td><td class='mono'>1</td><td class='mono'>189</td><td class='mono'></td><td>ROLLOVER CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPROY</td><td>DECIMAL</td><td class='mono'>190</td><td class='mono'>2</td><td class='mono'>191</td><td class='mono'></td><td>ROLLOVER DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIPD</td><td>CHARACTER</td><td class='mono'>192</td><td class='mono'>3</td><td class='mono'>194</td><td class='mono'></td><td>INT/PMT CYCLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPPD</td><td>CHARACTER</td><td class='mono'>195</td><td class='mono'>3</td><td class='mono'>197</td><td class='mono'></td><td>PRI/PMT CYCLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOFI</td><td>CHARACTER</td><td class='mono'>198</td><td class='mono'>4</td><td class='mono'>201</td><td class='mono'></td><td>OFFICER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTYP</td><td>CHARACTER</td><td class='mono'>202</td><td class='mono'>4</td><td class='mono'>205</td><td class='mono'></td><td>DEAL TYP</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPROA</td><td>DECIMAL</td><td class='mono'>206</td><td class='mono'>15</td><td class='mono'>220</td><td class='mono'>2</td><td>ROLLOVER AMNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPGRC</td><td>CHARACTER</td><td class='mono'>221</td><td class='mono'>4</td><td class='mono'>224</td><td class='mono'></td><td>GEO/RISK CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLPR</td><td>DECIMAL</td><td class='mono'>225</td><td class='mono'>15</td><td class='mono'>239</td><td class='mono'>2</td><td>LAST PRINCIPAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLRT</td><td>DECIMAL</td><td class='mono'>240</td><td class='mono'>9</td><td class='mono'>248</td><td class='mono'>6</td><td>LAST RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSTS</td><td>CHARACTER</td><td class='mono'>249</td><td class='mono'>1</td><td class='mono'>249</td><td class='mono'></td><td>ACCOUNT STATUS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPGCD</td><td>CHARACTER</td><td class='mono'>250</td><td class='mono'>4</td><td class='mono'>253</td><td class='mono'></td><td>GEO/RES CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCUN</td><td>DECIMAL</td><td class='mono'>254</td><td class='mono'>9</td><td class='mono'>262</td><td class='mono'></td><td>CUSTOMER NUMBER</td><td>Cliente</td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPDLI</td><td>CHARACTER</td><td class='mono'>263</td><td class='mono'>1</td><td class='mono'>263</td><td class='mono'></td><td>*=INT ADDED TO DLPMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRTB</td><td>CHARACTER</td><td class='mono'>264</td><td class='mono'>2</td><td class='mono'>265</td><td class='mono'></td><td>RATE TABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIDY</td><td>NUMERIC</td><td class='mono'>266</td><td class='mono'>2</td><td class='mono'>267</td><td class='mono'></td><td>INT/PMNT DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPDY</td><td>NUMERIC</td><td class='mono'>268</td><td class='mono'>2</td><td class='mono'>269</td><td class='mono'></td><td>PRI/PMNT DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCDY</td><td>NUMERIC</td><td class='mono'>270</td><td class='mono'>2</td><td class='mono'>271</td><td class='mono'></td><td>RTE/CHGE DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRPT</td><td>CHARACTER</td><td class='mono'>272</td><td class='mono'>2</td><td class='mono'>273</td><td class='mono'></td><td>REPAYMNT TYP DR/CR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPREB</td><td>CHARACTER</td><td class='mono'>274</td><td class='mono'>2</td><td class='mono'>275</td><td class='mono'></td><td>REAYPMNT BANK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRPR</td><td>DECIMAL</td><td class='mono'>276</td><td class='mono'>4</td><td class='mono'>279</td><td class='mono'></td><td>REPAYMNT BRANCH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRPC</td><td>CHARACTER</td><td class='mono'>280</td><td class='mono'>3</td><td class='mono'>282</td><td class='mono'></td><td>REPAYMNT CCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRGL</td><td>DECIMAL</td><td class='mono'>283</td><td class='mono'>16</td><td class='mono'>298</td><td class='mono'></td><td>REPAYMNT G/L</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRAC</td><td>DECIMAL</td><td class='mono'>299</td><td class='mono'>12</td><td class='mono'>310</td><td class='mono'></td><td>REPAYMNT ACCNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIFL</td><td>CHARACTER</td><td class='mono'>311</td><td class='mono'>1</td><td class='mono'>311</td><td class='mono'></td><td>INTEREST FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIDU</td><td>DECIMAL</td><td class='mono'>312</td><td class='mono'>15</td><td class='mono'>326</td><td class='mono'>2</td><td>INTEREST DUE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLDY</td><td>DECIMAL</td><td class='mono'>327</td><td class='mono'>5</td><td class='mono'>331</td><td class='mono'></td><td>LAST DAYS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLBS</td><td>DECIMAL</td><td class='mono'>332</td><td class='mono'>3</td><td class='mono'>334</td><td class='mono'></td><td>LAST BASE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIPY</td><td>DECIMAL</td><td class='mono'>335</td><td class='mono'>15</td><td class='mono'>349</td><td class='mono'>2</td><td>INT/PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIPL</td><td>DECIMAL</td><td class='mono'>350</td><td class='mono'>15</td><td class='mono'>364</td><td class='mono'>2</td><td>INT/PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPDU</td><td>DECIMAL</td><td class='mono'>365</td><td class='mono'>15</td><td class='mono'>379</td><td class='mono'>2</td><td>PRINCIPAL DUE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLIM</td><td>NUMERIC</td><td class='mono'>380</td><td class='mono'>2</td><td class='mono'>381</td><td class='mono'></td><td>LST/INT PAID/DT MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLID</td><td>NUMERIC</td><td class='mono'>382</td><td class='mono'>2</td><td class='mono'>383</td><td class='mono'></td><td>LST/INT PAID/DT DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLIY</td><td>NUMERIC</td><td class='mono'>384</td><td class='mono'>4</td><td class='mono'>387</td><td class='mono'></td><td>LST/INT PAID/DT YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLPM</td><td>NUMERIC</td><td class='mono'>388</td><td class='mono'>2</td><td class='mono'>389</td><td class='mono'></td><td>LST/PRI PAID/DT MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLPD</td><td>NUMERIC</td><td class='mono'>390</td><td class='mono'>2</td><td class='mono'>391</td><td class='mono'></td><td>LST/PRI PAID/DT DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLPY</td><td>NUMERIC</td><td class='mono'>392</td><td class='mono'>4</td><td class='mono'>395</td><td class='mono'></td><td>LST/PRI PAID/DT YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCOT</td><td>CHARACTER</td><td class='mono'>396</td><td class='mono'>4</td><td class='mono'>399</td><td class='mono'></td><td>COLLATERAL TYP</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPEI</td><td>DECIMAL</td><td class='mono'>400</td><td class='mono'>9</td><td class='mono'>408</td><td class='mono'>2</td><td>PENLTY INTEREST</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPFTB</td><td>CHARACTER</td><td class='mono'>409</td><td class='mono'>2</td><td class='mono'>410</td><td class='mono'></td><td>FLOATING TABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPFTY</td><td>CHARACTER</td><td class='mono'>411</td><td class='mono'>2</td><td class='mono'>412</td><td class='mono'></td><td>FLOATING TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPBAS</td><td>NUMERIC</td><td class='mono'>413</td><td class='mono'>3</td><td class='mono'>415</td><td class='mono'></td><td>CALC BASE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPODA</td><td>CHARACTER</td><td class='mono'>416</td><td class='mono'>1</td><td class='mono'>416</td><td class='mono'></td><td>O/D AUTH Y/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRON</td><td>NUMERIC</td><td class='mono'>417</td><td class='mono'>3</td><td class='mono'>419</td><td class='mono'></td><td>ROLLOVER NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPROP</td><td>CHARACTER</td><td class='mono'>420</td><td class='mono'>1</td><td class='mono'>420</td><td class='mono'></td><td>ROLLOVER PERIOD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRCR</td><td>CHARACTER</td><td class='mono'>421</td><td class='mono'>1</td><td class='mono'>421</td><td class='mono'></td><td>ROLLOVER CHG RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPREC</td><td>CHARACTER</td><td class='mono'>422</td><td class='mono'>1</td><td class='mono'>422</td><td class='mono'></td><td>RELEASE COLLATERAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCCN</td><td>DECIMAL</td><td class='mono'>423</td><td class='mono'>8</td><td class='mono'>430</td><td class='mono'></td><td>COST CENTER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPEXR</td><td>DECIMAL</td><td class='mono'>431</td><td class='mono'>11</td><td class='mono'>441</td><td class='mono'>6</td><td>EXCHG RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPUC3</td><td>CHARACTER</td><td class='mono'>442</td><td class='mono'>4</td><td class='mono'>445</td><td class='mono'></td><td>USER CODE 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPAC</td><td>DECIMAL</td><td class='mono'>446</td><td class='mono'>12</td><td class='mono'>457</td><td class='mono'></td><td>PARTICIP ACCTÑ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRCM</td><td>NUMERIC</td><td class='mono'>458</td><td class='mono'>2</td><td class='mono'>459</td><td class='mono'></td><td>LST BSE RTE CHG DTE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRCO</td><td>NUMERIC</td><td class='mono'>460</td><td class='mono'>2</td><td class='mono'>461</td><td class='mono'></td><td>LST BSE RTE CHG DTE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPREY</td><td>NUMERIC</td><td class='mono'>462</td><td class='mono'>4</td><td class='mono'>465</td><td class='mono'></td><td>LST BSE RTE CHG DTE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCMC</td><td>DECIMAL</td><td class='mono'>466</td><td class='mono'>9</td><td class='mono'>474</td><td class='mono'></td><td>COMMITMENT CUSTOMER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCMN</td><td>NUMERIC</td><td class='mono'>475</td><td class='mono'>4</td><td class='mono'>478</td><td class='mono'></td><td>COMMITMENT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPICT</td><td>CHARACTER</td><td class='mono'>479</td><td class='mono'>1</td><td class='mono'>479</td><td class='mono'></td><td>INT CALC TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPDLP</td><td>CHARACTER</td><td class='mono'>480</td><td class='mono'>1</td><td class='mono'>480</td><td class='mono'></td><td>*=PRI ADDED TO DLPMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRRP</td><td>CHARACTER</td><td class='mono'>481</td><td class='mono'>3</td><td class='mono'>483</td><td class='mono'></td><td>RATE REVISION PRD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRRM</td><td>NUMERIC</td><td class='mono'>484</td><td class='mono'>2</td><td class='mono'>485</td><td class='mono'></td><td>RATE PERIOD REVISION MNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRRD</td><td>NUMERIC</td><td class='mono'>486</td><td class='mono'>2</td><td class='mono'>487</td><td class='mono'></td><td>RATE PERIOD REVISION DAY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRRY</td><td>NUMERIC</td><td class='mono'>488</td><td class='mono'>4</td><td class='mono'>491</td><td class='mono'></td><td>RATE PERIOD REVISION YR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPHFQ</td><td>NUMERIC</td><td class='mono'>492</td><td class='mono'>1</td><td class='mono'>492</td><td class='mono'></td><td>ROL H RTE CHG FRQ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPHTM</td><td>NUMERIC</td><td class='mono'>493</td><td class='mono'>1</td><td class='mono'>493</td><td class='mono'></td><td>ROL H RTE CHG TMS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIRT</td><td>DECIMAL</td><td class='mono'>494</td><td class='mono'>9</td><td class='mono'>502</td><td class='mono'>6</td><td>INVESTMENT RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOF2</td><td>CHARACTER</td><td class='mono'>503</td><td class='mono'>4</td><td class='mono'>506</td><td class='mono'></td><td>OFFICE RP</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPMLA</td><td>NUMERIC</td><td class='mono'>507</td><td class='mono'>2</td><td class='mono'>508</td><td class='mono'></td><td>MAILING ADDRESS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLOB</td><td>CHARACTER</td><td class='mono'>509</td><td class='mono'>4</td><td class='mono'>512</td><td class='mono'></td><td>LINE OF BUSS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPICD</td><td>CHARACTER</td><td class='mono'>513</td><td class='mono'>4</td><td class='mono'>516</td><td class='mono'></td><td>INDUSTRY CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIJY</td><td>DECIMAL</td><td class='mono'>517</td><td class='mono'>15</td><td class='mono'>531</td><td class='mono'>2</td><td>INT/ADJ YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIJL</td><td>DECIMAL</td><td class='mono'>532</td><td class='mono'>15</td><td class='mono'>546</td><td class='mono'>2</td><td>INT/ADJ LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPINM</td><td>DECIMAL</td><td class='mono'>547</td><td class='mono'>15</td><td class='mono'>561</td><td class='mono'>2</td><td>INTEREST MTH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPHEM</td><td>NUMERIC</td><td class='mono'>562</td><td class='mono'>2</td><td class='mono'>563</td><td class='mono'></td><td>HOLD EXP DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPHED</td><td>NUMERIC</td><td class='mono'>564</td><td class='mono'>2</td><td class='mono'>565</td><td class='mono'></td><td>HOLD EXP DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPHEY</td><td>NUMERIC</td><td class='mono'>566</td><td class='mono'>4</td><td class='mono'>569</td><td class='mono'></td><td>HOLD EXP DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOFB</td><td>CHARACTER</td><td class='mono'>570</td><td class='mono'>2</td><td class='mono'>571</td><td class='mono'></td><td>OFFSET BANK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOCR</td><td>DECIMAL</td><td class='mono'>572</td><td class='mono'>4</td><td class='mono'>575</td><td class='mono'></td><td>OFFSET BRANCH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOCY</td><td>CHARACTER</td><td class='mono'>576</td><td class='mono'>3</td><td class='mono'>578</td><td class='mono'></td><td>OFFSET CCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOGL</td><td>DECIMAL</td><td class='mono'>579</td><td class='mono'>16</td><td class='mono'>594</td><td class='mono'></td><td>OFFSET G/L</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOAC</td><td>DECIMAL</td><td class='mono'>595</td><td class='mono'>12</td><td class='mono'>606</td><td class='mono'></td><td>OFFSET ACC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPRF</td><td>CHARACTER</td><td class='mono'>607</td><td class='mono'>1</td><td class='mono'>607</td><td class='mono'></td><td>PROCESS FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOBL</td><td>CHARACTER</td><td class='mono'>608</td><td class='mono'>2</td><td class='mono'>609</td><td class='mono'></td><td>OBLIGOR CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPAR</td><td>CHARACTER</td><td class='mono'>610</td><td class='mono'>1</td><td class='mono'>610</td><td class='mono'></td><td>PARTICIPATION P/S/N/T/F</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPFRT</td><td>DECIMAL</td><td class='mono'>611</td><td class='mono'>9</td><td class='mono'>619</td><td class='mono'>6</td><td>FLOATING RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPNER</td><td>DECIMAL</td><td class='mono'>620</td><td class='mono'>9</td><td class='mono'>628</td><td class='mono'>6</td><td>NEXT/EFF RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPNRM</td><td>NUMERIC</td><td class='mono'>629</td><td class='mono'>2</td><td class='mono'>630</td><td class='mono'></td><td>NEXT/RTE DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPNRD</td><td>NUMERIC</td><td class='mono'>631</td><td class='mono'>2</td><td class='mono'>632</td><td class='mono'></td><td>NEXT/RTE DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPNRY</td><td>NUMERIC</td><td class='mono'>633</td><td class='mono'>4</td><td class='mono'>636</td><td class='mono'></td><td>NEXT/RTE DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLRM</td><td>NUMERIC</td><td class='mono'>637</td><td class='mono'>2</td><td class='mono'>638</td><td class='mono'></td><td>LST/FLT/RTE CH/DTE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLRD</td><td>NUMERIC</td><td class='mono'>639</td><td class='mono'>2</td><td class='mono'>640</td><td class='mono'></td><td>LST/FLT/RTE CH/DTE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLRY</td><td>NUMERIC</td><td class='mono'>641</td><td class='mono'>4</td><td class='mono'>644</td><td class='mono'></td><td>LST/FLT/RTE CH/DTE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPFR</td><td>DECIMAL</td><td class='mono'>645</td><td class='mono'>9</td><td class='mono'>653</td><td class='mono'>6</td><td>PREV/FLT RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPWHF</td><td>CHARACTER</td><td class='mono'>654</td><td class='mono'>1</td><td class='mono'>654</td><td class='mono'></td><td>WITHOLD Y/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTX1</td><td>CHARACTER</td><td class='mono'>655</td><td class='mono'>1</td><td class='mono'>655</td><td class='mono'></td><td>TAXES FLAG 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTX2</td><td>CHARACTER</td><td class='mono'>656</td><td class='mono'>1</td><td class='mono'>656</td><td class='mono'></td><td>TAXES FLAG 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTX3</td><td>CHARACTER</td><td class='mono'>657</td><td class='mono'>1</td><td class='mono'>657</td><td class='mono'></td><td>TAXES FLAG 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTX4</td><td>CHARACTER</td><td class='mono'>658</td><td class='mono'>1</td><td class='mono'>658</td><td class='mono'></td><td>TAXES FLAG 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTX5</td><td>CHARACTER</td><td class='mono'>659</td><td class='mono'>1</td><td class='mono'>659</td><td class='mono'></td><td>TAXES FLAG 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTX6</td><td>CHARACTER</td><td class='mono'>660</td><td class='mono'>1</td><td class='mono'>660</td><td class='mono'></td><td>TAXES FLAG 6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTX7</td><td>CHARACTER</td><td class='mono'>661</td><td class='mono'>1</td><td class='mono'>661</td><td class='mono'></td><td>TAXES FLAG 7</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTX8</td><td>CHARACTER</td><td class='mono'>662</td><td class='mono'>1</td><td class='mono'>662</td><td class='mono'></td><td>TAXES FLAG 8</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTX9</td><td>CHARACTER</td><td class='mono'>663</td><td class='mono'>1</td><td class='mono'>663</td><td class='mono'></td><td>TAXES FLAG 9</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPWQT</td><td>DECIMAL</td><td class='mono'>664</td><td class='mono'>15</td><td class='mono'>678</td><td class='mono'>2</td><td>WITHELD QTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPWYT</td><td>DECIMAL</td><td class='mono'>679</td><td class='mono'>15</td><td class='mono'>693</td><td class='mono'>2</td><td>WITHELD YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPFEE</td><td>DECIMAL</td><td class='mono'>694</td><td class='mono'>15</td><td class='mono'>708</td><td class='mono'>2</td><td>FEES AMORT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSPR</td><td>DECIMAL</td><td class='mono'>709</td><td class='mono'>9</td><td class='mono'>717</td><td class='mono'>6</td><td>EFECTIVE RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCFF</td><td>CHARACTER</td><td class='mono'>718</td><td class='mono'>1</td><td class='mono'>718</td><td class='mono'></td><td>CONF FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPMXR</td><td>DECIMAL</td><td class='mono'>719</td><td class='mono'>9</td><td class='mono'>727</td><td class='mono'>6</td><td>MAXIMUM RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPMIR</td><td>DECIMAL</td><td class='mono'>728</td><td class='mono'>9</td><td class='mono'>736</td><td class='mono'>6</td><td>MINIMUM RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIIP</td><td>CHARACTER</td><td class='mono'>737</td><td class='mono'>1</td><td class='mono'>737</td><td class='mono'></td><td>INT/INC IN/PMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPBAP</td><td>DECIMAL</td><td class='mono'>738</td><td class='mono'>15</td><td class='mono'>752</td><td class='mono'>2</td><td>BALLOON PMT/AMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPBAM</td><td>NUMERIC</td><td class='mono'>753</td><td class='mono'>2</td><td class='mono'>754</td><td class='mono'></td><td>BALLOON PMT/DTE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPBAD</td><td>NUMERIC</td><td class='mono'>755</td><td class='mono'>2</td><td class='mono'>756</td><td class='mono'></td><td>BALLOON PMT/DTE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPBAY</td><td>NUMERIC</td><td class='mono'>757</td><td class='mono'>4</td><td class='mono'>760</td><td class='mono'></td><td>BALLOON PMT/DTE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPTM</td><td>NUMERIC</td><td class='mono'>761</td><td class='mono'>2</td><td class='mono'>762</td><td class='mono'></td><td>PRINC/PD THRU MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPTD</td><td>NUMERIC</td><td class='mono'>763</td><td class='mono'>2</td><td class='mono'>764</td><td class='mono'></td><td>PRINC/PD THRU DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPTY</td><td>NUMERIC</td><td class='mono'>765</td><td class='mono'>4</td><td class='mono'>768</td><td class='mono'></td><td>PRINC/PD THRU YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPITM</td><td>NUMERIC</td><td class='mono'>769</td><td class='mono'>2</td><td class='mono'>770</td><td class='mono'></td><td>INTER/PD THRU MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPITD</td><td>NUMERIC</td><td class='mono'>771</td><td class='mono'>2</td><td class='mono'>772</td><td class='mono'></td><td>INTER/PD THRU DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPITY</td><td>NUMERIC</td><td class='mono'>773</td><td class='mono'>4</td><td class='mono'>776</td><td class='mono'></td><td>INTER/PD THRU YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSTM</td><td>NUMERIC</td><td class='mono'>777</td><td class='mono'>2</td><td class='mono'>778</td><td class='mono'></td><td>LAST/DT STAT/CH MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSTD</td><td>NUMERIC</td><td class='mono'>779</td><td class='mono'>2</td><td class='mono'>780</td><td class='mono'></td><td>LAST/DT STAT/CH DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSTY</td><td>NUMERIC</td><td class='mono'>781</td><td class='mono'>4</td><td class='mono'>784</td><td class='mono'></td><td>LAST/DT STAT/CH YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPAVP</td><td>DECIMAL</td><td class='mono'>785</td><td class='mono'>17</td><td class='mono'>801</td><td class='mono'>2</td><td>AVERAGE PRINC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPMEP</td><td>DECIMAL</td><td class='mono'>802</td><td class='mono'>15</td><td class='mono'>816</td><td class='mono'>2</td><td>MEMO PRINCIPAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPMEI</td><td>DECIMAL</td><td class='mono'>817</td><td class='mono'>15</td><td class='mono'>831</td><td class='mono'>2</td><td>MEMO INTEREST</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPVI</td><td>CHARACTER</td><td class='mono'>832</td><td class='mono'>1</td><td class='mono'>832</td><td class='mono'></td><td>PAYMENT VIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPV2</td><td>CHARACTER</td><td class='mono'>833</td><td class='mono'>1</td><td class='mono'>833</td><td class='mono'></td><td>PAYMENT VIA 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLNC</td><td>CHARACTER</td><td class='mono'>834</td><td class='mono'>1</td><td class='mono'>834</td><td class='mono'></td><td>DEMAND LOAN Y/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPUBT</td><td>DECIMAL</td><td class='mono'>835</td><td class='mono'>5</td><td class='mono'>839</td><td class='mono'></td><td>USER BTH NO.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPASD</td><td>DECIMAL</td><td class='mono'>840</td><td class='mono'>15</td><td class='mono'>854</td><td class='mono'>2</td><td>AMOUNT SOLD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPREF</td><td>CHARACTER</td><td class='mono'>855</td><td class='mono'>20</td><td class='mono'>874</td><td class='mono'></td><td>REFERENCE NUMB</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTPL</td><td>DECIMAL</td><td class='mono'>875</td><td class='mono'>15</td><td class='mono'>889</td><td class='mono'>2</td><td>TAXES PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTPY</td><td>DECIMAL</td><td class='mono'>890</td><td class='mono'>15</td><td class='mono'>904</td><td class='mono'>2</td><td>TAXES PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCPL</td><td>DECIMAL</td><td class='mono'>905</td><td class='mono'>15</td><td class='mono'>919</td><td class='mono'>2</td><td>COMMISSIONS PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCPY</td><td>DECIMAL</td><td class='mono'>920</td><td class='mono'>15</td><td class='mono'>934</td><td class='mono'>2</td><td>COMMISSIONS PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPDEL</td><td>DECIMAL</td><td class='mono'>935</td><td class='mono'>15</td><td class='mono'>949</td><td class='mono'>2</td><td>DEDUCTION PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPDEY</td><td>DECIMAL</td><td class='mono'>950</td><td class='mono'>15</td><td class='mono'>964</td><td class='mono'>2</td><td>DEDUCTION PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIVL</td><td>DECIMAL</td><td class='mono'>965</td><td class='mono'>15</td><td class='mono'>979</td><td class='mono'>2</td><td>IVA PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIVY</td><td>DECIMAL</td><td class='mono'>980</td><td class='mono'>15</td><td class='mono'>994</td><td class='mono'>2</td><td>IVA PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPI2L</td><td>DECIMAL</td><td class='mono'>995</td><td class='mono'>15</td><td class='mono'>1009</td><td class='mono'>2</td><td>IVA 2 PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPI2Y</td><td>DECIMAL</td><td class='mono'>1010</td><td class='mono'>15</td><td class='mono'>1024</td><td class='mono'>2</td><td>IVA 2 PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPIF</td><td>CHARACTER</td><td class='mono'>1025</td><td class='mono'>1</td><td class='mono'>1025</td><td class='mono'></td><td>PENLTY INT FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPBRK</td><td>CHARACTER</td><td class='mono'>1026</td><td class='mono'>4</td><td class='mono'>1029</td><td class='mono'></td><td>BROKER CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPBCP</td><td>DECIMAL</td><td class='mono'>1030</td><td class='mono'>6</td><td class='mono'>1035</td><td class='mono'>3</td><td>BROKER COMM PERCENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPBCL</td><td>DECIMAL</td><td class='mono'>1036</td><td class='mono'>15</td><td class='mono'>1050</td><td class='mono'>2</td><td>BROKER COMM PAID LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPBCY</td><td>DECIMAL</td><td class='mono'>1051</td><td class='mono'>15</td><td class='mono'>1065</td><td class='mono'>2</td><td>BROKER COMM PAID YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCCF</td><td>DECIMAL</td><td class='mono'>1066</td><td class='mono'>6</td><td class='mono'>1071</td><td class='mono'>3</td><td>PERCENT PARTICIPATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPRO</td><td>CHARACTER</td><td class='mono'>1072</td><td class='mono'>4</td><td class='mono'>1075</td><td class='mono'></td><td>PRODUCT CODE</td><td>Producto</td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPIA</td><td>DECIMAL</td><td class='mono'>1076</td><td class='mono'>15</td><td class='mono'>1090</td><td class='mono'>2</td><td>PENALTY INT ACCRUAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPIP</td><td>DECIMAL</td><td class='mono'>1091</td><td class='mono'>15</td><td class='mono'>1105</td><td class='mono'>2</td><td>PENALTY INT PAID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPUC4</td><td>CHARACTER</td><td class='mono'>1106</td><td class='mono'>6</td><td class='mono'>1111</td><td class='mono'></td><td>USER CODE 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPUC5</td><td>CHARACTER</td><td class='mono'>1112</td><td class='mono'>4</td><td class='mono'>1115</td><td class='mono'></td><td>USER CODE 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSOF</td><td>CHARACTER</td><td class='mono'>1116</td><td class='mono'>4</td><td class='mono'>1119</td><td class='mono'></td><td>SOURCE OF FUNDS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCLF</td><td>CHARACTER</td><td class='mono'>1120</td><td class='mono'>1</td><td class='mono'>1120</td><td class='mono'></td><td>DLS CLASSIFICATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPGLC</td><td>NUMERIC</td><td class='mono'>1121</td><td class='mono'>2</td><td class='mono'>1122</td><td class='mono'></td><td>CHANGES G/L COUNTER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLGM</td><td>NUMERIC</td><td class='mono'>1123</td><td class='mono'>2</td><td class='mono'>1124</td><td class='mono'></td><td>LAST G/L CHG DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLGD</td><td>NUMERIC</td><td class='mono'>1125</td><td class='mono'>2</td><td class='mono'>1126</td><td class='mono'></td><td>LAST G/L CHG DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLGY</td><td>NUMERIC</td><td class='mono'>1127</td><td class='mono'>4</td><td class='mono'>1130</td><td class='mono'></td><td>LAST G/L CHG DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLNR</td><td>DECIMAL</td><td class='mono'>1131</td><td class='mono'>9</td><td class='mono'>1139</td><td class='mono'></td><td>LINE CREDIT GIVEN BY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPGPD</td><td>NUMERIC</td><td class='mono'>1140</td><td class='mono'>2</td><td class='mono'>1141</td><td class='mono'></td><td>GRACE PERIOD/PENALTY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPEXM</td><td>NUMERIC</td><td class='mono'>1142</td><td class='mono'>2</td><td class='mono'>1143</td><td class='mono'></td><td>LOAN EXTENTION DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPEXD</td><td>NUMERIC</td><td class='mono'>1144</td><td class='mono'>2</td><td class='mono'>1145</td><td class='mono'></td><td>LOAN EXTENTION DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPEXY</td><td>NUMERIC</td><td class='mono'>1146</td><td class='mono'>4</td><td class='mono'>1149</td><td class='mono'></td><td>LOAN EXTENTION DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPDED</td><td>DECIMAL</td><td class='mono'>1150</td><td class='mono'>15</td><td class='mono'>1164</td><td class='mono'>2</td><td>TOTAL DEDUCTIONS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPCO</td><td>DECIMAL</td><td class='mono'>1165</td><td class='mono'>5</td><td class='mono'>1169</td><td class='mono'>3</td><td>PENALTY COUNTER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPXRC</td><td>DECIMAL</td><td class='mono'>1170</td><td class='mono'>3</td><td class='mono'>1172</td><td class='mono'></td><td>REFINANCE CYCLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPXRM</td><td>NUMERIC</td><td class='mono'>1173</td><td class='mono'>2</td><td class='mono'>1174</td><td class='mono'></td><td>REFI/INT NEXT DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPXRD</td><td>NUMERIC</td><td class='mono'>1175</td><td class='mono'>2</td><td class='mono'>1176</td><td class='mono'></td><td>REFI/INT NEXT DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPXRY</td><td>NUMERIC</td><td class='mono'>1177</td><td class='mono'>4</td><td class='mono'>1180</td><td class='mono'></td><td>REFI/INT NEXT DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPCM</td><td>NUMERIC</td><td class='mono'>1181</td><td class='mono'>2</td><td class='mono'>1182</td><td class='mono'></td><td>REFI/INT THRU DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPCD</td><td>NUMERIC</td><td class='mono'>1183</td><td class='mono'>2</td><td class='mono'>1184</td><td class='mono'></td><td>REFI/INT THRU DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPCY</td><td>NUMERIC</td><td class='mono'>1185</td><td class='mono'>4</td><td class='mono'>1188</td><td class='mono'></td><td>REFI/INT THRU DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPXRA</td><td>DECIMAL</td><td class='mono'>1189</td><td class='mono'>15</td><td class='mono'>1203</td><td class='mono'>2</td><td>REFINANCIAL AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPXRL</td><td>DECIMAL</td><td class='mono'>1204</td><td class='mono'>15</td><td class='mono'>1218</td><td class='mono'>2</td><td>REFINANCIAL AMNT LTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPXRP</td><td>DECIMAL</td><td class='mono'>1219</td><td class='mono'>15</td><td class='mono'>1233</td><td class='mono'>2</td><td>REFINANCIAL AMNT YTD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRET</td><td>CHARACTER</td><td class='mono'>1234</td><td class='mono'>1</td><td class='mono'>1234</td><td class='mono'></td><td>FLAG PYM/ROLL/REES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPREA</td><td>DECIMAL</td><td class='mono'>1235</td><td class='mono'>12</td><td class='mono'>1246</td><td class='mono'></td><td>RELATION ACCOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRCL</td><td>CHARACTER</td><td class='mono'>1247</td><td class='mono'>1</td><td class='mono'>1247</td><td class='mono'></td><td>FLAG ROLLOVER CLASS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPCL</td><td>CHARACTER</td><td class='mono'>1248</td><td class='mono'>1</td><td class='mono'>1248</td><td class='mono'></td><td>FLAG PENALTY CLASS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTLN</td><td>CHARACTER</td><td class='mono'>1249</td><td class='mono'>2</td><td class='mono'>1250</td><td class='mono'></td><td>TARIFF CODE LOANS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPUC6</td><td>CHARACTER</td><td class='mono'>1251</td><td class='mono'>4</td><td class='mono'>1254</td><td class='mono'></td><td>USER CODE 6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPUC7</td><td>CHARACTER</td><td class='mono'>1255</td><td class='mono'>4</td><td class='mono'>1258</td><td class='mono'></td><td>USER CODE 7</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOMM</td><td>NUMERIC</td><td class='mono'>1259</td><td class='mono'>2</td><td class='mono'>1260</td><td class='mono'></td><td>ORIGINAL MATURITY MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOMD</td><td>NUMERIC</td><td class='mono'>1261</td><td class='mono'>2</td><td class='mono'>1262</td><td class='mono'></td><td>ORIGINAL MATURITY DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOMY</td><td>NUMERIC</td><td class='mono'>1263</td><td class='mono'>4</td><td class='mono'>1266</td><td class='mono'></td><td>ORIGINAL MATURITY YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPSN</td><td>DECIMAL</td><td class='mono'>1267</td><td class='mono'>12</td><td class='mono'>1278</td><td class='mono'></td><td>PASS BOOK NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPSB</td><td>DECIMAL</td><td class='mono'>1279</td><td class='mono'>15</td><td class='mono'>1293</td><td class='mono'>2</td><td>PASS BOOK BALANCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPSM</td><td>NUMERIC</td><td class='mono'>1294</td><td class='mono'>2</td><td class='mono'>1295</td><td class='mono'></td><td>PASS BOOK UPD/DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPSD</td><td>NUMERIC</td><td class='mono'>1296</td><td class='mono'>2</td><td class='mono'>1297</td><td class='mono'></td><td>PASS BOOK UPD/DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPSY</td><td>NUMERIC</td><td class='mono'>1298</td><td class='mono'>4</td><td class='mono'>1301</td><td class='mono'></td><td>PASS BOOK UPD/DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLSM</td><td>NUMERIC</td><td class='mono'>1302</td><td class='mono'>2</td><td class='mono'>1303</td><td class='mono'></td><td>NEXT INC/PER/DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLSD</td><td>NUMERIC</td><td class='mono'>1304</td><td class='mono'>2</td><td class='mono'>1305</td><td class='mono'></td><td>NEXT STATMNT/DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLSY</td><td>NUMERIC</td><td class='mono'>1306</td><td class='mono'>4</td><td class='mono'>1309</td><td class='mono'></td><td>NEXT INC/PER/DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLSP</td><td>DECIMAL</td><td class='mono'>1310</td><td class='mono'>15</td><td class='mono'>1324</td><td class='mono'>2</td><td>LAST PRINC/STATEMENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLSI</td><td>DECIMAL</td><td class='mono'>1325</td><td class='mono'>15</td><td class='mono'>1339</td><td class='mono'>2</td><td>LAST INT/STATEMENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLSR</td><td>DECIMAL</td><td class='mono'>1340</td><td class='mono'>9</td><td class='mono'>1348</td><td class='mono'>6</td><td>LAST RATE/STATEMENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLSX</td><td>DECIMAL</td><td class='mono'>1349</td><td class='mono'>15</td><td class='mono'>1363</td><td class='mono'>2</td><td>LAST PAS DUE/STMNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLSO</td><td>DECIMAL</td><td class='mono'>1364</td><td class='mono'>15</td><td class='mono'>1378</td><td class='mono'>2</td><td>LAST OTHER/STATEMNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPMEM</td><td>DECIMAL</td><td class='mono'>1379</td><td class='mono'>15</td><td class='mono'>1393</td><td class='mono'>2</td><td>MEMO PAST DUE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRRT</td><td>CHARACTER</td><td class='mono'>1394</td><td class='mono'>1</td><td class='mono'>1394</td><td class='mono'></td><td>ROLL OVER RATE TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPMVL</td><td>DECIMAL</td><td class='mono'>1395</td><td class='mono'>21</td><td class='mono'>1415</td><td class='mono'>8</td><td>MARKET VALUE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXP2SP</td><td>NUMERIC</td><td class='mono'>1416</td><td class='mono'>2</td><td class='mono'>1417</td><td class='mono'></td><td>REGLA 78 CICLO1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXP2TR</td><td>DECIMAL</td><td class='mono'>1418</td><td class='mono'>3</td><td class='mono'>1420</td><td class='mono'></td><td>REGLA 78 CICLO2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXP2TC</td><td>CHARACTER</td><td class='mono'>1421</td><td class='mono'>1</td><td class='mono'>1421</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPREV</td><td>CHARACTER</td><td class='mono'>1422</td><td class='mono'>1</td><td class='mono'>1422</td><td class='mono'></td><td>REEVALUATION TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPSA</td><td>CHARACTER</td><td class='mono'>1423</td><td class='mono'>1</td><td class='mono'>1423</td><td class='mono'></td><td>PRIMARY/SECUNDARY ACCT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLSN</td><td>DECIMAL</td><td class='mono'>1424</td><td class='mono'>5</td><td class='mono'>1428</td><td class='mono'></td><td>LAST SUBACCT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPNCU</td><td>DECIMAL</td><td class='mono'>1429</td><td class='mono'>5</td><td class='mono'>1433</td><td class='mono'></td><td>TOTAL PAYMENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPCU</td><td>DECIMAL</td><td class='mono'>1434</td><td class='mono'>3</td><td class='mono'>1436</td><td class='mono'></td><td>INC/PER CYCLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCLS</td><td>NUMERIC</td><td class='mono'>1437</td><td class='mono'>2</td><td class='mono'>1438</td><td class='mono'></td><td>ACCT CLASS G/L</td><td>Clase Contable</td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPACD</td><td>CHARACTER</td><td class='mono'>1439</td><td class='mono'>2</td><td class='mono'>1440</td><td class='mono'></td><td>APPLICATION CODE</td><td>Tipo de Proceso</td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPAC1</td><td>CHARACTER</td><td class='mono'>1441</td><td class='mono'>2</td><td class='mono'>1442</td><td class='mono'></td><td>APPLICATION INTE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPACS</td><td>DECIMAL</td><td class='mono'>1443</td><td class='mono'>15</td><td class='mono'>1457</td><td class='mono'>2</td><td>OPERATION COST</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPORG</td><td>CHARACTER</td><td class='mono'>1458</td><td class='mono'>4</td><td class='mono'>1461</td><td class='mono'></td><td>ORIGEN CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPDST</td><td>CHARACTER</td><td class='mono'>1462</td><td class='mono'>4</td><td class='mono'>1465</td><td class='mono'></td><td>DESTIN CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCPE</td><td>DECIMAL</td><td class='mono'>1466</td><td class='mono'>6</td><td class='mono'>1471</td><td class='mono'>3</td><td>COLLATERAL PERCENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPAP</td><td>DECIMAL</td><td class='mono'>1472</td><td class='mono'>6</td><td class='mono'>1477</td><td class='mono'>3</td><td>PROG/INCREASE %</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPMCY</td><td>NUMERIC</td><td class='mono'>1478</td><td class='mono'>2</td><td class='mono'>1479</td><td class='mono'></td><td>MONTH COMM/YEAR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSUS</td><td>CHARACTER</td><td class='mono'>1480</td><td class='mono'>1</td><td class='mono'>1480</td><td class='mono'></td><td>SUSPENDED INTEREST</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPDLC</td><td>CHARACTER</td><td class='mono'>1481</td><td class='mono'>1</td><td class='mono'>1481</td><td class='mono'></td><td>CONDITION LOANS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPFRA</td><td>CHARACTER</td><td class='mono'>1482</td><td class='mono'>1</td><td class='mono'>1482</td><td class='mono'></td><td>FLOATING RTE/APPLI</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPP1</td><td>CHARACTER</td><td class='mono'>1483</td><td class='mono'>1</td><td class='mono'>1483</td><td class='mono'></td><td>PRIORITY PMNT PRIN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPP2</td><td>CHARACTER</td><td class='mono'>1484</td><td class='mono'>1</td><td class='mono'>1484</td><td class='mono'></td><td>PRIORITY PMNT INTE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPP3</td><td>CHARACTER</td><td class='mono'>1485</td><td class='mono'>1</td><td class='mono'>1485</td><td class='mono'></td><td>PRIORITY PMNT PAST</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPP4</td><td>CHARACTER</td><td class='mono'>1486</td><td class='mono'>1</td><td class='mono'>1486</td><td class='mono'></td><td>PRIORITY PMNT COMM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPP5</td><td>CHARACTER</td><td class='mono'>1487</td><td class='mono'>1</td><td class='mono'>1487</td><td class='mono'></td><td>PRIORITY PMNT TAXE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPP6</td><td>CHARACTER</td><td class='mono'>1488</td><td class='mono'>1</td><td class='mono'>1488</td><td class='mono'></td><td>PRIORITY PMNT DEDU</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPP7</td><td>CHARACTER</td><td class='mono'>1489</td><td class='mono'>1</td><td class='mono'>1489</td><td class='mono'></td><td>PRIORITY PMNT REVA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSPP8</td><td>CHARACTER</td><td class='mono'>1490</td><td class='mono'>1</td><td class='mono'>1490</td><td class='mono'></td><td>PRIORITY PMNT OTH1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLSPP9</td><td>CHARACTER</td><td class='mono'>1491</td><td class='mono'>1</td><td class='mono'>1491</td><td class='mono'></td><td>PRIORITY PMNT OTH2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCRR</td><td>NUMERIC</td><td class='mono'>1492</td><td class='mono'>3</td><td class='mono'>1494</td><td class='mono'></td><td>CHG/RATE TIMES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPRR</td><td>NUMERIC</td><td class='mono'>1495</td><td class='mono'>3</td><td class='mono'>1497</td><td class='mono'></td><td>PERIOD REVISION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPYI</td><td>DECIMAL</td><td class='mono'>1498</td><td class='mono'>15</td><td class='mono'>1512</td><td class='mono'>2</td><td>INTEREST PROYECT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPDCI</td><td>DECIMAL</td><td class='mono'>1513</td><td class='mono'>15</td><td class='mono'>1527</td><td class='mono'>2</td><td>INTEREST DISCOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPFLC</td><td>CHARACTER</td><td class='mono'>1528</td><td class='mono'>1</td><td class='mono'>1528</td><td class='mono'></td><td>BROKER COMM FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPRT</td><td>CHARACTER</td><td class='mono'>1529</td><td class='mono'>2</td><td class='mono'>1530</td><td class='mono'></td><td>RESERVE FOR LOSSES TBL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPRP</td><td>DECIMAL</td><td class='mono'>1531</td><td class='mono'>6</td><td class='mono'>1536</td><td class='mono'>3</td><td>RESERVE LOSSES PERCENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPIY</td><td>DECIMAL</td><td class='mono'>1537</td><td class='mono'>15</td><td class='mono'>1551</td><td class='mono'>2</td><td>PENALTY YTD ACCRUAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPPY</td><td>DECIMAL</td><td class='mono'>1552</td><td class='mono'>15</td><td class='mono'>1566</td><td class='mono'>2</td><td>PENALTY YTD PAID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPINV</td><td>DECIMAL</td><td class='mono'>1567</td><td class='mono'>15</td><td class='mono'>1581</td><td class='mono'>2</td><td>INCIAL INSTALLMNT VALUE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPF01</td><td>CHARACTER</td><td class='mono'>1582</td><td class='mono'>1</td><td class='mono'>1582</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPF02</td><td>CHARACTER</td><td class='mono'>1583</td><td class='mono'>1</td><td class='mono'>1583</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPF03</td><td>CHARACTER</td><td class='mono'>1584</td><td class='mono'>1</td><td class='mono'>1584</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSCH</td><td>CHARACTER</td><td class='mono'>1585</td><td class='mono'>4</td><td class='mono'>1588</td><td class='mono'></td><td>SALE CHANEL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSST</td><td>CHARACTER</td><td class='mono'>1589</td><td class='mono'>4</td><td class='mono'>1592</td><td class='mono'></td><td>SALE SOURCE TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOFN</td><td>DECIMAL</td><td class='mono'>1593</td><td class='mono'>12</td><td class='mono'>1604</td><td class='mono'></td><td>OFFER NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOPI</td><td>DECIMAL</td><td class='mono'>1605</td><td class='mono'>13</td><td class='mono'>1617</td><td class='mono'>2</td><td>INDEX AT OPENING</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPAVI</td><td>DECIMAL</td><td class='mono'>1618</td><td class='mono'>13</td><td class='mono'>1630</td><td class='mono'>2</td><td>AVERAGE INDEX</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIDT</td><td>CHARACTER</td><td class='mono'>1631</td><td class='mono'>1</td><td class='mono'>1631</td><td class='mono'></td><td>INDEX TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPANT</td><td>NUMERIC</td><td class='mono'>1632</td><td class='mono'>3</td><td class='mono'>1634</td><td class='mono'></td><td>AVERAGE NUM TIMES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOPT</td><td>CHARACTER</td><td class='mono'>1635</td><td class='mono'>1</td><td class='mono'>1635</td><td class='mono'></td><td>FLAG ACTIVITY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTDA</td><td>DECIMAL</td><td class='mono'>1636</td><td class='mono'>15</td><td class='mono'>1650</td><td class='mono'>2</td><td>TOTAL DEBIT AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTDM</td><td>DECIMAL</td><td class='mono'>1651</td><td class='mono'>15</td><td class='mono'>1665</td><td class='mono'>2</td><td>TOTAL DEBIT MONTH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPNDB</td><td>DECIMAL</td><td class='mono'>1666</td><td class='mono'>5</td><td class='mono'>1670</td><td class='mono'></td><td>NUMBER OF DEBITS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPNDM</td><td>DECIMAL</td><td class='mono'>1671</td><td class='mono'>5</td><td class='mono'>1675</td><td class='mono'></td><td>DEBITS THIS MONTH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPMPA</td><td>DECIMAL</td><td class='mono'>1676</td><td class='mono'>15</td><td class='mono'>1690</td><td class='mono'>2</td><td>MINIMUM PAYMENT AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPA01</td><td>DECIMAL</td><td class='mono'>1691</td><td class='mono'>15</td><td class='mono'>1705</td><td class='mono'>2</td><td>AMOUNT AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPCT</td><td>DECIMAL</td><td class='mono'>1706</td><td class='mono'>6</td><td class='mono'>1711</td><td class='mono'>3</td><td>PERCENTAGE OF PAYMENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSOU</td><td>CHARACTER</td><td class='mono'>1712</td><td class='mono'>4</td><td class='mono'>1715</td><td class='mono'></td><td>SOURCE OF FUNDS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPDIB</td><td>CHARACTER</td><td class='mono'>1716</td><td class='mono'>4</td><td class='mono'>1719</td><td class='mono'></td><td>DISBURSEMENT OF FUNDS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCRP</td><td>DECIMAL</td><td class='mono'>1720</td><td class='mono'>6</td><td class='mono'>1725</td><td class='mono'>3</td><td>COUNTRY RISK PERCENTAGE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIDG</td><td>DECIMAL</td><td class='mono'>1726</td><td class='mono'>15</td><td class='mono'>1740</td><td class='mono'>2</td><td>INDEX PROFIT &amp; LOSS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPF04</td><td>CHARACTER</td><td class='mono'>1741</td><td class='mono'>1</td><td class='mono'>1741</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPF05</td><td>CHARACTER</td><td class='mono'>1742</td><td class='mono'>1</td><td class='mono'>1742</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPF06</td><td>CHARACTER</td><td class='mono'>1743</td><td class='mono'>1</td><td class='mono'>1743</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPF07</td><td>CHARACTER</td><td class='mono'>1744</td><td class='mono'>1</td><td class='mono'>1744</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCVI</td><td>CHARACTER</td><td class='mono'>1745</td><td class='mono'>1</td><td class='mono'>1745</td><td class='mono'></td><td>CONFIRMATION VIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCUI</td><td>CHARACTER</td><td class='mono'>1746</td><td class='mono'>20</td><td class='mono'>1765</td><td class='mono'></td><td>CUSIP/ISIN CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSCA</td><td>DECIMAL</td><td class='mono'>1766</td><td class='mono'>15</td><td class='mono'>1780</td><td class='mono'>2</td><td>START SCH AMOUT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCFA</td><td>DECIMAL</td><td class='mono'>1781</td><td class='mono'>15</td><td class='mono'>1795</td><td class='mono'>2</td><td>COST OF FOUND</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPRM</td><td>CHARACTER</td><td class='mono'>1796</td><td class='mono'>1</td><td class='mono'>1796</td><td class='mono'></td><td>PRINT MARK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPECU</td><td>CHARACTER</td><td class='mono'>1797</td><td class='mono'>1</td><td class='mono'>1797</td><td class='mono'></td><td>ELECTRONIC CUSTODY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPSU</td><td>CHARACTER</td><td class='mono'>1798</td><td class='mono'>1</td><td class='mono'>1798</td><td class='mono'></td><td>PRODUCT SUPER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPTSF</td><td>CHARACTER</td><td class='mono'>1799</td><td class='mono'>1</td><td class='mono'>1799</td><td class='mono'></td><td>TODAY STM FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCFL</td><td>CHARACTER</td><td class='mono'>1800</td><td class='mono'>1</td><td class='mono'>1800</td><td class='mono'></td><td>CANCELATION FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPDTY</td><td>CHARACTER</td><td class='mono'>1801</td><td class='mono'>1</td><td class='mono'>1801</td><td class='mono'></td><td>DOCUMENT TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPPAF</td><td>CHARACTER</td><td class='mono'>1802</td><td class='mono'>1</td><td class='mono'>1802</td><td class='mono'></td><td>PARTICIPATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPADT</td><td>CHARACTER</td><td class='mono'>1803</td><td class='mono'>1</td><td class='mono'>1803</td><td class='mono'></td><td>AUT/DEBIT TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPIVC</td><td>CHARACTER</td><td class='mono'>1804</td><td class='mono'>20</td><td class='mono'>1823</td><td class='mono'></td><td>INVESTMNT CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSUT</td><td>CHARACTER</td><td class='mono'>1824</td><td class='mono'>1</td><td class='mono'>1824</td><td class='mono'></td><td>SUSPENTION TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPSUC</td><td>CHARACTER</td><td class='mono'>1825</td><td class='mono'>4</td><td class='mono'>1828</td><td class='mono'></td><td>SUSPENTION CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPOFT</td><td>CHARACTER</td><td class='mono'>1829</td><td class='mono'>2</td><td class='mono'>1830</td><td class='mono'></td><td>OFFICIAL CHK TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPRTO</td><td>CHARACTER</td><td class='mono'>1831</td><td class='mono'>2</td><td class='mono'>1832</td><td class='mono'></td><td>RATE TABLE OPN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCDT</td><td>CHARACTER</td><td class='mono'>1833</td><td class='mono'>1</td><td class='mono'>1833</td><td class='mono'></td><td>RATE TYPE OPN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPNPR</td><td>DECIMAL</td><td class='mono'>1834</td><td class='mono'>12</td><td class='mono'>1845</td><td class='mono'></td><td>CREDIT PROPOSAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCRC</td><td>CHARACTER</td><td class='mono'>1846</td><td class='mono'>20</td><td class='mono'>1865</td><td class='mono'></td><td>CREDIT CARD NRO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPCNL</td><td>CHARACTER</td><td class='mono'>1866</td><td class='mono'>2</td><td class='mono'>1867</td><td class='mono'></td><td>CANAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPUNR</td><td>CHARACTER</td><td class='mono'>1868</td><td class='mono'>35</td><td class='mono'>1902</td><td class='mono'></td><td>UNIQUE REFERENCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLMM</td><td>NUMERIC</td><td class='mono'>1903</td><td class='mono'>2</td><td class='mono'>1904</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLMD</td><td>NUMERIC</td><td class='mono'>1905</td><td class='mono'>2</td><td class='mono'>1906</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLMY</td><td>NUMERIC</td><td class='mono'>1907</td><td class='mono'>4</td><td class='mono'>1910</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLMT</td><td>TIMESTAMP</td><td class='mono'>1911</td><td class='mono'>26</td><td class='mono'>1936</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>EXPLMU</td><td>CHARACTER</td><td class='mono'>1937</td><td class='mono'>10</td><td class='mono'>1946</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table></body></html>

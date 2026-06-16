@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>CONCT</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>CONCT</h1>
+<div class='meta'><b>Descripción:</b> Consolidado de operaciones x cliente<br><b>N.º de campos:</b> 45</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>CONPAC</td><td>DECIMAL</td><td class='mono'>1</td><td class='mono'>12</td><td class='mono'>12</td><td class='mono'></td><td>CUENTA PRIMARIA</td><td>1003310300</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>CONTYP</td><td>CHARACTER</td><td class='mono'>13</td><td class='mono'>1</td><td class='mono'>13</td><td class='mono'></td><td>TIPO RELACION</td><td>5</td></tr>
+<tr><td class='mono'>3</td><td class='mono'>CONRTB</td><td>CHARACTER</td><td class='mono'>14</td><td class='mono'>2</td><td class='mono'>15</td><td class='mono'></td><td>INVESTMENT TABLE</td><td>2</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONOIS</td><td>DECIMAL</td><td class='mono'>16</td><td class='mono'>9</td><td class='mono'>24</td><td class='mono'>6</td><td>OVER INVST SPREAD</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONIIP</td><td>CHARACTER</td><td class='mono'>25</td><td class='mono'>1</td><td class='mono'>25</td><td class='mono'></td><td>INTEREST INCLUDED</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CONPMT</td><td>DECIMAL</td><td class='mono'>26</td><td class='mono'>15</td><td class='mono'>40</td><td class='mono'>2</td><td>LOAN PAYMENT AMOUNT</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONPIF</td><td>CHARACTER</td><td class='mono'>41</td><td class='mono'>1</td><td class='mono'>41</td><td class='mono'></td><td>LOAN PAYMENT FLAG</td><td>2</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONOAM</td><td>DECIMAL</td><td class='mono'>42</td><td class='mono'>15</td><td class='mono'>56</td><td class='mono'>2</td><td>MAXIMUM LOAN AMOUNT</td><td>2000000</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONRBK</td><td>CHARACTER</td><td class='mono'>57</td><td class='mono'>2</td><td class='mono'>58</td><td class='mono'></td><td>BANK RELATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CONRBR</td><td>DECIMAL</td><td class='mono'>59</td><td class='mono'>4</td><td class='mono'>62</td><td class='mono'></td><td>BRANCH RELATION</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONRCY</td><td>CHARACTER</td><td class='mono'>63</td><td class='mono'>3</td><td class='mono'>65</td><td class='mono'></td><td>CCY RELATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CONRGL</td><td>DECIMAL</td><td class='mono'>66</td><td class='mono'>16</td><td class='mono'>81</td><td class='mono'></td><td>G/L RELATION</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONRAC</td><td>DECIMAL</td><td class='mono'>82</td><td class='mono'>12</td><td class='mono'>93</td><td class='mono'></td><td>ACCNT RELATION</td><td>67042314526</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONMUL</td><td>DECIMAL</td><td class='mono'>94</td><td class='mono'>13</td><td class='mono'>106</td><td class='mono'></td><td>TRANSF MULTIPLOS</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONMIN</td><td>DECIMAL</td><td class='mono'>107</td><td class='mono'>13</td><td class='mono'>119</td><td class='mono'>2</td><td>MONTO MINIMO</td><td>0.01</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONMAX</td><td>DECIMAL</td><td class='mono'>120</td><td class='mono'>13</td><td class='mono'>132</td><td class='mono'>2</td><td>MONTO MAXIMO</td><td>9999999.99</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONBLS</td><td>DECIMAL</td><td class='mono'>133</td><td class='mono'>13</td><td class='mono'>145</td><td class='mono'>2</td><td>MINIMO ACC-REL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONSTS</td><td>CHARACTER</td><td class='mono'>146</td><td class='mono'>1</td><td class='mono'>146</td><td class='mono'></td><td>STATUS RELATION 
+1- activa; 2-Suspendida; 3-Cerrada</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONSDM</td><td>NUMERIC</td><td class='mono'>147</td><td class='mono'>2</td><td class='mono'>148</td><td class='mono'></td><td>FECHA INICIO-MM</td><td>3</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONSDD</td><td>NUMERIC</td><td class='mono'>149</td><td class='mono'>2</td><td class='mono'>150</td><td class='mono'></td><td>FECHA INICIO-DD</td><td>14</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONSDY</td><td>NUMERIC</td><td class='mono'>151</td><td class='mono'>4</td><td class='mono'>154</td><td class='mono'></td><td>FECHA INICIO-YY</td><td>1974</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONMDM</td><td>NUMERIC</td><td class='mono'>155</td><td class='mono'>2</td><td class='mono'>156</td><td class='mono'></td><td>FECHA VENCIM-MM</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONMDD</td><td>NUMERIC</td><td class='mono'>157</td><td class='mono'>2</td><td class='mono'>158</td><td class='mono'></td><td>FECHA VENCIM-DD</td><td>18</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONMDY</td><td>NUMERIC</td><td class='mono'>159</td><td class='mono'>4</td><td class='mono'>162</td><td class='mono'></td><td>FECHA VENCIM-YY</td><td>2018</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONLDM</td><td>NUMERIC</td><td class='mono'>163</td><td class='mono'>2</td><td class='mono'>164</td><td class='mono'></td><td>F-ULT TRANSF-MM</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONLDD</td><td>NUMERIC</td><td class='mono'>165</td><td class='mono'>2</td><td class='mono'>166</td><td class='mono'></td><td>F-ULT TRANSF-DD</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONLDY</td><td>NUMERIC</td><td class='mono'>167</td><td class='mono'>4</td><td class='mono'>170</td><td class='mono'></td><td>F-ULT TRANSF-YY</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONRDM</td><td>NUMERIC</td><td class='mono'>171</td><td class='mono'>2</td><td class='mono'>172</td><td class='mono'></td><td>REVISION DATE-MONTH</td><td>12</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONRDD</td><td>NUMERIC</td><td class='mono'>173</td><td class='mono'>2</td><td class='mono'>174</td><td class='mono'></td><td>REVISION DATE-DAY</td><td>18</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONRDY</td><td>NUMERIC</td><td class='mono'>175</td><td class='mono'>4</td><td class='mono'>178</td><td class='mono'></td><td>REVISION DATE-YEAR</td><td>2017</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONRPD</td><td>CHARACTER</td><td class='mono'>179</td><td class='mono'>3</td><td class='mono'>181</td><td class='mono'></td><td>REVISION PERIOD</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONRFL</td><td>CHARACTER</td><td class='mono'>182</td><td class='mono'>1</td><td class='mono'>182</td><td class='mono'></td><td>REVISION FLAG</td><td>Y</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONGLT</td><td>CHARACTER</td><td class='mono'>183</td><td class='mono'>1</td><td class='mono'>183</td><td class='mono'></td><td>ENTRY G/L ON-LINE</td><td>Tipo Cobertura:
+HP: 1 Genera TTRAN e INPUT
+otro Solo genera TTRAN
+
+1=En Línea
+2=Cierre del Día</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONPRD</td><td>CHARACTER</td><td class='mono'>184</td><td class='mono'>4</td><td class='mono'>187</td><td class='mono'></td><td>PRODUCT CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CONSQN</td><td>DECIMAL</td><td class='mono'>188</td><td class='mono'>2</td><td class='mono'>189</td><td class='mono'></td><td>SECUENCIA</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONPER</td><td>CHARACTER</td><td class='mono'>190</td><td class='mono'>1</td><td class='mono'>190</td><td class='mono'></td><td>PERIODO PAG INTERES</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CONFG1</td><td>CHARACTER</td><td class='mono'>191</td><td class='mono'>1</td><td class='mono'>191</td><td class='mono'></td><td>AVAILABLE</td><td>N</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONFG2</td><td>CHARACTER</td><td class='mono'>192</td><td class='mono'>1</td><td class='mono'>192</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CONUC1</td><td>CHARACTER</td><td class='mono'>193</td><td class='mono'>4</td><td class='mono'>196</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CONUC2</td><td>CHARACTER</td><td class='mono'>197</td><td class='mono'>4</td><td class='mono'>200</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CONLMM</td><td>NUMERIC</td><td class='mono'>201</td><td class='mono'>2</td><td class='mono'>202</td><td class='mono'></td><td>LAST MAINT/MM</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONLMD</td><td>NUMERIC</td><td class='mono'>203</td><td class='mono'>2</td><td class='mono'>204</td><td class='mono'></td><td>LAST MAINT/DD</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONLMY</td><td>NUMERIC</td><td class='mono'>205</td><td class='mono'>4</td><td class='mono'>208</td><td class='mono'></td><td>LAST MAINT/YY</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONLMT</td><td>TIMESTAMP</td><td class='mono'>209</td><td class='mono'>26</td><td class='mono'>234</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td>0001-01-01-00.00.00.000000</td></tr>
+<tr><td class='mono'></td><td class='mono'>CONLMU</td><td>CHARACTER</td><td class='mono'>235</td><td class='mono'>10</td><td class='mono'>244</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[CONPAC] 9039811 | 5041365800 | 67042185343 | 67042305784 | 67042396961 | 67042436206 | 67042436385 | 67042436487 | 67042436964 | 67042437173
+[CONTYP] 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5
+[CONRTB] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[CONOIS] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[CONIIP] N | N | N | N | N | N | N | N | N | N
+[CONPMT] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[CONOAM] 40000000 | 7500000 | 40000000 | 20000000 | 30000000 | 2000000 | 25000000 | 50000000 | 30000000 | 125000000
+[CONRBK] 01 | 01
+[CONRBR] 1 | 0 | 0 | 17 | 0 | 0 | 0 | 0 | 0 | 0
+[CONRCY] CLP | CLP | CLP | CLP | CLP | CLP | CLP | CLP | CLP | CLP
+[CONRGL] 1302300100500000 | 0 | 0 | 1302300100500000 | 0 | 0 | 0 | 0 | 0 | 0
+[CONRAC] 9039812 | 67042403965 | 67042214576 | 9010478 | 67042396983 | 67042436217 | 67042436421 | 67042436567 | 67042437140 | 67042437286
+[CONMUL] 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1
+[CONMIN] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[CONMAX] 0 | 7500000 | 20000000 | 0 | 20000000 | 5000000 | 10000000 | 20000000 | 15000000 | 10000000
+[CONBLS] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[CONSTS] 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1
+[CONSDM] 11 | 11 | 10 | 3 | 11 | 11 | 11 | 11 | 11 | 11
+[CONSDD] 7 | 28 | 21 | 1 | 30 | 22 | 23 | 23 | 28 | 28
+[CONSDY] 2018 | 2008 | 2010 | 2018 | 2016 | 2017 | 2017 | 2017 | 2017 | 2017
+[CONMDM] 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11
+[CONMDD] 7 | 28 | 22 | 29 | 29 | 22 | 23 | 23 | 28 | 28
+[CONMDY] 2019 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018
+[CONLDM] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[CONLDD] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[CONLDY] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[CONRDM] 2 | 10 | 10 | 4 | 10 | 10 | 10 | 10 | 10 | 10
+[CONRDD] 17 | 28 | 22 | 29 | 29 | 22 | 23 | 23 | 28 | 28
+[CONRDY] 2019 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018
+[CONRPD] 1 | 001 | 001 | 1 | 001 | 001 | 001 | 001 | 001 | 001
+[CONRFL] D | D | D | D | D | D | D | D | D | D
+[CONGLT] 1 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2
+[CONPRD] LS01 | LS02 | LS01 | LS02 | LS02 | LS01 | LS02 | LS02 | LS02 | LS02
+[CONSQN] 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+[CONFG1] Y | Y | Y | Y | Y | Y | Y | Y | Y | Y
+[CONLMM] 11 | 5 | 9 | 5 | 2 | 9 | 3 | 3 | 10 | 6
+[CONLMD] 7 | 28 | 28 | 15 | 5 | 13 | 19 | 19 | 29 | 12
+[CONLMY] 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018 | 2018
+[CONLMT] 2018-11-28-17.48.30.476000 | 2018-05-28-13.50.00.323000 | 2018-09-28-17.20.36.802000 | 2018-05-15-18.42.36.145000 | 2018-02-05-15.50.54.968000 | 2018-09-13-16.03.41.551000 | 2018-03-19-18.16.18.149000 | 2018-03-19-18.15.55.218000 | 2018-10-29-12.55.02.574000 | 2018-06-12-18.12.53.507000
+[CONLMU] PARDATAPRO | BICEANDAUR | BICABRIONE | BICPHERNAN | BICAMARDON | BICEANDAUR | BICAMARDON | BICAMARDON | BICABRIONE | BICPHERNAN</div></body></html>

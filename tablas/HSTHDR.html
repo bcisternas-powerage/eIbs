@@ -1,0 +1,325 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>HSTHDR</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>HSTHDR</h1>
+<div class='meta'><b>Descripción:</b> Maestro de Cartolas(Cta.Cte, etc.)<br><b>N.º de campos:</b> 167</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>STHCUN</td><td>DECIMAL</td><td class='mono'>1</td><td class='mono'>9</td><td class='mono'>9</td><td class='mono'></td><td>NRO CLIENTE</td><td>655857</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>STHACC</td><td>DECIMAL</td><td class='mono'>10</td><td class='mono'>12</td><td class='mono'>21</td><td class='mono'></td><td>NRO CUENTA</td><td>67042291158</td></tr>
+<tr><td class='mono'>3</td><td class='mono'>STHRDM</td><td>NUMERIC</td><td class='mono'>22</td><td class='mono'>2</td><td class='mono'>23</td><td class='mono'></td><td>FECHA ESTADO MM</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHRDD</td><td>NUMERIC</td><td class='mono'>24</td><td class='mono'>2</td><td class='mono'>25</td><td class='mono'></td><td>FECHA ESTADO DD</td><td>2</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHRDY</td><td>NUMERIC</td><td class='mono'>26</td><td class='mono'>4</td><td class='mono'>29</td><td class='mono'></td><td>FECHA ESTADO YY</td><td>2019</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNUM</td><td>DECIMAL</td><td class='mono'>30</td><td class='mono'>7</td><td class='mono'>36</td><td class='mono'></td><td>NRO ESTADO       CARTOLA</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHBNK</td><td>CHARACTER</td><td class='mono'>37</td><td class='mono'>2</td><td class='mono'>38</td><td class='mono'></td><td>BANK NUMBER</td><td>01</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHBRN</td><td>DECIMAL</td><td class='mono'>39</td><td class='mono'>4</td><td class='mono'>42</td><td class='mono'></td><td>AGENCIA</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHCCY</td><td>CHARACTER</td><td class='mono'>43</td><td class='mono'>3</td><td class='mono'>45</td><td class='mono'></td><td>MONEDA</td><td>CLP</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHACD</td><td>CHARACTER</td><td class='mono'>46</td><td class='mono'>2</td><td class='mono'>47</td><td class='mono'></td><td>APPLICATION CODE</td><td>01</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHATY</td><td>CHARACTER</td><td class='mono'>48</td><td class='mono'>4</td><td class='mono'>51</td><td class='mono'></td><td>ACCT TYPE</td><td>CCTE</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHPRO</td><td>CHARACTER</td><td class='mono'>52</td><td class='mono'>4</td><td class='mono'>55</td><td class='mono'></td><td>CODIGO PRODUCTO</td><td>CC01</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHLSB</td><td>DECIMAL</td><td class='mono'>56</td><td class='mono'>15</td><td class='mono'>70</td><td class='mono'>2</td><td>SALDO ANT GROS</td><td>-83633965</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHLSN</td><td>DECIMAL</td><td class='mono'>71</td><td class='mono'>15</td><td class='mono'>85</td><td class='mono'>2</td><td>SALDO ANT NETO</td><td>-83633965</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHLSM</td><td>NUMERIC</td><td class='mono'>86</td><td class='mono'>2</td><td class='mono'>87</td><td class='mono'></td><td>FECHA ANTERIOR MM</td><td>12</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHLSD</td><td>NUMERIC</td><td class='mono'>88</td><td class='mono'>2</td><td class='mono'>89</td><td class='mono'></td><td>FECHA ANTERIOR DD</td><td>31</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHLSY</td><td>NUMERIC</td><td class='mono'>90</td><td class='mono'>4</td><td class='mono'>93</td><td class='mono'></td><td>FECHA ANTERIOR AA</td><td>2018</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMLA</td><td>NUMERIC</td><td class='mono'>94</td><td class='mono'>2</td><td class='mono'>95</td><td class='mono'></td><td>MAILING ADDRESS</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMLC</td><td>CHARACTER</td><td class='mono'>96</td><td class='mono'>4</td><td class='mono'>99</td><td class='mono'></td><td>MAILING CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHAST</td><td>CHARACTER</td><td class='mono'>100</td><td class='mono'>1</td><td class='mono'>100</td><td class='mono'></td><td>ESTADO CUENTA</td><td>A</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNBL</td><td>DECIMAL</td><td class='mono'>101</td><td class='mono'>15</td><td class='mono'>115</td><td class='mono'>2</td><td>SALDO NETO</td><td>-83633965</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNAV</td><td>DECIMAL</td><td class='mono'>116</td><td class='mono'>17</td><td class='mono'>132</td><td class='mono'>2</td><td>PROMEDIO NETO</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHGBL</td><td>DECIMAL</td><td class='mono'>133</td><td class='mono'>15</td><td class='mono'>147</td><td class='mono'>2</td><td>SALDO GROS</td><td>-83633965</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHGAV</td><td>DECIMAL</td><td class='mono'>148</td><td class='mono'>17</td><td class='mono'>164</td><td class='mono'>2</td><td>PROMEDIO GROS</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHOLM</td><td>NUMERIC</td><td class='mono'>165</td><td class='mono'>2</td><td class='mono'>166</td><td class='mono'></td><td>C/LIM O/D REV DATE MM</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHOLD</td><td>NUMERIC</td><td class='mono'>167</td><td class='mono'>2</td><td class='mono'>168</td><td class='mono'></td><td>C/LIM O/D REV DATE DD</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHOLY</td><td>NUMERIC</td><td class='mono'>169</td><td class='mono'>4</td><td class='mono'>172</td><td class='mono'></td><td>C/LIM O/D REV DATE YY</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHCLI</td><td>DECIMAL</td><td class='mono'>173</td><td class='mono'>15</td><td class='mono'>187</td><td class='mono'>2</td><td>LIMITE DE CREDITO</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHCLM</td><td>DECIMAL</td><td class='mono'>188</td><td class='mono'>5</td><td class='mono'>192</td><td class='mono'></td><td>VECES USADO</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHODI</td><td>DECIMAL</td><td class='mono'>193</td><td class='mono'>15</td><td class='mono'>207</td><td class='mono'>2</td><td>INTERES COBRADO</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHIVA</td><td>DECIMAL</td><td class='mono'>208</td><td class='mono'>15</td><td class='mono'>222</td><td class='mono'>2</td><td>IVA COBRADO</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHRTE</td><td>DECIMAL</td><td class='mono'>223</td><td class='mono'>9</td><td class='mono'>231</td><td class='mono'>6</td><td>TASA DEL REAL MASTER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHRMA</td><td>DECIMAL</td><td class='mono'>232</td><td class='mono'>15</td><td class='mono'>246</td><td class='mono'>2</td><td>PROMEDIO REAL MASTER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHPRN</td><td>NUMERIC</td><td class='mono'>247</td><td class='mono'>2</td><td class='mono'>248</td><td class='mono'></td><td>NUMERO IMPRESIONES</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHCMC</td><td>DECIMAL</td><td class='mono'>249</td><td class='mono'>9</td><td class='mono'>257</td><td class='mono'></td><td>COMMITMENT CUSTOMER</td><td>655857</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHCMN</td><td>NUMERIC</td><td class='mono'>258</td><td class='mono'>4</td><td class='mono'>261</td><td class='mono'></td><td>COMMITMENT NUMBER</td><td>9999</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHCGL</td><td>DECIMAL</td><td class='mono'>262</td><td class='mono'>16</td><td class='mono'>277</td><td class='mono'></td><td>CHARGES G/L</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHCCN</td><td>DECIMAL</td><td class='mono'>278</td><td class='mono'>8</td><td class='mono'>285</td><td class='mono'></td><td>COST CENTER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHACL</td><td>NUMERIC</td><td class='mono'>286</td><td class='mono'>2</td><td class='mono'>287</td><td class='mono'></td><td>ACCOUNT CLASS</td><td>30</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHSCF</td><td>CHARACTER</td><td class='mono'>288</td><td class='mono'>1</td><td class='mono'>288</td><td class='mono'></td><td>SERV/CHG FLAG</td><td>Y</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHLIF</td><td>CHARACTER</td><td class='mono'>289</td><td class='mono'>1</td><td class='mono'>289</td><td class='mono'></td><td>LANGUAGE FLAG</td><td>S</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHHSF</td><td>CHARACTER</td><td class='mono'>290</td><td class='mono'>1</td><td class='mono'>290</td><td class='mono'></td><td>HLD/STMNT FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHSTV</td><td>CHARACTER</td><td class='mono'>291</td><td class='mono'>1</td><td class='mono'>291</td><td class='mono'></td><td>STATEMENT VIA</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHUC1</td><td>CHARACTER</td><td class='mono'>292</td><td class='mono'>4</td><td class='mono'>295</td><td class='mono'></td><td>USER CODE 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHUC2</td><td>CHARACTER</td><td class='mono'>296</td><td class='mono'>4</td><td class='mono'>299</td><td class='mono'></td><td>USER CODE 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHUC3</td><td>CHARACTER</td><td class='mono'>300</td><td class='mono'>4</td><td class='mono'>303</td><td class='mono'></td><td>USER CODE 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHUC4</td><td>CHARACTER</td><td class='mono'>304</td><td class='mono'>6</td><td class='mono'>309</td><td class='mono'></td><td>USER CODE 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNDR</td><td>DECIMAL</td><td class='mono'>310</td><td class='mono'>5</td><td class='mono'>314</td><td class='mono'></td><td>NO. OF DR/S</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNCR</td><td>DECIMAL</td><td class='mono'>315</td><td class='mono'>5</td><td class='mono'>319</td><td class='mono'></td><td>NO. OF CR/S</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNCK</td><td>DECIMAL</td><td class='mono'>320</td><td class='mono'>5</td><td class='mono'>324</td><td class='mono'></td><td>NO. OF CHKS</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNDP</td><td>DECIMAL</td><td class='mono'>325</td><td class='mono'>5</td><td class='mono'>329</td><td class='mono'></td><td>NO. OF DEPS</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNC1</td><td>DECIMAL</td><td class='mono'>330</td><td class='mono'>5</td><td class='mono'>334</td><td class='mono'></td><td>CONTADOR 1</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNC2</td><td>DECIMAL</td><td class='mono'>335</td><td class='mono'>5</td><td class='mono'>339</td><td class='mono'></td><td>CONTADOR 2</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNC3</td><td>DECIMAL</td><td class='mono'>340</td><td class='mono'>5</td><td class='mono'>344</td><td class='mono'></td><td>CONTADOR 3</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHIDC</td><td>DECIMAL</td><td class='mono'>345</td><td class='mono'>5</td><td class='mono'>349</td><td class='mono'></td><td>ITEMS DEP</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHOFC</td><td>CHARACTER</td><td class='mono'>350</td><td class='mono'>4</td><td class='mono'>353</td><td class='mono'></td><td>OFFICER CODE</td><td>6118</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHPHN</td><td>DECIMAL</td><td class='mono'>354</td><td class='mono'>15</td><td class='mono'>368</td><td class='mono'></td><td>PHONE NUMBER</td><td>229897267</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHPXT</td><td>DECIMAL</td><td class='mono'>369</td><td class='mono'>4</td><td class='mono'>372</td><td class='mono'></td><td>PHONE EXTENSION</td><td>7267</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNME</td><td>CHARACTER</td><td class='mono'>373</td><td class='mono'>45</td><td class='mono'>417</td><td class='mono'></td><td>OFFICER NAME</td><td>JAVIERA PAZ HERNANDEZ OPAZO</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHOML</td><td>CHARACTER</td><td class='mono'>418</td><td class='mono'>60</td><td class='mono'>477</td><td class='mono'></td><td>OFFIC E-MAIL ADDRESS</td><td>JHERNANDEZ@BANCOINTERNACIONAL.CL</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHCML</td><td>CHARACTER</td><td class='mono'>478</td><td class='mono'>60</td><td class='mono'>537</td><td class='mono'></td><td>CUSTOMER EMAIL ADDRESS</td><td>CONTACTO@BANCOINTERNACIONAL.CL</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHFAX</td><td>DECIMAL</td><td class='mono'>538</td><td class='mono'>15</td><td class='mono'>552</td><td class='mono'></td><td>FAX PHONE NUMBER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHBDS</td><td>CHARACTER</td><td class='mono'>553</td><td class='mono'>45</td><td class='mono'>597</td><td class='mono'></td><td>BRANCH NAME</td><td>CASA MATRIZ</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHPDS</td><td>CHARACTER</td><td class='mono'>598</td><td class='mono'>45</td><td class='mono'>642</td><td class='mono'></td><td>PRODUCT NAME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHLAU</td><td>DECIMAL</td><td class='mono'>643</td><td class='mono'>15</td><td class='mono'>657</td><td class='mono'>2</td><td>MONTO AUTORIZADO</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHLUT</td><td>DECIMAL</td><td class='mono'>658</td><td class='mono'>15</td><td class='mono'>672</td><td class='mono'>2</td><td>MONTO UTILIZADO</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHLVM</td><td>NUMERIC</td><td class='mono'>673</td><td class='mono'>2</td><td class='mono'>674</td><td class='mono'></td><td>VCTO LINEA MM</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHLVD</td><td>NUMERIC</td><td class='mono'>675</td><td class='mono'>2</td><td class='mono'>676</td><td class='mono'></td><td>VCTO LINEA DD</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHLVY</td><td>NUMERIC</td><td class='mono'>677</td><td class='mono'>4</td><td class='mono'>680</td><td class='mono'></td><td>VCTO LINEA YY</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHIDN</td><td>CHARACTER</td><td class='mono'>681</td><td class='mono'>25</td><td class='mono'>705</td><td class='mono'></td><td>IDENTIFICATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNA1</td><td>CHARACTER</td><td class='mono'>706</td><td class='mono'>60</td><td class='mono'>765</td><td class='mono'></td><td>NOMBRE  1</td><td>RIA CHILE SERVICIOS FINANCIERO SPA</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNA2</td><td>CHARACTER</td><td class='mono'>766</td><td class='mono'>60</td><td class='mono'>825</td><td class='mono'></td><td>NOMBRE  2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNA3</td><td>CHARACTER</td><td class='mono'>826</td><td class='mono'>60</td><td class='mono'>885</td><td class='mono'></td><td>NOMBRE  3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNA4</td><td>CHARACTER</td><td class='mono'>886</td><td class='mono'>60</td><td class='mono'>945</td><td class='mono'></td><td>NOMBRE  4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNA5</td><td>CHARACTER</td><td class='mono'>946</td><td class='mono'>60</td><td class='mono'>1005</td><td class='mono'></td><td>NOMBRE  5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNA6</td><td>CHARACTER</td><td class='mono'>1006</td><td class='mono'>60</td><td class='mono'>1065</td><td class='mono'></td><td>NOMBRE  6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNA7</td><td>CHARACTER</td><td class='mono'>1066</td><td class='mono'>60</td><td class='mono'>1125</td><td class='mono'></td><td>NOMBRE  7</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNA8</td><td>CHARACTER</td><td class='mono'>1126</td><td class='mono'>60</td><td class='mono'>1185</td><td class='mono'></td><td>NOMBRE  8</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNA9</td><td>CHARACTER</td><td class='mono'>1186</td><td class='mono'>60</td><td class='mono'>1245</td><td class='mono'></td><td>NOMBRE  9</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHN10</td><td>CHARACTER</td><td class='mono'>1246</td><td class='mono'>60</td><td class='mono'>1305</td><td class='mono'></td><td>NOMBRE  10</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMA1</td><td>CHARACTER</td><td class='mono'>1306</td><td class='mono'>60</td><td class='mono'>1365</td><td class='mono'></td><td>DIRECCION 1</td><td>CATEDRAL 1009</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMA2</td><td>CHARACTER</td><td class='mono'>1366</td><td class='mono'>60</td><td class='mono'>1425</td><td class='mono'></td><td>DIRECCION 2</td><td>OFICINA 2003</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMA3</td><td>CHARACTER</td><td class='mono'>1426</td><td class='mono'>60</td><td class='mono'>1485</td><td class='mono'></td><td>DIRECCION 3</td><td>SANTIAGO,</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMA4</td><td>CHARACTER</td><td class='mono'>1486</td><td class='mono'>60</td><td class='mono'>1545</td><td class='mono'></td><td>DIRECCION 4</td><td>CHILE</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHCOM</td><td>CHARACTER</td><td class='mono'>1546</td><td class='mono'>45</td><td class='mono'>1590</td><td class='mono'></td><td>COMUNA</td><td>SANTIAGO</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHCTY</td><td>CHARACTER</td><td class='mono'>1591</td><td class='mono'>35</td><td class='mono'>1625</td><td class='mono'></td><td>CITY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHPRV</td><td>CHARACTER</td><td class='mono'>1626</td><td class='mono'>45</td><td class='mono'>1670</td><td class='mono'></td><td>PROVINCIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHRGN</td><td>CHARACTER</td><td class='mono'>1671</td><td class='mono'>45</td><td class='mono'>1715</td><td class='mono'></td><td>REGION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHCTR</td><td>CHARACTER</td><td class='mono'>1716</td><td class='mono'>35</td><td class='mono'>1750</td><td class='mono'></td><td>COUNTRY</td><td>CHILE</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHSTE</td><td>CHARACTER</td><td class='mono'>1751</td><td class='mono'>4</td><td class='mono'>1754</td><td class='mono'></td><td>STATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHZPC</td><td>CHARACTER</td><td class='mono'>1755</td><td class='mono'>15</td><td class='mono'>1769</td><td class='mono'></td><td>ZIP CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHPOB</td><td>CHARACTER</td><td class='mono'>1770</td><td class='mono'>10</td><td class='mono'>1779</td><td class='mono'></td><td>P.O. BOX</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMAU</td><td>DECIMAL</td><td class='mono'>1780</td><td class='mono'>15</td><td class='mono'>1794</td><td class='mono'>2</td><td>CUPO LINEA LCR</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMUT</td><td>DECIMAL</td><td class='mono'>1795</td><td class='mono'>15</td><td class='mono'>1809</td><td class='mono'>2</td><td>MONTO AUTILIZADO</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHSAL</td><td>DECIMAL</td><td class='mono'>1810</td><td class='mono'>15</td><td class='mono'>1824</td><td class='mono'>2</td><td>SALDO LINEA CRED</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHTCK</td><td>DECIMAL</td><td class='mono'>1825</td><td class='mono'>15</td><td class='mono'>1839</td><td class='mono'>2</td><td>MONTO CHEQUES</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHTGI</td><td>DECIMAL</td><td class='mono'>1840</td><td class='mono'>15</td><td class='mono'>1854</td><td class='mono'>2</td><td>MONTO GIROS</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHTOC</td><td>DECIMAL</td><td class='mono'>1855</td><td class='mono'>15</td><td class='mono'>1869</td><td class='mono'>2</td><td>MONTO OTR.CARGO</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHTDP</td><td>DECIMAL</td><td class='mono'>1870</td><td class='mono'>15</td><td class='mono'>1884</td><td class='mono'>2</td><td>MONTO DEPOSITO</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHVCM</td><td>NUMERIC</td><td class='mono'>1885</td><td class='mono'>2</td><td class='mono'>1886</td><td class='mono'></td><td>VENCIMIENTO MM</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHVCD</td><td>NUMERIC</td><td class='mono'>1887</td><td class='mono'>2</td><td class='mono'>1888</td><td class='mono'></td><td>VENCIMIENTO DD</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHVCY</td><td>NUMERIC</td><td class='mono'>1889</td><td class='mono'>4</td><td class='mono'>1892</td><td class='mono'></td><td>VENCIMIENTO YY</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHLN1</td><td>CHARACTER</td><td class='mono'>1893</td><td class='mono'>80</td><td class='mono'>1972</td><td class='mono'></td><td>LINEA1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHLN2</td><td>CHARACTER</td><td class='mono'>1973</td><td class='mono'>80</td><td class='mono'>2052</td><td class='mono'></td><td>LINEA2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHLN3</td><td>CHARACTER</td><td class='mono'>2053</td><td class='mono'>80</td><td class='mono'>2132</td><td class='mono'></td><td>LINEA3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHRT1</td><td>DECIMAL</td><td class='mono'>2133</td><td class='mono'>9</td><td class='mono'>2141</td><td class='mono'>6</td><td>INTEREST RATE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMKL</td><td>DECIMAL</td><td class='mono'>2142</td><td class='mono'>13</td><td class='mono'>2154</td><td class='mono'>2</td><td>MMK/GRS BAL/LIM</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMB1</td><td>DECIMAL</td><td class='mono'>2155</td><td class='mono'>13</td><td class='mono'>2167</td><td class='mono'>2</td><td>MMK/LEV1 BAL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMB2</td><td>DECIMAL</td><td class='mono'>2168</td><td class='mono'>13</td><td class='mono'>2180</td><td class='mono'>2</td><td>MMK/LEV2 BAL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMB3</td><td>DECIMAL</td><td class='mono'>2181</td><td class='mono'>13</td><td class='mono'>2193</td><td class='mono'>2</td><td>MMK/LEV3 BAL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMB4</td><td>DECIMAL</td><td class='mono'>2194</td><td class='mono'>13</td><td class='mono'>2206</td><td class='mono'>2</td><td>MMK/LEV4 BAL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMB5</td><td>DECIMAL</td><td class='mono'>2207</td><td class='mono'>13</td><td class='mono'>2219</td><td class='mono'>2</td><td>MMK/LEV5 BAL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMB6</td><td>DECIMAL</td><td class='mono'>2220</td><td class='mono'>13</td><td class='mono'>2232</td><td class='mono'>2</td><td>MMK/LEV6 BAL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMB7</td><td>DECIMAL</td><td class='mono'>2233</td><td class='mono'>13</td><td class='mono'>2245</td><td class='mono'>2</td><td>MMK/LEV7 BAL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMB8</td><td>DECIMAL</td><td class='mono'>2246</td><td class='mono'>13</td><td class='mono'>2258</td><td class='mono'>2</td><td>MMK/LEV8 BAL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMB9</td><td>DECIMAL</td><td class='mono'>2259</td><td class='mono'>13</td><td class='mono'>2271</td><td class='mono'>2</td><td>MMK/LEV9 BAL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMBX</td><td>DECIMAL</td><td class='mono'>2272</td><td class='mono'>13</td><td class='mono'>2284</td><td class='mono'>2</td><td>MMK/LEV10 BAL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMBY</td><td>DECIMAL</td><td class='mono'>2285</td><td class='mono'>13</td><td class='mono'>2297</td><td class='mono'>2</td><td>MMK/LEV11 BAL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMKR</td><td>DECIMAL</td><td class='mono'>2298</td><td class='mono'>9</td><td class='mono'>2306</td><td class='mono'>6</td><td>MMK RATE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMR1</td><td>DECIMAL</td><td class='mono'>2307</td><td class='mono'>9</td><td class='mono'>2315</td><td class='mono'>6</td><td>MMK/LEV1 RTE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMR2</td><td>DECIMAL</td><td class='mono'>2316</td><td class='mono'>9</td><td class='mono'>2324</td><td class='mono'>6</td><td>MMK/LEV2 RTE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMR3</td><td>DECIMAL</td><td class='mono'>2325</td><td class='mono'>9</td><td class='mono'>2333</td><td class='mono'>6</td><td>MMK/LEV3 RTE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMR4</td><td>DECIMAL</td><td class='mono'>2334</td><td class='mono'>9</td><td class='mono'>2342</td><td class='mono'>6</td><td>MMK/LEV4 RTE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMR5</td><td>DECIMAL</td><td class='mono'>2343</td><td class='mono'>9</td><td class='mono'>2351</td><td class='mono'>6</td><td>MMK/LEV5 RTE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMR6</td><td>DECIMAL</td><td class='mono'>2352</td><td class='mono'>9</td><td class='mono'>2360</td><td class='mono'>6</td><td>MMK/LEV6 RTE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMR7</td><td>DECIMAL</td><td class='mono'>2361</td><td class='mono'>9</td><td class='mono'>2369</td><td class='mono'>6</td><td>MMK/LEV7 RTE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMR8</td><td>DECIMAL</td><td class='mono'>2370</td><td class='mono'>9</td><td class='mono'>2378</td><td class='mono'>6</td><td>MMK/LEV8 RTE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMR9</td><td>DECIMAL</td><td class='mono'>2379</td><td class='mono'>9</td><td class='mono'>2387</td><td class='mono'>6</td><td>MMK/LEV9 RTE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMRX</td><td>DECIMAL</td><td class='mono'>2388</td><td class='mono'>9</td><td class='mono'>2396</td><td class='mono'>6</td><td>MMK/LEV10 RTE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMRY</td><td>DECIMAL</td><td class='mono'>2397</td><td class='mono'>9</td><td class='mono'>2405</td><td class='mono'>6</td><td>MMK/LEV11 RTE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHIPY</td><td>DECIMAL</td><td class='mono'>2406</td><td class='mono'>13</td><td class='mono'>2418</td><td class='mono'>2</td><td>INT/PAID YTD</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHIPS</td><td>DECIMAL</td><td class='mono'>2419</td><td class='mono'>13</td><td class='mono'>2431</td><td class='mono'>2</td><td>INT EARNED CYCLE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHAPY</td><td>DECIMAL</td><td class='mono'>2432</td><td class='mono'>9</td><td class='mono'>2440</td><td class='mono'>6</td><td>APY RATE</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHRT2</td><td>DECIMAL</td><td class='mono'>2441</td><td class='mono'>9</td><td class='mono'>2449</td><td class='mono'>6</td><td>RATE 2</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHRT3</td><td>DECIMAL</td><td class='mono'>2450</td><td class='mono'>9</td><td class='mono'>2458</td><td class='mono'>6</td><td>RATE 3</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHOPM</td><td>NUMERIC</td><td class='mono'>2459</td><td class='mono'>2</td><td class='mono'>2460</td><td class='mono'></td><td>OPENING DATE MM</td><td>6</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHOPD</td><td>NUMERIC</td><td class='mono'>2461</td><td class='mono'>2</td><td class='mono'>2462</td><td class='mono'></td><td>OPENING DATE DD</td><td>21</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHOPY</td><td>NUMERIC</td><td class='mono'>2463</td><td class='mono'>4</td><td class='mono'>2466</td><td class='mono'></td><td>OPENING DATE YY</td><td>2013</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHCCO</td><td>CHARACTER</td><td class='mono'>2467</td><td class='mono'>6</td><td class='mono'>2472</td><td class='mono'></td><td>CODIGO CONVENIO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHNCO</td><td>CHARACTER</td><td class='mono'>2473</td><td class='mono'>45</td><td class='mono'>2517</td><td class='mono'></td><td>NOMBRE COONVENIO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHVCA</td><td>DECIMAL</td><td class='mono'>2518</td><td class='mono'>15</td><td class='mono'>2532</td><td class='mono'>2</td><td>VAL/CUO STM/ACT</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHSCA</td><td>DECIMAL</td><td class='mono'>2533</td><td class='mono'>15</td><td class='mono'>2547</td><td class='mono'>2</td><td>SAL/CUO ACT/STM</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHSCP</td><td>DECIMAL</td><td class='mono'>2548</td><td class='mono'>15</td><td class='mono'>2562</td><td class='mono'>2</td><td>SAL/CUO PACTADA</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHURM</td><td>DECIMAL</td><td class='mono'>2563</td><td class='mono'>15</td><td class='mono'>2577</td><td class='mono'>2</td><td>ULTIMO REMANENT</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHCMV</td><td>DECIMAL</td><td class='mono'>2578</td><td class='mono'>15</td><td class='mono'>2592</td><td class='mono'>2</td><td>Acumulador de Compras</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHAM1</td><td>DECIMAL</td><td class='mono'>2593</td><td class='mono'>15</td><td class='mono'>2607</td><td class='mono'>2</td><td>AMOUNT 1</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHAM2</td><td>DECIMAL</td><td class='mono'>2608</td><td class='mono'>15</td><td class='mono'>2622</td><td class='mono'>2</td><td>AMOUNT 2</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHAM3</td><td>DECIMAL</td><td class='mono'>2623</td><td class='mono'>15</td><td class='mono'>2637</td><td class='mono'>2</td><td>TEF</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHRSM</td><td>NUMERIC</td><td class='mono'>2638</td><td class='mono'>2</td><td class='mono'>2639</td><td class='mono'></td><td>REG/SOCIO MM</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHRSD</td><td>NUMERIC</td><td class='mono'>2640</td><td class='mono'>2</td><td class='mono'>2641</td><td class='mono'></td><td>REG/SOCIO DD</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHRSY</td><td>NUMERIC</td><td class='mono'>2642</td><td class='mono'>4</td><td class='mono'>2645</td><td class='mono'></td><td>REG/SOCIO YY</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHDDM</td><td>NUMERIC</td><td class='mono'>2646</td><td class='mono'>2</td><td class='mono'>2647</td><td class='mono'></td><td>DTE/DISPO MM</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHDDD</td><td>NUMERIC</td><td class='mono'>2648</td><td class='mono'>2</td><td class='mono'>2649</td><td class='mono'></td><td>DTE/DISPO DD</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHDDY</td><td>NUMERIC</td><td class='mono'>2650</td><td class='mono'>4</td><td class='mono'>2653</td><td class='mono'></td><td>DTE/DISPO YY</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMG1</td><td>CHARACTER</td><td class='mono'>2654</td><td class='mono'>500</td><td class='mono'>3153</td><td class='mono'></td><td>MESG LINE 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMG2</td><td>CHARACTER</td><td class='mono'>3154</td><td class='mono'>500</td><td class='mono'>3653</td><td class='mono'></td><td>MESG LINE 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHMG3</td><td>CHARACTER</td><td class='mono'>3654</td><td class='mono'>500</td><td class='mono'>4153</td><td class='mono'></td><td>MESG LINE 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHPTH</td><td>CHARACTER</td><td class='mono'>4154</td><td class='mono'>256</td><td class='mono'>4409</td><td class='mono'></td><td>PATH ADDRESS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHINT</td><td>CHARACTER</td><td class='mono'>4410</td><td class='mono'>18</td><td class='mono'>4427</td><td class='mono'></td><td>CLABE INTERBANK</td><td>180670422911580  0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHRFC</td><td>CHARACTER</td><td class='mono'>4428</td><td class='mono'>18</td><td class='mono'>4445</td><td class='mono'></td><td>RFC/CURP</td><td>761349341</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHPLA</td><td>CHARACTER</td><td class='mono'>4446</td><td class='mono'>4</td><td class='mono'>4449</td><td class='mono'></td><td>PLAZA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>STHDIA</td><td>NUMERIC</td><td class='mono'>4450</td><td class='mono'>2</td><td class='mono'>4451</td><td class='mono'></td><td>DIAS TRANS.</td><td>2</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHPRM</td><td>NUMERIC</td><td class='mono'>4452</td><td class='mono'>15</td><td class='mono'>4466</td><td class='mono'>2</td><td>SALDO PROM. MIN</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHPIN</td><td>NUMERIC</td><td class='mono'>4467</td><td class='mono'>15</td><td class='mono'>4481</td><td class='mono'>2</td><td>PAGO INT.ANUAL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHGAN</td><td>NUMERIC</td><td class='mono'>4482</td><td class='mono'>5</td><td class='mono'>4486</td><td class='mono'>2</td><td>GAT NOMINAL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHGAR</td><td>NUMERIC</td><td class='mono'>4487</td><td class='mono'>5</td><td class='mono'>4491</td><td class='mono'>2</td><td>GAT REAL</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>STHISR</td><td>NUMERIC</td><td class='mono'>4492</td><td class='mono'>15</td><td class='mono'>4506</td><td class='mono'>2</td><td>ISR RETENIDO</td><td>0</td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[STHCUN] 655857
+[STHACC] 67042291158
+[STHRDM] 1
+[STHRDD] 31
+[STHRDY] 2018
+[STHNUM] 1
+[STHBNK] 01
+[STHBRN] 1
+[STHCCY] CLP
+[STHACD] 01
+[STHATY] CCTE
+[STHPRO] CC01
+[STHLSB] -1317653269
+[STHLSN] -1317653269
+[STHLSM] 12
+[STHLSD] 31
+[STHLSY] 2017
+[STHMLA] 0
+[STHAST] A
+[STHNBL] -550245604
+[STHNAV] 0
+[STHGBL] -550245604
+[STHGAV] 0
+[STHOLM] 0
+[STHOLD] 0
+[STHOLY] 0
+[STHCLI] 0
+[STHCLM] 0
+[STHODI] 0
+[STHIVA] 0
+[STHRTE] 0
+[STHRMA] 0
+[STHPRN] 1
+[STHCMC] 655857
+[STHCMN] 9999
+[STHCGL] 0
+[STHCCN] 0 | Y | 5 | 2 | 2017 | 0 | 5 | 3 | 2017 | 0 | 0 | 0 | 0 | 0 | G | 0 | 0 | 10 | 26 | 2017 | 0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | 0 | 267656 | 0 | CCTE | 10 | 26 | 2016 | 0 | -992381 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 992381 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 1 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 267656 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0
+[STHACL] 30
+[STHSCF] Y
+[STHLIF] S
+[STHSTV] P
+[STHNDR] 26
+[STHNCR] 1330
+[STHNCK] 0
+[STHNDP] 0
+[STHNC1] 0
+[STHNC2] 0
+[STHNC3] 0
+[STHIDC] 0
+[STHOFC] 6118
+[STHPHN] 0
+[STHPXT] 0
+[STHNME] JAVIERA PAZ HERNANDEZ OPA
+[STHOML] JHERNANDEZ@BANCOINTERNACIONAL.CL
+[STHFAX] 0
+[STHBDS] CASA MATRIZ
+[STHLAU] 0
+[STHLUT] 0
+[STHLVM] 0
+[STHLVD] 0
+[STHLVY] 0
+[STHNA1] RIA CHILE SERVICIOS FINANCIERO SPA
+[STHMA1] CATEDRAL OFICINA 1201, 1401
+[STHMA2] SANTIAGO,
+[STHMA3] CHILE
+[STHCOM] SANTIAGO
+[STHCTR] CHILE
+[STHMAU] 0
+[STHMUT] 0
+[STHSAL] 0
+[STHTCK] 0
+[STHTGI] 0
+[STHTOC] 7385407665
+[STHTDP] 6618000000
+[STHVCM] 0
+[STHVCD] 0
+[STHVCY] 0
+[STHRT1] 0
+[STHMKL] 0
+[STHMB1] 0
+[STHMB2] 0
+[STHMB3] 0
+[STHMB4] 0
+[STHMB5] 0
+[STHMB6] 0
+[STHMB7] 0
+[STHMB8] 0
+[STHMB9] 0
+[STHMBX] 0
+[STHMBY] 0
+[STHMKR] 0
+[STHMR1] 0
+[STHMR2] 0
+[STHMR3] 0
+[STHMR4] 0
+[STHMR5] 0
+[STHMR6] 0
+[STHMR7] 0
+[STHMR8] 0
+[STHMR9] 0
+[STHMRX] 0
+[STHMRY] 0
+[STHIPY] 0
+[STHIPS] 0
+[STHAPY] 0
+[STHRT2] 0
+[STHRT3] 0
+[STHOPM] 6
+[STHOPD] 21
+[STHOPY] 2013
+[STHVCA] 0
+[STHSCA] 0
+[STHSCP] 0
+[STHURM] 0
+[STHCMV] 0
+[STHAM1] 0
+[STHAM2] 0
+[STHAM3] 0
+[STHRSM] 1
+[STHRSD] 2
+[STHRSY] 2018
+[STHDDM] 1
+[STHDDD] 31
+[STHDDY] 2018
+[STHINT] 180670422911580  0
+[STHRFC] 761349341
+[STHDIA] 31
+[STHPRM] 0
+[STHPIN] 0
+[STHGAN] 0
+[STHGAR] 0
+[STHISR] 0</div></body></html>

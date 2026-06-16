@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>ROCIN</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>ROCIN</h1>
+<div class='meta'><b>N.º de campos:</b> 42</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>ROCBNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK NUMBER</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>ROCCUN</td><td>DECIMAL</td><td class='mono'>3</td><td class='mono'>9</td><td class='mono'>11</td><td class='mono'></td><td>CUSTOMER NO.</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>ROCREF</td><td>DECIMAL</td><td class='mono'>12</td><td class='mono'>12</td><td class='mono'>23</td><td class='mono'></td><td>REFERENCE NO.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCSQR</td><td>DECIMAL</td><td class='mono'>24</td><td class='mono'>3</td><td class='mono'>26</td><td class='mono'></td><td>SEQUENCE REF. NO.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCICN</td><td>CHARACTER</td><td class='mono'>27</td><td class='mono'>20</td><td class='mono'>46</td><td class='mono'></td><td>INSURANCE COMPANY NUM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCICM</td><td>CHARACTER</td><td class='mono'>47</td><td class='mono'>45</td><td class='mono'>91</td><td class='mono'></td><td>INSURANCE COMPANY NANE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCIPD</td><td>CHARACTER</td><td class='mono'>92</td><td class='mono'>60</td><td class='mono'>151</td><td class='mono'></td><td>POLICY DESCRIPTUON</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCCIN</td><td>CHARACTER</td><td class='mono'>152</td><td class='mono'>40</td><td class='mono'>191</td><td class='mono'></td><td>POLICY NU CUSIP/ISIN CDE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCMDM</td><td>NUMERIC</td><td class='mono'>192</td><td class='mono'>2</td><td class='mono'>193</td><td class='mono'></td><td>MATURITY DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCMDD</td><td>NUMERIC</td><td class='mono'>194</td><td class='mono'>2</td><td class='mono'>195</td><td class='mono'></td><td>MATURITY DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCMDY</td><td>NUMERIC</td><td class='mono'>196</td><td class='mono'>4</td><td class='mono'>199</td><td class='mono'></td><td>MATURITY DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCICY</td><td>CHARACTER</td><td class='mono'>200</td><td class='mono'>3</td><td class='mono'>202</td><td class='mono'></td><td>INSURANCE CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCIPA</td><td>DECIMAL</td><td class='mono'>203</td><td class='mono'>15</td><td class='mono'>217</td><td class='mono'>2</td><td>INS POLICY AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCCLF</td><td>CHARACTER</td><td class='mono'>218</td><td class='mono'>1</td><td class='mono'>218</td><td class='mono'></td><td>COLLATERAL FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCRGK</td><td>CHARACTER</td><td class='mono'>219</td><td class='mono'>1</td><td class='mono'>219</td><td class='mono'></td><td>REG/K EXCEPTION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCEMM</td><td>NUMERIC</td><td class='mono'>220</td><td class='mono'>2</td><td class='mono'>221</td><td class='mono'></td><td>EMISSION DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCEMD</td><td>NUMERIC</td><td class='mono'>222</td><td class='mono'>2</td><td class='mono'>223</td><td class='mono'></td><td>EMISSION DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCEMY</td><td>NUMERIC</td><td class='mono'>224</td><td class='mono'>4</td><td class='mono'>227</td><td class='mono'></td><td>EMISSION DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCEMB</td><td>CHARACTER</td><td class='mono'>228</td><td class='mono'>4</td><td class='mono'>231</td><td class='mono'></td><td>EMITED BY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCUSC</td><td>CHARACTER</td><td class='mono'>232</td><td class='mono'>4</td><td class='mono'>235</td><td class='mono'></td><td>USER CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCCRR</td><td>CHARACTER</td><td class='mono'>236</td><td class='mono'>4</td><td class='mono'>239</td><td class='mono'></td><td>USER CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCEDO</td><td>CHARACTER</td><td class='mono'>240</td><td class='mono'>1</td><td class='mono'>240</td><td class='mono'></td><td>ENDOSADO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCTS1</td><td>CHARACTER</td><td class='mono'>241</td><td class='mono'>1</td><td class='mono'>241</td><td class='mono'></td><td>SEGURO TIPO 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCTS2</td><td>CHARACTER</td><td class='mono'>242</td><td class='mono'>1</td><td class='mono'>242</td><td class='mono'></td><td>SEGURO TIPO 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCTS3</td><td>CHARACTER</td><td class='mono'>243</td><td class='mono'>1</td><td class='mono'>243</td><td class='mono'></td><td>SEGURO TIPO 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCTS4</td><td>CHARACTER</td><td class='mono'>244</td><td class='mono'>1</td><td class='mono'>244</td><td class='mono'></td><td>SEGURO TIPO 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCTS5</td><td>CHARACTER</td><td class='mono'>245</td><td class='mono'>1</td><td class='mono'>245</td><td class='mono'></td><td>SEGURO TIPO 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCBN1</td><td>CHARACTER</td><td class='mono'>246</td><td class='mono'>70</td><td class='mono'>315</td><td class='mono'></td><td>BENEFICIARIO 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCBI1</td><td>CHARACTER</td><td class='mono'>316</td><td class='mono'>25</td><td class='mono'>340</td><td class='mono'></td><td>ID. BENEFICIARIO 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCBN2</td><td>CHARACTER</td><td class='mono'>341</td><td class='mono'>70</td><td class='mono'>410</td><td class='mono'></td><td>BENEFICIARIO 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCBI2</td><td>CHARACTER</td><td class='mono'>411</td><td class='mono'>25</td><td class='mono'>435</td><td class='mono'></td><td>ID. BENEFICIARIO 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCBN3</td><td>CHARACTER</td><td class='mono'>436</td><td class='mono'>70</td><td class='mono'>505</td><td class='mono'></td><td>BENEFICIARIO 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCBI3</td><td>CHARACTER</td><td class='mono'>506</td><td class='mono'>25</td><td class='mono'>530</td><td class='mono'></td><td>ID. BENEFICIARIO 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCBN4</td><td>CHARACTER</td><td class='mono'>531</td><td class='mono'>70</td><td class='mono'>600</td><td class='mono'></td><td>BENEFICIARIO 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCBI4</td><td>CHARACTER</td><td class='mono'>601</td><td class='mono'>25</td><td class='mono'>625</td><td class='mono'></td><td>ID. BENEFICIARIO 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCBN5</td><td>CHARACTER</td><td class='mono'>626</td><td class='mono'>70</td><td class='mono'>695</td><td class='mono'></td><td>BENEFICIARIO 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCBI5</td><td>CHARACTER</td><td class='mono'>696</td><td class='mono'>25</td><td class='mono'>720</td><td class='mono'></td><td>ID. BENEFICIARIO 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCLMM</td><td>NUMERIC</td><td class='mono'>721</td><td class='mono'>2</td><td class='mono'>722</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCLMD</td><td>NUMERIC</td><td class='mono'>723</td><td class='mono'>2</td><td class='mono'>724</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCLMY</td><td>NUMERIC</td><td class='mono'>725</td><td class='mono'>4</td><td class='mono'>728</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCLMT</td><td>TIMESTAMP</td><td class='mono'>729</td><td class='mono'>26</td><td class='mono'>754</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>ROCLMU</td><td>CHARACTER</td><td class='mono'>755</td><td class='mono'>10</td><td class='mono'>764</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[ROCLMM] Y | 5 | 2 | 2017 | 0 | 5 | 3 | 2017 | 0 | 0 | 0 | 0 | 0 | G | 0 | 0 | 10 | 26 | 2017 | 0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | 0 | 267656 | 0 | CCTE | 10 | 26 | 2016 | 0 | -992381 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 992381 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 1 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 267656 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0</div></body></html>

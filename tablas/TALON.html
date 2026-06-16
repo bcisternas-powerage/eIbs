@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>TALON</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>TALON</h1>
+<div class='meta'><b>N.º de campos:</b> 20</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>TALBNK</td><td>NUMERIC</td><td class='mono'>1</td><td class='mono'>3</td><td class='mono'>3</td><td class='mono'></td><td>CODIGO BANCO</td><td>9</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>TALREG</td><td>NUMERIC</td><td class='mono'>4</td><td class='mono'>2</td><td class='mono'>5</td><td class='mono'></td><td>TIPO REGISTRO</td><td>2</td></tr>
+<tr><td class='mono'>3</td><td class='mono'>TALPLZ</td><td>CHARACTER</td><td class='mono'>6</td><td class='mono'>4</td><td class='mono'>9</td><td class='mono'></td><td>PLAZA</td><td>320</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALSUC</td><td>CHARACTER</td><td class='mono'>10</td><td class='mono'>4</td><td class='mono'>13</td><td class='mono'></td><td>SUCURSAL SBIF</td><td>61</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALFIL</td><td>NUMERIC</td><td class='mono'>14</td><td class='mono'>6</td><td class='mono'>19</td><td class='mono'></td><td>FILLER</td><td>305</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALCOD</td><td>NUMERIC</td><td class='mono'>20</td><td class='mono'>2</td><td class='mono'>21</td><td class='mono'></td><td>CODIGO CANT.CHQS</td><td>2</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALACC</td><td>DECIMAL</td><td class='mono'>22</td><td class='mono'>12</td><td class='mono'>33</td><td class='mono'></td><td>CUENTA</td><td>67042354112</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALCAN</td><td>NUMERIC</td><td class='mono'>34</td><td class='mono'>1</td><td class='mono'>34</td><td class='mono'></td><td>CANTIDAD TALONARIOS</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALNM1</td><td>CHARACTER</td><td class='mono'>35</td><td class='mono'>45</td><td class='mono'>79</td><td class='mono'></td><td>NOMBRE 1.TITULAR</td><td>FRANCISCA ABARCA MORALES</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALNM2</td><td>CHARACTER</td><td class='mono'>80</td><td class='mono'>45</td><td class='mono'>124</td><td class='mono'></td><td>NOMBRE 2.TITULAR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TALSE1</td><td>DECIMAL</td><td class='mono'>125</td><td class='mono'>4</td><td class='mono'>128</td><td class='mono'></td><td>OFICINA DE LA CUENTA</td><td>61</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALSE2</td><td>CHARACTER</td><td class='mono'>129</td><td class='mono'>1</td><td class='mono'>129</td><td class='mono'></td><td>TIPO TALONARIO</td><td>A</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALFOL</td><td>DECIMAL</td><td class='mono'>130</td><td class='mono'>11</td><td class='mono'>140</td><td class='mono'></td><td>CHEQUE INICIAL</td><td>1517837</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALSOL</td><td>DECIMAL</td><td class='mono'>141</td><td class='mono'>12</td><td class='mono'>152</td><td class='mono'></td><td>SOLICITUD ORIGEN</td><td>2268</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALFI2</td><td>CHARACTER</td><td class='mono'>153</td><td class='mono'>13</td><td class='mono'>165</td><td class='mono'></td><td>FILLER</td><td>CLP</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALFEC</td><td>CHARACTER</td><td class='mono'>166</td><td class='mono'>8</td><td class='mono'>173</td><td class='mono'></td><td>FECHA</td><td>20180514</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALSER</td><td>CHARACTER</td><td class='mono'>174</td><td class='mono'>10</td><td class='mono'>183</td><td class='mono'></td><td>SERVICIO ORIGEN</td><td>ECH0305</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALUSR</td><td>CHARACTER</td><td class='mono'>184</td><td class='mono'>10</td><td class='mono'>193</td><td class='mono'></td><td>USUARIO</td><td>ITMDATAPRO</td></tr>
+<tr><td class='mono'></td><td class='mono'>TALENV</td><td>CHARACTER</td><td class='mono'>194</td><td class='mono'>1</td><td class='mono'>194</td><td class='mono'></td><td>ENVIADO A LA IMP.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TALFILL</td><td>CHARACTER</td><td class='mono'>195</td><td class='mono'>20</td><td class='mono'>214</td><td class='mono'></td><td>CAMPO LIBRE(20)</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[TALBNK] 9
+[TALREG] 2
+[TALPLZ] 320
+[TALSUC] 61
+[TALFIL] 305
+[TALCOD] 3
+[TALACC] 67042354112
+[TALCAN] 1
+[TALNM1] FRANCISCA ABARCA MORALES
+[TALSE1] 61
+[TALSE2] A
+[TALFOL] 1517872
+[TALSOL] 2269
+[TALFI2] CLP
+[TALFEC] 20180514
+[TALSER] ECH0305
+[TALUSR] ITMDATAPRO</div></body></html>

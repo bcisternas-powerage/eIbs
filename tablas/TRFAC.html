@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>TRFAC</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>TRFAC</h1>
+<div class='meta'><b>Descripción:</b> Maestro de Cuentas de Detalle(Cta.Cte, etc.)<br><b>N.º de campos:</b> 34</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>TRFLET</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>FACTURA LETRA</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>TRFNUM</td><td>NUMERIC</td><td class='mono'>3</td><td class='mono'>6</td><td class='mono'>8</td><td class='mono'></td><td>FACTURA NUMERO</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>TRFACC</td><td>DECIMAL</td><td class='mono'>9</td><td class='mono'>12</td><td class='mono'>20</td><td class='mono'></td><td>NUMERO CUENTA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFDTY</td><td>NUMERIC</td><td class='mono'>21</td><td class='mono'>4</td><td class='mono'>24</td><td class='mono'></td><td>FECHA OPER YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFDTM</td><td>NUMERIC</td><td class='mono'>25</td><td class='mono'>2</td><td class='mono'>26</td><td class='mono'></td><td>FECHA OPER MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFDTD</td><td>NUMERIC</td><td class='mono'>27</td><td class='mono'>2</td><td class='mono'>28</td><td class='mono'></td><td>FECHA OPER DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFDSC</td><td>CHARACTER</td><td class='mono'>29</td><td class='mono'>60</td><td class='mono'>88</td><td class='mono'></td><td>DESCRIPCION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFDRR</td><td>DECIMAL</td><td class='mono'>89</td><td class='mono'>12</td><td class='mono'>100</td><td class='mono'></td><td>TRNS.DESC.RELAT.RECÑ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFIVA</td><td>DECIMAL</td><td class='mono'>101</td><td class='mono'>6</td><td class='mono'>106</td><td class='mono'>3</td><td>% IVA/ITE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFAMT</td><td>DECIMAL</td><td class='mono'>107</td><td class='mono'>15</td><td class='mono'>121</td><td class='mono'>2</td><td>MONTO BASE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFCUN</td><td>DECIMAL</td><td class='mono'>122</td><td class='mono'>9</td><td class='mono'>130</td><td class='mono'></td><td>CLIENTE/PROVEEDOR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFMEX</td><td>DECIMAL</td><td class='mono'>131</td><td class='mono'>15</td><td class='mono'>145</td><td class='mono'>2</td><td>MONTO EXENTO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFMIV</td><td>DECIMAL</td><td class='mono'>146</td><td class='mono'>15</td><td class='mono'>160</td><td class='mono'>2</td><td>MONTO IVA/ITE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFBNK</td><td>CHARACTER</td><td class='mono'>161</td><td class='mono'>2</td><td class='mono'>162</td><td class='mono'></td><td>BANK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFBRN</td><td>DECIMAL</td><td class='mono'>163</td><td class='mono'>4</td><td class='mono'>166</td><td class='mono'></td><td>BRANCH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFCCY</td><td>CHARACTER</td><td class='mono'>167</td><td class='mono'>3</td><td class='mono'>169</td><td class='mono'></td><td>CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFGLN</td><td>DECIMAL</td><td class='mono'>170</td><td class='mono'>16</td><td class='mono'>185</td><td class='mono'></td><td>G/L NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFCCN</td><td>DECIMAL</td><td class='mono'>186</td><td class='mono'>8</td><td class='mono'>193</td><td class='mono'></td><td>COST CENTER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFFLG</td><td>CHARACTER</td><td class='mono'>194</td><td class='mono'>1</td><td class='mono'>194</td><td class='mono'></td><td>FLAG TIPO</td><td>1 = Impuesto (ITE)
+2 = Comisiones
+3=  Deducciones
+5 = Cargos por Cobzas y Condonaciones
+6=  Gastos Notariales
+9 = Iva Pagado</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFORI</td><td>CHARACTER</td><td class='mono'>195</td><td class='mono'>1</td><td class='mono'>195</td><td class='mono'></td><td>ORIGEN OPERAC</td><td>1 = DEALS
+2= LNECR;
+3= LCMST;
+4= ACMST;
+5= Caja;
+6= Transferencias
+7= Manual;
+8= OFMST;
+9 = Ctas.X Pagar/Cobrar
+P = Proceso Protestos</td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFUSR</td><td>CHARACTER</td><td class='mono'>196</td><td class='mono'>10</td><td class='mono'>205</td><td class='mono'></td><td>USER I. D.</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFFL1</td><td>CHARACTER</td><td class='mono'>206</td><td class='mono'>1</td><td class='mono'>206</td><td class='mono'></td><td>FLAG USER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFUS1</td><td>CHARACTER</td><td class='mono'>207</td><td class='mono'>4</td><td class='mono'>210</td><td class='mono'></td><td>USER CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFRET</td><td>DECIMAL</td><td class='mono'>211</td><td class='mono'>15</td><td class='mono'>225</td><td class='mono'>2</td><td>MONTO RETENCION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFIDN</td><td>CHARACTER</td><td class='mono'>226</td><td class='mono'>25</td><td class='mono'>250</td><td class='mono'></td><td>IDENTIFICATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFMMX</td><td>DECIMAL</td><td class='mono'>251</td><td class='mono'>15</td><td class='mono'>265</td><td class='mono'>2</td><td>MONTO MDA/EXTRNJ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFTPC</td><td>DECIMAL</td><td class='mono'>266</td><td class='mono'>11</td><td class='mono'>276</td><td class='mono'>6</td><td>TIPO CAMBIO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFITE</td><td>DECIMAL</td><td class='mono'>277</td><td class='mono'>6</td><td class='mono'>282</td><td class='mono'>3</td><td>LIBRE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFTCI</td><td>CHARACTER</td><td class='mono'>283</td><td class='mono'>2</td><td class='mono'>284</td><td class='mono'></td><td>TIPO CARGO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFCOA</td><td>CHARACTER</td><td class='mono'>285</td><td class='mono'>2</td><td class='mono'>286</td><td class='mono'></td><td>COD. ACCION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFREV</td><td>CHARACTER</td><td class='mono'>287</td><td class='mono'>1</td><td class='mono'>287</td><td class='mono'></td><td>FLAG REVERSO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFRTY</td><td>NUMERIC</td><td class='mono'>288</td><td class='mono'>4</td><td class='mono'>291</td><td class='mono'></td><td>FECHA REVER YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFRTM</td><td>NUMERIC</td><td class='mono'>292</td><td class='mono'>2</td><td class='mono'>293</td><td class='mono'></td><td>FECHA REVER MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>TRFRTD</td><td>NUMERIC</td><td class='mono'>294</td><td class='mono'>2</td><td class='mono'>295</td><td class='mono'></td><td>FECHA REVER DD</td><td></td></tr>
+</tbody></table></body></html>

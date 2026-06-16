@@ -1,0 +1,206 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>PRITR</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>PRITR</h1>
+<div class='meta'><b>N.º de campos:</b> 179</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>PRIUSR</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>10</td><td class='mono'>10</td><td class='mono'></td><td>USER ID</td><td>ITQRCASTRO</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>PRIEXA</td><td>CHARACTER</td><td class='mono'>11</td><td class='mono'>10</td><td class='mono'>20</td><td class='mono'></td><td>EXTERNAL APPLIC CODE</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>PRIIMT</td><td>CHARACTER</td><td class='mono'>21</td><td class='mono'>1</td><td class='mono'>21</td><td class='mono'></td><td>INCOMING MSG TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRISQN</td><td>NUMERIC</td><td class='mono'>22</td><td class='mono'>4</td><td class='mono'>25</td><td class='mono'></td><td>MESSAGE SEQ NO.</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRITYP</td><td>CHARACTER</td><td class='mono'>26</td><td class='mono'>1</td><td class='mono'>26</td><td class='mono'></td><td>TRANSFER TYPE</td><td>O</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRITCD</td><td>CHARACTER</td><td class='mono'>27</td><td class='mono'>8</td><td class='mono'>34</td><td class='mono'></td><td>TRANSACTION CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRITDM</td><td>NUMERIC</td><td class='mono'>35</td><td class='mono'>2</td><td class='mono'>36</td><td class='mono'></td><td>TRANSACTION DATE MM</td><td>2</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRITDD</td><td>NUMERIC</td><td class='mono'>37</td><td class='mono'>2</td><td class='mono'>38</td><td class='mono'></td><td>TRANSACTION DATE DD</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRITDY</td><td>NUMERIC</td><td class='mono'>39</td><td class='mono'>4</td><td class='mono'>42</td><td class='mono'></td><td>TRANSACTION DATE YY</td><td>2018</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRITTM</td><td>TIMESTAMP</td><td class='mono'>43</td><td class='mono'>26</td><td class='mono'>68</td><td class='mono'>6</td><td>TRANSACTION TIME</td><td>2018-07-19 10:45:47.903000</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIVDM</td><td>NUMERIC</td><td class='mono'>69</td><td class='mono'>2</td><td class='mono'>70</td><td class='mono'></td><td>SCH/VALUE DATE MM</td><td>2</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIVDD</td><td>NUMERIC</td><td class='mono'>71</td><td class='mono'>2</td><td class='mono'>72</td><td class='mono'></td><td>SCH/VALUE DATE DD</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIVDY</td><td>NUMERIC</td><td class='mono'>73</td><td class='mono'>4</td><td class='mono'>76</td><td class='mono'></td><td>SCH/VALUE DATE YY</td><td>2018</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIVTM</td><td>TIMESTAMP</td><td class='mono'>77</td><td class='mono'>26</td><td class='mono'>102</td><td class='mono'>6</td><td>SCHEDULED TIME</td><td>0001-01-01 00:00:00.000000</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIIRV</td><td>CHARACTER</td><td class='mono'>103</td><td class='mono'>1</td><td class='mono'>103</td><td class='mono'></td><td>INSTRUCT.RECVD.VIA</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICBF</td><td>CHARACTER</td><td class='mono'>104</td><td class='mono'>1</td><td class='mono'>104</td><td class='mono'></td><td>CALL BACK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIOBN</td><td>CHARACTER</td><td class='mono'>105</td><td class='mono'>2</td><td class='mono'>106</td><td class='mono'></td><td>ORIGIN BANK</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIOBR</td><td>DECIMAL</td><td class='mono'>107</td><td class='mono'>4</td><td class='mono'>110</td><td class='mono'></td><td>ORIGIN BRANCH</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIOCU</td><td>DECIMAL</td><td class='mono'>111</td><td class='mono'>9</td><td class='mono'>119</td><td class='mono'></td><td>ORDERING CUSTOMER</td><td>662204</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRINUM</td><td>DECIMAL</td><td class='mono'>120</td><td class='mono'>11</td><td class='mono'>130</td><td class='mono'></td><td>REFERENCE NUMBER</td><td>1072</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICDE</td><td>CHARACTER</td><td class='mono'>131</td><td class='mono'>1</td><td class='mono'>131</td><td class='mono'></td><td>W/T STATUS CODE</td><td>R</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIAMT</td><td>DECIMAL</td><td class='mono'>132</td><td class='mono'>15</td><td class='mono'>146</td><td class='mono'>2</td><td>TRANSFER AMOUNT</td><td>1000.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRITCY</td><td>CHARACTER</td><td class='mono'>147</td><td class='mono'>3</td><td class='mono'>149</td><td class='mono'></td><td>TRANSFER CCY</td><td>USD</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRITPE</td><td>NUMERIC</td><td class='mono'>150</td><td class='mono'>4</td><td class='mono'>153</td><td class='mono'></td><td>TRANSFER TYPE</td><td>103</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIPRC</td><td>CHARACTER</td><td class='mono'>154</td><td class='mono'>3</td><td class='mono'>156</td><td class='mono'></td><td>PRODUCT CODE</td><td>MT-</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRISID</td><td>CHARACTER</td><td class='mono'>157</td><td class='mono'>25</td><td class='mono'>181</td><td class='mono'></td><td>SENDER ID</td><td>BICHCLRMAXXX</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRISSH</td><td>CHARACTER</td><td class='mono'>182</td><td class='mono'>25</td><td class='mono'>206</td><td class='mono'></td><td>SENDER SHORT NAME</td><td>BANCO INTERNACIONAL CHILE</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRID</td><td>CHARACTER</td><td class='mono'>207</td><td class='mono'>25</td><td class='mono'>231</td><td class='mono'></td><td>RECEIVER ID</td><td>SCBLUS33XXXX</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRSH</td><td>CHARACTER</td><td class='mono'>232</td><td class='mono'>25</td><td class='mono'>256</td><td class='mono'></td><td>RECEIVER SHORT NAME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRISRF</td><td>CHARACTER</td><td class='mono'>257</td><td class='mono'>16</td><td class='mono'>272</td><td class='mono'></td><td>SENDER REFERENCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRITHF</td><td>CHARACTER</td><td class='mono'>273</td><td class='mono'>16</td><td class='mono'>288</td><td class='mono'></td><td>RECEIVER REFERENCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDBK</td><td>CHARACTER</td><td class='mono'>289</td><td class='mono'>2</td><td class='mono'>290</td><td class='mono'></td><td>DEBIT ACCOUNT BANK</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDBR</td><td>DECIMAL</td><td class='mono'>291</td><td class='mono'>4</td><td class='mono'>294</td><td class='mono'></td><td>DEBIT ACCOUNT BRANCH</td><td>12</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDCY</td><td>CHARACTER</td><td class='mono'>295</td><td class='mono'>3</td><td class='mono'>297</td><td class='mono'></td><td>DEBIT ACCOUNT CCY</td><td>USD</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDGL</td><td>DECIMAL</td><td class='mono'>298</td><td class='mono'>16</td><td class='mono'>313</td><td class='mono'></td><td>DEBIT G/L ACCOUNT</td><td>2100109100300000</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDAC</td><td>DECIMAL</td><td class='mono'>314</td><td class='mono'>12</td><td class='mono'>325</td><td class='mono'></td><td>DEBIT ACCOUNT NUMBER</td><td>67042308567</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDSA</td><td>DECIMAL</td><td class='mono'>326</td><td class='mono'>5</td><td class='mono'>330</td><td class='mono'></td><td>DEBIT PAY THRU NUMBR</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDCC</td><td>DECIMAL</td><td class='mono'>331</td><td class='mono'>8</td><td class='mono'>338</td><td class='mono'></td><td>DEBIT COST CENTER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDXR</td><td>DECIMAL</td><td class='mono'>339</td><td class='mono'>11</td><td class='mono'>349</td><td class='mono'>6</td><td>DEBIT EXCHANGE RATE</td><td>0.000000</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICBK</td><td>CHARACTER</td><td class='mono'>350</td><td class='mono'>2</td><td class='mono'>351</td><td class='mono'></td><td>CRED ACCOUNT BANK</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICBR</td><td>DECIMAL</td><td class='mono'>352</td><td class='mono'>4</td><td class='mono'>355</td><td class='mono'></td><td>CRED ACCOUNT BRANCH</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICCY</td><td>CHARACTER</td><td class='mono'>356</td><td class='mono'>3</td><td class='mono'>358</td><td class='mono'></td><td>CRED ACCOUNT CCY</td><td>USD</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICGL</td><td>DECIMAL</td><td class='mono'>359</td><td class='mono'>16</td><td class='mono'>374</td><td class='mono'></td><td>CRED G/L ACCOUNT</td><td>1100400001400000</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICAC</td><td>DECIMAL</td><td class='mono'>375</td><td class='mono'>12</td><td class='mono'>386</td><td class='mono'></td><td>CRED ACCOUNT NUMBER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICSA</td><td>DECIMAL</td><td class='mono'>387</td><td class='mono'>5</td><td class='mono'>391</td><td class='mono'></td><td>CRED PAY THRU NUMBER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICCC</td><td>DECIMAL</td><td class='mono'>392</td><td class='mono'>8</td><td class='mono'>399</td><td class='mono'></td><td>CREDIT COST CENTER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICXR</td><td>DECIMAL</td><td class='mono'>400</td><td class='mono'>11</td><td class='mono'>410</td><td class='mono'>6</td><td>CREDIT EXCHANGE RATE</td><td>601410000</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICCU</td><td>DECIMAL</td><td class='mono'>411</td><td class='mono'>9</td><td class='mono'>419</td><td class='mono'></td><td>CREDIT CUSTOMER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIHDY</td><td>NUMERIC</td><td class='mono'>420</td><td class='mono'>2</td><td class='mono'>421</td><td class='mono'></td><td>HOLD DAYS</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIORC</td><td>CHARACTER</td><td class='mono'>422</td><td class='mono'>175</td><td class='mono'>596</td><td class='mono'></td><td>ORDERING CUSTOMER 50</td><td>/67042308567 DARSHAN IMPORTACION Y EXPORTACION LMODULO ZOFRI 128 IQUIQUE CL</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIORO</td><td>CHARACTER</td><td class='mono'>597</td><td class='mono'>1</td><td class='mono'>597</td><td class='mono'></td><td>ORD CUST OPTN (A/D)</td><td>K</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIOBK</td><td>CHARACTER</td><td class='mono'>598</td><td class='mono'>175</td><td class='mono'>772</td><td class='mono'></td><td>ORDERING BANK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIOBO</td><td>CHARACTER</td><td class='mono'>773</td><td class='mono'>1</td><td class='mono'>773</td><td class='mono'></td><td>ORD BANK OPTION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIINB</td><td>CHARACTER</td><td class='mono'>774</td><td class='mono'>175</td><td class='mono'>948</td><td class='mono'></td><td>INTERMEDIARY BANK (56)</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIINO</td><td>CHARACTER</td><td class='mono'>949</td><td class='mono'>1</td><td class='mono'>949</td><td class='mono'></td><td>INTERM BANK OPTION A/D</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIBCU</td><td>CHARACTER</td><td class='mono'>950</td><td class='mono'>175</td><td class='mono'>1124</td><td class='mono'></td><td>BENEFICIARY CUST 59/58</td><td>1233 JUAN PEREZ MODULO ZOFRI 128 IQUIQUE CL</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIBCO</td><td>CHARACTER</td><td class='mono'>1125</td><td class='mono'>1</td><td class='mono'>1125</td><td class='mono'></td><td>BENEF CUST OPTION A/D</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIBBK</td><td>CHARACTER</td><td class='mono'>1126</td><td class='mono'>175</td><td class='mono'>1300</td><td class='mono'></td><td>BENEFICIARY BANK (57)</td><td>ABNAGB22XXXX ABN AMRO BANK N.V. 250 BISHOPSGATE LONDON</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIBBO</td><td>CHARACTER</td><td class='mono'>1301</td><td class='mono'>1</td><td class='mono'>1301</td><td class='mono'></td><td>BENEFICIARY BANK OPT ABC</td><td>A</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRISCB</td><td>CHARACTER</td><td class='mono'>1302</td><td class='mono'>175</td><td class='mono'>1476</td><td class='mono'></td><td>SENDER CORR BANK (53)</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRISCO</td><td>CHARACTER</td><td class='mono'>1477</td><td class='mono'>1</td><td class='mono'>1477</td><td class='mono'></td><td>SEND CORR BNK OPT A/B/D</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRCB</td><td>CHARACTER</td><td class='mono'>1478</td><td class='mono'>175</td><td class='mono'>1652</td><td class='mono'></td><td>RECEIV CORR BNK (54)</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRBO</td><td>CHARACTER</td><td class='mono'>1653</td><td class='mono'>1</td><td class='mono'>1653</td><td class='mono'></td><td>RECEIV CORR BNK OPT ABD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDTO</td><td>CHARACTER</td><td class='mono'>1654</td><td class='mono'>175</td><td class='mono'>1828</td><td class='mono'></td><td>DETAIL FOR ORDERING</td><td>.</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDTP</td><td>CHARACTER</td><td class='mono'>1829</td><td class='mono'>175</td><td class='mono'>2003</td><td class='mono'></td><td>DETAIL OF PAYMENTS 70</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICHG</td><td>CHARACTER</td><td class='mono'>2004</td><td class='mono'>1</td><td class='mono'>2004</td><td class='mono'></td><td>CHARGES BY.. (71A)</td><td>A</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIBKB</td><td>CHARACTER</td><td class='mono'>2005</td><td class='mono'>210</td><td class='mono'>2214</td><td class='mono'></td><td>BNK TO BNK INFO (72)</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICKN</td><td>DECIMAL</td><td class='mono'>2215</td><td class='mono'>11</td><td class='mono'>2225</td><td class='mono'></td><td>CHECK NUMBER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIFMT</td><td>CHARACTER</td><td class='mono'>2226</td><td class='mono'>5</td><td class='mono'>2230</td><td class='mono'></td><td>SWIFT MESSAGE TYPE</td><td>MT103</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRISST</td><td>CHARACTER</td><td class='mono'>2231</td><td class='mono'>3</td><td class='mono'>2233</td><td class='mono'></td><td>SUB-MESSAGE TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRBY</td><td>CHARACTER</td><td class='mono'>2234</td><td class='mono'>10</td><td class='mono'>2243</td><td class='mono'></td><td>RELEASE OFFICER</td><td>ITQDATAPRO</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRDM</td><td>NUMERIC</td><td class='mono'>2244</td><td class='mono'>2</td><td class='mono'>2245</td><td class='mono'></td><td>RELEASE DATE-MM</td><td>2</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRDD</td><td>NUMERIC</td><td class='mono'>2246</td><td class='mono'>2</td><td class='mono'>2247</td><td class='mono'></td><td>RELEASE DATE-DD</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRDY</td><td>NUMERIC</td><td class='mono'>2248</td><td class='mono'>4</td><td class='mono'>2251</td><td class='mono'></td><td>RELEASE DATE-YY</td><td>2018</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRTM</td><td>TIMESTAMP</td><td class='mono'>2252</td><td class='mono'>26</td><td class='mono'>2277</td><td class='mono'>6</td><td>RELEASE TIME</td><td>2018-07-19 12:43:15.979000</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICOT</td><td>CHARACTER</td><td class='mono'>2278</td><td class='mono'>2</td><td class='mono'>2279</td><td class='mono'></td><td>COMMISSION TABLE</td><td>C0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICOM</td><td>DECIMAL</td><td class='mono'>2280</td><td class='mono'>15</td><td class='mono'>2294</td><td class='mono'>2</td><td>COMMISSION AMOUNT</td><td>100.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICOB</td><td>CHARACTER</td><td class='mono'>2295</td><td class='mono'>2</td><td class='mono'>2296</td><td class='mono'></td><td>COMMISSION BANK</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICOR</td><td>DECIMAL</td><td class='mono'>2297</td><td class='mono'>4</td><td class='mono'>2300</td><td class='mono'></td><td>COMMISSION BRANCH</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICOY</td><td>CHARACTER</td><td class='mono'>2301</td><td class='mono'>3</td><td class='mono'>2303</td><td class='mono'></td><td>COMMISSION CCY</td><td>USD</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICOG</td><td>DECIMAL</td><td class='mono'>2304</td><td class='mono'>16</td><td class='mono'>2319</td><td class='mono'></td><td>COMMISSION G/L</td><td>4200901000100000</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICOC</td><td>DECIMAL</td><td class='mono'>2320</td><td class='mono'>8</td><td class='mono'>2327</td><td class='mono'></td><td>COMM. COST CENTER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIBCA</td><td>DECIMAL</td><td class='mono'>2328</td><td class='mono'>15</td><td class='mono'>2342</td><td class='mono'>2</td><td>BENEF COMM AMOUNT</td><td>0.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIPVI</td><td>CHARACTER</td><td class='mono'>2343</td><td class='mono'>1</td><td class='mono'>2343</td><td class='mono'></td><td>PAYMENT VIA</td><td>3</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICBY</td><td>CHARACTER</td><td class='mono'>2344</td><td class='mono'>10</td><td class='mono'>2353</td><td class='mono'></td><td>CALL BACK BY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICDM</td><td>NUMERIC</td><td class='mono'>2354</td><td class='mono'>2</td><td class='mono'>2355</td><td class='mono'></td><td>CALL BACK DATE MM</td><td>2</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICDD</td><td>NUMERIC</td><td class='mono'>2356</td><td class='mono'>2</td><td class='mono'>2357</td><td class='mono'></td><td>CALL BACK DATE DD</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICDY</td><td>NUMERIC</td><td class='mono'>2358</td><td class='mono'>4</td><td class='mono'>2361</td><td class='mono'></td><td>CALL BACK DATE YY</td><td>2018</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICTM</td><td>TIMESTAMP</td><td class='mono'>2362</td><td class='mono'>26</td><td class='mono'>2387</td><td class='mono'>6</td><td>CALL BACK TIME</td><td>0001-01-01 00:00:00.000000</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIWRN</td><td>CHARACTER</td><td class='mono'>2388</td><td class='mono'>7</td><td class='mono'>2394</td><td class='mono'></td><td>WIRE NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIFTC</td><td>CHARACTER</td><td class='mono'>2395</td><td class='mono'>1</td><td class='mono'>2395</td><td class='mono'></td><td>VALUE DATE FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIUSC</td><td>CHARACTER</td><td class='mono'>2396</td><td class='mono'>4</td><td class='mono'>2399</td><td class='mono'></td><td>USER CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIUC2</td><td>CHARACTER</td><td class='mono'>2400</td><td class='mono'>4</td><td class='mono'>2403</td><td class='mono'></td><td>USER CODE 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIUC3</td><td>CHARACTER</td><td class='mono'>2404</td><td class='mono'>4</td><td class='mono'>2407</td><td class='mono'></td><td>USER CODE 3</td><td>AD</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIUC4</td><td>CHARACTER</td><td class='mono'>2408</td><td class='mono'>4</td><td class='mono'>2411</td><td class='mono'></td><td>USER CODE 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIUC5</td><td>CHARACTER</td><td class='mono'>2412</td><td class='mono'>6</td><td class='mono'>2417</td><td class='mono'></td><td>USER CODE 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRR1</td><td>CHARACTER</td><td class='mono'>2418</td><td class='mono'>2</td><td class='mono'>2419</td><td class='mono'></td><td>REJECT/REPAIR REASON 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRR2</td><td>CHARACTER</td><td class='mono'>2420</td><td class='mono'>2</td><td class='mono'>2421</td><td class='mono'></td><td>REJECT/REPAIR REASON 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRR3</td><td>CHARACTER</td><td class='mono'>2422</td><td class='mono'>2</td><td class='mono'>2423</td><td class='mono'></td><td>REJECT/REPAIR REASON 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRR4</td><td>CHARACTER</td><td class='mono'>2424</td><td class='mono'>2</td><td class='mono'>2425</td><td class='mono'></td><td>REJECT/REPAIR REASON 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRISOR</td><td>CHARACTER</td><td class='mono'>2426</td><td class='mono'>1</td><td class='mono'>2426</td><td class='mono'></td><td>SOURCE OF ORIGIN</td><td>E</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDPT</td><td>CHARACTER</td><td class='mono'>2427</td><td class='mono'>4</td><td class='mono'>2430</td><td class='mono'></td><td>ORIG DEPARTMENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRISOU</td><td>CHARACTER</td><td class='mono'>2431</td><td class='mono'>2</td><td class='mono'>2432</td><td class='mono'></td><td>SOURCE OF FUNDS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDIB</td><td>CHARACTER</td><td class='mono'>2433</td><td class='mono'>2</td><td class='mono'>2434</td><td class='mono'></td><td>DISBURSEMENT OF FUNDS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRB2</td><td>CHARACTER</td><td class='mono'>2435</td><td class='mono'>10</td><td class='mono'>2444</td><td class='mono'></td><td>2ND RELEASE OFFICER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIR2M</td><td>NUMERIC</td><td class='mono'>2445</td><td class='mono'>2</td><td class='mono'>2446</td><td class='mono'></td><td>2ND RELEASE DATE-MM</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIR2D</td><td>NUMERIC</td><td class='mono'>2447</td><td class='mono'>2</td><td class='mono'>2448</td><td class='mono'></td><td>2ND RELEASE DATE-DD</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIR2Y</td><td>NUMERIC</td><td class='mono'>2449</td><td class='mono'>4</td><td class='mono'>2452</td><td class='mono'></td><td>2ND RELEASE DATE-YY</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIR2T</td><td>TIMESTAMP</td><td class='mono'>2453</td><td class='mono'>26</td><td class='mono'>2478</td><td class='mono'>6</td><td>2ND RELEASE TIME</td><td>0001-01-01 00:00:00.000000</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRB3</td><td>CHARACTER</td><td class='mono'>2479</td><td class='mono'>10</td><td class='mono'>2488</td><td class='mono'></td><td>3RD RELEASE OFFICER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIR3M</td><td>NUMERIC</td><td class='mono'>2489</td><td class='mono'>2</td><td class='mono'>2490</td><td class='mono'></td><td>3RD RELEASE DATE-MM</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIR3D</td><td>NUMERIC</td><td class='mono'>2491</td><td class='mono'>2</td><td class='mono'>2492</td><td class='mono'></td><td>3RD RELEASE DATE-DD</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIR3Y</td><td>NUMERIC</td><td class='mono'>2493</td><td class='mono'>4</td><td class='mono'>2496</td><td class='mono'></td><td>3RD RELEASE DATE-YY</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIR3T</td><td>TIMESTAMP</td><td class='mono'>2497</td><td class='mono'>26</td><td class='mono'>2522</td><td class='mono'>6</td><td>3RD RELEASE TIME</td><td>0001-01-01 00:00:00.000000</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDSQ</td><td>CHARACTER</td><td class='mono'>2523</td><td class='mono'>4</td><td class='mono'>2526</td><td class='mono'></td><td>DESTINY QUEUE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRITTP</td><td>CHARACTER</td><td class='mono'>2527</td><td class='mono'>2</td><td class='mono'>2528</td><td class='mono'></td><td>TRANSACTION TYPE</td><td>OW</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIFL1</td><td>CHARACTER</td><td class='mono'>2529</td><td class='mono'>1</td><td class='mono'>2529</td><td class='mono'></td><td>FLAG 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIFL2</td><td>CHARACTER</td><td class='mono'>2530</td><td class='mono'>1</td><td class='mono'>2530</td><td class='mono'></td><td>FLAG 2</td><td>P</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIFL3</td><td>CHARACTER</td><td class='mono'>2531</td><td class='mono'>1</td><td class='mono'>2531</td><td class='mono'></td><td>FLAG 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIFL4</td><td>CHARACTER</td><td class='mono'>2532</td><td class='mono'>1</td><td class='mono'>2532</td><td class='mono'></td><td>FLAG 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIFL5</td><td>CHARACTER</td><td class='mono'>2533</td><td class='mono'>1</td><td class='mono'>2533</td><td class='mono'></td><td>FLAG 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIFL6</td><td>CHARACTER</td><td class='mono'>2534</td><td class='mono'>1</td><td class='mono'>2534</td><td class='mono'></td><td>FLAG 6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIFL7</td><td>CHARACTER</td><td class='mono'>2535</td><td class='mono'>1</td><td class='mono'>2535</td><td class='mono'></td><td>FLAG 7</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIFL8</td><td>CHARACTER</td><td class='mono'>2536</td><td class='mono'>1</td><td class='mono'>2536</td><td class='mono'></td><td>FLAG 8</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIFL9</td><td>CHARACTER</td><td class='mono'>2537</td><td class='mono'>1</td><td class='mono'>2537</td><td class='mono'></td><td>FLAG 9</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIPAM</td><td>DECIMAL</td><td class='mono'>2538</td><td class='mono'>15</td><td class='mono'>2552</td><td class='mono'>2</td><td>PRINCIPAL AMOUNT</td><td>1100.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIIAM</td><td>DECIMAL</td><td class='mono'>2553</td><td class='mono'>15</td><td class='mono'>2567</td><td class='mono'>2</td><td>INTEREST AMOUNT</td><td>1000.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIPEN</td><td>DECIMAL</td><td class='mono'>2568</td><td class='mono'>15</td><td class='mono'>2582</td><td class='mono'>2</td><td>PENALTY AMOUNT</td><td>19.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIPBF</td><td>DECIMAL</td><td class='mono'>2583</td><td class='mono'>15</td><td class='mono'>2597</td><td class='mono'>2</td><td>PRINCIPAL BAL BEFORE</td><td>0.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIIBF</td><td>DECIMAL</td><td class='mono'>2598</td><td class='mono'>15</td><td class='mono'>2612</td><td class='mono'>2</td><td>INTEREST BAL BEFORE</td><td>0.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICPA</td><td>DECIMAL</td><td class='mono'>2613</td><td class='mono'>15</td><td class='mono'>2627</td><td class='mono'>2</td><td>CALC PENALTY AMOUNT</td><td>0.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIWPC</td><td>CHARACTER</td><td class='mono'>2628</td><td class='mono'>1</td><td class='mono'>2628</td><td class='mono'></td><td>WAIVE PENALTY CHGS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDPC</td><td>CHARACTER</td><td class='mono'>2629</td><td class='mono'>4</td><td class='mono'>2632</td><td class='mono'></td><td>DEBIT PRODUCT CODE</td><td>CC03</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICPC</td><td>CHARACTER</td><td class='mono'>2633</td><td class='mono'>4</td><td class='mono'>2636</td><td class='mono'></td><td>CREDIT PRODUCT CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDAP</td><td>CHARACTER</td><td class='mono'>2637</td><td class='mono'>2</td><td class='mono'>2638</td><td class='mono'></td><td>DEBIT APLICAT CODE</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICAP</td><td>CHARACTER</td><td class='mono'>2639</td><td class='mono'>2</td><td class='mono'>2640</td><td class='mono'></td><td>CREDIT APLICAT CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIIDM</td><td>NUMERIC</td><td class='mono'>2641</td><td class='mono'>2</td><td class='mono'>2642</td><td class='mono'></td><td>INSTRUCTION DATE MM</td><td>2</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIIDD</td><td>NUMERIC</td><td class='mono'>2643</td><td class='mono'>2</td><td class='mono'>2644</td><td class='mono'></td><td>INSTRUCTION DATE DD</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIIDY</td><td>NUMERIC</td><td class='mono'>2645</td><td class='mono'>4</td><td class='mono'>2648</td><td class='mono'></td><td>INSTRUCTION DATE YY</td><td>2018</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIDRS</td><td>NUMERIC</td><td class='mono'>2649</td><td class='mono'>2</td><td class='mono'>2650</td><td class='mono'></td><td>DEBIT REF SEQ NO.</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICRS</td><td>NUMERIC</td><td class='mono'>2651</td><td class='mono'>2</td><td class='mono'>2652</td><td class='mono'></td><td>CREDIT REF SEQ NO.</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRTR</td><td>CHARACTER</td><td class='mono'>2653</td><td class='mono'>105</td><td class='mono'>2757</td><td class='mono'></td><td>REGULATORY REPORTING</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIBKO</td><td>CHARACTER</td><td class='mono'>2758</td><td class='mono'>4</td><td class='mono'>2761</td><td class='mono'></td><td>BANK OPR CODE 23B</td><td>CRED</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIITC</td><td>CHARACTER</td><td class='mono'>2762</td><td class='mono'>4</td><td class='mono'>2765</td><td class='mono'></td><td>INSTRUCT CODE 23E</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIITA</td><td>CHARACTER</td><td class='mono'>2766</td><td class='mono'>80</td><td class='mono'>2845</td><td class='mono'></td><td>ADDITNAL INFO 23E</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRITTC</td><td>CHARACTER</td><td class='mono'>2846</td><td class='mono'>3</td><td class='mono'>2848</td><td class='mono'></td><td>TRANSACTION TYPE</td><td>SHA</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRITRD</td><td>CHARACTER</td><td class='mono'>2849</td><td class='mono'>175</td><td class='mono'>3023</td><td class='mono'></td><td>THIRD REIMBURSEMENT)</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRITRI</td><td>CHARACTER</td><td class='mono'>3024</td><td class='mono'>1</td><td class='mono'>3024</td><td class='mono'></td><td>THIRD REIMBURSEMENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRISCC</td><td>CHARACTER</td><td class='mono'>3025</td><td class='mono'>3</td><td class='mono'>3027</td><td class='mono'></td><td>SENDERS CHGS CCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRISCA</td><td>DECIMAL</td><td class='mono'>3028</td><td class='mono'>15</td><td class='mono'>3042</td><td class='mono'>2</td><td>SENDERS CHGS AMT</td><td>0.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRCC</td><td>CHARACTER</td><td class='mono'>3043</td><td class='mono'>3</td><td class='mono'>3045</td><td class='mono'></td><td>RECEIVER CHGS CCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRRA</td><td>DECIMAL</td><td class='mono'>3046</td><td class='mono'>15</td><td class='mono'>3060</td><td class='mono'>2</td><td>RECEIVER CHGS AMT</td><td>0.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIBID</td><td>CHARACTER</td><td class='mono'>3061</td><td class='mono'>25</td><td class='mono'>3085</td><td class='mono'></td><td>BENEFICIARY ID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIOID</td><td>CHARACTER</td><td class='mono'>3086</td><td class='mono'>25</td><td class='mono'>3110</td><td class='mono'></td><td>ORDERING CUST ID</td><td>767827601</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIBIS</td><td>CHARACTER</td><td class='mono'>3111</td><td class='mono'>25</td><td class='mono'>3135</td><td class='mono'></td><td>BENEFICIARY ID SUFIX</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIOIS</td><td>CHARACTER</td><td class='mono'>3136</td><td class='mono'>25</td><td class='mono'>3160</td><td class='mono'></td><td>ORDERING ID SUFIX</td><td>RUT CL</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIBAC</td><td>CHARACTER</td><td class='mono'>3161</td><td class='mono'>35</td><td class='mono'>3195</td><td class='mono'></td><td>BENEFICIARY ACCOUNT</td><td>1233</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIOCT</td><td>CHARACTER</td><td class='mono'>3196</td><td class='mono'>10</td><td class='mono'>3205</td><td class='mono'></td><td>ORD CUST TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRBI</td><td>CHARACTER</td><td class='mono'>3206</td><td class='mono'>25</td><td class='mono'>3230</td><td class='mono'></td><td>RECEIVER BANK ID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIACI</td><td>CHARACTER</td><td class='mono'>3231</td><td class='mono'>1</td><td class='mono'>3231</td><td class='mono'></td><td>ACTION IND</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRICNL</td><td>CHARACTER</td><td class='mono'>3232</td><td class='mono'>1</td><td class='mono'>3232</td><td class='mono'></td><td>CHANEL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIPTY</td><td>NUMERIC</td><td class='mono'>3233</td><td class='mono'>2</td><td class='mono'>3234</td><td class='mono'></td><td>PRIORITY</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIAM1</td><td>DECIMAL</td><td class='mono'>3235</td><td class='mono'>15</td><td class='mono'>3249</td><td class='mono'>2</td><td>AMOUNT 1</td><td>0.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIAM2</td><td>DECIMAL</td><td class='mono'>3250</td><td class='mono'>15</td><td class='mono'>3264</td><td class='mono'>2</td><td>AMOUNT 2</td><td>0.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIAM3</td><td>DECIMAL</td><td class='mono'>3265</td><td class='mono'>15</td><td class='mono'>3279</td><td class='mono'>2</td><td>AMOUNT 3</td><td>0.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIAM4</td><td>DECIMAL</td><td class='mono'>3280</td><td class='mono'>15</td><td class='mono'>3294</td><td class='mono'>2</td><td>AMOUNT 4</td><td>0.00</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIRRN</td><td>DECIMAL</td><td class='mono'>3295</td><td class='mono'>11</td><td class='mono'>3305</td><td class='mono'></td><td>RETURN REF NUMBER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIBAN</td><td>DECIMAL</td><td class='mono'>3306</td><td class='mono'>12</td><td class='mono'>3317</td><td class='mono'></td><td>BENEF ACCOUNT NUMBER</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIBCC</td><td>DECIMAL</td><td class='mono'>3318</td><td class='mono'>16</td><td class='mono'>3333</td><td class='mono'></td><td>BENEF CREDIT CARD NO</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIEF1</td><td>CHARACTER</td><td class='mono'>3334</td><td class='mono'>3</td><td class='mono'>3336</td><td class='mono'></td><td>ERROR FLD 01</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIEF2</td><td>CHARACTER</td><td class='mono'>3337</td><td class='mono'>3</td><td class='mono'>3339</td><td class='mono'></td><td>ERROR FLD 02</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIEF3</td><td>CHARACTER</td><td class='mono'>3340</td><td class='mono'>3</td><td class='mono'>3342</td><td class='mono'></td><td>ERROR FLD 03</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIEF4</td><td>CHARACTER</td><td class='mono'>3343</td><td class='mono'>3</td><td class='mono'>3345</td><td class='mono'></td><td>ERROR FLD 04</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>PRIBTN</td><td>NUMERIC</td><td class='mono'>3346</td><td class='mono'>9</td><td class='mono'>3354</td><td class='mono'></td><td>BATCH SEQ NBR</td><td>0</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRILMM</td><td>NUMERIC</td><td class='mono'>3355</td><td class='mono'>2</td><td class='mono'>3356</td><td class='mono'></td><td>LAST MAINT/MM</td><td>2</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRILMD</td><td>NUMERIC</td><td class='mono'>3357</td><td class='mono'>2</td><td class='mono'>3358</td><td class='mono'></td><td>LAST MAINT/DD</td><td>1</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRILMY</td><td>NUMERIC</td><td class='mono'>3359</td><td class='mono'>4</td><td class='mono'>3362</td><td class='mono'></td><td>LAST MAINT/YY</td><td>2018</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRILMT</td><td>TIMESTAMP</td><td class='mono'>3363</td><td class='mono'>26</td><td class='mono'>3388</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td>2018-07-19 12:43:15.980000</td></tr>
+<tr><td class='mono'></td><td class='mono'>PRILMU</td><td>CHARACTER</td><td class='mono'>3389</td><td class='mono'>10</td><td class='mono'>3398</td><td class='mono'></td><td>LAST MAINT/USER</td><td>ITQDATAPRO</td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[PRIDCC] Y | 5 | 2 | 2017 | 0 | 5 | 3 | 2017 | 0 | 0 | 0 | 0 | 0 | G | 0 | 0 | 10 | 26 | 2017 | 0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 | M | 31 | 0 | 0 | 0 | P | N | N | 0 | 0 | 0 | 0 | 31 | N | 0 | 267656 | 0 | CCTE | 10 | 26 | 2016 | 0 | -992381 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 992381 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 1 | 0 | 0 | CC02 | 1 | 0 | 0 | N | 267656 | 9999 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | C0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 31 | 2017 | 0 | Y | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | N | 0 | 0 | 0 | 0 | 0 | 0</div></body></html>

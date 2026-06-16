@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>DEVHS</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>DEVHS</h1>
+<div class='meta'><b>Descripción:</b> Historico de Protestos<br><b>N.º de campos:</b> 62</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'></td><td class='mono'>DHSBNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSBRN</td><td>DECIMAL</td><td class='mono'>3</td><td class='mono'>4</td><td class='mono'>6</td><td class='mono'></td><td>BRANCH NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSCCY</td><td>CHARACTER</td><td class='mono'>7</td><td class='mono'>3</td><td class='mono'>9</td><td class='mono'></td><td>CURRENCY CDE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSGLN</td><td>DECIMAL</td><td class='mono'>10</td><td class='mono'>16</td><td class='mono'>25</td><td class='mono'></td><td>G/L NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSACC</td><td>DECIMAL</td><td class='mono'>26</td><td class='mono'>12</td><td class='mono'>37</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSCHK</td><td>DECIMAL</td><td class='mono'>38</td><td class='mono'>11</td><td class='mono'>48</td><td class='mono'></td><td>CHECK NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSAMT</td><td>DECIMAL</td><td class='mono'>49</td><td class='mono'>15</td><td class='mono'>63</td><td class='mono'>2</td><td>CHECK AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSTCD</td><td>CHARACTER</td><td class='mono'>64</td><td class='mono'>4</td><td class='mono'>67</td><td class='mono'></td><td>TRANS CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSTDS</td><td>CHARACTER</td><td class='mono'>68</td><td class='mono'>60</td><td class='mono'>127</td><td class='mono'></td><td>TRANS DESC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSAPC</td><td>CHARACTER</td><td class='mono'>128</td><td class='mono'>2</td><td class='mono'>129</td><td class='mono'></td><td>TRANS TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSDMM</td><td>NUMERIC</td><td class='mono'>130</td><td class='mono'>2</td><td class='mono'>131</td><td class='mono'></td><td>OPER-DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSDDD</td><td>NUMERIC</td><td class='mono'>132</td><td class='mono'>2</td><td class='mono'>133</td><td class='mono'></td><td>OPER-DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSDYY</td><td>NUMERIC</td><td class='mono'>134</td><td class='mono'>4</td><td class='mono'>137</td><td class='mono'></td><td>OPER-DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSEMI</td><td>CHARACTER</td><td class='mono'>138</td><td class='mono'>4</td><td class='mono'>141</td><td class='mono'></td><td>BANK RECEIVER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSTRA</td><td>NUMERIC</td><td class='mono'>142</td><td class='mono'>9</td><td class='mono'>150</td><td class='mono'></td><td>TRANSIT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSRES</td><td>CHARACTER</td><td class='mono'>151</td><td class='mono'>4</td><td class='mono'>154</td><td class='mono'></td><td>REASON DEVOL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSRE2</td><td>CHARACTER</td><td class='mono'>155</td><td class='mono'>4</td><td class='mono'>158</td><td class='mono'></td><td>REASON 2 DEVOL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSRE3</td><td>CHARACTER</td><td class='mono'>159</td><td class='mono'>4</td><td class='mono'>162</td><td class='mono'></td><td>REASON 3 DEVOL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSRE4</td><td>CHARACTER</td><td class='mono'>163</td><td class='mono'>4</td><td class='mono'>166</td><td class='mono'></td><td>REASON 4 DEVOL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSOFC</td><td>CHARACTER</td><td class='mono'>167</td><td class='mono'>4</td><td class='mono'>170</td><td class='mono'></td><td>OFFICIAL ACC</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSBTH</td><td>DECIMAL</td><td class='mono'>171</td><td class='mono'>5</td><td class='mono'>175</td><td class='mono'></td><td>BATCH</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSFLG</td><td>CHARACTER</td><td class='mono'>176</td><td class='mono'>1</td><td class='mono'>176</td><td class='mono'></td><td>PROCESS FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSUID</td><td>CHARACTER</td><td class='mono'>177</td><td class='mono'>10</td><td class='mono'>186</td><td class='mono'></td><td>PROC/USER-ID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSUDM</td><td>NUMERIC</td><td class='mono'>187</td><td class='mono'>2</td><td class='mono'>188</td><td class='mono'></td><td>PROC/DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSUDD</td><td>NUMERIC</td><td class='mono'>189</td><td class='mono'>2</td><td class='mono'>190</td><td class='mono'></td><td>PROC/DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSUDY</td><td>NUMERIC</td><td class='mono'>191</td><td class='mono'>4</td><td class='mono'>194</td><td class='mono'></td><td>PROC/DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSUTM</td><td>TIMESTAMP</td><td class='mono'>195</td><td class='mono'>26</td><td class='mono'>220</td><td class='mono'>6</td><td>PROC/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSORG</td><td>CHARACTER</td><td class='mono'>221</td><td class='mono'>1</td><td class='mono'>221</td><td class='mono'></td><td>ORIGIN DEVOL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSFGL</td><td>CHARACTER</td><td class='mono'>222</td><td class='mono'>1</td><td class='mono'>222</td><td class='mono'></td><td>POSTING G/L</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSDAC</td><td>DECIMAL</td><td class='mono'>223</td><td class='mono'>12</td><td class='mono'>234</td><td class='mono'></td><td>ACCOUNT ORIGEN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSUC1</td><td>CHARACTER</td><td class='mono'>235</td><td class='mono'>4</td><td class='mono'>238</td><td class='mono'></td><td>USER CODE 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSOBK</td><td>CHARACTER</td><td class='mono'>239</td><td class='mono'>2</td><td class='mono'>240</td><td class='mono'></td><td>BANK ORIGEN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSOBR</td><td>DECIMAL</td><td class='mono'>241</td><td class='mono'>4</td><td class='mono'>244</td><td class='mono'></td><td>BRANCH ORIGEN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSDOC</td><td>CHARACTER</td><td class='mono'>245</td><td class='mono'>2</td><td class='mono'>246</td><td class='mono'></td><td>DOC TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSREO</td><td>CHARACTER</td><td class='mono'>247</td><td class='mono'>4</td><td class='mono'>250</td><td class='mono'></td><td>REASON ORIGEN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSRO2</td><td>CHARACTER</td><td class='mono'>251</td><td class='mono'>4</td><td class='mono'>254</td><td class='mono'></td><td>REASON 2 ORIGEN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSRO3</td><td>CHARACTER</td><td class='mono'>255</td><td class='mono'>4</td><td class='mono'>258</td><td class='mono'></td><td>REASON 3 ORIGEN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSRO4</td><td>CHARACTER</td><td class='mono'>259</td><td class='mono'>4</td><td class='mono'>262</td><td class='mono'></td><td>REASON 4 ORIGEN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSAM1</td><td>DECIMAL</td><td class='mono'>263</td><td class='mono'>15</td><td class='mono'>277</td><td class='mono'>2</td><td>AMOUNT COM/INP 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSAM2</td><td>DECIMAL</td><td class='mono'>278</td><td class='mono'>15</td><td class='mono'>292</td><td class='mono'>2</td><td>AMOUNT COM/INP 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSAM3</td><td>DECIMAL</td><td class='mono'>293</td><td class='mono'>15</td><td class='mono'>307</td><td class='mono'>2</td><td>AMOUNT COM/INP 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSAM4</td><td>DECIMAL</td><td class='mono'>308</td><td class='mono'>15</td><td class='mono'>322</td><td class='mono'>2</td><td>AMOUNT COM/IMP 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSBNI</td><td>CHARACTER</td><td class='mono'>323</td><td class='mono'>25</td><td class='mono'>347</td><td class='mono'></td><td>IDENTIFICATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSCUN</td><td>DECIMAL</td><td class='mono'>348</td><td class='mono'>9</td><td class='mono'>356</td><td class='mono'></td><td>CUSTOMER NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSEDM</td><td>NUMERIC</td><td class='mono'>357</td><td class='mono'>2</td><td class='mono'>358</td><td class='mono'></td><td>ENVIO DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSEDD</td><td>NUMERIC</td><td class='mono'>359</td><td class='mono'>2</td><td class='mono'>360</td><td class='mono'></td><td>ENVIO DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSEDY</td><td>NUMERIC</td><td class='mono'>361</td><td class='mono'>4</td><td class='mono'>364</td><td class='mono'></td><td>ENVIO DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSETM</td><td>TIMESTAMP</td><td class='mono'>365</td><td class='mono'>26</td><td class='mono'>390</td><td class='mono'>6</td><td>ENVIO TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSAST</td><td>CHARACTER</td><td class='mono'>391</td><td class='mono'>1</td><td class='mono'>391</td><td class='mono'></td><td>STATUS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSAUS</td><td>CHARACTER</td><td class='mono'>392</td><td class='mono'>10</td><td class='mono'>401</td><td class='mono'></td><td>ACLARAR USER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSADM</td><td>NUMERIC</td><td class='mono'>402</td><td class='mono'>2</td><td class='mono'>403</td><td class='mono'></td><td>ACLARAR DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSADD</td><td>NUMERIC</td><td class='mono'>404</td><td class='mono'>2</td><td class='mono'>405</td><td class='mono'></td><td>ACLARAR DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSADY</td><td>NUMERIC</td><td class='mono'>406</td><td class='mono'>4</td><td class='mono'>409</td><td class='mono'></td><td>ACLARAR DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSATM</td><td>TIMESTAMP</td><td class='mono'>410</td><td class='mono'>26</td><td class='mono'>435</td><td class='mono'>6</td><td>ACLARAR TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSEND</td><td>NUMERIC</td><td class='mono'>436</td><td class='mono'>2</td><td class='mono'>437</td><td class='mono'></td><td>NUM.ENDOSOS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSREM</td><td>CHARACTER</td><td class='mono'>438</td><td class='mono'>60</td><td class='mono'>497</td><td class='mono'></td><td>REMARK</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSFEN</td><td>CHARACTER</td><td class='mono'>498</td><td class='mono'>1</td><td class='mono'>498</td><td class='mono'></td><td>END PROCESS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSCNL</td><td>CHARACTER</td><td class='mono'>499</td><td class='mono'>2</td><td class='mono'>500</td><td class='mono'></td><td>CANAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSIMG</td><td>CHARACTER</td><td class='mono'>501</td><td class='mono'>50</td><td class='mono'>550</td><td class='mono'></td><td>IMAGEN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSING</td><td>CHARACTER</td><td class='mono'>551</td><td class='mono'>1</td><td class='mono'>551</td><td class='mono'></td><td>INPUT TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSOVD</td><td>CHARACTER</td><td class='mono'>552</td><td class='mono'>1</td><td class='mono'>552</td><td class='mono'></td><td>OVD FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DHSRCL</td><td>CHARACTER</td><td class='mono'>553</td><td class='mono'>20</td><td class='mono'>572</td><td class='mono'></td><td>RECONCLBL REFERE</td><td></td></tr>
+</tbody></table></body></html>

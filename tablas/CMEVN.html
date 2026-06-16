@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>CMEVN</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>CMEVN</h1>
+<div class='meta'><b>Descripción:</b> Cancelacion de Cuentas y Lineas de Crédito<br><b>N.º de campos:</b> 26</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>EVNACC</td><td>DECIMAL</td><td class='mono'>1</td><td class='mono'>12</td><td class='mono'>12</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td>Para Cuenta Corriente numero de cuenta
+Para Linea de crédito numero del prestamo</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>EVNCUN</td><td>DECIMAL</td><td class='mono'>13</td><td class='mono'>9</td><td class='mono'>21</td><td class='mono'></td><td>CUSTOMER NUMBER</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>EVNPRO</td><td>CHARACTER</td><td class='mono'>22</td><td class='mono'>4</td><td class='mono'>25</td><td class='mono'></td><td>PRODUCT CODE</td><td></td></tr>
+<tr><td class='mono'>4</td><td class='mono'>EVNACD</td><td>CHARACTER</td><td class='mono'>26</td><td class='mono'>2</td><td class='mono'>27</td><td class='mono'></td><td>APPLICATION CODE</td><td></td></tr>
+<tr><td class='mono'>5</td><td class='mono'>EVNREF</td><td>DECIMAL</td><td class='mono'>28</td><td class='mono'>11</td><td class='mono'>38</td><td class='mono'></td><td>CHK/REF NUMBER</td><td></td></tr>
+<tr><td class='mono'>6</td><td class='mono'>EVNCDE</td><td>CHARACTER</td><td class='mono'>39</td><td class='mono'>2</td><td class='mono'>40</td><td class='mono'></td><td>CODIGO EVENTO</td><td>Valor 50</td></tr>
+<tr><td class='mono'>7</td><td class='mono'>EVNPDM</td><td>NUMERIC</td><td class='mono'>41</td><td class='mono'>2</td><td class='mono'>42</td><td class='mono'></td><td>FECH MM PROCESO</td><td>Mes Cierre</td></tr>
+<tr><td class='mono'>8</td><td class='mono'>EVNPDD</td><td>NUMERIC</td><td class='mono'>43</td><td class='mono'>2</td><td class='mono'>44</td><td class='mono'></td><td>FECH DD PROCESO</td><td>Día Cierre</td></tr>
+<tr><td class='mono'>9</td><td class='mono'>EVNPDY</td><td>NUMERIC</td><td class='mono'>45</td><td class='mono'>4</td><td class='mono'>48</td><td class='mono'></td><td>FECH YY PROCESO</td><td>Año Cierre</td></tr>
+<tr><td class='mono'>10</td><td class='mono'>EVNUSR</td><td>CHARACTER</td><td class='mono'>49</td><td class='mono'>10</td><td class='mono'>58</td><td class='mono'></td><td>USUARIO</td><td></td></tr>
+<tr><td class='mono'>11</td><td class='mono'>EVNSTS</td><td>CHARACTER</td><td class='mono'>59</td><td class='mono'>2</td><td class='mono'>60</td><td class='mono'></td><td>ESTADO</td><td></td></tr>
+<tr><td class='mono'>12</td><td class='mono'>EVNAMT</td><td>DECIMAL</td><td class='mono'>61</td><td class='mono'>15</td><td class='mono'>75</td><td class='mono'>2</td><td>AMOUNT</td><td></td></tr>
+<tr><td class='mono'>13</td><td class='mono'>EVNCOD</td><td>CHARACTER</td><td class='mono'>76</td><td class='mono'>4</td><td class='mono'>79</td><td class='mono'></td><td>COD.TRANSACCION IBS</td><td>Se guarda el codigo del motivo del cierre, tabla CNOFC 50</td></tr>
+<tr><td class='mono'>14</td><td class='mono'>EVNACR</td><td>DECIMAL</td><td class='mono'>80</td><td class='mono'>12</td><td class='mono'>91</td><td class='mono'></td><td>ACCOUNT REFERE</td><td></td></tr>
+<tr><td class='mono'>15</td><td class='mono'>EVNCAN</td><td>CHARACTER</td><td class='mono'>92</td><td class='mono'>4</td><td class='mono'>95</td><td class='mono'></td><td>CODIGO CANAL</td><td></td></tr>
+<tr><td class='mono'>16</td><td class='mono'>EVNBTH</td><td>DECIMAL</td><td class='mono'>96</td><td class='mono'>5</td><td class='mono'>100</td><td class='mono'></td><td>LOTE CONTABLE</td><td></td></tr>
+<tr><td class='mono'>17</td><td class='mono'>EVNOBK</td><td>CHARACTER</td><td class='mono'>101</td><td class='mono'>2</td><td class='mono'>102</td><td class='mono'></td><td>CODIGO BANCO</td><td></td></tr>
+<tr><td class='mono'>18</td><td class='mono'>EVNOBR</td><td>DECIMAL</td><td class='mono'>103</td><td class='mono'>4</td><td class='mono'>106</td><td class='mono'></td><td>CODIGO OFICINA</td><td></td></tr>
+<tr><td class='mono'>19</td><td class='mono'>EVNCCN</td><td>DECIMAL</td><td class='mono'>107</td><td class='mono'>8</td><td class='mono'>114</td><td class='mono'></td><td>COST CENTER</td><td></td></tr>
+<tr><td class='mono'>20</td><td class='mono'>EVNTYP</td><td>CHARACTER</td><td class='mono'>115</td><td class='mono'>4</td><td class='mono'>118</td><td class='mono'></td><td>TIPO PRODUCTO</td><td></td></tr>
+<tr><td class='mono'>21</td><td class='mono'>EVNTRN</td><td>DECIMAL</td><td class='mono'>119</td><td class='mono'>7</td><td class='mono'>125</td><td class='mono'></td><td>TRANSACTION NUMBER</td><td></td></tr>
+<tr><td class='mono'>22</td><td class='mono'>EVNLMM</td><td>NUMERIC</td><td class='mono'>126</td><td class='mono'>2</td><td class='mono'>127</td><td class='mono'></td><td>LAST MAINT/MM</td><td>Mes Solicitud de cierre</td></tr>
+<tr><td class='mono'>23</td><td class='mono'>EVNLMD</td><td>NUMERIC</td><td class='mono'>128</td><td class='mono'>2</td><td class='mono'>129</td><td class='mono'></td><td>LAST MAINT/DD</td><td>Dia solicitud de Cierre</td></tr>
+<tr><td class='mono'>24</td><td class='mono'>EVNLMY</td><td>NUMERIC</td><td class='mono'>130</td><td class='mono'>4</td><td class='mono'>133</td><td class='mono'></td><td>LAST MAINT/YY</td><td>Año Solicitud de cierre</td></tr>
+<tr><td class='mono'>25</td><td class='mono'>EVNLMT</td><td>TIMESTAMP</td><td class='mono'>134</td><td class='mono'>26</td><td class='mono'>159</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'>26</td><td class='mono'>EVNLMU</td><td>CHARACTER</td><td class='mono'>160</td><td class='mono'>10</td><td class='mono'>169</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[EVNACC] 9003193 | 9003226 | 9003245 | ACRM - Tipo ID+Número de Identificación | A | 18 | 0 | 1 | A | No. de documento (Cédula, Pasaporte, etc.)
+[EVNCUN] 682820 | 542066 | 656870 | ACRM - Nombre Cliente/Razón Social | A | 70 | 0 | 1 | A | Si es persona Natural el Nombre y en el caso de Jurídicos, el nombre de la empresa
+[EVNPRO] CT04 | CE03 | LS02 | ACRM - Código de Actividad Económica | A | 5 | 0 | 1 | A | Código de la actividad económica que se maneje en las Bases de la institución, reflejada por el cliente al momento de vincularse.
+[EVNACD] 01 | 10 | 10 | ACRM - Banca | A | 3 | 0 | 1 | A | EMP, PER, COR, PYM,etc. (empresarial, personal, corporativa, pymes)
+[EVNREF] 0 | 0 | 0 | ACRM - Código de Entidad/Compañia | A | 4 | 0 | 1 | A | Si en caso se manejan multi-compañias es posible codificar. Sino se manejan en la misma instalacion enviar valor fijo 0001
+[EVNCDE] 01 | 01 | 01 | ACRM - Código de Aplicación | A | 4 | 0 | 1 | A | Campo en el que se debe identificar la aplicación transaccional, ejemplo: CCTE, CAHO, CRE, CV, DAP, SEG, etc. Que corresonderia a cuenta corriente, ahorros, créditos, compra venta de divisas, depósitos a plazo, Seguros.
+[EVNPDM] Para cuenta corriente fecha de proceso de la aprobación, para Linea de crédito fecha de proceso del Batch | 1 | 1 | 1 | ACRM - Código Transacción | A | 5 | 0 | 1 | A | Código que identifica la transacción en la institucion ( depósito, retiro, cheque, transferencia, pago prestamo, pago de poliza, pago de siniestro,etc)
+[EVNPDD] 2 | 2 | 2 | ACRM - Motivo Concepto | A | 5 | 0 | 1 | A | O, para código de concepto de operación
+[EVNPDY] 2018 | 2018 | 2018 | ACRM - Medio Transaccional | A | 5 | 0 | 1 | A | Identificación del medio transaccional Si aplica
+[EVNUSR] BICEANDAUR | BICCGONZAH | BICEANDAUR | ACRM - Número Transacción | N | 20 | 0 | 1 | A | Si en caso adicional de código de transacción maneja un correlativo o número
+[EVNSTS] ACRM - Oficina Transacción | N | 5 | 0 | 1 | A | Oficina donde se opera la transacción
+[EVNAMT] 0 | 0 | 0 | ACRM - Sucursal transacción | N | 5 | 0 | 1 | A | Sucursal donde se opera la transacción (si aplica y la institución maneja los dos conceptos, sino mandar el mismo valor)
+[EVNCOD] ACRM - Ciudad origen de Transacción | A | 5 | 0 | 1 | A | Ciudad en donde se origina la transacción
+[EVNACR] 0 | 0 | 0 | ACRM - Código de Producto | A | 17 | 0 | 1 | A | De acuerdo al catalogo de codigos de producto de la institución, debe viajar el codigo del tipo de producto Ej: Cuenta Corriente, Ahorros, Prestamos, Tarjeta de Crédito, Tipo de poliza, etc.
+[EVNCAN] ACRM - Código de Sub-producto | A | 4 | 0 | 1 | A | Código del Subtipo del producto Si aplica. Ej. Ahorro corriente, Prestamo Contruccion, SubRamo de Poliza
+[EVNBTH] 0 | 0 | 0 | ACRM - Número de Producto | A | 20 | 0 | 1 | A | No. de cuenta, prestamo, plazo fijo, No. de póliza, etc. Para cualquier producto financiero
+[EVNOBK] ACRM - Referencia 1 | A | 11 | 0 | 1 | A | Referencia de la operación
+[EVNOBR] 0 | 0 | 0 | ACRM - Referencia 2 | A | 11 | 0 | 1 | A | O si se necesita una segunda referencia
+[EVNCCN] 0 | 0 | 0 | ACRM - Código de Respuesta | A | 3 | 0 | 1 | A | En algunas operaciones o productos se meneja un código de respuesta,
+[EVNTYP] ACRM - Código de Rechazo | A | 3 | 0 | 1 | A | Este campo es para registrar si aplica, el código de rechazo de una transacción
+[EVNTRN] 0 | 0 | 0 | ACRM - Funcionario Autorizó | A | 10 | 0 | 1 | A | user de funcionario que actualiza, este user debe existir en Monitor
+[EVNLMM] 0 | 1 | 0 | ACRM - Tipo de Persona   N-J | A | 1 | 0 | 1 | A | Identificador de tipo de persona Natural o Jurídico, N ó J
+[EVNLMD] 0 | 2 | 0 | ACRM - Reversa  s-n | A | 1 | 0 | 1 | A | N = Normal, S = Reversa
+[EVNLMY] 0 | 2018 | 0 | ACRM - Fecha Trx. | N | 8 | 0 | 1 | A | Fecha de realización de transacción AAAAMMDD
+[EVNLMT] 0001-01-01-00.00.00.000000 | 2018-01-02-18.00.07.585000 | 0001-01-01-00.00.00.000000 | ACRM - Hora trx | N | 6 | 0 | 1 | A | Hora de realización de transacción HHMNSS
+[EVNLMU] BICCGONZAH | ACRM - Fecha Jornada | N | 8 | 0 | 1 | A | O si en caso se maneja una fecha de jornada. AAAAMMDD
+ACRM - Fecha y Hora trx | N | 14 | 0 | 1 | A | Concatenación de fecha y hora de transacción AAAAMMDDHHMNSS
+ACRM - Fecha de Vencimiento | N | 8 | 0 | 1 | A | Fecha de vencimiento en caso se trata de una operación que utiliza este dato (prestamo, plazo fijo, tarjeta, etc.) AAAAMMDD
+ACRM - Moneda | A | 3 | 0 | 1 | A | Código de moneda (USD, EUR, PES, etc.)
+ACRM - Monto Efectivo MN | N | 12 | 3 | 1 | A | Monto efectivo en pesos de la transacción
+ACRM - Monto Cheques propios MN | N | 12 | 3 | 1 | A | Monto cheques propios en pesos de la transacción
+ACRM - Monto Cheques ajenos MN | N | 12 | 3 | 1 | A | Monto cheques ajenos en pesos de la transacción
+ACRM - Monto Giros exteror MN | N | 12 | 3 | 1 | A | Monto Giros del exterior en pesos
+ACRM - Monto de Operación MN | N | 12 | 3 | 1 | A | Monto total de la operación - en pesos
+ACRM - Monto Operación Dólares | N | 12 | 3 | 1 | A | Monto total de la operación - en dolares
+ACRM - Monto Efectivo Dólares | N | 12 | 3 | 1 | A | Monto Efectivo - en dolares
+ACRM - Saldo Producto | N | 12 | 3 | 1 | A | Saldo de productos que lo manejan
+ACRM - Sobregiro Autorizado | N | 12 | 3 | 1 | A | Si en caso una cuenta u otro producto posee un sobregiro autorizado
+ACRM - Indicador Sobregiro | A | 2 | 0 | 1 | A | Indicador si posee o no, sobregiro
+ACRM - Tipo de Cambio | N | 6 | 4 | 1 | A | Tipo de cambio en dolarización de moneda de transacción
+ACRM - Código de Canal | A | 2 | 0 | 1 | A | Código de canal transaccional (1 = Electrónico, 2 = Telefónico, 3  = Presencial)
+ACRM - Código de Ejecutivo - Oficial | A | 12 | 0 | 1 | A | user de ejecutivo de cuenta o cliente
+ACRM - Cuenta Origen/Destino | A | 20 | 0 | 1 | A | Si se trata de operaciones relacionadas, aquí se registra el No. de cuenta origen o destino.
+ACRM - Débito - Crédito | A | 1 | 0 | 1 | A | D/C identificador de operaciones de ingresos y egresos (D = Débito y C = Crédito)
+ACRM - Empleado  si-no | A | 1 | 0 | 1 | A | S o N para identificar si la operación corresponde a una cuenta de empleado
+ACRM - Status Producto | A | 1 | 0 | 1 | A | A = activo, C = cancelado, I = inactivo, etc
+ACRM - Saldo Disponible | N | 12 | 3 | 1 | A | Saldo disponible del producto involucrado en transacción
+ACRM - Tipo ID + No. Identif. Ejecutante | A | 18 | 0 | 1 | A | Tipo+No. Identificación de Ejecutante de operación, si en caso se maneja
+ACRM - Fecha Apertura | N | 8 | 0 | 1 | A | Fecha de apertura de producto AAAAMMDD
+ACRM - Fecha de Constitución | N | 8 | 0 | 1 | A | Fecha de Constitución de empresa si enc caso es persona jurídica AAAAMMDD
+ACRM - Clase de Cliente | A | 5 | 0 | 1 | A | Clasificación de clientes (VIP, etc.)
+ACRM - Flag TRF. Enviada/Recibida | A | 1 | 0 | 1 | A | E/R para identificar una transferencia si es Recibida o Enviada
+ACRM - Nombre Ord. / Benef. / Portador | A | 40 | 0 | 1 | A | Nombre de ordenante, beneficiario o portador
+ACRM - País Ordenante / Beneficiario | A | 3 | 0 | 1 | A | País de Ordenante o Beneficiario dependiendo si es Recibida o Enviada una Transferencia
+ACRM - Tipo + Número ID Beneficiario | A | 18 | 0 | 1 | A | Tipo+Número de Identificación para identificar a un ordenante o beneficiaro de una transferencia
+ACRM - Dirección Ordenante /Beneficiario | A | 40 | 0 | 1 | A | Dirección de ordenante o beneficiario,
+ACRM - TelTfono Ordenante / Beneficiario | A | 15 | 0 | 1 | A | Teléfono de ordenante o beneficiario
+ACRM - Ciudad Destino Transacción | A | 5 | 0 | 1 | A | Ciudad destino de Transacción, puede no manejarse
+ACRM - Oficina Destino | N | 5 | 0 | 1 | A | si en caso se tiene el código de oficina destino en una transferencia
+ACRM - Usuario | A | 10 | 0 | 1 | A | Usuario que realiza la operación
+ACRM - Terminal | A | 10 | 0 | 1 | A | Id de Terminal donde se ha realizado la transacción
+ACRM - Código de cliente | A | 15 | 0 | 1 | A | Código único de cliente si en caso se maneja en la institución
+ACRM - Resevado Alfa  1 | A | 10 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Resevado Alfa  2 | A | 10 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Resevado Alfa  3 | A | 10 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Resevado Alfa  4 | A | 10 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Resevado Alfa  5 | A | 10 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Resevado Alfa  6 | A | 10 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Resevado Alfa  7 | A | 10 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Resevado Alfa  8 | A | 1 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Resevado Alfa  9 | A | 1 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Resevado Alfa  10 | A | 1 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Resevado Num  1 | N | 5 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Resevado Num  2 | N | 5 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Resevado Num  3 | N | 5 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Resevado Num  4 | N | 5 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Resevado Num  5 | N | 5 | 0 | 1 | A | Campo reservado si en caso se necesita adicional otro campo no contemplado
+ACRM - Origen de Alerta | N | 3 | 0 | 1
+ACRM - Tipo de Resultado | A | 1 | 0 | 1
+ACRM - Reportado a UAF  s-n | A | 1 | 0 | 1
+ACRM - Total Entrada -complem- | N | 14 | 2 | 1
+ACRM - Total Entrada Efectivo - complem- | N | 14 | 2 | 1
+ACRM - Trx entrada - complem- | N | 5 | 0 | 1
+ACRM - Trx entrada efectivo | N | 5 | 0 | 1
+ACRM - Total Salida - complem- | N | 14 | 2 | 1
+ACRM - Total salida efectivo - Complem- | N | 14 | 2 | 1
+ACRM - Trx salida - complem- | N | 5 | 0 | 1
+ACRM - Trx salida efectivo - complem-5 | N | 5 | 0 | 1
+ACRM - Espejo Grupo | N | 3 | 0 | 1
+ACRM - Espejo Rango Efectivo | N | 2 | 0 | 1
+ACRM - Espejo Rango Total | N | 2 | 0 | 1
+ACRM - Espejo region sucursal | N | 3 | 0 | 1</div></body></html>

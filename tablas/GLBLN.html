@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>GLBLN</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>GLBLN</h1>
+<div class='meta'><b>N.º de campos:</b> 93</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>GLBBNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK NUMBER</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>GLBBRN</td><td>DECIMAL</td><td class='mono'>3</td><td class='mono'>4</td><td class='mono'>6</td><td class='mono'></td><td>BRANCH NUMBER</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>GLBCCY</td><td>CHARACTER</td><td class='mono'>7</td><td class='mono'>3</td><td class='mono'>9</td><td class='mono'></td><td>CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBGLN</td><td>DECIMAL</td><td class='mono'>10</td><td class='mono'>16</td><td class='mono'>25</td><td class='mono'></td><td>G/L ACCOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJAD</td><td>DECIMAL</td><td class='mono'>26</td><td class='mono'>19</td><td class='mono'>44</td><td class='mono'>2</td><td>JAN DEBITS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBFED</td><td>DECIMAL</td><td class='mono'>45</td><td class='mono'>19</td><td class='mono'>63</td><td class='mono'>2</td><td>FEB DEBITS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBMAD</td><td>DECIMAL</td><td class='mono'>64</td><td class='mono'>19</td><td class='mono'>82</td><td class='mono'>2</td><td>MAR DEBITS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAPD</td><td>DECIMAL</td><td class='mono'>83</td><td class='mono'>19</td><td class='mono'>101</td><td class='mono'>2</td><td>APR DEBITS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBMYD</td><td>DECIMAL</td><td class='mono'>102</td><td class='mono'>19</td><td class='mono'>120</td><td class='mono'>2</td><td>MAY DEBITS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJUD</td><td>DECIMAL</td><td class='mono'>121</td><td class='mono'>19</td><td class='mono'>139</td><td class='mono'>2</td><td>JUN DEBITS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJLD</td><td>DECIMAL</td><td class='mono'>140</td><td class='mono'>19</td><td class='mono'>158</td><td class='mono'>2</td><td>JUL DEBITS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAUD</td><td>DECIMAL</td><td class='mono'>159</td><td class='mono'>19</td><td class='mono'>177</td><td class='mono'>2</td><td>AUG DEBITS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBSED</td><td>DECIMAL</td><td class='mono'>178</td><td class='mono'>19</td><td class='mono'>196</td><td class='mono'>2</td><td>SEP DEBITS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBOCD</td><td>DECIMAL</td><td class='mono'>197</td><td class='mono'>19</td><td class='mono'>215</td><td class='mono'>2</td><td>OCT DEBITS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBNOD</td><td>DECIMAL</td><td class='mono'>216</td><td class='mono'>19</td><td class='mono'>234</td><td class='mono'>2</td><td>NOV DEBITS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBDED</td><td>DECIMAL</td><td class='mono'>235</td><td class='mono'>19</td><td class='mono'>253</td><td class='mono'>2</td><td>DEC DEBITS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJAC</td><td>DECIMAL</td><td class='mono'>254</td><td class='mono'>19</td><td class='mono'>272</td><td class='mono'>2</td><td>JAN CREDTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBFEC</td><td>DECIMAL</td><td class='mono'>273</td><td class='mono'>19</td><td class='mono'>291</td><td class='mono'>2</td><td>FEB CREDTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBMAC</td><td>DECIMAL</td><td class='mono'>292</td><td class='mono'>19</td><td class='mono'>310</td><td class='mono'>2</td><td>MAR CREDTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAPC</td><td>DECIMAL</td><td class='mono'>311</td><td class='mono'>19</td><td class='mono'>329</td><td class='mono'>2</td><td>APR CREDTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBMYC</td><td>DECIMAL</td><td class='mono'>330</td><td class='mono'>19</td><td class='mono'>348</td><td class='mono'>2</td><td>MAY CREDTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJUC</td><td>DECIMAL</td><td class='mono'>349</td><td class='mono'>19</td><td class='mono'>367</td><td class='mono'>2</td><td>JUN CREDTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJLC</td><td>DECIMAL</td><td class='mono'>368</td><td class='mono'>19</td><td class='mono'>386</td><td class='mono'>2</td><td>JUL CREDTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAUC</td><td>DECIMAL</td><td class='mono'>387</td><td class='mono'>19</td><td class='mono'>405</td><td class='mono'>2</td><td>AUG CREDTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBSEC</td><td>DECIMAL</td><td class='mono'>406</td><td class='mono'>19</td><td class='mono'>424</td><td class='mono'>2</td><td>SEP CREDTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBOCC</td><td>DECIMAL</td><td class='mono'>425</td><td class='mono'>19</td><td class='mono'>443</td><td class='mono'>2</td><td>OCT CREDTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBNOC</td><td>DECIMAL</td><td class='mono'>444</td><td class='mono'>19</td><td class='mono'>462</td><td class='mono'>2</td><td>NOV CREDTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBDEC</td><td>DECIMAL</td><td class='mono'>463</td><td class='mono'>19</td><td class='mono'>481</td><td class='mono'>2</td><td>DEC CREDTS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJAB</td><td>DECIMAL</td><td class='mono'>482</td><td class='mono'>19</td><td class='mono'>500</td><td class='mono'>2</td><td>JAN BALNCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBFEB</td><td>DECIMAL</td><td class='mono'>501</td><td class='mono'>19</td><td class='mono'>519</td><td class='mono'>2</td><td>FEB BALNCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBMAB</td><td>DECIMAL</td><td class='mono'>520</td><td class='mono'>19</td><td class='mono'>538</td><td class='mono'>2</td><td>MAR BALNCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAPB</td><td>DECIMAL</td><td class='mono'>539</td><td class='mono'>19</td><td class='mono'>557</td><td class='mono'>2</td><td>APR BALNCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBMYB</td><td>DECIMAL</td><td class='mono'>558</td><td class='mono'>19</td><td class='mono'>576</td><td class='mono'>2</td><td>MAY BALNCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJUB</td><td>DECIMAL</td><td class='mono'>577</td><td class='mono'>19</td><td class='mono'>595</td><td class='mono'>2</td><td>JUN BALNCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJLB</td><td>DECIMAL</td><td class='mono'>596</td><td class='mono'>19</td><td class='mono'>614</td><td class='mono'>2</td><td>JUL BALNCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAUB</td><td>DECIMAL</td><td class='mono'>615</td><td class='mono'>19</td><td class='mono'>633</td><td class='mono'>2</td><td>AUG BALNCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBSEB</td><td>DECIMAL</td><td class='mono'>634</td><td class='mono'>19</td><td class='mono'>652</td><td class='mono'>2</td><td>SEP BALNCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBOCB</td><td>DECIMAL</td><td class='mono'>653</td><td class='mono'>19</td><td class='mono'>671</td><td class='mono'>2</td><td>OCT BALNCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBNOB</td><td>DECIMAL</td><td class='mono'>672</td><td class='mono'>19</td><td class='mono'>690</td><td class='mono'>2</td><td>NOV BALNCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBDEB</td><td>DECIMAL</td><td class='mono'>691</td><td class='mono'>19</td><td class='mono'>709</td><td class='mono'>2</td><td>DEC BALNCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBBBC</td><td>DECIMAL</td><td class='mono'>710</td><td class='mono'>19</td><td class='mono'>728</td><td class='mono'>2</td><td>BEG/BAL CRS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBBBD</td><td>DECIMAL</td><td class='mono'>729</td><td class='mono'>19</td><td class='mono'>747</td><td class='mono'>2</td><td>BEG/BAL DRS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBBBL</td><td>DECIMAL</td><td class='mono'>748</td><td class='mono'>19</td><td class='mono'>766</td><td class='mono'>2</td><td>BEG/BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJAV</td><td>DECIMAL</td><td class='mono'>767</td><td class='mono'>19</td><td class='mono'>785</td><td class='mono'>2</td><td>JAN ACU/AVG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBFEV</td><td>DECIMAL</td><td class='mono'>786</td><td class='mono'>19</td><td class='mono'>804</td><td class='mono'>2</td><td>FEB ACU/AVG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBMAV</td><td>DECIMAL</td><td class='mono'>805</td><td class='mono'>19</td><td class='mono'>823</td><td class='mono'>2</td><td>MAR ACU/AVG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAPV</td><td>DECIMAL</td><td class='mono'>824</td><td class='mono'>19</td><td class='mono'>842</td><td class='mono'>2</td><td>APR ACU/AVG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBMYV</td><td>DECIMAL</td><td class='mono'>843</td><td class='mono'>19</td><td class='mono'>861</td><td class='mono'>2</td><td>MAY ACU/AVG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJUV</td><td>DECIMAL</td><td class='mono'>862</td><td class='mono'>19</td><td class='mono'>880</td><td class='mono'>2</td><td>JUN ACU/AVG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJLV</td><td>DECIMAL</td><td class='mono'>881</td><td class='mono'>19</td><td class='mono'>899</td><td class='mono'>2</td><td>JUL ACU/AVG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAUV</td><td>DECIMAL</td><td class='mono'>900</td><td class='mono'>19</td><td class='mono'>918</td><td class='mono'>2</td><td>AUG ACU/AVG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBSEV</td><td>DECIMAL</td><td class='mono'>919</td><td class='mono'>19</td><td class='mono'>937</td><td class='mono'>2</td><td>SEP ACU/AVG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBOCV</td><td>DECIMAL</td><td class='mono'>938</td><td class='mono'>19</td><td class='mono'>956</td><td class='mono'>2</td><td>OCT ACU/AVG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBNOV</td><td>DECIMAL</td><td class='mono'>957</td><td class='mono'>19</td><td class='mono'>975</td><td class='mono'>2</td><td>NOV ACU/AVG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBDEV</td><td>DECIMAL</td><td class='mono'>976</td><td class='mono'>19</td><td class='mono'>994</td><td class='mono'>2</td><td>DEC ACU/AVG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBBBU</td><td>DECIMAL</td><td class='mono'>995</td><td class='mono'>19</td><td class='mono'>1013</td><td class='mono'>2</td><td>BEG/BAL BASE CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJAU</td><td>DECIMAL</td><td class='mono'>1014</td><td class='mono'>19</td><td class='mono'>1032</td><td class='mono'>2</td><td>JAN BLN/BSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBFEU</td><td>DECIMAL</td><td class='mono'>1033</td><td class='mono'>19</td><td class='mono'>1051</td><td class='mono'>2</td><td>FEB BLN/BSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBMAU</td><td>DECIMAL</td><td class='mono'>1052</td><td class='mono'>19</td><td class='mono'>1070</td><td class='mono'>2</td><td>MAR BLN/BSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAPU</td><td>DECIMAL</td><td class='mono'>1071</td><td class='mono'>19</td><td class='mono'>1089</td><td class='mono'>2</td><td>APR BLN/BSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBMYU</td><td>DECIMAL</td><td class='mono'>1090</td><td class='mono'>19</td><td class='mono'>1108</td><td class='mono'>2</td><td>MAY BLN/BSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJUU</td><td>DECIMAL</td><td class='mono'>1109</td><td class='mono'>19</td><td class='mono'>1127</td><td class='mono'>2</td><td>JUN BLN/BSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJLU</td><td>DECIMAL</td><td class='mono'>1128</td><td class='mono'>19</td><td class='mono'>1146</td><td class='mono'>2</td><td>JUL BLN/BSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAUU</td><td>DECIMAL</td><td class='mono'>1147</td><td class='mono'>19</td><td class='mono'>1165</td><td class='mono'>2</td><td>AUG BLN/BSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBSEU</td><td>DECIMAL</td><td class='mono'>1166</td><td class='mono'>19</td><td class='mono'>1184</td><td class='mono'>2</td><td>SEP BLN/BSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBOCU</td><td>DECIMAL</td><td class='mono'>1185</td><td class='mono'>19</td><td class='mono'>1203</td><td class='mono'>2</td><td>OCT BLN/BSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBNOU</td><td>DECIMAL</td><td class='mono'>1204</td><td class='mono'>19</td><td class='mono'>1222</td><td class='mono'>2</td><td>NOV BLN/BSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBDEU</td><td>DECIMAL</td><td class='mono'>1223</td><td class='mono'>19</td><td class='mono'>1241</td><td class='mono'>2</td><td>DEC BLN/BSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBBBX</td><td>DECIMAL</td><td class='mono'>1242</td><td class='mono'>19</td><td class='mono'>1260</td><td class='mono'>2</td><td>BEG/BAL USD CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJAX</td><td>DECIMAL</td><td class='mono'>1261</td><td class='mono'>19</td><td class='mono'>1279</td><td class='mono'>2</td><td>JAN BLN/USD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBFEX</td><td>DECIMAL</td><td class='mono'>1280</td><td class='mono'>19</td><td class='mono'>1298</td><td class='mono'>2</td><td>FEB BLN/USD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBMAX</td><td>DECIMAL</td><td class='mono'>1299</td><td class='mono'>19</td><td class='mono'>1317</td><td class='mono'>2</td><td>MAR BLN/USD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAPX</td><td>DECIMAL</td><td class='mono'>1318</td><td class='mono'>19</td><td class='mono'>1336</td><td class='mono'>2</td><td>APR BLN/USD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBMYX</td><td>DECIMAL</td><td class='mono'>1337</td><td class='mono'>19</td><td class='mono'>1355</td><td class='mono'>2</td><td>MAY BLN/USD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJUX</td><td>DECIMAL</td><td class='mono'>1356</td><td class='mono'>19</td><td class='mono'>1374</td><td class='mono'>2</td><td>JUN BLN/USD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBJLX</td><td>DECIMAL</td><td class='mono'>1375</td><td class='mono'>19</td><td class='mono'>1393</td><td class='mono'>2</td><td>JUL BLN/USD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAUX</td><td>DECIMAL</td><td class='mono'>1394</td><td class='mono'>19</td><td class='mono'>1412</td><td class='mono'>2</td><td>AUG BLN/USD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBSEX</td><td>DECIMAL</td><td class='mono'>1413</td><td class='mono'>19</td><td class='mono'>1431</td><td class='mono'>2</td><td>SEP BLN/USD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBOCX</td><td>DECIMAL</td><td class='mono'>1432</td><td class='mono'>19</td><td class='mono'>1450</td><td class='mono'>2</td><td>OCT BLN/USD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBNOX</td><td>DECIMAL</td><td class='mono'>1451</td><td class='mono'>19</td><td class='mono'>1469</td><td class='mono'>2</td><td>NOV BLN/USD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBDEX</td><td>DECIMAL</td><td class='mono'>1470</td><td class='mono'>19</td><td class='mono'>1488</td><td class='mono'>2</td><td>DEC BLN/USD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBMBL</td><td>DECIMAL</td><td class='mono'>1489</td><td class='mono'>19</td><td class='mono'>1507</td><td class='mono'>2</td><td>MEMO BALANCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBYBL</td><td>DECIMAL</td><td class='mono'>1508</td><td class='mono'>19</td><td class='mono'>1526</td><td class='mono'>2</td><td>YESTERDAY BALANCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBOPM</td><td>NUMERIC</td><td class='mono'>1527</td><td class='mono'>2</td><td class='mono'>1528</td><td class='mono'></td><td>OPENING DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBOPD</td><td>NUMERIC</td><td class='mono'>1529</td><td class='mono'>2</td><td class='mono'>1530</td><td class='mono'></td><td>OPENING DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBOPY</td><td>NUMERIC</td><td class='mono'>1531</td><td class='mono'>4</td><td class='mono'>1534</td><td class='mono'></td><td>OPENING DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBLUM</td><td>NUMERIC</td><td class='mono'>1535</td><td class='mono'>2</td><td class='mono'>1536</td><td class='mono'></td><td>LST/UPD DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBLUD</td><td>NUMERIC</td><td class='mono'>1537</td><td class='mono'>2</td><td class='mono'>1538</td><td class='mono'></td><td>LST/UPD DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBLUY</td><td>NUMERIC</td><td class='mono'>1539</td><td class='mono'>4</td><td class='mono'>1542</td><td class='mono'></td><td>LST/UPD DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAVM</td><td>NUMERIC</td><td class='mono'>1543</td><td class='mono'>2</td><td class='mono'>1544</td><td class='mono'></td><td>LST/AVG DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAVD</td><td>NUMERIC</td><td class='mono'>1545</td><td class='mono'>2</td><td class='mono'>1546</td><td class='mono'></td><td>LST/AVG DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBAVY</td><td>NUMERIC</td><td class='mono'>1547</td><td class='mono'>4</td><td class='mono'>1550</td><td class='mono'></td><td>LST/AVG DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLBBUN</td><td>NUMERIC</td><td class='mono'>1551</td><td class='mono'>16</td><td class='mono'>1566</td><td class='mono'></td><td>BUDGET NRO</td><td></td></tr>
+</tbody></table></body></html>

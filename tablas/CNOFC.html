@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>CNOFC</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>CNOFC</h1>
+<div class='meta'><b>N.º de campos:</b> 47</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>CNOCFL</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>CODE FLAG</td><td>GE</td></tr>
+<tr><td class='mono'>2</td><td class='mono'>CNORCD</td><td>CHARACTER</td><td class='mono'>3</td><td class='mono'>4</td><td class='mono'>6</td><td class='mono'></td><td>REFERENCE CODE</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>CNODSC</td><td>CHARACTER</td><td class='mono'>7</td><td class='mono'>45</td><td class='mono'>51</td><td class='mono'></td><td>CODE DESCRIPTN</td><td></td></tr>
+<tr><td class='mono'>4</td><td class='mono'>CNOFRP</td><td>NUMERIC</td><td class='mono'>52</td><td class='mono'>5</td><td class='mono'>56</td><td class='mono'></td><td>FED RPT BL/BC CDE</td><td></td></tr>
+<tr><td class='mono'>5</td><td class='mono'>CNOCHG</td><td>DECIMAL</td><td class='mono'>57</td><td class='mono'>17</td><td class='mono'>73</td><td class='mono'>4</td><td>TRANSACTN CHRG</td><td></td></tr>
+<tr><td class='mono'>6</td><td class='mono'>CNODCC</td><td>CHARACTER</td><td class='mono'>74</td><td class='mono'>2</td><td class='mono'>75</td><td class='mono'></td><td>DR/CR CODE</td><td></td></tr>
+<tr><td class='mono'>7</td><td class='mono'>CNOPAF</td><td>CHARACTER</td><td class='mono'>76</td><td class='mono'>1</td><td class='mono'>76</td><td class='mono'></td><td>PRINT/ADV Y/N</td><td></td></tr>
+<tr><td class='mono'>8</td><td class='mono'>CNOADI</td><td>CHARACTER</td><td class='mono'>77</td><td class='mono'>1</td><td class='mono'>77</td><td class='mono'></td><td>ADJUSTMNT Y/N</td><td></td></tr>
+<tr><td class='mono'>9</td><td class='mono'>CNOAPC</td><td>CHARACTER</td><td class='mono'>78</td><td class='mono'>2</td><td class='mono'>79</td><td class='mono'></td><td>TRANSACTION TYPE</td><td></td></tr>
+<tr><td class='mono'>10</td><td class='mono'>CNOCPF</td><td>CHARACTER</td><td class='mono'>80</td><td class='mono'>1</td><td class='mono'>80</td><td class='mono'></td><td>CUST PROF FLAG</td><td></td></tr>
+<tr><td class='mono'>11</td><td class='mono'>CNOF01</td><td>CHARACTER</td><td class='mono'>81</td><td class='mono'>1</td><td class='mono'>81</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'>12</td><td class='mono'>CNODCB</td><td>CHARACTER</td><td class='mono'>82</td><td class='mono'>1</td><td class='mono'>82</td><td class='mono'></td><td>DR/CR/BOTH CDE</td><td></td></tr>
+<tr><td class='mono'>13</td><td class='mono'>CNOSCY</td><td>CHARACTER</td><td class='mono'>83</td><td class='mono'>3</td><td class='mono'>85</td><td class='mono'></td><td>S/CHG CURRENCY</td><td></td></tr>
+<tr><td class='mono'>14</td><td class='mono'>CNOSCG</td><td>DECIMAL</td><td class='mono'>86</td><td class='mono'>16</td><td class='mono'>101</td><td class='mono'></td><td>S/CHG G/L NO</td><td></td></tr>
+<tr><td class='mono'>15</td><td class='mono'>CNOMID</td><td>CHARACTER</td><td class='mono'>102</td><td class='mono'>6</td><td class='mono'>107</td><td class='mono'></td><td>MICR/DR CODE</td><td></td></tr>
+<tr><td class='mono'>16</td><td class='mono'>CNOMIC</td><td>CHARACTER</td><td class='mono'>108</td><td class='mono'>6</td><td class='mono'>113</td><td class='mono'></td><td>MICR/CR CODE</td><td></td></tr>
+<tr><td class='mono'>17</td><td class='mono'>CNOCPC</td><td>CHARACTER</td><td class='mono'>114</td><td class='mono'>4</td><td class='mono'>117</td><td class='mono'></td><td>CUSTOM/PRT TRNS CDE</td><td></td></tr>
+<tr><td class='mono'>18</td><td class='mono'>CNOTCF</td><td>CHARACTER</td><td class='mono'>118</td><td class='mono'>1</td><td class='mono'>118</td><td class='mono'></td><td>TRANS COMM FLAG</td><td></td></tr>
+<tr><td class='mono'>19</td><td class='mono'>CNOMXC</td><td>DECIMAL</td><td class='mono'>119</td><td class='mono'>13</td><td class='mono'>131</td><td class='mono'>2</td><td>MAX COMM AMOUNT</td><td></td></tr>
+<tr><td class='mono'>20</td><td class='mono'>CNOMNC</td><td>DECIMAL</td><td class='mono'>132</td><td class='mono'>13</td><td class='mono'>144</td><td class='mono'>2</td><td>MIN COMM AMOUNT</td><td></td></tr>
+<tr><td class='mono'>21</td><td class='mono'>CNOIVA</td><td>CHARACTER</td><td class='mono'>145</td><td class='mono'>1</td><td class='mono'>145</td><td class='mono'></td><td>COMM IVA</td><td></td></tr>
+<tr><td class='mono'>22</td><td class='mono'>CNOCST</td><td>DECIMAL</td><td class='mono'>146</td><td class='mono'>7</td><td class='mono'>152</td><td class='mono'>3</td><td>TRANS ANALYS-COST</td><td></td></tr>
+<tr><td class='mono'>23</td><td class='mono'>CNOF03</td><td>CHARACTER</td><td class='mono'>153</td><td class='mono'>1</td><td class='mono'>153</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'>24</td><td class='mono'>CNOACD</td><td>CHARACTER</td><td class='mono'>154</td><td class='mono'>2</td><td class='mono'>155</td><td class='mono'></td><td>APPLICATION CODE</td><td></td></tr>
+<tr><td class='mono'>25</td><td class='mono'>CNOACS</td><td>DECIMAL</td><td class='mono'>156</td><td class='mono'>7</td><td class='mono'>162</td><td class='mono'>3</td><td>TRANS OPER-COST</td><td></td></tr>
+<tr><td class='mono'>26</td><td class='mono'>CNOF04</td><td>CHARACTER</td><td class='mono'>163</td><td class='mono'>1</td><td class='mono'>163</td><td class='mono'></td><td>FLAG-USER</td><td></td></tr>
+<tr><td class='mono'>27</td><td class='mono'>CNOPER</td><td>DECIMAL</td><td class='mono'>164</td><td class='mono'>6</td><td class='mono'>169</td><td class='mono'>3</td><td>PERCENTAGE</td><td></td></tr>
+<tr><td class='mono'>28</td><td class='mono'>CNOF05</td><td>CHARACTER</td><td class='mono'>170</td><td class='mono'>1</td><td class='mono'>170</td><td class='mono'></td><td>FLAG 5</td><td></td></tr>
+<tr><td class='mono'>29</td><td class='mono'>CNOF06</td><td>CHARACTER</td><td class='mono'>171</td><td class='mono'>1</td><td class='mono'>171</td><td class='mono'></td><td>FLAG 6</td><td></td></tr>
+<tr><td class='mono'>30</td><td class='mono'>CNOF07</td><td>CHARACTER</td><td class='mono'>172</td><td class='mono'>1</td><td class='mono'>172</td><td class='mono'></td><td>FLAG 7</td><td></td></tr>
+<tr><td class='mono'>31</td><td class='mono'>CNOUS1</td><td>CHARACTER</td><td class='mono'>173</td><td class='mono'>4</td><td class='mono'>176</td><td class='mono'></td><td>USER 1</td><td></td></tr>
+<tr><td class='mono'>32</td><td class='mono'>CNOUS2</td><td>CHARACTER</td><td class='mono'>177</td><td class='mono'>4</td><td class='mono'>180</td><td class='mono'></td><td>USER 2</td><td></td></tr>
+<tr><td class='mono'>33</td><td class='mono'>CNOUS3</td><td>CHARACTER</td><td class='mono'>181</td><td class='mono'>4</td><td class='mono'>184</td><td class='mono'></td><td>USER 3</td><td></td></tr>
+<tr><td class='mono'>34</td><td class='mono'>CNOEML</td><td>CHARACTER</td><td class='mono'>185</td><td class='mono'>60</td><td class='mono'>244</td><td class='mono'></td><td>EMAIL ADDRESS</td><td></td></tr>
+<tr><td class='mono'>35</td><td class='mono'>CNOPHN</td><td>DECIMAL</td><td class='mono'>245</td><td class='mono'>15</td><td class='mono'>259</td><td class='mono'></td><td>PHONE NUMBER</td><td></td></tr>
+<tr><td class='mono'>36</td><td class='mono'>CNOPXT</td><td>DECIMAL</td><td class='mono'>260</td><td class='mono'>4</td><td class='mono'>263</td><td class='mono'></td><td>PHONE EXTENSION</td><td></td></tr>
+<tr><td class='mono'>37</td><td class='mono'>CNOCCN</td><td>DECIMAL</td><td class='mono'>264</td><td class='mono'>8</td><td class='mono'>271</td><td class='mono'></td><td>COST CENTER</td><td></td></tr>
+<tr><td class='mono'>38</td><td class='mono'>CNORUT</td><td>CHARACTER</td><td class='mono'>272</td><td class='mono'>25</td><td class='mono'>296</td><td class='mono'></td><td>RUT EJECUTIVO</td><td></td></tr>
+<tr><td class='mono'>39</td><td class='mono'>CNOBNK</td><td>CHARACTER</td><td class='mono'>297</td><td class='mono'>2</td><td class='mono'>298</td><td class='mono'></td><td>BANCO EJECUTIVO</td><td></td></tr>
+<tr><td class='mono'>40</td><td class='mono'>CNOBRN</td><td>DECIMAL</td><td class='mono'>299</td><td class='mono'>4</td><td class='mono'>302</td><td class='mono'></td><td>OFICINA EJECUTIVO</td><td></td></tr>
+<tr><td class='mono'>41</td><td class='mono'>CNOTYP</td><td>CHARACTER</td><td class='mono'>303</td><td class='mono'>4</td><td class='mono'>306</td><td class='mono'></td><td>TIPO EJECUTIVO</td><td></td></tr>
+<tr><td class='mono'>42</td><td class='mono'>CNOSUP</td><td>CHARACTER</td><td class='mono'>307</td><td class='mono'>4</td><td class='mono'>310</td><td class='mono'></td><td>EJECUTIVO SUPERVISOR</td><td></td></tr>
+<tr><td class='mono'>43</td><td class='mono'>CNOLMM</td><td>NUMERIC</td><td class='mono'>311</td><td class='mono'>2</td><td class='mono'>312</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'>44</td><td class='mono'>CNOLMD</td><td>NUMERIC</td><td class='mono'>313</td><td class='mono'>2</td><td class='mono'>314</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'>45</td><td class='mono'>CNOLMY</td><td>NUMERIC</td><td class='mono'>315</td><td class='mono'>4</td><td class='mono'>318</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'>46</td><td class='mono'>CNOLMT</td><td>TIMESTAMP</td><td class='mono'>319</td><td class='mono'>26</td><td class='mono'>344</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'>47</td><td class='mono'>CNOLMU</td><td>CHARACTER</td><td class='mono'>345</td><td class='mono'>10</td><td class='mono'>354</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[CNOCFL] GE | GE | GE
+[CNORCD] Codi | 0264
+[CNODSC] GRUPO ABENGOA | Descripcion | GRUPO PEREZ
+[CNOFRP] 0 | 0 | 0
+[CNOCHG] 0 | 0 | 0
+[CNOSCG] 0 | 0 | 0
+[CNOMID] 174 | Codi | 0264
+[CNOMXC] 0 | 0 | 0
+[CNOMNC] 0 | 0 | 0
+[CNOCST] 0 | 0 | 0
+[CNOACS] 0 | 0 | 0
+[CNOPER] 0 | 0 | 0
+[CNOPHN] 0 | 0 | 0
+[CNOPXT] 0 | 0 | 0
+[CNOCCN] 0 | 0 | 0
+[CNOBRN] 0 | 0 | 0
+[CNOLMM] 0 | 0 | 0
+[CNOLMD] 0 | 0 | 0
+[CNOLMY] 0 | 0 | 0
+[CNOLMT] 2015-06-12-12.58.12.956063 | 0001-01-01-00.00.00.000000 | 0001-01-01-00.00.00.000000</div></body></html>

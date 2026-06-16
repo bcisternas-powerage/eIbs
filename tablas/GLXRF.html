@@ -1,0 +1,139 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>GLXRF</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>GLXRF</h1>
+<div class='meta'><b>N.º de campos:</b> 114</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>GLXBNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK NUMBER</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>GLXCCY</td><td>CHARACTER</td><td class='mono'>3</td><td class='mono'>3</td><td class='mono'>5</td><td class='mono'></td><td>CURRENCY</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>GLXGLN</td><td>DECIMAL</td><td class='mono'>6</td><td class='mono'>16</td><td class='mono'>21</td><td class='mono'></td><td>G/L ACCOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXDR</td><td>DECIMAL</td><td class='mono'>22</td><td class='mono'>16</td><td class='mono'>37</td><td class='mono'></td><td>XRF DEBIT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXCR</td><td>DECIMAL</td><td class='mono'>38</td><td class='mono'>16</td><td class='mono'>53</td><td class='mono'></td><td>XRF CREDIT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXST</td><td>DECIMAL</td><td class='mono'>54</td><td class='mono'>16</td><td class='mono'>69</td><td class='mono'></td><td>XRF OTHER S/C</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXOD</td><td>DECIMAL</td><td class='mono'>70</td><td class='mono'>16</td><td class='mono'>85</td><td class='mono'></td><td>XRF O/D DEBIT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXSD</td><td>DECIMAL</td><td class='mono'>86</td><td class='mono'>16</td><td class='mono'>101</td><td class='mono'></td><td>XRF S/C DORMNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXSM</td><td>DECIMAL</td><td class='mono'>102</td><td class='mono'>16</td><td class='mono'>117</td><td class='mono'></td><td>XRF S/C MIN/BAL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXSR</td><td>DECIMAL</td><td class='mono'>118</td><td class='mono'>16</td><td class='mono'>133</td><td class='mono'></td><td>XRF S/C RET/CKS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXSO</td><td>DECIMAL</td><td class='mono'>134</td><td class='mono'>16</td><td class='mono'>149</td><td class='mono'></td><td>XRF S/C OVRDRFT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXSS</td><td>DECIMAL</td><td class='mono'>150</td><td class='mono'>16</td><td class='mono'>165</td><td class='mono'></td><td>XRF S/C STOP/PMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXIE</td><td>DECIMAL</td><td class='mono'>166</td><td class='mono'>16</td><td class='mono'>181</td><td class='mono'></td><td>XRF INT EXPENSE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMDFP</td><td>DECIMAL</td><td class='mono'>182</td><td class='mono'>16</td><td class='mono'>197</td><td class='mono'></td><td>XRF DEF/PMT L/C</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXO2</td><td>DECIMAL</td><td class='mono'>198</td><td class='mono'>16</td><td class='mono'>213</td><td class='mono'></td><td>XRF O/D &gt; 30D</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXCC</td><td>DECIMAL</td><td class='mono'>214</td><td class='mono'>16</td><td class='mono'>229</td><td class='mono'></td><td>XRF CANCEL COMM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXLC</td><td>DECIMAL</td><td class='mono'>230</td><td class='mono'>16</td><td class='mono'>245</td><td class='mono'></td><td>XRF LTE/CHGS INCOME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMXLR</td><td>DECIMAL</td><td class='mono'>246</td><td class='mono'>16</td><td class='mono'>261</td><td class='mono'></td><td>XRF LTE/CHGS RECEIV</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX16</td><td>DECIMAL</td><td class='mono'>262</td><td class='mono'>16</td><td class='mono'>277</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX17</td><td>DECIMAL</td><td class='mono'>278</td><td class='mono'>16</td><td class='mono'>293</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX18</td><td>DECIMAL</td><td class='mono'>294</td><td class='mono'>16</td><td class='mono'>309</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX19</td><td>DECIMAL</td><td class='mono'>310</td><td class='mono'>16</td><td class='mono'>325</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX20</td><td>DECIMAL</td><td class='mono'>326</td><td class='mono'>16</td><td class='mono'>341</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX21</td><td>DECIMAL</td><td class='mono'>342</td><td class='mono'>16</td><td class='mono'>357</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX22</td><td>DECIMAL</td><td class='mono'>358</td><td class='mono'>16</td><td class='mono'>373</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX23</td><td>DECIMAL</td><td class='mono'>374</td><td class='mono'>16</td><td class='mono'>389</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX24</td><td>DECIMAL</td><td class='mono'>390</td><td class='mono'>16</td><td class='mono'>405</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX25</td><td>DECIMAL</td><td class='mono'>406</td><td class='mono'>16</td><td class='mono'>421</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX26</td><td>DECIMAL</td><td class='mono'>422</td><td class='mono'>16</td><td class='mono'>437</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX27</td><td>DECIMAL</td><td class='mono'>438</td><td class='mono'>16</td><td class='mono'>453</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX28</td><td>DECIMAL</td><td class='mono'>454</td><td class='mono'>16</td><td class='mono'>469</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX29</td><td>DECIMAL</td><td class='mono'>470</td><td class='mono'>16</td><td class='mono'>485</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX30</td><td>DECIMAL</td><td class='mono'>486</td><td class='mono'>16</td><td class='mono'>501</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX31</td><td>DECIMAL</td><td class='mono'>502</td><td class='mono'>16</td><td class='mono'>517</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLMX32</td><td>DECIMAL</td><td class='mono'>518</td><td class='mono'>16</td><td class='mono'>533</td><td class='mono'></td><td>XRF USE MULTIPLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG01</td><td>DECIMAL</td><td class='mono'>534</td><td class='mono'>16</td><td class='mono'>549</td><td class='mono'></td><td>XRF USE MULTIPLE 01</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG02</td><td>DECIMAL</td><td class='mono'>550</td><td class='mono'>16</td><td class='mono'>565</td><td class='mono'></td><td>XRF USE MULTIPLE 02</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG03</td><td>DECIMAL</td><td class='mono'>566</td><td class='mono'>16</td><td class='mono'>581</td><td class='mono'></td><td>XRF USE MULTIPLE 03</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG04</td><td>DECIMAL</td><td class='mono'>582</td><td class='mono'>16</td><td class='mono'>597</td><td class='mono'></td><td>XRF USE MULTIPLE 04</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG05</td><td>DECIMAL</td><td class='mono'>598</td><td class='mono'>16</td><td class='mono'>613</td><td class='mono'></td><td>XRF USE MULTIPLE 05</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG06</td><td>DECIMAL</td><td class='mono'>614</td><td class='mono'>16</td><td class='mono'>629</td><td class='mono'></td><td>XRF USE MULTIPLE 06</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG07</td><td>DECIMAL</td><td class='mono'>630</td><td class='mono'>16</td><td class='mono'>645</td><td class='mono'></td><td>XRF USE MULTIPLE 07</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG08</td><td>DECIMAL</td><td class='mono'>646</td><td class='mono'>16</td><td class='mono'>661</td><td class='mono'></td><td>XRF USE MULTIPLE 08</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG09</td><td>DECIMAL</td><td class='mono'>662</td><td class='mono'>16</td><td class='mono'>677</td><td class='mono'></td><td>XRF USE MULTIPLE 09</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG10</td><td>DECIMAL</td><td class='mono'>678</td><td class='mono'>16</td><td class='mono'>693</td><td class='mono'></td><td>XRF USE MULTIPLE 10</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG11</td><td>DECIMAL</td><td class='mono'>694</td><td class='mono'>16</td><td class='mono'>709</td><td class='mono'></td><td>XRF USE MULTIPLE 11</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG12</td><td>DECIMAL</td><td class='mono'>710</td><td class='mono'>16</td><td class='mono'>725</td><td class='mono'></td><td>XRF USE MULTIPLE 12</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG13</td><td>DECIMAL</td><td class='mono'>726</td><td class='mono'>16</td><td class='mono'>741</td><td class='mono'></td><td>XRF USE MULTIPLE 13</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG14</td><td>DECIMAL</td><td class='mono'>742</td><td class='mono'>16</td><td class='mono'>757</td><td class='mono'></td><td>XRF USE MULTIPLE 14</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG15</td><td>DECIMAL</td><td class='mono'>758</td><td class='mono'>16</td><td class='mono'>773</td><td class='mono'></td><td>XRF USE MULTIPLE 15</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG16</td><td>DECIMAL</td><td class='mono'>774</td><td class='mono'>16</td><td class='mono'>789</td><td class='mono'></td><td>XRF USE MULTIPLE 16</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG17</td><td>DECIMAL</td><td class='mono'>790</td><td class='mono'>16</td><td class='mono'>805</td><td class='mono'></td><td>XRF USE MULTIPLE 17</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG18</td><td>DECIMAL</td><td class='mono'>806</td><td class='mono'>16</td><td class='mono'>821</td><td class='mono'></td><td>XRF USE MULTIPLE 18</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG19</td><td>DECIMAL</td><td class='mono'>822</td><td class='mono'>16</td><td class='mono'>837</td><td class='mono'></td><td>XRF USE MULTIPLE 19</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG20</td><td>DECIMAL</td><td class='mono'>838</td><td class='mono'>16</td><td class='mono'>853</td><td class='mono'></td><td>XRF USE MULTIPLE 20</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG21</td><td>DECIMAL</td><td class='mono'>854</td><td class='mono'>16</td><td class='mono'>869</td><td class='mono'></td><td>XRF USE MULTIPLE 21</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG22</td><td>DECIMAL</td><td class='mono'>870</td><td class='mono'>16</td><td class='mono'>885</td><td class='mono'></td><td>XRF USE MULTIPLE 22</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG23</td><td>DECIMAL</td><td class='mono'>886</td><td class='mono'>16</td><td class='mono'>901</td><td class='mono'></td><td>XRF USE MULTIPLE 23</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG24</td><td>DECIMAL</td><td class='mono'>902</td><td class='mono'>16</td><td class='mono'>917</td><td class='mono'></td><td>XRF USE MULTIPLE 24</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG25</td><td>DECIMAL</td><td class='mono'>918</td><td class='mono'>16</td><td class='mono'>933</td><td class='mono'></td><td>XRF USE MULTIPLE 25</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG26</td><td>DECIMAL</td><td class='mono'>934</td><td class='mono'>16</td><td class='mono'>949</td><td class='mono'></td><td>XRF USE MULTIPLE 26</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG27</td><td>DECIMAL</td><td class='mono'>950</td><td class='mono'>16</td><td class='mono'>965</td><td class='mono'></td><td>XRF USE MULTIPLE 27</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG28</td><td>DECIMAL</td><td class='mono'>966</td><td class='mono'>16</td><td class='mono'>981</td><td class='mono'></td><td>XRF USE MULTIPLE 28</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG29</td><td>DECIMAL</td><td class='mono'>982</td><td class='mono'>16</td><td class='mono'>997</td><td class='mono'></td><td>XRF USE MULTIPLE 29</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG30</td><td>DECIMAL</td><td class='mono'>998</td><td class='mono'>16</td><td class='mono'>1013</td><td class='mono'></td><td>XRF USE MULTIPLE 30</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG31</td><td>DECIMAL</td><td class='mono'>1014</td><td class='mono'>16</td><td class='mono'>1029</td><td class='mono'></td><td>XRF USE MULTIPLE 31</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG32</td><td>DECIMAL</td><td class='mono'>1030</td><td class='mono'>16</td><td class='mono'>1045</td><td class='mono'></td><td>XRF USE MULTIPLE 32</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG33</td><td>DECIMAL</td><td class='mono'>1046</td><td class='mono'>16</td><td class='mono'>1061</td><td class='mono'></td><td>XRF USE MULTIPLE 33</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG34</td><td>DECIMAL</td><td class='mono'>1062</td><td class='mono'>16</td><td class='mono'>1077</td><td class='mono'></td><td>XRF USE MULTIPLE 34</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG35</td><td>DECIMAL</td><td class='mono'>1078</td><td class='mono'>16</td><td class='mono'>1093</td><td class='mono'></td><td>XRF USE MULTIPLE 35</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG36</td><td>DECIMAL</td><td class='mono'>1094</td><td class='mono'>16</td><td class='mono'>1109</td><td class='mono'></td><td>XRF USE MULTIPLE 36</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG37</td><td>DECIMAL</td><td class='mono'>1110</td><td class='mono'>16</td><td class='mono'>1125</td><td class='mono'></td><td>XRF USE MULTIPLE 37</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG38</td><td>DECIMAL</td><td class='mono'>1126</td><td class='mono'>16</td><td class='mono'>1141</td><td class='mono'></td><td>XRF USE MULTIPLE 38</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG39</td><td>DECIMAL</td><td class='mono'>1142</td><td class='mono'>16</td><td class='mono'>1157</td><td class='mono'></td><td>XRF USE MULTIPLE 39</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG40</td><td>DECIMAL</td><td class='mono'>1158</td><td class='mono'>16</td><td class='mono'>1173</td><td class='mono'></td><td>XRF USE MULTIPLE 40</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG41</td><td>DECIMAL</td><td class='mono'>1174</td><td class='mono'>16</td><td class='mono'>1189</td><td class='mono'></td><td>XRF USE MULTIPLE 41</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG42</td><td>DECIMAL</td><td class='mono'>1190</td><td class='mono'>16</td><td class='mono'>1205</td><td class='mono'></td><td>XRF USE MULTIPLE 42</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG43</td><td>DECIMAL</td><td class='mono'>1206</td><td class='mono'>16</td><td class='mono'>1221</td><td class='mono'></td><td>XRF USE MULTIPLE 43</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG44</td><td>DECIMAL</td><td class='mono'>1222</td><td class='mono'>16</td><td class='mono'>1237</td><td class='mono'></td><td>XRF USE MULTIPLE 44</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG45</td><td>DECIMAL</td><td class='mono'>1238</td><td class='mono'>16</td><td class='mono'>1253</td><td class='mono'></td><td>XRF USE MULTIPLE 45</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG46</td><td>DECIMAL</td><td class='mono'>1254</td><td class='mono'>16</td><td class='mono'>1269</td><td class='mono'></td><td>XRF USE MULTIPLE 46</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG47</td><td>DECIMAL</td><td class='mono'>1270</td><td class='mono'>16</td><td class='mono'>1285</td><td class='mono'></td><td>XRF USE MULTIPLE 47</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG48</td><td>DECIMAL</td><td class='mono'>1286</td><td class='mono'>16</td><td class='mono'>1301</td><td class='mono'></td><td>XRF USE MULTIPLE 48</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG49</td><td>DECIMAL</td><td class='mono'>1302</td><td class='mono'>16</td><td class='mono'>1317</td><td class='mono'></td><td>XRF USE MULTIPLE 49</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG50</td><td>DECIMAL</td><td class='mono'>1318</td><td class='mono'>16</td><td class='mono'>1333</td><td class='mono'></td><td>XRF USE MULTIPLE 50</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG51</td><td>DECIMAL</td><td class='mono'>1334</td><td class='mono'>16</td><td class='mono'>1349</td><td class='mono'></td><td>XRF USE MULTIPLE 51</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG52</td><td>DECIMAL</td><td class='mono'>1350</td><td class='mono'>16</td><td class='mono'>1365</td><td class='mono'></td><td>XRF USE MULTIPLE 52</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG53</td><td>DECIMAL</td><td class='mono'>1366</td><td class='mono'>16</td><td class='mono'>1381</td><td class='mono'></td><td>XRF USE MULTIPLE 53</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG54</td><td>DECIMAL</td><td class='mono'>1382</td><td class='mono'>16</td><td class='mono'>1397</td><td class='mono'></td><td>XRF USE MULTIPLE 54</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG55</td><td>DECIMAL</td><td class='mono'>1398</td><td class='mono'>16</td><td class='mono'>1413</td><td class='mono'></td><td>XRF USE MULTIPLE 55</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG56</td><td>DECIMAL</td><td class='mono'>1414</td><td class='mono'>16</td><td class='mono'>1429</td><td class='mono'></td><td>XRF USE MULTIPLE 56</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG57</td><td>DECIMAL</td><td class='mono'>1430</td><td class='mono'>16</td><td class='mono'>1445</td><td class='mono'></td><td>XRF USE MULTIPLE 57</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG58</td><td>DECIMAL</td><td class='mono'>1446</td><td class='mono'>16</td><td class='mono'>1461</td><td class='mono'></td><td>XRF USE MULTIPLE 58</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXG59</td><td>DECIMAL</td><td class='mono'>1462</td><td class='mono'>16</td><td class='mono'>1477</td><td class='mono'></td><td>XRF USE MULTIPLE 59</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXF01</td><td>CHARACTER</td><td class='mono'>1478</td><td class='mono'>1</td><td class='mono'>1478</td><td class='mono'></td><td>FLAG MULTI USO 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXF02</td><td>CHARACTER</td><td class='mono'>1479</td><td class='mono'>1</td><td class='mono'>1479</td><td class='mono'></td><td>FLAG MULTI USO 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXF03</td><td>CHARACTER</td><td class='mono'>1480</td><td class='mono'>1</td><td class='mono'>1480</td><td class='mono'></td><td>FLAG MULTI USO 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXF04</td><td>CHARACTER</td><td class='mono'>1481</td><td class='mono'>1</td><td class='mono'>1481</td><td class='mono'></td><td>FLAG MULTI USO 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXF05</td><td>CHARACTER</td><td class='mono'>1482</td><td class='mono'>1</td><td class='mono'>1482</td><td class='mono'></td><td>FLAG MULTI USO 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXUC1</td><td>CHARACTER</td><td class='mono'>1483</td><td class='mono'>4</td><td class='mono'>1486</td><td class='mono'></td><td>USER CODE 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXUC2</td><td>CHARACTER</td><td class='mono'>1487</td><td class='mono'>4</td><td class='mono'>1490</td><td class='mono'></td><td>USER CODE 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXUC3</td><td>CHARACTER</td><td class='mono'>1491</td><td class='mono'>4</td><td class='mono'>1494</td><td class='mono'></td><td>USER CODE 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXUC4</td><td>CHARACTER</td><td class='mono'>1495</td><td class='mono'>4</td><td class='mono'>1498</td><td class='mono'></td><td>USER CODE 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXUC5</td><td>CHARACTER</td><td class='mono'>1499</td><td class='mono'>4</td><td class='mono'>1502</td><td class='mono'></td><td>USER CODE 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXCT1</td><td>DECIMAL</td><td class='mono'>1503</td><td class='mono'>5</td><td class='mono'>1507</td><td class='mono'></td><td>COUNTER MULTI USO 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXCT2</td><td>DECIMAL</td><td class='mono'>1508</td><td class='mono'>5</td><td class='mono'>1512</td><td class='mono'></td><td>COUNTER MULTI USO 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXCT3</td><td>DECIMAL</td><td class='mono'>1513</td><td class='mono'>5</td><td class='mono'>1517</td><td class='mono'></td><td>COUNTER MULTI USO 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXCT4</td><td>DECIMAL</td><td class='mono'>1518</td><td class='mono'>5</td><td class='mono'>1522</td><td class='mono'></td><td>COUNTER MULTI USO 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXCT5</td><td>DECIMAL</td><td class='mono'>1523</td><td class='mono'>5</td><td class='mono'>1527</td><td class='mono'></td><td>COUNTER MULTI USO 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXLMM</td><td>NUMERIC</td><td class='mono'>1528</td><td class='mono'>2</td><td class='mono'>1529</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXLMD</td><td>NUMERIC</td><td class='mono'>1530</td><td class='mono'>2</td><td class='mono'>1531</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXLMY</td><td>NUMERIC</td><td class='mono'>1532</td><td class='mono'>4</td><td class='mono'>1535</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXLMT</td><td>TIMESTAMP</td><td class='mono'>1536</td><td class='mono'>26</td><td class='mono'>1561</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>GLXLMU</td><td>CHARACTER</td><td class='mono'>1562</td><td class='mono'>10</td><td class='mono'>1571</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table></body></html>

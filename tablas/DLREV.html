@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>DLREV</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>DLREV</h1>
+<div class='meta'><b>Descripción:</b> Préstamos (Efectivamente Adeudado)<br><b>N.º de campos:</b> 41</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'></td><td class='mono'>DLRACC</td><td>DECIMAL</td><td class='mono'>1</td><td class='mono'>12</td><td class='mono'>12</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRPDY</td><td>NUMERIC</td><td class='mono'>13</td><td class='mono'>4</td><td class='mono'>16</td><td class='mono'></td><td>PMT DTE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRPDM</td><td>NUMERIC</td><td class='mono'>17</td><td class='mono'>2</td><td class='mono'>18</td><td class='mono'></td><td>PMT DTE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRPDD</td><td>NUMERIC</td><td class='mono'>19</td><td class='mono'>2</td><td class='mono'>20</td><td class='mono'></td><td>PMT DTE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRPNU</td><td>DECIMAL</td><td class='mono'>21</td><td class='mono'>5</td><td class='mono'>25</td><td class='mono'></td><td>PAYMENT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLROAM</td><td>DECIMAL</td><td class='mono'>26</td><td class='mono'>21</td><td class='mono'>46</td><td class='mono'>8</td><td>ORIGINAL AMNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSPR</td><td>DECIMAL</td><td class='mono'>47</td><td class='mono'>21</td><td class='mono'>67</td><td class='mono'>8</td><td>PRINCIPAL PMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSPP</td><td>DECIMAL</td><td class='mono'>68</td><td class='mono'>21</td><td class='mono'>88</td><td class='mono'>8</td><td>PRINCIPAL PAID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSPC</td><td>DECIMAL</td><td class='mono'>89</td><td class='mono'>21</td><td class='mono'>109</td><td class='mono'>8</td><td>PRINCIPAL COND</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSIN</td><td>DECIMAL</td><td class='mono'>110</td><td class='mono'>21</td><td class='mono'>130</td><td class='mono'>8</td><td>INTEREST PMT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSIP</td><td>DECIMAL</td><td class='mono'>131</td><td class='mono'>21</td><td class='mono'>151</td><td class='mono'>8</td><td>INTEREST PAID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSIC</td><td>DECIMAL</td><td class='mono'>152</td><td class='mono'>21</td><td class='mono'>172</td><td class='mono'>8</td><td>INTEREST COND</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSMR</td><td>DECIMAL</td><td class='mono'>173</td><td class='mono'>21</td><td class='mono'>193</td><td class='mono'>8</td><td>PENALTY ACR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSMP</td><td>DECIMAL</td><td class='mono'>194</td><td class='mono'>21</td><td class='mono'>214</td><td class='mono'>8</td><td>PENALTY PAID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSMC</td><td>DECIMAL</td><td class='mono'>215</td><td class='mono'>21</td><td class='mono'>235</td><td class='mono'>8</td><td>PENALTY COND</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRREV</td><td>DECIMAL</td><td class='mono'>236</td><td class='mono'>15</td><td class='mono'>250</td><td class='mono'>2</td><td>REV/MORA PRIN</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRINA</td><td>DECIMAL</td><td class='mono'>251</td><td class='mono'>15</td><td class='mono'>265</td><td class='mono'>2</td><td>REV/MORA INTE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRPIA</td><td>DECIMAL</td><td class='mono'>266</td><td class='mono'>15</td><td class='mono'>280</td><td class='mono'>2</td><td>REV/MORA OTHR</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRRVP</td><td>DECIMAL</td><td class='mono'>281</td><td class='mono'>15</td><td class='mono'>295</td><td class='mono'>2</td><td>REV/PRIN PAID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRINP</td><td>DECIMAL</td><td class='mono'>296</td><td class='mono'>15</td><td class='mono'>310</td><td class='mono'>2</td><td>REV/INTE PAID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRPIP</td><td>DECIMAL</td><td class='mono'>311</td><td class='mono'>15</td><td class='mono'>325</td><td class='mono'>2</td><td>REV/OTHR PAID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRRVC</td><td>DECIMAL</td><td class='mono'>326</td><td class='mono'>15</td><td class='mono'>340</td><td class='mono'>2</td><td>REV/PRIN COND</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRINC</td><td>DECIMAL</td><td class='mono'>341</td><td class='mono'>15</td><td class='mono'>355</td><td class='mono'>2</td><td>REV/INTE COND</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRPIC</td><td>DECIMAL</td><td class='mono'>356</td><td class='mono'>15</td><td class='mono'>370</td><td class='mono'>2</td><td>REV/OTHR COND</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRVEX</td><td>DECIMAL</td><td class='mono'>371</td><td class='mono'>11</td><td class='mono'>381</td><td class='mono'>6</td><td>RATE MATURITY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLREXR</td><td>DECIMAL</td><td class='mono'>382</td><td class='mono'>11</td><td class='mono'>392</td><td class='mono'>6</td><td>RATE LAST/REV</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRLRM</td><td>NUMERIC</td><td class='mono'>393</td><td class='mono'>2</td><td class='mono'>394</td><td class='mono'></td><td>LAST/REV DATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRLRD</td><td>NUMERIC</td><td class='mono'>395</td><td class='mono'>2</td><td class='mono'>396</td><td class='mono'></td><td>LAST/REV DATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRLRY</td><td>NUMERIC</td><td class='mono'>397</td><td class='mono'>4</td><td class='mono'>400</td><td class='mono'></td><td>LAST/REV DATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRSEX</td><td>DECIMAL</td><td class='mono'>401</td><td class='mono'>11</td><td class='mono'>411</td><td class='mono'>6</td><td>RATE STATMENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRPFL</td><td>CHARACTER</td><td class='mono'>412</td><td class='mono'>1</td><td class='mono'>412</td><td class='mono'></td><td>STATUS RECORD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRPRO</td><td>CHARACTER</td><td class='mono'>413</td><td class='mono'>1</td><td class='mono'>413</td><td class='mono'></td><td>PROCESS FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRFLG</td><td>CHARACTER</td><td class='mono'>414</td><td class='mono'>1</td><td class='mono'>414</td><td class='mono'></td><td>FLAG USER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRNDR</td><td>DECIMAL</td><td class='mono'>415</td><td class='mono'>9</td><td class='mono'>423</td><td class='mono'></td><td>DRAF NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRDID</td><td>CHARACTER</td><td class='mono'>424</td><td class='mono'>25</td><td class='mono'>448</td><td class='mono'></td><td>DRAF NUMBER ID</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRPMA</td><td>DECIMAL</td><td class='mono'>449</td><td class='mono'>21</td><td class='mono'>469</td><td class='mono'>8</td><td>CNT MORA ACUMUL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRLMM</td><td>NUMERIC</td><td class='mono'>470</td><td class='mono'>2</td><td class='mono'>471</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRLMD</td><td>NUMERIC</td><td class='mono'>472</td><td class='mono'>2</td><td class='mono'>473</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRLMY</td><td>NUMERIC</td><td class='mono'>474</td><td class='mono'>4</td><td class='mono'>477</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRLMT</td><td>TIMESTAMP</td><td class='mono'>478</td><td class='mono'>26</td><td class='mono'>503</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>DLRLMU</td><td>CHARACTER</td><td class='mono'>504</td><td class='mono'>10</td><td class='mono'>513</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table></body></html>
