@@ -1,0 +1,210 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>CDMR1</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>CDMR1</h1>
+<div class='meta'><b>Descripción:</b> TABLA DE TASAS<br><b>N.º de campos:</b> 152</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>CDRSTA</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'>1</td><td class='mono'></td><td>RECORD STATUS</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>CDRRTB</td><td>CHARACTER</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'>3</td><td class='mono'></td><td>TABLE NUMBER</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>CDRRDM</td><td>NUMERIC</td><td class='mono'>4</td><td class='mono'>2</td><td class='mono'>5</td><td class='mono'></td><td>RUN DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRRDD</td><td>NUMERIC</td><td class='mono'>6</td><td class='mono'>2</td><td class='mono'>7</td><td class='mono'></td><td>RUN DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRRDY</td><td>NUMERIC</td><td class='mono'>8</td><td class='mono'>4</td><td class='mono'>11</td><td class='mono'></td><td>RUN DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRCCY</td><td>CHARACTER</td><td class='mono'>12</td><td class='mono'>3</td><td class='mono'>14</td><td class='mono'></td><td>CURRENCY CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRSFL</td><td>CHARACTER</td><td class='mono'>15</td><td class='mono'>1</td><td class='mono'>15</td><td class='mono'></td><td>SPREAD FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRUA1</td><td>DECIMAL</td><td class='mono'>16</td><td class='mono'>15</td><td class='mono'>30</td><td class='mono'>2</td><td>UP TO AMT 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRUA2</td><td>DECIMAL</td><td class='mono'>31</td><td class='mono'>15</td><td class='mono'>45</td><td class='mono'>2</td><td>UP TO AMT 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRUA3</td><td>DECIMAL</td><td class='mono'>46</td><td class='mono'>15</td><td class='mono'>60</td><td class='mono'>2</td><td>UP TO AMT 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRUA4</td><td>DECIMAL</td><td class='mono'>61</td><td class='mono'>15</td><td class='mono'>75</td><td class='mono'>2</td><td>UP TO AMT 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRUA5</td><td>DECIMAL</td><td class='mono'>76</td><td class='mono'>15</td><td class='mono'>90</td><td class='mono'>2</td><td>UP TO AMT 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRUA6</td><td>DECIMAL</td><td class='mono'>91</td><td class='mono'>15</td><td class='mono'>105</td><td class='mono'>2</td><td>UP TO AMT 6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRUA7</td><td>DECIMAL</td><td class='mono'>106</td><td class='mono'>15</td><td class='mono'>120</td><td class='mono'>2</td><td>UP TO AMT 7</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRF01</td><td>CHARACTER</td><td class='mono'>121</td><td class='mono'>3</td><td class='mono'>123</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRF02</td><td>CHARACTER</td><td class='mono'>124</td><td class='mono'>4</td><td class='mono'>127</td><td class='mono'></td><td>TASA PENALIZACION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRBAS</td><td>NUMERIC</td><td class='mono'>128</td><td class='mono'>3</td><td class='mono'>130</td><td class='mono'></td><td>ACCRUAL BASE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRPRT</td><td>DECIMAL</td><td class='mono'>131</td><td class='mono'>9</td><td class='mono'>139</td><td class='mono'>6</td><td>TASA PENALIZACION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD01</td><td>DECIMAL</td><td class='mono'>140</td><td class='mono'>4</td><td class='mono'>143</td><td class='mono'></td><td>DAYS 01</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD02</td><td>DECIMAL</td><td class='mono'>144</td><td class='mono'>4</td><td class='mono'>147</td><td class='mono'></td><td>DAYS 02</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD03</td><td>DECIMAL</td><td class='mono'>148</td><td class='mono'>4</td><td class='mono'>151</td><td class='mono'></td><td>DAYS 03</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD04</td><td>DECIMAL</td><td class='mono'>152</td><td class='mono'>4</td><td class='mono'>155</td><td class='mono'></td><td>DAYS 04</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD05</td><td>DECIMAL</td><td class='mono'>156</td><td class='mono'>4</td><td class='mono'>159</td><td class='mono'></td><td>DAYS 05</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD06</td><td>DECIMAL</td><td class='mono'>160</td><td class='mono'>4</td><td class='mono'>163</td><td class='mono'></td><td>DAYS 06</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD07</td><td>DECIMAL</td><td class='mono'>164</td><td class='mono'>4</td><td class='mono'>167</td><td class='mono'></td><td>DAYS 07</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD08</td><td>DECIMAL</td><td class='mono'>168</td><td class='mono'>4</td><td class='mono'>171</td><td class='mono'></td><td>DAYS 08</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD09</td><td>DECIMAL</td><td class='mono'>172</td><td class='mono'>4</td><td class='mono'>175</td><td class='mono'></td><td>DAYS 09</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD10</td><td>DECIMAL</td><td class='mono'>176</td><td class='mono'>4</td><td class='mono'>179</td><td class='mono'></td><td>DAYS 10</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD11</td><td>DECIMAL</td><td class='mono'>180</td><td class='mono'>4</td><td class='mono'>183</td><td class='mono'></td><td>DAYS 11</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD12</td><td>DECIMAL</td><td class='mono'>184</td><td class='mono'>4</td><td class='mono'>187</td><td class='mono'></td><td>DAYS 12</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD13</td><td>DECIMAL</td><td class='mono'>188</td><td class='mono'>4</td><td class='mono'>191</td><td class='mono'></td><td>DAYS 13</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD14</td><td>DECIMAL</td><td class='mono'>192</td><td class='mono'>4</td><td class='mono'>195</td><td class='mono'></td><td>DAYS 14</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRD15</td><td>DECIMAL</td><td class='mono'>196</td><td class='mono'>4</td><td class='mono'>199</td><td class='mono'></td><td>DAYS 15</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR101</td><td>DECIMAL</td><td class='mono'>200</td><td class='mono'>9</td><td class='mono'>208</td><td class='mono'>6</td><td>1ST/COL RATE 01</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR102</td><td>DECIMAL</td><td class='mono'>209</td><td class='mono'>9</td><td class='mono'>217</td><td class='mono'>6</td><td>1ST/COL RATE 02</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR103</td><td>DECIMAL</td><td class='mono'>218</td><td class='mono'>9</td><td class='mono'>226</td><td class='mono'>6</td><td>1ST/COL RATE 03</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR104</td><td>DECIMAL</td><td class='mono'>227</td><td class='mono'>9</td><td class='mono'>235</td><td class='mono'>6</td><td>1ST/COL RATE 04</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR105</td><td>DECIMAL</td><td class='mono'>236</td><td class='mono'>9</td><td class='mono'>244</td><td class='mono'>6</td><td>1ST/COL RATE 05</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR106</td><td>DECIMAL</td><td class='mono'>245</td><td class='mono'>9</td><td class='mono'>253</td><td class='mono'>6</td><td>1ST/COL RATE 06</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR107</td><td>DECIMAL</td><td class='mono'>254</td><td class='mono'>9</td><td class='mono'>262</td><td class='mono'>6</td><td>1ST/COL RATE 07</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR108</td><td>DECIMAL</td><td class='mono'>263</td><td class='mono'>9</td><td class='mono'>271</td><td class='mono'>6</td><td>1ST/COL RATE 08</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR109</td><td>DECIMAL</td><td class='mono'>272</td><td class='mono'>9</td><td class='mono'>280</td><td class='mono'>6</td><td>1ST/COL RATE 09</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR110</td><td>DECIMAL</td><td class='mono'>281</td><td class='mono'>9</td><td class='mono'>289</td><td class='mono'>6</td><td>1ST/COL RATE 10</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR111</td><td>DECIMAL</td><td class='mono'>290</td><td class='mono'>9</td><td class='mono'>298</td><td class='mono'>6</td><td>1ST/COL RATE 11</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR112</td><td>DECIMAL</td><td class='mono'>299</td><td class='mono'>9</td><td class='mono'>307</td><td class='mono'>6</td><td>1ST/COL RATE 12</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR113</td><td>DECIMAL</td><td class='mono'>308</td><td class='mono'>9</td><td class='mono'>316</td><td class='mono'>6</td><td>1ST/COL RATE 13</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR114</td><td>DECIMAL</td><td class='mono'>317</td><td class='mono'>9</td><td class='mono'>325</td><td class='mono'>6</td><td>1ST/COL RATE 14</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR115</td><td>DECIMAL</td><td class='mono'>326</td><td class='mono'>9</td><td class='mono'>334</td><td class='mono'>6</td><td>1ST/COL RATE 15</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR201</td><td>DECIMAL</td><td class='mono'>335</td><td class='mono'>9</td><td class='mono'>343</td><td class='mono'>6</td><td>2ND/COL RATE 01</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR202</td><td>DECIMAL</td><td class='mono'>344</td><td class='mono'>9</td><td class='mono'>352</td><td class='mono'>6</td><td>2ND/COL RATE 02</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR203</td><td>DECIMAL</td><td class='mono'>353</td><td class='mono'>9</td><td class='mono'>361</td><td class='mono'>6</td><td>2ND/COL RATE 03</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR204</td><td>DECIMAL</td><td class='mono'>362</td><td class='mono'>9</td><td class='mono'>370</td><td class='mono'>6</td><td>2ND/COL RATE 04</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR205</td><td>DECIMAL</td><td class='mono'>371</td><td class='mono'>9</td><td class='mono'>379</td><td class='mono'>6</td><td>2ND/COL RATE 05</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR206</td><td>DECIMAL</td><td class='mono'>380</td><td class='mono'>9</td><td class='mono'>388</td><td class='mono'>6</td><td>2ND/COL RATE 06</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR207</td><td>DECIMAL</td><td class='mono'>389</td><td class='mono'>9</td><td class='mono'>397</td><td class='mono'>6</td><td>2ND/COL RATE 07</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR208</td><td>DECIMAL</td><td class='mono'>398</td><td class='mono'>9</td><td class='mono'>406</td><td class='mono'>6</td><td>2ND/COL RATE 08</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR209</td><td>DECIMAL</td><td class='mono'>407</td><td class='mono'>9</td><td class='mono'>415</td><td class='mono'>6</td><td>2ND/COL RATE 09</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR210</td><td>DECIMAL</td><td class='mono'>416</td><td class='mono'>9</td><td class='mono'>424</td><td class='mono'>6</td><td>2ND/COL RATE 10</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR211</td><td>DECIMAL</td><td class='mono'>425</td><td class='mono'>9</td><td class='mono'>433</td><td class='mono'>6</td><td>2ND/COL RATE 11</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR212</td><td>DECIMAL</td><td class='mono'>434</td><td class='mono'>9</td><td class='mono'>442</td><td class='mono'>6</td><td>2ND/COL RATE 12</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR213</td><td>DECIMAL</td><td class='mono'>443</td><td class='mono'>9</td><td class='mono'>451</td><td class='mono'>6</td><td>2ND/COL RATE 13</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR214</td><td>DECIMAL</td><td class='mono'>452</td><td class='mono'>9</td><td class='mono'>460</td><td class='mono'>6</td><td>2ND/COL RATE 14</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR215</td><td>DECIMAL</td><td class='mono'>461</td><td class='mono'>9</td><td class='mono'>469</td><td class='mono'>6</td><td>2ND/COL RATE 15</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR301</td><td>DECIMAL</td><td class='mono'>470</td><td class='mono'>9</td><td class='mono'>478</td><td class='mono'>6</td><td>3RD/COL RATE 01</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR302</td><td>DECIMAL</td><td class='mono'>479</td><td class='mono'>9</td><td class='mono'>487</td><td class='mono'>6</td><td>3RD/COL RATE 02</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR303</td><td>DECIMAL</td><td class='mono'>488</td><td class='mono'>9</td><td class='mono'>496</td><td class='mono'>6</td><td>3RD/COL RATE 03</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR304</td><td>DECIMAL</td><td class='mono'>497</td><td class='mono'>9</td><td class='mono'>505</td><td class='mono'>6</td><td>3RD/COL RATE 04</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR305</td><td>DECIMAL</td><td class='mono'>506</td><td class='mono'>9</td><td class='mono'>514</td><td class='mono'>6</td><td>3RD/COL RATE 05</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR306</td><td>DECIMAL</td><td class='mono'>515</td><td class='mono'>9</td><td class='mono'>523</td><td class='mono'>6</td><td>3RD/COL RATE 06</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR307</td><td>DECIMAL</td><td class='mono'>524</td><td class='mono'>9</td><td class='mono'>532</td><td class='mono'>6</td><td>3RD/COL RATE 07</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR308</td><td>DECIMAL</td><td class='mono'>533</td><td class='mono'>9</td><td class='mono'>541</td><td class='mono'>6</td><td>3RD/COL RATE 08</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR309</td><td>DECIMAL</td><td class='mono'>542</td><td class='mono'>9</td><td class='mono'>550</td><td class='mono'>6</td><td>3RD/COL RATE 09</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR310</td><td>DECIMAL</td><td class='mono'>551</td><td class='mono'>9</td><td class='mono'>559</td><td class='mono'>6</td><td>3RD/COL RATE 10</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR311</td><td>DECIMAL</td><td class='mono'>560</td><td class='mono'>9</td><td class='mono'>568</td><td class='mono'>6</td><td>3RD/COL RATE 11</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR312</td><td>DECIMAL</td><td class='mono'>569</td><td class='mono'>9</td><td class='mono'>577</td><td class='mono'>6</td><td>3RD/COL RATE 12</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR313</td><td>DECIMAL</td><td class='mono'>578</td><td class='mono'>9</td><td class='mono'>586</td><td class='mono'>6</td><td>3RD/COL RATE 13</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR314</td><td>DECIMAL</td><td class='mono'>587</td><td class='mono'>9</td><td class='mono'>595</td><td class='mono'>6</td><td>3RD/COL RATE 14</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR315</td><td>DECIMAL</td><td class='mono'>596</td><td class='mono'>9</td><td class='mono'>604</td><td class='mono'>6</td><td>3RD/COL RATE 15</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR401</td><td>DECIMAL</td><td class='mono'>605</td><td class='mono'>9</td><td class='mono'>613</td><td class='mono'>6</td><td>4TH/COL RATE 01</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR402</td><td>DECIMAL</td><td class='mono'>614</td><td class='mono'>9</td><td class='mono'>622</td><td class='mono'>6</td><td>4TH/COL RATE 02</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR403</td><td>DECIMAL</td><td class='mono'>623</td><td class='mono'>9</td><td class='mono'>631</td><td class='mono'>6</td><td>4TH/COL RATE 03</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR404</td><td>DECIMAL</td><td class='mono'>632</td><td class='mono'>9</td><td class='mono'>640</td><td class='mono'>6</td><td>4TH/COL RATE 04</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR405</td><td>DECIMAL</td><td class='mono'>641</td><td class='mono'>9</td><td class='mono'>649</td><td class='mono'>6</td><td>4TH/COL RATE 05</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR406</td><td>DECIMAL</td><td class='mono'>650</td><td class='mono'>9</td><td class='mono'>658</td><td class='mono'>6</td><td>4TH/COL RATE 06</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR407</td><td>DECIMAL</td><td class='mono'>659</td><td class='mono'>9</td><td class='mono'>667</td><td class='mono'>6</td><td>4TH/COL RATE 07</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR408</td><td>DECIMAL</td><td class='mono'>668</td><td class='mono'>9</td><td class='mono'>676</td><td class='mono'>6</td><td>4TH/COL RATE 08</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR409</td><td>DECIMAL</td><td class='mono'>677</td><td class='mono'>9</td><td class='mono'>685</td><td class='mono'>6</td><td>4TH/COL RATE 09</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR410</td><td>DECIMAL</td><td class='mono'>686</td><td class='mono'>9</td><td class='mono'>694</td><td class='mono'>6</td><td>4TH/COL RATE 10</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR411</td><td>DECIMAL</td><td class='mono'>695</td><td class='mono'>9</td><td class='mono'>703</td><td class='mono'>6</td><td>4TH/COL RATE 11</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR412</td><td>DECIMAL</td><td class='mono'>704</td><td class='mono'>9</td><td class='mono'>712</td><td class='mono'>6</td><td>4TH/COL RATE 12</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR413</td><td>DECIMAL</td><td class='mono'>713</td><td class='mono'>9</td><td class='mono'>721</td><td class='mono'>6</td><td>4TH/COL RATE 13</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR414</td><td>DECIMAL</td><td class='mono'>722</td><td class='mono'>9</td><td class='mono'>730</td><td class='mono'>6</td><td>4TH/COL RATE 14</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR415</td><td>DECIMAL</td><td class='mono'>731</td><td class='mono'>9</td><td class='mono'>739</td><td class='mono'>6</td><td>4TH/COL RATE 15</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR501</td><td>DECIMAL</td><td class='mono'>740</td><td class='mono'>9</td><td class='mono'>748</td><td class='mono'>6</td><td>5TH/COL RATE 01</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR502</td><td>DECIMAL</td><td class='mono'>749</td><td class='mono'>9</td><td class='mono'>757</td><td class='mono'>6</td><td>5TH/COL RATE 02</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR503</td><td>DECIMAL</td><td class='mono'>758</td><td class='mono'>9</td><td class='mono'>766</td><td class='mono'>6</td><td>5TH/COL RATE 03</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR504</td><td>DECIMAL</td><td class='mono'>767</td><td class='mono'>9</td><td class='mono'>775</td><td class='mono'>6</td><td>5TH/COL RATE 04</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR505</td><td>DECIMAL</td><td class='mono'>776</td><td class='mono'>9</td><td class='mono'>784</td><td class='mono'>6</td><td>5TH/COL RATE 05</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR506</td><td>DECIMAL</td><td class='mono'>785</td><td class='mono'>9</td><td class='mono'>793</td><td class='mono'>6</td><td>5TH/COL RATE 06</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR507</td><td>DECIMAL</td><td class='mono'>794</td><td class='mono'>9</td><td class='mono'>802</td><td class='mono'>6</td><td>5TH/COL RATE 07</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR508</td><td>DECIMAL</td><td class='mono'>803</td><td class='mono'>9</td><td class='mono'>811</td><td class='mono'>6</td><td>5TH/COL RATE 08</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR509</td><td>DECIMAL</td><td class='mono'>812</td><td class='mono'>9</td><td class='mono'>820</td><td class='mono'>6</td><td>5TH/COL RATE 09</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR510</td><td>DECIMAL</td><td class='mono'>821</td><td class='mono'>9</td><td class='mono'>829</td><td class='mono'>6</td><td>5TH/COL RATE 10</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR511</td><td>DECIMAL</td><td class='mono'>830</td><td class='mono'>9</td><td class='mono'>838</td><td class='mono'>6</td><td>5TH/COL RATE 11</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR512</td><td>DECIMAL</td><td class='mono'>839</td><td class='mono'>9</td><td class='mono'>847</td><td class='mono'>6</td><td>5TH/COL RATE 12</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR513</td><td>DECIMAL</td><td class='mono'>848</td><td class='mono'>9</td><td class='mono'>856</td><td class='mono'>6</td><td>5TH/COL RATE 13</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR514</td><td>DECIMAL</td><td class='mono'>857</td><td class='mono'>9</td><td class='mono'>865</td><td class='mono'>6</td><td>5TH/COL RATE 14</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR515</td><td>DECIMAL</td><td class='mono'>866</td><td class='mono'>9</td><td class='mono'>874</td><td class='mono'>6</td><td>5TH/COL RATE 15</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR601</td><td>DECIMAL</td><td class='mono'>875</td><td class='mono'>9</td><td class='mono'>883</td><td class='mono'>6</td><td>6TH/COL RATE 01</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR602</td><td>DECIMAL</td><td class='mono'>884</td><td class='mono'>9</td><td class='mono'>892</td><td class='mono'>6</td><td>6TH/COL RATE 02</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR603</td><td>DECIMAL</td><td class='mono'>893</td><td class='mono'>9</td><td class='mono'>901</td><td class='mono'>6</td><td>6TH/COL RATE 03</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR604</td><td>DECIMAL</td><td class='mono'>902</td><td class='mono'>9</td><td class='mono'>910</td><td class='mono'>6</td><td>6TH/COL RATE 04</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR605</td><td>DECIMAL</td><td class='mono'>911</td><td class='mono'>9</td><td class='mono'>919</td><td class='mono'>6</td><td>6TH/COL RATE 05</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR606</td><td>DECIMAL</td><td class='mono'>920</td><td class='mono'>9</td><td class='mono'>928</td><td class='mono'>6</td><td>6TH/COL RATE 06</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR607</td><td>DECIMAL</td><td class='mono'>929</td><td class='mono'>9</td><td class='mono'>937</td><td class='mono'>6</td><td>6TH/COL RATE 07</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR608</td><td>DECIMAL</td><td class='mono'>938</td><td class='mono'>9</td><td class='mono'>946</td><td class='mono'>6</td><td>6TH/COL RATE 08</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR609</td><td>DECIMAL</td><td class='mono'>947</td><td class='mono'>9</td><td class='mono'>955</td><td class='mono'>6</td><td>6TH/COL RATE 09</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR610</td><td>DECIMAL</td><td class='mono'>956</td><td class='mono'>9</td><td class='mono'>964</td><td class='mono'>6</td><td>6TH/COL RATE 10</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR611</td><td>DECIMAL</td><td class='mono'>965</td><td class='mono'>9</td><td class='mono'>973</td><td class='mono'>6</td><td>6TH/COL RATE 11</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR612</td><td>DECIMAL</td><td class='mono'>974</td><td class='mono'>9</td><td class='mono'>982</td><td class='mono'>6</td><td>6TH/COL RATE 12</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR613</td><td>DECIMAL</td><td class='mono'>983</td><td class='mono'>9</td><td class='mono'>991</td><td class='mono'>6</td><td>6TH/COL RATE 13</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR614</td><td>DECIMAL</td><td class='mono'>992</td><td class='mono'>9</td><td class='mono'>1000</td><td class='mono'>6</td><td>6TH/COL RATE 14</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR615</td><td>DECIMAL</td><td class='mono'>1001</td><td class='mono'>9</td><td class='mono'>1009</td><td class='mono'>6</td><td>6TH/COL RATE 15</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR701</td><td>DECIMAL</td><td class='mono'>1010</td><td class='mono'>9</td><td class='mono'>1018</td><td class='mono'>6</td><td>7TH/COL RATE 01</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR702</td><td>DECIMAL</td><td class='mono'>1019</td><td class='mono'>9</td><td class='mono'>1027</td><td class='mono'>6</td><td>7TH/COL RATE 02</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR703</td><td>DECIMAL</td><td class='mono'>1028</td><td class='mono'>9</td><td class='mono'>1036</td><td class='mono'>6</td><td>7TH/COL RATE 03</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR704</td><td>DECIMAL</td><td class='mono'>1037</td><td class='mono'>9</td><td class='mono'>1045</td><td class='mono'>6</td><td>7TH/COL RATE 04</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR705</td><td>DECIMAL</td><td class='mono'>1046</td><td class='mono'>9</td><td class='mono'>1054</td><td class='mono'>6</td><td>7TH/COL RATE 05</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR706</td><td>DECIMAL</td><td class='mono'>1055</td><td class='mono'>9</td><td class='mono'>1063</td><td class='mono'>6</td><td>7TH/COL RATE 06</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR707</td><td>DECIMAL</td><td class='mono'>1064</td><td class='mono'>9</td><td class='mono'>1072</td><td class='mono'>6</td><td>7TH/COL RATE 07</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR708</td><td>DECIMAL</td><td class='mono'>1073</td><td class='mono'>9</td><td class='mono'>1081</td><td class='mono'>6</td><td>7TH/COL RATE 08</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR709</td><td>DECIMAL</td><td class='mono'>1082</td><td class='mono'>9</td><td class='mono'>1090</td><td class='mono'>6</td><td>7TH/COL RATE 09</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR710</td><td>DECIMAL</td><td class='mono'>1091</td><td class='mono'>9</td><td class='mono'>1099</td><td class='mono'>6</td><td>7TH/COL RATE 10</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR711</td><td>DECIMAL</td><td class='mono'>1100</td><td class='mono'>9</td><td class='mono'>1108</td><td class='mono'>6</td><td>7TH/COL RATE 11</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR712</td><td>DECIMAL</td><td class='mono'>1109</td><td class='mono'>9</td><td class='mono'>1117</td><td class='mono'>6</td><td>7TH/COL RATE 12</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR713</td><td>DECIMAL</td><td class='mono'>1118</td><td class='mono'>9</td><td class='mono'>1126</td><td class='mono'>6</td><td>7TH/COL RATE 13</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR714</td><td>DECIMAL</td><td class='mono'>1127</td><td class='mono'>9</td><td class='mono'>1135</td><td class='mono'>6</td><td>7TH/COL RATE 14</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDR715</td><td>DECIMAL</td><td class='mono'>1136</td><td class='mono'>9</td><td class='mono'>1144</td><td class='mono'>6</td><td>7TH/COL RATE 15</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRF03</td><td>CHARACTER</td><td class='mono'>1145</td><td class='mono'>3</td><td class='mono'>1147</td><td class='mono'></td><td>AVAILABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRFTB</td><td>CHARACTER</td><td class='mono'>1148</td><td class='mono'>2</td><td class='mono'>1149</td><td class='mono'></td><td>FLOATING TABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRFTY</td><td>CHARACTER</td><td class='mono'>1150</td><td class='mono'>2</td><td class='mono'>1151</td><td class='mono'></td><td>FLOATING TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRMXR</td><td>DECIMAL</td><td class='mono'>1152</td><td class='mono'>9</td><td class='mono'>1160</td><td class='mono'>6</td><td>MAXIMUM RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRMIR</td><td>DECIMAL</td><td class='mono'>1161</td><td class='mono'>9</td><td class='mono'>1169</td><td class='mono'>6</td><td>MINIMUM RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRMMT</td><td>CHARACTER</td><td class='mono'>1170</td><td class='mono'>1</td><td class='mono'>1170</td><td class='mono'></td><td>MAXIMUM MINIMUM TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRDPE</td><td>NUMERIC</td><td class='mono'>1171</td><td class='mono'>3</td><td class='mono'>1173</td><td class='mono'></td><td>PENALTY DAYS PREPAYM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRBSE</td><td>DECIMAL</td><td class='mono'>1174</td><td class='mono'>9</td><td class='mono'>1182</td><td class='mono'>6</td><td>RATE BASE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRDSC</td><td>CHARACTER</td><td class='mono'>1183</td><td class='mono'>45</td><td class='mono'>1227</td><td class='mono'></td><td>DESCRIPTION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRLMM</td><td>NUMERIC</td><td class='mono'>1228</td><td class='mono'>2</td><td class='mono'>1229</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRLMD</td><td>NUMERIC</td><td class='mono'>1230</td><td class='mono'>2</td><td class='mono'>1231</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRLMY</td><td>NUMERIC</td><td class='mono'>1232</td><td class='mono'>4</td><td class='mono'>1235</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRLMT</td><td>TIMESTAMP</td><td class='mono'>1236</td><td class='mono'>26</td><td class='mono'>1261</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>CDRLMU</td><td>CHARACTER</td><td class='mono'>1262</td><td class='mono'>10</td><td class='mono'>1271</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[CDRSTA] CDRSTA | CHARACTER | 1 | 1 | 1 | RECORD STATUS
+[CDRRTB] CDRRTB | CHARACTER | 2 | 2 | 3 | TABLE NUMBER
+[CDRRDM] CDRRDM | NUMERIC | 4 | 2 | 5 | RUN DATE MM
+[CDRRDD] CDRRDD | NUMERIC | 6 | 2 | 7 | RUN DATE DD
+[CDRRDY] CDRRDY | NUMERIC | 8 | 4 | 11 | RUN DATE YY
+[CDRCCY] CDRCCY | CHARACTER | 12 | 3 | 14 | CURRENCY CODE
+[CDRSFL] CDRSFL | CHARACTER | 15 | 1 | 15 | SPREAD FLAG
+[CDRUA1] CDRUA1 | DECIMAL | 16 | 15 | 30 | 2 | UP TO AMT 1
+[CDRUA2] CDRUA2 | DECIMAL | 31 | 15 | 45 | 2 | UP TO AMT 2
+[CDRUA3] CDRUA3 | DECIMAL | 46 | 15 | 60 | 2 | UP TO AMT 3
+[CDRUA4] CDRUA4 | DECIMAL | 61 | 15 | 75 | 2 | UP TO AMT 4
+[CDRUA5] CDRUA5 | DECIMAL | 76 | 15 | 90 | 2 | UP TO AMT 5
+[CDRUA6] CDRUA6 | DECIMAL | 91 | 15 | 105 | 2 | UP TO AMT 6
+[CDRUA7] CDRUA7 | DECIMAL | 106 | 15 | 120 | 2 | UP TO AMT 7
+[CDRF01] CDRF01 | CHARACTER | 121 | 3 | 123 | AVAILABLE
+[CDRF02] CDRF02 | CHARACTER | 124 | 4 | 127 | TASA PENALIZACION
+[CDRBAS] CDRBAS | NUMERIC | 128 | 3 | 130 | ACCRUAL BASE
+[CDRPRT] CDRPRT | DECIMAL | 131 | 9 | 139 | 6 | TASA PENALIZACION
+[CDRD01] CDRD01 | DECIMAL | 140 | 4 | 143 | DAYS 01
+[CDRD02] CDRD02 | DECIMAL | 144 | 4 | 147 | DAYS 02
+[CDRD03] CDRD03 | DECIMAL | 148 | 4 | 151 | DAYS 03
+[CDRD04] CDRD04 | DECIMAL | 152 | 4 | 155 | DAYS 04
+[CDRD05] CDRD05 | DECIMAL | 156 | 4 | 159 | DAYS 05
+[CDRD06] CDRD06 | DECIMAL | 160 | 4 | 163 | DAYS 06
+[CDRD07] CDRD07 | DECIMAL | 164 | 4 | 167 | DAYS 07
+[CDRD08] CDRD08 | DECIMAL | 168 | 4 | 171 | DAYS 08
+[CDRD09] CDRD09 | DECIMAL | 172 | 4 | 175 | DAYS 09
+[CDRD10] CDRD10 | DECIMAL | 176 | 4 | 179 | DAYS 10
+[CDRD11] CDRD11 | DECIMAL | 180 | 4 | 183 | DAYS 11
+[CDRD12] CDRD12 | DECIMAL | 184 | 4 | 187 | DAYS 12
+[CDRD13] CDRD13 | DECIMAL | 188 | 4 | 191 | DAYS 13
+[CDRD14] CDRD14 | DECIMAL | 192 | 4 | 195 | DAYS 14</div></body></html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>AMOFE</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>AMOFE</h1>
+<div class='meta'><b>Descripción:</b> Comisiones Diferidas<br><b>N.º de campos:</b> 47</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>AMOBNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>BANK NUMBER</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>AMOBRN</td><td>DECIMAL</td><td class='mono'>3</td><td class='mono'>4</td><td class='mono'>6</td><td class='mono'></td><td>BRANCH NUMBER</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>AMOCCY</td><td>CHARACTER</td><td class='mono'>7</td><td class='mono'>3</td><td class='mono'>9</td><td class='mono'></td><td>CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOGLN</td><td>DECIMAL</td><td class='mono'>10</td><td class='mono'>16</td><td class='mono'>25</td><td class='mono'></td><td>G/L NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOACC</td><td>DECIMAL</td><td class='mono'>26</td><td class='mono'>12</td><td class='mono'>37</td><td class='mono'></td><td>ACCOUNT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOCCN</td><td>DECIMAL</td><td class='mono'>38</td><td class='mono'>8</td><td class='mono'>45</td><td class='mono'></td><td>COST CENTER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOVDM</td><td>NUMERIC</td><td class='mono'>46</td><td class='mono'>2</td><td class='mono'>47</td><td class='mono'></td><td>VALUE DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOVDD</td><td>NUMERIC</td><td class='mono'>48</td><td class='mono'>2</td><td class='mono'>49</td><td class='mono'></td><td>VALUE DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOVDY</td><td>NUMERIC</td><td class='mono'>50</td><td class='mono'>4</td><td class='mono'>53</td><td class='mono'></td><td>VALUE DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOBDM</td><td>NUMERIC</td><td class='mono'>54</td><td class='mono'>2</td><td class='mono'>55</td><td class='mono'></td><td>BATCH DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOBDD</td><td>NUMERIC</td><td class='mono'>56</td><td class='mono'>2</td><td class='mono'>57</td><td class='mono'></td><td>BATCH DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOBDY</td><td>NUMERIC</td><td class='mono'>58</td><td class='mono'>4</td><td class='mono'>61</td><td class='mono'></td><td>BATCH DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMONAR</td><td>CHARACTER</td><td class='mono'>62</td><td class='mono'>60</td><td class='mono'>121</td><td class='mono'></td><td>NARRATIVE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOMDM</td><td>NUMERIC</td><td class='mono'>122</td><td class='mono'>2</td><td class='mono'>123</td><td class='mono'></td><td>MATURITY DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOMDD</td><td>NUMERIC</td><td class='mono'>124</td><td class='mono'>2</td><td class='mono'>125</td><td class='mono'></td><td>MATURITY DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOMDY</td><td>NUMERIC</td><td class='mono'>126</td><td class='mono'>4</td><td class='mono'>129</td><td class='mono'></td><td>MATURITY DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOCLS</td><td>NUMERIC</td><td class='mono'>130</td><td class='mono'>2</td><td class='mono'>131</td><td class='mono'></td><td>ACCOUNT  CLASS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOACA</td><td>DECIMAL</td><td class='mono'>132</td><td class='mono'>15</td><td class='mono'>146</td><td class='mono'>2</td><td>ACCUMUL AMORTIZ</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOOAM</td><td>DECIMAL</td><td class='mono'>147</td><td class='mono'>15</td><td class='mono'>161</td><td class='mono'>2</td><td>ORIGINAL AMOUNT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOTYP</td><td>CHARACTER</td><td class='mono'>162</td><td class='mono'>4</td><td class='mono'>165</td><td class='mono'></td><td>ACCOUNT  TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOLCM</td><td>NUMERIC</td><td class='mono'>166</td><td class='mono'>2</td><td class='mono'>167</td><td class='mono'></td><td>LST/CALC DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOLCD</td><td>NUMERIC</td><td class='mono'>168</td><td class='mono'>2</td><td class='mono'>169</td><td class='mono'></td><td>LST/CALC DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOLCY</td><td>NUMERIC</td><td class='mono'>170</td><td class='mono'>4</td><td class='mono'>173</td><td class='mono'></td><td>LST/CALC DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOSPA</td><td>CHARACTER</td><td class='mono'>174</td><td class='mono'>1</td><td class='mono'>174</td><td class='mono'></td><td>SUSPEND AMORTIZATION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOATP</td><td>CHARACTER</td><td class='mono'>175</td><td class='mono'>2</td><td class='mono'>176</td><td class='mono'></td><td>AMORTIZATION TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOMTD</td><td>CHARACTER</td><td class='mono'>177</td><td class='mono'>1</td><td class='mono'>177</td><td class='mono'></td><td>AMORTIZATION METHOD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOAM1</td><td>DECIMAL</td><td class='mono'>178</td><td class='mono'>17</td><td class='mono'>194</td><td class='mono'>4</td><td>AMOUNT 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOAM2</td><td>DECIMAL</td><td class='mono'>195</td><td class='mono'>17</td><td class='mono'>211</td><td class='mono'>4</td><td>AMOUNT 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOAM3</td><td>DECIMAL</td><td class='mono'>212</td><td class='mono'>17</td><td class='mono'>228</td><td class='mono'>4</td><td>AMOUNT 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOAM4</td><td>DECIMAL</td><td class='mono'>229</td><td class='mono'>17</td><td class='mono'>245</td><td class='mono'>4</td><td>AMOUNT 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOAM5</td><td>DECIMAL</td><td class='mono'>246</td><td class='mono'>17</td><td class='mono'>262</td><td class='mono'>4</td><td>AMOUNT 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOFR1</td><td>DECIMAL</td><td class='mono'>263</td><td class='mono'>9</td><td class='mono'>271</td><td class='mono'>6</td><td>FACTOR 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOCN1</td><td>DECIMAL</td><td class='mono'>272</td><td class='mono'>5</td><td class='mono'>276</td><td class='mono'></td><td>COUNTER 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMORDM</td><td>NUMERIC</td><td class='mono'>277</td><td class='mono'>2</td><td class='mono'>278</td><td class='mono'></td><td>REF DATE MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMORDD</td><td>NUMERIC</td><td class='mono'>279</td><td class='mono'>2</td><td class='mono'>280</td><td class='mono'></td><td>REF DATE DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMORDY</td><td>NUMERIC</td><td class='mono'>281</td><td class='mono'>4</td><td class='mono'>284</td><td class='mono'></td><td>REF DATE YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMODTM</td><td>NUMERIC</td><td class='mono'>285</td><td class='mono'>2</td><td class='mono'>286</td><td class='mono'></td><td>DATE 1 MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMODTD</td><td>NUMERIC</td><td class='mono'>287</td><td class='mono'>2</td><td class='mono'>288</td><td class='mono'></td><td>DATE 1 DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMODTY</td><td>NUMERIC</td><td class='mono'>289</td><td class='mono'>4</td><td class='mono'>292</td><td class='mono'></td><td>DATE 1 YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMORFN</td><td>CHARACTER</td><td class='mono'>293</td><td class='mono'>16</td><td class='mono'>308</td><td class='mono'></td><td>ACCOUNT REFERENCE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOPNU</td><td>DECIMAL</td><td class='mono'>309</td><td class='mono'>5</td><td class='mono'>313</td><td class='mono'></td><td>PAYMENT NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOSTS</td><td>CHARACTER</td><td class='mono'>314</td><td class='mono'>1</td><td class='mono'>314</td><td class='mono'></td><td>ACCOUNT STATUS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOLMM</td><td>NUMERIC</td><td class='mono'>315</td><td class='mono'>2</td><td class='mono'>316</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOLMD</td><td>NUMERIC</td><td class='mono'>317</td><td class='mono'>2</td><td class='mono'>318</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOLMY</td><td>NUMERIC</td><td class='mono'>319</td><td class='mono'>4</td><td class='mono'>322</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOLMT</td><td>TIMESTAMP</td><td class='mono'>323</td><td class='mono'>26</td><td class='mono'>348</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>AMOLMU</td><td>CHARACTER</td><td class='mono'>349</td><td class='mono'>10</td><td class='mono'>358</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table></body></html>

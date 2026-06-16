@@ -1,0 +1,134 @@
+<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'><title>APCLS</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;color:#172b4d;line-height:1.5;}
+h1{color:#0747a6;border-bottom:3px solid #0747a6;padding-bottom:6px;}
+h2{color:#0747a6;margin-top:28px;}
+.meta{background:#deebff;border-left:4px solid #0747a6;padding:10px 14px;margin:14px 0;border-radius:4px;}
+.meta b{color:#0747a6;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13px;}
+th{background:#0747a6;color:#fff;text-align:left;padding:7px 9px;border:1px solid #cfd8e3;}
+td{padding:6px 9px;border:1px solid #dfe1e6;vertical-align:top;}
+tr:nth-child(even) td{background:#f4f5f7;}
+code,.mono{font-family:'Courier New',monospace;}
+.extras{background:#fffae6;border-left:4px solid #ff8b00;padding:8px 12px;margin:8px 0;border-radius:4px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:12px;}
+.nav{margin:10px 0 20px;}
+.nav a{color:#0747a6;text-decoration:none;font-weight:bold;}
+.idx-table td a{color:#0747a6;text-decoration:none;}
+.count{color:#5e6c84;font-size:13px;}
+.tag{display:inline-block;background:#e3fcef;color:#006644;padding:2px 8px;border-radius:3px;font-size:12px;margin-left:6px;}
+</style>
+</head><body><div class='nav'><a href='../indice.html'>&larr; Volver al índice</a></div>
+<h1>APCLS</h1>
+<div class='meta'><b>Descripción:</b> Ejemplos<br><b>N.º de campos:</b> 67</div>
+<h2>Definición de campos</h2>
+<table><thead><tr><th>#</th><th>Campo</th><th>Tipo</th><th>Inicio</th><th>Long.</th><th>Fin</th><th>Esc.</th><th>Texto (EN)</th><th>Breve Explicación</th></tr></thead><tbody>
+<tr><td class='mono'>1</td><td class='mono'>APCBNK</td><td>CHARACTER</td><td class='mono'>1</td><td class='mono'>2</td><td class='mono'>2</td><td class='mono'></td><td>PRODUCT  BANK</td><td></td></tr>
+<tr><td class='mono'>2</td><td class='mono'>APCCDE</td><td>CHARACTER</td><td class='mono'>3</td><td class='mono'>4</td><td class='mono'>6</td><td class='mono'></td><td>PRODUCT CODE</td><td></td></tr>
+<tr><td class='mono'>3</td><td class='mono'>APCCCY</td><td>CHARACTER</td><td class='mono'>7</td><td class='mono'>3</td><td class='mono'>9</td><td class='mono'></td><td>PRODUCT CURRENCY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCGLN</td><td>DECIMAL</td><td class='mono'>10</td><td class='mono'>16</td><td class='mono'>25</td><td class='mono'></td><td>G/L NUMBER</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCTYP</td><td>CHARACTER</td><td class='mono'>26</td><td class='mono'>4</td><td class='mono'>29</td><td class='mono'></td><td>PRODUCT ACT/TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCTAR</td><td>CHARACTER</td><td class='mono'>30</td><td class='mono'>2</td><td class='mono'>31</td><td class='mono'></td><td>PRODUCT TABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCCDT</td><td>CHARACTER</td><td class='mono'>32</td><td class='mono'>2</td><td class='mono'>33</td><td class='mono'></td><td>PRODUCT TABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCDSC</td><td>CHARACTER</td><td class='mono'>34</td><td class='mono'>60</td><td class='mono'>93</td><td class='mono'></td><td>PRODUCT DESCRIPTION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCSHN</td><td>CHARACTER</td><td class='mono'>94</td><td class='mono'>25</td><td class='mono'>118</td><td class='mono'></td><td>SHORT NAME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCFRT</td><td>CHARACTER</td><td class='mono'>119</td><td class='mono'>2</td><td class='mono'>120</td><td class='mono'></td><td>FLOAT RATE TABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCFTY</td><td>CHARACTER</td><td class='mono'>121</td><td class='mono'>2</td><td class='mono'>122</td><td class='mono'></td><td>FLOAT TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCFTF</td><td>CHARACTER</td><td class='mono'>123</td><td class='mono'>2</td><td class='mono'>124</td><td class='mono'></td><td>PRODUCT FLOAT RANGE FRM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCFTT</td><td>CHARACTER</td><td class='mono'>125</td><td class='mono'>2</td><td class='mono'>126</td><td class='mono'></td><td>PRODUCT FLOAT RANGE TO</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCFRN</td><td>CHARACTER</td><td class='mono'>127</td><td class='mono'>1</td><td class='mono'>127</td><td class='mono'></td><td>REVALUATION TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCIPD</td><td>CHARACTER</td><td class='mono'>128</td><td class='mono'>3</td><td class='mono'>130</td><td class='mono'></td><td>INT/PMT CYCLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCPPD</td><td>CHARACTER</td><td class='mono'>131</td><td class='mono'>3</td><td class='mono'>133</td><td class='mono'></td><td>PRI/PMT CYCLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCRRD</td><td>CHARACTER</td><td class='mono'>134</td><td class='mono'>3</td><td class='mono'>136</td><td class='mono'></td><td>CHG/RATE CYCLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCMCI</td><td>CHARACTER</td><td class='mono'>137</td><td class='mono'>1</td><td class='mono'>137</td><td class='mono'></td><td>METHOD CAL/INT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCMCP</td><td>CHARACTER</td><td class='mono'>138</td><td class='mono'>1</td><td class='mono'>138</td><td class='mono'></td><td>METHOD CAL/PAS DUE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCTLN</td><td>CHARACTER</td><td class='mono'>139</td><td class='mono'>2</td><td class='mono'>140</td><td class='mono'></td><td>CODE TARIFF LOANS</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCOFR</td><td>CHARACTER</td><td class='mono'>141</td><td class='mono'>1</td><td class='mono'>141</td><td class='mono'></td><td>OFFERING REQUIRED</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCICT</td><td>CHARACTER</td><td class='mono'>142</td><td class='mono'>1</td><td class='mono'>142</td><td class='mono'></td><td>INT/CALC TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCINV</td><td>CHARACTER</td><td class='mono'>143</td><td class='mono'>4</td><td class='mono'>146</td><td class='mono'></td><td>INVESTMENT TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCAMO</td><td>CHARACTER</td><td class='mono'>147</td><td class='mono'>1</td><td class='mono'>147</td><td class='mono'></td><td>AMORTIZATION TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCROY</td><td>CHARACTER</td><td class='mono'>148</td><td class='mono'>3</td><td class='mono'>150</td><td class='mono'></td><td>COUPON PAYMENT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCITP</td><td>CHARACTER</td><td class='mono'>151</td><td class='mono'>1</td><td class='mono'>151</td><td class='mono'></td><td>PORTFOLIO TYPE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCRES</td><td>CHARACTER</td><td class='mono'>152</td><td class='mono'>1</td><td class='mono'>152</td><td class='mono'></td><td>RESIDENT OR NOT</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCACD</td><td>CHARACTER</td><td class='mono'>153</td><td class='mono'>2</td><td class='mono'>154</td><td class='mono'></td><td>APPLICATION CODE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCFRA</td><td>CHARACTER</td><td class='mono'>155</td><td class='mono'>1</td><td class='mono'>155</td><td class='mono'></td><td>FLOATING RTE/APPLI</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCCRF</td><td>CHARACTER</td><td class='mono'>156</td><td class='mono'>1</td><td class='mono'>156</td><td class='mono'></td><td>CREDIT REQUEST FLAG</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCRLT</td><td>CHARACTER</td><td class='mono'>157</td><td class='mono'>2</td><td class='mono'>158</td><td class='mono'></td><td>RESERVE FOR LOSSES TABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCFL1</td><td>CHARACTER</td><td class='mono'>159</td><td class='mono'>1</td><td class='mono'>159</td><td class='mono'></td><td>AVAILABLE 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCFL2</td><td>CHARACTER</td><td class='mono'>160</td><td class='mono'>1</td><td class='mono'>160</td><td class='mono'></td><td>AVAILABLE 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCFL3</td><td>CHARACTER</td><td class='mono'>161</td><td class='mono'>1</td><td class='mono'>161</td><td class='mono'></td><td>AVAILABLE 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCFL4</td><td>CHARACTER</td><td class='mono'>162</td><td class='mono'>1</td><td class='mono'>162</td><td class='mono'></td><td>AVAILABLE 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCFL5</td><td>CHARACTER</td><td class='mono'>163</td><td class='mono'>1</td><td class='mono'>163</td><td class='mono'></td><td>AVAILABLE 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCUC1</td><td>CHARACTER</td><td class='mono'>164</td><td class='mono'>4</td><td class='mono'>167</td><td class='mono'></td><td>USER CODE 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCUC2</td><td>CHARACTER</td><td class='mono'>168</td><td class='mono'>4</td><td class='mono'>171</td><td class='mono'></td><td>USER CODE 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCUC3</td><td>CHARACTER</td><td class='mono'>172</td><td class='mono'>4</td><td class='mono'>175</td><td class='mono'></td><td>USER CODE 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCRCL</td><td>CHARACTER</td><td class='mono'>176</td><td class='mono'>1</td><td class='mono'>176</td><td class='mono'></td><td>RELEASE COLL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCAMC</td><td>CHARACTER</td><td class='mono'>177</td><td class='mono'>1</td><td class='mono'>177</td><td class='mono'></td><td>AMOUNT COLL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCCBC</td><td>CHARACTER</td><td class='mono'>178</td><td class='mono'>1</td><td class='mono'>178</td><td class='mono'></td><td>CHECK BOOK CONTROL</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCCC1</td><td>CHARACTER</td><td class='mono'>179</td><td class='mono'>2</td><td class='mono'>180</td><td class='mono'></td><td>TARJETA TIPO 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCCC2</td><td>CHARACTER</td><td class='mono'>181</td><td class='mono'>2</td><td class='mono'>182</td><td class='mono'></td><td>TARJETA TIPO 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCCC3</td><td>CHARACTER</td><td class='mono'>183</td><td class='mono'>2</td><td class='mono'>184</td><td class='mono'></td><td>TARJETA TIPO 3</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCCC4</td><td>CHARACTER</td><td class='mono'>185</td><td class='mono'>2</td><td class='mono'>186</td><td class='mono'></td><td>TARJETA TIPO 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCTAX</td><td>CHARACTER</td><td class='mono'>187</td><td class='mono'>1</td><td class='mono'>187</td><td class='mono'></td><td>CHARGE TAX 1/2/3/N</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCTX1</td><td>CHARACTER</td><td class='mono'>188</td><td class='mono'>1</td><td class='mono'>188</td><td class='mono'></td><td>TAXES FLAG 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCTX2</td><td>CHARACTER</td><td class='mono'>189</td><td class='mono'>1</td><td class='mono'>189</td><td class='mono'></td><td>TAXES FLAG 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCTX3</td><td>CHARACTER</td><td class='mono'>190</td><td class='mono'>1</td><td class='mono'>190</td><td class='mono'></td><td>TAXES FLAG 3</td><td>??Uso Productos Estatales Revaluación</td></tr>
+<tr><td class='mono'></td><td class='mono'>APCTX4</td><td>CHARACTER</td><td class='mono'>191</td><td class='mono'>1</td><td class='mono'>191</td><td class='mono'></td><td>TAXES FLAG 4</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCTX5</td><td>CHARACTER</td><td class='mono'>192</td><td class='mono'>1</td><td class='mono'>192</td><td class='mono'></td><td>TAXES FLAG 5</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCTX6</td><td>CHARACTER</td><td class='mono'>193</td><td class='mono'>1</td><td class='mono'>193</td><td class='mono'></td><td>TAXES FLAG 6</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCTX7</td><td>CHARACTER</td><td class='mono'>194</td><td class='mono'>1</td><td class='mono'>194</td><td class='mono'></td><td>TAXES FLAG 7</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCTX8</td><td>CHARACTER</td><td class='mono'>195</td><td class='mono'>1</td><td class='mono'>195</td><td class='mono'></td><td>TAXES FLAG 8</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCTX9</td><td>CHARACTER</td><td class='mono'>196</td><td class='mono'>1</td><td class='mono'>196</td><td class='mono'></td><td>TAXES FLAG 9</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCREL</td><td>CHARACTER</td><td class='mono'>197</td><td class='mono'>1</td><td class='mono'>197</td><td class='mono'></td><td>TIPO RELACION</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APAOIS</td><td>DECIMAL</td><td class='mono'>198</td><td class='mono'>9</td><td class='mono'>206</td><td class='mono'>6</td><td>SPREAD RATE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCAM1</td><td>DECIMAL</td><td class='mono'>207</td><td class='mono'>15</td><td class='mono'>221</td><td class='mono'>2</td><td>AMOUNT 1</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCAM2</td><td>DECIMAL</td><td class='mono'>222</td><td class='mono'>15</td><td class='mono'>236</td><td class='mono'>2</td><td>AMOUNT 2</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCAPV</td><td>CHARACTER</td><td class='mono'>237</td><td class='mono'>1</td><td class='mono'>237</td><td class='mono'></td><td>APPROVAL REQUIRED</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCDOC</td><td>CHARACTER</td><td class='mono'>238</td><td class='mono'>2</td><td class='mono'>239</td><td class='mono'></td><td>DOCUMENT TABLE</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCLMM</td><td>NUMERIC</td><td class='mono'>240</td><td class='mono'>2</td><td class='mono'>241</td><td class='mono'></td><td>LAST MAINT/MM</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCLMD</td><td>NUMERIC</td><td class='mono'>242</td><td class='mono'>2</td><td class='mono'>243</td><td class='mono'></td><td>LAST MAINT/DD</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCLMY</td><td>NUMERIC</td><td class='mono'>244</td><td class='mono'>4</td><td class='mono'>247</td><td class='mono'></td><td>LAST MAINT/YY</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCLMT</td><td>TIMESTAMP</td><td class='mono'>248</td><td class='mono'>26</td><td class='mono'>273</td><td class='mono'>6</td><td>LAST MAINT/TIME</td><td></td></tr>
+<tr><td class='mono'></td><td class='mono'>APCLMU</td><td>CHARACTER</td><td class='mono'>274</td><td class='mono'>10</td><td class='mono'>283</td><td class='mono'></td><td>LAST MAINT/USER</td><td></td></tr>
+</tbody></table>
+<h2>Notas, valores de tablas, SQL y ejemplos</h2>
+<div class='extras'>[APCBNK] 01 | 01 | 01 | 01
+[APCCDE] PC01 | PC02 | PC03 | PC04
+[APCCCY] CLP | CLP | CLP | CLP
+[APCGLN] 1305981100100000 | 1305100100400000 | 1305100100600000 | 1305100100500000
+[APCTYP] CCON | CCON | CCON | CCON
+[APCTAR] 00 | C1 | C1 | C1
+[APCCDT] T0 | T0 | T0
+[APCDSC] CREDITO CONSUMO CUOTAS IGUALES PESOS | CREDITO CONSUMO UF CUOTAS IGUALES | CREDITO FUNCIONARIO BANCA PROPIA $ | CREDITO FUNCIONARIO BANCA PROPIA UF
+[APCSHN] CRED CONS CUOTAS IGUALES | CRED CONS UF CUOTAS IGUAL | CONS BCA PROPIA $ | CRD BCA PROPIA UF
+[APCFTF] 00 | 00 | 00 | 00
+[APCFTT] 5 | 1 | 5 | 5
+[APCFRN] C | C | C | C
+[APCIPD] SC1 | SC1 | SC1 | SC1
+[APCPPD] SC1 | SC1 | SC1 | SC1
+[APCMCI] 3 | 1 | 1 | 1
+[APCMCP] 4 | 4 | 4 | 4
+[APCTLN] PA | 01 | PA | 01
+[APCINV] YNNN | NNNN | NNNN | NNNN
+[APCROY] 0 | 45 | 30
+[APCACD] 10 | 10 | 10 | 10
+[APCCRF] Y | N | N | N
+[APCFL1] N | N | N | N
+[APCFL3] C | C | C | C
+[APCFL5] 1
+[APCUC2] 6
+[APCUC3] 72
+[APCRCL] Y | Y | Y | Y
+[APCAMC] 1 | 1 | 1 | 1
+[APCTX1] 0 | 0 | 0 | 0
+[APCTX2] 1 | 1 | 1 | 1
+[APCTX3] 0 | 0 | 0 | 0
+[APCTX4] 1 | 1 | 1 | 1
+[APCREL] N | Y | Y | Y
+[APAOIS] 0 | 0 | 0 | 0
+[APCAM1] 500000 | 0 | 0 | 0
+[APCAM2] 100000000 | 0 | 0 | 0
+[APCLMM] 1 | 1 | 1 | 1
+[APCLMD] 5 | 5 | 5 | 5
+[APCLMY] 2016 | 2016 | 2016 | 2016
+[APCLMT] 2017-05-17-11.08.55.797000 | 2017-05-05-19.52.04.105000 | 2017-05-05-19.16.08.427000 | 2017-05-05-19.52.52.437000
+[APCLMU] PARIFRV | PARIFRV | PARIFRV | PARIFRV</div></body></html>
